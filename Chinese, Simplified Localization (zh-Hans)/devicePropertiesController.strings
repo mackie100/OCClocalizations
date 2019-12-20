@@ -1,0 +1,51 @@
+/* Class = "NSView"; ibShadowedToolTip = "2. Block\nType: plist dict\nDescription: Removes device properties from a map (plist dict) of deivce paths to an array (plist array) of variable names in plist string format."; ObjectID = "1eh-jH-TX2"; */
+"1eh-jH-TX2.ibShadowedToolTip" = "2. Block\nType: plist dict\nDescription: Removes device properties from a map (plist dict) of deivce paths to an array (plist array) of variable names in plist string format.";
+
+/* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "6on-lJ-yiP"; */
+"6on-lJ-yiP.headerCell.title" = "值";
+
+/* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "9kg-WA-Eir"; */
+"9kg-WA-Eir.headerCell.title" = "设备";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "CrE-0l-DLY"; */
+"CrE-0l-DLY.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "dpG-4m-Tya"; */
+"dpG-4m-Tya.headerCell.title" = "Type";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "eia-C9-4Iw"; */
+"eia-C9-4Iw.title" = "Text Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "F6A-yy-QfQ"; */
+"F6A-yy-QfQ.headerCell.title" = "键值*";
+
+/* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "lI7-XR-ash"; */
+"lI7-XR-ash.title" = "NUMBER";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "M7c-ev-b9D"; */
+"M7c-ev-b9D.title" = "Text Cell";
+
+/* Class = "NSTabViewItem"; label = "Block"; ObjectID = "n3V-ht-3yU"; */
+"n3V-ht-3yU.label" = "阻止";
+
+/* Class = "NSTabViewItem"; label = "Add"; ObjectID = "NLq-sd-yYz"; */
+"NLq-sd-yYz.label" = "添加";
+
+/* Class = "NSView"; ibShadowedToolTip = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of deivce paths to a map (plist dict) of variable names and their values in plist metadata format. Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)). Properties will only be set if not present and not blocked.\nNote: Currently properties may only be (formerly) added by the original driver, so unless a separate driver was installed, there is no reason to block the variables."; ObjectID = "ogK-XX-Zb9"; */
+"ogK-XX-Zb9.ibShadowedToolTip" = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of deivce paths to a map (plist dict) of variable names and their values in plist metadata format. Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)). Properties will only be set if not present and not blocked.\nNote: Currently properties may only be (formerly) added by the original driver, so unless a separate driver was installed, there is no reason to block the variables.";
+
+/* Class = "NSMenuItem"; title = "DATA"; ObjectID = "POL-aB-DNF"; */
+"POL-aB-DNF.title" = "DATA";
+
+/* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "pxh-MR-ISe"; */
+"pxh-MR-ISe.headerCell.title" = "键值";
+
+/* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "rqc-Sa-r83"; */
+"rqc-Sa-r83.headerCell.title" = "设备";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "tAW-lD-Zil"; */
+"tAW-lD-Zil.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "STRING"; ObjectID = "ycS-j8-cj1"; */
+"ycS-j8-cj1.title" = "STRING";
+
