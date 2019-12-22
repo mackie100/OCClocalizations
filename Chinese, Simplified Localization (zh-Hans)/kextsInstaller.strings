@@ -14,7 +14,7 @@
 "39o-Ir-A0m.title" = "备份kext";
 
 /* Class = "NSTableColumn"; headerCell.title = "Category"; ObjectID = "47C-Wy-wbp"; */
-"47C-Wy-wbp.headerCell.title" = "Category";
+"47C-Wy-wbp.headerCell.title" = "类别";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Aiu-CK-iu2"; */
 "Aiu-CK-iu2.title" = "Text Cell";
@@ -119,5 +119,5 @@
 "ZQx-dd-Qs3.title" = "Radio";
 
 /* Class = "NSTextFieldCell"; title = "Location:"; ObjectID = "zsE-Kv-XLB"; */
-"zsE-Kv-XLB.title" = "地点：";
+"zsE-Kv-XLB.title" = "位置：";
 

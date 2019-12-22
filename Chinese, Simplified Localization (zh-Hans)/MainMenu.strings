@@ -116,7 +116,7 @@
 "cwL-P1-jid.title" = "智能链接";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
-"D1d-8G-YO3.title" = "Differences";
+"D1d-8G-YO3.title" = "差异";
 
 /* Class = "NSMenu"; title = "Text"; ObjectID = "d9c-me-L2H"; */
 "d9c-me-L2H.title" = "文本";
@@ -158,7 +158,7 @@
 "GB9-OM-e27.title" = "粗体";
 
 /* Class = "NSMenuItem"; title = "Scan Configurations"; ObjectID = "gDt-SB-jBP"; */
-"gDt-SB-jBP.title" = "Scan Configurations";
+"gDt-SB-jBP.title" = "扫描配置文件";
 
 /* Class = "NSMenu"; title = "Format"; ObjectID = "GEO-Iw-cKr"; */
 "GEO-Iw-cKr.title" = "格式";
@@ -242,10 +242,10 @@
 "jxT-CU-nIS.title" = "格式";
 
 /* Class = "NSMenu"; title = "Documentations"; ObjectID = "jYQ-AF-wIJ"; */
-"jYQ-AF-wIJ.title" = "Documentations";
+"jYQ-AF-wIJ.title" = "文献";
 
 /* Class = "NSTextFieldCell"; title = "Languages"; ObjectID = "K7T-KM-ZRz"; */
-"K7T-KM-ZRz.title" = "Languages";
+"K7T-KM-ZRz.title" = "语言";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "显示所有";
@@ -353,7 +353,7 @@
 "Rqc-34-cIF.title" = "上标";
 
 /* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "RT7-FS-H5T"; */
-"RT7-FS-H5T.title" = "*To apply this change, you must restart the app";
+"RT7-FS-H5T.title" = "*要应用此更改，您必须重新启动应用程序";
 
 /* Class = "NSMenuItem"; title = "Select All"; ObjectID = "Ruw-6m-B2m"; */
 "Ruw-6m-B2m.title" = "全选";
@@ -383,7 +383,7 @@
 "tMo-jU-Ud8.title" = "Kexts安装程序";
 
 /* Class = "NSMenuItem"; title = "Documentations"; ObjectID = "toU-XT-mIr"; */
-"toU-XT-mIr.title" = "Documentations";
+"toU-XT-mIr.title" = "文献";
 
 /* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
 "tRr-pd-1PS.title" = "数据检测器";
@@ -461,7 +461,7 @@
 "z6F-FW-3nz.title" = "显示替换";
 
 /* Class = "NSMenuItem"; title = "HEX Converter"; ObjectID = "zH2-BD-jRb"; */
-"zH2-BD-jRb.title" = "HEX Converter";
+"zH2-BD-jRb.title" = "十六进制转换器";
 
 /* Class = "NSMenuItem"; title = "Align Left"; ObjectID = "ZM1-6Q-yy1"; */
 "ZM1-6Q-yy1.title" = "左对齐";
