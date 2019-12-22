@@ -14,13 +14,13 @@
 "5Zf-0g-20b.headerCell.title" = "二进制文件路径";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables IOMapper support in XNU (VT-d), which may conflict with the firmware implementation.\nNote: This option is a preferred alternative to dropping DMAR ACPI table and disabling VT-d in firmware preferences, which does not break VT-d support in other systems in case they need it."; ObjectID = "6Aa-HL-hah"; */
-"6Aa-HL-hah.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disables IOMapper support in XNU (VT-d), which may conflict with the firmware implementation.\nNote: This option is a preferred alternative to dropping DMAR ACPI table and disabling VT-d in firmware preferences, which does not break VT-d support in other systems in case they need it.";
+"6Aa-HL-hah.ibShadowedToolTip" = "禁用vt-d，我们在BIOS里已经禁用vt-d了，这里我们选择NO就行了。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables kernel panic on setPowerState timeout.\nAn additional security measure was added to macOS Catalina (10.15) causing kernel panic on power change timeout for Apple drivers. Sometimes it may cause issues on misconfigured hardware, notably digital audio, which sometimes fails to wake up. For debug kernels setpowerstate_panic=0 boot argument should be used, which is otherwise equivalent to this quirk."; ObjectID = "6Mq-wE-cHt"; */
-"6Mq-wE-cHt.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disables kernel panic on setPowerState timeout.\nAn additional security measure was added to macOS Catalina (10.15) causing kernel panic on power change timeout for Apple drivers. Sometimes it may cause issues on misconfigured hardware, notably digital audio, which sometimes fails to wake up. For debug kernels setpowerstate_panic=0 boot argument should be used, which is otherwise equivalent to this quirk.";
+"6Mq-wE-cHt.ibShadowedToolTip" = "当你遇到睡眠不能唤醒，只有重启后才能睡眠唤醒，请试试选择YES。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Sequence of EAX, EBX, ECX, EDX values in Little Endian order to replace CPUID (1) call in XNU kernel.  Normally it is only the value of EAX that needs to be taken care of, which represents the exact CPUID. And the remainders are to be left as zeroes. For instance, A9 06 03 00 stands for CPUID 0x0306A9 (Ivy Bridge)."; ObjectID = "7Jq-Yr-TQY"; */
-"7Jq-Yr-TQY.ibShadowedToolTip" = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Sequence of EAX, EBX, ECX, EDX values in Little Endian order to replace CPUID (1) call in XNU kernel.  Normally it is only the value of EAX that needs to be taken care of, which represents the exact CPUID. And the remainders are to be left as zeroes. For instance, A9 06 03 00 stands for CPUID 0x0306A9 (Ivy Bridge).";
+"7Jq-Yr-TQY.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
 
 /* Class = "NSButtonCell"; title = "PanicNoKextDump"; ObjectID = "7u5-bu-FWR"; */
 "7u5-bu-FWR.title" = "PanicNoKextDump";
@@ -32,10 +32,10 @@
 "8qF-5E-PkG.title" = "DisableIoMapper";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n2. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel driver will not be blocked unless set to true.\n3. Identifier\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle identifier (e.g. com.apple.driver.AppleTyMCEDriver).\n4. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or older.\n5. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or newer."; ObjectID = "8UL-f2-RSc"; */
-"8UL-f2-RSc.ibShadowedToolTip" = "1.注释\n类型:plist字符串值\n默认值:空字符串\n描述:用于为条目提供人们可读参考的任意ASCII字符串.实现定义是否使用此值.\n2. 启用\n类型:plist布尔值\n默认值:false\n说明:除非设置为true，否则不会阻止此内核驱动程序.\n3. Identifier\n类型:plist字符串值\n默认值:空字符串\n描述:Kext包标识符（例如com.apple.driver.AppleTyMCEDriver）.\n4. 匹配内核\n类型:plist字符串值\n默认值:空字符串\n描述:仅在选定的macOS版本上阻止内核驱动程序.选择基于与内核版本的前缀匹配，即16.7.0将匹配macOS 10.12.6和16.将匹配任何macOS 10.12.x版本.";
+"8UL-f2-RSc.ibShadowedToolTip" = "禁用一些kexts，这里好像没啥用，不用理会。";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Base\nType: plist string\nDefault value: Empty string\nDescription: Selects symbol-matched base for patch lookup (or immediate replacement) by obtaining the address of provided symbol name. Can be set to empty string to be ignored.\n2. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Count\nType: plist integer\nDefault value: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n4. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel patch will not be used unless set to true.\n5. Find\nType: plist data\nDefault value: Empty data\nDescription: Data to find. Can be set to empty for immediate replacement at Base. Must equal to Replace in size otherwise.\n6. Identifier\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle identifier (e.g. com.apple.driver.AppleHDA) or kernel for kernel patch.\n7. Limit\nType: plist integer\nDefault value: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole kext or kernel.\n8. Mask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n9. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Patches data on specified macOS version or older.\n10. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Patches data on specified macOS version or newer.\n11. Replace\nType: plist data\nDefault value: Empty data\nDescription: Replacement data of one or more bytes.\n12. ReplaceMask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n13. Skip\nType: plist integer\nDefault value: 0\nDescription: Number of found occurrences to be skipped before replacement is done."; ObjectID = "9hf-l6-OjL"; */
-"9hf-l6-OjL.ibShadowedToolTip" = "1. Base\n类型:plist字符串值\n默认值:空字符串\n说明:通过获取提供的符号名称的地址，为补丁查找（或立即替换）选择符号匹配的基数.可以设置为空字符串以供忽略.\n2.注释\n类型:plist字符串值\n默认值:空字符串\n描述:用于为条目提供人类可读参考的任意ASCII字符串.它是实现定义是否使用此值.\n3. Count\n类型:plist integer\n默认值:0\n描述:要应用的修补程序匹配次数. 0将补丁应用于找到的所有匹配项.\n4. 启用\n类型:plist布尔值\n默认值:false\n描述:除非设置为true，否则不会使用此内核补丁.\n5.查找\n类型:plist数据\n默认值:空数据\n说明:要查找的数据.可以设置为空以便在Base立即更换.必须等于替换大小.\n6. Identifier\n类型:plist字符串值\nDefault值:空字符串\n描述:Kext包标识符（例如com.apple.driver.AppleHDA）或内核补丁的内核.\n7. Limit\n类型:plist integer\n默认值:0\n描述:要搜索的最大字节数.可以设置为0来查看整个kext或内核.\n8. Mask\n类型:plist数据\n默认值:空数据\n描述:在查找比较期间使用的数据按位掩码.通过忽略未屏蔽（设置为零）位来允许模糊搜索.可以设置为空数据以供忽略.必须等于替换大小.\n9. MatchKernel\n类型:plist字符串值\n默认值:空字符串\n描述:仅将内核驱动程序添加到选定的macOS版本.选择基于与内核版本的前缀匹配，即16.7.0将匹配macOS 10.12.6和16.将匹配任何macOS 10.12.x版本.\n10.替换\n类型:plist数据\n默认值:空数据\n描述:一个或多个字节的替换数据.\n11. ReplaceMask\n类型:plist data\n默认值:空数据\n描述:替换期间使用的数据按位掩码.通过更新屏蔽（设置为非零）位允许模糊替换.可以设置为空数据以供忽略.否则必须等于替换大小.\n12. Skip\n类型:plist integer\n默认值:0\n描述:在替换完成之前要跳过的发生次数.";
+"9hf-l6-OjL.ibShadowedToolTip" = "这里是为一些kext打补丁用的。\n我们可以看到样本里面有四个补丁，都是关闭着的，其中有两个是关于APPLE RTC的，这对于华硕主板来说相对比较重要，这里我们需要对appleRTC相关的两个补丁一一测试，打开—–Enabled—YES其中一个，即可。如果不行，关闭一个打开另一个。这样能解决华硕主板重启丢失BIOS设置以及需要按F1跳过安全模式，当然RTC仍然需要进一步的设置。";
 
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "9tr-6R-vGd"; */
 "9tr-6R-vGd.label" = "补丁";
@@ -50,7 +50,7 @@
 "70E-le-Wpc.headerCell.title" = "匹配内核";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in XNU kernel, commonly causing early kernel panic, when it is locked from writing (XCPM power management).\nNote: This option should avoided whenever possible. Modern firmwares provide CFG Lock setting, disabling which is much cleaner. More details about the issue can be found in VerifyMsrE2 notes."; ObjectID = "677-hy-Blh"; */
-"677-hy-Blh.ibShadowedToolTip" = "类型:plist布尔值\n默认值:false\n说明:在XNU内核中禁用PKG_CST_CONFIG_CONTROL（0xE2）MSR修改，通常导致早期内核崩溃，当它被写入锁定（XCPM电源管理）时.\n注意:应尽可能避免使用此选项.现代固件提供CFG锁定设置，禁用更清晰.有关该问题的更多详细信息，请参阅VerifyMsrE2说明.";
+"677-hy-Blh.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG锁。如何解CFG锁网上有详细教程。如果你不会解这个锁，你就选择YES，解锁的情况下选择NO。注意，CFG的解锁对之后的进阶教程相关度极高，有能力还是解一下吧！";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier*"; ObjectID = "838-ax-A45"; */
 "838-ax-A45.headerCell.title" = "*Identifier";
@@ -59,13 +59,13 @@
 "aAH-qz-ikl.headerCell.title" = "Skip";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Performs GUID patching for UpdateSMBIOSMode Custom mode. Usually relevant for Dell laptops."; ObjectID = "alh-j7-rix"; */
-"alh-j7-rix.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Performs GUID patching for UpdateSMBIOSMode Custom mode. Usually relevant for Dell laptops.";
+"alh-j7-rix.ibShadowedToolTip" = "戴尔笔记本专用项，选择NO。";
 
 /* Class = "NSTextFieldCell"; title = "Cpuid1Data"; ObjectID = "aVm-Of-4z9"; */
 "aVm-Of-4z9.title" = "Cpuid1Data";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Prevent kernel from printing kext dump in the panic log preventing from observing panic details. Affects 10.13 and above."; ObjectID = "axF-O3-KF9"; */
-"axF-O3-KF9.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Prevent kernel from printing kext dump in the panic log preventing from observing panic details. Affects 10.13 and above.";
+"axF-O3-KF9.ibShadowedToolTip" = "防止kext出错打报告而让我们看不到真正的panic原因，这个随便选，选择NO。";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Cmr-kR-Uyo"; */
 "Cmr-kR-Uyo.title" = "Text Cell";
@@ -86,7 +86,7 @@
 "fdF-Cg-rT9.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nNote: This option should avoided whenever possible. Modern firmwares provide CFG Lock setting, disabling which is much cleaner. More details about the issue can be found in VerifyMsrE2 notes."; ObjectID = "FUx-RJ-QTK"; */
-"FUx-RJ-QTK.ibShadowedToolTip" = "类型:plist布尔值\n默认值:false\n说明:在AppleIntelCPUPowerManage- ment.kext中禁用PKG_CST_CONFIG_CONTROL（0xE2）MSR修改，通常会导致早期内核崩溃，当它被写入锁定时.\n注意:应尽可能避免使用此选项.现代固件提供CFG锁定设置，禁用更清晰.有关该问题的更多详细信息，请参阅VerifyMsrE2说明.";
+"FUx-RJ-QTK.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG锁。如何解CFG锁网上有详细教程。如果你不会解这个锁，你就选择YES，解锁的情况下选择NO。注意，CFG的解锁对之后的进阶教程相关度极高，有能力还是解一下吧！";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Fyx-g5-kO8"; */
 "Fyx-g5-kO8.title" = "Text Cell";
@@ -95,7 +95,7 @@
 "GcD-Hq-Pnt.headerCell.title" = "查找";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "gFl-jZ-XPd"; */
-"gFl-jZ-XPd.headerCell.title" = "MaxKernel";
+"gFl-jZ-XPd.headerCell.title" = "最大内核";
 
 /* Class = "NSTabViewItem"; label = "Block"; ObjectID = "gy1-1j-jtJ"; */
 "gy1-1j-jtJ.label" = "阻止";
@@ -104,7 +104,7 @@
 "H8d-aU-LbU.headerCell.title" = "Plist文件路径";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "IQk-iw-L5E"; */
-"IQk-iw-L5E.headerCell.title" = "MaxKernel";
+"IQk-iw-L5E.headerCell.title" = "最大内核";
 
 /* Class = "NSTableColumn"; headerCell.title = "Mask"; ObjectID = "IQu-iO-MYc"; */
 "IQu-iO-MYc.headerCell.title" = "Mask";
@@ -149,13 +149,13 @@
 "mWg-wh-eGt.label" = "添加";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables kernel panic on LAPIC interrupts."; ObjectID = "nsg-T6-DJT"; */
-"nsg-T6-DJT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disables kernel panic on LAPIC interrupts.";
+"nsg-T6-DJT.ibShadowedToolTip" = "适用于HP笔记本的内核奔溃选项，选择NO。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "nyt-5D-3es"; */
 "nyt-5D-3es.headerCell.title" = "Limit";
 
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "Oe6-LD-h7w"; */
-"Oe6-LD-h7w.headerCell.title" = "BundlePath *";
+"Oe6-LD-h7w.headerCell.title" = "捆绑路径 *";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "pBF-vL-NEU"; */
 "pBF-vL-NEU.title" = "Text Cell";
@@ -164,7 +164,7 @@
 "PdE-OW-Faw.headerCell.title" = "启用";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "BundlePath\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle path (e.g. Lilu.kext or MyKext.kext/Contents/PlugIns/MySubKext.kext).\n2. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel driver will not be added unless set to true.\n4. ExecutablePath\nType: plist string\nDefault value: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/Lilu).\n5. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or older.\n6. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or newer.\n7. PlistPath\nType: plist string\nDefault value: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist)."; ObjectID = "pIA-W6-XA0"; */
-"pIA-W6-XA0.ibShadowedToolTip" = "BundlePath\n类型:plist字符串值\n默认值:空字符串\n描述:Kext包路径（例如Lilu.kext或MyKext.kext/Contents/PlugIns/MySubKext.kext）.\n2.注释\n类型:plist字符串值\n默认值:空字符串\n描述:用于为条目提供人类可读参考的任意ASCII字符串.它是实现定义是否使用此值.\n3. 启用\n类型:plist布尔值\n默认值:false\n说明:除非设置为true，否则不会添加此内核驱动程序.\n4. ExecutablePath\n类型:plist字符串值\n默认值:空字符串\n描述:相对于包的Kext可执行路径（例如Contents/MacOS/Lilu）.\n5. MatchKernel\n类型:plist字符串值默认值:空字符串\n描述:仅在选定的macOS版本上阻止内核驱动程序.选择基于与内核版本的前缀匹配，即16.7.0将匹配macOS 10.12.6和16.将匹配任何macOS 10.12.x版本.\n6. PlistPath\n类型:plist字符串值\n默认值:空字符串\n描述:相对于包的Kext Info.plist路径（例如Contents/Info.plist）.";
+"pIA-W6-XA0.ibShadowedToolTip" = "这里我们需要填写kexts的相关资料。值得注意的是OC的kexts填写必须注意顺序，比如applealc的依赖是lilu，那么lilu必须填在第一个；SMCProcessor.kext依赖于Virtualsmc.kext。那virtualsmc必须放在SMCProcessor.kext之前。";
 
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "QBz-fY-8R7"; */
 "QBz-fY-8R7.title" = "Quirks";
@@ -173,7 +173,7 @@
 "QFu-g8-V6L.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Patch various kexts (AppleUSBXHCI.kext, AppleUSBXHCIPCI.kext, IOUSBHostFamily.kext) to remove USB port count limit of 15 ports.\nNote: This option should avoided whenever possible. USB port limit is imposed by the amount of used bits in locationID format and there is no possible way to workaround this without heavy OS modification. The only valid solution is to limit the amount of used ports to 15 (discarding some)."; ObjectID = "QzX-0b-2d3"; */
-"QzX-0b-2d3.ibShadowedToolTip" = "类型:plist布尔值\n默认值:false\n说明:修补各种kexts（AppleUSBXHCI.kext，AppleUSBXHCIPCI.kext，IOUSBHostFamily.kext）以删除15个端口的USB端口数限制.\n注意:应尽可能避免使用此选项. USB端口限制是由locationID格式中使用的位数量强加的，并且没有可能的方法来解决此问题，而无需进行大量的OS修改.唯一有效的解决方案是将已使用端口的数量限制为15（丢弃一些）.";
+"QzX-0b-2d3.ibShadowedToolTip" = "解除15个端口限制，如果USB端口已经定制，请选择NO。";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "R4k-zr-5Vn"; */
 "R4k-zr-5Vn.title" = "Text Cell";
@@ -185,7 +185,7 @@
 "sEP-Mn-DyN.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\nNote: This option should avoided whenever possible. Modern firmwares usually have compatible AHCI controllers."; ObjectID = "SGM-P1-Mz5"; */
-"SGM-P1-Mz5.ibShadowedToolTip" = "类型:plist布尔值\n默认值:false\n说明:将图标类型修补程序应用于IOAHCIPort.kext以强制所有AHCI磁盘的内部磁盘图标.\n注意:应尽可能避免使用此选项.现代固件通常具有兼容的AHCI控制器.";
+"SGM-P1-Mz5.ibShadowedToolTip" = "AHCI控制器相关，现在的主板都对AHCI支持的很好，一般选择NO。";
 
 /* Class = "NSButtonCell"; title = "ExternalDiskIcons"; ObjectID = "SHQ-fm-Uec"; */
 "SHQ-fm-Uec.title" = "ExternalDiskIcons";
@@ -197,10 +197,10 @@
 "Uss-2e-73V.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables multiple MSR access critical for select CPUs, which have no native XCPM support.\nThis is normally used in conjunction with Emulate section on Haswell-E, Broadwell-E, Skylake-X, and similar CPUs.\nNote: Additional not provided patches will be required for Ivy Bridge or Pentium CPUs. It is recommended to use AppleIntelCpuPowerManagement.kext for the former."; ObjectID = "v6y-N9-uHT"; */
-"v6y-N9-uHT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disables multiple MSR access critical for select CPUs, which have no native XCPM support.\nThis is normally used in conjunction with Emulate section on Haswell-E, Broadwell-E, Skylake-X, and similar CPUs.\nNote: Additional not provided patches will be required for Ivy Bridge or Pentium CPUs. It is recommended to use AppleIntelCpuPowerManagement.kext for the former.";
+"v6y-N9-uHT.ibShadowedToolTip" = "主要在没有原生电源管理的CPU上启用，一般是Haswell-E, Broadwell-E, Skylake-X这三种CPU需要填写YES。除此之外的CPU选择NO。";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "VgW-t5-zY9"; */
-"VgW-t5-zY9.title" = "允许多项选择";
+"VgW-t5-zY9.title" = "可以多项选择";
 
 /* Class = "NSButtonCell"; title = "ThirdPartyDrives"; ObjectID = "w0k-rY-QSy"; */
 "w0k-rY-QSy.title" = "ThirdPartyTrim";
@@ -209,19 +209,19 @@
 "w5E-ff-NpB.headerCell.title" = "匹配内核";
 
 /* Class = "NSBox"; title = "Emulate"; ObjectID = "wEr-yw-cwt"; */
-"wEr-yw-cwt.title" = "Emulate";
+"wEr-yw-cwt.title" = "模拟CPU信息";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "WGU-Ke-n07"; */
 "WGU-Ke-n07.title" = "浏览";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise."; ObjectID = "WQz-t0-GJT"; */
-"WQz-t0-GJT.ibShadowedToolTip" = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise.";
+"WQz-t0-GJT.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
 
 /* Class = "NSTextFieldCell"; title = "Cpuid1Mask"; ObjectID = "xNJ-1G-bdS"; */
 "xNJ-1G-bdS.title" = "Cpuid1Mask";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Apply vendor patches to IOAHCIBlockStorage.kext to enable native features for third-party drives, such as TRIM on SSDs or hibernation support on 10.15 and newer.\nNote: This option may be avoided on user preference. NVMe SSDs are compatible without the change. For AHCI SSDs on modern macOS version there is a dedicated built-in utility called trimforce. Starting from 10.15 this utility creates EnableTRIM variable in APPLE_BOOT_VARIABLE_GUID namespace with 01 00 00 00 value."; ObjectID = "yhV-cY-frg"; */
-"yhV-cY-frg.ibShadowedToolTip" = "类型:plist布尔值\n默认值:false\n描述:修补IOAHCIFamily.kext以强制AHCI SSD上的TRIM命令支持.\n注意:应尽可能避免使用此选项. NVMe SSD兼容，无需更改.对于现代macOS版本的AHCI SSD，有一个名为trimforce的专用内置实用程序.";
+"yhV-cY-frg.ibShadowedToolTip" = "开启Sata类SSD的trim功能，自行根据情况选择。";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ysn-Z2-RiG"; */
 "ysn-Z2-RiG.title" = "Text Cell";
