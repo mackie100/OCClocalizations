@@ -1,4 +1,3 @@
-
 /* Class = "NSButtonCell"; title = "DiscardHibernateMap"; ObjectID = "2QZ-Md-QHk"; */
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
 
@@ -7,9 +6,6 @@
 
 /* Class = "NSButtonCell"; title = "EnableSafeModeSlide"; ObjectID = "9lc-VM-DSq"; */
 "9lc-VM-DSq.title" = "EnableSafeModeSlide";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Crv-cC-7u6"; */
-"Crv-cC-7u6.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reuse original hibernate memory map.\nThis option forces XNU kernel to ignore newly supplied memory map and assume that it did not change after waking from hibernation. This behaviour is required to work by Windows, which mandates to preserve runtime memory size and location after S4 wake.\nNote: This may be used to workaround buggy memory maps on older hardware, and is now considered rare legacy. Examples of such hardware are Ivy Bridge laptops with Insyde firmware, like Acer V3-571G. Do not use this unless you fully understand the consequences."; ObjectID = "ELB-6s-GBW"; */
 "ELB-6s-GBW.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reuse original hibernate memory map.\nThis option forces XNU kernel to ignore newly supplied memory map and assume that it did not change after waking from hibernation. This behaviour is required to work by Windows, which mandates to preserve runtime memory size and location after S4 wake.\nNote: This may be used to workaround buggy memory maps on older hardware, and is now considered rare legacy. Examples of such hardware are Ivy Bridge laptops with Insyde firmware, like Acer V3-571G. Do not use this unless you fully understand the consequences.";
@@ -55,9 +51,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this unless you fully understand the consequences."; ObjectID = "cTN-CD-c3M"; */
 "cTN-CD-c3M.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this unless you fully understand the consequences.";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "iif-MH-SzS"; */
-"iif-MH-SzS.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Attempt to join similar memory map entries.\nSelect firmwares have very large memory maps, which do not fit Apple kernel, permitting up to 64 slots for runtime memory. This quirk attempts to unify contiguous slots of similar types to prevent boot failures.\nNote: The necessity of this quirk is determined by early boot failures. It is rare to need this quirk on Haswell or newer. Do not use unless you fully understand the consequences."; ObjectID = "jED-s6-e14"; */
 "jED-s6-e14.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Attempt to join similar memory map entries.\nSelect firmwares have very large memory maps, which do not fit Apple kernel, permitting up to 64 slots for runtime memory. This quirk attempts to unify contiguous slots of similar types to prevent boot failures.\nNote: The necessity of this quirk is determined by early boot failures. It is rare to need this quirk on Haswell or newer. Do not use unless you fully understand the consequences.";

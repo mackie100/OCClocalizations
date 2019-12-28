@@ -1,15 +1,8 @@
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Reset BGRT table Displayed status field to false.\nThis works around firmwares that provide BGRT table but fail to handle screen updates afterwards."; ObjectID = "0zY-cF-e9r"; */
 "0zY-cF-e9r.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Reset BGRT table Displayed status field to false.\nThis works around firmwares that provide BGRT table but fail to handle screen updates afterwards.";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1y3-Ud-IW4"; */
-"1y3-Ud-IW4.title" = "Text Cell";
-
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n2. Count\nType: plist integer\nDefault value: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n3. Enabled\nType: plist boolean\nDefault value: false\nDescription: This ACPI patch will not be used unless set to true.\n4. Find\nType: plist data\nDefault value: Empty data\nDescription: Data to find. Must equal to Replace in size.\n5. Limit\nType: plist integer\nDefault value: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole ACPI table.\n6. Mask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n7. OemTableId\nType: plist data, 8 bytes\nDefault value: All zero\nDescription: Match table OEM ID to be equal to this value unless all zero.\n8. Replace\nType: plist data\nDefault value: Empty data\nDescription: Replacement data of one or more bytes.\n9. ReplaceMask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n10. Skip\nType: plist integer\nDefault value: 0\nDescription: Number of found occurrences to be skipped before replacement is done.\n11. TableLength\nType: plist integer\nDefault value: 0\nDescription: Match table size to be equal to this value unless 0.\n12. TableSignature Type:\ntextttplist data, 4 bytes\nDefault value: All zero\nDescription: Match table signature to be equal to this value unless all zero."; ObjectID = "2tM-Ig-MFJ"; */
 "2tM-Ig-MFJ.ibShadowedToolTip" = "1. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n2. Count\nType: plist integer\nDefault value: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n3. Enabled\nType: plist boolean\nDefault value: false\nDescription: This ACPI patch will not be used unless set to true.\n4. Find\nType: plist data\nDefault value: Empty data\nDescription: Data to find. Must equal to Replace in size.\n5. Limit\nType: plist integer\nDefault value: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole ACPI table.\n6. Mask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n7. OemTableId\nType: plist data, 8 bytes\nDefault value: All zero\nDescription: Match table OEM ID to be equal to this value unless all zero.\n8. Replace\nType: plist data\nDefault value: Empty data\nDescription: Replacement data of one or more bytes.\n9. ReplaceMask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n10. Skip\nType: plist integer\nDefault value: 0\nDescription: Number of found occurrences to be skipped before replacement is done.\n11. TableLength\nType: plist integer\nDefault value: 0\nDescription: Match table size to be equal to this value unless 0.\n12. TableSignature Type:\ntextttplist data, 4 bytes\nDefault value: All zero\nDescription: Match table signature to be equal to this value unless all zero.";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4ge-iF-rzs"; */
-"4ge-iF-rzs.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "Mask"; ObjectID = "4j9-uJ-Gbu"; */
 "4j9-uJ-Gbu.headerCell.title" = "Mask";
@@ -41,17 +34,11 @@
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "JFF-S2-t99"; */
 "JFF-S2-t99.headerCell.title" = "ReplaceMask";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "JHr-ID-iss"; */
-"JHr-ID-iss.title" = "Text Cell";
-
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "JjS-7V-0PV"; */
 "JjS-7V-0PV.headerCell.title" = "Comment";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "K4n-vm-jxn"; */
 "K4n-vm-jxn.headerCell.title" = "Find";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "KC1-Az-d7o"; */
-"KC1-Az-d7o.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableLength"; ObjectID = "MtH-av-7W0"; */
 "MtH-av-7W0.headerCell.title" = "TableLength";
@@ -74,93 +61,6 @@
 /* Class = "NSButtonCell"; title = "ResetHwSig"; ObjectID = "Z6k-wb-4yC"; */
 "Z6k-wb-4yC.title" = "ResetHwSig";
 
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[0] = "DSDT"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[0]" = "DSDT";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[1] = "SSDT"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[1]" = "SSDT";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[2] = "HPET"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[2]" = "HPET";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[3] = "ECDT"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[3]" = "ECDT";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[4] = "BGRT"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[4]" = "BGRT";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[5] = "MCFG"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[5]" = "MCFG";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[6] = "DMAR"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[6]" = "DMAR";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[7] = "APIC"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[7]" = "APIC";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[8] = "ASFT"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[8]" = "ASFT";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[9] = "SBST"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[9]" = "SBST";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[10] = "SLIC"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[10]" = "SLIC";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[11] = "MATS"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[11]" = "MATS";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[12] = "BATB"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[12]" = "BATB";
-
-/* Class = "NSComboBoxCell"; ZBj-yM-m1X.ibShadowedObjectValues[13] = "UEFI"; ObjectID = "ZBj-yM-m1X"; Note = "Do Not Translate"; */
-"ZBj-yM-m1X.ibShadowedObjectValues[13]" = "UEFI";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ZDk-rv-0B8"; */
-"ZDk-rv-0B8.title" = "Text Cell";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[0] = "DSDT"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[0]" = "DSDT";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[1] = "SSDT"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[1]" = "SSDT";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[2] = "HPET"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[2]" = "HPET";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[3] = "ECDT"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[3]" = "ECDT";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[4] = "BGRT"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[4]" = "BGRT";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[5] = "MCFG"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[5]" = "MCFG";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[6] = "DMAR"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[6]" = "DMAR";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[7] = "APIC"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[7]" = "APIC";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[8] = "ASFT"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[8]" = "ASFT";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[9] = "SBST"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[9]" = "SBST";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[10] = "SLIC"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[10]" = "SLIC";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[11] = "MATS"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[11]" = "MATS";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[12] = "BATB"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[12]" = "BATB";
-
-/* Class = "NSComboBoxCell"; bvO-11-fFB.ibShadowedObjectValues[13] = "UEFI"; ObjectID = "bvO-11-fFB"; Note = "Do Not Translate"; */
-"bvO-11-fFB.ibShadowedObjectValues[13]" = "UEFI";
-
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "c8a-dM-DNw"; */
 "c8a-dM-DNw.headerCell.title" = "Enabled";
 
@@ -169,9 +69,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Cleanup ACPI header fields to workaround macOS ACPI implementation bug causing boot crashes. Reference: Debugging AppleACPIPlatform on 10.13 by Alex James aka theracermaster. The issue is fixed in macOS Mojave (10.14)."; ObjectID = "eza-Xg-dPF"; */
 "eza-Xg-dPF.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Cleanup ACPI header fields to workaround macOS ACPI implementation bug causing boot crashes. Reference: Debugging AppleACPIPlatform on 10.13 by Alex James aka theracermaster. The issue is fixed in macOS Mojave (10.14).";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "f0q-er-e8x"; */
-"f0q-er-e8x.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "ResetLogoStatus"; ObjectID = "fCv-Py-taQ"; */
 "fCv-Py-taQ.title" = "ResetLogoStatus";
@@ -194,14 +91,8 @@
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "jB3-Fa-Mq9"; */
 "jB3-Fa-Mq9.label" = "Patch";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "jpv-nh-3hV"; */
-"jpv-nh-3hV.title" = "Text Cell";
-
 /* Class = "NSButtonCell"; title = "FadtEnableReset"; ObjectID = "l7b-Bk-2B3"; */
 "l7b-Bk-2B3.title" = "FadtEnableReset";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "m5F-XW-bvn"; */
-"m5F-XW-bvn.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableSignature*"; ObjectID = "mHJ-L1-J8M"; */
 "mHJ-L1-J8M.headerCell.title" = "TableSignature*";
@@ -214,9 +105,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmwares that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation."; ObjectID = "u3f-B9-p1e"; */
 "u3f-B9-p1e.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmwares that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation.";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "usK-nO-Trh"; */
-"usK-nO-Trh.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableSignature*"; ObjectID = "wld-sU-lGp"; */
 "wld-sU-lGp.headerCell.title" = "TableSignature*";

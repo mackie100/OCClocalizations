@@ -1,12 +1,8 @@
-
 /* Class = "NSTableColumn"; headerCell.title = "Description"; ObjectID = "21B-Cb-fUA"; */
 "21B-Cb-fUA.headerCell.title" = "Description";
 
 /* Class = "NSButton"; ibShadowedToolTip = "reload data"; ObjectID = "3Ug-4D-KT5"; */
 "3Ug-4D-KT5.ibShadowedToolTip" = "reload data";
-
-/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "4yj-f5-alg"; */
-"4yj-f5-alg.title" = "Item 1";
 
 /* Class = "NSBox"; title = "Status"; ObjectID = "65j-hw-8RJ"; */
 "65j-hw-8RJ.title" = "Status";
@@ -14,23 +10,11 @@
 /* Class = "NSBox"; title = "Box"; ObjectID = "B3V-wJ-Liu"; */
 "B3V-wJ-Liu.title" = "Box";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Ee6-bl-ijA"; */
-"Ee6-bl-ijA.title" = "Text Cell";
-
-/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "Eg6-g1-Sl9"; */
-"Eg6-g1-Sl9.title" = "Item 3";
-
 /* Class = "NSButtonCell"; title = "Download"; ObjectID = "GKG-QM-bIL"; */
 "GKG-QM-bIL.title" = "Download";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IP1-F9-2RM"; */
-"IP1-F9-2RM.title" = "Text Cell";
-
 /* Class = "NSTextFieldCell"; title = "Driver Not Installed"; ObjectID = "LIE-Ta-kNn"; */
 "LIE-Ta-kNn.title" = "Driver Not Installed";
-
-/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "PG7-IF-IYy"; */
-"PG7-IF-IYy.title" = "Item 2";
 
 /* Class = "NSButton"; ibShadowedToolTip = "open partition"; ObjectID = "Pa0-us-lAL"; */
 "Pa0-us-lAL.ibShadowedToolTip" = "open partition";
@@ -47,12 +31,6 @@
 /* Class = "NSButtonCell"; title = "Backup driver"; ObjectID = "WeO-Rr-T3c"; */
 "WeO-Rr-T3c.title" = "Backup driver";
 
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "ZJY-iW-YJl"; */
-"ZJY-iW-YJl.title" = "Table View Cell";
-
-/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "ZJn-ee-beb"; */
-"ZJn-ee-beb.title" = "OtherViews";
-
 /* Class = "NSTableColumn"; headerCell.title = "Delete"; ObjectID = "eVi-uB-Nnf"; */
 "eVi-uB-Nnf.headerCell.title" = "Delete";
 
@@ -64,12 +42,6 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Installed"; ObjectID = "jcQ-eq-FLX"; */
 "jcQ-eq-FLX.headerCell.title" = "Installed";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "uiI-JB-VfH"; */
-"uiI-JB-VfH.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "wiv-Tz-up0"; */
-"wiv-Tz-up0.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Driver Installed"; ObjectID = "yDU-1k-6MS"; */
 "yDU-1k-6MS.title" = "Driver Installed";
