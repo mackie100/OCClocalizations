@@ -1,4 +1,3 @@
-
 /* Class = "NSButtonCell"; title = "AppleImageConversion"; ObjectID = "0AM-nb-Yrd"; */
 "0AM-nb-Yrd.title" = "AppleImageConversion";
 
@@ -110,9 +109,6 @@
 /* Class = "NSButtonCell"; title = "UnicodeCollation"; ObjectID = "ZCa-Hx-UFl"; */
 "ZCa-Hx-UFl.title" = "UnicodeCollation";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "a9h-1T-4UC"; */
-"a9h-1T-4UC.title" = "Text Cell";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Event protocol with a builtin version. This may be used to ensure File Vault 2 compatibility on VMs or legacy Macs."; ObjectID = "aUv-Bv-xUd"; */
 "aUv-Bv-xUd.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Event protocol with a builtin version. This may be used to ensure File Vault 2 compatibility on VMs or legacy Macs.";
 
@@ -169,18 +165,6 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Assume simultaneous combination for keys submitted within this timeout in milliseconds.\nSimilarly to KeyForgetThreshold, this option works around the sequential nature of key submission. To be able to recognise simultaneously pressed keys in the situation when all keys arrive sequentially, we are required to set a timeout within which we assume the keys were pressed together.\nHolding multiple keys results in reports every 2 and 1 milliseconds for VMware and APTIO V respectively. Pressing keys one after the other results in delays of at least 6 and 10 milliseconds for the same platforms. The recommended value for this option is 2 milliseconds, but it may be decreased for faster platforms and increased for slower."; ObjectID = "kKb-0m-i9e"; */
 "kKb-0m-i9e.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Assume simultaneous combination for keys submitted within this timeout in milliseconds.\nSimilarly to KeyForgetThreshold, this option works around the sequential nature of key submission. To be able to recognise simultaneously pressed keys in the situation when all keys arrive sequentially, we are required to set a timeout within which we assume the keys were pressed together.\nHolding multiple keys results in reports every 2 and 1 milliseconds for VMware and APTIO V respectively. Pressing keys one after the other results in delays of at least 6 and 10 milliseconds for the same platforms. The recommended value for this option is 2 milliseconds, but it may be decreased for faster platforms and increased for slower.";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[0] = "Auto"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[0]" = "Auto";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[1] = "V1"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[1]" = "V1";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[2] = "V2"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[2]" = "V2";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[3] = "AMI"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[3]" = "AMI";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs."; ObjectID = "nvr-JF-3ne"; */
 "nvr-JF-3ne.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs.";

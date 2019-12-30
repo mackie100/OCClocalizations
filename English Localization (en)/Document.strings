@@ -1,4 +1,3 @@
-
 /* Class = "NSButtonCell"; title = "Convert"; ObjectID = "0aV-Eb-8qw"; */
 "0aV-Eb-8qw.title" = "Convert";
 
@@ -8,20 +7,11 @@
 /* Class = "NSTextFieldCell"; placeholderString = "decimal string"; ObjectID = "1eQ-W8-62W"; */
 "1eQ-W8-62W.placeholderString" = "decimal string";
 
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "4O2-De-QQ2"; */
-"4O2-De-QQ2.title" = "Table View Cell";
-
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "JAx-y1-wHm"; */
-"JAx-y1-wHm.title" = "Table View Cell";
-
 /* Class = "NSButtonCell"; title = "Convert"; ObjectID = "L6E-fs-t82"; */
 "L6E-fs-t82.title" = "Convert";
 
 /* Class = "NSButtonCell"; title = "counter"; ObjectID = "LpB-5y-cZ1"; */
 "LpB-5y-cZ1.title" = "counter";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Nij-FR-hZT"; */
-"Nij-FR-hZT.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Search (⌘F)"; ObjectID = "Wd6-KD-rqx"; */
 "Wd6-KD-rqx.title" = "Search (⌘F)";
@@ -62,9 +52,6 @@
 /* Class = "NSTextFieldCell"; placeholderString = "HEX string"; ObjectID = "iz4-4Z-DYP"; */
 "iz4-4Z-DYP.placeholderString" = "HEX string";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "sm1-gp-Qvq"; */
-"sm1-gp-Qvq.title" = "Text Cell";
-
 /* Class = "NSTextFieldCell"; placeholderString = "text string"; ObjectID = "tkM-CK-U6F"; */
 "tkM-CK-U6F.placeholderString" = "text string";
 
@@ -73,9 +60,6 @@
 
 /* Class = "NSSegmentedCell"; u7m-Vd-Pjj.ibShadowedLabels[1] = "decode"; ObjectID = "u7m-Vd-Pjj"; */
 "u7m-Vd-Pjj.ibShadowedLabels[1]" = "decode";
-
-/* Class = "NSWindow"; title = "Window"; ObjectID = "xOd-HO-29H"; */
-"xOd-HO-29H.title" = "Window";
 
 /* Class = "NSTextFieldCell"; placeholderString = "HEX string"; ObjectID = "zuA-oZ-HSG"; */
 "zuA-oZ-HSG.placeholderString" = "HEX string";

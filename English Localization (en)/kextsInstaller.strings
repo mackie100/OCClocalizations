@@ -1,4 +1,3 @@
-
 /* Class = "NSButtonCell"; title = "SMCProcessor"; ObjectID = "0Hr-0F-FV6"; */
 "0Hr-0F-FV6.title" = "SMCProcessor";
 
@@ -17,9 +16,6 @@
 /* Class = "NSTextFieldCell"; title = "[*]drag and drop to table for manual installation"; ObjectID = "9WO-06-2fp"; */
 "9WO-06-2fp.title" = "[*]drag and drop to table for manual installation";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Aiu-CK-iu2"; */
-"Aiu-CK-iu2.title" = "Text Cell";
-
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "Cu7-TT-odD"; */
 "Cu7-TT-odD.title" = "Select";
 
@@ -29,14 +25,8 @@
 /* Class = "NSButtonCell"; title = "Install"; ObjectID = "EAo-vi-RTS"; */
 "EAo-vi-RTS.title" = "Install";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "GXr-Pa-yGE"; */
-"GXr-Pa-yGE.title" = "Text Cell";
-
 /* Class = "NSButtonCell"; title = "HWMonitor"; ObjectID = "Gc8-yC-f8T"; */
 "Gc8-yC-f8T.title" = "HWMonitor";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "IbA-qA-JuK"; */
-"IbA-qA-JuK.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "SMCSuperIO"; ObjectID = "Oqq-A2-PX5"; */
 "Oqq-A2-PX5.title" = "SMCSuperIO";
@@ -53,20 +43,11 @@
 /* Class = "NSButtonCell"; title = "GPUSensors"; ObjectID = "Z6y-49-dIn"; */
 "Z6y-49-dIn.title" = "GPUSensors";
 
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "ZFr-xR-gm7"; */
-"ZFr-xR-gm7.title" = "Table View Cell";
-
-/* Class = "NSButtonCell"; title = "Radio"; ObjectID = "ZQx-dd-Qs3"; */
-"ZQx-dd-Qs3.title" = "Radio";
-
 /* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "aPa-sD-90t"; */
 "aPa-sD-90t.headerCell.title" = "Name";
 
 /* Class = "NSWindow"; title = "VirtualSMC Detected"; ObjectID = "c22-Ac-LFY"; */
 "c22-Ac-LFY.title" = "VirtualSMC Detected";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "c4X-ln-WxS"; */
-"c4X-ln-WxS.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "Download"; ObjectID = "eiG-ge-aFx"; */
 "eiG-ge-aFx.title" = "Download";
@@ -77,26 +58,17 @@
 /* Class = "NSButtonCell"; title = "Install"; ObjectID = "haE-Pd-ckC"; */
 "haE-Pd-ckC.title" = "Install";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "kfg-Mu-3aK"; */
-"kfg-Mu-3aK.title" = "Text Cell";
-
 /* Class = "NSTableColumn"; headerCell.title = "Version"; ObjectID = "mCG-e2-oRh"; */
 "mCG-e2-oRh.headerCell.title" = "Version";
 
 /* Class = "NSButtonCell"; title = "SMCBatteryManager"; ObjectID = "mgy-Nm-mcA"; */
 "mgy-Nm-mcA.title" = "SMCBatteryManager";
 
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "n3d-Ex-CTU"; */
-"n3d-Ex-CTU.title" = "Table View Cell";
-
 /* Class = "NSButtonCell"; title = "ACPISensors"; ObjectID = "neN-8J-DX9"; */
 "neN-8J-DX9.title" = "ACPISensors";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Open Folder"; ObjectID = "o31-92-wcY"; */
 "o31-92-wcY.ibShadowedToolTip" = "Open Folder";
-
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "rWY-Dm-qHt"; */
-"rWY-Dm-qHt.title" = "Table View Cell";
 
 /* Class = "NSBox"; title = "Status"; ObjectID = "rk5-54-iPh"; */
 "rk5-54-iPh.title" = "Status";
@@ -118,9 +90,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Delete"; ObjectID = "xLd-aS-xuu"; */
 "xLd-aS-xuu.ibShadowedToolTip" = "Delete";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ylt-Al-0gg"; */
-"ylt-Al-0gg.title" = "Text Cell";
 
 /* Class = "NSButtonCell"; title = "CPUSensors"; ObjectID = "yyM-ue-Kqj"; */
 "yyM-ue-Kqj.title" = "CPUSensors";

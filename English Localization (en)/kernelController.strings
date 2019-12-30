@@ -1,18 +1,11 @@
-
 /* Class = "NSButtonCell"; title = "AppleXcpmCfgLock"; ObjectID = "0Ld-KH-eQW"; */
 "0Ld-KH-eQW.title" = "AppleXcpmCfgLock";
 
 /* Class = "NSButtonCell"; title = "LapicKernelPanic"; ObjectID = "0Ri-rB-uca"; */
 "0Ri-rB-uca.title" = "LapicKernelPanic";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "0o4-08-Til"; */
-"0o4-08-Til.title" = "Text Cell";
-
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "19Q-wm-aZQ"; */
 "19Q-wm-aZQ.headerCell.title" = "Comment";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "3gG-E1-o9s"; */
-"3gG-E1-o9s.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "ExecutablePath"; ObjectID = "5Zf-0g-20b"; */
 "5Zf-0g-20b.headerCell.title" = "ExecutablePath";
@@ -56,17 +49,8 @@
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "9tr-6R-vGd"; */
 "9tr-6R-vGd.label" = "Patch";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "AIn-eE-Vxt"; */
-"AIn-eE-Vxt.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Cmr-kR-Uyo"; */
-"Cmr-kR-Uyo.title" = "Text Cell";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nNote: This option should avoided whenever possible. Modern firmwares provide CFG Lock setting, disabling which is much cleaner. More details about the issue can be found in VerifyMsrE2 notes."; ObjectID = "FUx-RJ-QTK"; */
 "FUx-RJ-QTK.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nNote: This option should avoided whenever possible. Modern firmwares provide CFG Lock setting, disabling which is much cleaner. More details about the issue can be found in VerifyMsrE2 notes.";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Fyx-g5-kO8"; */
-"Fyx-g5-kO8.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "GcD-Hq-Pnt"; */
 "GcD-Hq-Pnt.headerCell.title" = "Find";
@@ -89,14 +73,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "Kyb-jI-0pq"; */
 "Kyb-jI-0pq.headerCell.title" = "Replace";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "LG6-8U-JIg"; */
-"LG6-8U-JIg.title" = "Text Cell";
-
 /* Class = "NSButtonCell"; title = "PowerTimeoutKernelPanic"; ObjectID = "LI0-Hi-oQo"; */
 "LI0-Hi-oQo.title" = "PowerTimeoutKernelPanic";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "MUO-4A-Khi"; */
-"MUO-4A-Khi.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "Oe6-LD-h7w"; */
 "Oe6-LD-h7w.headerCell.title" = "BundlePath*";
@@ -107,29 +85,14 @@
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "QBz-fY-8R7"; */
 "QBz-fY-8R7.title" = "Quirks";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "QFu-g8-V6L"; */
-"QFu-g8-V6L.title" = "Text Cell";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Patch various kexts (AppleUSBXHCI.kext, AppleUSBXHCIPCI.kext, IOUSBHostFamily.kext) to remove USB port count limit of 15 ports.\nNote: This option should avoided whenever possible. USB port limit is imposed by the amount of used bits in locationID format and there is no possible way to workaround this without heavy OS modification. The only valid solution is to limit the amount of used ports to 15 (discarding some)."; ObjectID = "QzX-0b-2d3"; */
 "QzX-0b-2d3.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Patch various kexts (AppleUSBXHCI.kext, AppleUSBXHCIPCI.kext, IOUSBHostFamily.kext) to remove USB port count limit of 15 ports.\nNote: This option should avoided whenever possible. USB port limit is imposed by the amount of used bits in locationID format and there is no possible way to workaround this without heavy OS modification. The only valid solution is to limit the amount of used ports to 15 (discarding some).";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "R4k-zr-5Vn"; */
-"R4k-zr-5Vn.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "RBb-c4-z94"; */
-"RBb-c4-z94.title" = "Text Cell";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\nNote: This option should avoided whenever possible. Modern firmwares usually have compatible AHCI controllers."; ObjectID = "SGM-P1-Mz5"; */
 "SGM-P1-Mz5.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\nNote: This option should avoided whenever possible. Modern firmwares usually have compatible AHCI controllers.";
 
 /* Class = "NSButtonCell"; title = "ExternalDiskIcons"; ObjectID = "SHQ-fm-Uec"; */
 "SHQ-fm-Uec.title" = "ExternalDiskIcons";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "T0F-ZC-uLt"; */
-"T0F-ZC-uLt.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Uss-2e-73V"; */
-"Uss-2e-73V.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "VgW-t5-zY9"; */
 "VgW-t5-zY9.title" = "Multiple selection allowed";
@@ -155,17 +118,11 @@
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "cUJ-Nj-uY7"; */
 "cUJ-Nj-uY7.headerCell.title" = "Enabled";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "d2z-V6-Wud"; */
-"d2z-V6-Wud.title" = "Text Cell";
-
 /* Class = "NSTableColumn"; headerCell.title = "Base"; ObjectID = "djM-Oe-omR"; */
 "djM-Oe-omR.headerCell.title" = "Base";
 
 /* Class = "NSButtonCell"; title = "CustomSMBIOSGuid"; ObjectID = "faf-ix-5sI"; */
 "faf-ix-5sI.title" = "CustomSMBIOSGuid";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "fdF-Cg-rT9"; */
-"fdF-Cg-rT9.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "gFl-jZ-XPd"; */
 "gFl-jZ-XPd.headerCell.title" = "MaxKernel";
@@ -200,17 +157,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "nyt-5D-3es"; */
 "nyt-5D-3es.headerCell.title" = "Limit";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "pBF-vL-NEU"; */
-"pBF-vL-NEU.title" = "Text Cell";
-
 /* Class = "NSTableView"; ibShadowedToolTip = "BundlePath\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle path (e.g. Lilu.kext or MyKext.kext/Contents/PlugIns/MySubKext.kext).\n2. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel driver will not be added unless set to true.\n4. ExecutablePath\nType: plist string\nDefault value: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/Lilu).\n5. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or older.\n6. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or newer.\n7. PlistPath\nType: plist string\nDefault value: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist)."; ObjectID = "pIA-W6-XA0"; */
 "pIA-W6-XA0.ibShadowedToolTip" = "BundlePath\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle path (e.g. Lilu.kext or MyKext.kext/Contents/PlugIns/MySubKext.kext).\n2. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel driver will not be added unless set to true.\n4. ExecutablePath\nType: plist string\nDefault value: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/Lilu).\n5. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or older.\n6. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or newer.\n7. PlistPath\nType: plist string\nDefault value: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist).";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "r3j-jX-d2U"; */
-"r3j-jX-d2U.title" = "Text Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "sEP-Mn-DyN"; */
-"sEP-Mn-DyN.title" = "Text Cell";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "tya-o0-N6w"; */
 "tya-o0-N6w.headerCell.title" = "MaxKernel";
@@ -232,6 +180,3 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Apply vendor patches to IOAHCIBlockStorage.kext to enable native features for third-party drives, such as TRIM on SSDs or hibernation support on 10.15 and newer.\nNote: This option may be avoided on user preference. NVMe SSDs are compatible without the change. For AHCI SSDs on modern macOS version there is a dedicated built-in utility called trimforce. Starting from 10.15 this utility creates EnableTRIM variable in APPLE_BOOT_VARIABLE_GUID namespace with 01 00 00 00 value."; ObjectID = "yhV-cY-frg"; */
 "yhV-cY-frg.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Apply vendor patches to IOAHCIBlockStorage.kext to enable native features for third-party drives, such as TRIM on SSDs or hibernation support on 10.15 and newer.\nNote: This option may be avoided on user preference. NVMe SSDs are compatible without the change. For AHCI SSDs on modern macOS version there is a dedicated built-in utility called trimforce. Starting from 10.15 this utility creates EnableTRIM variable in APPLE_BOOT_VARIABLE_GUID namespace with 01 00 00 00 value.";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "ysn-Z2-RiG"; */
-"ysn-Z2-RiG.title" = "Text Cell";
