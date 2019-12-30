@@ -1,4 +1,3 @@
-
 /* Class = "NSView"; ibShadowedToolTip = "2. Block\nType: plist dict\nDescription: Removes device properties from a map (plist dict) of deivce paths to an array (plist array) of variable names in plist string format."; ObjectID = "1eh-jH-TX2"; */
 "1eh-jH-TX2.ibShadowedToolTip" = "从设备路径映射（plist dict）到plist字符串格式的变量名数组（plist数组）中删除设备属性。";
 
@@ -8,14 +7,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "9kg-WA-Eir"; */
 "9kg-WA-Eir.headerCell.title" = "设备";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "CrE-0l-DLY"; */
-"CrE-0l-DLY.title" = "Text Cell";
-
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "F6A-yy-QfQ"; */
 "F6A-yy-QfQ.headerCell.title" = "键*";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "M7c-ev-b9D"; */
-"M7c-ev-b9D.title" = "Text Cell";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "NLq-sd-yYz"; */
 "NLq-sd-yYz.label" = "添加";
@@ -25,9 +18,6 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "dpG-4m-Tya"; */
 "dpG-4m-Tya.headerCell.title" = "类型";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "eia-C9-4Iw"; */
-"eia-C9-4Iw.title" = "Text Cell";
 
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "lI7-XR-ash"; */
 "lI7-XR-ash.title" = "数字";
@@ -43,9 +33,6 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "rqc-Sa-r83"; */
 "rqc-Sa-r83.headerCell.title" = "设备";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "tAW-lD-Zil"; */
-"tAW-lD-Zil.title" = "Text Cell";
 
 /* Class = "NSMenuItem"; title = "STRING"; ObjectID = "ycS-j8-cj1"; */
 "ycS-j8-cj1.title" = "字符";

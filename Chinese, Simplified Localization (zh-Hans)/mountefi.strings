@@ -10,50 +10,17 @@
 /* Class = "NSTextFieldCell"; title = "Device BSD Name"; ObjectID = "As9-X4-iHB"; */
 "As9-X4-iHB.title" = "设备BSD名称";
 
-/* Class = "NSTextFieldCell"; title = "Mount Point"; ObjectID = "azg-58-iVC"; */
-"azg-58-iVC.title" = "挂载点";
-
-/* Class = "NSTextFieldCell"; title = "Size:"; ObjectID = "dXq-m8-waT"; */
-"dXq-m8-waT.title" = "容量：";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "DxT-od-MQz"; */
-"DxT-od-MQz.title" = "Text Cell";
-
 /* Class = "NSTextFieldCell"; title = "Disk Type"; ObjectID = "Edn-Sq-BEn"; */
 "Edn-Sq-BEn.title" = "磁盘类型";
-
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "eYO-gN-fIG"; */
-"eYO-gN-fIG.title" = "Table View Cell";
-
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "GO1-ab-8bs"; */
-"GO1-ab-8bs.title" = "Text Cell";
 
 /* Class = "NSTextFieldCell"; title = "Volume Name"; ObjectID = "K7n-YQ-8gF"; */
 "K7n-YQ-8gF.title" = "卷名";
 
-/* Class = "NSButtonCell"; title = "Update Partitions"; ObjectID = "mri-4d-h4k"; */
-"mri-4d-h4k.title" = "更新分区";
-
 /* Class = "NSTextFieldCell"; title = "Disk UUID"; ObjectID = "NnL-DI-BWs"; */
 "NnL-DI-BWs.title" = "磁盘UUID";
 
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "NT5-g0-Owb"; */
-"NT5-g0-Owb.title" = "Label";
-
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "OfC-tC-CUK"; */
-"OfC-tC-CUK.title" = "Label";
-
 /* Class = "NSWindow"; title = "Mount EFI"; ObjectID = "QvC-M9-y7g"; */
 "QvC-M9-y7g.title" = "挂载EFI";
-
-/* Class = "NSBox"; title = "Efi Partitions"; ObjectID = "tx8-c5-kb6"; */
-"tx8-c5-kb6.title" = "EFI分区";
-
-/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "uZA-el-aXm"; */
-"uZA-el-aXm.title" = "Table View Cell";
-
-/* Class = "NSButtonCell"; title = "counter"; ObjectID = "wEv-Ne-2zc"; */
-"wEv-Ne-2zc.title" = "counter";
 
 /* Class = "NSSegmentedCell"; Yd4-Rh-oPW.ibShadowedLabels[0] = "Open Partition"; ObjectID = "Yd4-Rh-oPW"; */
 "Yd4-Rh-oPW.ibShadowedLabels[0]" = "打开分区";
@@ -64,3 +31,14 @@
 /* Class = "NSTextFieldCell"; title = "Volume UUID"; ObjectID = "ZmL-3I-KOU"; */
 "ZmL-3I-KOU.title" = "卷UUID";
 
+/* Class = "NSTextFieldCell"; title = "Mount Point"; ObjectID = "azg-58-iVC"; */
+"azg-58-iVC.title" = "挂载点";
+
+/* Class = "NSTextFieldCell"; title = "Size:"; ObjectID = "dXq-m8-waT"; */
+"dXq-m8-waT.title" = "容量：";
+
+/* Class = "NSButtonCell"; title = "Update Partitions"; ObjectID = "mri-4d-h4k"; */
+"mri-4d-h4k.title" = "更新分区";
+
+/* Class = "NSBox"; title = "Efi Partitions"; ObjectID = "tx8-c5-kb6"; */
+"tx8-c5-kb6.title" = "EFI分区";

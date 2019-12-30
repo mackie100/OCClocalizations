@@ -10,12 +10,8 @@
 /* Class = "NSButtonCell"; title = "Credits"; ObjectID = "KQq-q8-zAO"; */
 "KQq-q8-zAO.title" = "致谢";
 
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "LaQ-kj-zXn"; */
-"LaQ-kj-zXn.title" = "Label";
-
 /* Class = "NSButtonCell"; title = "Donate"; ObjectID = "Wky-VX-jr0"; */
 "Wky-VX-jr0.title" = "捐赠";
 
 /* Class = "NSTextFieldCell"; title = "Version"; ObjectID = "wUa-DZ-OPf"; */
 "wUa-DZ-OPf.title" = "版本";
-
