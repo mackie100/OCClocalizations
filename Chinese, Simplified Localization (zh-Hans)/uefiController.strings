@@ -191,7 +191,7 @@
 "tgx-cE-NIf.ibShadowedToolTip" = "一些固件会同时输出文字和视频信息导致花屏，如果出现这种情况试试选NO，我这里选YES。";
 
 /* Class = "NSTabViewItem"; label = "Input"; ObjectID = "tiX-oG-c7h"; */
-"tiX-oG-c7h.label" = "键盘输入";
+"tiX-oG-c7h.label" = "Apple快捷键相关";
 
 /* Class = "NSButtonCell"; title = "ClearScreenOnModeSwitch"; ObjectID = "tqx-Ek-u4V"; */
 "tqx-Ek-u4V.title" = "ClearScreenOnModeSwitch";
