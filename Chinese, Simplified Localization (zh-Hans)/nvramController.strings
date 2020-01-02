@@ -1,17 +1,17 @@
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "1Hp-YT-QB3"; */
-"1Hp-YT-QB3.headerCell.title" = "Key";
+"1Hp-YT-QB3.headerCell.title" = "键";
 
 /* Class = "NSMenuItem"; title = "STRING"; ObjectID = "2GE-aT-481"; */
-"2GE-aT-481.title" = "STRING";
+"2GE-aT-481.title" = "字符";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enables loading of NVRAM variable file named nvram.plist from EFI volume root.\nThis file must have root plist dictionary type and contain two fields:\n• Version — plist integer, file version, must be set to 1.\n• Add — plist dictionary, equivalent to Add from config.plist.\nVariable loading happens prior to Block (and Add) phases, and will not overwrite any existing variable. Variables allowed to be set must be specified in LegacySchema. Third-party scripts may be used to create nvram.plist file. An example of such script can be found in Utilities. The use of third-party scripts may require ExposeSensitiveData set to 0x3 to provide boot-path variable with OpenCore EFI partition UUID.\n\nWARNING: This feature is very dangerous as it passes unprotected data to your firmware variable services. Use it only when no hardware NVRAM implementation is provided by the firmware or it is incompatible."; ObjectID = "2KJ-kg-wip"; */
 "2KJ-kg-wip.ibShadowedToolTip" = "允许从EFI卷根目录加载名为nvram.plist的NVRAM变量文件。\n没有原生NVRAM的设备设置为YES\nmacOS下硬件NVRAM工作不正常的设备设置为YES\nmacOS 下硬件 NVRAM 工作正常的设备设置为 NO\n变量加载发生在“block”（和“add”）阶段之前，并且不会覆盖任何现有变量。 必须在LegacySchema中指定允许设置的变量。 第三方脚本可用于创建nvram.plist文件。 此类脚本的示例可以在“实用工具”中找到。 使用第三方脚本可能需要将ExposeSensitiveData设置为0x3才能为OpenCore EFI分区UUID提供引导路径变量。\n警告：此功能非常危险，因为它将不受保护的数据传递到固件可变服务。 仅当固件未提供硬件NVRAM实现或与固件不兼容时才使用它。";
 
 /* Class = "NSMenuItem"; title = "DATA"; ObjectID = "5S9-qs-ueO"; */
-"5S9-qs-ueO.title" = "DATA";
+"5S9-qs-ueO.title" = "数据";
 
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "C9A-DN-Ig8"; */
-"C9A-DN-Ig8.title" = "NUMBER";
+"C9A-DN-Ig8.title" = "数字";
 
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "Eac-Nq-33R"; */
 "Eac-Nq-33R.headerCell.title" = "值";
@@ -35,7 +35,7 @@
 "eSY-j6-jWD.label" = "添加";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "ia9-0E-fQ8"; */
-"ia9-0E-fQ8.headerCell.title" = "Key";
+"ia9-0E-fQ8.headerCell.title" = "键";
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "imy-5n-EEC"; */
 "imy-5n-EEC.headerCell.title" = "类型";

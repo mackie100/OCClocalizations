@@ -1,8 +1,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "1NZ-HO-WUF"; */
-"1NZ-HO-WUF.headerCell.title" = "Comment";
+"1NZ-HO-WUF.headerCell.title" = "说明";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "1fY-U6-4KQ"; */
-"1fY-U6-4KQ.headerCell.title" = "Enabled";
+"1fY-U6-4KQ.headerCell.title" = "启用";
 
 /* Class = "NSMenuItem"; title = "None"; ObjectID = "1uV-aT-0gM"; */
 "1uV-aT-0gM.title" = "None";
@@ -11,7 +11,7 @@
 "20u-W6-oli.ibShadowedToolTip" = "设置为空字符串不更改控制台模式.设置为Max以尝试使用最大可用控制台模式.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "22Z-wl-E30"; */
-"22Z-wl-E30.headerCell.title" = "Name";
+"22Z-wl-E30.headerCell.title" = "名称";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: A bitmask (sum) of enabled logging targets. By default all the logging output is hidden, so this option is required to be set when debugging is necessary.\nThe following logging targets are supported:\n• 0x01 — Enable logging, otherwise all log is discarded. • 0x02 — Enable basic console (onscreen) logging.\n• 0x04 — Enable logging to Data Hub.\n• 0x08 — Enable serial port logging.\n• 0x10 — Enable UEFI variable logging.\n• 0x20 — Enable non-volatile UEFI variable logging.\n• 0x40 — Enable logging to file.\nConsole logging prints less than all the other variants. Depending on the build type (RELEASE, DEBUG, or NOOPT) different amount of logging may be read (from least to most)."; ObjectID = "2Vb-s2-Ejp"; */
 "2Vb-s2-Ejp.ibShadowedToolTip" = "0: 关闭日志记录\n3: 允许屏幕输出日志\n19: 允许屏幕输出 UEFI 变量日志\n65: 在 ESP 分区根目录生成日志文件 opencore-YYYY-MM-DD-HHMMSS.txt, 但屏幕上不显示日志！";
@@ -98,13 +98,13 @@
 "QbL-ID-H0a.ibShadowedToolTip" = "不解释，默认值！";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "SPw-C4-qwL"; */
-"SPw-C4-qwL.headerCell.title" = "Enabled";
+"SPw-C4-qwL.headerCell.title" = "启用";
 
 /* Class = "NSButtonCell"; title = "PollAppleHotKeys"; ObjectID = "TDv-Al-hb0"; */
 "TDv-Al-hb0.title" = "PollAppleHotKeys开启模拟苹果热键";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "ThF-JP-r8K"; */
-"ThF-JP-r8K.headerCell.title" = "Arguments";
+"ThF-JP-r8K.headerCell.title" = "参数";
 
 /* Class = "NSTextFieldCell"; title = "Hibernate Mode"; ObjectID = "TmR-t7-bmq"; */
 "TmR-t7-bmq.title" = "Hibernate Mode\n休眠模式";
@@ -116,10 +116,10 @@
 "VQF-Ne-GWu.ibShadowedToolTip" = "这里暂时填0。我们也许会碰到开机的时候默认进入的系统永远是WINDOWS，并无法更改，网上有进阶教程，会告诉你如何让MAC盘排在第一个，让WIN排在后面。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "XRf-Yz-PVv"; */
-"XRf-Yz-PVv.headerCell.title" = "Name";
+"XRf-Yz-PVv.headerCell.title" = "名称";
 
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "XSQ-pS-WUn"; */
-"XSQ-pS-WUn.headerCell.title" = "Path*";
+"XSQ-pS-WUn.headerCell.title" = "路径*";
 
 /* Class = "NSButtonCell"; title = "Show Picker"; ObjectID = "YKi-Mp-w6e"; */
 "YKi-Mp-w6e.title" = "Show Picker";
@@ -152,10 +152,10 @@
 "jCS-F1-yHc.title" = "控制台行为";
 
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "jPS-Bu-Ar4"; */
-"jPS-Bu-Ar4.headerCell.title" = "Path*";
+"jPS-Bu-Ar4.headerCell.title" = "路径*";
 
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
-"oFg-pn-DgG.label" = "Tools";
+"oFg-pn-DgG.label" = "工具";
 
 /* Class = "NSMenuItem"; title = "RTC"; ObjectID = "oSz-xr-GXZ"; */
 "oSz-xr-GXZ.title" = "RTC";
@@ -182,7 +182,7 @@
 "tmf-fU-Pjy.ibShadowedToolTip" = "因为要使用到nvram，这个数值我们必须填3。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "uSO-ne-MBg"; */
-"uSO-ne-MBg.headerCell.title" = "Comment";
+"uSO-ne-MBg.headerCell.title" = "说明";
 
 /* Class = "NSTabViewItem"; label = "Entries"; ObjectID = "uks-Bw-Ph4"; */
 "uks-Bw-Ph4.label" = "Entries";
@@ -194,7 +194,7 @@
 "vvg-w7-KxC.ibShadowedToolTip" = "是否开启一些热键功能，包括Cmd+K;Cmd+S。\n设置为 YES 后允许在引导过程中使用苹果原生快捷键, 需要与 Quirk KeySupport=Yes「或」UsbKbDxe.efi 结合使用, 具体体验取决于主板固件。常用快捷键组合:\nCmd + V: 启用 -v 跑码啰嗦模式\nCmd + Opt + P + R: 重置 NVRAM\nCmd + R: 启动恢复分区\nCmd + S: 启动至单用户模式\nOption / ALT: 在 ShowPicker 设置成 NO 时显示引导项, ALT 不可用时可用 ESC 键代替。\n如果你开机发现键盘无法选择，也选NO，并且删除OC/Drivers下的UsbKbDxe.efi 。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "wFf-6v-O3P"; */
-"wFf-6v-O3P.headerCell.title" = "Arguments";
+"wFf-6v-O3P.headerCell.title" = "参数";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Hibernation detection mode. The following modes are supported:\n• None — Avoid hibernation for your own good.\n• Auto — Use RTC and NVRAM detection.\n• RTC — Use RTC detection.\n• NVRAM — Use NVRAM detection."; ObjectID = "wPi-6s-R0s"; */
 "wPi-6s-R0s.ibShadowedToolTip" = "检测休眠模式。我们的机器一般都不支持休眠，选none。如果你的主板支持原生nvram、并想测试休眠，可以考虑填auto。\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个功能会影响 SSD 寿命, 建议关闭！";
