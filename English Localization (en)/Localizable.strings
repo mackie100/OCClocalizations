@@ -396,3 +396,11 @@
 /* opencoreDownloaderController */
 "You don't have permission to write here!" = "You don't have permission to write here!";
 
+/* dockMenu */
+"New Configuration..." = "New Configuration...";
+
+/* dockMenu */
+"Open Configuration..." = "Open Configuration...";
+
+/* dockMenu */
+"Leave A Message" = "Leave A Message";
