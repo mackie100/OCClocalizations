@@ -210,7 +210,7 @@
 "Initialization: Unable to read database. Cannot find server or there's no internet connection." = "初始化：无法读取数据库。找不到服务器或没有互联网连接。";
 
 /* bdmesgController */
-"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "Nothing to read here! Try to configure \"Target\" key in Misc->Debug section";
+"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "这里没什么可看的！ 试试在Misc其他设置->Debug调试部分配置\"Target\"键值";
 
 /* sectionSourceListHexConverterPopover */
 "Invalid base64 data" = "无效base64数据";
@@ -397,10 +397,10 @@
 "You don't have permission to write here!" = "您无权限在这里写入！";
 
 /* dockMenu */
-"New Configuration..." = "New Configuration...";
+"New Configuration..." = "新建配置...";
 
 /* dockMenu */
-"Open Configuration..." = "Open Configuration...";
+"Open Configuration..." = "打开配置...";
 
 /* dockMenu */
 "Leave A Message" = "留言";
