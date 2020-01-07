@@ -346,9 +346,6 @@
 /* Class = "NSMenu"; title = "Tools"; ObjectID = "iNj-EH-98P"; */
 "iNj-EH-98P.title" = "工具";
 
-/* Class = "NSTextFieldCell"; title = "Tooltips"; ObjectID = "iPO-5p-5B0"; */
-"iPO-5p-5B0.title" = "工具提示";
-
 /* Class = "NSMenuItem"; title = "Baseline"; ObjectID = "OaQ-X3-Vso"; */
 "OaQ-X3-Vso.title" = "基线";
 
@@ -391,17 +388,11 @@
 /* Class = "NSMenuItem"; title = "Ligatures"; ObjectID = "o6e-r0-MWq"; */
 "o6e-r0-MWq.title" = "连字";
 
-/* Class = "NSTextFieldCell"; title = "Show tooltip after:"; ObjectID = "ovh-My-wBx"; */
-"oXk-MJ-Cft.title" = "在这之后显示工具提示:";
-
 /* Class = "NSMenuItem"; title = "Resources"; ObjectID = "obn-2D-QqW"; */
 "obn-2D-QqW.title" = "资源";
 
 /* Class = "NSMenuItem"; title = "Loosen"; ObjectID = "ogc-rX-tC1"; */
 "ogc-rX-tC1.title" = "松排";
-
-/* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "Om5-pp-eWN"; */
-"Om5-pp-eWN.title" = "*要应用此更改，您必须重新启动应用程序";
 
 /* Class = "NSTextFieldCell"; title = "Updates"; ObjectID = "ovh-My-wBx"; */
 "ovh-My-wBx.title" = "更新";
@@ -459,6 +450,9 @@
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
 "uRl-iY-unG.title" = "剪切";
+
+/* Class = "NSMenuItem"; title = "Show Tips"; ObjectID = "uVv-sy-xB2"; */
+"uVv-sy-xB2.title" = "Show Tips";
 
 /* Class = "NSMenuItem"; title = "Paste Style"; ObjectID = "vKC-jM-MkH"; */
 "vKC-jM-MkH.title" = "粘贴样式";
