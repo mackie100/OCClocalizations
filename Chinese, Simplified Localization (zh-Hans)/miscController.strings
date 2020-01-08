@@ -1,5 +1,5 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional."; ObjectID = "0sy-D3-AKk"; */
-"0sy-D3-AKk.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional.";
+"0sy-D3-AKk.ibShadowedToolTip" = "启用与VirtualSMC兼容的身份验证重新启动。\n与磁盘加密启动相关，一般选NO";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "1NZ-HO-WUF"; */
 "1NZ-HO-WUF.headerCell.title" = "说明";
@@ -26,7 +26,7 @@
 "4yk-6F-ept.ibShadowedToolTip" = "是否开启黑苹果加密，不需要，选NO";
 
 /* Class = "NSTextFieldCell"; title = "Timeout"; ObjectID = "6hf-UH-eBA"; */
-"6hf-UH-eBA.title" = "超时";
+"6hf-UH-eBA.title" = "引导项等待时间";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n4. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n5. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: Shell.efi."; ObjectID = "8Gl-6A-OsL"; */
 "8Gl-6A-OsL.ibShadowedToolTip" = "用于指定 OpenCore 无法自动找到的无规律引导路径。\nName\nOpenCore 启动项中显示的名称\nEnabled\n启用或禁用\nPath\n引导磁盘的 PCI 路径，可以通过 OpenCoreShell 的 map 命令找到\n如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi";
@@ -56,7 +56,7 @@
 "F6a-ij-WIB.title" = "分辨率";
 
 /* Class = "NSTextFieldCell"; title = "Display Delay"; ObjectID = "FHv-7q-Wq3"; */
-"FHv-7q-Wq3.title" = "显示延迟";
+"FHv-7q-Wq3.title" = "Display Delay";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used."; ObjectID = "I4v-gd-78g"; */
 "I4v-gd-78g.ibShadowedToolTip" = "隐藏自身的EFI引导盘选项，选YES。";

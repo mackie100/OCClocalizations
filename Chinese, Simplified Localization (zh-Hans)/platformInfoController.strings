@@ -65,7 +65,7 @@
 "9o2-8y-dq6.ibShadowedToolTip" = "默认值:自动\n说明:更新SMBIOS字段方法:\n•自动 - 如果新大小<=大于页面对齐的原始文件并且旧区域解锁没有问题，则覆盖。否则创建。\n•创建 - 在AllocateMaxAddress中使用新分配的EfiReservedMemoryType替换表，而不进行任何回退。\n•覆盖 - 覆盖现有的gEfiSmbiosTableGuid和gEfiSmbiosTable3Guid数据（如果它适合新的大小）。否则将中止未指定的状态。\n•自定义 - 将第一个SMBIOS表（gEfiSmbiosTableGuid）写入gOcCustomSmbiosTableGuid以解决在ExitBootServices上覆盖SMBIOS内容的固件。否则相当于Create。需要修补AppleSmbios.kext和AppleACPIPlatform.kext以从另一个GUID读取:“EB9D2D31” - >“EB9D2D35”（ASCII格式）。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Forces CSM support in FirmwareFeatures. \nWithout this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\nNote: This was enabled unconditionally in older OpenCore versions."; ObjectID = "9sY-PL-wkx"; */
-"9sY-PL-wkx.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Forces CSM support in FirmwareFeatures. \nWithout this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\nNote: This was enabled unconditionally in older OpenCore versions.";
+"9sY-PL-wkx.ibShadowedToolTip" = "在FirmwareFeatures中强制CSM支持。\n如果WINDOWS的EFI分区不是磁盘上的第一个分区启用它，不然有可能无法引导WINDOWS。\n在较旧的OpenCore版本中已经无条件启用了此功能。";
 
 /* Class = "NSTextFieldCell"; title = "UUID"; ObjectID = "ADr-qW-Bb4"; */
 "ADr-qW-Bb4.title" = "UUID";

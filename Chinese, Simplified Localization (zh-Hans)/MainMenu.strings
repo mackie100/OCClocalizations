@@ -452,7 +452,7 @@
 "uRl-iY-unG.title" = "剪切";
 
 /* Class = "NSMenuItem"; title = "Show Tips"; ObjectID = "uVv-sy-xB2"; */
-"uVv-sy-xB2.title" = "Show Tips";
+"uVv-sy-xB2.title" = "显示提示框";
 
 /* Class = "NSMenuItem"; title = "Paste Style"; ObjectID = "vKC-jM-MkH"; */
 "vKC-jM-MkH.title" = "粘贴样式";
