@@ -49,6 +49,9 @@
 /* Class = "NSButtonCell"; title = "IgnoreInvalidFlexRatio"; ObjectID = "CWI-LU-4dW"; */
 "CWI-LU-4dW.title" = "IgnoreInvalidFlexRatio";
 
+/* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
+"Ddl-D0-484.title" = "AppleSmcIo";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key."; ObjectID = "EIc-ff-Thn"; */
 "EIc-ff-Thn.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key.";
 
@@ -60,6 +63,9 @@
 
 /* Class = "NSTextFieldCell"; title = "KeyForgetThreshold"; ObjectID = "ErN-ks-EzO"; */
 "ErN-ks-EzO.title" = "KeyForgetThreshold";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple SMC I/O protocol with a builtin version.\nThis protocol replaces legacy VirtualSmc UEFI driver, and is compatible with any SMC kernel extension. \nHowever, in case FakeSMC kernel extension is used, manual NVRAM key variable addition may be needed."; ObjectID = "FPA-9t-OzA"; */
+"FPA-9t-OzA.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple SMC I/O protocol with a builtin version.\nThis protocol replaces legacy VirtualSmc UEFI driver, and is compatible with any SMC kernel extension. \nHowever, in case FakeSMC kernel extension is used, manual NVRAM key variable addition may be needed.";
 
 /* Class = "NSButtonCell"; title = "ReplaceTabWithSpace"; ObjectID = "HIh-Oc-UT7"; */
 "HIh-Oc-UT7.title" = "ReplaceTabWithSpace";
@@ -75,6 +81,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls Data Hub protocol with a builtin version. This will drop all previous properties if the protocol was already installed."; ObjectID = "KN0-dq-pSV"; */
 "KN0-dq-pSV.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls Data Hub protocol with a builtin version. This will drop all previous properties if the protocol was already installed.";
+
+/* Class = "NSButtonCell"; title = "OSInfo"; ObjectID = "Ljq-q2-IwF"; */
+"Ljq-q2-IwF.title" = "OSInfo";
 
 /* Class = "NSButtonCell"; title = "DataHub"; ObjectID = "NGa-cY-Uzn"; */
 "NGa-cY-Uzn.title" = "DataHub";
@@ -165,6 +174,9 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Assume simultaneous combination for keys submitted within this timeout in milliseconds.\nSimilarly to KeyForgetThreshold, this option works around the sequential nature of key submission. To be able to recognise simultaneously pressed keys in the situation when all keys arrive sequentially, we are required to set a timeout within which we assume the keys were pressed together.\nHolding multiple keys results in reports every 2 and 1 milliseconds for VMware and APTIO V respectively. Pressing keys one after the other results in delays of at least 6 and 10 milliseconds for the same platforms. The recommended value for this option is 2 milliseconds, but it may be decreased for faster platforms and increased for slower."; ObjectID = "kKb-0m-i9e"; */
 "kKb-0m-i9e.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Assume simultaneous combination for keys submitted within this timeout in milliseconds.\nSimilarly to KeyForgetThreshold, this option works around the sequential nature of key submission. To be able to recognise simultaneously pressed keys in the situation when all keys arrive sequentially, we are required to set a timeout within which we assume the keys were pressed together.\nHolding multiple keys results in reports every 2 and 1 milliseconds for VMware and APTIO V respectively. Pressing keys one after the other results in delays of at least 6 and 10 milliseconds for the same platforms. The recommended value for this option is 2 milliseconds, but it may be decreased for faster platforms and increased for slower.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications."; ObjectID = "l9b-pk-oii"; */
+"l9b-pk-oii.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs."; ObjectID = "nvr-JF-3ne"; */
 "nvr-JF-3ne.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs.";

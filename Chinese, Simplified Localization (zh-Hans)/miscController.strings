@@ -1,3 +1,6 @@
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional."; ObjectID = "0sy-D3-AKk"; */
+"0sy-D3-AKk.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional.";
+
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "1NZ-HO-WUF"; */
 "1NZ-HO-WUF.headerCell.title" = "说明";
 
@@ -177,6 +180,9 @@
 
 /* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "sTe-vF-jmH"; */
 "sTe-vF-jmH.title" = "Hide Self";
+
+/* Class = "NSButtonCell"; title = "AuthRestart"; ObjectID = "tI2-d3-co4"; */
+"tI2-d3-co4.title" = "AuthRestart";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 2\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. To obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\nTo obtain OpenCore version use the following command in macOS: nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version"; ObjectID = "tmf-fU-Pjy"; */
 "tmf-fU-Pjy.ibShadowedToolTip" = "因为要使用到nvram，这个数值我们必须填3。";

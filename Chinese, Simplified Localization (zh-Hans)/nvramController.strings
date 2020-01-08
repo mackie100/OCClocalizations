@@ -1,3 +1,6 @@
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Enables writing to flash memory for all added variables. \nNote: This value is recommended to be enabled on most firmwares, but is left configurable for firmwares that may have issues with NVRAM variable storage garbage collection or alike."; ObjectID = "0qd-Qe-41F"; */
+"0qd-Qe-41F.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Enables writing to flash memory for all added variables. \nNote: This value is recommended to be enabled on most firmwares, but is left configurable for firmwares that may have issues with NVRAM variable storage garbage collection or alike.";
+
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "1Hp-YT-QB3"; */
 "1Hp-YT-QB3.headerCell.title" = "键";
 
@@ -42,6 +45,9 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "j1D-Eg-beZ"; */
 "j1D-Eg-beZ.headerCell.title" = "键*";
+
+/* Class = "NSButtonCell"; title = "WriteFlash"; ObjectID = "oGQ-n7-FKX"; */
+"oGQ-n7-FKX.title" = "WriteFlash";
 
 /* Class = "NSTabViewItem"; label = "LegacySchema"; ObjectID = "oWw-vt-aiZ"; */
 "oWw-vt-aiZ.label" = "LegacySchema";

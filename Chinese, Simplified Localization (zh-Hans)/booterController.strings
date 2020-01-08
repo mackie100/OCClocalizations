@@ -4,6 +4,9 @@
 /* Class = "NSButtonCell"; title = "ForceExitBootServices"; ObjectID = "5sK-91-1dQ"; */
 "5sK-91-1dQ.title" = "ForceExitBootServices";
 
+/* Class = "NSButtonCell"; title = "SignalAppleOS"; ObjectID = "9fL-0g-rLi"; */
+"9fL-0g-rLi.title" = "SignalAppleOS";
+
 /* Class = "NSButtonCell"; title = "EnableSafeModeSlide"; ObjectID = "9lc-VM-DSq"; */
 "9lc-VM-DSq.title" = "EnableSafeModeSlide";
 
@@ -30,6 +33,9 @@
 
 /* Class = "NSScrollView"; ibShadowedToolTip = "1. Address\nType: plist integer\nFailsafe: 0\nDescription: Exceptional MMIO address, which memory descriptor should be left virtualised (unchanged) by DevirtualiseMmio. This means that the firmware will be able to directly communicate with this memory region during operating system functioning, because the region this value is in will be assigned a virtual address.\nThe addresses written here must be part of the memory map, have EfiMemoryMappedIO type and EFI_MEMORY_RUNTIME attribute (highest bit) set. To find the list of the candidates the debug log can be used.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This address will be devirtualised unless set to true."; ObjectID = "RWw-Gp-0A4"; */
 "RWw-Gp-0A4.ibShadowedToolTip" = "默认的第一项是为Haswell芯片提供的内存寻址修复，如果此类芯片碰到内存相关问题，请开启它(enable选择yes)。\n默认第二项是开机卡PCI Configuration这里。ACPI、PCI device同时释放到内存时发生0x1000内存地址被占用而卡在PCI Configration.如果碰到此类问题，请开启它。";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Report macOS being loaded through OS Info for any OS. \nThis quirk is useful on Mac firmwares, which behave differently in different OS. For example, it is supposed to enable Intel GPU in Windows and Linux in some dual-GPU MacBook models."; ObjectID = "Ryj-m2-2MI"; */
+"Ryj-m2-2MI.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Report macOS being loaded through OS Info for any OS. \nThis quirk is useful on Mac firmwares, which behave differently in different OS. For example, it is supposed to enable Intel GPU in Windows and Linux in some dual-GPU MacBook models.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disable single user mode.\nThis is a security option allowing one to restrict single user mode usage by ignoring CMD+S hotkey and -s boot argument. The behaviour with this quirk enabled is supposed to match T2-based model behaviour. Read this article to understand how to use single user mode with this quirk enabled."; ObjectID = "Ssn-0z-qIb"; */
 "Ssn-0z-qIb.ibShadowedToolTip" = "这里关乎主机是否能开启单用户模式。如果你觉得有用就开启它，一般选NO。";
