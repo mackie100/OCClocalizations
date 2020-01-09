@@ -210,7 +210,7 @@
 "Initialization: Unable to read database. Cannot find server or there's no internet connection." = "初始化：无法读取数据库。找不到服务器或没有互联网连接。";
 
 /* bdmesgController */
-"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "这里没什么可看的！ 试试在Misc其他设置->Debug调试部分配置\"Target\"键值";
+"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "现在这里什么都看不到！ 试试在Misc其他设置->Debug调试部分配置\"Target\"键值，具体内容参考OC官方PDF手册";
 
 /* sectionSourceListHexConverterPopover */
 "Invalid base64 data" = "无效base64数据";
