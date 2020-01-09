@@ -17,7 +17,7 @@
 "22Z-wl-E30.headerCell.title" = "名称";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: A bitmask (sum) of enabled logging targets. By default all the logging output is hidden, so this option is required to be set when debugging is necessary.\nThe following logging targets are supported:\n• 0x01 — Enable logging, otherwise all log is discarded. • 0x02 — Enable basic console (onscreen) logging.\n• 0x04 — Enable logging to Data Hub.\n• 0x08 — Enable serial port logging.\n• 0x10 — Enable UEFI variable logging.\n• 0x20 — Enable non-volatile UEFI variable logging.\n• 0x40 — Enable logging to file.\nConsole logging prints less than all the other variants. Depending on the build type (RELEASE, DEBUG, or NOOPT) different amount of logging may be read (from least to most)."; ObjectID = "2Vb-s2-Ejp"; */
-"2Vb-s2-Ejp.ibShadowedToolTip" = "0: 关闭日志记录\n3: 允许屏幕输出日志\n19: 允许屏幕输出 UEFI 变量日志\n67: 在 ESP 分区根目录生成日志文件 opencore-YYYY-MM-DD-HHMMSS.txt, 但屏幕上不显示日志！";
+"2Vb-s2-Ejp.ibShadowedToolTip" = "0: 关闭日志记录\n3: 允许屏幕输出日志\n19: 允许屏幕输出 UEFI 变量日志\n67: 在 ESP 分区根目录生成日志文件 opencore-YYYY-MM-DD-HHMMSS.txt, 但屏幕上不显示日志！此功能需要用DEBUG版OC引导，并选中Disable WatchDog选项";
 
 /* Class = "NSMenuItem"; title = "Text"; ObjectID = "4mM-iZ-KDr"; */
 "4mM-iZ-KDr.title" = "Text";
