@@ -175,6 +175,12 @@
 /* Class = "NSTextFieldCell"; title = "Halt Level"; ObjectID = "pqr-DX-ZAM"; */
 "pqr-DX-ZAM.title" = "Halt Level";
 
+/* Class = "NSTextFieldCell"; title = "AllowSetDefault"; ObjectID = "qpq-Le-cti"; */
+"qpq-Le-cti.title" = "AllowSetDefault";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker."; ObjectID = "rQF-20-vFl"; */
+"rQF-20-vFl.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker.";
+
 /* Class = "NSTextFieldCell"; title = "Security"; ObjectID = "rsD-HK-pz0"; */
 "rsD-HK-pz0.title" = "Security";
 
