@@ -29,7 +29,7 @@
 "6hf-UH-eBA.title" = "引导项等待时间";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n4. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n5. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: Shell.efi."; ObjectID = "8Gl-6A-OsL"; */
-"8Gl-6A-OsL.ibShadowedToolTip" = "用于指定 OpenCore 无法自动找到的无规律引导路径。\nName\nOpenCore 启动项中显示的名称\nEnabled\n启用或禁用\nPath\n引导磁盘的 PCI 路径，可以通过 OpenCoreShell 的 map 命令找到\n如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi";
+"8Gl-6A-OsL.ibShadowedToolTip" = "用于指定OpenCore无法自动找到的无规律引导路径。\nName(名称)\nOpenCore启动项中显示的名称\nEnabled(启用)\n启用或禁用\nPath(路径)\n引导磁盘的PCI路径，一般可以通过替换启动文件为DEBUG版本，然后勾选Disable WatchDog选项，Target选项填入67，启动一次后，在EFI分区里产生的日志文件里查找如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi这样的信息。\n可以提前在MACOS里使用diskutil info disk0s2 |grep \"UUID\"这样的命令提前获取到你想要启动的分区UUID，然后在日志文件里搜索UUID的值，可以快速获取到完整PCI路径！";
 
 /* Class = "NSButtonCell"; title = "Disable WatchDog"; ObjectID = "9LG-wP-7Np"; */
 "9LG-wP-7Np.title" = "Disable WatchDog\n禁用看门狗";
@@ -47,10 +47,10 @@
 "DAS-KM-gwG.title" = "Expose Sensitive Data";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Show simple boot picker to allow boot entry selection."; ObjectID = "Dgr-GW-WzX"; */
-"Dgr-GW-WzX.ibShadowedToolTip" = "是否使用OC的开机启动盘选项，选YES。之后可能会有新的第三方主题支持的话，我们需要选NO。";
+"Dgr-GW-WzX.ibShadowedToolTip" = "是否使用OC的启动选择器，选YES。可能之后会支持第三方主题接口的话，我们才选选NO。";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
-"E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi 的位置以便识别 Windows 引导项, OpenCore 和 Windows 的引导文件在同一硬盘的同一 ESP 分区下使用，除非你有这种情况，不然我们不需要填写任何东西。";
+"E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。";
 
 /* Class = "NSTextFieldCell"; title = "Resolution"; ObjectID = "F6a-ij-WIB"; */
 "F6a-ij-WIB.title" = "分辨率";
@@ -59,10 +59,10 @@
 "FHv-7q-Wq3.title" = "Display Delay";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used."; ObjectID = "I4v-gd-78g"; */
-"I4v-gd-78g.ibShadowedToolTip" = "隐藏自身的EFI引导盘选项，选YES。";
+"I4v-gd-78g.ibShadowedToolTip" = "隐藏自身的EFI引导盘选项，一般选YES。";
 
 /* Class = "NSTextFieldCell"; title = "Debug"; ObjectID = "INT-vg-QxD"; */
-"INT-vg-QxD.title" = "调试";
+"INT-vg-QxD.title" = "调试选项";
 
 /* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
 "Jpe-QB-x2r.title" = "AllowNvramReset";
@@ -71,16 +71,16 @@
 "JxW-Wr-efF.title" = "控制台行为";
 
 /* Class = "NSTextFieldCell"; title = "Boot"; ObjectID = "KHk-e2-z8P"; */
-"KHk-e2-z8P.title" = "引导";
+"KHk-e2-z8P.title" = "引导选项";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: true\nDescription: Require vault.sig signature file for vault.plist in OC directory.\nThis file should contain a raw 256 byte RSA-2048 signature from SHA-256 hash of vault.plist. The signature is verified against the public key embedded into OpenCore.efi.\nTo embed the public key you should do either of the following: 20\n• Provide public key during the OpenCore.efi compilation in OpenCoreVault.c file.\n• Binary patch OpenCore.efi replacing zeroes with the public key between =BEGIN OC VAULT= and ==END OC VAULT== ASCII markers.\nRSA public key 520 byte format description can be found in Chromium OS documentation. To convert public\nkey from X.509 certificate or from PEM file use RsaTool.\nNote: vault.sig is used regardless of this option when public key is embedded into OpenCore.efi. Setting it to true will only ensure configuration sanity, and abort the boot process when public key is not set but was supposed to be used for verification."; ObjectID = "Kcd-Rd-KxI"; */
-"Kcd-Rd-KxI.ibShadowedToolTip" = "黑苹果的vault加密方式，我们不需要这个功能，选择NO";
+"Kcd-Rd-KxI.ibShadowedToolTip" = "黑苹果的vault加密方式，一般我们不需要这个功能，选择NO";
 
 /* Class = "NSButtonCell"; title = "Use Picker"; ObjectID = "Kdh-PP-jDy"; */
 "Kdh-PP-jDy.title" = "Use Picker";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: NO\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
-"LCd-qL-7KC.ibShadowedToolTip" = "如果 macOS 在启动时卡在某些地方, 可能需要设置为 YES, 通常用于排除错误干扰";
+"LCd-qL-7KC.ibShadowedToolTip" = "如果macOS在启动时卡在某些地方, 可能需要设置为YES, 通常用于排除错误干扰";
 
 /* Class = "NSMenuItem"; title = "ForceText"; ObjectID = "M7C-39-av5"; */
 "M7C-39-av5.title" = "ForceText";
@@ -128,16 +128,16 @@
 "YKi-Mp-w6e.title" = "Show Picker";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Show simple boot picker to allow boot entry selection."; ObjectID = "Yyf-Yd-yrP"; */
-"Yyf-Yd-yrP.ibShadowedToolTip" = "是否显示开机启动盘选项，比如MAC,WINDOWS那些。选择YES。";
+"Yyf-Yd-yrP.ibShadowedToolTip" = "是否显示开机启动盘选项，比如MAC,WINDOWS那些。一般选择YES。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0\nDescription: Timeout in seconds in boot picker before automatic booting of the default boot entry. Use 0 to disable timer."; ObjectID = "Zxi-ww-dWk"; */
-"Zxi-ww-dWk.ibShadowedToolTip" = "倒计时进入指定硬盘，这里我们按需求填写，我填写5，代表5秒钟进入指定硬盘。";
+"Zxi-ww-dWk.ibShadowedToolTip" = "倒计时进入指定可启动系统，这里我们按需求填写，我填写5，代表5秒钟进入指定系统。";
 
 /* Class = "NSTextFieldCell"; title = "Scan Policy"; ObjectID = "aUx-rK-UTX"; */
 "aUx-rK-UTX.title" = "Scan Policy";
 
 /* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty string\nDescription: Sets console output screen resolution.\n• Set to WxH@Bpp (e.g. 1920x1080@32) or WxH (e.g. 1920x1080) formatted string to request custom resolution from GOP if available.\n• Set to empty string not to change screen resolution.\n• Set to Max to try to use largest available screen resolution.\nOn HiDPI screens APPLE_VENDOR_VARIABLE_GUID UIScale NVRAM variable may need to be set to 02 to enable HiDPI scaling in FileVault 2 UEFI password interface and boot screen logo. Refer to Recommended Variables section for more details.\nNote: This will fail when console handle has no GOP protocol. When the firmware does not provide it, it can be added with ProvideConsoleGop UEFI quirk set to true."; ObjectID = "bxf-ea-uDb"; Note = "Do Not Translate"; */
-"bxf-ea-uDb.ibShadowedToolTip" = "开机分辨率。比如我的显示器是4K、16：9的，我就填写3840×2160。这个你根据情况填写或者不填。如果遇到开机苹果LOGO很大，你需要按你的分辨率填写。\n另外，我发现了一件很神奇的事情：技嘉的主板LOGO大小跟开机的大雕图的尺寸相关，我把大雕图换成了4K，开机的苹果LOGO也变成4K了。。。。神奇";
+"bxf-ea-uDb.ibShadowedToolTip" = "开机分辨率。比如我的显示器是4K、16：9的，我就填写3840×2160。这个你根据情况填写或者不填。如果遇到开机苹果LOGO很大，你需要按你的分辨率填写。\n另外，我发现了一件很神奇的事情：技嘉的主板LOGO大小跟开机的大雕图的尺寸相关，我把大雕图换成了4K，开机的苹果LOGO也变成4K了。。。。";
 
 /* Class = "NSMenuItem"; title = "Graphics"; ObjectID = "cqS-Tk-Ayj"; */
 "cqS-Tk-Ayj.title" = "Graphics";
@@ -146,7 +146,7 @@
 "dam-Nc-xFX.title" = "Display Level";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n2. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n3. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n4. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory."; ObjectID = "eH6-nm-MdQ"; */
-"eH6-nm-MdQ.ibShadowedToolTip" = "用于运行 OC 调试工具, 例如验证 CFG 锁 (VerifyMsrE2)\nName\nOpenCore 启动项中显示的名称\nEnabled\n启用或禁用\nPath\nTools 文件夹下的文件名\n如: VerifyMsrE2.efi";
+"eH6-nm-MdQ.ibShadowedToolTip" = "用于运行OC调试工具, 例如验证CFG Lock(VerifyMsrE2)\nName(名称)\nOpenCore 启动项中显示的名称\nEnabled(启用)\n启用或禁用\nPath(路径)\nTools文件夹下的文件名\n如: VerifyMsrE2.efi,Shell.efi等";
 
 /* Class = "NSTextFieldCell"; title = "Target"; ObjectID = "hAm-Ha-Meb"; */
 "hAm-Ha-Meb.title" = "Target";
@@ -170,7 +170,7 @@
 "p4G-ay-2Xh.title" = "Text";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker."; ObjectID = "pTC-aG-QK1"; */
-"pTC-aG-QK1.ibShadowedToolTip" = "允许CMD + OPT + P + R处理并启用在启动选择器中显示NVRAM重置条目。";
+"pTC-aG-QK1.ibShadowedToolTip" = "允许CMD + OPT + P + R或在启动菜单中显示ResetNVRAM重置菜单。";
 
 /* Class = "NSTextFieldCell"; title = "Halt Level"; ObjectID = "pqr-DX-ZAM"; */
 "pqr-DX-ZAM.title" = "Halt Level";
@@ -179,10 +179,10 @@
 "qpq-Le-cti.title" = "AllowSetDefault";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker."; ObjectID = "rQF-20-vFl"; */
-"rQF-20-vFl.ibShadowedToolTip" = "允许CTRL+Enter和CTRL+Index来设置启动选择器中的默认启动选项。";
+"rQF-20-vFl.ibShadowedToolTip" = "允许用CTRL+Enter或CTRL+Index(启动菜单项目编号)来设置启动菜单中的下次默认启动选项。";
 
 /* Class = "NSTextFieldCell"; title = "Security"; ObjectID = "rsD-HK-pz0"; */
-"rsD-HK-pz0.title" = "安全";
+"rsD-HK-pz0.title" = "安全设置";
 
 /* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "sTe-vF-jmH"; */
 "sTe-vF-jmH.title" = "Hide Self";
@@ -191,7 +191,7 @@
 "tI2-d3-co4.title" = "AuthRestart";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 2\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. To obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\nTo obtain OpenCore version use the following command in macOS: nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version"; ObjectID = "tmf-fU-Pjy"; */
-"tmf-fU-Pjy.ibShadowedToolTip" = "如果要使用到nvram，这个数值我们填3\n在引导菜单显示OC版本号，填6。";
+"tmf-fU-Pjy.ibShadowedToolTip" = "如果要使用到NVRAM，这个数值我们填3\n如果要在引导菜单显示OC版本号，填6。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "uSO-ne-MBg"; */
 "uSO-ne-MBg.headerCell.title" = "说明";
@@ -203,13 +203,13 @@
 "uyb-X6-nFt.label" = "BlessOverride";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode."; ObjectID = "vvg-w7-KxC"; */
-"vvg-w7-KxC.ibShadowedToolTip" = "是否开启一些热键功能，包括Cmd+K;Cmd+S。\n设置为 YES 后允许在引导过程中使用苹果原生快捷键, 需要与 Quirk KeySupport=Yes「或」UsbKbDxe.efi 结合使用, 具体体验取决于主板固件。常用快捷键组合:\nCmd + V: 启用 -v 跑码啰嗦模式\nCmd + Opt + P + R: 重置 NVRAM\nCmd + R: 启动恢复分区\nCmd + S: 启动至单用户模式\nOption / ALT: 在 ShowPicker 设置成 NO 时显示引导项, ALT 不可用时可用 ESC 键代替。\n如果你开机发现键盘无法选择，也选NO，并且删除OC/Drivers下的UsbKbDxe.efi 。";
+"vvg-w7-KxC.ibShadowedToolTip" = "是否开启一些热键功能，包括Cmd+K;Cmd+S。\n设置为YES后允许在引导过程中使用苹果原生快捷键, 需要与Quirk选项中KeySupport=Yes或UsbKbDxe.efi结合使用, 具体体验取决于主板固件。常用快捷键组合:\nCmd + V: 启用 -v 跑码啰嗦模式\nCmd + Opt + P + R: 重置 NVRAM\nCmd + R: 启动恢复分区\nCmd + S: 启动至单用户模式\nOption/ALT: 在ShowPicker设置成NO时显示引导菜单, ALT键不可用时可用ESC键代替(狂按ESC键)。\n如果你开机发现键盘无法选择，请选NO，并且删除OC/Drivers下的UsbKbDxe.efi 。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "wFf-6v-O3P"; */
 "wFf-6v-O3P.headerCell.title" = "参数";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Hibernation detection mode. The following modes are supported:\n• None — Avoid hibernation for your own good.\n• Auto — Use RTC and NVRAM detection.\n• RTC — Use RTC detection.\n• NVRAM — Use NVRAM detection."; ObjectID = "wPi-6s-R0s"; */
-"wPi-6s-R0s.ibShadowedToolTip" = "检测休眠模式。我们的机器一般都不支持休眠，选none。如果你的主板支持原生nvram、并想测试休眠，可以考虑填auto。\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个功能会影响 SSD 寿命, 建议关闭！";
+"wPi-6s-R0s.ibShadowedToolTip" = "检测休眠模式。我们的机器一般都不支持休眠，选none。如果你的主板支持原生nvram、并想测试休眠，可以考虑填auto。\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭！";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty string\nDescription: Set console control behaviour upon operating system load.\nConsole control is a legacy protocol used for switching between text and graphics screen output. Some firmwares do not provide it, yet select operating systems require its presence, which is what ProvideConsoleControl UEFI quirk is for.\nWhen console control is available, OpenCore can be made console control aware, and and set different modes for the operating system booter (ConsoleBehaviourOs), which normally runs in graphics mode, and its own user interface (ConsoleBehaviourUi), which normally runs in text mode. Possible behaviours, set as values of these options, include:\n• Empty string — Do not modify console control mode.\n• Text — Switch to text mode.\n• Graphics — Switch to graphics mode.\n• ForceText — Switch to text mode and preserve it (requires ProvideConsoleControl).\n• ForceGraphics — Switch to graphics mode and preserve it (require ProvideConsoleControl)."; ObjectID = "wnQ-qi-j0l"; */
 "wnQ-qi-j0l.ibShadowedToolTip" = "一般是留空，如果留空开机显示效果不佳，请填ForceText。";
