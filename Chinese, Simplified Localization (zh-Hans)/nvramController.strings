@@ -13,11 +13,17 @@
 /* Class = "NSMenuItem"; title = "DATA"; ObjectID = "5S9-qs-ueO"; */
 "5S9-qs-ueO.title" = "数据";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Permits overwriting firmware variables from nvram.plist.\nNote: Only variables accessible from the operating system will be overwritten."; ObjectID = "Bqu-cW-189"; */
+"Bqu-cW-189.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Permits overwriting firmware variables from nvram.plist.\nNote: Only variables accessible from the operating system will be overwritten.";
+
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "C9A-DN-Ig8"; */
 "C9A-DN-Ig8.title" = "数字";
 
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "Eac-Nq-33R"; */
 "Eac-Nq-33R.headerCell.title" = "值";
+
+/* Class = "NSButtonCell"; title = "LegacyOverwrite"; ObjectID = "Hrg-If-vgt"; */
+"Hrg-If-vgt.title" = "LegacyOverwrite";
 
 /* Class = "NSTableColumn"; headerCell.title = "UUID"; ObjectID = "Lmb-kn-JbT"; */
 "Lmb-kn-JbT.headerCell.title" = "UUID";
