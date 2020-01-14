@@ -1,5 +1,5 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Enables writing to flash memory for all added variables. \nNote: This value is recommended to be enabled on most firmwares, but is left configurable for firmwares that may have issues with NVRAM variable storage garbage collection or alike."; ObjectID = "0qd-Qe-41F"; */
-"0qd-Qe-41F.ibShadowedToolTip" = "允许为所有添加的变量写入闪存。\n建议在大多数固件上启用此值，但对于可能与NVRAM变量存储垃圾收集等有关的固件，则可对其进行单独设置.";
+"0qd-Qe-41F.ibShadowedToolTip" = "允许为所有添加的变量写入闪存。\n建议在大多数固件上启用此值，如果你的主板bios因为nvram导入垃圾内容，可关闭它.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "1Hp-YT-QB3"; */
 "1Hp-YT-QB3.headerCell.title" = "键";
@@ -14,7 +14,7 @@
 "5S9-qs-ueO.title" = "数据";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Permits overwriting firmware variables from nvram.plist.\nNote: Only variables accessible from the operating system will be overwritten."; ObjectID = "Bqu-cW-189"; */
-"Bqu-cW-189.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Permits overwriting firmware variables from nvram.plist.\nNote: Only variables accessible from the operating system will be overwritten.";
+"Bqu-cW-189.ibShadowedToolTip" = "对模拟nvram用户来说，将nvram.plist写入固件。\n注意：只是覆盖可从操作系统访问的变量，一般不建议开启。";
 
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "C9A-DN-Ig8"; */
 "C9A-DN-Ig8.title" = "数字";
