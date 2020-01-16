@@ -62,7 +62,7 @@
 "9UE-nw-2aX.title" = "自定义";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write first SMBIOS table (gEfiSmbiosTableGuid) to gOcCustomSmbiosTableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII)."; ObjectID = "9o2-8y-dq6"; */
-"9o2-8y-dq6.ibShadowedToolTip" = "默认值:自动\n说明:更新SMBIOS字段方法:\n•自动 - 如果新大小<=大于页面对齐的原始文件并且旧区域解锁没有问题，则覆盖。否则创建。\n•创建 - 在AllocateMaxAddress中使用新分配的EfiReservedMemoryType替换表，而不进行任何回退。\n•覆盖 - 覆盖现有的gEfiSmbiosTableGuid和gEfiSmbiosTable3Guid数据（如果它适合新的大小）。否则将中止未指定的状态。\n•自定义 - 将第一个SMBIOS表（gEfiSmbiosTableGuid）写入gOcCustomSmbiosTableGuid以解决在ExitBootServices上覆盖SMBIOS内容的固件。否则相当于Create。需要修补AppleSmbios.kext和AppleACPIPlatform.kext以从另一个GUID读取:“EB9D2D31” - >“EB9D2D35”（ASCII格式）。";
+"9o2-8y-dq6.ibShadowedToolTip" = "AUTO--通常使用Auto(自动)或Create(创建即可--(推荐Auto)\nCustom--Dell机器应选择Custom(自定义)\nOverWrite(覆盖)--覆盖现有的SmbiosTableGUID数据(不推荐)-如果当SmbiosTableGUID覆盖过程中无法匹配新的大小则操作会被终止而导致SMBIOS数据注入失败，引导时无法绕过兼容性检查出现开机禁行--报错 ：This Version of MacOS X is not Supported on this Platform";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Forces CSM support in FirmwareFeatures. \nWithout this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\nNote: This was enabled unconditionally in older OpenCore versions."; ObjectID = "9sY-PL-wkx"; */
 "9sY-PL-wkx.ibShadowedToolTip" = "在FirmwareFeatures中强制CSM支持。\n如果WINDOWS的EFI分区不是磁盘上的第一个分区启用它，不然有可能无法引导WINDOWS。\n在较旧的OpenCore版本中已经无条件启用了此功能。";
@@ -113,7 +113,7 @@
 "IJO-Va-YDO.ibShadowedToolTip" = "从plist\n默认值添加或删除此部分:添加";
 
 /* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "IqG-Mw-D8N"; */
-"IqG-Mw-D8N.title" = "添加此部分";
+"IqG-Mw-D8N.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Information (Type 1) — SKU Number\nDescription: Mac Board ID (board-id). May look like Mac-7BA5B2D9E42DDD94 or Mac-F221BEC8 in older models. Sometimes it can be just empty."; ObjectID = "J9G-p3-A50"; */
 "J9G-p3-A50.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） -  SKU编号\n说明:Mac Board ID（board-id）。在旧型号中可能看起来像Mac-7BA5B2D9E42DDD94或Mac-F221BEC8。有时它可能只是空的。";
@@ -125,7 +125,7 @@
 "JCc-EO-5xz.title" = "System UUID";
 
 /* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "JEO-9d-aFI"; */
-"JEO-9d-aFI.title" = "添加此部分";
+"JEO-9d-aFI.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSButtonCell"; title = "SupportsCsm"; ObjectID = "Jk7-vn-L68"; */
 "Jk7-vn-L68.title" = "SupportsCsm";
@@ -191,7 +191,7 @@
 "Rcs-Ds-NTm.title" = "Generic";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Generate PlatformInfo based on Generic section instead of using values from DataHub, NVRAM, and SMBIOS sections.\nEnabling this option is useful when Generic section is flexible enough. When enabled SMBIOS, DataHub, and PlatformNVRAM data is unused."; ObjectID = "RfW-jb-UfW"; */
-"RfW-jb-UfW.ibShadowedToolTip" = "这里意思是是否自动填写系统信息。因为后面的很多选项都好繁琐，我们只要认真填几个选项就行了，这里选YES，不重要的信息让它自动填。";
+"RfW-jb-UfW.ibShadowedToolTip" = "选中此项时，OC不会应用DataHub ，PlatformNVRAM ，SMBIOS中的所有内容，\"自动\"选项要求必须配合Generic部分，详细内容OpenCore.efi会根据Generic中的SystemProductName 匹配完成所有自动填充。\n所以选择自动时，应该去掉这三个部分的\"在config.plist里添加此部分内容\"选择框，已防止这三部分内容在config文件里写入";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: BIOS Information (Type 0) — Vendor\nDescription: BIOS Vendor. All rules of SystemManufacturer do apply."; ObjectID = "SO7-47-4Z3"; */
 "SO7-47-4Z3.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:BIOS信息（类型0） - 供应商\n说明:BIOS供应商。 SystemManufacturer的所有规则都适用。";
@@ -206,7 +206,7 @@
 "TTj-aB-3ch.ibShadowedToolTip" = "<0x############> 可以是任意 6 Byte MAC 地址, 如 0x112233000000";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Update SMBIOS fields. These fields are read from Generic or SMBIOS sections depending on Automatic value."; ObjectID = "U5f-5A-ryt"; */
-"U5f-5A-ryt.ibShadowedToolTip" = "默认值:false\n说明:更新SMBIOS字段。这些字段根据自动值从Generic或SMBIOS部分读取。";
+"U5f-5A-ryt.ibShadowedToolTip" = "必须选YES, 无论\"自动\"选项是否选择！";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Add or remove this section from plist\nDefault value: Add"; ObjectID = "U5s-uE-f0J"; */
 "U5s-uE-f0J.ibShadowedToolTip" = "从plist\n默认值添加或删除此部分:添加";
@@ -245,7 +245,7 @@
 "XDd-C5-ehh.title" = "MLB";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Update DataHub fields. These fields are read from Generic or DataHub sections depending on Automatic value."; ObjectID = "XRB-18-dHU"; */
-"XRB-18-dHU.ibShadowedToolTip" = "默认值:false\n说明:更新DataHub字段。这些字段根据自动值从Generic或DataHub部分读取。";
+"XRB-18-dHU.ibShadowedToolTip" = "必须选YES, 无论\"自动\"选项是否选择！";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details."; ObjectID = "YgB-Sp-EZ5"; */
 "YgB-Sp-EZ5.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 板类型\n描述:0xA（主板（包括处理器，内存和I / O）或0xB（处理器/内存）模块），请参阅表15  - 底板:电路板类型以获取更多详细信息。";
@@ -305,7 +305,7 @@
 "eez-pY-d3O.ibShadowedLabels[1]" = "Hack";
 
 /* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "fWq-dP-cDy"; */
-"fWq-dP-cDy.title" = "添加此部分";
+"fWq-dP-cDy.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type, refer to Table 17 — System Enclosure or Chassis Types for more details."; ObjectID = "frw-3J-2Cg"; */
 "frw-3J-2Cg.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 键入\n说明:机箱类型，有关详细信息，请参阅表17  - 系统机箱或机箱类型。";
@@ -365,7 +365,7 @@
 "l5R-bG-c9M.title" = "Version";
 
 /* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "lvE-6L-IGl"; */
-"lvE-6L-IGl.title" = "添加此部分";
+"lvE-6L-IGl.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 8-bit\nDefault value: OEM specified\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Memory form factor. On Macs it should be DIMM or SODIMM."; ObjectID = "m9k-yK-AdV"; */
 "m9k-yK-AdV.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:内存设备（类型17） - 外形尺寸\n说明:内存形状因子。在Mac上它应该是DIMM或SODIMM。";
@@ -446,4 +446,4 @@
 "z92-Rg-GSY.title" = "Firmware Features";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Update NVRAM fields related to platform information.\nThese fields are read from Generic or PlatformNVRAM sections depending on Automatic value. All the other fields are to be specified with NVRAM section.\nIf UpdateNVRAM is set to false the aforementioned variables can be updated with NVRAM section. If UpdateNVRAM is set to true the behaviour is undefined when any of the fields are present in NVRAM section."; ObjectID = "zXC-sw-kEf"; */
-"zXC-sw-kEf.ibShadowedToolTip" = "默认值:false\n说明:更新与平台信息相关的NVRAM字段。\n这些字段根据自动值从Generic或PlatformNVRAM部分读取。所有其他字段都将使用NVRAM部分指定。\n如果UpdateNVRAM设置为false，则可以使用NVRAM部分更新上述变量。如果UpdateNVRAM设置为true，则当NVRAM部分中存在任何字段时，行为未定义。";
+"zXC-sw-kEf.ibShadowedToolTip" = "必须选YES, 无论\"自动\"选项是否选择！";
