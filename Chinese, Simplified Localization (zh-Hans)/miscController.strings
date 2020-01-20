@@ -68,7 +68,7 @@
 "Jpe-QB-x2r.title" = "AllowNvramReset";
 
 /* Class = "NSTextFieldCell"; title = "Console Behaviour Ui"; ObjectID = "JxW-Wr-efF"; */
-"JxW-Wr-efF.title" = "控制台行为";
+"JxW-Wr-efF.title" = "OC启动界面";
 
 /* Class = "NSTextFieldCell"; title = "Boot"; ObjectID = "KHk-e2-z8P"; */
 "KHk-e2-z8P.title" = "引导选项";
@@ -152,7 +152,7 @@
 "hAm-Ha-Meb.title" = "Target";
 
 /* Class = "NSTextFieldCell"; title = "Console Behaviour Os"; ObjectID = "jCS-F1-yHc"; */
-"jCS-F1-yHc.title" = "控制台行为";
+"jCS-F1-yHc.title" = "系统启动界面";
 
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "jPS-Bu-Ar4"; */
 "jPS-Bu-Ar4.headerCell.title" = "路径*";
