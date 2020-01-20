@@ -38,7 +38,7 @@
 "8BF-rh-btZ.headerCell.title" = "替换次数";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Increases 32-bit PCI bar size in IOPCIFamily from 1 to 4 GBs.\nNote: This option should be avoided whenever possible. In general the necessity of this option means misconfigured or broken firmware."; ObjectID = "8Db-Hu-t2R"; */
-"8Db-Hu-t2R.ibShadowedToolTip" = "将IOPCIFamily中的32位PCI磁条大小从1GB增加到4GB。\n注意：应尽可能避免使用此选项。通常，此选项的必要性意味着固件配置错误或损坏.";
+"8Db-Hu-t2R.ibShadowedToolTip" = "解决卡PCI configuration，如果碰到请选择yes, 一般选择no。\n注意，一般卡pci configuration都是因为自己错误的设置或硬件问题。";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n2. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel driver will not be blocked unless set to true.\n3. Identifier\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle identifier (e.g. com.apple.driver.AppleTyMCEDriver).\n4. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or older.\n5. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or newer."; ObjectID = "8UL-f2-RSc"; */
 "8UL-f2-RSc.ibShadowedToolTip" = "禁用一些kexts，这里好像没啥用，不用理会。";
