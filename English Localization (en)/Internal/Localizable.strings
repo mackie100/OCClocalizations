@@ -404,3 +404,7 @@
 
 /* dockMenu */
 "Leave A Message" = "Leave A Message";
+
+/* installDriversController
+    opencoreDownloaderController */
+"No EFI folder found.....\n" = "No EFI folder found.....\n";

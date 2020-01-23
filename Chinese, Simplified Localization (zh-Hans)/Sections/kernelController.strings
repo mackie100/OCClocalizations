@@ -1,3 +1,4 @@
+
 /* Class = "NSButtonCell"; title = "AppleXcpmCfgLock"; ObjectID = "0Ld-KH-eQW"; */
 "0Ld-KH-eQW.title" = "AppleXcpmCfgLock";
 
@@ -13,7 +14,7 @@
 /* Class = "NSTableColumn"; headerCell.title = "ExecutablePath"; ObjectID = "5Zf-0g-20b"; */
 "5Zf-0g-20b.headerCell.title" = "二进制文件路径";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in XNU kernel, commonly causing early kernel panic, when it is locked from writing (XCPM power management).\nNote: This option should avoided whenever possible. Modern firmwares provide CFG Lock setting, disabling which is much cleaner. More details about the issue can be found in VerifyMsrE2 notes."; ObjectID = "677-hy-Blh"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in XNU kernel, commonly causing early kernel panic, when it is locked from writing (XCPM power management).\nNote: This option should be avoided whenever possible. See AppleCpuPmCfgLock description for more details."; ObjectID = "677-hy-Blh"; */
 "677-hy-Blh.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG Lock选项。如何解CFG锁网上有详细教程。如果你不会解除这个CFG Lock，你就选择YES，已经解锁的情况下选择NO。注意，CFG的解锁对之后的进阶教程相关度极高，有能力还是解一下吧！";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables IOMapper support in XNU (VT-d), which may conflict with the firmware implementation.\nNote: This option is a preferred alternative to dropping DMAR ACPI table and disabling VT-d in firmware preferences, which does not break VT-d support in other systems in case they need it."; ObjectID = "6Aa-HL-hah"; */
@@ -25,7 +26,7 @@
 /* Class = "NSTableColumn"; headerCell.title = "MinKernel"; ObjectID = "70E-le-Wpc"; */
 "70E-le-Wpc.headerCell.title" = "匹配内核";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Sequence of EAX, EBX, ECX, EDX values in Little Endian order to replace CPUID (1) call in XNU kernel.  Normally it is only the value of EAX that needs to be taken care of, which represents the exact CPUID. And the remainders are to be left as zeroes. For instance, A9 06 03 00 stands for CPUID 0x0306A9 (Ivy Bridge)."; ObjectID = "7Jq-Yr-TQY"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Sequence of EAX, EBX, ECX, EDX values to replace CPUID (1) call in XNU kernel.  Normally it is only the value of EAX that needs to be taken care of, which represents the exact CPUID. And the remainders are to be left as zeroes. For instance, A9 06 03 00 stands for CPUID 0x0306A9 (Ivy Bridge)."; ObjectID = "7Jq-Yr-TQY"; */
 "7Jq-Yr-TQY.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
 
 /* Class = "NSButtonCell"; title = "PanicNoKextDump"; ObjectID = "7u5-bu-FWR"; */
@@ -55,7 +56,7 @@
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "9tr-6R-vGd"; */
 "9tr-6R-vGd.label" = "补丁";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nNote: This option should avoided whenever possible. Modern firmwares provide CFG Lock setting, disabling which is much cleaner. More details about the issue can be found in VerifyMsrE2 notes."; ObjectID = "FUx-RJ-QTK"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nCertain firmwares lock PKG_CST_CONFIG_CONTROL MSR register. To check its state one can use bundled VerifyMsrE2 tool. Select firmwares have this register locked on some cores only.\nAs modern firmwares provide CFG Lock setting, which allows configuring PKG_CST_CONFIG_CONTROL MSR register lock, this option should be avoided whenever possible. For several APTIO firmwares not displaying CFG Lock setting in the GUI it is possible to access the option directly:\n(a) Download UEFITool and IFR-Extractor.\n(b) Open your firmware image in UEFITool and find CFG Lock unicode string. If it is not present, your firmware may not have this option and you should stop.\n(c) Extract the Setup.bin PE32 Image Section (the one UEFITool found) through Extract Body menu option.\n(d) Run IFR-Extractor on the extracted file (e.g. ./ifrextract Setup.bin Setup.txt).\n(e) Find CFG Lock, VarStoreInfo (VarOffset/VarName): in Setup.txt and remember the offset right after it (e.g. 0x123).\n(f) Download and run Modified GRUB Shell compiled by brainsucker or use a newer version by datasone.\n(g) Enter setup_var 0x123 0x00 command, where 0x123 should be replaced by your actual offset, and reboot.\nWARNING: Variable offsets are unique not only to each motherboard but even to its firmware version. Never ever try to use an offset without checking."; ObjectID = "FUx-RJ-QTK"; */
 "FUx-RJ-QTK.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG Lock。如何解锁CFG Lock网上有详细教程。如果你不会解这个锁，你就选择YES，解锁的情况下选择NO。注意，CFG的解锁对之后的进阶教程相关度极高，有能力还是解一下吧！";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "GcD-Hq-Pnt"; */
@@ -97,7 +98,7 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Patch various kexts (AppleUSBXHCI.kext, AppleUSBXHCIPCI.kext, IOUSBHostFamily.kext) to remove USB port count limit of 15 ports.\nNote: This option should avoided whenever possible. USB port limit is imposed by the amount of used bits in locationID format and there is no possible way to workaround this without heavy OS modification. The only valid solution is to limit the amount of used ports to 15 (discarding some)."; ObjectID = "QzX-0b-2d3"; */
 "QzX-0b-2d3.ibShadowedToolTip" = "解除15个端口限制，如果USB端口已经定制，请选择NO。";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\nNote: This option should avoided whenever possible. Modern firmwares usually have compatible AHCI controllers."; ObjectID = "SGM-P1-Mz5"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\nNote: This option should be avoided whenever possible. Modern firmwares usually have compatible AHCI controllers."; ObjectID = "SGM-P1-Mz5"; */
 "SGM-P1-Mz5.ibShadowedToolTip" = "AHCI控制器相关，现在的主板都对AHCI支持的很好，一般选择NO。";
 
 /* Class = "NSButtonCell"; title = "ExternalDiskIcons"; ObjectID = "SHQ-fm-Uec"; */

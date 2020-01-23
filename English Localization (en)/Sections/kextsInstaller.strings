@@ -1,8 +1,6 @@
+
 /* Class = "NSButtonCell"; title = "SMCProcessor"; ObjectID = "0Hr-0F-FV6"; */
 "0Hr-0F-FV6.title" = "SMCProcessor";
-
-/* Class = "NSTextFieldCell"; title = "author name"; ObjectID = "29f-38-Z22"; */
-"29f-38-Z22.title" = "author name";
 
 /* Class = "NSButtonCell"; title = "Backup kext"; ObjectID = "39o-Ir-A0m"; */
 "39o-Ir-A0m.title" = "Backup kext";

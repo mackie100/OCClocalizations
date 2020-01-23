@@ -1,3 +1,4 @@
+
 /* Class = "NSButtonCell"; title = "AppleImageConversion"; ObjectID = "0AM-nb-Yrd"; */
 "0AM-nb-Yrd.title" = "AppleImageConversion";
 
@@ -177,18 +178,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications."; ObjectID = "l9b-pk-oii"; */
 "l9b-pk-oii.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications.";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[0] = "Auto"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[0]" = "Auto";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[1] = "V1"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[1]" = "V1";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[2] = "V2"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[2]" = "V2";
-
-/* Class = "NSComboBoxCell"; nYS-MV-94u.ibShadowedObjectValues[3] = "AMI"; ObjectID = "nYS-MV-94u"; */
-"nYS-MV-94u.ibShadowedObjectValues[3]" = "AMI";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs."; ObjectID = "nvr-JF-3ne"; */
 "nvr-JF-3ne.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs.";

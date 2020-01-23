@@ -1,3 +1,4 @@
+
 /* Class = "NSButtonCell"; title = "Convert"; ObjectID = "0aV-Eb-8qw"; */
 "0aV-Eb-8qw.title" = "转换";
 
@@ -9,9 +10,6 @@
 
 /* Class = "NSButtonCell"; title = "Convert"; ObjectID = "L6E-fs-t82"; */
 "L6E-fs-t82.title" = "转换";
-
-/* Class = "NSButtonCell"; title = "counter"; ObjectID = "LpB-5y-cZ1"; */
-"LpB-5y-cZ1.title" = "计数";
 
 /* Class = "NSTextFieldCell"; title = "Search (⌘F)"; ObjectID = "Wd6-KD-rqx"; */
 "Wd6-KD-rqx.title" = "搜索（⌘F）";
