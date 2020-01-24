@@ -1,3 +1,4 @@
+
 /* Class = "NSTextFieldCell"; title = "SmcVersion"; ObjectID = "01x-DY-Yh2"; */
 "01x-DY-Yh2.title" = "SmcVersion";
 
@@ -9,9 +10,6 @@
 
 /* Class = "NSTextFieldCell"; title = "ROM"; ObjectID = "1Sc-Fb-KaM"; */
 "1Sc-Fb-KaM.title" = "ROM";
-
-/* Class = "NSMenuItem"; title = "Auto"; ObjectID = "1gO-UU-I6z"; */
-"1gO-UU-I6z.title" = "自动";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64-bit\nDefault value: 0\nDescription: Sets InitialTSC in gEfiProcessorSubClassGuid. Sets initial TSC value, normally 0."; ObjectID = "2Oj-go-m5S"; */
 "2Oj-go-m5S.ibShadowedToolTip" = "默认值:0\n描述:在gEfiProcessorSubClassGuid中设置InitialTSC。设置初始TSC值，通常为0。";
@@ -37,6 +35,12 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: BIOS Information (Type 0) — BIOS Release Date\nDescription: Firmware release date. Similar to BIOSVersion. May look like 12/08/2017."; ObjectID = "6gn-IY-sd7"; */
 "6gn-IY-sd7.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:BIOS信息（类型0） -  BIOS发布日期\n说明:固件发布日期。与BIOSVersion相似。可能看起来像12/08/2017。";
 
+/* Class = "NSSegmentedCell"; 7Vs-jv-oh8.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "7Vs-jv-oh8"; */
+"7Vs-jv-oh8.ibShadowedLabels[0]" = "机型查询";
+
+/* Class = "NSSegmentedCell"; 7Vs-jv-oh8.ibShadowedLabels[1] = "Check Coverage"; ObjectID = "7Vs-jv-oh8"; */
+"7Vs-jv-oh8.ibShadowedLabels[1]" = "检查序列号有效性";
+
 /* Class = "NSTextFieldCell"; title = "Startup Power Events"; ObjectID = "7XG-zt-wiU"; */
 "7XG-zt-wiU.title" = "Startup Power Events";
 
@@ -57,9 +61,6 @@
 
 /* Class = "NSTextFieldCell"; title = "DataHub"; ObjectID = "8wz-5k-5Zd"; */
 "8wz-5k-5Zd.title" = "DataHub";
-
-/* Class = "NSMenuItem"; title = "Custom"; ObjectID = "9UE-nw-2aX"; */
-"9UE-nw-2aX.title" = "自定义";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write first SMBIOS table (gEfiSmbiosTableGuid) to gOcCustomSmbiosTableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII)."; ObjectID = "9o2-8y-dq6"; */
 "9o2-8y-dq6.ibShadowedToolTip" = "AUTO--通常使用Auto(自动)或Create(创建即可--(推荐Auto)\nCustom--Dell机器应选择Custom(自定义)\nOverWrite(覆盖)--覆盖现有的SmbiosTableGUID数据(不推荐)-如果当SmbiosTableGUID覆盖过程中无法匹配新的大小则操作会被终止而导致SMBIOS数据注入失败，引导时无法绕过兼容性检查出现开机禁行--报错 ：This Version of MacOS X is not Supported on this Platform";
@@ -112,7 +113,7 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Add or remove this section from plist\nDefault value: Add"; ObjectID = "IJO-Va-YDO"; */
 "IJO-Va-YDO.ibShadowedToolTip" = "从plist\n默认值添加或删除此部分:添加";
 
-/* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "IqG-Mw-D8N"; */
+/* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "IqG-Mw-D8N"; */
 "IqG-Mw-D8N.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Information (Type 1) — SKU Number\nDescription: Mac Board ID (board-id). May look like Mac-7BA5B2D9E42DDD94 or Mac-F221BEC8 in older models. Sometimes it can be just empty."; ObjectID = "J9G-p3-A50"; */
@@ -124,7 +125,7 @@
 /* Class = "NSTextFieldCell"; title = "System UUID"; ObjectID = "JCc-EO-5xz"; */
 "JCc-EO-5xz.title" = "System UUID";
 
-/* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "JEO-9d-aFI"; */
+/* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "JEO-9d-aFI"; */
 "JEO-9d-aFI.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSButtonCell"; title = "SupportsCsm"; ObjectID = "Jk7-vn-L68"; */
@@ -178,9 +179,6 @@
 /* Class = "NSTextFieldCell"; title = "Vendor"; ObjectID = "R7K-qk-Tpk"; */
 "R7K-qk-Tpk.title" = "Vendor";
 
-/* Class = "NSMenuItem"; title = "Overwrite"; ObjectID = "RDQ-95-cP0"; */
-"RDQ-95-cP0.title" = "覆盖";
-
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nDefault value: Automatic\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types."; ObjectID = "RLW-Hz-QKb"; */
 "RLW-Hz-QKb.ibShadowedToolTip" = "默认值:自动\nSMBIOS:APPLE_SMBIOS_TABLE_TYPE131  -  ProcessorType描述:处理器主要和次要类型的组合。";
 
@@ -219,9 +217,6 @@
 
 /* Class = "NSButtonCell"; title = "UpdateSMBIOS"; ObjectID = "Uzb-U1-Thj"; */
 "Uzb-U1-Thj.title" = "UpdateSMBIOS";
-
-/* Class = "NSMenuItem"; title = "Create"; ObjectID = "VGE-pO-4m0"; */
-"VGE-pO-4m0.title" = "创建";
 
 /* Class = "NSButtonCell"; title = "from System"; ObjectID = "VKd-ep-fuP"; */
 "VKd-ep-fuP.title" = "来自系统";
@@ -364,7 +359,7 @@
 /* Class = "NSTextFieldCell"; title = "Version"; ObjectID = "l5R-bG-c9M"; */
 "l5R-bG-c9M.title" = "Version";
 
-/* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "lvE-6L-IGl"; */
+/* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "lvE-6L-IGl"; */
 "lvE-6L-IGl.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 8-bit\nDefault value: OEM specified\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Memory form factor. On Macs it should be DIMM or SODIMM."; ObjectID = "m9k-yK-AdV"; */
