@@ -23,7 +23,7 @@
 "6Mq-wE-cHt.ibShadowedToolTip" = "当你遇到睡眠不能唤醒，只有重启后才能睡眠唤醒，请试试选择YES。";
 
 /* Class = "NSTableColumn"; headerCell.title = "MinKernel"; ObjectID = "70E-le-Wpc"; */
-"70E-le-Wpc.headerCell.title" = "匹配内核";
+"70E-le-Wpc.headerCell.title" = "最小内核";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Sequence of EAX, EBX, ECX, EDX values in Little Endian order to replace CPUID (1) call in XNU kernel.  Normally it is only the value of EAX that needs to be taken care of, which represents the exact CPUID. And the remainders are to be left as zeroes. For instance, A9 06 03 00 stands for CPUID 0x0306A9 (Ivy Bridge)."; ObjectID = "7Jq-Yr-TQY"; */
 "7Jq-Yr-TQY.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
@@ -71,7 +71,7 @@
 "IQk-iw-L5E.headerCell.title" = "最大内核";
 
 /* Class = "NSTableColumn"; headerCell.title = "Mask"; ObjectID = "IQu-iO-MYc"; */
-"IQu-iO-MYc.headerCell.title" = "遮罩";
+"IQu-iO-MYc.headerCell.title" = "Mask";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier*"; ObjectID = "IWc-Ff-bdQ"; */
 "IWc-Ff-bdQ.headerCell.title" = "标识符*";
@@ -155,10 +155,10 @@
 "kGJ-yd-xi8.headerCell.title" = "注释";
 
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "lAD-ms-SMV"; */
-"lAD-ms-SMV.headerCell.title" = "替换遮罩";
+"lAD-ms-SMV.headerCell.title" = "替换Mask";
 
 /* Class = "NSTableColumn"; headerCell.title = "MinKernel"; ObjectID = "lXN-nk-zjA"; */
-"lXN-nk-zjA.headerCell.title" = "匹配内核";
+"lXN-nk-zjA.headerCell.title" = "最小内核";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "mWg-wh-eGt"; */
 "mWg-wh-eGt.label" = "添加";
@@ -182,7 +182,7 @@
 "w0k-rY-QSy.title" = "ThirdPartyTrim";
 
 /* Class = "NSTableColumn"; headerCell.title = "MinKernel"; ObjectID = "w5E-ff-NpB"; */
-"w5E-ff-NpB.headerCell.title" = "匹配内核";
+"w5E-ff-NpB.headerCell.title" = "最小内核";
 
 /* Class = "NSBox"; title = "Emulate"; ObjectID = "wEr-yw-cwt"; */
 "wEr-yw-cwt.title" = "仿冒CPU";

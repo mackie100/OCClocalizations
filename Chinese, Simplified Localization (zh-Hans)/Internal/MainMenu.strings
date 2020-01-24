@@ -86,10 +86,10 @@
 "BgM-ve-c93.title" = "\t左到右";
 
 /* Class = "NSMenuItem"; title = "Templates"; ObjectID = "BtA-nJ-hmS"; */
-"BtA-nJ-hmS.title" = "模板";
+"BtA-nJ-hmS.title" = "配置模板";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
-"D1d-8G-YO3.title" = "差异";
+"D1d-8G-YO3.title" = "官方Differences.PDF";
 
 /* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
 "Dv1-io-Yv7.title" = "拼写和语法";
@@ -167,7 +167,7 @@
 "K7T-KM-ZRz.title" = "语言";
 
 /* Class = "NSMenu"; title = "Templates"; ObjectID = "KGo-Ce-Wkm"; */
-"KGo-Ce-Wkm.title" = "模板";
+"KGo-Ce-Wkm.title" = "配置模板";
 
 /* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
 "Kd2-mp-pUS.title" = "显示所有";
@@ -359,7 +359,7 @@
 "jIP-f7-0x8.title" = "检查更新…";
 
 /* Class = "NSMenu"; title = "Documentations"; ObjectID = "jYQ-AF-wIJ"; */
-"jYQ-AF-wIJ.title" = "文献";
+"jYQ-AF-wIJ.title" = "资料";
 
 /* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
 "jxT-CU-nIS.title" = "格式";
@@ -410,7 +410,7 @@
 "q09-fT-Sye.title" = "查找下一个";
 
 /* Class = "NSMenuItem"; title = "Configuration"; ObjectID = "q0U-gA-ewe"; */
-"q0U-gA-ewe.title" = "配置";
+"q0U-gA-ewe.title" = "官方Configuration.PDF";
 
 /* Class = "NSButtonCell"; title = "Autosave File"; ObjectID = "qzY-w2-2R4"; */
 "qzY-w2-2R4.title" = "自动保存文件";
@@ -443,7 +443,7 @@
 "tlD-Oa-oAM.title" = "字距";
 
 /* Class = "NSMenuItem"; title = "Documentations"; ObjectID = "toU-XT-mIr"; */
-"toU-XT-mIr.title" = "文献";
+"toU-XT-mIr.title" = "文档资料";
 
 /* Class = "NSMenu"; title = "OpenCore Configurator"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "OpenCore配置器";
