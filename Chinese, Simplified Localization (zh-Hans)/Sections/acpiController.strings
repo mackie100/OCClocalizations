@@ -6,7 +6,7 @@
 "2tM-Ig-MFJ.ibShadowedToolTip" = "这里我们需要填写一下热补丁。\n在10.15中，一些资料指出我们需要把EC控制器(EC0)改名为EC来确保能进入10.15系统\n华擎、华硕、微星主板可能会遇到RTC问题而无法进入系统，这同样需要添加hotpatch补丁来\n具体补丁包可以查看宪武大神做的OC-Little补丁包";
 
 /* Class = "NSTableColumn"; headerCell.title = "Mask"; ObjectID = "4j9-uJ-Gbu"; */
-"4j9-uJ-Gbu.headerCell.title" = "遮罩";
+"4j9-uJ-Gbu.headerCell.title" = "Mask";
 
 /* Class = "NSButtonCell"; title = "NormalizeHeaders"; ObjectID = "6NS-cZ-NZu"; */
 "6NS-cZ-NZu.title" = "NormalizeHeaders";
@@ -33,7 +33,7 @@
 "FLp-3q-DSv.headerCell.title" = "启用";
 
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "JFF-S2-t99"; */
-"JFF-S2-t99.headerCell.title" = "替换遮罩";
+"JFF-S2-t99.headerCell.title" = "替换Mask";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "JjS-7V-0PV"; */
 "JjS-7V-0PV.headerCell.title" = "注释";

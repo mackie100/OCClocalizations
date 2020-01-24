@@ -165,10 +165,10 @@
 "PHO-4O-OIP.ibShadowedToolTip" = "从plist添加或删除此部分\n默认值：添加";
 
 /* Class = "NSSegmentedCell"; PVt-qS-yBp.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "PVt-qS-yBp"; */
-"PVt-qS-yBp.ibShadowedLabels[0]" = "机型查找";
+"PVt-qS-yBp.ibShadowedLabels[0]" = "机型查询";
 
 /* Class = "NSSegmentedCell"; PVt-qS-yBp.ibShadowedLabels[1] = "Check Coverage"; ObjectID = "PVt-qS-yBp"; */
-"PVt-qS-yBp.ibShadowedLabels[1]" = "检查覆盖范围";
+"PVt-qS-yBp.ibShadowedLabels[1]" = "检查序列号有效性";
 
 /* Class = "NSTextFieldCell"; title = "System Product Name"; ObjectID = "Pwo-2A-1gv"; */
 "Pwo-2A-1gv.title" = "System Product Name";
@@ -381,7 +381,7 @@
 "o9h-XT-hbD.ibShadowedToolTip" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置模型。在Mac上找到的值等于Unicode中的SMBIOS SystemProductName。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE134 - Version\nDescription: ASCII string containing SMC version in upper case. Missing on T2 based Macs. Ignored when zero."; ObjectID = "oMm-l1-RDC"; */
-"oMm-l1-RDC.ibShadowedToolTip" = "ASCII字符串，包含大写的SMC版本。 在基于T2的Mac上缺少。 零时忽略。";
+"oMm-l1-RDC.ibShadowedToolTip" = "去苹果官网看看你的三码是什么状态，但我们是黑苹果，嘿嘿，你懂得！";
 
 /* Class = "NSTextFieldCell"; title = "SmcPlatform"; ObjectID = "p5r-L2-V0b"; */
 "p5r-L2-V0b.title" = "SmcPlatform";
