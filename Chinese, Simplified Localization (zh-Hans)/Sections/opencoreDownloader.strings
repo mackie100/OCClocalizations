@@ -1,5 +1,5 @@
 /* Class = "NSTextFieldCell"; title = "Revision to install:"; ObjectID = "1M1-gz-Hea"; */
-"1M1-gz-Hea.title" = "想要安装的版本：";
+"1M1-gz-Hea.title" = "最新可用版本(正式版)：";
 
 /* Class = "NSButtonCell"; title = "Download"; ObjectID = "564-pv-rZ2"; */
 "564-pv-rZ2.title" = "下载";
@@ -17,7 +17,7 @@
 "F0z-JX-Cv5.title" = "OpenCore下载器";
 
 /* Class = "NSTextFieldCell"; title = "Current booted version:"; ObjectID = "WYE-0s-lZa"; */
-"WYE-0s-lZa.title" = "当前启动的版本:";
+"WYE-0s-lZa.title" = "当前使用版本:";
 
 /* Class = "NSButtonCell"; title = "Backup files"; ObjectID = "cMH-BQ-DfF"; */
 "cMH-BQ-DfF.title" = "备份文件";
