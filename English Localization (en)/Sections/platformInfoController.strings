@@ -65,8 +65,8 @@
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write first SMBIOS table (gEfiSmbiosTableGuid) to gOcCustomSmbiosTableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII)."; ObjectID = "9o2-8y-dq6"; */
 "9o2-8y-dq6.ibShadowedToolTip" = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write first SMBIOS table (gEfiSmbiosTableGuid) to gOcCustomSmbiosTableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII).";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Forces CSM support in FirmwareFeatures. \nWithout this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\nNote: This was enabled unconditionally in older OpenCore versions."; ObjectID = "9sY-PL-wkx"; */
-"9sY-PL-wkx.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Forces CSM support in FirmwareFeatures. \nWithout this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\nNote: This was enabled unconditionally in older OpenCore versions.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Forces Windows support in FirmwareFeatures. \nAdded bits to FirmwareFeatures:\n• FW_FEATURE_SUPPORTS_CSM_LEGACY_MODE (0x1) - Without this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\n• FW_FEATURE_SUPPORTS_UEFI_WINDOWS_BOOT (0x20000000) - Without this bit it is not possible to reboot to Windows installed on a drive with EFI partition being the first partition on the disk."; ObjectID = "9sY-PL-wkx"; */
+"9sY-PL-wkx.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Forces Windows support in FirmwareFeatures. \nAdded bits to FirmwareFeatures:\n• FW_FEATURE_SUPPORTS_CSM_LEGACY_MODE (0x1) - Without this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\n• FW_FEATURE_SUPPORTS_UEFI_WINDOWS_BOOT (0x20000000) - Without this bit it is not possible to reboot to Windows installed on a drive with EFI partition being the first partition on the disk.";
 
 /* Class = "NSTextFieldCell"; title = "UUID"; ObjectID = "ADr-qW-Bb4"; */
 "ADr-qW-Bb4.title" = "UUID";
@@ -128,8 +128,8 @@
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "JEO-9d-aFI"; */
 "JEO-9d-aFI.title" = "Add this section in config.plist";
 
-/* Class = "NSButtonCell"; title = "SupportsCsm"; ObjectID = "Jk7-vn-L68"; */
-"Jk7-vn-L68.title" = "SupportsCsm";
+/* Class = "NSButtonCell"; title = "AdviseWindows"; ObjectID = "Jk7-vn-L68"; */
+"Jk7-vn-L68.title" = "AdviseWindows";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "KNP-Ab-25u"; */
 "KNP-Ab-25u.title" = "Generate";

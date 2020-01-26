@@ -65,7 +65,7 @@
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write first SMBIOS table (gEfiSmbiosTableGuid) to gOcCustomSmbiosTableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII)."; ObjectID = "9o2-8y-dq6"; */
 "9o2-8y-dq6.ibShadowedToolTip" = "AUTO--通常使用Auto(自动)或Create(创建即可--(推荐Auto)\nCustom--Dell机器应选择Custom(自定义)\nOverWrite(覆盖)--覆盖现有的SmbiosTableGUID数据(不推荐)-如果当SmbiosTableGUID覆盖过程中无法匹配新的大小则操作会被终止而导致SMBIOS数据注入失败，引导时无法绕过兼容性检查出现开机禁行--报错 ：This Version of MacOS X is not Supported on this Platform";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Forces CSM support in FirmwareFeatures. \nWithout this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\nNote: This was enabled unconditionally in older OpenCore versions."; ObjectID = "9sY-PL-wkx"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Forces Windows support in FirmwareFeatures. \nAdded bits to FirmwareFeatures:\n• FW_FEATURE_SUPPORTS_CSM_LEGACY_MODE (0x1) - Without this bit it is not possible to reboot to Windows installed on a drive with EFI partition being not the first partition on the disk.\n• FW_FEATURE_SUPPORTS_UEFI_WINDOWS_BOOT (0x20000000) - Without this bit it is not possible to reboot to Windows installed on a drive with EFI partition being the first partition on the disk."; ObjectID = "9sY-PL-wkx"; */
 "9sY-PL-wkx.ibShadowedToolTip" = "在FirmwareFeatures中强制CSM支持。\n如果WINDOWS的EFI分区不是磁盘上的第一个分区启用它，不然有可能无法引导WINDOWS。\n在较旧的OpenCore版本中已经无条件启用了此功能。";
 
 /* Class = "NSTextFieldCell"; title = "UUID"; ObjectID = "ADr-qW-Bb4"; */
@@ -126,10 +126,10 @@
 "JCc-EO-5xz.title" = "System UUID";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "JEO-9d-aFI"; */
-"JEO-9d-aFI.title" = "在config.plist里添加此部分内容";
+"JEO-9d-aFI.title" = "Add this section in config.plist";
 
-/* Class = "NSButtonCell"; title = "SupportsCsm"; ObjectID = "Jk7-vn-L68"; */
-"Jk7-vn-L68.title" = "SupportsCsm";
+/* Class = "NSButtonCell"; title = "AdviseWindows"; ObjectID = "Jk7-vn-L68"; */
+"Jk7-vn-L68.title" = "AdviseWindows";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "KNP-Ab-25u"; */
 "KNP-Ab-25u.title" = "生成";
@@ -299,7 +299,7 @@
 /* Class = "NSSegmentedCell"; eez-pY-d3O.ibShadowedLabels[1] = "Hack"; ObjectID = "eez-pY-d3O"; */
 "eez-pY-d3O.ibShadowedLabels[1]" = "Hack";
 
-/* Class = "NSButtonCell"; title = "Add this section"; ObjectID = "fWq-dP-cDy"; */
+/* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "fWq-dP-cDy"; */
 "fWq-dP-cDy.title" = "在config.plist里添加此部分内容";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type, refer to Table 17 — System Enclosure or Chassis Types for more details."; ObjectID = "frw-3J-2Cg"; */
