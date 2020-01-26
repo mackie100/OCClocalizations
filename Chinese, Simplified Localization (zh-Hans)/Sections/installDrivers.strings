@@ -1,3 +1,4 @@
+
 /* Class = "NSTableColumn"; headerCell.title = "Description"; ObjectID = "21B-Cb-fUA"; */
 "21B-Cb-fUA.headerCell.title" = "描述";
 
@@ -36,9 +37,6 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "g7H-EN-grT"; */
 "g7H-EN-grT.headerCell.title" = "名称";
-
-/* Class = "NSButtonCell"; title = "Check"; ObjectID = "gde-f0-mcb"; */
-"gde-f0-mcb.title" = "检测";
 
 /* Class = "NSTableColumn"; headerCell.title = "Installed"; ObjectID = "jcQ-eq-FLX"; */
 "jcQ-eq-FLX.headerCell.title" = "已安装";

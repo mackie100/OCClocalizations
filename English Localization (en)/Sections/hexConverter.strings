@@ -1,3 +1,4 @@
+
 /* Class = "NSTextFieldCell"; placeholderString = "decimal string"; ObjectID = "1JV-bN-KRu"; */
 "1JV-bN-KRu.placeholderString" = "decimal string";
 
@@ -5,7 +6,7 @@
 "8Wn-hg-GPm.placeholderString" = "text string";
 
 /* Class = "NSBox"; title = "decimal <-> HEX "; ObjectID = "AbW-Wf-IH2"; */
-"AbW-Wf-IH2.title" = "decimal <-> HEX";
+"AbW-Wf-IH2.title" = "decimal <-> HEX ";
 
 /* Class = "NSSegmentedCell"; CBm-Dw-zMx.ibShadowedLabels[0] = "encode"; ObjectID = "CBm-Dw-zMx"; */
 "CBm-Dw-zMx.ibShadowedLabels[0]" = "encode";

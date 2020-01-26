@@ -1,8 +1,6 @@
+
 /* Class = "NSWindow"; title = "About OpenCore Configurator"; ObjectID = "1"; */
 "1.title" = "About OpenCore Configurator";
-
-/* Class = "NSButtonCell"; title = "Website"; ObjectID = "eyI-Cm-PGX"; */
-"eyI-Cm-PGX.title" = "Website";
 
 /* Class = "NSButtonCell"; title = "Changelog"; ObjectID = "EZg-E1-74c"; */
 "EZg-E1-74c.title" = "Changelog";
@@ -13,5 +11,5 @@
 /* Class = "NSButtonCell"; title = "Donate"; ObjectID = "Wky-VX-jr0"; */
 "Wky-VX-jr0.title" = "Donate";
 
-/* Class = "NSTextFieldCell"; title = "Version"; ObjectID = "wUa-DZ-OPf"; */
-"wUa-DZ-OPf.title" = "Version";
+/* Class = "NSButtonCell"; title = "Website"; ObjectID = "eyI-Cm-PGX"; */
+"eyI-Cm-PGX.title" = "Website";

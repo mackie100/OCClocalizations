@@ -1,3 +1,4 @@
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Enables writing to flash memory for all added variables. \nNote: This value is recommended to be enabled on most firmwares, but is left configurable for firmwares that may have issues with NVRAM variable storage garbage collection or alike."; ObjectID = "0qd-Qe-41F"; */
 "0qd-Qe-41F.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Enables writing to flash memory for all added variables. \nNote: This value is recommended to be enabled on most firmwares, but is left configurable for firmwares that may have issues with NVRAM variable storage garbage collection or alike.";
 

@@ -1,3 +1,4 @@
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Reset BGRT table Displayed status field to false.\nThis works around firmwares that provide BGRT table but fail to handle screen updates afterwards."; ObjectID = "0zY-cF-e9r"; */
 "0zY-cF-e9r.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Reset BGRT table Displayed status field to false.\nThis works around firmwares that provide BGRT table but fail to handle screen updates afterwards.";
 
