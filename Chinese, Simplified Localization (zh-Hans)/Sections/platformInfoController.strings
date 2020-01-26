@@ -36,10 +36,10 @@
 "6gn-IY-sd7.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:BIOS信息（类型0） -  BIOS发布日期\n说明:固件发布日期。与BIOSVersion相似。可能看起来像12/08/2017。";
 
 /* Class = "NSSegmentedCell"; 7Vs-jv-oh8.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "7Vs-jv-oh8"; */
-"7Vs-jv-oh8.ibShadowedLabels[0]" = "检查覆盖范围";
+"7Vs-jv-oh8.ibShadowedLabels[0]" = "机型查询";
 
 /* Class = "NSSegmentedCell"; 7Vs-jv-oh8.ibShadowedLabels[1] = "Check Coverage"; ObjectID = "7Vs-jv-oh8"; */
-"7Vs-jv-oh8.ibShadowedLabels[1]" = "检查覆盖范围";
+"7Vs-jv-oh8.ibShadowedLabels[1]" = "检查序列号有效性";
 
 /* Class = "NSTextFieldCell"; title = "Startup Power Events"; ObjectID = "7XG-zt-wiU"; */
 "7XG-zt-wiU.title" = "Startup Power Events";
