@@ -26,7 +26,7 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls unicode collation services with builtin version. Should be set to true to ensure UEFI Shell compatibility on platforms providing broken unicode collation. In general legacy Insyde and APTIO platforms on Ivy Bridge and earlier are affected."; ObjectID = "4bg-ao-G40"; */
 "4bg-ao-G40.ibShadowedToolTip" = "一般选NO。\n一些较旧的固件破坏了 Unicode 排序规则, 设置为 YES 可以修复这些系统上 UEFI Shell 的兼容性 (通常为用于 IvyBridge 或更旧的设备)";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal keyboard input translation to AppleKeyMapAggregator protocol.\nThis option activates the internal keyboard interceptor driver, based on AppleGenericInput aka AptioIntputFix), to fill AppleKeyMapAggregator database for input functioning. In case a separate driver is used, such as AppleUsbKbDxe, this option should never be enabled."; ObjectID = "4fK-xq-9AN"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal keyboard input translation to AppleKeyMapAggregator protocol.\nThis option activates the internal keyboard interceptor driver, based on AppleGenericInput aka AptioIntput), to fill AppleKeyMapAggregator database for input functioning. In case a separate driver is used, such as AppleUsbKbDxe, this option should never be enabled."; ObjectID = "4fK-xq-9AN"; */
 "4fK-xq-9AN.ibShadowedToolTip" = "开启 OC 的内置键盘支持\n使用 UsbKbDxe.efi 请设置为 NO";
 
 /* Class = "NSButtonCell"; title = "RequestBootVarFallback"; ObjectID = "51n-pL-3hs"; */
