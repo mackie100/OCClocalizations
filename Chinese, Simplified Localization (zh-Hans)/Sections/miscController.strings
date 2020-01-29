@@ -1,6 +1,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional."; ObjectID = "0sy-D3-AKk"; */
-"0sy-D3-AKk.ibShadowedToolTip" = "启用与VirtualSMC兼容的身份验证重新启动。\n与磁盘加密启动相关，一般选NO";
+"0sy-D3-AKk.ibShadowedToolTip" = "允许重启 FileVault2 分区时不用再次输密码, 有安全风险。\n与磁盘加密启动相关，一般选NO";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "1NZ-HO-WUF"; */
 "1NZ-HO-WUF.headerCell.title" = "说明";
@@ -30,7 +30,7 @@
 "9LG-wP-7Np.title" = "Disable WatchDog\n禁用看门狗";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty string\nDescription: Set console control behaviour upon OpenCore user interface load. Refer to ConsoleBehaviourOs description for details."; ObjectID = "Acd-af-b6f"; */
-"Acd-af-b6f.ibShadowedToolTip" = "一般是留空，如果留空开机显示效果不佳，请填ForceText。";
+"Acd-af-b6f.ibShadowedToolTip" = "一般是留空，如果留空开机显示效果不佳，请与ConsoleBehaviourOs组合使用:\n4 代及以下\nConsoleBehaviourOs = Graphics\nConsoleBehaviourUi = ForceText\n5 代以上\nConsoleBehaviourOs = ForceGraphics\nConsoleBehaviourUi = ForceText\n在有的固件上将两「留空」或者设为 Graphics 和 Text 效果更好。";
 
 /* Class = "NSButtonCell"; title = "Require Signature"; ObjectID = "Bnw-Da-EPD"; */
 "Bnw-Da-EPD.title" = "Require Signature";
@@ -42,7 +42,7 @@
 "Dgr-GW-WzX.ibShadowedToolTip" = "是否使用OC的启动选择器，选YES。可能之后会支持第三方主题接口的话，我们才选选NO。";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
-"E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。";
+"E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。\n一般填写路径\EFI\Microsoft\Boot\bootmgfw.efi";
 
 /* Class = "NSTextFieldCell"; title = "Resolution"; ObjectID = "F6a-ij-WIB"; */
 "F6a-ij-WIB.title" = "分辨率";
@@ -96,7 +96,7 @@
 "TmR-t7-bmq.title" = "Hibernate Mode\n休眠模式";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0xF0103\nDescription: Define operating system detection policy.\nThis value allows to prevent scanning (and booting) from untrusted source based on a bitmask (sum) of select flags. As it is not possible to reliably detect every file system or device type, this feature cannot be fully relied upon in open environments, and the additional measures are to be applied.\nThird party drivers may introduce additional security (and performance) measures following the provided scan policy. Scan policy is exposed in scan-policy variable of 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102 GUID for UEFI Boot Services only.\n• 0x00000001 — OC_SCAN_FILE_SYSTEM_LOCK, restricts scanning to only known file systems defined as a part of this policy. File system drivers may not be aware of this policy, and to avoid mounting of undesired file systems it is best not to load its driver. This bit does not affect dmg mounting, which may have any file system. Known file systems are prefixed with OC_SCAN_ALLOW_FS_.\n• 0x00000002 — OC_SCAN_DEVICE_LOCK, restricts scanning to only known device types defined as a part of this policy. This is not always possible to detect protocol tunneling, so be aware that on some systems it may be possible for e.g. USB HDDs to be recognised as SATA. Cases like this must be reported. Known device types are prefixed with OC_SCAN_ALLOW_DEVICE_.\n• 0x00000100 — OC_SCAN_ALLOW_FS_APFS, allows scanning of APFS file system.\n• 0x00010000 — OC_SCAN_ALLOW_DEVICE_SATA, allow scanning SATA devices.\n• 0x00020000 — OC_SCAN_ALLOW_DEVICE_SASEX, allow scanning SAS and Mac NVMe devices.\n• 0x00040000 — OC_SCAN_ALLOW_DEVICE_SCSI, allow scanning SCSI devices.\n• 0x00080000 — OC_SCAN_ALLOW_DEVICE_NVME, allow scanning NVMe devices.\n• 0x00100000 — OC_SCAN_ALLOW_DEVICE_ATAPI, allow scanning CD/DVD devices.\n• 0x00200000 — OC_SCAN_ALLOW_DEVICE_USB, allow scanning USB devices.\n• 0x00400000 — OC_SCAN_ALLOW_DEVICE_FIREWIRE, allow scanning FireWire devices.\n• 0x00800000 — OC_SCAN_ALLOW_DEVICE_SDCARD, allow scanning card reader devices.\nNote: Given the above description, 0xF0103 value is expected to allow scanning of SATA, SAS, SCSI, and NVMe devices with APFS file system, and prevent scanning of any devices with HFS or FAT32 file systems in addition to not scanning APFS file systems on USB, CD, USB, and FireWire drives. The combination reads as:\n• OC_SCAN_FILE_SYSTEM_LOCK • OC_SCAN_DEVICE_LOCK\n• OC_SCAN_ALLOW_FS_APFS\n• OC_SCAN_ALLOW_DEVICE_SATA\n• OC_SCAN_ALLOW_DEVICE_SASEX\n• OC_SCAN_ALLOW_DEVICE_SCSI • OC_SCAN_ALLOW_DEVICE_NVME"; ObjectID = "VQF-Ne-GWu"; */
-"VQF-Ne-GWu.ibShadowedToolTip" = "这里填0表示扫描所有识别的启动盘。我们也许会碰到开机的时候默认进入的系统永远是WINDOWS，并无法更改，网上有进阶教程，会告诉你如何让MAC盘排在第一个，让WIN排在后面。";
+"VQF-Ne-GWu.ibShadowedToolTip" = "0: 允许扫描所有可用的硬盘\n其它值请参考官方文档, 对给出的选项做 16 进制加法运算";
 
 /* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "XRf-Yz-PVv"; */
 "XRf-Yz-PVv.headerCell.title" = "名称";
@@ -108,7 +108,7 @@
 "YKi-Mp-w6e.title" = "Show Picker";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Show simple boot picker to allow boot entry selection."; ObjectID = "Yyf-Yd-yrP"; */
-"Yyf-Yd-yrP.ibShadowedToolTip" = "是否显示开机启动盘选项，比如MAC,WINDOWS那些。一般选择YES。";
+"Yyf-Yd-yrP.ibShadowedToolTip" = "显示 OpenCore 的 UI, 用于查看可用引导项\n设置为 NO 可以跳过倒计时, 和 PollAppleHotKeys=Yes 配合快捷键可以大幅提升体验\n一般选择YES。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0\nDescription: Timeout in seconds in boot picker before automatic booting of the default boot entry. Use 0 to disable timer."; ObjectID = "Zxi-ww-dWk"; */
 "Zxi-ww-dWk.ibShadowedToolTip" = "倒计时进入指定可启动系统，这里我们按需求填写，我填写5，代表5秒钟进入指定系统。";
@@ -162,7 +162,7 @@
 "tI2-d3-co4.title" = "AuthRestart";
 
 //* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0x6\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\n• 0x04 — Expose OpenCore version in boot picker menu title.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. \n\nTo obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\n\nTo use booter path for mounting booter volume use the following command in macOS:\nu=$(nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed 's/.*GPT,\\([^,]*\\),.*/\\1/'); \\ if [ \"$u\" != \"\" ]; then sudo diskutil mount $u ; fi\n\nTo obtain OpenCore version use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version"; ObjectID = "tmf-fU-Pjy"; */
-"tmf-fU-Pjy.ibShadowedToolTip" = "如果要使用到NVRAM，这个数值我们填3\n如果要在引导菜单显示OC版本号，填6。";
+"tmf-fU-Pjy.ibShadowedToolTip" = "3 将 OpenCore 的启动路径和版本储存进 NVRAM\n11 在 3 的基础上添加主板 OEM 信息, HWMonitorSMC2 和 NVMeFix 需要主板 OEM 信息才能正常工作\n6 如果要在引导菜单显示OC版本号，填6。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "uSO-ne-MBg"; */
 "uSO-ne-MBg.headerCell.title" = "说明";
@@ -183,7 +183,7 @@
 "wPi-6s-R0s.ibShadowedToolTip" = "检测休眠模式。我们的机器一般都不支持休眠，选none。如果你的主板支持原生nvram、并想测试休眠，可以考虑填auto。\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭！";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty string\nDescription: Set console control behaviour upon operating system load.\nConsole control is a legacy protocol used for switching between text and graphics screen output. Some firmwares do not provide it, yet select operating systems require its presence, which is what ProvideConsoleControl UEFI quirk is for.\nWhen console control is available, OpenCore can be made console control aware, and and set different modes for the operating system booter (ConsoleBehaviourOs), which normally runs in graphics mode, and its own user interface (ConsoleBehaviourUi), which normally runs in text mode. Possible behaviours, set as values of these options, include:\n• Empty string — Do not modify console control mode.\n• Text — Switch to text mode.\n• Graphics — Switch to graphics mode.\n• ForceText — Switch to text mode and preserve it (requires ProvideConsoleControl).\n• ForceGraphics — Switch to graphics mode and preserve it (require ProvideConsoleControl)."; ObjectID = "wnQ-qi-j0l"; */
-"wnQ-qi-j0l.ibShadowedToolTip" = "一般是留空，如果留空开机显示效果不佳，请填ForceText。";
+"wnQ-qi-j0l.ibShadowedToolTip" = "一般是留空，如果留空开机显示效果不佳，请与ConsoleBehaviourUI组合使用:\n4 代及以下\nConsoleBehaviourOs = Graphics\nConsoleBehaviourUi = ForceText\n5 代以上\nConsoleBehaviourOs = ForceGraphics\nConsoleBehaviourUi = ForceText\n在有的固件上将两「留空」或者设为 Graphics 和 Text 效果更好。";
 
 /* Class = "NSTextFieldCell"; title = "Console Mode"; ObjectID = "zxy-fF-YkY"; */
 "zxy-fF-YkY.title" = "控制台模式";
