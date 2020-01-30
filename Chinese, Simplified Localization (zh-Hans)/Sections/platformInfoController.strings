@@ -108,7 +108,7 @@
 "Hjz-kh-KPV.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） - 版本\n描述:产品迭代版本号。可能看起来像1.1";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Add or remove this section from plist\nDefault value: Add"; ObjectID = "IJO-Va-YDO"; */
-"IJO-Va-YDO.ibShadowedToolTip" = "从plist\n默认值添加或删除此部分:添加";
+"IJO-Va-YDO.ibShadowedToolTip" = "从plist添加或删除此部分:\n默认值:添加";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "IqG-Mw-D8N"; */
 "IqG-Mw-D8N.title" = "在config.plist里添加此部分内容";
@@ -150,7 +150,7 @@
 "MW7-wk-hds.title" = "Serial Number";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_BID."; ObjectID = "MpC-g9-pKJ"; */
-"MpC-g9-pKJ.ibShadowedToolTip" = "Type: plist string\nDefault value: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_BID.";
+"MpC-g9-pKJ.ibShadowedToolTip" = "指定NVRAM变量4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_BID的值.";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "N0I-Qi-97B"; */
 "N0I-Qi-97B.title" = "Box";
@@ -165,7 +165,7 @@
 "Oqy-j7-kv6.title" = "Manufacturer";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Add or remove this section from plist\nDefault value: Add"; ObjectID = "PHO-4O-OIP"; */
-"PHO-4O-OIP.ibShadowedToolTip" = "从plist添加或删除此部分\n默认值：添加";
+"PHO-4O-OIP.ibShadowedToolTip" = "从plist添加或删除此部分\n默认值:添加";
 
 /* Class = "NSSegmentedCell"; PVt-qS-yBp.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "PVt-qS-yBp"; */
 "PVt-qS-yBp.ibShadowedLabels[0]" = "机型查询";
@@ -318,7 +318,7 @@
 "gqH-S3-VMd.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） - 制造商\n说明:特定电路板的OEM制造商。除非严格要求，否则不得指定。不应包含Apple Inc.，因为这会混淆操作系统中存在的大量服务，例如固件更新，eficheck，以及Acidanthera中开发的内核扩展，例如Lilu及其插件。";
 
 /* Class = "NSButtonCell"; title = "SpoofVendor"; ObjectID = "gyz-Gt-IQK"; */
-"gyz-Gt-IQK.title" = "SpoofVendor";
+"gyz-Gt-IQK.title" = "SpoofVendor\n仿冒主板厂商";
 
 /* Class = "NSTextFieldCell"; title = "Manufacturer"; ObjectID = "gzt-RV-VqZ"; */
 "gzt-RV-VqZ.title" = "Manufacturer";
