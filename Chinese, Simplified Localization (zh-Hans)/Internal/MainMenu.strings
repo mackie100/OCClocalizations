@@ -331,6 +331,7 @@
 
 /* Class = "NSTextFieldCell"; title = "Tips Window"; ObjectID = "fd6-Kc-KJr"; */
 "fd6-Kc-KJr.title" = "Tips Window";
+
 /* Class = "NSMenuItem"; title = "Scan Configurations"; ObjectID = "gDt-SB-jBP"; */
 "gDt-SB-jBP.title" = "扫描配置文件";
 
