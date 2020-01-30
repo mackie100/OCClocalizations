@@ -35,12 +35,6 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: BIOS Information (Type 0) — BIOS Release Date\nDescription: Firmware release date. Similar to BIOSVersion. May look like 12/08/2017."; ObjectID = "6gn-IY-sd7"; */
 "6gn-IY-sd7.ibShadowedToolTip" = "Type: plist string\nDefault value: OEM specified\nSMBIOS: BIOS Information (Type 0) — BIOS Release Date\nDescription: Firmware release date. Similar to BIOSVersion. May look like 12/08/2017.";
 
-/* Class = "NSSegmentedCell"; 7Vs-jv-oh8.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "7Vs-jv-oh8"; */
-"7Vs-jv-oh8.ibShadowedLabels[0]" = "Model Lookup";
-
-/* Class = "NSSegmentedCell"; 7Vs-jv-oh8.ibShadowedLabels[1] = "Check Coverage"; ObjectID = "7Vs-jv-oh8"; */
-"7Vs-jv-oh8.ibShadowedLabels[1]" = "Check Coverage";
-
 /* Class = "NSTextFieldCell"; title = "Startup Power Events"; ObjectID = "7XG-zt-wiU"; */
 "7XG-zt-wiU.title" = "Startup Power Events";
 
@@ -61,6 +55,9 @@
 
 /* Class = "NSTextFieldCell"; title = "DataHub"; ObjectID = "8wz-5k-5Zd"; */
 "8wz-5k-5Zd.title" = "DataHub";
+
+/* Class = "NSButtonCell"; title = "Generate"; ObjectID = "9UV-S4-eO3"; */
+"9UV-S4-eO3.title" = "Generate";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write first SMBIOS table (gEfiSmbiosTableGuid) to gOcCustomSmbiosTableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII)."; ObjectID = "9o2-8y-dq6"; */
 "9o2-8y-dq6.ibShadowedToolTip" = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write first SMBIOS table (gEfiSmbiosTableGuid) to gOcCustomSmbiosTableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII).";
@@ -146,11 +143,17 @@
 /* Class = "NSTextFieldCell"; title = "Release Date"; ObjectID = "Lof-UF-S84"; */
 "Lof-UF-S84.title" = "Release Date";
 
+/* Class = "NSButtonCell"; title = "Generate"; ObjectID = "MRn-KI-kxS"; */
+"MRn-KI-kxS.title" = "Generate";
+
 /* Class = "NSTextFieldCell"; title = "Serial Number"; ObjectID = "MW7-wk-hds"; */
 "MW7-wk-hds.title" = "Serial Number";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_BID."; ObjectID = "MpC-g9-pKJ"; */
 "MpC-g9-pKJ.ibShadowedToolTip" = "Type: plist string\nDefault value: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_BID.";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "N0I-Qi-97B"; */
+"N0I-Qi-97B.title" = "Box";
 
 /* Class = "NSTextFieldCell"; title = "Location In Chassis"; ObjectID = "NKp-1W-cwW"; */
 "NKp-1W-cwW.title" = "Location In Chassis";
