@@ -27,7 +27,7 @@
 "8Gl-6A-OsL.ibShadowedToolTip" = "用于指定OpenCore无法自动找到的无规律引导路径。\nName(名称)\nOpenCore启动项中显示的名称\nEnabled(启用)\n启用或禁用\nPath(路径)\n引导磁盘的PCI路径，一般可以通过替换启动文件为DEBUG版本，然后勾选Disable WatchDog选项，Target选项填入67，启动一次后，在EFI分区里产生的日志文件里查找如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi这样的信息。\n可以提前在MACOS里使用diskutil info disk0s2 |grep \"UUID\"这样的命令提前获取到你想要启动的分区UUID，然后在日志文件里搜索UUID的值，可以快速获取到完整PCI路径！";
 
 /* Class = "NSButtonCell"; title = "Disable WatchDog"; ObjectID = "9LG-wP-7Np"; */
-"9LG-wP-7Np.title" = "Disable WatchDog\n禁用看门狗";
+"9LG-wP-7Np.title" = "Disable WatchDog";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty string\nDescription: Set console control behaviour upon OpenCore user interface load. Refer to ConsoleBehaviourOs description for details."; ObjectID = "Acd-af-b6f"; */
 "Acd-af-b6f.ibShadowedToolTip" = "一般是留空，如果留空开机显示效果不佳，请与ConsoleBehaviourOs组合使用:\n4 代及以下\nConsoleBehaviourOs = Graphics\nConsoleBehaviourUi = ForceText\n5 代以上\nConsoleBehaviourOs = ForceGraphics\nConsoleBehaviourUi = ForceText\n在有的固件上将两「留空」或者设为 Graphics 和 Text 效果更好。";
@@ -135,7 +135,7 @@
 "jPS-Bu-Ar4.headerCell.title" = "路径*";
 
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
-"oFg-pn-DgG.label" = "工具";
+"oFg-pn-DgG.label" = "Tools-添加附加工具";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE."; ObjectID = "omf-bH-d4v"; */
 "omf-bH-d4v.ibShadowedToolTip" = "2147483714 在屏幕上显示所有 Debug 信息\n0 隐藏所有 Debug 信息！";
@@ -162,16 +162,16 @@
 "tI2-d3-co4.title" = "AuthRestart";
 
 //* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0x6\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\n• 0x04 — Expose OpenCore version in boot picker menu title.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. \n\nTo obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\n\nTo use booter path for mounting booter volume use the following command in macOS:\nu=$(nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed 's/.*GPT,\\([^,]*\\),.*/\\1/'); \\ if [ \"$u\" != \"\" ]; then sudo diskutil mount $u ; fi\n\nTo obtain OpenCore version use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version"; ObjectID = "tmf-fU-Pjy"; */
-"tmf-fU-Pjy.ibShadowedToolTip" = "3 将 OpenCore 的启动路径和版本储存进 NVRAM\n11 在 3 的基础上添加主板 OEM 信息, HWMonitorSMC2 和 NVMeFix 需要主板 OEM 信息才能正常工作\n6 如果要在引导菜单显示OC版本号，填6。";
+"tmf-fU-Pjy.ibShadowedToolTip" = "3 - 将 OpenCore 的启动路径和版本储存进 NVRAM\n11 - 在 3 的基础上添加主板 OEM 信息, HWMonitorSMC2 和 NVMeFix 需要主板 OEM 信息才能正常工作\n6 - 如果要在引导菜单显示OC版本号，填6。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "uSO-ne-MBg"; */
 "uSO-ne-MBg.headerCell.title" = "说明";
 
 /* Class = "NSTabViewItem"; label = "Entries"; ObjectID = "uks-Bw-Ph4"; */
-"uks-Bw-Ph4.label" = "Entries";
+"uks-Bw-Ph4.label" = "Entries-自定义条目";
 
 /* Class = "NSTabViewItem"; label = "BlessOverride"; ObjectID = "uyb-X6-nFt"; */
-"uyb-X6-nFt.label" = "BlessOverride";
+"uyb-X6-nFt.label" = "BlessOverride-添加微软启动项";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode."; ObjectID = "vvg-w7-KxC"; */
 "vvg-w7-KxC.ibShadowedToolTip" = "是否开启一些热键功能，包括Cmd+K;Cmd+S。\n设置为YES后允许在引导过程中使用苹果原生快捷键, 需要与Quirk选项中KeySupport=Yes或UsbKbDxe.efi结合使用, 具体体验取决于主板固件。常用快捷键组合:\nCmd + V: 启用 -v 跑码啰嗦模式\nCmd + Opt + P + R: 重置 NVRAM\nCmd + R: 启动恢复分区\nCmd + S: 启动至单用户模式\nOption/ALT: 在ShowPicker设置成NO时显示引导菜单, ALT键不可用时可用ESC键代替(狂按ESC键)。\n如果你开机发现键盘无法选择，请选NO，并且删除OC/Drivers下的UsbKbDxe.efi 。";
