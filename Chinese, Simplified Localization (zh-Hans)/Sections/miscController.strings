@@ -42,7 +42,7 @@
 "Dgr-GW-WzX.ibShadowedToolTip" = "是否使用OC的启动选择器，选YES。可能之后会支持第三方主题接口的话，我们才选选NO。";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
-"E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。\n一般填写路径\EFI\Microsoft\Boot\bootmgfw.efi";
+"E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。\n比如启动WINDOWS路径:\\EFI\\Microsoft\\Boot\\bootmgfw.efi";
 
 /* Class = "NSTextFieldCell"; title = "Resolution"; ObjectID = "F6a-ij-WIB"; */
 "F6a-ij-WIB.title" = "分辨率";
