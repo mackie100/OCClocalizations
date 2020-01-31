@@ -48,7 +48,7 @@
 "4Eq-aR-Tzb.title" = "工具";
 
 /* Class = "NSButtonCell"; title = "Make transparent"; ObjectID = "4hf-lk-adQ"; */
-"4hf-lk-adQ.title" = "Make transparent";
+"4hf-lk-adQ.title" = "提示窗口透明";
 
 /* Class = "NSMenuItem"; title = "Quit OpenCore Configurator"; ObjectID = "4sb-4s-VLi"; */
 "4sb-4s-VLi.title" = "退出OpenCore配置器";
@@ -330,7 +330,7 @@
 "drq-uo-Unf.title" = "新建";
 
 /* Class = "NSTextFieldCell"; title = "Tips Window"; ObjectID = "fd6-Kc-KJr"; */
-"fd6-Kc-KJr.title" = "Tips Window";
+"fd6-Kc-KJr.title" = "提示窗口";
 
 /* Class = "NSMenuItem"; title = "Scan Configurations"; ObjectID = "gDt-SB-jBP"; */
 "gDt-SB-jBP.title" = "扫描配置文件";
@@ -453,7 +453,7 @@
 "toU-XT-mIr.title" = "文档资料";
 
 /* Class = "NSButtonCell"; title = "Keep in front"; ObjectID = "uKn-Sr-CBs"; */
-"uKn-Sr-CBs.title" = "Keep in front";
+"uKn-Sr-CBs.title" = "保持在最前";
 
 /* Class = "NSMenu"; title = "OpenCore Configurator"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "OpenCore配置器";
@@ -495,7 +495,7 @@
 "xrE-MZ-jX0.title" = "语音";
 
 /* Class = "NSButtonCell"; title = "Show at launch"; ObjectID = "ya5-cx-LK9"; */
-"ya5-cx-LK9.title" = "Show at launch";
+"ya5-cx-LK9.title" = "在启动时显示";
 
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "显示替换";
