@@ -137,6 +137,9 @@
 /* Class = "NSMenuItem"; title = "Sample.plist"; ObjectID = "Gli-qs-3eC"; */
 "Gli-qs-3eC.title" = "Sample.plist";
 
+/* Class = "CocoaBindingsConnection"; ibShadowedIsNilPlaceholder = "0.8"; ObjectID = "Gr2-89-j5f"; */
+"Gr2-89-j5f.ibShadowedIsNilPlaceholder" = "0.8";
+
 /* Class = "NSMenuItem"; title = "Writing Direction"; ObjectID = "H1b-Si-o9J"; */
 "H1b-Si-o9J.title" = "Writing Direction";
 
@@ -493,9 +496,6 @@
 
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
 "xrE-MZ-jX0.title" = "Speech";
-
-/* Class = "NSButtonCell"; title = "Show at launch"; ObjectID = "ya5-cx-LK9"; */
-"ya5-cx-LK9.title" = "Show at launch";
 
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "Show Substitutions";
