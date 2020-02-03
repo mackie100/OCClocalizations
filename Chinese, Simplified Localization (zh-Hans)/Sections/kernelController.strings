@@ -66,7 +66,10 @@
 "Go8-Jz-vk9.title" = "AppleXcpmForceBoost";
 
 /* Class = "NSTableColumn"; headerCell.title = "PlistPath"; ObjectID = "H8d-aU-LbU"; */
-"H8d-aU-LbU.headerCell.title" = "Plist文件路径";
+"H8d-aU-LbU.headerCell.title" = "PlistPath";
+
+/* Class = "NSButtonCell"; title = "DummyPowerManagement"; ObjectID = "Hru-Nc-CCR"; */
+"Hru-Nc-CCR.title" = "DummyPowerManagement";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "IQk-iw-L5E"; */
 "IQk-iw-L5E.headerCell.title" = "最大内核";
@@ -172,6 +175,9 @@
 
 /* Class = "NSTableView"; ibShadowedToolTip = "BundlePath\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle path (e.g. Lilu.kext or MyKext.kext/Contents/PlugIns/MySubKext.kext).\n2. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel driver will not be added unless set to true.\n4. ExecutablePath\nType: plist string\nDefault value: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/Lilu).\n5. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or older.\n6. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or newer.\n7. PlistPath\nType: plist string\nDefault value: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist)."; ObjectID = "pIA-W6-XA0"; */
 "pIA-W6-XA0.ibShadowedToolTip" = "这里我们需要填写kexts的相关资料。值得注意的是OC的kexts填写必须注意顺序，比如applealc的依赖是lilu，那么lilu必须填在第一个；SMCProcessor.kext依赖于Virtualsmc.kext。那virtualsmc必须放在SMCProcessor.kext之前。";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Disables AppleIntelCpuPowerManagement.\nNote: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS."; ObjectID = "rXc-DS-H2x"; */
+"rXc-DS-H2x.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Disables AppleIntelCpuPowerManagement.\nNote: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS.";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "tya-o0-N6w"; */
 "tya-o0-N6w.headerCell.title" = "最大内核";
