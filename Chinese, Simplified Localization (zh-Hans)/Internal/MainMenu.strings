@@ -48,7 +48,7 @@
 "4Eq-aR-Tzb.title" = "工具";
 
 /* Class = "NSButtonCell"; title = "Make transparent"; ObjectID = "4hf-lk-adQ"; */
-"4hf-lk-adQ.title" = "提示窗口透明";
+"4hf-lk-adQ.title" = "提示窗口透明度";
 
 /* Class = "NSMenuItem"; title = "Quit OpenCore Configurator"; ObjectID = "4sb-4s-VLi"; */
 "4sb-4s-VLi.title" = "退出OpenCore配置器";

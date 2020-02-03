@@ -177,7 +177,7 @@
 "pIA-W6-XA0.ibShadowedToolTip" = "这里我们需要填写kexts的相关资料。值得注意的是OC的kexts填写必须注意顺序，比如applealc的依赖是lilu，那么lilu必须填在第一个；SMCProcessor.kext依赖于Virtualsmc.kext。那virtualsmc必须放在SMCProcessor.kext之前。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Disables AppleIntelCpuPowerManagement.\nNote: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS."; ObjectID = "rXc-DS-H2x"; */
-"rXc-DS-H2x.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Disables AppleIntelCpuPowerManagement.\nNote: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS.";
+"rXc-DS-H2x.ibShadowedToolTip" = "禁用 AppleIntelCpuPowerManagement.\n对于在macOS中不支持原生电源管理驱动程序的CPU，此选项是NullCpuPowerManagement.kext的首选替代方案。";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "tya-o0-N6w"; */
 "tya-o0-N6w.headerCell.title" = "最大内核";
