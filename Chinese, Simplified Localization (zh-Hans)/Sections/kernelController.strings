@@ -15,7 +15,7 @@
 "5Zf-0g-20b.headerCell.title" = "二进制文件路径";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in XNU kernel, commonly causing early kernel panic, when it is locked from writing (XCPM power management).\nNote: This option should be avoided whenever possible. See AppleCpuPmCfgLock description for more details."; ObjectID = "677-hy-Blh"; */
-"677-hy-Blh.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG Lock选项。如何解CFG锁网上有详细教程。如果你不会解除这个CFG Lock，你就选择YES，已经解锁的情况下选择NO。注意，CFG的解锁对之后的进阶教程相关度极高，有能力还是解一下吧！";
+"677-hy-Blh.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG Lock。如果你不会解这个锁，你就选择YES，这个适用于四代以后的机型。\n选择这项一般就不要选前面面的CpupmCfgLock选项，解锁的情况下选择NO。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables IOMapper support in XNU (VT-d), which may conflict with the firmware implementation.\nNote: This option is a preferred alternative to dropping DMAR ACPI table and disabling VT-d in firmware preferences, which does not break VT-d support in other systems in case they need it."; ObjectID = "6Aa-HL-hah"; */
 "6Aa-HL-hah.ibShadowedToolTip" = "禁用vt-d，我们在BIOS里已经禁用vt-d了，这里我们选择NO就行了。";
@@ -57,7 +57,7 @@
 "9tr-6R-vGd.label" = "补丁";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nCertain firmwares lock PKG_CST_CONFIG_CONTROL MSR register. To check its state one can use bundled VerifyMsrE2 tool. Select firmwares have this register locked on some cores only.\nAs modern firmwares provide CFG Lock setting, which allows configuring PKG_CST_CONFIG_CONTROL MSR register lock, this option should be avoided whenever possible. For several APTIO firmwares not displaying CFG Lock setting in the GUI it is possible to access the option directly:\n(a) Download UEFITool and IFR-Extractor.\n(b) Open your firmware image in UEFITool and find CFG Lock unicode string. If it is not present, your firmware may not have this option and you should stop.\n(c) Extract the Setup.bin PE32 Image Section (the one UEFITool found) through Extract Body menu option.\n(d) Run IFR-Extractor on the extracted file (e.g. ./ifrextract Setup.bin Setup.txt).\n(e) Find CFG Lock, VarStoreInfo (VarOffset/VarName): in Setup.txt and remember the offset right after it (e.g. 0x123).\n(f) Download and run Modified GRUB Shell compiled by brainsucker or use a newer version by datasone.\n(g) Enter setup_var 0x123 0x00 command, where 0x123 should be replaced by your actual offset, and reboot.\nWARNING: Variable offsets are unique not only to each motherboard but even to its firmware version. Never ever try to use an offset without checking."; ObjectID = "FUx-RJ-QTK"; */
-"FUx-RJ-QTK.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG Lock。如何解锁CFG Lock网上有详细教程。如果你不会解这个锁，你就选择YES，解锁的情况下选择NO。注意，CFG的解锁对之后的进阶教程相关度极高，有能力还是解一下吧！";
+"FUx-RJ-QTK.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG Lock。如果你不会解这个锁，你就选择YES，这个适用于四代以前的机型。\n选择这项一般就不要选后面的XcpmCfgLock选项，解锁的情况下选择NO。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "GcD-Hq-Pnt"; */
 "GcD-Hq-Pnt.headerCell.title" = "查找";
