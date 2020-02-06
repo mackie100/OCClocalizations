@@ -6,13 +6,13 @@
 "0Sc-nS-2YL.ibShadowedToolTip" = "如果你没有在bios中解锁CFG，一定要选YES。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Reconnect console controllers after changing screen resolution. \nOn some firmwares when screen resolution is changed via GOP, it is required to reconnect the controllers, which produce the console protocols (simple text out). Otherwise they will not produce text based on the new resolution.\nNote: On several boards this logic may result in black screen when launching OpenCore from Shell and thus it is optional. In versions prior to 0.5.2 this option was mandatory and not configurable. Please do not use this unless required."; ObjectID = "1QT-lu-i79"; */
-"1QT-lu-i79.ibShadowedToolTip" = "如果你遇到开机直到登录界面之前一直是黑屏，请试试选择YES。";
+"1QT-lu-i79.ibShadowedToolTip" = "有些固件在 GOP 分辨率改变后要求重新连接控制器才能输出文本, 开启这个选项会导致从 UEFI Shell 中启动 OpenCore 时直接黑屏, 尽量避免开启。\n如果你遇到开机直到登录界面之前一直是黑屏，请试试选择 YES。";
 
 /* Class = "NSButtonCell"; title = "HashServices"; ObjectID = "33a-jy-EES"; */
 "33a-jy-EES.title" = "HashServices";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in FwRuntimeServices.efi. The quirk lets default boot entry preservation at times when firmwares delete incompatible boot entries. Simply said, you are required to enable this quirk to be able to reliably use Startup Disk preference pane in a firmware that is not compatible with macOS boot entries by design."; ObjectID = "3Q0-sm-ooL"; */
-"3Q0-sm-ooL.ibShadowedToolTip" = "如果你要使用”启动磁盘” 选项，你需要选择YES，这里选择YES。";
+"3Q0-sm-ooL.ibShadowedToolTip" = "启用此项以便能够在与 macOS 引导项设计上不兼容的固件中可靠地使用[启动磁盘]设置。\n也和记住默认启动条目功能有关，推荐使用YES";
 
 /* Class = "NSTextFieldCell"; title = "TimerResolution"; ObjectID = "3Ql-TM-Oiv"; */
 "3Ql-TM-Oiv.title" = "TimerResolution";
@@ -186,7 +186,7 @@
 "oMi-yN-r8X.title" = "DeviceProperties";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Request fallback of some Boot prefixed variables from OC_VENDOR_VARIABLE_GUID to EFI_GLOBAL_VARIABLE_GUID.\nThis quirk requires RequestBootVarRouting to be enabled and therefore OC_FIRMWARE_RUNTIME protocol imple- mented in FwRuntimeServices.efi.\nBy redirecting Boot prefixed variables to a separate GUID namespace we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation wakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or anyhow corrupted.\nHowever, some firmwares do their own boot option scanning upon startup by checking file presence on the available disks. Quite often this scanning includes non-standard locations, such as Windows Bootloader paths. Normally it is not an issue, but some firmwares, ASUS firmwares on APTIO V in particular, have bugs. For them scanning is implemented improperly, and firmware preferences may get accidentally corrupted due to BootOrder entry duplication (each option will be added twice) making it impossible to boot without cleaning NVRAM.\nTo trigger the bug one should have some valid boot options (e.g. OpenCore) and then install Windows with RequestBootVarRouting enabled. As Windows bootloader option will not be created by Windows installer, the firmware will attempt to create it itself, and then corrupt its boot option list.\nThis quirk forwards all UEFI specification valid boot options, that are not related to macOS, to the firmware into BootF### and BootOrder variables upon write. As the entries are added to the end of BootOrder, this does not break boot priority, but ensures that the firmware does not try to append a new option on its own after Windows installation for instance."; ObjectID = "pL6-9H-9ky"; */
-"pL6-9H-9ky.ibShadowedToolTip" = "该怪癖要求启用RequestBootVarRouting，因此在FwRuntimeServices.efi中实现了OC_FIRMWARE_RUNTIME协议。\n通过将Boot前缀变量重定向到单独的GUID命名空间，我们实现了多个目标：\n•操作系统被监禁，并且只能由OpenCore引导环境控制，以增强安全性。\n•操作系统不会与OpenCore引导优先级混为一谈，并且对于需要在中间使用OpenCore进行重新引导的情况，保证了流畅的更新和休眠唤醒。\n•可能不兼容的引导条目（例如macOS条目）不会被删除或以任何方式损坏。\n但是，某些固件在启动时会通过检查可用磁盘上的文件是否存在来进行自己的启动选项扫描。此扫描经常包含非标准位置，例如Windows Bootloader路径。通常这不是问题，但是某些固件（尤其是APTIO V上的ASUS固件）存在错误。对于他们来说，扫描的执行不当，并且由于BootOrder条目重复（每个选项都会被添加两次），固件首选项可能会意外损坏（如果不清理NVRAM，则无法引导）。\n要触发该错误，应具有一些有效的启动选项（例如OpenCore），然后在启用RequestBootVarRouting的情况下安装Windows。由于Windows安装程序不会创建Windows引导程序选项，因此固件将尝试自行创建它，然后破坏其引导选项列表。\n此怪癖在写入时会将与macOS不相关的所有UEFI规范有效引导选项转发到固件到BootF ###和BootOrder变量中。由于将条目添加到BootOrder的末尾，因此不会破坏启动优先级，但是可确保固件在安装Windows之后不会尝试自行添加新选项。";
+"pL6-9H-9ky.ibShadowedToolTip" = "用于修复BIOS启动项顺序！\n如果你的BIOS启动项经常被打乱，开启这个选项试试！";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some firmwares clear only part of screen when switching from graphics to text mode, leaving a fragment of previously drawn image visible. This option fills the entire graphics screen with black color before switching to text mode.\nNote: ConsoleControl should be set to true for this to work."; ObjectID = "qMh-AF-g0P"; */
 "qMh-AF-g0P.ibShadowedToolTip" = "图形模式切换到文本模式时，某些固件仅清除屏幕的一部分，使先前绘制的图像片段可见。 此选项在切换到文本模式之前用黑色填充整个图形屏幕。\n注意：ConsoleControl应该设置为YES才能起作用。";
@@ -201,7 +201,7 @@
 "tY1-cE-XtN.ibShadowedToolTip" = "重建苹果功能键，选择NO。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: NO\nDescription: Select firmwares output text onscreen in both graphics and text mode. This is normally unexpected, because random text may appear over graphical images and cause UI corruption. Setting this option to true will discard all text output when console control is in mode different from Text.\nNote: While the option is not supposed to induce harm on unaffected firmwares, its usage is not recommended when it is not required. This option may hide onscreen error messages. ProvideConsoleControl is required to be set to true for this to work."; ObjectID = "tgx-cE-NIf"; */
-"tgx-cE-NIf.ibShadowedToolTip" = "一些固件会同时输出文字和视频信息导致花屏，如果出现这种情况试试选NO，我这里选YES。";
+"tgx-cE-NIf.ibShadowedToolTip" = "修复不用 -v 开机时在苹果标志上覆盖有输出日志的问题。";
 
 /* Class = "NSTabViewItem"; label = "Input"; ObjectID = "tiX-oG-c7h"; */
 "tiX-oG-c7h.label" = "Apple快捷键相关";
@@ -219,7 +219,7 @@
 "xWD-zf-op1.ibShadowedToolTip" = "建议分配器避免在前4 GB RAM之上分配。\n这是某些主板固件（即GA-Z77P-D3（1.1版））的解决方法，无法正确访问UEFI引导服务中的更高内存。 在这些主板上，此怪癖对于引导需要分配大内存块的条目（例如macOS DMG恢复条目）是必需的。 在不受影响的板上，这可能会导致启动失败，除非有必要, 否则避免使用!!";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\nThis is a very ugly quirk to circumvent \"Still waiting for root device\" message on select APTIO IV firmwares, namely ASUS Z87-Pro, when using FileVault 2 in particular. It seems that for some reason they execute code in parallel to EXIT_BOOT_SERVICES, which results in SATA controller being inaccessible from macOS. A better approach should be found in some future. Expect 3-5 seconds to be enough in case the quirk is needed."; ObjectID = "yXm-Kd-A6O"; */
-"yXm-Kd-A6O.ibShadowedToolTip" = "在EXIT_BOOT_SERVICES事件后添加延迟（以微秒为单位）。\n这是一个非常丑陋的怪癖，可以绕过选定的APTIO IV固件，即ASUS Z87-Pro上的“仍在等待root设备”消息，特别是在使用FileVault 2时。由于某种原因，它们似乎与EXIT_BOOT_SERVICES并行执行代码，这导致无法从macOS访问SATA控制器。应该在将来找到更好的方法。如果需要怪癖，则需要3-5秒才足够。";
+"yXm-Kd-A6O.ibShadowedToolTip" = "可以绕过选定的APTIO IV固件，即ASUS Z87-Pro上出现的\"Still waiting for root device\" 的提示信息，特别是在使用FileVault 2时。由于某种原因，导致无法从macOS访问SATA控制器。应该在将来找到更好的方法。如果使用此，则需要设置3-5秒才可以。\n一般保持默认值 0，不要随便更改！";
 
 /* Class = "NSButtonCell"; title = "IgnoreTextInGraphics"; ObjectID = "ygR-oy-xAC"; */
 "ygR-oy-xAC.title" = "IgnoreTextInGraphics";
@@ -228,4 +228,4 @@
 "zen-LP-Fan.title" = "ReconnectOnResChange";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some firmwares block partition handles by opening them in By Driver mode, which results in File System protocols being unable to install.\nNote: The quirk is mostly relevant for select HP laptops with no drives listed."; ObjectID = "zhZ-UN-ASB"; */
-"zhZ-UN-ASB.ibShadowedToolTip" = "某些固件通过在“按驱动程序”模式下打开分区来阻止分区句柄，这导致文件系统协议无法安装。\n注意：该Quirks与未列出驱动器和某些HP笔记本电脑最相关。";
+"zhZ-UN-ASB.ibShadowedToolTip" = "惠普笔记本在 OpenCore 引导界面没有引导项时设置为 YES";
