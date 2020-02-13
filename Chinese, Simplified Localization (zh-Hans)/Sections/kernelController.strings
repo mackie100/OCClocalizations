@@ -186,7 +186,7 @@
 "v6y-N9-uHT.ibShadowedToolTip" = "主要在没有原生电源管理的CPU上启用，一般是Haswell-E, Broadwell-E, Skylake-X这三种CPU需要填写YES。除此之外的CPU选择NO。";
 
 /* Class = "NSButtonCell"; title = "ThirdPartyDrives"; ObjectID = "w0k-rY-QSy"; */
-"w0k-rY-QSy.title" = "ThirdPartyTrim";
+"w0k-rY-QSy.title" = "ThirdPartyDrives";
 
 /* Class = "NSTableColumn"; headerCell.title = "MinKernel"; ObjectID = "w5E-ff-NpB"; */
 "w5E-ff-NpB.headerCell.title" = "最小内核";
