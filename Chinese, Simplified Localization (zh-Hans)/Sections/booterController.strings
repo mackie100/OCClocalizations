@@ -41,6 +41,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disable single user mode.\nThis is a security option allowing one to restrict single user mode usage by ignoring CMD+S hotkey and -s boot argument. The behaviour with this quirk enabled is supposed to match T2-based model behaviour. Read this article to understand how to use single user mode with this quirk enabled."; ObjectID = "Ssn-0z-qIb"; */
 "Ssn-0z-qIb.ibShadowedToolTip" = "这里关乎主机是否能开启单用户模式。开启后会禁止 Cmd + S 和 -s 的使用，使设备更加接近于 T2 白苹果，如果你觉得有用就开启它，一般选NO。";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI Secure Boot variables from being written.\nReports security violation during attempts to write to db, dbx, PK, and KEK variables from the operating system.\n\nNote: This quirk mainly attempts to avoid issues with NVRAM implementations with problematic defragmentation, such as select Insyde or MacPro5,1."; ObjectID = "VnZ-XI-LOq"; */
+"VnZ-XI-LOq.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI Secure Boot variables from being written.\nReports security violation during attempts to write to db, dbx, PK, and KEK variables from the operating system.\n\nNote: This quirk mainly attempts to avoid issues with NVRAM implementations with problematic defragmentation, such as select Insyde or MacPro5,1.";
+
 /* Class = "NSTableColumn"; headerCell.title = "Address*"; ObjectID = "XBA-aR-mC0"; */
 "XBA-aR-mC0.headerCell.title" = "地址*";
 
@@ -62,7 +65,7 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Attempt to join similar memory map entries.\nSelect firmwares have very large memory maps, which do not fit Apple kernel, permitting up to 64 slots for runtime memory. This quirk attempts to unify contiguous slots of similar types to prevent boot failures.\nNote: The necessity of this quirk is determined by early boot failures. It is rare to need this quirk on Haswell or newer. Do not use unless you fully understand the consequences."; ObjectID = "jED-s6-e14"; */
 "jED-s6-e14.ibShadowedToolTip" = "苹果的内核对内存的规范性有具体的要求。目前来看新的主板的规范性都是符合苹果的要求的，我们并不需要启动它，选择NO。有巨大且不兼容内存映射的主板需要开启, 非必须不要使用。";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures."; ObjectID = "l3S-mh-5k0"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures. Currently new firmwares with memory protection support (like OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "是否建立虚拟内存并对物理内存进行映射。我们在开机时，OC的程序需要一块连续性的内存进行存放内核等东西，而实际的物理内存一般都是分散的。因此，我们通过虚拟内存建立连续性内存供OC使用，并映射到分散的物理内存中。一般我们选择YES。";
 
 /* Class = "NSTabViewItem"; label = "MmioWhitelist"; ObjectID = "mrQ-IT-UQ3"; */
@@ -82,6 +85,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Patch bootloader to have KASLR enabled in safe mode.\nThis option is relevant to the users that have issues booting to safe mode (e.g. by holding shift or using -x boot argument). By default safe mode forces 0 slide as if the system was launched with slide=0 boot argument. This quirk tries to patch boot.efi to lift that limitation and let some other value (from 1 to 255) be used. This quirk requires ProvideCustomSlide to be enabled.\nNote: The necessity of this quirk is determined by safe mode availability. If booting to safe mode fails, this option can be tried to be enabled."; ObjectID = "qyH-8f-uTZ"; */
 "qyH-8f-uTZ.ibShadowedToolTip" = "开启后会允许在安全模式下使用 Slide 值。这个不是那么重要，你不会每天进安全模式的。像z390这样本来也不用分布式注入内存方式的（KASLR），选择YES，与正常情况下保持一致。";/* Class = "NSScrollView"; ibShadowedToolTip = "1. Address\nType: plist integer\nFailsafe: 0\nDescription: Exceptional MMIO address, which memory descriptor should be left virtualised (unchanged) by DevirtualiseMmio. This means that the firmware will be able to directly communicate with this memory region during operating system functioning, because the region this value is in will be assigned a virtual address.\nThe addresses written here must be part of the memory map, have EfiMemoryMappedIO type and EFI_MEMORY_RUNTIME attribute (highest bit) set. To find the list of the candidates the debug log can be used.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This address will be devirtualised unless set to true."; ObjectID = "RWw-Gp-0A4"; */
+
+/* Class = "NSButtonCell"; title = "ProtectSecureBoot"; ObjectID = "rWG-6j-Mxs"; */
+"rWG-6j-Mxs.title" = "ProtectSecureBoot";
 
 /* Class = "NSButtonCell"; title = "SetupVirtualMap"; ObjectID = "sNx-S4-Yhl"; */
 "sNx-S4-Yhl.title" = "SetupVirtualMap";
