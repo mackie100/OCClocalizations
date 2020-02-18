@@ -66,7 +66,7 @@
 "Go8-Jz-vk9.title" = "AppleXcpmForceBoost";
 
 /* Class = "NSTableColumn"; headerCell.title = "PlistPath"; ObjectID = "H8d-aU-LbU"; */
-"H8d-aU-LbU.headerCell.title" = "PlistPath";
+"H8d-aU-LbU.headerCell.title" = "Plist文件路径";
 
 /* Class = "NSButtonCell"; title = "DummyPowerManagement"; ObjectID = "Hru-Nc-CCR"; */
 "Hru-Nc-CCR.title" = "DummyPowerManagement";

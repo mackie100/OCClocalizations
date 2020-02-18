@@ -42,7 +42,7 @@
 "Ssn-0z-qIb.ibShadowedToolTip" = "这里关乎主机是否能开启单用户模式。开启后会禁止 Cmd + S 和 -s 的使用，使设备更加接近于 T2 白苹果，如果你觉得有用就开启它，一般选NO。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI Secure Boot variables from being written.\nReports security violation during attempts to write to db, dbx, PK, and KEK variables from the operating system.\n\nNote: This quirk mainly attempts to avoid issues with NVRAM implementations with problematic defragmentation, such as select Insyde or MacPro5,1."; ObjectID = "VnZ-XI-LOq"; */
-"VnZ-XI-LOq.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI Secure Boot variables from being written.\nReports security violation during attempts to write to db, dbx, PK, and KEK variables from the operating system.\n\nNote: This quirk mainly attempts to avoid issues with NVRAM implementations with problematic defragmentation, such as select Insyde or MacPro5,1.";
+"VnZ-XI-LOq.ibShadowedToolTip" = "保护UEFI安全启动变量不被写入。\n报告尝试从操作系统写入db，dbx，PK和KEK变量期间发生的安全冲突。\n\n注意：此怪癖主要尝试避免碎片整理问题对NVRAM实施的影响，例如选择Insyde或MacPro5,1。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Address*"; ObjectID = "XBA-aR-mC0"; */
 "XBA-aR-mC0.headerCell.title" = "地址*";
