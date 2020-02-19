@@ -180,4 +180,4 @@
 "yTI-cV-qsU.headerCell.title" = "辅助";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Hides auxiliary entries from picker menu by default. \nAn entry is considered auxiliary when at least one of the following applies:\n• Entry is macOS recovery.\n• Entry is explicitly marked as Auxiliary.\n• Entry is system (e.g. Clean NVRAM).\n\nTo see all entries picker menu needs to be reloaded in extended mode by pressing Spacebar key. Hiding auxiliary \nentries may increase boot performance for multidisk systems."; ObjectID = "zgV-bT-EgH"; */
-"zgV-bT-EgH.ibShadowedToolTip" = "默认情况下，隐藏选择器菜单中的辅助条目。\n至少满足以下条件之一时，该条目被认为是辅助条目:\n•条目是macOS Recovery。\n•条目被明确标记为辅助。\n•条目是一个efi程序(例如Clean NVRAM)\n\n要查看通过按空格键，重新加载所有条目选择器菜单,如果选为YES，则不能通过空格键查看隐藏条目。";
+"zgV-bT-EgH.ibShadowedToolTip" = "隐藏选择器菜单中的辅助条目,如果启用隐藏默认条目，选为YES。\n至少满足以下条件之一时，该条目被认为是辅助条目:\n•条目是macOS Recovery。\n•条目被明确标记为辅助。\n•条目是一个efi程序(例如Clean NVRAM)\n\n通过按空格键，重新加载所有条目选择器菜单。";
