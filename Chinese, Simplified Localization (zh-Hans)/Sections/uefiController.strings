@@ -3,7 +3,7 @@
 "0AM-nb-Yrd.title" = "AppleImageConversion";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple audio protocols with builtin versions.\nApple audio protocols allow macOS bootloader and OpenCore to play sounds and signals for screen reading or\naudible error reporting. Supported protocols are beep generation and VoiceOver. VoiceOver protocol is specific to Gibraltar machines (T2) and is not supported before macOS High Sierra (10.13). Instead older macOS versions use AppleHDA protocol, which is currently not implemented.\n\nOnly one set of audio protocols can be available at a time, so in order to get audio playback in OpenCore user interface on Mac system implementing some of these protocols this setting should be enabled.\n\nNote: Backend audio driver needs to be configured in UEFI Audio section for these protocols to be able to stream audio."; ObjectID = "0RZ-LX-aI2"; */
-"0RZ-LX-aI2.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple audio protocols with builtin versions.\nApple audio protocols allow macOS bootloader and OpenCore to play sounds and signals for screen reading or\naudible error reporting. Supported protocols are beep generation and VoiceOver. VoiceOver protocol is specific to Gibraltar machines (T2) and is not supported before macOS High Sierra (10.13). Instead older macOS versions use AppleHDA protocol, which is currently not implemented.\n\nOnly one set of audio protocols can be available at a time, so in order to get audio playback in OpenCore user interface on Mac system implementing some of these protocols this setting should be enabled.\n\nNote: Backend audio driver needs to be configured in UEFI Audio section for these protocols to be able to stream audio.";
+"0RZ-LX-aI2.ibShadowedToolTip" = "重新安装具有内置版本的Apple音频协议。\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告。\n支持的协议是蜂鸣声生成和VoiceOver。 在macOS High Sierra（10.13）之前不受支持。相反，较早的macOS版本使用AppleHDA协议，该协议目前尚未实现。\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放，应启用此设置。\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序，这些协议才能使用。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: NO\nDescription: Select firmwares, namely APTIO IV, may contain invalid values in MSR_FLEX_RATIO (0x194) MSR register. These values may cause macOS boot failure on Intel platforms.\nNote: While the option is not supposed to induce harm on unaffected firmwares, its usage is not recommended when it is not required."; ObjectID = "0Sc-nS-2YL"; */
 "0Sc-nS-2YL.ibShadowedToolTip" = "如果你没有在bios中解锁CFG，一定要选YES。";
@@ -12,13 +12,13 @@
 "0gM-HU-fz5.title" = "AudioDevice";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Play chime sound at startup.\n\nEnabling this setting plays boot chime through builtin audio support. Volume level is determined by MinimumVolume and VolumeAmplifier settings and SystemAudioVolume NVRAM variable.\n\nNote: this setting is separate from StartupMute NVRAM variable to avoid conflicts when the firmware is able to play boot chime."; ObjectID = "10Z-Yt-6vt"; */
-"10Z-Yt-6vt.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Play chime sound at startup.\n\nEnabling this setting plays boot chime through builtin audio support. Volume level is determined by MinimumVolume and VolumeAmplifier settings and SystemAudioVolume NVRAM variable.\n\nNote: this setting is separate from StartupMute NVRAM variable to avoid conflicts when the firmware is able to play boot chime.";
+"10Z-Yt-6vt.ibShadowedToolTip" = "在启动时播放Duang的提示音。\n\n\n\n注意：此设置与StartupMute NVRAM变量分开，以避免在固件能够播放启动铃声时发生冲突。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reconnect console controllers after changing screen resolution.\nOn some firmwares when screen resolution is changed via GOP, it is required to reconnect the controllers, which produce the console protocols (simple text out). Otherwise they will not produce text based on the new resolution.\nNote: On several boards this logic may result in black screen when launching OpenCore from Shell and thus it is optional. In versions prior to 0.5.2 this option was mandatory and not configurable. Please do not use this unless required."; ObjectID = "1QT-lu-i79"; */
 "1QT-lu-i79.ibShadowedToolTip" = "有些固件在 GOP 分辨率改变后要求重新连接控制器才能输出文本, 开启这个选项会导致从 UEFI Shell 中启动 OpenCore 时直接黑屏, 尽量避免开启。\n如果你遇到开机直到登录界面之前一直是黑屏，请试试选择 YES。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Activate audio support by connecting to a backend driver.\n\nEnabling this setting routes audio playback from builtin protocols to a dedicated audio port (AudioOut) of the specified codec (AudioCodec) located on the audio controller (AudioDevice)."; ObjectID = "2zI-kW-5dk"; */
-"2zI-kW-5dk.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Activate audio support by connecting to a backend driver.\n\nEnabling this setting routes audio playback from builtin protocols to a dedicated audio port (AudioOut) of the specified codec (AudioCodec) located on the audio controller (AudioDevice).";
+"2zI-kW-5dk.ibShadowedToolTip" = "通过连接到后端驱动程序来激活音频支持(需要添加AudioDxe.efi驱动程序)。\n\n启用此设置会将音频播放从内置协议路由到位于音频控制器（AudioDevice）上的指定编解码器（AudioCodec）的专用音频端口（AudioOut）。";
 
 /* Class = "NSButtonCell"; title = "HashServices"; ObjectID = "33a-jy-EES"; */
 "33a-jy-EES.title" = "HashServices";
@@ -57,7 +57,7 @@
 "AW6-UR-4Ex.title" = "FirmwareVolume";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: empty string\nDescription: Codec address on the specified audio controller for audio support. Normally this contains first audio codec address on the builtin analog audio controller (HDEF). Audio codec addresses, e.g. 2, can be found in the debug log: \nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs) \nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative this value can be obtained from IOHDACodecDevice class in I/O Registry containing it in IOHDACodecAddress field."; ObjectID = "AZW-9D-hq6"; */
-"AZW-9D-hq6.ibShadowedToolTip" = "Type: plist integer\nFailsafe: empty string\nDescription: Codec address on the specified audio controller for audio support. Normally this contains first audio codec address on the builtin analog audio controller (HDEF). Audio codec addresses, e.g. 2, can be found in the debug log: \nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs) \nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative this value can be obtained from IOHDACodecDevice class in I/O Registry containing it in IOHDACodecAddress field.";
+"AZW-9D-hq6.ibShadowedToolTip" = "用于音频支持的指定音频控制器上的编解码器地址。通常，它包含内置模拟音频控制器（HDEF）上的第一个音频编解码器地址。音频编解码器地址，例如2，可以在调试日志中找到：\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs) \nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n或者，可以从I/O注册表软件中的IOHDACodecDevice类获取此值，该类包含在IOHDACodecAddress字段中。";
 
 /* Class = "NSButtonCell"; title = "AppleUserInterfaceTheme"; ObjectID = "BvY-5w-QBw"; */
 "BvY-5w-QBw.title" = "AppleUserInterfaceTheme";
@@ -117,7 +117,7 @@
 "NbU-Qi-Xhw.title" = "控制台分辨率";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Minimal heard volume level from 0 to 100.\n\nScreen reader will use this volume level, when the calculated volume level is less than MinimumVolume. Boot chime sound will not play if the calculated volume level is less than MinimumVolume."; ObjectID = "PF5-bc-9Z2"; */
-"PF5-bc-9Z2.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Minimal heard volume level from 0 to 100.\n\nScreen reader will use this volume level, when the calculated volume level is less than MinimumVolume. Boot chime sound will not play if the calculated volume level is less than MinimumVolume.";
+"PF5-bc-9Z2.ibShadowedToolTip" = "最小音量从0到100.\n\n当计算出的音量级别小于MinimumVolume时，屏幕阅读器将使用此音量级别。如果计算出的音量小于MinimumVolume，则不会发出开机提示音。";
 
 /* Class = "NSButtonCell"; title = "AppleAudio"; ObjectID = "POq-ge-Ugg"; */
 "POq-ge-Ugg.title" = "AppleAudio";
@@ -141,7 +141,7 @@
 "Ueb-hn-jBT.ibShadowedToolTip" = "一般选NO\n确保在 VM 或旧白苹果上完全兼容。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Index of the output port of the specified codec starting from 0.\nNormally this contains the index of the green out of the builtin analog audio controller (HDEF). The number of output nodes (N) in the debug log (marked in bold):\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs) \n\nThe quickest way to find the right port is to bruteforce the values from 0 to N - 1."; ObjectID = "UrW-oc-0Oc"; */
-"UrW-oc-0Oc.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Index of the output port of the specified codec starting from 0.\nNormally this contains the index of the green out of the builtin analog audio controller (HDEF). The number of output nodes (N) in the debug log (marked in bold):\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs) \n\nThe quickest way to find the right port is to bruteforce the values from 0 to N - 1.";
+"UrW-oc-0Oc.ibShadowedToolTip" = "指定编解码器输出端口的索引，一般从0开始.\n\n找到正确端口的最快方法是将值从0暴力尝试到N-1，N是在日志里显示的输出端口索引数，比如日志里显示有3个输出，可以从0-2挨个试.";
 
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "UEFI驱动";
@@ -150,7 +150,7 @@
 "YFj-X6-x1j.title" = "UnblockFsConnect";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: 0\nDescription: Device path of the specified audio controller for audio support.\nNormally this contains builtin analog audio controller (HDEF) device path, e.g. PciRoot(0x0)/Pci(0x1b,0x0).\nThe list of recognised audio controllers can be found in the debug log:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative gfxutil -f HDEF command can be used in macOS. Specifying empty device path will result in the first available audio controller to be used."; ObjectID = "YTE-Ba-80O"; */
-"YTE-Ba-80O.ibShadowedToolTip" = "Type: plist string\nFailsafe: 0\nDescription: Device path of the specified audio controller for audio support.\nNormally this contains builtin analog audio controller (HDEF) device path, e.g. PciRoot(0x0)/Pci(0x1b,0x0).\nThe list of recognised audio controllers can be found in the debug log:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative gfxutil -f HDEF command can be used in macOS. Specifying empty device path will result in the first available audio controller to be used.";
+"YTE-Ba-80O.ibShadowedToolTip" = "用于音频功能支持的指定音频控制器的设备路径。\n通常，它包含内置的模拟音频控制器（HDEF）设备路径, 比如:PciRoot(0x0)/Pci(0x1b,0x0).\n可以在调试日志中找到音频控制器的列表:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n也可以在macOS中使用gfxutil -f HDEF命令获取或者用Hackintool工具查看音频设备地址。指定空的设备路径将导致使用第一个可用的音频控制器.";
 
 /* Class = "NSButtonCell"; title = "UnicodeCollation"; ObjectID = "ZCa-Hx-UFl"; */
 "ZCa-Hx-UFl.title" = "UnicodeCollation";
@@ -261,10 +261,10 @@
 "rMl-Kr-h3I.ibShadowedToolTip" = "用于确保虚拟机或旧白苹果上兼容 APFS，一般选择NO。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Multiplication coefficient for system volume to raw volume linear translation from 0 to 1000.\nVolume level range read from SystemAudioVolume varies depending on the codec. To transform read value in [0, 127] range into raw volume range [0, 100] the read value is scaled to VolumeAmplifier percents.\n\nNote: the transformation used in macOS is not linear, but it is very close and this nuance is thus ignored."; ObjectID = "rNr-97-fnH"; */
-"rNr-97-fnH.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Multiplication coefficient for system volume to raw volume linear translation from 0 to 1000.\nVolume level range read from SystemAudioVolume varies depending on the codec. To transform read value in [0, 127] range into raw volume range [0, 100] the read value is scaled to VolumeAmplifier percents.\n\nNote: the transformation used in macOS is not linear, but it is very close and this nuance is thus ignored.";
+"rNr-97-fnH.ibShadowedToolTip" = "系统音量到原始音量线性转换的倍数，范围是0到1000。\n\n\n注意：macOS中使用的转换不是线性的，但是非常接近，因此细微差别被忽略了.";
 
 /* Class = "NSButtonCell"; title = "PlayChime"; ObjectID = "rUJ-JZ-9dQ"; */
-"rUJ-JZ-9dQ.title" = "PlayChime";
+"rUJ-JZ-9dQ.title" = "PlayChime\n引导播放Duang";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Key Map protocols with builtin versions."; ObjectID = "tY1-cE-XtN"; */
 "tY1-cE-XtN.ibShadowedToolTip" = "重建苹果功能键，选择NO。";
