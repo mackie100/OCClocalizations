@@ -24,7 +24,7 @@
 "5Or-M0-hZS.ibShadowedToolTip" = "选择用于启动管理的启动选择器\n支持以下值:\n•Builtin(默认值)-引导管理由OpenCore处理，使用纯文本用户界面。\n•External-使用外部引导管理协议（如果可用),否则，将使用Builtin模式。\n•Apple-使用Apple引导管理(如果可用),否则，将使用Builtin模式。";
 
 /* Class = "NSTextFieldCell"; title = "Timeout"; ObjectID = "6hf-UH-eBA"; */
-"6hf-UH-eBA.title" = "引导项等待时间";
+"6hf-UH-eBA.title" = "Timeout";
 
 /* Class = "NSButtonCell"; title = "HideAuxiliary"; ObjectID = "7BP-eo-vIZ"; */
 "7BP-eo-vIZ.title" = "HideAuxiliary\n隐藏辅助";
@@ -111,7 +111,7 @@
 "aUx-rK-UTX.title" = "Scan Policy";
 
 /* Class = "NSButtonCell"; title = "PickerAudioAssist"; ObjectID = "cN2-ao-nCB"; */
-"cN2-ao-nCB.title" = "PickerAudioAssist";
+"cN2-ao-nCB.title" = "PickerAudioAssist\n启用语音辅助";
 
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Display Level";

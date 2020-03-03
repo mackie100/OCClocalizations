@@ -264,7 +264,7 @@
 "rNr-97-fnH.ibShadowedToolTip" = "系统音量到原始音量线性转换的倍数，范围是0到1000。\n\n\n注意：macOS中使用的转换不是线性的，但是非常接近，因此细微差别被忽略了.";
 
 /* Class = "NSButtonCell"; title = "PlayChime"; ObjectID = "rUJ-JZ-9dQ"; */
-"rUJ-JZ-9dQ.title" = "PlayChime\n引导播放Duang";
+"rUJ-JZ-9dQ.title" = "PlayChime";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Key Map protocols with builtin versions."; ObjectID = "tY1-cE-XtN"; */
 "tY1-cE-XtN.ibShadowedToolTip" = "重建苹果功能键，选择NO。";
