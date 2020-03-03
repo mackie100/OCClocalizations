@@ -59,6 +59,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "NXw-uw-Jsu"; */
 "NXw-uw-Jsu.headerCell.title" = "启用";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details."; ObjectID = "PDS-bo-Qx8"; */
+"PDS-bo-Qx8.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details.";
+
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console)."; ObjectID = "PwU-cB-LIO"; */
 "PwU-cB-LIO.ibShadowedToolTip" = "在屏幕上可见的每条打印行(即控制台)之后执行的延迟(以微秒为单位).默认忽略！";
 
@@ -107,10 +110,13 @@
 /* Class = "NSTextFieldCell"; title = "Scan Policy"; ObjectID = "aUx-rK-UTX"; */
 "aUx-rK-UTX.title" = "Scan Policy";
 
+/* Class = "NSButtonCell"; title = "PickerAudioAssist"; ObjectID = "cN2-ao-nCB"; */
+"cN2-ao-nCB.title" = "PickerAudioAssist";
+
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Display Level";
 
-/* Class = "NSTableView"; ibShadowedToolTip = "1. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n2. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n3. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n4. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory."; ObjectID = "eH6-nm-MdQ"; */
+/* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory."; ObjectID = "eH6-nm-MdQ"; */
 "eH6-nm-MdQ.ibShadowedToolTip" = "用于运行一些UEFI工具, 例如验证CFG Lock(VerifyMsrE2.efi),CleanNvram.efi\n名称:OpenCore 启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助属性\n路径:Tools文件夹下的文件名\n如: VerifyMsrE2.efi,Shell.efi等";
 
 /* Class = "NSTextFieldCell"; title = "Picker Attributes"; ObjectID = "eaZ-uU-2Tt"; */
