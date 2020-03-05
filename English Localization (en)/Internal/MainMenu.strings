@@ -161,6 +161,9 @@
 /* Class = "NSMenuItem"; title = "Subscript"; ObjectID = "I0S-gh-46l"; */
 "I0S-gh-46l.title" = "Subscript";
 
+/* Class = "NSMenuItem"; title = "OC Release Version"; ObjectID = "IeD-QI-u8F"; */
+"IeD-QI-u8F.title" = "OC Release Version";
+
 /* Class = "NSMenuItem"; title = "Justify"; ObjectID = "J5U-5w-g23"; */
 "J5U-5w-g23.title" = "Justify";
 
@@ -425,6 +428,9 @@
 /* Class = "NSButtonCell"; title = "Autosave File"; ObjectID = "qzY-w2-2R4"; */
 "qzY-w2-2R4.title" = "Autosave File";
 
+/* Class = "NSTextFieldCell"; title = "Configuration Properties"; ObjectID = "rOA-u4-5Yj"; */
+"rOA-u4-5Yj.title" = "Configuration Properties";
+
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
 "rbD-Rh-wIN.title" = "Check Spelling While Typing";
 
@@ -493,6 +499,9 @@
 
 /* Class = "NSMenuItem"; title = "Use All"; ObjectID = "xQD-1f-W4t"; */
 "xQD-1f-W4t.title" = "Use All";
+
+/* Class = "NSMenuItem"; title = "OC Development Version"; ObjectID = "xjL-if-qId"; */
+"xjL-if-qId.title" = "OC Development Version";
 
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
 "xrE-MZ-jX0.title" = "Speech";
