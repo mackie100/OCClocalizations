@@ -162,7 +162,7 @@
 "I0S-gh-46l.title" = "下标";
 
 /* Class = "NSMenuItem"; title = "OC Release Version"; ObjectID = "IeD-QI-u8F"; */
-"IeD-QI-u8F.title" = "OC Release Version";
+"IeD-QI-u8F.title" = "OC发布版";
 
 /* Class = "NSMenuItem"; title = "Justify"; ObjectID = "J5U-5w-g23"; */
 "J5U-5w-g23.title" = "对齐";
@@ -429,7 +429,7 @@
 "qzY-w2-2R4.title" = "自动保存文件";
 
 /* Class = "NSTextFieldCell"; title = "Configuration Properties"; ObjectID = "rOA-u4-5Yj"; */
-"rOA-u4-5Yj.title" = "Configuration Properties";
+"rOA-u4-5Yj.title" = "配置属性";
 
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
 "rbD-Rh-wIN.title" = "键入时检查拼写";
@@ -501,7 +501,7 @@
 "xQD-1f-W4t.title" = "全部使用";
 
 /* Class = "NSMenuItem"; title = "OC Development Version"; ObjectID = "xjL-if-qId"; */
-"xjL-if-qId.title" = "OC Development Version";
+"xjL-if-qId.title" = "OC开发版";
 
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
 "xrE-MZ-jX0.title" = "语音";
