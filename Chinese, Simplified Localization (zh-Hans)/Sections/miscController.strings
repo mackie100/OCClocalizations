@@ -24,10 +24,10 @@
 "5Or-M0-hZS.ibShadowedToolTip" = "选择用于启动管理的启动选择器\n支持以下值:\n•Builtin(默认值)-引导管理由OpenCore处理，使用纯文本用户界面。\n•External-使用外部引导管理协议（如果可用),否则，将使用Builtin模式。\n•Apple-使用Apple引导管理(如果可用),否则，将使用Builtin模式。";
 
 /* Class = "NSTextFieldCell"; title = "Timeout"; ObjectID = "6hf-UH-eBA"; */
-"6hf-UH-eBA.title" = "Timeout";
+"6hf-UH-eBA.title" = "Timeout\n等待时间";
 
 /* Class = "NSButtonCell"; title = "HideAuxiliary"; ObjectID = "7BP-eo-vIZ"; */
-"7BP-eo-vIZ.title" = "HideAuxiliary\n隐藏辅助";
+"7BP-eo-vIZ.title" = "HideAuxiliary\n隐藏辅助条目";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: Shell.efi."; ObjectID = "8Gl-6A-OsL"; */
 "8Gl-6A-OsL.ibShadowedToolTip" = "用于指定OpenCore无法自动找到的无规律引导路径。\n名称:OpenCore启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助条目，可在启动菜单中隐藏\n路径:\n引导磁盘的PCI路径，一般可以通过替换启动文件为DEBUG版本，然后勾选Disable WatchDog选项，Target选项填入67，启动一次后，在EFI分区里产生的日志文件里查找如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi这样的信息。\n可以提前在MACOS里使用diskutil info disk0s2 |grep \"UUID\"这样的命令提前获取到你想要启动的分区UUID，然后在日志文件里搜索UUID的值，可以快速获取到完整PCI路径！";
@@ -36,7 +36,7 @@
 "9LG-wP-7Np.title" = "Disable WatchDog";
 
 /* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
-"BYc-kG-loi.title" = "Picker Mode";
+"BYc-kG-loi.title" = "Picker Mode\n启动菜单模式";
 
 /* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
 "DAS-KM-gwG.title" = "Expose Sensitive Data";
@@ -84,7 +84,7 @@
 "ThF-JP-r8K.headerCell.title" = "参数";
 
 /* Class = "NSTextFieldCell"; title = "Hibernate Mode"; ObjectID = "TmR-t7-bmq"; */
-"TmR-t7-bmq.title" = "Hibernate Mode";
+"TmR-t7-bmq.title" = "Hibernate Mode\n休眠模式";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0xF0103\nDescription: Define operating system detection policy.\nThis value allows to prevent scanning (and booting) from untrusted source based on a bitmask (sum) of select flags. As it is not possible to reliably detect every file system or device type, this feature cannot be fully relied upon in open environments, and the additional measures are to be applied.\nThird party drivers may introduce additional security (and performance) measures following the provided scan policy. Scan policy is exposed in scan-policy variable of 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102 GUID for UEFI Boot Services only.\n• 0x00000001 — OC_SCAN_FILE_SYSTEM_LOCK, restricts scanning to only known file systems defined as a part of this policy. File system drivers may not be aware of this policy, and to avoid mounting of undesired file systems it is best not to load its driver. This bit does not affect dmg mounting, which may have any file system. Known file systems are prefixed with OC_SCAN_ALLOW_FS_.\n• 0x00000002 — OC_SCAN_DEVICE_LOCK, restricts scanning to only known device types defined as a part of this policy. This is not always possible to detect protocol tunneling, so be aware that on some systems it may be possible for e.g. USB HDDs to be recognised as SATA. Cases like this must be reported. Known device types are prefixed with OC_SCAN_ALLOW_DEVICE_.\n• 0x00000100 — OC_SCAN_ALLOW_FS_APFS, allows scanning of APFS file system.\n• 0x00010000 — OC_SCAN_ALLOW_DEVICE_SATA, allow scanning SATA devices.\n• 0x00020000 — OC_SCAN_ALLOW_DEVICE_SASEX, allow scanning SAS and Mac NVMe devices.\n• 0x00040000 — OC_SCAN_ALLOW_DEVICE_SCSI, allow scanning SCSI devices.\n• 0x00080000 — OC_SCAN_ALLOW_DEVICE_NVME, allow scanning NVMe devices.\n• 0x00100000 — OC_SCAN_ALLOW_DEVICE_ATAPI, allow scanning CD/DVD devices.\n• 0x00200000 — OC_SCAN_ALLOW_DEVICE_USB, allow scanning USB devices.\n• 0x00400000 — OC_SCAN_ALLOW_DEVICE_FIREWIRE, allow scanning FireWire devices.\n• 0x00800000 — OC_SCAN_ALLOW_DEVICE_SDCARD, allow scanning card reader devices.\nNote: Given the above description, 0xF0103 value is expected to allow scanning of SATA, SAS, SCSI, and NVMe devices with APFS file system, and prevent scanning of any devices with HFS or FAT32 file systems in addition to not scanning APFS file systems on USB, CD, USB, and FireWire drives. The combination reads as:\n• OC_SCAN_FILE_SYSTEM_LOCK • OC_SCAN_DEVICE_LOCK\n• OC_SCAN_ALLOW_FS_APFS\n• OC_SCAN_ALLOW_DEVICE_SATA\n• OC_SCAN_ALLOW_DEVICE_SASEX\n• OC_SCAN_ALLOW_DEVICE_SCSI • OC_SCAN_ALLOW_DEVICE_NVME"; ObjectID = "VQF-Ne-GWu"; */
 "VQF-Ne-GWu.ibShadowedToolTip" = "0: 允许扫描所有可用的硬盘\n其它值请参考官方文档, 对给出的选项做 16 进制加法运算";
@@ -120,7 +120,7 @@
 "eH6-nm-MdQ.ibShadowedToolTip" = "用于运行一些UEFI工具, 例如验证CFG Lock(VerifyMsrE2.efi),CleanNvram.efi\n名称:OpenCore 启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助属性\n路径:Tools文件夹下的文件名\n如: VerifyMsrE2.efi,Shell.efi等";
 
 /* Class = "NSTextFieldCell"; title = "Picker Attributes"; ObjectID = "eaZ-uU-2Tt"; */
-"eaZ-uU-2Tt.title" = "Picker Attributes";
+"eaZ-uU-2Tt.title" = "Picker Attributes\n启动菜单颜色属性";
 
 /* Class = "NSTextFieldCell"; title = "Vault"; ObjectID = "fN9-q5-dg3"; */
 "fN9-q5-dg3.title" = "Vault";
@@ -153,7 +153,7 @@
 "rQF-20-vFl.ibShadowedToolTip" = "允许用CTRL+Enter或CTRL+Index(启动菜单项目编号)来设置启动菜单中的下次默认启动选项。";
 
 /* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "sTe-vF-jmH"; */
-"sTe-vF-jmH.title" = "Hide Self\n隐藏自己";
+"sTe-vF-jmH.title" = "Hide Self\n隐藏自身";
 
 /* Class = "NSButtonCell"; title = "AuthRestart"; ObjectID = "tI2-d3-co4"; */
 "tI2-d3-co4.title" = "AuthRestart";
@@ -180,7 +180,7 @@
 "wPi-6s-R0s.ibShadowedToolTip" = "检测休眠模式。我们的机器一般都不支持休眠，选none。如果你的主板支持原生nvram、并想测试休眠，可以考虑填auto。\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭！";
 
 /* Class = "NSTextFieldCell"; title = "TakeoffDelay"; ObjectID = "yDl-hK-Eml"; */
-"yDl-hK-Eml.title" = "TakeoffDelay";
+"yDl-hK-Eml.title" = "TakeoffDelay\n激活快捷键延迟";
 
 /* Class = "NSTableColumn"; headerCell.title = "Auxiliary"; ObjectID = "yTI-cV-qsU"; */
 "yTI-cV-qsU.headerCell.title" = "辅助";
