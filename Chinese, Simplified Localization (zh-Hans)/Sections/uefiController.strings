@@ -12,7 +12,10 @@
 "0gM-HU-fz5.title" = "AudioDevice";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Play chime sound at startup.\n\nEnabling this setting plays boot chime through builtin audio support. Volume level is determined by MinimumVolume and VolumeAmplifier settings and SystemAudioVolume NVRAM variable.\n\nNote: this setting is separate from StartupMute NVRAM variable to avoid conflicts when the firmware is able to play boot chime."; ObjectID = "10Z-Yt-6vt"; */
-"10Z-Yt-6vt.ibShadowedToolTip" = "在启动时播放Duang的提示音。\n\n\n\n注意：此设置与StartupMute NVRAM变量分开，以避免在固件能够播放启动铃声时发生冲突。";
+"10Z-Yt-6vt.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Play chime sound at startup.\n\nEnabling this setting plays boot chime through builtin audio support. Volume level is determined by MinimumVolume and VolumeAmplifier settings and SystemAudioVolume NVRAM variable.\n\nNote: this setting is separate from StartupMute NVRAM variable to avoid conflicts when the firmware is able to play boot chime.";
+
+/* Class = "NSTextFieldCell"; title = "DirectGopCacheMode"; ObjectID = "1JJ-Gt-7yy"; */
+"1JJ-Gt-7yy.title" = "DirectGopCacheMode";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reconnect console controllers after changing screen resolution.\nOn some firmwares when screen resolution is changed via GOP, it is required to reconnect the controllers, which produce the console protocols (simple text out). Otherwise they will not produce text based on the new resolution.\nNote: On several boards this logic may result in black screen when launching OpenCore from Shell and thus it is optional. In versions prior to 0.5.2 this option was mandatory and not configurable. Please do not use this unless required."; ObjectID = "1QT-lu-i79"; */
 "1QT-lu-i79.ibShadowedToolTip" = "有些固件在 GOP 分辨率改变后要求重新连接控制器才能输出文本, 开启这个选项会导致从 UEFI Shell 中启动 OpenCore 时直接黑屏, 尽量避免开启。\n如果你遇到开机直到登录界面之前一直是黑屏，请试试选择 YES。";
@@ -115,6 +118,9 @@
 
 /* Class = "NSTextFieldCell"; title = "Resolution"; ObjectID = "NbU-Qi-Xhw"; */
 "NbU-Qi-Xhw.title" = "控制台分辨率";
+
+/* Class = "NSButtonCell"; title = "KeyFiltering"; ObjectID = "Of8-Ba-FhQ"; */
+"Of8-Ba-FhQ.title" = "KeyFiltering";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Minimal heard volume level from 0 to 100.\n\nScreen reader will use this volume level, when the calculated volume level is less than MinimumVolume. Boot chime sound will not play if the calculated volume level is less than MinimumVolume."; ObjectID = "PF5-bc-9Z2"; */
 "PF5-bc-9Z2.ibShadowedToolTip" = "最小音量从0到100.\n\n当计算出的音量级别小于MinimumVolume时，屏幕阅读器将使用此音量级别。如果计算出的音量小于MinimumVolume，则不会发出开机提示音。";
@@ -236,6 +242,9 @@
 /* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string \nFailsafe: Empty string \nDescription: Sets console output mode as specified with the WxH (e.g. 80x24) formatted string.\nSet to empty string not to change console mode. Set to Max to try to use largest available console mode. Currently Builtin text renderer supports only one console mode, so this option is ignored.\n\nNote: This field is best to be left empty on most firmwares."; ObjectID = "lye-vu-fi3"; Note = "Do Not Translate"; */
 "lye-vu-fi3.ibShadowedToolTip" = "设置为空字符串不更改控制台模式.设置为Max以尝试使用最大可用控制台模式.\n大多数情况下都选择留空！";
 
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty string"; ObjectID = "mQo-dd-EGW"; */
+"mQo-dd-EGW.ibShadowedToolTip" = "Type: plist string\nFailsafe: Empty string";
+
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: BuiltinGraphics\nDescription: Chooses renderer for text going through standard console output.\nCurrently two renderers are supported: Builtin and System. System renderer uses firmware services for text rendering. Builtin bypassing firmware services and performs text rendering on its own. Different renderers support a different set of options. It is recommended to use Builtin renderer, as it supports HiDPI mode and uses full screen resolution.\nUEFI firmwares generally support ConsoleControl with two rendering modes: Graphics and Text. Some firmwares do not support ConsoleControl and rendering modes. OpenCore and macOS expect text to only be shown in Graphics mode and graphics to be drawn in any mode. Since this is not required by UEFI specification, exact behaviour varies.\nValid values are combinations of text renderer and rendering mode:\n• BuiltinGraphics — Switch to Graphics mode and use Builtin renderer with custom ConsoleControl.\n• SystemGraphics — Switch to Graphics mode and use System renderer with custom ConsoleControl.\n• SystemText — Switch to Text mode and use System renderer with custom ConsoleControl.\n• SystemGeneric — Use System renderer with system ConsoleControl assuming it behaves correctly.\nThe use of BuiltinGraphics is generally straightforward. For most platforms it is necessary to enable ProvideConsoleGop, set Resolution to Max, and optionally configure Scale.\nThe use of System protocols is more complicated. In general the preferred setting is SystemGraphics or SystemText. Enabling ProvideConsoleGop, setting Resolution to Max, enabling ReplaceTabWithSpace is useful on almost all platforms. SanitiseClearScreen, IgnoreTextInGraphics, and ClearScreenOnModeSwitch are more specific, and their use depends on the firmware.\n\nNote: Some Macs, namely MacPro5,1, may have broken console output with newer GPUs, and thus only BuiltinGraphics may work for them."; ObjectID = "mlh-hW-OqT"; */
 "mlh-hW-OqT.ibShadowedToolTip" = "为通过标准控制台输出的文本选择渲染器。\n目前支持两个渲染器: Builtin 和 System. System渲染器使用固件服务进行文本渲染。 Builtin则绕过固件服务，并自行执行文本渲染。 不同的渲染器支持不同的选项集。建议使用内置渲染器，因为它支持HiDPI模式并使用全屏分辨率。\n选项内容是文本渲染器和渲染模式的组合:\n• BuiltinGraphics — 切换到“图形”模式并将内置渲染器与自定义ConsoleControl一起使用.\n• SystemGraphics — 切换到“图形”模式，然后将系统渲染器与自定义ConsoleControl一起使用。\n• SystemText — 切换到文本模式，然后将系统渲染器与自定义ConsoleControl一起使用.\n• SystemGeneric — 将系统渲染器与系统ConsoleControl一起使用，并假设其行为正确。\nBuiltinGraphics的使用通常很简单。对于大多数平台，必须启用ProvideConsoleGop，将分辨率选项设置为Max，并选择配置Scale。\n系统协议的使用更加复杂。通常，首选设置是SystemGraphics或SystemText。启用ProvideConsoleGop，将“分辨率”设置为“最大”，启用“ReplaceTabWithSpace”在几乎所有平台上都很有用。 SanitiseClearScreen，IgnoreTextInGraphics和ClearScreenOnModeSwitch更具体，它们的使用取决于固件。\n\n注意:某些Mac机型，比如MacPro5,1，可能在较新的GPU上的控制台输出已损坏，因此只有BuiltinGraphics可以为它们工作。";
 
@@ -265,6 +274,9 @@
 
 /* Class = "NSButtonCell"; title = "PlayChime"; ObjectID = "rUJ-JZ-9dQ"; */
 "rUJ-JZ-9dQ.title" = "PlayChime";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false"; ObjectID = "rxJ-TB-rJc"; */
+"rxJ-TB-rJc.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Key Map protocols with builtin versions."; ObjectID = "tY1-cE-XtN"; */
 "tY1-cE-XtN.ibShadowedToolTip" = "重建苹果功能键，选择NO。";
