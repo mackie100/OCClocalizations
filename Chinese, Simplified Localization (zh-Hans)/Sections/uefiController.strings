@@ -59,7 +59,7 @@
 /* Class = "NSButtonCell"; title = "FirmwareVolume"; ObjectID = "AW6-UR-4Ex"; */
 "AW6-UR-4Ex.title" = "FirmwareVolume";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: empty string\nDescription: Codec address on the specified audio controller for audio support. Normally this contains first audio codec address on the builtin analog audio controller (HDEF). Audio codec addresses, e.g. 2, can be found in the debug log: \nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs) \nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative this value can be obtained from IOHDACodecDevice class in I/O Registry containing it in IOHDACodecAddress field."; ObjectID = "AZW-9D-hq6"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Codec address on the specified audio controller for audio support. Normally this contains first audio codec address on the builtin analog audio controller (HDEF). Audio codec addresses, e.g. 2, can be found in the debug log: \nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs) \nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative this value can be obtained from IOHDACodecDevice class in I/O Registry containing it in IOHDACodecAddress field."; ObjectID = "AZW-9D-hq6"; */
 "AZW-9D-hq6.ibShadowedToolTip" = "用于音频支持的指定音频控制器上的编解码器地址。通常，它包含内置模拟音频控制器（HDEF）上的第一个音频编解码器地址。音频编解码器地址，例如2，可以在调试日志中找到：\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs) \nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n或者，可以从I/O注册表软件中的IOHDACodecDevice类获取此值，该类包含在IOHDACodecAddress字段中。";
 
 /* Class = "NSButtonCell"; title = "AppleUserInterfaceTheme"; ObjectID = "BvY-5w-QBw"; */
@@ -104,6 +104,9 @@
 /* Class = "NSTabViewItem"; label = "Protocols"; ObjectID = "Ife-ug-MJ5"; */
 "Ife-ug-MJ5.label" = "协议";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version."; ObjectID = "JLv-Tn-pJQ"; */
+"JLv-Tn-pJQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version.";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls Data Hub protocol with a builtin version. This will drop all previous properties if the protocol was already installed."; ObjectID = "KN0-dq-pSV"; */
 "KN0-dq-pSV.ibShadowedToolTip" = "重建datahub，这里选NO。";
 
@@ -137,7 +140,7 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Attempt to detach USB controller ownership from the firmware driver. While most firmwares manage to properly do that, or at least have an option for, select firmwares do not. As a result, operating system may freeze upon boot. Not recommended unless required."; ObjectID = "TTJ-UT-Xng"; */
 "TTJ-UT-Xng.ibShadowedToolTip" = "大部分的主板都有自动释放USB所有权的功能，我们选NO。如果你开机键盘鼠标卡死了，或者USB失灵，试试选Yes。";
 
-/* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string\nFailsafe: empty string\nDescription: Set internal keyboard input translation to AppleKeyMapAggregator protocol mode.\n• Auto — Performs automatic choice as available with the following preference: AMI, V2, V1.\n• V1 — Uses UEFI standard legacy input protocol EFI_SIMPLE_TEXT_INPUT_PROTOCOL.\n• V2 — Uses UEFI standard modern input protocol EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL.\n• AMI — Uses APTIO input protocol AMI_EFIKEYCODE_PROTOCOL."; ObjectID = "TTL-Rn-Avg"; */
+/* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string\nFailsafe: empty string\nDescription: Set internal keyboard input translation to AppleKeyMapAggregator protocol mode.\n• Auto — Performs automatic choice as available with the following preference: AMI, V2, V1.\n• V1 — Uses UEFI standard legacy input protocol EFI_SIMPLE_TEXT_INPUT_PROTOCOL.\n• V2 — Uses UEFI standard modern input protocol EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL.\n• AMI — Uses APTIO input protocol AMI_EFIKEYCODE_PROTOCOL.\n\nNote: Currently V1, V2, and AMI unlike Auto only do filtering of the particular specified protocol. This may change in the future versions."; ObjectID = "TTL-Rn-Avg"; */
 "TTL-Rn-Avg.ibShadowedToolTip" = "Auto:键值转换协议模式\nV1: UEFI 旧版输入协议\nV2: UEFI 新输入协议\nAMI: APTIO 输入协议";
 
 /* Class = "NSButtonCell"; title = "ReleaseUsbOwnership"; ObjectID = "UMT-DK-9B5"; */
@@ -155,7 +158,7 @@
 /* Class = "NSButtonCell"; title = "UnblockFsConnect"; ObjectID = "YFj-X6-x1j"; */
 "YFj-X6-x1j.title" = "UnblockFsConnect";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: 0\nDescription: Device path of the specified audio controller for audio support.\nNormally this contains builtin analog audio controller (HDEF) device path, e.g. PciRoot(0x0)/Pci(0x1b,0x0).\nThe list of recognised audio controllers can be found in the debug log:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative gfxutil -f HDEF command can be used in macOS. Specifying empty device path will result in the first available audio controller to be used."; ObjectID = "YTE-Ba-80O"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: empty string\nDescription: Device path of the specified audio controller for audio support.\nNormally this contains builtin analog audio controller (HDEF) device path, e.g. PciRoot(0x0)/Pci(0x1b,0x0).\nThe list of recognised audio controllers can be found in the debug log:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative gfxutil -f HDEF command can be used in macOS. Specifying empty device path will result in the first available audio controller to be used."; ObjectID = "YTE-Ba-80O"; */
 "YTE-Ba-80O.ibShadowedToolTip" = "用于音频功能支持的指定音频控制器的设备路径。\n通常，它包含内置的模拟音频控制器（HDEF）设备路径, 比如:PciRoot(0x0)/Pci(0x1b,0x0).\n可以在调试日志中找到音频控制器的列表:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n也可以在macOS中使用gfxutil -f HDEF命令获取或者用Hackintool工具查看音频设备地址。指定空的设备路径将导致使用第一个可用的音频控制器.";
 
 /* Class = "NSButtonCell"; title = "UnicodeCollation"; ObjectID = "ZCa-Hx-UFl"; */
@@ -242,7 +245,7 @@
 /* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string \nFailsafe: Empty string \nDescription: Sets console output mode as specified with the WxH (e.g. 80x24) formatted string.\nSet to empty string not to change console mode. Set to Max to try to use largest available console mode. Currently Builtin text renderer supports only one console mode, so this option is ignored.\n\nNote: This field is best to be left empty on most firmwares."; ObjectID = "lye-vu-fi3"; Note = "Do Not Translate"; */
 "lye-vu-fi3.ibShadowedToolTip" = "设置为空字符串不更改控制台模式.设置为Max以尝试使用最大可用控制台模式.\n大多数情况下都选择留空！";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty string"; ObjectID = "mQo-dd-EGW"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty string\nDescription: Cache mode for builtin graphics output protocol framebuffer.\n\nTuning cache mode may provide better rendering performance on some firmwares. Providing empty string leaves cache control settings to the firmware. Valid non-empty values are: Uncacheable, WriteCombining, and WriteThrough.\n\nNote: This option is not supported on most hardware."; ObjectID = "mQo-dd-EGW"; */
 "mQo-dd-EGW.ibShadowedToolTip" = "内置图形输出协议帧缓冲区的缓存模式。\n调整缓存模式可能会在某些固件上提供更好的渲染性能。提供空字符串会将缓存控制设置留给固件。有效的非空值是:\nUncacheable(不缓存)\nWriteCombining(合并写入)\nWriteThrough(直接写入)";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: BuiltinGraphics\nDescription: Chooses renderer for text going through standard console output.\nCurrently two renderers are supported: Builtin and System. System renderer uses firmware services for text rendering. Builtin bypassing firmware services and performs text rendering on its own. Different renderers support a different set of options. It is recommended to use Builtin renderer, as it supports HiDPI mode and uses full screen resolution.\nUEFI firmwares generally support ConsoleControl with two rendering modes: Graphics and Text. Some firmwares do not support ConsoleControl and rendering modes. OpenCore and macOS expect text to only be shown in Graphics mode and graphics to be drawn in any mode. Since this is not required by UEFI specification, exact behaviour varies.\nValid values are combinations of text renderer and rendering mode:\n• BuiltinGraphics — Switch to Graphics mode and use Builtin renderer with custom ConsoleControl.\n• SystemGraphics — Switch to Graphics mode and use System renderer with custom ConsoleControl.\n• SystemText — Switch to Text mode and use System renderer with custom ConsoleControl.\n• SystemGeneric — Use System renderer with system ConsoleControl assuming it behaves correctly.\nThe use of BuiltinGraphics is generally straightforward. For most platforms it is necessary to enable ProvideConsoleGop, set Resolution to Max, and optionally configure Scale.\nThe use of System protocols is more complicated. In general the preferred setting is SystemGraphics or SystemText. Enabling ProvideConsoleGop, setting Resolution to Max, enabling ReplaceTabWithSpace is useful on almost all platforms. SanitiseClearScreen, IgnoreTextInGraphics, and ClearScreenOnModeSwitch are more specific, and their use depends on the firmware.\n\nNote: Some Macs, namely MacPro5,1, may have broken console output with newer GPUs, and thus only BuiltinGraphics may work for them."; ObjectID = "mlh-hW-OqT"; */
@@ -275,7 +278,7 @@
 /* Class = "NSButtonCell"; title = "PlayChime"; ObjectID = "rUJ-JZ-9dQ"; */
 "rUJ-JZ-9dQ.title" = "PlayChime";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false"; ObjectID = "rxJ-TB-rJc"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable keyboard input sanity checking.\nApparently some boards like GA Z77P-D3 may return uninitialised data in EFI_INPUT_KEY with all input protocols. This option discards keys that are neither ASCII, nor are defined in the UEFI specification (see tables 107 and 108 in version 2.8)."; ObjectID = "rxJ-TB-rJc"; */
 "rxJ-TB-rJc.ibShadowedToolTip" = "启用键盘输入的健全性检查。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Key Map protocols with builtin versions."; ObjectID = "tY1-cE-XtN"; */
@@ -289,6 +292,9 @@
 
 /* Class = "NSButtonCell"; title = "ClearScreenOnModeSwitch"; ObjectID = "tqx-Ek-u4V"; */
 "tqx-Ek-u4V.title" = "ClearScreenOnModeSwitch";
+
+/* Class = "NSButtonCell"; title = "AppleDebugLog"; ObjectID = "uqk-49-YG8"; */
+"uqk-49-YG8.title" = "AppleDebugLog";
 
 /* Class = "NSTextFieldCell"; title = "ExitBootServicesDelay"; ObjectID = "wxD-TC-lrQ"; */
 "wxD-TC-lrQ.title" = "ExitBootServicesDelay";
