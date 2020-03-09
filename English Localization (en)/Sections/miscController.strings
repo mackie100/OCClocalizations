@@ -53,8 +53,8 @@
 /* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
 "Jpe-QB-x2r.title" = "AllowNvramReset";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: NO\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
-"LCd-qL-7KC.ibShadowedToolTip" = "Type: plist boolean\nDefault value: NO\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
+"LCd-qL-7KC.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "NXw-uw-Jsu"; */
 "NXw-uw-Jsu.headerCell.title" = "Enabled";
@@ -125,6 +125,9 @@
 /* Class = "NSTextFieldCell"; title = "Vault"; ObjectID = "fN9-q5-dg3"; */
 "fN9-q5-dg3.title" = "Vault";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable boot.efi debug log saving to OpenCore log.\n\nNote: This option only applies to 10.15.4 and newer."; ObjectID = "fcn-ha-taM"; */
+"fcn-ha-taM.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable boot.efi debug log saving to OpenCore log.\n\nNote: This option only applies to 10.15.4 and newer.";
+
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nBuiltin picker supports colour arguments as a sum of foreground and background colors according to UEFI specification. The value of black background and black foreground (0) is reserved. List of colour names:\n• 0x00 — EFI_BLACK\n• 0x01 — EFI_BLUE\n• 0x02 — EFI_GREEN\n• 0x03 — EFI_CYAN\n• 0x04 — EFI_RED\n• 0x05 — EFI_MAGENTA\n• 0x06 — EFI_BROWN\n• 0x07 — EFI_LIGHTGRAY\n• 0x08 — EFI_DARKGRAY\n• 0x09 — EFI_LIGHTBLUE\n• 0x0A — EFI_LIGHTGREEN\n• 0x0B — EFI_LIGHTCYAN\n• 0x0C — EFI_LIGHTRED\n• 0x0D — EFI_LIGHTMAGENTA \n• 0x0E — EFI_YELLOW\n• 0x0F — EFI_WHITE\n• 0x00 — EFI_BACKGROUND_BLACK\n• 0x10 — EFI_BACKGROUND_BLUE\n• 0x20 — EFI_BACKGROUND_GREEN\n• 0x30 — EFI_BACKGROUND_CYAN\n• 0x40 — EFI_BACKGROUND_RED\n• 0x50 — EFI_BACKGROUND_MAGENTA\n• 0x60 — EFI_BACKGROUND_BROWN\n• 0x70 — EFI_BACKGROUND_LIGHTGRAY\nNote: This option may not work well with System text renderer. Setting a background different from black could help testing proper GOP functioning."; ObjectID = "gz9-mZ-F6I"; */
 "gz9-mZ-F6I.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nBuiltin picker supports colour arguments as a sum of foreground and background colors according to UEFI specification. The value of black background and black foreground (0) is reserved. List of colour names:\n• 0x00 — EFI_BLACK\n• 0x01 — EFI_BLUE\n• 0x02 — EFI_GREEN\n• 0x03 — EFI_CYAN\n• 0x04 — EFI_RED\n• 0x05 — EFI_MAGENTA\n• 0x06 — EFI_BROWN\n• 0x07 — EFI_LIGHTGRAY\n• 0x08 — EFI_DARKGRAY\n• 0x09 — EFI_LIGHTBLUE\n• 0x0A — EFI_LIGHTGREEN\n• 0x0B — EFI_LIGHTCYAN\n• 0x0C — EFI_LIGHTRED\n• 0x0D — EFI_LIGHTMAGENTA \n• 0x0E — EFI_YELLOW\n• 0x0F — EFI_WHITE\n• 0x00 — EFI_BACKGROUND_BLACK\n• 0x10 — EFI_BACKGROUND_BLUE\n• 0x20 — EFI_BACKGROUND_GREEN\n• 0x30 — EFI_BACKGROUND_CYAN\n• 0x40 — EFI_BACKGROUND_RED\n• 0x50 — EFI_BACKGROUND_MAGENTA\n• 0x60 — EFI_BACKGROUND_BROWN\n• 0x70 — EFI_BACKGROUND_LIGHTGRAY\nNote: This option may not work well with System text renderer. Setting a background different from black could help testing proper GOP functioning.";
 
@@ -154,6 +157,9 @@
 
 /* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "sTe-vF-jmH"; */
 "sTe-vF-jmH.title" = "Hide Self";
+
+/* Class = "NSButtonCell"; title = "AppleDebug"; ObjectID = "tBp-D4-d9x"; */
+"tBp-D4-d9x.title" = "AppleDebug";
 
 /* Class = "NSButtonCell"; title = "AuthRestart"; ObjectID = "tI2-d3-co4"; */
 "tI2-d3-co4.title" = "AuthRestart";
