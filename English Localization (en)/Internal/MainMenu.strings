@@ -161,9 +161,6 @@
 /* Class = "NSMenuItem"; title = "Subscript"; ObjectID = "I0S-gh-46l"; */
 "I0S-gh-46l.title" = "Subscript";
 
-/* Class = "NSMenuItem"; title = "OC Release Version"; ObjectID = "IeD-QI-u8F"; */
-"IeD-QI-u8F.title" = "OC Release Version";
-
 /* Class = "NSMenuItem"; title = "Justify"; ObjectID = "J5U-5w-g23"; */
 "J5U-5w-g23.title" = "Justify";
 
@@ -499,9 +496,6 @@
 
 /* Class = "NSMenuItem"; title = "Use All"; ObjectID = "xQD-1f-W4t"; */
 "xQD-1f-W4t.title" = "Use All";
-
-/* Class = "NSMenuItem"; title = "OC Development Version"; ObjectID = "xjL-if-qId"; */
-"xjL-if-qId.title" = "OC Development Version";
 
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
 "xrE-MZ-jX0.title" = "Speech";

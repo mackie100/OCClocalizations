@@ -2,6 +2,9 @@
 /* Class = "NSButtonCell"; title = "DiscardHibernateMap"; ObjectID = "2QZ-Md-QHk"; */
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI services from being overridden by the firmware.\nSome modern firmwares including both hardware and virtual machines, like VMware, may update pointers to UEFI services during driver loading and related actions. Consequentially this directly breaks other quirks that affect memory management, like DevirtualiseMmio, ProtectCsmRegion, or ShrinkMemoryMap, and may also break other quirks depending on the effects of these.\n\nNote: On VMware the need for this quirk may be diagnosed by “Your Mac OS guest might run unreliably with more than one virtual core.” message."; ObjectID = "3fG-t6-MF7"; */
+"3fG-t6-MF7.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI services from being overridden by the firmware.\nSome modern firmwares including both hardware and virtual machines, like VMware, may update pointers to UEFI services during driver loading and related actions. Consequentially this directly breaks other quirks that affect memory management, like DevirtualiseMmio, ProtectCsmRegion, or ShrinkMemoryMap, and may also break other quirks depending on the effects of these.\n\nNote: On VMware the need for this quirk may be diagnosed by “Your Mac OS guest might run unreliably with more than one virtual core.” message.";
+
 /* Class = "NSButtonCell"; title = "ForceExitBootServices"; ObjectID = "5sK-91-1dQ"; */
 "5sK-91-1dQ.title" = "ForceExitBootServices";
 
@@ -10,6 +13,9 @@
 
 /* Class = "NSButtonCell"; title = "EnableSafeModeSlide"; ObjectID = "9lc-VM-DSq"; */
 "9lc-VM-DSq.title" = "EnableSafeModeSlide";
+
+/* Class = "NSButtonCell"; title = "ProtectUefiServices"; ObjectID = "9qv-tK-N7C"; */
+"9qv-tK-N7C.title" = "ProtectUefiServices";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reuse original hibernate memory map.\nThis option forces XNU kernel to ignore newly supplied memory map and assume that it did not change after waking from hibernation. This behaviour is required to work by Windows, which mandates to preserve runtime memory size and location after S4 wake.\nNote: This may be used to workaround buggy memory maps on older hardware, and is now considered rare legacy. Examples of such hardware are Ivy Bridge laptops with Insyde firmware, like Acer V3-571G. Do not use this unless you fully understand the consequences."; ObjectID = "ELB-6s-GBW"; */
 "ELB-6s-GBW.ibShadowedToolTip" = "当电脑从休眠(hibernation)中唤醒时,硬盘里的资料会恢复到内存中去，但这个时候OC的内核以及内核缓存等也会写入，这样可能导致冲突，这个选项是帮助我们解决这个问题的。而目前来看，除了z370/x299/c422都无法进行休眠（注意睡眠sleep和休眠hibernation是两个概念），台式机的话就更不需要休眠功能了，一般选择NO。\n开启后会重用原始休眠内存映射，仅某些旧硬件需要。";
