@@ -11,11 +11,17 @@
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "F6A-yy-QfQ"; */
 "F6A-yy-QfQ.headerCell.title" = "键*";
 
+/* Class = "NSMenuItem"; title = "List of PCI Devices"; ObjectID = "JHu-SN-nN7"; */
+"JHu-SN-nN7.title" = "List of PCI Devices";
+
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "NLq-sd-yYz"; */
 "NLq-sd-yYz.label" = "添加";
 
 /* Class = "NSMenuItem"; title = "DATA"; ObjectID = "POL-aB-DNF"; */
 "POL-aB-DNF.title" = "数据";
+
+/* Class = "NSMenuItem"; title = "List of PCI Devices"; ObjectID = "V5x-oc-YnL"; */
+"V5x-oc-YnL.title" = "List of PCI Devices";
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "dpG-4m-Tya"; */
 "dpG-4m-Tya.headerCell.title" = "类型";
