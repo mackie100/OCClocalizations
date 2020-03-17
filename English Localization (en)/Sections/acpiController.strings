@@ -41,6 +41,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "K4n-vm-jxn"; */
 "K4n-vm-jxn.headerCell.title" = "Find";
 
+/* Class = "NSMenuItem"; title = "List Of Patches"; ObjectID = "Kbb-Cq-tfz"; */
+"Kbb-Cq-tfz.title" = "List Of Patches";
+
 /* Class = "NSTableColumn"; headerCell.title = "TableLength"; ObjectID = "MtH-av-7W0"; */
 "MtH-av-7W0.headerCell.title" = "TableLength";
 
