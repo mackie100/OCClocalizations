@@ -42,7 +42,7 @@
 "K4n-vm-jxn.headerCell.title" = "查找";
 
 /* Class = "NSMenuItem"; title = "List Of Patches"; ObjectID = "Kbb-Cq-tfz"; */
-"Kbb-Cq-tfz.title" = "List Of Patches";
+"Kbb-Cq-tfz.title" = "补丁列表";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableLength"; ObjectID = "MtH-av-7W0"; */
 "MtH-av-7W0.headerCell.title" = "ACPI表长度";
