@@ -182,6 +182,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "tya-o0-N6w"; */
 "tya-o0-N6w.headerCell.title" = "MaxKernel";
 
+/* Class = "NSMenuItem"; title = "List Of Patches"; ObjectID = "urM-4i-kap"; */
+"urM-4i-kap.title" = "List Of Patches";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables multiple MSR access critical for select CPUs, which have no native XCPM support.\nThis is normally used in conjunction with Emulate section on Haswell-E, Broadwell-E, Skylake-X, and similar CPUs.\nNote: Additional not provided patches will be required for Ivy Bridge or Pentium CPUs. It is recommended to use AppleIntelCpuPowerManagement.kext for the former."; ObjectID = "v6y-N9-uHT"; */
 "v6y-N9-uHT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disables multiple MSR access critical for select CPUs, which have no native XCPM support.\nThis is normally used in conjunction with Emulate section on Haswell-E, Broadwell-E, Skylake-X, and similar CPUs.\nNote: Additional not provided patches will be required for Ivy Bridge or Pentium CPUs. It is recommended to use AppleIntelCpuPowerManagement.kext for the former.";
 
