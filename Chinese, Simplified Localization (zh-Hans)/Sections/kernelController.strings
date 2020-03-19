@@ -33,7 +33,7 @@
 "7u5-bu-FWR.title" = "PanicNoKextDump";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier*"; ObjectID = "838-ax-A45"; */
-"838-ax-A45.headerCell.title" = "*标识符”";
+"838-ax-A45.headerCell.title" = "*标识符";
 
 /* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "8BF-rh-btZ"; */
 "8BF-rh-btZ.headerCell.title" = "替换次数";
