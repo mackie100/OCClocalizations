@@ -161,6 +161,9 @@
 /* Class = "NSMenuItem"; title = "Subscript"; ObjectID = "I0S-gh-46l"; */
 "I0S-gh-46l.title" = "Subscript";
 
+/* Class = "NSMenuItem"; title = "Sample.plist"; ObjectID = "Ih6-lk-lzT"; */
+"Ih6-lk-lzT.title" = "Sample.plist";
+
 /* Class = "NSMenuItem"; title = "Justify"; ObjectID = "J5U-5w-g23"; */
 "J5U-5w-g23.title" = "Justify";
 
@@ -226,6 +229,9 @@
 
 /* Class = "NSMenuItem"; title = "Show Fonts"; ObjectID = "Q5e-8K-NDq"; */
 "Q5e-8K-NDq.title" = "Show Fonts";
+
+/* Class = "NSMenuItem"; title = "SampleFull.plist"; ObjectID = "QT1-6J-6cg"; */
+"QT1-6J-6cg.title" = "SampleFull.plist";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Zoom";
