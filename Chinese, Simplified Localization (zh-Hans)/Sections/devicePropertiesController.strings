@@ -18,10 +18,10 @@
 "JHu-SN-nN7.title" = "PCI设备列表";
 
 /* Class = "NSTabViewItem"; label = "Selected Platform"; ObjectID = "Lb7-g2-RyE"; */
-"Lb7-g2-RyE.label" = "Selected Platform";
+"Lb7-g2-RyE.label" = "选定平台";
 
 /* Class = "NSButtonCell"; title = "Spoof ID"; ObjectID = "LcB-f7-aNX"; */
-"LcB-f7-aNX.title" = "Spoof ID";
+"LcB-f7-aNX.title" = "伪装ID";
 
 /* Class = "NSTabViewItem"; label = "CPU Codenames"; ObjectID = "MD8-eq-jtV"; */
 "MD8-eq-jtV.label" = "CPU Codenames";
@@ -33,7 +33,7 @@
 "POL-aB-DNF.title" = "数据";
 
 /* Class = "NSTabViewItem"; label = "Current System"; ObjectID = "QNk-Ut-xrk"; */
-"QNk-Ut-xrk.label" = "Current System";
+"QNk-Ut-xrk.label" = "当前系统";
 
 /* Class = "NSMenuItem"; title = "List of PCI Devices"; ObjectID = "V5x-oc-YnL"; */
 "V5x-oc-YnL.title" = "PCI设备列表";
@@ -42,13 +42,13 @@
 "dpG-4m-Tya.headerCell.title" = "类型";
 
 /* Class = "NSTabViewItem"; label = "Device IDs"; ObjectID = "ej0-LP-73g"; */
-"ej0-LP-73g.label" = "Device IDs";
+"ej0-LP-73g.label" = "设备ID";
 
 /* Class = "NSTabViewItem"; label = "Framebuffer"; ObjectID = "ews-BC-kwq"; */
 "ews-BC-kwq.label" = "Framebuffer";
 
 /* Class = "NSMenuItem"; title = "Add all PCI devices"; ObjectID = "gGR-Wj-H5N"; */
-"gGR-Wj-H5N.title" = "Add all PCI devices";
+"gGR-Wj-H5N.title" = "添加所有PCI设备";
 
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "lI7-XR-ash"; */
 "lI7-XR-ash.title" = "数字";
