@@ -147,7 +147,7 @@
 "oFg-pn-DgG.label" = "Tools-添加附加工具";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE."; ObjectID = "omf-bH-d4v"; */
-"omf-bH-d4v.ibShadowedToolTip" = "2147483714 在屏幕上显示所有 Debug 信息\n0 隐藏所有 Debug 信息！";
+"omf-bH-d4v.ibShadowedToolTip" = "2147483714 在屏幕上显示所有 Debug 信息\n0 隐藏所有 Debug 信息！\n15 暴露所有NVRAM信息";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker."; ObjectID = "pTC-aG-QK1"; */
 "pTC-aG-QK1.ibShadowedToolTip" = "允许CMD + OPT + P + R或在启动菜单中显示ResetNVRAM重置菜单。";
