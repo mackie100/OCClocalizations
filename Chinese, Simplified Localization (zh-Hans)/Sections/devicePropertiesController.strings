@@ -18,13 +18,13 @@
 "JHu-SN-nN7.title" = "PCI设备列表";
 
 /* Class = "NSTabViewItem"; label = "Selected Platform"; ObjectID = "Lb7-g2-RyE"; */
-"Lb7-g2-RyE.label" = "选定平台";
+"Lb7-g2-RyE.label" = "选定信息";
 
 /* Class = "NSButtonCell"; title = "Spoof ID"; ObjectID = "LcB-f7-aNX"; */
 "LcB-f7-aNX.title" = "仿冒ID";
 
 /* Class = "NSTabViewItem"; label = "CPU Codenames"; ObjectID = "MD8-eq-jtV"; */
-"MD8-eq-jtV.label" = "CPU代号";
+"MD8-eq-jtV.label" = "CPU架构";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "NLq-sd-yYz"; */
 "NLq-sd-yYz.label" = "添加";
@@ -33,7 +33,7 @@
 "POL-aB-DNF.title" = "数据";
 
 /* Class = "NSTabViewItem"; label = "Current System"; ObjectID = "QNk-Ut-xrk"; */
-"QNk-Ut-xrk.label" = "当前系统";
+"QNk-Ut-xrk.label" = "当前信息";
 
 /* Class = "NSMenuItem"; title = "List of PCI Devices"; ObjectID = "V5x-oc-YnL"; */
 "V5x-oc-YnL.title" = "PCI设备列表";
