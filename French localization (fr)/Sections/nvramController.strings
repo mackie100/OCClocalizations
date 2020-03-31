@@ -6,19 +6,19 @@
 "1Hp-YT-QB3.headerCell.title" = "Clé";
 
 /* Class = "NSMenuItem"; title = "STRING"; ObjectID = "2GE-aT-481"; */
-"2GE-aT-481.title" = "Chaîne";
+"2GE-aT-481.title" = "CHAÎNE";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enables loading of NVRAM variable file named nvram.plist from EFI volume root.\nThis file must have root plist dictionary type and contain two fields:\n• Version — plist integer, file version, must be set to 1.\n• Add — plist dictionary, equivalent to Add from config.plist.\nVariable loading happens prior to Block (and Add) phases. Unless LegacyOverwrite is enabled, it overwrite any existing variable. Variables allowed to be set must be specified in LegacySchema. Third-party scripts may be used to create nvram.plist file. An example of such script can be found in Utilities. The use of third-party scripts may require ExposeSensitiveData set to 0x3 to provide boot-path variable with OpenCore EFI partition UUID.\n\nWARNING: This feature is very dangerous as it passes unprotected data to your firmware variable services. Use it only when no hardware NVRAM implementation is provided by the firmware or it is incompatible."; ObjectID = "2KJ-kg-wip"; */
 "2KJ-kg-wip.ibShadowedToolTip" = "Permet de charger un fichier de variables NVRAM nommé nvram.plist à partir du répertoire racine du volume EFI. \nLes appareils sans NVRAM native sont définis sur OUI \n Les périphériques avec NVRAM matériel qui ne fonctionnent pas correctement sous macOS sont définis sur OUI \n Les périphériques avec NVRAM matériel qui fonctionnent correctement sous macOS sont définis sur NON \nUn chargement variable se produit dans "bloquer" (et "ajouter") Avant l'étape et n'écrase aucune variable existante. Les variables autorisées doivent être spécifiées dans LegacySchema. Des scripts tiers peuvent être utilisés pour créer le fichier nvram.plist. Des exemples de tels scripts peuvent être trouvés dans les utilitaires. L'utilisation de scripts tiers peut nécessiter de définir ExposeSensitiveData sur 0x3 pour fournir une variable de chemin de démarrage pour l'UUID de partition OpenCore EFI. \nAvertissement: cette fonctionnalité est très dangereuse car elle transmet des données non protégées au service de variable de micrologiciel. Utilisez-le uniquement si le firmware ne fournit pas d'implémentation matérielle NVRAM ou est incompatible avec le firmware.";
 
 /* Class = "NSMenuItem"; title = "DATA"; ObjectID = "5S9-qs-ueO"; */
-"5S9-qs-ueO.title" = "Données";
+"5S9-qs-ueO.title" = "DONNÉES";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Permits overwriting firmware variables from nvram.plist.\nNote: Only variables accessible from the operating system will be overwritten."; ObjectID = "Bqu-cW-189"; */
 "Bqu-cW-189.ibShadowedToolTip" = "Pour les utilisateurs de nvram simulés, écrivez nvram.plist dans le firmware. \nRemarque: il écrase uniquement les variables accessibles depuis le système d'exploitation, ce qui n'est généralement pas recommandé.";
 
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "C9A-DN-Ig8"; */
-"C9A-DN-Ig8.title" = "Chiffre";
+"C9A-DN-Ig8.title" = "CHIFFRE";
 
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "Eac-Nq-33R"; */
 "Eac-Nq-33R.headerCell.title" = "Valeur";

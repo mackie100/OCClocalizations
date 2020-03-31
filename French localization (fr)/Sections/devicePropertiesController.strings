@@ -30,7 +30,7 @@
 "NLq-sd-yYz.label" = "Ajouter";
 
 /* Class = "NSMenuItem"; title = "DATA"; ObjectID = "POL-aB-DNF"; */
-"POL-aB-DNF.title" = "Données";
+"POL-aB-DNF.title" = "DONNÉES";
 
 /* Class = "NSTabViewItem"; label = "Current System"; ObjectID = "QNk-Ut-xrk"; */
 "QNk-Ut-xrk.label" = "Système actuel";
@@ -51,7 +51,7 @@
 "gGR-Wj-H5N.title" = "Ajouter tous les périphériques PCI";
 
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "lI7-XR-ash"; */
-"lI7-XR-ash.title" = "Chiffre";
+"lI7-XR-ash.title" = "CHIFFRE";
 
 /* Class = "NSTabViewItem"; label = "Block"; ObjectID = "n3V-ht-3yU"; */
 "n3V-ht-3yU.label" = "Bloquer";
@@ -72,4 +72,4 @@
 "sdh-x3-Y0z.title" = "Ajouter";
 
 /* Class = "NSMenuItem"; title = "STRING"; ObjectID = "ycS-j8-cj1"; */
-"ycS-j8-cj1.title" = "Chaîne";
+"ycS-j8-cj1.title" = "CHAÎNE";
