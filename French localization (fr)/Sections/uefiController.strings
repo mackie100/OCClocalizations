@@ -120,7 +120,7 @@
 "NGa-cY-Uzn.title" = "DataHub";
 
 /* Class = "NSTextFieldCell"; title = "Resolution"; ObjectID = "NbU-Qi-Xhw"; */
-"NbU-Qi-Xhw.title" = "控制台分辨率";
+"NbU-Qi-Xhw.title" = "Résolution de la console";
 
 /* Class = "NSButtonCell"; title = "KeyFiltering"; ObjectID = "Of8-Ba-FhQ"; */
 "Of8-Ba-FhQ.title" = "KeyFiltering";
@@ -135,7 +135,7 @@
 "PVa-Cc-beC.title" = "Quirks";
 
 /* Class = "NSTextFieldCell"; title = "TextRenderer"; ObjectID = "QQF-qM-yZS"; */
-"QQF-qM-yZS.title" = "TextRenderer(文字渲染器)";
+"QQF-qM-yZS.title" = "TextRenderer(Rendu de texte)";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Attempt to detach USB controller ownership from the firmware driver. While most firmwares manage to properly do that, or at least have an option for, select firmwares do not. As a result, operating system may freeze upon boot. Not recommended unless required."; ObjectID = "TTJ-UT-Xng"; */
 "TTJ-UT-Xng.ibShadowedToolTip" = "La plupart des cartes mères ont pour fonction de libérer automatiquement la propriété USB. Nous choisissons NON. Si votre clavier et votre souris sont bloqués ou que la clé USB échoue, essayez de choisir Oui.";
