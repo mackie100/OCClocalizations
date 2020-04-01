@@ -24,19 +24,19 @@
 "5Or-M0-hZS.ibShadowedToolTip" = "Sélectionnez un sélecteur de démarrage pour la gestion du démarrage \nSupporte les valeurs suivantes: \ nBuiltin (par défaut) - La gestion du démarrage est gérée par OpenCore, à l'aide d'une interface utilisateur en texte brut. \n • Protocole de gestion de démarrage externe à usage externe (si disponible), sinon, le mode intégré sera utilisé. \n • Apple-Use Apple Boot Management (si disponible), sinon, le mode intégré sera utilisé.";
 
 /* Class = "NSTextFieldCell"; title = "Timeout"; ObjectID = "6hf-UH-eBA"; */
-"6hf-UH-eBA.title" = "Timeout\n temps d'attente";
+"6hf-UH-eBA.title" = "Timeout";
 
 /* Class = "NSButtonCell"; title = "HideAuxiliary"; ObjectID = "7BP-eo-vIZ"; */
-"7BP-eo-vIZ.title" = "HideAuxiliary\n masquer les entrées auxiliaires";
+"7BP-eo-vIZ.title" = "HideAuxiliary";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: OpenShell.efi."; ObjectID = "8Gl-6A-OsL"; */
-"8Gl-6A-OsL.ibShadowedToolTip" = "Utilisé pour spécifier un chemin de démarrage irrégulier qui ne peut pas être trouvé automatiquement par OpenCore.\nNom:OpenCore Le nom affiché dans l'élément de démarrage \nActiver: activer ou désactiver \nAuxiliaire: définir l'entrée comme entrée auxiliaire, qui peut être masquée dans le menu de démarrage \nPath: \nLe chemin PCI du disque de démarrage, vous pouvez généralement remplacer le fichier de démarrage par la version DEBUG , Cochez ensuite l'option Disable WatchDog, remplissez l'option Target avec 67 et démarrez-la une fois, recherchez le fichier journal généré dans la partition EFI, tel que: PciRoot (0x0) / Pci (0x1D, 0x4) / Pci (0x0,0x0) / NVMe (0x1,09-63-E3-44-8B-44-1B-00) / HD (1, GPT, 11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000) / \ EFI \ Microsoft \ Boot \ bootmgfw. efi. \nVous pouvez utiliser la commande diskutil info disk0s2 | grep \ "UUID \" dans MACOS pour obtenir l'UUID de la partition que vous souhaitez démarrer à l'avance, puis rechercher la valeur UUID dans le fichier journal pour obtenir rapidement le chemin PCI complet! \nPour la version fork (MOD) de NDK, appuyez sur F9 à l'interface de démarrage pour enregistrer tous les chemins des périphériques de démarrage dans un fichier et enregistrez-le dans la partition EFI";
+"8Gl-6A-OsL.ibShadowedToolTip" = "Utilisé pour spécifier un chemin de démarrage irrégulier qui ne peut pas être trouvé automatiquement par OpenCore.\nNom:OpenCore Le nom affiché dans l'élément de démarrage \nActiver: activer ou désactiver \nAuxiliaire: définir l'entrée comme entrée auxiliaire, qui peut être masquée dans le menu de démarrage \nPath: \nLe chemin PCI du disque de démarrage, vous pouvez généralement remplacer le fichier de démarrage par la version DEBUG , Cochez ensuite l'option Disable WatchDog, remplissez l'option Target avec 67 et démarrez-la une fois, recherchez le fichier journal généré dans la partition EFI, tel que: PciRoot (0x0) / Pci (0x1D, 0x4) / Pci (0x0,0x0) / NVMe (0x1,09-63-E3-44-8B-44-1B-00) / HD (1, GPT, 11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000) / \ EFI \ Microsoft \ Boot \ bootmgfw. efi. \nVous pouvez utiliser la commande diskutil info disk0s2 | grep \"UUID \" dans MACOS pour obtenir l'UUID de la partition que vous souhaitez démarrer à l'avance, puis rechercher la valeur UUID dans le fichier journal pour obtenir rapidement le chemin PCI complet! \nPour la version fork (MOD) de NDK, appuyez sur F9 à l'interface de démarrage pour enregistrer tous les chemins des périphériques de démarrage dans un fichier et enregistrez-le dans la partition EFI";
 
 /* Class = "NSButtonCell"; title = "Disable WatchDog"; ObjectID = "9LG-wP-7Np"; */
 "9LG-wP-7Np.title" = "Disable WatchDog";
 
 /* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
-"BYc-kG-loi.title" = "Picker Mode\n Mode menu Démarrer";
+"BYc-kG-loi.title" = "Picker Mode";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Bpe-6y-ybA"; */
 "Bpe-6y-ybA.title" = "Parcourir";
@@ -81,7 +81,7 @@
 "SPw-C4-qwL.headerCell.title" = "Activer";
 
 /* Class = "NSButtonCell"; title = "PollAppleHotKeys"; ObjectID = "TDv-Al-hb0"; */
-"TDv-Al-hb0.title" = "PollAppleHotKeys\n Activer la simulation du raccourci clavier Apple";
+"TDv-Al-hb0.title" = "PollAppleHotKeys";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "ThF-JP-r8K"; */
 "ThF-JP-r8K.headerCell.title" = "Paramètre";
@@ -99,7 +99,7 @@
 "XSQ-pS-WUn.headerCell.title" = "Chemin*";
 
 /* Class = "NSButtonCell"; title = "Show Picker"; ObjectID = "YKi-Mp-w6e"; */
-"YKi-Mp-w6e.title" = "Show Picker\n afficher le menu de démarrage";
+"YKi-Mp-w6e.title" = "Show Picker";
 
 /* Class = "NSTabViewItem"; label = "Debug"; ObjectID = "Yod-ne-FH8"; */
 "Yod-ne-FH8.label" = "Déboguer";
@@ -114,7 +114,7 @@
 "aUx-rK-UTX.title" = "Scan Policy";
 
 /* Class = "NSButtonCell"; title = "PickerAudioAssist"; ObjectID = "cN2-ao-nCB"; */
-"cN2-ao-nCB.title" = "PickerAudioAssist\n Activer l'assistance vocale";
+"cN2-ao-nCB.title" = "PickerAudioAssist";
 
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Display Level";
@@ -123,7 +123,7 @@
 "eH6-nm-MdQ.ibShadowedToolTip" = "Utilisé pour exécuter certains outils UEFI, tels que Verify CFG Lock (VerifyMsrE2.efi), CleanNvram.efi \nName: nom affiché dans l'élément de démarrage OpenCore \nEnable: activer ou désactiver \nAssistance: définir l'entrée comme propriété auxiliaire \npath Nom du fichier sous: dossier Tools \nEx: VerifyMsrE2.efi, Shell.efi, etc.";
 
 /* Class = "NSTextFieldCell"; title = "Picker Attributes"; ObjectID = "eaZ-uU-2Tt"; */
-"eaZ-uU-2Tt.title" = "Picker Attributes\n Attributs de couleur du menu de démarrage";
+"eaZ-uU-2Tt.title" = "Picker Attributes";
 
 /* Class = "NSTextFieldCell"; title = "Vault"; ObjectID = "fN9-q5-dg3"; */
 "fN9-q5-dg3.title" = "Vault";
@@ -162,7 +162,7 @@
 "rQF-20-vFl.ibShadowedToolTip" = "Autorisez CTRL + Entrée ou CTRL + Index (numéro d'élément du menu de démarrage) pour définir l'option de démarrage par défaut suivante dans le menu de démarrage.";
 
 /* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "sTe-vF-jmH"; */
-"sTe-vF-jmH.title" = "Hide Self\n se cacher";
+"sTe-vF-jmH.title" = "Hide Self";
 
 /* Class = "NSButtonCell"; title = "AppleDebug"; ObjectID = "tBp-D4-d9x"; */
 "tBp-D4-d9x.title" = "AppleDebug";
@@ -192,7 +192,7 @@
 "wPi-6s-R0s.ibShadowedToolTip" = "Détecte le mode veille. Nos machines ne prennent généralement pas en charge l'hibernation, alors n'en sélectionnez aucune. Si votre carte mère prend en charge le nvram natif et que vous souhaitez tester l'hibernation, vous pouvez envisager de remplir auto. \nEn conjonction avec le mode d'hibernation du système, le démarrage du système restaurera l'état avant l'hibernation. Cela peut affecter la durée de vie du SSD. Il est recommandé de le fermer!";
 
 /* Class = "NSTextFieldCell"; title = "TakeoffDelay"; ObjectID = "yDl-hK-Eml"; */
-"yDl-hK-Eml.title" = "TakeoffDelay\n délai de raccourci d'activation";
+"yDl-hK-Eml.title" = "TakeoffDelay";
 
 /* Class = "NSTableColumn"; headerCell.title = "Auxiliary"; ObjectID = "yTI-cV-qsU"; */
 "yTI-cV-qsU.headerCell.title" = "Auxiliaire";

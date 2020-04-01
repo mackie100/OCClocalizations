@@ -168,7 +168,7 @@
 "mWg-wh-eGt.label" = "Ajouter";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables kernel panic on LAPIC interrupts."; ObjectID = "nsg-T6-DJT"; */
-"nsg-T6-DJT.ibShadowedToolTip" = "Désactivez le plantage du noyau causé par l'interruption lapique du noyau AP. Il est généralement utilisé pour les "ordinateurs HP" (équivalent au noyau LAPIC de Clover). Sélectionnez NON si vous ne rencontrez pas ce problème.";
+"nsg-T6-DJT.ibShadowedToolTip" = "Désactivez le plantage du noyau causé par l'interruption lapique du noyau AP. Il est généralement utilisé pour les \"ordinateurs HP\" (équivalent au noyau LAPIC de Clover). Sélectionnez NON si vous ne rencontrez pas ce problème.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "nyt-5D-3es"; */
 "nyt-5D-3es.headerCell.title" = "Limite";
