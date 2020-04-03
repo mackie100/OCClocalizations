@@ -57,7 +57,7 @@
 "VnZ-XI-LOq.ibShadowedToolTip" = "Protéger les variables de démarrage sécurisé UEFI contre l'écriture. \nSignaler un conflit de sécurité survenu lors d'une tentative d'écriture dans les variables db, dbx, PK et KEK à partir du système d'exploitation. \n \nRemarque: cette bizarrerie essaie principalement d'éviter l'impact des problèmes de défragmentation sur la mise en œuvre de la NVRAM, tels que le choix d'Insyde ou de MacPro5,1.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Address*"; ObjectID = "XBA-aR-mC0"; */
-"XBA-aR-mC0.headerCell.title" = "Address*";
+"XBA-aR-mC0.headerCell.title" = "Addresse*";
 
 /* Class = "NSButtonCell"; title = "SyncRuntimePermissions"; ObjectID = "XIy-K6-Der"; */
 "XIy-K6-Der.title" = "SyncRuntimePermissions";
