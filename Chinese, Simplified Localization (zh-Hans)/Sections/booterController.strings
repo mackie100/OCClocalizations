@@ -3,7 +3,10 @@
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI services from being overridden by the firmware.\nSome modern firmwares including both hardware and virtual machines, like VMware, may update pointers to UEFI services during driver loading and related actions. Consequentially this directly breaks other quirks that affect memory management, like DevirtualiseMmio, ProtectCsmRegion, or ShrinkMemoryMap, and may also break other quirks depending on the effects of these.\n\nNote: On VMware the need for this quirk may be diagnosed by “Your Mac OS guest might run unreliably with more than one virtual core.” message."; ObjectID = "3fG-t6-MF7"; */
-"3fG-t6-MF7.ibShadowedToolTip" = "保护UEFI服务不被固件覆盖。\n包括硬件和虚拟机(例如VMware)在内的某些现代固件可能会在驱动程序加载和相关操作期间更新指向UEFI服务的指针。因此，这直接破坏了影响内存管理的其他怪癖，例如DevirtualiseMmio，ProtectCsmRegion或ShrinkMemoryMap，并且还可能破坏其他怪癖，具体取决于这些怪癖的影响。\n\n注意：在VMware上，可以通过“您的Mac OS来宾系统可能不可靠地在多个虚拟内核上运行(Your Mac OS guest might run unreliably with more than one virtual core.)”信息来诊断此问题。\n\nZ390芯片建议使用！";
+"3fG-t6-MF7.ibShadowedToolTip" = "保护UEFI服务不被固件覆盖。\n包括硬件和虚拟机(例如VMware)在内的某些现代固件可能会在驱动程序加载和相关操作期间更新指向UEFI服务的指针。因此，这直接破坏了影响内存管理的其他怪癖，例如DevirtualiseMmio，并且还可能破坏其他怪癖，具体取决于这些怪癖的影响。\n\n注意：在VMware上，可以通过“您的Mac OS来宾系统可能不可靠地在多个虚拟内核上运行(Your Mac OS guest might run unreliably with more than one virtual core.)”信息来诊断此问题。\n\nZ390芯片建议使用！";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Protect memory regions from incorrect access.\nSome firmwares incorrectly map select memory regions:\n• CSM region can be marked as boot services code or data, which leaves it as free memory for XNU kernel. \n• MMIO regions can be marked as reserved memory and stay unmapped, but may be required to be accessible at runtime for NVRAM support.\n\nThis quirk attempts to fix types of these regions, e.g. ACPI NVS for CSM or MMIO for MMIO.\n\nNote: The necessity of this quirk is determined by artifacts, sleep wake issues, and boot failures. In general only very old firmwares\nneed this quirk."; ObjectID = "5Km-5w-nkl"; */
+"5Km-5w-nkl.ibShadowedToolTip" = "保护内存区域免受错误访问。\n一些固件错误地映射了选定的存储区域:\n• 可以将CSM区域标记为引导服务代码或数据，从而将其留作XNU内核的可用内存。 \n• MMIO区域可以标记为保留内存并保持未映射状态，但是可能需要在运行时对其进行访问以支持NVRAM。\n\n注意:有睡眠唤醒问题或引导失败问题可尝试开启。只有非常老的固件才需要此怪癖。一般选NO";
 
 /* Class = "NSButtonCell"; title = "ForceExitBootServices"; ObjectID = "5sK-91-1dQ"; */
 "5sK-91-1dQ.title" = "ForceExitBootServices";
@@ -53,6 +56,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disable single user mode.\nThis is a security option allowing one to restrict single user mode usage by ignoring CMD+S hotkey and -s boot argument. The behaviour with this quirk enabled is supposed to match T2-based model behaviour. Read this article to understand how to use single user mode with this quirk enabled."; ObjectID = "Ssn-0z-qIb"; */
 "Ssn-0z-qIb.ibShadowedToolTip" = "这里关乎主机是否能开启单用户模式。开启后会禁止 Cmd + S 和 -s 的使用，使设备更加接近于 T2 白苹果，如果你觉得有用就开启它，一般选NO。";
 
+/* Class = "NSButtonCell"; title = "ProtectMemoryRegions"; ObjectID = "USC-aA-F2K"; */
+"USC-aA-F2K.title" = "ProtectMemoryRegions";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI Secure Boot variables from being written.\nReports security violation during attempts to write to db, dbx, PK, and KEK variables from the operating system.\n\nNote: This quirk mainly attempts to avoid issues with NVRAM implementations with problematic defragmentation, such as select Insyde or MacPro5,1."; ObjectID = "VnZ-XI-LOq"; */
 "VnZ-XI-LOq.ibShadowedToolTip" = "保护UEFI安全启动变量不被写入。\n报告尝试从操作系统写入db，dbx，PK和KEK变量期间发生的安全冲突。\n\n注意：此怪癖主要尝试避免碎片整理问题对NVRAM实施的影响，例如选择Insyde或MacPro5,1。";
 
@@ -78,7 +84,7 @@
 "cTN-CD-c3M.ibShadowedToolTip" = "这个选项是让那些非常老旧的主板也能使用内存寻址，正常情况下选NO。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Attempt to join similar memory map entries.\nSelect firmwares have very large memory maps, which do not fit Apple kernel, permitting up to 64 slots for runtime memory. This quirk attempts to unify contiguous slots of similar types to prevent boot failures.\nNote: The necessity of this quirk is determined by early boot failures. It is rare to need this quirk on Haswell or newer. Do not use unless you fully understand the consequences."; ObjectID = "jED-s6-e14"; */
-"jED-s6-e14.ibShadowedToolTip" = "苹果的内核对内存的规范性有具体的要求。目前来看新的主板的规范性都是符合苹果的要求的，我们并不需要启动它，选择NO。有巨大且不兼容内存映射的主板需要开启, 非必须不要使用。";
+"jED-s6-e14.ibShadowedToolTip" = "苹果的内核对内存的规范性有具体的要求。目前来看新的主板的规范性都是符合苹果的要求的，我们并不需要启动它，选择NO。有巨大且不兼容内存映射的主板需要开启, 非必须不要使用。\n\n最新的开发版里已去除此选项!";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures. Currently new firmwares with memory protection support (like OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "是否建立虚拟内存并对物理内存进行映射。我们在开机时，OC的程序需要一块连续性的内存进行存放内核等东西，而实际的物理内存一般都是分散的。因此，我们通过虚拟内存建立连续性内存供OC使用，并映射到分散的物理内存中。一般我们选择YES。";
