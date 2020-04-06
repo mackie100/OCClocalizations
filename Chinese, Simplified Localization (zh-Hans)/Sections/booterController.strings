@@ -3,10 +3,10 @@
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI services from being overridden by the firmware.\nSome modern firmwares including both hardware and virtual machines, like VMware, may update pointers to UEFI services during driver loading and related actions. Consequentially this directly breaks other quirks that affect memory management, like DevirtualiseMmio, ProtectCsmRegion, or ShrinkMemoryMap, and may also break other quirks depending on the effects of these.\n\nNote: On VMware the need for this quirk may be diagnosed by “Your Mac OS guest might run unreliably with more than one virtual core.” message."; ObjectID = "3fG-t6-MF7"; */
-"3fG-t6-MF7.ibShadowedToolTip" = "保护UEFI服务不被固件覆盖。\n包括硬件和虚拟机(例如VMware)在内的某些现代固件可能会在驱动程序加载和相关操作期间更新指向UEFI服务的指针。因此，这直接破坏了影响内存管理的其他怪癖，例如DevirtualiseMmio，ProtectCsmRegion或ShrinkMemoryMap，并且还可能破坏其他怪癖，具体取决于这些怪癖的影响。\n\n注意：在VMware上，可以通过“您的Mac OS来宾系统可能不可靠地在多个虚拟内核上运行(Your Mac OS guest might run unreliably with more than one virtual core.)”信息来诊断此问题。\n\nZ390芯片建议使用！";
+"3fG-t6-MF7.ibShadowedToolTip" = "保护UEFI服务不被固件覆盖。\n包括硬件和虚拟机(例如VMware)在内的某些现代固件可能会在驱动程序加载和相关操作期间更新指向UEFI服务的指针。因此，这直接破坏了影响内存管理的其他怪癖，例如DevirtualiseMmio，并且还可能破坏其他怪癖，具体取决于这些怪癖的影响。\n\n注意：在VMware上，可以通过“您的Mac OS来宾系统可能不可靠地在多个虚拟内核上运行(Your Mac OS guest might run unreliably with more than one virtual core.)”信息来诊断此问题。\n\nZ390芯片建议使用！";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Protect memory regions from incorrect access.\nSome firmwares incorrectly map select memory regions:\n• CSM region can be marked as boot services code or data, which leaves it as free memory for XNU kernel. \n• MMIO regions can be marked as reserved memory and stay unmapped, but may be required to be accessible at runtime for NVRAM support.\n\nThis quirk attempts to fix types of these regions, e.g. ACPI NVS for CSM or MMIO for MMIO.\n\nNote: The necessity of this quirk is determined by artifacts, sleep wake issues, and boot failures. In general only very old firmwares\nneed this quirk."; ObjectID = "5Km-5w-nkl"; */
-"5Km-5w-nkl.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Protect memory regions from incorrect access.\nSome firmwares incorrectly map select memory regions:\n• CSM region can be marked as boot services code or data, which leaves it as free memory for XNU kernel. \n• MMIO regions can be marked as reserved memory and stay unmapped, but may be required to be accessible at runtime for NVRAM support.\n\nThis quirk attempts to fix types of these regions, e.g. ACPI NVS for CSM or MMIO for MMIO.\n\nNote: The necessity of this quirk is determined by artifacts, sleep wake issues, and boot failures. In general only very old firmwares\nneed this quirk.";
+"5Km-5w-nkl.ibShadowedToolTip" = "保护内存区域免受错误访问。\n一些固件错误地映射了选定的存储区域:\n• 可以将CSM区域标记为引导服务代码或数据，从而将其留作XNU内核的可用内存。 \n• MMIO区域可以标记为保留内存并保持未映射状态，但是可能需要在运行时对其进行访问以支持NVRAM。\n\n注意:有睡眠唤醒问题或引导失败问题可尝试开启。只有非常老的固件才需要此怪癖。一般选NO";
 
 /* Class = "NSButtonCell"; title = "ForceExitBootServices"; ObjectID = "5sK-91-1dQ"; */
 "5sK-91-1dQ.title" = "ForceExitBootServices";
@@ -23,14 +23,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reuse original hibernate memory map.\nThis option forces XNU kernel to ignore newly supplied memory map and assume that it did not change after waking from hibernation. This behaviour is required to work by Windows, which mandates to preserve runtime memory size and location after S4 wake.\nNote: This may be used to workaround buggy memory maps on older hardware, and is now considered rare legacy. Examples of such hardware are Ivy Bridge laptops with Insyde firmware, like Acer V3-571G. Do not use this unless you fully understand the consequences."; ObjectID = "ELB-6s-GBW"; */
 "ELB-6s-GBW.ibShadowedToolTip" = "当电脑从休眠(hibernation)中唤醒时,硬盘里的资料会恢复到内存中去，但这个时候OC的内核以及内核缓存等也会写入，这样可能导致冲突，这个选项是帮助我们解决这个问题的。而目前来看，除了z370/x299/c422都无法进行休眠（注意睡眠sleep和休眠hibernation是两个概念），台式机的话就更不需要休眠功能了，一般选择NO。\n开启后会重用原始休眠内存映射，仅某些旧硬件需要。";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Protect CSM region areas from relocation.\nEnsure that CSM memory regions are marked as ACPI NVS to prevent boot.efi or XNU from relocating or using them.\nNote: The necessity of this quirk is determined by artifacts and sleep wake issues. As AvoidRuntimeDefrag resolves a similar problem, no known firmwares should need this quirk. Do not use this unless you fully understand the consequences."; ObjectID = "EvE-aa-cKh"; */
-"EvE-aa-cKh.ibShadowedToolTip" = "开启后会用于修复人为制造和睡眠唤醒的问题, AvoidRuntimeDefrag 已经修复了这个问题，所以请尽可能避免使用这个 Quirk。选NO";
-
 /* Class = "NSButtonCell"; title = "DisableVariableWrite"; ObjectID = "FY9-MP-Vsp"; */
 "FY9-MP-Vsp.title" = "DisableVariableWrite";
-
-/* Class = "NSButtonCell"; title = "ProtectCsmRegion"; ObjectID = "HgI-DY-bPv"; */
-"HgI-DY-bPv.title" = "ProtectCsmRegion";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Generate Memory Map compatible with macOS.\nApple kernel has several limitations in parsing UEFI memory map:\n• Memory map size must not exceed 4096 bytes as Apple kernel maps it as a single 4K page. Since some firmwares have very large memory maps (approximately over 100 entries) Apple kernel will crash at boot.\n• Memory attributes table is ignored. EfiRuntimeServicesCode memory statically gets RX permissions, and all other memory types get RW permissions. Since some firmware drivers may write to global variables at runtime, Apple kernel will crash at calling UEFI runtime services, unless driver .data section has EfiRuntimeServicesData type. \n\nTo workaround these limitations this quirk applies memory attributes table permissions to memory map passed to Apple kernel and optionally attempts to unify contiguous slots of similar types if the resulting memory map exceeds 4 KB.\n\nNote: The necessity of this quirk is determined by early boot failures. This quirk replaces EnableWriteUnprotector on most platforms."; ObjectID = "JMF-hg-GgC"; */
 "JMF-hg-GgC.ibShadowedToolTip" = "生成与macOS兼容的内存映射.\n\n注意：此怪癖的必要性取决于早期启动故障。该怪癖在大多数平台上替代了EnableWriteUnprotector.";
@@ -83,17 +77,11 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this unless you fully understand the consequences."; ObjectID = "cTN-CD-c3M"; */
 "cTN-CD-c3M.ibShadowedToolTip" = "这个选项是让那些非常老旧的主板也能使用内存寻址，正常情况下选NO。";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Attempt to join similar memory map entries.\nSelect firmwares have very large memory maps, which do not fit Apple kernel, permitting up to 64 slots for runtime memory. This quirk attempts to unify contiguous slots of similar types to prevent boot failures.\nNote: The necessity of this quirk is determined by early boot failures. It is rare to need this quirk on Haswell or newer. Do not use unless you fully understand the consequences."; ObjectID = "jED-s6-e14"; */
-"jED-s6-e14.ibShadowedToolTip" = "苹果的内核对内存的规范性有具体的要求。目前来看新的主板的规范性都是符合苹果的要求的，我们并不需要启动它，选择NO。有巨大且不兼容内存映射的主板需要开启, 非必须不要使用。";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures. Currently new firmwares with memory protection support (like OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "是否建立虚拟内存并对物理内存进行映射。我们在开机时，OC的程序需要一块连续性的内存进行存放内核等东西，而实际的物理内存一般都是分散的。因此，我们通过虚拟内存建立连续性内存供OC使用，并映射到分散的物理内存中。一般我们选择YES。";
 
 /* Class = "NSTabViewItem"; label = "MmioWhitelist"; ObjectID = "mrQ-IT-UQ3"; */
 "mrQ-IT-UQ3.label" = "MmioWhitelist内存映射IO白名单";
-
-/* Class = "NSButtonCell"; title = "ShrinkMemoryMap"; ObjectID = "nLH-FS-deb"; */
-"nLH-FS-deb.title" = "ShrinkMemoryMap";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "ndf-NP-2rM"; */
 "ndf-NP-2rM.headerCell.title" = "注释";
