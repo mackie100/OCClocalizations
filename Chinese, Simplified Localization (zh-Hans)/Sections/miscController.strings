@@ -66,7 +66,7 @@
 "PDS-bo-Qx8.ibShadowedToolTip" = "在启动选择器中启用屏幕语音助理功能。\n也可以使用Command + F5组合键在OpenCore引导选择器和macOS引导加载器FileVault 2登录窗口中切换屏幕语音助理功能。\ n注意：屏幕语音辅助功能需要加载AudioDxe.ef音频驱动。";
 
 /* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
-"PIX-Ia-ajs.title" = "ConsoleAttributes";
+"PIX-Ia-ajs.title" = "ConsoleAttributes\n文本启动菜单颜色";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console)."; ObjectID = "PwU-cB-LIO"; */
 "PwU-cB-LIO.ibShadowedToolTip" = "在屏幕上可见的每条打印行(即控制台)之后执行的延迟(以微秒为单位).默认忽略！";
