@@ -30,7 +30,7 @@
 "NLq-sd-yYz.label" = "添加";
 
 /* Class = "NSMenuItem"; title = "DATA"; ObjectID = "POL-aB-DNF"; */
-"POL-aB-DNF.title" = "数据";
+"POL-aB-DNF.title" = "DATA类型";
 
 /* Class = "NSTabViewItem"; label = "Current System"; ObjectID = "QNk-Ut-xrk"; */
 "QNk-Ut-xrk.label" = "当前信息";
@@ -39,7 +39,7 @@
 "V5x-oc-YnL.title" = "PCI设备列表";
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "dpG-4m-Tya"; */
-"dpG-4m-Tya.headerCell.title" = "类型";
+"dpG-4m-Tya.headerCell.title" = "数据类型";
 
 /* Class = "NSTabViewItem"; label = "Device IDs"; ObjectID = "ej0-LP-73g"; */
 "ej0-LP-73g.label" = "设备ID";
@@ -51,7 +51,7 @@
 "gGR-Wj-H5N.title" = "添加所有PCI设备";
 
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "lI7-XR-ash"; */
-"lI7-XR-ash.title" = "数字";
+"lI7-XR-ash.title" = "数字类型";
 
 /* Class = "NSTabViewItem"; label = "Block"; ObjectID = "n3V-ht-3yU"; */
 "n3V-ht-3yU.label" = "阻止";
@@ -72,4 +72,4 @@
 "sdh-x3-Y0z.title" = "添加";
 
 /* Class = "NSMenuItem"; title = "STRING"; ObjectID = "ycS-j8-cj1"; */
-"ycS-j8-cj1.title" = "字符";
+"ycS-j8-cj1.title" = "字符类型";
