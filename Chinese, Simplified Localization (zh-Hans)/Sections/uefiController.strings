@@ -14,6 +14,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Play chime sound at startup.\n\nEnabling this setting plays boot chime through builtin audio support. Volume level is determined by MinimumVolume and VolumeAmplifier settings and SystemAudioVolume NVRAM variable.\n\nNote: this setting is separate from StartupMute NVRAM variable to avoid conflicts when the firmware is able to play boot chime."; ObjectID = "10Z-Yt-6vt"; */
 "10Z-Yt-6vt.ibShadowedToolTip" = "在启动时播放Duang的提示音。\n注意：此设置与StartupMute NVRAM变量分开，以避免在固件能够播放启动铃声时发生冲突。";
 
+/* Class = "NSButtonCell"; title = "EnableJumpstart"; ObjectID = "133-jD-qYy"; */
+"133-jD-qYy.title" = "EnableJumpstart";
+
 /* Class = "NSTextFieldCell"; title = "DirectGopCacheMode"; ObjectID = "1JJ-Gt-7yy"; */
 "1JJ-Gt-7yy.title" = "DirectGopCacheMode";
 
@@ -50,11 +53,23 @@
 /* Class = "NSTabViewItem"; label = "Audio"; ObjectID = "5Gm-fv-IpR"; */
 "5Gm-fv-IpR.label" = "Audio";
 
+/* Class = "NSButtonCell"; title = "JumpstartHotPlug"; ObjectID = "6B4-NA-lHR"; */
+"6B4-NA-lHR.title" = "JumpstartHotPlug";
+
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDefault value: None\nDescription: Load selected drivers from OC/Drivers directory.\nDesigned to be filled with string filenames meant to be loaded as UEFI drivers. Depending on the firmware a different set of drivers may be required. Loading an incompatible driver may lead your system to unbootable state or even cause permanent firmware damage. Some of the known drivers include:\n• ApfsDriverLoader — APFS file system bootstrap driver adding the support of embedded APFS drivers in bootable APFS containers in UEFI firmwares.\n• AudioDxe — HDA audio support driver in UEFI firmwares for most Intel and some other analog audio controllers.\n• ExFatDxe — Proprietary ExFAT file system driver for Bootcamp support commonly found in Apple firmwares. For Sandy Bridge and earlier CPUs ExFatDxeLegacy driver should be used due to the lack of RDRAND instruction support.\n• HfsPlus — Proprietary HFS file system driver with bless support commonly found in Apple firmwares. For Sandy Bridge and earlier CPUs HfsPlusLegacy driver should be used due to the lack of RDRAND instruction support.\n• HiiDatabase* — HII services support driver from MdeModulePkg. This driver is included in most firmwares starting with Ivy Bridge generation. Some applications with the GUI like UEFI Shell may need this driver to work properly.\n• EnhancedFatDxe — FAT filesystem driver from FatPkg. This driver is embedded in all UEFI firmwares, and cannot be used from OpenCore. It is known that multiple firmwares have a bug in their FAT support implementation, which leads to corrupted filesystems on write attempt. Embedding this driver within the firmware may be required in case writing to EFI partition is needed during the boot process.\n• NvmExpressDxe — NVMe support driver from MdeModulePkg. This driver is included in most firmwares starting with Broadwell generation. For Haswell and earlier embedding it within the firmware may be more favourable in case a NVMe SSD drive is installed.\nOpenCanopy* — OpenCore plugin implementing graphical interface.\nOpenRuntime* — OpenCore plugin implementing OC_FIRMWARE_RUNTIME protocol.\n• OpenUsbKbDxe* — USB keyboard driver adding the support of AppleKeyMapAggregator protocols on top of a custom USB keyboard driver implementation. This is an alternative to builtin KeySupport, which may work better or worse depending on the firmware.\n• VBoxHfs — HFS file system driver with bless support. This driver is an alternative to a closed source HfsPlus driver commonly found in Apple firmwares. While it is feature complete, it is approximately 3 times slower and is yet to undergo a security audit.\n• XhciDxe* — XHCI USB controller support driver from MdeModulePkg. This driver is included in most firmwares starting with Sandy Bridge generation. For earlier firmwares or legacy systems it may be used to support external USB 3.0 PCI cards.\n\nDriver marked with * are bundled with OpenCore. To compile the drivers from UDK (EDK II) use the same command you do normally use for OpenCore compilation, but choose a corresponding package:\ngit clone https://github.com/acidanthera/audk UDK cd UDK\nsource edksetup.sh\nmake -C BaseTools\nbuild -a X64 -b RELEASE -t XCODE5 -p FatPkg/FatPkg.dsc\nbuild -a X64 -b RELEASE -t XCODE5 -p MdeModulePkg/MdeModulePkg.dsc"; ObjectID = "6zo-Jl-Ryl"; */
 "6zo-Jl-Ryl.ibShadowedToolTip" = "从OC/Drivers目录加载选定的驱动程序。\n注意一下填入的顺序\n根据硬件不同，可能需要不同的驱动程序。加载不兼容的驱动程序可能导致系统进入无法启动状态，甚至导致永久性固件损坏。一些已知的驱动程序包括:\n•ApfsDriverLoader-APFS文件系统引导驱动程序，在UEFI固件的可启动APFS容器中添加了对嵌入式APFS驱动程序的支持。\n•FwRuntimeServices-可提高OpenCore和Lilu的安全性通过支持只读和只读NVRAM变量。有些怪癖（例如RequestBootVarRouting）需要此驱动程序才能正常运行。由于是runtime实时驱动程序的性质，即与目标操作系统并行运行，因此无法在OpenCore本身中实现，而是与OpenCore发行版捆绑在一起。\n•EnhancedFatDxe-FatPkg中的FAT文件系统驱动程序。此驱动程序已嵌入所有UEFI固件中，并且无法从OpenCore使用。众所周知，多种固件的FAT支持实现中都有错误，这会导致在尝试写操作时损坏文件系统。如果在引导过程中需要写入EFI分区，则可能需要将此驱动程序嵌入固件中。\n•NvmExpressDxe-来自MdeModulePkg的NVMe支持驱动程序。从Broadwell一代开始的大多数固件中都包含此驱动程序。对于Haswell及更早版本，如果安装了NVMe SSD驱动器，则将其更好地嵌入到固件中。\n•UsbKbDxe-USB键盘驱动程序在自定义USB键盘驱动程序实现的基础上增加了对AppleKeyMapAggregator协议的支持。这是内置KeySupport的替代方法。\n•VBoxHfs-具有支持HFS文件系统的驱动程序。此驱动程序可以替代Apple固件中常见的封闭源HFSPlus驱动程序。虽然功能齐全，但是大约速度慢3倍，并且尚未接受安全审核。\n•XhciDxe-MdeModulePkg中的XHCI USB控制器支持驱动程序。从Sandy Bridge代开始的大多数固件中都包含此驱动程序。对于较早的固件或旧系统，它可以用于支持外部USB 3.0 PCI卡\n•NdkBootPicker-标准OC第三方图形界面模块 ";
 
+/* Class = "NSTextFieldCell"; title = "MinVersion"; ObjectID = "7Ns-yB-e5j"; */
+"7Ns-yB-e5j.title" = "MinVersion";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Load embedded APFS drivers from APFS containers.\nAPFS EFI driver is bundled in all bootable APFS containers. This option performs loading of signed APFS drivers with respect to ScanPolicy. See more details in “EFI Jumpstart” section of Apple File System Reference."; ObjectID = "8Sc-F2-ONI"; */
+"8Sc-F2-ONI.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Load embedded APFS drivers from APFS containers.\nAPFS EFI driver is bundled in all bootable APFS containers. This option performs loading of signed APFS drivers with respect to ScanPolicy. See more details in “EFI Jumpstart” section of Apple File System Reference.";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Perform UEFI controller connection after driver loading.\nThis option is useful for loading drivers following UEFI driver model, as they may not start by themselves. Examples of such drivers are filesystem or audio drivers. While effective, this option may not be necessary for drivers performing automatic connection, and may slightly slowdown the boot.\n\nNote: Some firmwares, made by Apple in particular, only connect the boot drive to speedup the boot process. Enable this option to be able to see all the boot options when having multiple drives."; ObjectID = "9f0-xd-rhT"; */
 "9f0-xd-rhT.ibShadowedToolTip" = "驱动程序加载后执行UEFI控制器连接。此选项对于加载文件系统驱动程序很有用，该文件系统驱动程序通常遵循UEFI驱动程序模型，并且可能无法自行启动。虽然有效，但此选项对于执行自动连接的驱动程序可能不是必需的，并且可能会稍微减慢启动速度。";
+
+/* Class = "NSTextFieldCell"; title = "MinDate"; ObjectID = "9fO-yG-VWd"; */
+"9fO-yG-VWd.title" = "MinDate";
 
 /* Class = "NSButtonCell"; title = "FirmwareVolume"; ObjectID = "AW6-UR-4Ex"; */
 "AW6-UR-4Ex.title" = "FirmwareVolume";
@@ -89,11 +104,17 @@
 /* Class = "NSTextFieldCell"; title = "KeyForgetThreshold"; ObjectID = "ErN-ks-EzO"; */
 "ErN-ks-EzO.title" = "KeyForgetThreshold";
 
+/* Class = "NSTabViewItem"; label = "APFS"; ObjectID = "F1Q-I5-6w7"; */
+"F1Q-I5-6w7.label" = "APFS";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple SMC I/O protocol with a builtin version.\nThis protocol replaces legacy VirtualSmc UEFI driver, and is compatible with any SMC kernel extension. \nHowever, in case FakeSMC kernel extension is used, manual NVRAM key variable addition may be needed."; ObjectID = "FPA-9t-OzA"; */
 "FPA-9t-OzA.ibShadowedToolTip" = "最新版本已经内置VirtualSmc.efi协议。\n使用此选项可以删除drivers目录下的VirtualSmc.efi文件。\n但是，如果使用FakeSMC内核扩展，则可能需要手动添加NVRAM密钥变量。";
 
 /* Class = "NSButtonCell"; title = "ReplaceTabWithSpace"; ObjectID = "HIh-Oc-UT7"; */
 "HIh-Oc-UT7.title" = "ReplaceTabWithSpace";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Hide verbose output from APFS driver.\nAPFS verbose output can be useful for debugging."; ObjectID = "HdB-KO-x50"; */
+"HdB-KO-x50.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Hide verbose output from APFS driver.\nAPFS verbose output can be useful for debugging.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls Hash Services protocols with builtin versions. Should be set to true to ensure File Vault 2 compatibility on platforms providing broken SHA-1 hashing. Can be diagnosed by invalid cursor size with UIScale set to 02, in general platforms prior to APTIO V (Haswell and older) are affected."; ObjectID = "HpH-bP-96S"; */
 "HpH-bP-96S.ibShadowedToolTip" = "一般选NO。\n修复运行FileVault时鼠标光标大小不正确的问题, 设置为 YES 可以更好地兼容FileVault";
@@ -112,6 +133,9 @@
 
 /* Class = "NSTextFieldCell"; title = "AudioCodec"; ObjectID = "L2f-gE-rBP"; */
 "L2f-gE-rBP.title" = "AudioCodec";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Minimal allowed APFS driver date.\nAPFS driver date connects APFS driver with the calendar release date. Older versions of APFS drivers may contain unpatched vulnerabilities, which can be used to inflict harm on your computer. This option permits restricting APFS drivers to only recent releases.\n• 0 — require the default supported release date of APFS in OpenCore. The default release date will increase with time and thus this setting is recommended. Currently set to 2020/01/01.\n• -1 — permit any release date to load (strongly discouraged).\n• Other — use custom minimal APFS release date, e.g. 20200401 for 2020/04/01. APFS release dates can be found in OpenCore boot log and OcApfsLib."; ObjectID = "L9i-6i-Mis"; */
+"L9i-6i-Mis.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Minimal allowed APFS driver date.\nAPFS driver date connects APFS driver with the calendar release date. Older versions of APFS drivers may contain unpatched vulnerabilities, which can be used to inflict harm on your computer. This option permits restricting APFS drivers to only recent releases.\n• 0 — require the default supported release date of APFS in OpenCore. The default release date will increase with time and thus this setting is recommended. Currently set to 2020/01/01.\n• -1 — permit any release date to load (strongly discouraged).\n• Other — use custom minimal APFS release date, e.g. 20200401 for 2020/04/01. APFS release dates can be found in OpenCore boot log and OcApfsLib.";
 
 /* Class = "NSButtonCell"; title = "OSInfo"; ObjectID = "Ljq-q2-IwF"; */
 "Ljq-q2-IwF.title" = "OSInfo";
@@ -142,6 +166,9 @@
 
 /* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string\nFailsafe: empty string\nDescription: Set internal keyboard input translation to AppleKeyMapAggregator protocol mode.\n• Auto — Performs automatic choice as available with the following preference: AMI, V2, V1.\n• V1 — Uses UEFI standard legacy input protocol EFI_SIMPLE_TEXT_INPUT_PROTOCOL.\n• V2 — Uses UEFI standard modern input protocol EFI_SIMPLE_TEXT_INPUT_EX_PROTOCOL.\n• AMI — Uses APTIO input protocol AMI_EFIKEYCODE_PROTOCOL.\n\nNote: Currently V1, V2, and AMI unlike Auto only do filtering of the particular specified protocol. This may change in the future versions."; ObjectID = "TTL-Rn-Avg"; */
 "TTL-Rn-Avg.ibShadowedToolTip" = "Auto:键值转换协议模式\nV1: UEFI 旧版输入协议\nV2: UEFI 新输入协议\nAMI: APTIO 输入协议";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Minimal allowed APFS driver version.\nAPFS driver version connects APFS driver with the macOS release. APFS drivers from older macOS releases will become unsupported and thus may contain unpatched vulnerabilities, which can be used to inflict harm on your computer. This option permits restricting APFS drivers to only modern macOS versions.\n• 0 — require the default supported version of APFS in OpenCore. The default version will increase with time and thus this setting is recommended. Currently set to the latest point release from High Sierra.\n• -1 — permit any version to load (strongly discouraged).\n• Other — use custom minimal APFS version, e.g. 1412101001000000 from macOS Catalina 10.15.4. APFS versions can be found in OpenCore boot log and OcApfsLib."; ObjectID = "TYZ-jG-lfr"; */
+"TYZ-jG-lfr.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Minimal allowed APFS driver version.\nAPFS driver version connects APFS driver with the macOS release. APFS drivers from older macOS releases will become unsupported and thus may contain unpatched vulnerabilities, which can be used to inflict harm on your computer. This option permits restricting APFS drivers to only modern macOS versions.\n• 0 — require the default supported version of APFS in OpenCore. The default version will increase with time and thus this setting is recommended. Currently set to the latest point release from High Sierra.\n• -1 — permit any version to load (strongly discouraged).\n• Other — use custom minimal APFS version, e.g. 1412101001000000 from macOS Catalina 10.15.4. APFS versions can be found in OpenCore boot log and OcApfsLib.";
 
 /* Class = "NSButtonCell"; title = "ReleaseUsbOwnership"; ObjectID = "UMT-DK-9B5"; */
 "UMT-DK-9B5.title" = "ReleaseUsbOwnership";
@@ -203,6 +230,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP to be present on console handle, yet the exact location of GOP is not covered by the UEFI specification. This option will ensure GOP is installed on console handle if it is present.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs."; ObjectID = "eGd-xS-rQf"; */
 "eGd-xS-rQf.ibShadowedToolTip" = "macOS 引导加载程序要求 GOP (图形输出协议) 存在于控制台句柄上\n大部分的笔记本都不提供 GOP, 台式机的独立显卡可以单独刷入 GOP\n如果选择了啰嗦模式启动之后不出现Verbose详细信息，请启用此项\n开启此选项能最大可能保证 OpenCore UI 和 苹果标志 以正确分辨率显示";
 
+/* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
+"egr-8J-RIS.title" = "HideVerbose";
+
 /* Class = "NSTextFieldCell"; title = "MinimumVolume"; ObjectID = "ehu-K3-gbY"; */
 "ehu-K3-gbY.title" = "MinimumVolume";
 
@@ -238,6 +268,9 @@
 
 /* Class = "NSTextFieldCell"; title = "AudioOut"; ObjectID = "kM6-tO-pns"; */
 "kM6-tO-pns.title" = "AudioOut";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Load APFS drivers for newly connected devices.\nPerforms APFS driver loading not only at OpenCore startup but also during boot picker. This permits APFS USB hot plug. Disable if not required."; ObjectID = "kSG-eA-B2o"; */
+"kSG-eA-B2o.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Load APFS drivers for newly connected devices.\nPerforms APFS driver loading not only at OpenCore startup but also during boot picker. This permits APFS USB hot plug. Disable if not required.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications."; ObjectID = "l9b-pk-oii"; */
 "l9b-pk-oii.ibShadowedToolTip" = "强制使用内置版本重新安装OS Info协议。该协议通常用于从macOS引导程序，固件或其他应用程序接收通知\n暂时没什么用，选择NO.";
