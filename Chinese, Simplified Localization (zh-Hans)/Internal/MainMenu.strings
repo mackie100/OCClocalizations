@@ -69,7 +69,7 @@
 "78Y-hA-62v.title" = "自动纠正拼写";
 
 /* Class = "NSMenu"; title = "Advanced User"; ObjectID = "8k6-J4-O8u"; */
-"8k6-J4-O8u.title" = "Advanced User";
+"8k6-J4-O8u.title" = "高级用户";
 
 /* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
 "8mr-sm-Yjd.title" = "书写方向";
@@ -204,7 +204,7 @@
 "Mw8-wH-EAB.title" = "重置首选项";
 
 /* Class = "NSMenuItem"; title = "Advanced User"; ObjectID = "NGL-Uc-o6p"; */
-"NGL-Uc-o6p.title" = "Advanced User";
+"NGL-Uc-o6p.title" = "高级用户";
 
 /* Class = "NServices"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "服务";

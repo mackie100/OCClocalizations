@@ -1,6 +1,6 @@
 
 /* Class = "NSButton"; ibjectID = "0hR-wG-mgt"; */
-"0hR-wG-mgt.title" = "DEBUG_INFO in DEBUG, NOOPT";
+"0hR-wG-mgt.title" = "DEBUG，NOOPT中的DEBUG信息";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional."; ObjectID = "0sy-D3-AKk"; */
 "0sy-D3-AKk.ibShadowedToolTip" = "允许重启 FileVault2 分区时不用再次输密码, 有安全风险。\n与磁盘加密启动相关，一般选NO";
@@ -15,16 +15,16 @@
 "22Z-wl-E30.headerCell.title" = "名称";
 
 /* Class = "NSButtonCell"; title = "Enable logging to Data Hub"; ObjectID = "2Qh-mc-sJw"; */
-"2Qh-mc-sJw.title" = "Enable logging to Data Hub";
+"2Qh-mc-sJw.title" = "启用记录到Data Hub";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: A bitmask (sum) of enabled logging targets. By default all the logging output is hidden, so this option is required to be set when debugging is necessary.\nThe following logging targets are supported:\n• 0x01 — Enable logging, otherwise all log is discarded.\n• 0x02 — Enable basic console (onscreen) logging.\n• 0x04 — Enable logging to Data Hub.\n• 0x08 — Enable serial port logging.\n• 0x10 — Enable UEFI variable logging.\n• 0x20 — Enable non-volatile UEFI variable logging.\n• 0x40 — Enable logging to file.\nConsole logging prints less than all the other variants. Depending on the build type (RELEASE, DEBUG, or NOOPT) different amount of logging may be read (from least to most)."; ObjectID = "2Vb-s2-Ejp"; */
 "2Vb-s2-Ejp.ibShadowedToolTip" = "0: 关闭日志记录\n3: 允许屏幕输出日志\n19: 允许屏幕输出 UEFI 变量日志\n67: 在 ESP 分区根目录生成日志文件 opencore-YYYY-MM-DD-HHMMSS.txt, 但屏幕上不显示日志！此功能需要用DEBUG版OC引导。";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "2dj-hB-QBF"; */
-"2dj-hB-QBF.title" = "Unselect All";
+"2dj-hB-QBF.title" = "取消全选";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "3K9-EU-jse"; */
-"3K9-EU-jse.title" = "Select All";
+"3K9-EU-jse.title" = "全选";
 
 /* Class = "NSTabViewItem"; label = "Boot"; ObjectID = "3fm-9G-OpP"; */
 "3fm-9G-OpP.label" = "Boot";
@@ -36,7 +36,7 @@
 "5Or-M0-hZS.ibShadowedToolTip" = "选择用于启动管理的启动选择器\n支持以下值:\n•Builtin(默认值)-引导管理由OpenCore处理，使用纯文本用户界面。\n•External-使用外部引导管理协议（如果可用),否则，将使用Builtin模式。\n•Apple-使用Apple引导管理(如果可用),否则，将使用Builtin模式。";
 
 /* Class = "NSButtonCell"; title = "Enable UEFI variable logging"; ObjectID = "6U3-np-fQe"; */
-"6U3-np-fQe.title" = "Enable UEFI variable logging";
+"6U3-np-fQe.title" = "启用UEFI变量记录";
 
 /* Class = "NSTextFieldCell"; title = "Timeout"; ObjectID = "6hf-UH-eBA"; */
 "6hf-UH-eBA.title" = "Timeout\n等待时间";
@@ -45,7 +45,7 @@
 "7BP-eo-vIZ.title" = "HideAuxiliary\n隐藏辅助条目";
 
 /* Class = "NSButtonCell"; title = "Expose OpenCore version in boot picker menu title."; ObjectID = "7NC-lm-XEM"; */
-"7NC-lm-XEM.title" = "Expose OpenCore version in boot picker menu title.";
+"7NC-lm-XEM.title" = "在启动菜单标题中显示OpenCore版本.";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: OpenShell.efi."; ObjectID = "8Gl-6A-OsL"; */
 "8Gl-6A-OsL.ibShadowedToolTip" = "用于指定OpenCore无法自动找到的无规律引导路径。\n名称:OpenCore启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助条目，可在启动菜单中隐藏\n路径:\n引导磁盘的PCI路径，一般可以通过替换启动文件为DEBUG版本，然后勾选Disable WatchDog选项，Target选项填入67，启动一次后，在EFI分区里产生的日志文件里查找如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi这样的信息。\n可以提前在MACOS里使用diskutil info disk0s2 |grep \"UUID\"这样的命令提前获取到你想要启动的分区UUID，然后在日志文件里搜索UUID的值，可以快速获取到完整PCI路径！\n对于NDK的fork(MOD)版本，可在启动界面按F9保存所有启动设备路径到文件并保存在EFI分区";
@@ -54,13 +54,13 @@
 "9LG-wP-7Np.title" = "Disable WatchDog";
 
 /* Class = "NSButtonCell"; title = "DEBUG_WARN in DEBUG, NOOPT, RELEASE"; ObjectID = "AEq-Xa-8FR"; */
-"AEq-Xa-8FR.title" = "DEBUG_WARN in DEBUG, NOOPT, RELEASE";
+"AEq-Xa-8FR.title" = "DEBUG，NOOPT和DEBUG中的DEBUG警告";
 
 /* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
 "BYc-kG-loi.title" = "Picker Mode\n启动菜单模式";
 
 /* Class = "NSButtonCell"; title = "Expose OpenCore version as an UEFI variable."; ObjectID = "Bcn-4Z-d2d"; */
-"Bcn-4Z-d2d.title" = "Expose OpenCore version as an UEFI variable.";
+"Bcn-4Z-d2d.title" = "将OpenCore版本公开为UEFI变量.";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Bpe-6y-ybA"; */
 "Bpe-6y-ybA.title" = "浏览";
@@ -69,7 +69,7 @@
 "DAS-KM-gwG.title" = "Expose Sensitive Data";
 
 /* Class = "NSButtonCell"; title = "Enable non-volatile UEFI variable logging"; ObjectID = "Da8-bR-9wd"; */
-"Da8-bR-9wd.title" = "Enable non-volatile UEFI variable logging";
+"Da8-bR-9wd.title" = "启用非易失性UEFI变量日志记录";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
 "E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。\n比如启动WINDOWS路径:\\EFI\\Microsoft\\Boot\\bootmgfw.efi";
@@ -81,13 +81,13 @@
 "FHv-7q-Wq3.title" = "Display Delay";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Gaf-gn-k6J"; */
-"Gaf-gn-k6J.title" = "Select All";
+"Gaf-gn-k6J.title" = "全选";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_EXT"; ObjectID = "H6a-QA-xQu"; */
 "H6a-QA-xQu.title" = "OC_SCAN_ALLOW_FS_EXT";
 
 /* Class = "NSButtonCell"; title = "Enable serial port logging"; ObjectID = "HjZ-gH-Q0b"; */
-"HjZ-gH-Q0b.title" = "Enable serial port logging";
+"HjZ-gH-Q0b.title" = "启用串行端口日志记录";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used."; ObjectID = "I4v-gd-78g"; */
 "I4v-gd-78g.ibShadowedToolTip" = "隐藏自身的EFI引导盘选项，一般选YES。";
@@ -96,7 +96,7 @@
 "Jpe-QB-x2r.title" = "AllowNvramReset";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
-"KRE-fs-cVq.title" = "Unselect All";
+"KRE-fs-cVq.title" = "取消全选";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
 "LCd-qL-7KC.ibShadowedToolTip" = "如果macOS在启动时卡在某些地方, 可能需要设置为YES, 通常用于排除错误干扰";
@@ -123,13 +123,13 @@
 "QbL-ID-H0a.ibShadowedToolTip" = "参考OC手册！";
 
 /* Class = "NSButtonCell"; title = "Expose OEM information as a set of UEFI variables."; ObjectID = "SLo-CJ-cas"; */
-"SLo-CJ-cas.title" = "Expose OEM information as a set of UEFI variables.";
+"SLo-CJ-cas.title" = "将OEM信息公开为一组UEFI变量.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "SPw-C4-qwL"; */
 "SPw-C4-qwL.headerCell.title" = "启用";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "SZj-0R-9Uu"; */
-"SZj-0R-9Uu.title" = "Unselect All";
+"SZj-0R-9Uu.title" = "取消全选";
 
 /* Class = "NSButtonCell"; title = "PollAppleHotKeys"; ObjectID = "TDv-Al-hb0"; */
 "TDv-Al-hb0.title" = "PollAppleHotKeys\n启用模拟苹果热键";
@@ -141,7 +141,7 @@
 "TmR-t7-bmq.title" = "Hibernate Mode\n休眠模式";
 
 /* Class = "NSButtonCell"; title = "Enable logging to file"; ObjectID = "Uz7-yL-WDQ"; */
-"Uz7-yL-WDQ.title" = "Enable logging to file";
+"Uz7-yL-WDQ.title" = "启用记录到文件";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0xF0103\nDescription: Define operating system detection policy.\nThis value allows to prevent scanning (and booting) from untrusted source based on a bitmask (sum) of select flags. As it is not possible to reliably detect every file system or device type, this feature cannot be fully relied upon in open environments, and the additional measures are to be applied.\nThird party drivers may introduce additional security (and performance) measures following the provided scan policy. Scan policy is exposed in scan-policy variable of 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102 GUID for UEFI Boot Services only.\n• 0x00000001 — OC_SCAN_FILE_SYSTEM_LOCK, restricts scanning to only known file systems defined as a part of this policy. File system drivers may not be aware of this policy, and to avoid mounting of undesired file systems it is best not to load its driver. This bit does not affect dmg mounting, which may have any file system. Known file systems are prefixed with OC_SCAN_ALLOW_FS_.\n• 0x00000002 — OC_SCAN_DEVICE_LOCK, restricts scanning to only known device types defined as a part of this policy. This is not always possible to detect protocol tunneling, so be aware that on some systems it may be possible for e.g. USB HDDs to be recognised as SATA. Cases like this must be reported. Known device types are prefixed with OC_SCAN_ALLOW_DEVICE_.\n• 0x00000100 — OC_SCAN_ALLOW_FS_APFS, allows scanning of APFS file system.\n• 0x00010000 — OC_SCAN_ALLOW_DEVICE_SATA, allow scanning SATA devices.\n• 0x00020000 — OC_SCAN_ALLOW_DEVICE_SASEX, allow scanning SAS and Mac NVMe devices.\n• 0x00040000 — OC_SCAN_ALLOW_DEVICE_SCSI, allow scanning SCSI devices.\n• 0x00080000 — OC_SCAN_ALLOW_DEVICE_NVME, allow scanning NVMe devices.\n• 0x00100000 — OC_SCAN_ALLOW_DEVICE_ATAPI, allow scanning CD/DVD devices.\n• 0x00200000 — OC_SCAN_ALLOW_DEVICE_USB, allow scanning USB devices.\n• 0x00400000 — OC_SCAN_ALLOW_DEVICE_FIREWIRE, allow scanning FireWire devices.\n• 0x00800000 — OC_SCAN_ALLOW_DEVICE_SDCARD, allow scanning card reader devices.\nNote: Given the above description, 0xF0103 value is expected to allow scanning of SATA, SAS, SCSI, and NVMe devices with APFS file system, and prevent scanning of any devices with HFS or FAT32 file systems in addition to not scanning APFS file systems on USB, CD, USB, and FireWire drives. The combination reads as:\n• OC_SCAN_FILE_SYSTEM_LOCK • OC_SCAN_DEVICE_LOCK\n• OC_SCAN_ALLOW_FS_APFS\n• OC_SCAN_ALLOW_DEVICE_SATA\n• OC_SCAN_ALLOW_DEVICE_SASEX\n• OC_SCAN_ALLOW_DEVICE_SCSI • OC_SCAN_ALLOW_DEVICE_NVME"; ObjectID = "VQF-Ne-GWu"; */
 "VQF-Ne-GWu.ibShadowedToolTip" = "0: 允许扫描所有可用的硬盘\n其它值请参考官方文档, 对给出的选项做 16 进制加法运算";
@@ -174,7 +174,7 @@
 "Yyf-Yd-yrP.ibShadowedToolTip" = "显示 OpenCore 的 UI, 用于查看可用引导项\n设置为 NO 可以跳过倒计时, 和 PollAppleHotKeys=Yes 配合快捷键可以大幅提升体验\n一般选择YES。";
 
 /* Class = "NSButtonCell"; title = "Enable basic console (onscreen) logging"; ObjectID = "ZZP-5O-C0h"; */
-"ZZP-5O-C0h.title" = "Enable basic console (onscreen) logging";
+"ZZP-5O-C0h.title" = "启用基本控制台(屏幕上)日志记录";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32 bit\nDefault value: 0\nDescription: Timeout in seconds in boot picker before automatic booting of the default boot entry. Use 0 to disable timer."; ObjectID = "Zxi-ww-dWk"; */
 "Zxi-ww-dWk.ibShadowedToolTip" = "倒计时进入指定可启动系统，这里我们按需求填写，我填写5，代表5秒钟进入指定系统。";
@@ -186,7 +186,7 @@
 "aUx-rK-UTX.title" = "Scan Policy";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "b27-wQ-s5W"; */
-"b27-wQ-s5W.title" = "Select All";
+"b27-wQ-s5W.title" = "全选";
 
 /* Class = "NSButtonCell"; title = "PickerAudioAssist"; ObjectID = "cN2-ao-nCB"; */
 "cN2-ao-nCB.title" = "PickerAudioAssist\n启用语音辅助";
@@ -225,7 +225,7 @@
 "jPS-Bu-Ar4.headerCell.title" = "路径*";
 
 /* Class = "NSButtonCell"; title = "DEBUG_VERBOSE in custom builds"; ObjectID = "mSr-7J-5Qp"; */
-"mSr-7J-5Qp.title" = "DEBUG_VERBOSE in custom builds";
+"mSr-7J-5Qp.title" = "自定义版本中的DEBUG_VERBOSE";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_APFS"; ObjectID = "mpH-5M-L70"; */
 "mpH-5M-L70.title" = "OC_SCAN_ALLOW_FS_APFS";
@@ -240,13 +240,13 @@
 "oFg-pn-DgG.label" = "Tools-添加附加工具";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "oL1-jF-NNm"; */
-"oL1-jF-NNm.title" = "Unselect All";
+"oL1-jF-NNm.title" = "取消全选";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE."; ObjectID = "omf-bH-d4v"; */
 "omf-bH-d4v.ibShadowedToolTip" = "2147483714 在屏幕上显示所有 Debug 信息\n0 隐藏所有 Debug 信息!";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "pIV-PK-mVi"; */
-"pIV-PK-mVi.title" = "Select All";
+"pIV-PK-mVi.title" = "全选";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker."; ObjectID = "pTC-aG-QK1"; */
 "pTC-aG-QK1.ibShadowedToolTip" = "允许CMD + OPT + P + R或在启动菜单中显示ResetNVRAM重置菜单。";
@@ -279,7 +279,7 @@
 "uSO-ne-MBg.headerCell.title" = "说明";
 
 /* Class = "NSButtonCell"; title = "Enable logging, otherwise all log is discarded"; ObjectID = "uWH-Lw-aeI"; */
-"uWH-Lw-aeI.title" = "Enable logging, otherwise all log is discarded";
+"uWH-Lw-aeI.title" = "启用日志记录，否则所有日志将被丢弃";
 
 /* Class = "NSTabViewItem"; label = "Entries"; ObjectID = "uks-Bw-Ph4"; */
 "uks-Bw-Ph4.label" = "Entries-自定义条目";
@@ -306,7 +306,7 @@
 "yTI-cV-qsU.headerCell.title" = "辅助";
 
 /* Class = "NSButtonCell"; title = "Expose printable booter path as an UEFI variable."; ObjectID = "z6D-gM-UDa"; */
-"z6D-gM-UDa.title" = "Expose printable booter path as an UEFI variable.";
+"z6D-gM-UDa.title" = "将可打印的引导程序路径公开为UEFI变量.";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_HFS"; ObjectID = "zCH-tB-ca6"; */
 "zCH-tB-ca6.title" = "OC_SCAN_ALLOW_FS_HFS";
@@ -318,4 +318,4 @@
 "zj4-Hs-Xjk.title" = "OC_SCAN_ALLOW_DEVICE_SASEX";
 
 /* Class = "NSButtonCell"; title = "DEBUG_ERROR in DEBUG, NOOPT, RELEASE"; ObjectID = "zlC-gM-dIj"; */
-"zlC-gM-dIj.title" = "DEBUG_ERROR in DEBUG, NOOPT, RELEASE";
+"zlC-gM-dIj.title" = "DEBUG，NOOPT和RELEASE中的DEBUG_ERROR";
