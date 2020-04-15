@@ -69,7 +69,7 @@
 "78Y-hA-62v.title" = "Corriger l'orthographe automatiquement";
 
 /* Class = "NSMenu"; title = "Advanced User"; ObjectID = "8k6-J4-O8u"; */
-"8k6-J4-O8u.title" = "Advanced User";
+"8k6-J4-O8u.title" = "Utilisateur avancé";
 
 /* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
 "8mr-sm-Yjd.title" = "Direction d'écriture";
@@ -168,7 +168,7 @@
 "Ih6-lk-lzT.title" = "Exemple.plist";
 
 /* Class = "NSMenuItem"; title = "Justify"; ObjectID = "J5U-5w-g23"; */
-"J5U-5w-g23.title" = "Aligné";
+"J5U-5w-g23.title" = "Aligner";
 
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "J7y-lM-qPV"; */
 "J7y-lM-qPV.title" = "Utiliser aucun";
@@ -177,7 +177,7 @@
 "JPS-kd-8vb.title" = "Fermer";
 
 /* Class = "NSTextFieldCell"; title = "Languages"; ObjectID = "K7T-KM-ZRz"; */
-"K7T-KM-ZRz.title" = "Languages";
+"K7T-KM-ZRz.title" = "";
 
 /* Class = "NSMenu"; title = "Templates"; ObjectID = "KGo-Ce-Wkm"; */
 "KGo-Ce-Wkm.title" = "Modèles de configuration";
@@ -204,7 +204,7 @@
 "Mw8-wH-EAB.title" = "Réinitialiser les préférences";
 
 /* Class = "NSMenuItem"; title = "Advanced User"; ObjectID = "NGL-Uc-o6p"; */
-"NGL-Uc-o6p.title" = "Advanced User";
+"NGL-Uc-o6p.title" = "Utilisateur avancé";
 
 /* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "Services";
@@ -228,7 +228,7 @@
 "OwM-mh-QMV.title" = "Rechercher le précédent";
 
 /* Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "Oyz-dy-DGm"; */
-"Oyz-dy-DGm.title" = "Arrête de lire";
+"Oyz-dy-DGm.title" = "Arrêter la lecture";
 
 /* Class = "NSMenuItem"; title = "Bigger"; ObjectID = "Ptp-SP-VEL"; */
 "Ptp-SP-VEL.title" = "Plus grand";
@@ -285,7 +285,7 @@
 "WeT-3V-zwk.title" = "coller et appliquer le style";
 
 /* Class = "NSMenuItem"; title = "Install Tools"; ObjectID = "XaO-go-3SF"; */
-"XaO-go-3SF.title" = "Install Tools";
+"XaO-go-3SF.title" = "Installer les outils";
 
 /* Class = "NSMenuItem"; title = "Find…"; ObjectID = "Xz5-n4-O0W"; */
 "Xz5-n4-O0W.title" = "Rechercher ...";
