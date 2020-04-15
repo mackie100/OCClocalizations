@@ -68,6 +68,9 @@
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
 "78Y-hA-62v.title" = "自动纠正拼写";
 
+/* Class = "NSMenu"; title = "Advanced User"; ObjectID = "8k6-J4-O8u"; */
+"8k6-J4-O8u.title" = "Advanced User";
+
 /* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
 "8mr-sm-Yjd.title" = "书写方向";
 
@@ -200,7 +203,10 @@
 /* Class = "NSButtonCell"; title = "Reset Preferences"; ObjectID = "Mw8-wH-EAB"; */
 "Mw8-wH-EAB.title" = "重置首选项";
 
-/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+/* Class = "NSMenuItem"; title = "Advanced User"; ObjectID = "NGL-Uc-o6p"; */
+"NGL-Uc-o6p.title" = "Advanced User";
+
+/* Class = "NServices"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "服务";
 
 /* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "NZD-7J-lLZ"; */
@@ -343,6 +349,9 @@
 
 /* Class = "NSMenuItem"; title = "Scan Configurations"; ObjectID = "gDt-SB-jBP"; */
 "gDt-SB-jBP.title" = "扫描配置文件";
+
+/* Class = "NSMenuItem"; title = "Outline Mode"; ObjectID = "gUQ-fT-kVg"; */
+"gUQ-fT-kVg.title" = "Outline Mode";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "粘贴";
