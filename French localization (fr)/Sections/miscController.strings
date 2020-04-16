@@ -56,6 +56,9 @@
 /* Class = "NSButtonCell"; title = "DEBUG_WARN in DEBUG, NOOPT, RELEASE"; ObjectID = "AEq-Xa-8FR"; */
 "AEq-Xa-8FR.title" = "DEBUG_WARN in DEBUG, NOOPT, RELEASE";
 
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Ai7-te-FXf"; */
+"Ai7-te-FXf.title" = "Select All";
+
 /* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
 "BYc-kG-loi.title" = "Mode sélecteur";
 
@@ -98,14 +101,23 @@
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
 "KRE-fs-cVq.title" = "Tout déselectionner";
 
+/* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
+"L3h-6q-xRi.title" = "Provides custom rendered titles for boot entries";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
 "LCd-qL-7KC.ibShadowedToolTip" = "Si macOS se bloque à certains endroits au démarrage, il peut être nécessaire de le régler sur OUI, ce qui est généralement utilisé pour éliminer l'erreur";
+
+/* Class = "NSButtonCell"; title = "Changes used icon set to an alternate one if it is supported"; ObjectID = "NFd-Yp-DAy"; */
+"NFd-Yp-DAy.title" = "Changes used icon set to an alternate one if it is supported";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "NXw-uw-Jsu"; */
 "NXw-uw-Jsu.headerCell.title" = "Activer";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details."; ObjectID = "PDS-bo-Qx8"; */
 "PDS-bo-Qx8.ibShadowedToolTip" = "Activez la fonction d'écran assistant vocal dans le sélecteur de démarrage. \nVous pouvez également utiliser la combinaison de touches Commande + F5 pour changer la fonction d’assistant vocal de l’écran dans le sélecteur de démarrage OpenCore et la fenêtre de connexion FileVault 2 du chargeur de démarrage macOS. \nRemarque: le pilote audio AudioDxe.ef doit être chargé pour la fonction d'assistance vocale à l'écran.";
+
+/* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "PDr-JO-EKf"; */
+"PDr-JO-EKf.title" = "Unselect All";
 
 /* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
 "PIX-Ia-ajs.title" = "ConsoleAttributes";
@@ -194,6 +206,9 @@
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Niveau d'affichage";
 
+/* Class = "NSButtonCell"; title = "Provides predefined label images for boot entries without custom entries"; ObjectID = "dl8-kF-ipf"; */
+"dl8-kF-ipf.title" = "Provides predefined label images for boot entries without custom entries";
+
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
 "eFc-bE-Fl5.title" = "OC_SCAN_ALLOW_DEVICE_USB";
 
@@ -215,7 +230,7 @@
 /* Class = "NSTextFieldCell"; title = "Target"; ObjectID = "hAm-Ha-Meb"; */
 "hAm-Ha-Meb.title" = "Target";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\t– <TOOL_NAME>.icns  file for Tools.￼ ￼ ￼\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries: \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems. \t– <TOOL_NAME.lbl  (<TOOL_NAME.l2x) file near tool for Tools. Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead. • 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour."; ObjectID = "hdQ-rL-KAo"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\t– <TOOL_NAME>.icns  file for Tools.￼ ￼ ￼\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries:  \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems. \t– <TOOL_NAME.lbl  (<TOOL_NAME.l2x) file near tool for Tools. Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead. • 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour."; ObjectID = "hdQ-rL-KAo"; */
 "hdQ-rL-KAo.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: définit des attributs spécifiques pour le sélecteur. \nDifférents sélecteurs peuvent être configurés via \nle masque d'attribut contenant les valeurs réservées OpenCore (BIT0 ~ BIT15) et spécifiques OEM (BIT16 ~ BIT31). \nLes valeurs OpenCore actuelles incluent: \n • 0x0001 - OC_ATTR_USE_VOLUME_ICON, fournit des icônes personnalisées pour les entrées de démarrage: \n \ t– Fichier .VolumeIcon.icns à la racine de pré-lancement pour APFS. \n \ t– .VolumeIcon.icns fichier à la racine du volume pour d'autres systèmes de fichiers. \n \ t– <TOOL_NAME> .icns fichier pour Tools.￼ ￼ ￼ \nLes icônes de volume peuvent être définies dans le Finder. \n • 0x0002 - OC_ATTR_USE_DISK_LABEL_FILE, fournit des titres rendus personnalisés pour les entrées de démarrage: \ t– .disk_label (.disk_label_2x) fichier près du chargeur de démarrage pour tous les systèmes de fichiers. \ t– Fichier <TOOL_NAME.lbl (<TOOL_NAME.l2x) près de l'outil pour Tools. Les étiquettes pré-rendues peuvent être générées via l'utilitaire disklabel ou la commande bless. Lorsqu'elles sont désactivées ou manquantes, les étiquettes de texte (.contentDetails ou .disk_label.contentDetails) doivent être rendues à la place. • 0x0004 - OC_ATTR_USE_GENERIC_LABEL_IMAGE, fournit des images d'étiquettes prédéfinies pour les entrées de démarrage sans entrées personnalisées. Peut donner moins de détails pour l'entrée de démarrage réelle. \n • 0x0008 - OC_ATTR_USE_ALTERNATE_ICONS, remplace le jeu d'icônes utilisé par un autre s'il est pris en charge. Par exemple, cela pourrait utiliser des icônes à l'ancienne avec une couleur d'arrière-plan personnalisée.";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
@@ -271,6 +286,9 @@
 
 /* Class = "NSButtonCell"; title = "AuthRestart"; ObjectID = "tI2-d3-co4"; */
 "tI2-d3-co4.title" = "AuthRestart";
+
+/* Class = "NSButtonCell"; title = "Provides custom icons for boot entries"; ObjectID = "tLD-8o-zGU"; */
+"tLD-8o-zGU.title" = "Provides custom icons for boot entries";
 
 //* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0x6\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\n• 0x04 — Expose OpenCore version in boot picker menu title.\n• 0x08 — Expose OEM information as a set of UEFI variables.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. \n\nTo obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\n\nTo use booter path for mounting booter volume use the following command in macOS:\nu=$(nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed 's/.*GPT,\\([^,]*\\),.*/\\1/'); \\ if [ \"$u\" != \"\" ]; then sudo diskutil mount $u ; fi\n\nTo obtain OpenCore version use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version\n\nTo obtain OEM information use the following commands in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-product # SMBIOS Type1 ProductName\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-vendor # SMBIOS Type2 Manufacturer\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-board # SMBIOS Type2 ProductName"; ObjectID = "tmf-fU-Pjy"; */
 "tmf-fU-Pjy.ibShadowedToolTip" = "3-Stockez le chemin de démarrage et la version d'OpenCore dans NVRAM \n11-Ajoutez les informations OEM de la carte mère basées sur 3, HWMonitorSMC2 et NVMeFix nécessitent que les informations OEM de la carte mère fonctionnent correctement \n6-Si vous souhaitez afficher le numéro de version OC dans le menu de démarrage, remplissez 6 \n15-Exposez toutes les informations NVRAM.";

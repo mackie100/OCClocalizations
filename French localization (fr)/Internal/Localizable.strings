@@ -499,6 +499,9 @@
 "You seem to have an old version of OpenCore bootloader." = "Vous semblez avoir une ancienne version du chargeur de démarrage OpenCore.";
 
 /* compatibilityWarningScreen */
+"The bootloader looks like it is not installed." = "The bootloader looks like it is not installed.";
+
+/* compatibilityWarningScreen */
 "2nd_message" = "Cette application crée un fichier de configuration pour %1$@ et versions supérieures.";
 
 /* compatibilityWarningScreen */
