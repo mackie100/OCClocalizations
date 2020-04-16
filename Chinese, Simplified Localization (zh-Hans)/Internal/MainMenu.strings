@@ -285,7 +285,7 @@
 "WeT-3V-zwk.title" = "粘贴和匹配样式";
 
 /* Class = "NSMenuItem"; title = "Install Tools"; ObjectID = "XaO-go-3SF"; */
-"XaO-go-3SF.title" = "Install Tools";
+"XaO-go-3SF.title" = "工具安装";
 
 /* Class = "NSMenuItem"; title = "Find…"; ObjectID = "Xz5-n4-O0W"; */
 "Xz5-n4-O0W.title" = "查找…";
@@ -354,7 +354,7 @@
 "gDt-SB-jBP.title" = "扫描配置文件";
 
 /* Class = "NSMenuItem"; title = "Outline Mode"; ObjectID = "gUQ-fT-kVg"; */
-"gUQ-fT-kVg.title" = "Outline Mode";
+"gUQ-fT-kVg.title" = "提纲模式";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "粘贴";
