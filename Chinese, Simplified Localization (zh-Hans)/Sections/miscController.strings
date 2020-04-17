@@ -57,7 +57,7 @@
 "AEq-Xa-8FR.title" = "DEBUG，NOOPT和DEBUG中的DEBUG警告";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Ai7-te-FXf"; */
-"Ai7-te-FXf.title" = "Select All";
+"Ai7-te-FXf.title" = "全选";
 
 /* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
 "BYc-kG-loi.title" = "Picker Mode\n启动菜单模式";
@@ -102,13 +102,13 @@
 "KRE-fs-cVq.title" = "取消全选";
 
 /* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
-"L3h-6q-xRi.title" = "Provides custom rendered titles for boot entries";
+"L3h-6q-xRi.title" = "提供引导条目的自定义渲染标题";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
 "LCd-qL-7KC.ibShadowedToolTip" = "如果macOS在启动时卡在某些地方, 可能需要设置为YES, 通常用于排除错误干扰";
 
 /* Class = "NSButtonCell"; title = "Changes used icon set to an alternate one if it is supported"; ObjectID = "NFd-Yp-DAy"; */
-"NFd-Yp-DAy.title" = "Changes used icon set to an alternate one if it is supported";
+"NFd-Yp-DAy.title" = "如果支持，将使用过的图标集更改为备用图标";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "NXw-uw-Jsu"; */
 "NXw-uw-Jsu.headerCell.title" = "启用";
@@ -117,7 +117,7 @@
 "PDS-bo-Qx8.ibShadowedToolTip" = "在启动选择器中启用屏幕语音助理功能。\n也可以使用Command + F5组合键在OpenCore引导选择器和macOS引导加载器FileVault 2登录窗口中切换屏幕语音助理功能。\ n注意：屏幕语音辅助功能需要加载AudioDxe.ef音频驱动。";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "PDr-JO-EKf"; */
-"PDr-JO-EKf.title" = "Unselect All";
+"PDr-JO-EKf.title" = "取消全选";
 
 /* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
 "PIX-Ia-ajs.title" = "ConsoleAttributes\n文本启动菜单颜色";
@@ -207,7 +207,7 @@
 "dam-Nc-xFX.title" = "Display Level";
 
 /* Class = "NSButtonCell"; title = "Provides predefined label images for boot entries without custom entries"; ObjectID = "dl8-kF-ipf"; */
-"dl8-kF-ipf.title" = "Provides predefined label images for boot entries without custom entries";
+"dl8-kF-ipf.title" = "为引导项提供预定义的标签图像，而无需自定义项";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
 "eFc-bE-Fl5.title" = "OC_SCAN_ALLOW_DEVICE_USB";
@@ -288,7 +288,7 @@
 "tI2-d3-co4.title" = "AuthRestart";
 
 /* Class = "NSButtonCell"; title = "Provides custom icons for boot entries"; ObjectID = "tLD-8o-zGU"; */
-"tLD-8o-zGU.title" = "Provides custom icons for boot entries";
+"tLD-8o-zGU.title" = "为引导项提供自定义图标";
 
 //* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0x6\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\n• 0x04 — Expose OpenCore version in boot picker menu title.\n• 0x08 — Expose OEM information as a set of UEFI variables.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. \n\nTo obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\n\nTo use booter path for mounting booter volume use the following command in macOS:\nu=$(nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed 's/.*GPT,\\([^,]*\\),.*/\\1/'); \\ if [ \"$u\" != \"\" ]; then sudo diskutil mount $u ; fi\n\nTo obtain OpenCore version use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version\n\nTo obtain OEM information use the following commands in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-product # SMBIOS Type1 ProductName\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-vendor # SMBIOS Type2 Manufacturer\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-board # SMBIOS Type2 ProductName"; ObjectID = "tmf-fU-Pjy"; */
 "tmf-fU-Pjy.ibShadowedToolTip" = "3 - 将 OpenCore 的启动路径和版本储存进 NVRAM\n11 - 在 3 的基础上添加主板 OEM 信息, HWMonitorSMC2 和 NVMeFix 需要主板 OEM 信息才能正常工作\n6 - 如果要在引导菜单显示OC版本号，填6\n15 - 暴露所有NVRAM信息。";
