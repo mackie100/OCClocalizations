@@ -177,7 +177,7 @@
 "JPS-kd-8vb.title" = "Fermer";
 
 /* Class = "NSTextFieldCell"; title = "Languages"; ObjectID = "K7T-KM-ZRz"; */
-"K7T-KM-ZRz.title" = "";
+"K7T-KM-ZRz.title" = "Languages";
 
 /* Class = "NSMenu"; title = "Templates"; ObjectID = "KGo-Ce-Wkm"; */
 "KGo-Ce-Wkm.title" = "Modèles de configuration";
@@ -294,7 +294,7 @@
 "YEy-JH-Tfz.title" = "Rechercher et remplacer ...";
 
 /* Class = "NSMenuItem"; title = "\tDefault"; ObjectID = "YGs-j5-SAR"; */
-"YGs-j5-SAR.title" = "\Par défaut";
+"YGs-j5-SAR.title" = "\tPar défaut";
 
 /* Class = "NSMenuItem"; title = "Start Speaking"; ObjectID = "Ynk-f8-cLZ"; */
 "Ynk-f8-cLZ.title" = "Commencer la lecture";

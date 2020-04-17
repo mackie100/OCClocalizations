@@ -56,6 +56,9 @@
 /* Class = "NSButtonCell"; title = "DEBUG_WARN in DEBUG, NOOPT, RELEASE"; ObjectID = "AEq-Xa-8FR"; */
 "AEq-Xa-8FR.title" = "DEBUG_WARN in DEBUG, NOOPT, RELEASE";
 
+/* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Ai7-te-FXf"; */
+"Ai7-te-FXf.title" = "Select All";
+
 /* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
 "BYc-kG-loi.title" = "Mode sélecteur";
 
@@ -98,14 +101,23 @@
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
 "KRE-fs-cVq.title" = "Tout déselectionner";
 
+/* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
+"L3h-6q-xRi.title" = "Provides custom rendered titles for boot entries";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Select firmwares may not succeed in quickly booting the operating system, especially in debug mode, which results in watch dog timer aborting the process. This option turns off watch dog timer."; ObjectID = "LCd-qL-7KC"; */
 "LCd-qL-7KC.ibShadowedToolTip" = "Si macOS se bloque à certains endroits au démarrage, il peut être nécessaire de le régler sur OUI, ce qui est généralement utilisé pour éliminer l'erreur";
+
+/* Class = "NSButtonCell"; title = "Changes used icon set to an alternate one if it is supported"; ObjectID = "NFd-Yp-DAy"; */
+"NFd-Yp-DAy.title" = "Changes used icon set to an alternate one if it is supported";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "NXw-uw-Jsu"; */
 "NXw-uw-Jsu.headerCell.title" = "Activer";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details."; ObjectID = "PDS-bo-Qx8"; */
 "PDS-bo-Qx8.ibShadowedToolTip" = "Activez la fonction d'écran assistant vocal dans le sélecteur de démarrage. \nVous pouvez également utiliser la combinaison de touches Commande + F5 pour changer la fonction d’assistant vocal de l’écran dans le sélecteur de démarrage OpenCore et la fenêtre de connexion FileVault 2 du chargeur de démarrage macOS. \nRemarque: le pilote audio AudioDxe.ef doit être chargé pour la fonction d'assistance vocale à l'écran.";
+
+/* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "PDr-JO-EKf"; */
+"PDr-JO-EKf.title" = "Unselect All";
 
 /* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
 "PIX-Ia-ajs.title" = "ConsoleAttributes";
@@ -194,6 +206,9 @@
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Niveau d'affichage";
 
+/* Class = "NSButtonCell"; title = "Provides predefined label images for boot entries without custom entries"; ObjectID = "dl8-kF-ipf"; */
+"dl8-kF-ipf.title" = "Provides predefined label images for boot entries without custom entries";
+
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
 "eFc-bE-Fl5.title" = "OC_SCAN_ALLOW_DEVICE_USB";
 
@@ -240,7 +255,7 @@
 "oFg-pn-DgG.label" = "Tools-Ajout d'outils supplémentaires";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "oL1-jF-NNm"; */
-"oL1-jF-NNm.title" = "Unsélectionner tout";
+"oL1-jF-NNm.title" = "Désélectionner tout";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE."; ObjectID = "omf-bH-d4v"; */
 "omf-bH-d4v.ibShadowedToolTip" = "2147483714 Afficher toutes les informations de débogage à l'écran \n0 Masquer toutes les informations de débogage!";
@@ -271,6 +286,9 @@
 
 /* Class = "NSButtonCell"; title = "AuthRestart"; ObjectID = "tI2-d3-co4"; */
 "tI2-d3-co4.title" = "AuthRestart";
+
+/* Class = "NSButtonCell"; title = "Provides custom icons for boot entries"; ObjectID = "tLD-8o-zGU"; */
+"tLD-8o-zGU.title" = "Provides custom icons for boot entries";
 
 //* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0x6\nDescription: Sensitive data exposure bitmask (sum) to operating system.\n• 0x01 — Expose printable booter path as an UEFI variable.\n• 0x02 — Expose OpenCore version as an UEFI variable.\n• 0x04 — Expose OpenCore version in boot picker menu title.\n• 0x08 — Expose OEM information as a set of UEFI variables.\nExposed booter path points to OpenCore.efi or its booter depending on the load order. \n\nTo obtain booter path use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path\n\nTo use booter path for mounting booter volume use the following command in macOS:\nu=$(nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:boot-path | sed 's/.*GPT,\\([^,]*\\),.*/\\1/'); \\ if [ \"$u\" != \"\" ]; then sudo diskutil mount $u ; fi\n\nTo obtain OpenCore version use the following command in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version\n\nTo obtain OEM information use the following commands in macOS:\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-product # SMBIOS Type1 ProductName\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-vendor # SMBIOS Type2 Manufacturer\nnvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:oem-board # SMBIOS Type2 ProductName"; ObjectID = "tmf-fU-Pjy"; */
 "tmf-fU-Pjy.ibShadowedToolTip" = "3-Stockez le chemin de démarrage et la version d'OpenCore dans NVRAM \n11-Ajoutez les informations OEM de la carte mère basées sur 3, HWMonitorSMC2 et NVMeFix nécessitent que les informations OEM de la carte mère fonctionnent correctement \n6-Si vous souhaitez afficher le numéro de version OC dans le menu de démarrage, remplissez 6 \n15-Exposez toutes les informations NVRAM.";
