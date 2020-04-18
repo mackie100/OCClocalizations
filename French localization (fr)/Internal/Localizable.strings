@@ -556,7 +556,7 @@
 "Add Item" = "Ajouter un item";
 
 /* miscController */
-"Please make sure to select a file from a boot efi path." = "Please make sure to select a file from a boot efi path.";
+"Please make sure to select a file from a boot efi path." = "Veuillez vous assurer de sélectionner un fichier à partir d'un chemin efi de démarrage.";
 
 /* miscController */
-"No efi boot path found." = "No efi boot path found.";
+"No efi boot path found." = "Aucun chemin de démarrage efi trouvé.";
