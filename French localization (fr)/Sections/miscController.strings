@@ -122,6 +122,9 @@
 /* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
 "PIX-Ia-ajs.title" = "ConsoleAttributes";
 
+/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Pkl-Zl-stw"; */
+"Pkl-Zl-stw.title" = "Parcourir";
+
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console)."; ObjectID = "PwU-cB-LIO"; */
 "PwU-cB-LIO.ibShadowedToolTip" = "Le délai (en microsecondes) effectué après chaque ligne d'impression (c'est-à-dire la console) visible à l'écran. Ignoré par défaut!";
 
