@@ -75,10 +75,10 @@
 "Da8-bR-9wd.title" = "启用非易失性UEFI变量日志记录";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
-"E7L-MW-EuK.ibShadowedToolTip" = "用于覆盖 Windows bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。\n比如启动WINDOWS路径:\\EFI\\Microsoft\\Boot\\bootmgfw.efi";
+"E7L-MW-EuK.ibShadowedToolTip" = "用于添加自定义efi文件的引导绝对路径，比如添加Windows的bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。\n比如启动WINDOWS路径:\\EFI\\Microsoft\\Boot\\bootmgfw.efi\n这允许引导选择器自动发现异常的引导路径,也可用于其他操作系统的引导路劲";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_ESP"; ObjectID = "Edm-Vw-KuX"; */
-"Edm-Vw-KuX.title" = "OC_SCAN_ALLOW_FS_ESP";
+"Edm-Vw-KuX.title" = "允许扫描EFI系统分区文件系统。";
 
 /* Class = "NSTextFieldCell"; title = "Display Delay"; ObjectID = "FHv-7q-Wq3"; */
 "FHv-7q-Wq3.title" = "Display Delay";
@@ -87,7 +87,7 @@
 "Gaf-gn-k6J.title" = "全选";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_EXT"; ObjectID = "H6a-QA-xQu"; */
-"H6a-QA-xQu.title" = "OC_SCAN_ALLOW_FS_EXT";
+"H6a-QA-xQu.title" = "允许扫描EXT(Linux)文件系统。";
 
 /* Class = "NSButtonCell"; title = "Enable serial port logging"; ObjectID = "HjZ-gH-Q0b"; */
 "HjZ-gH-Q0b.title" = "启用串行端口日志记录";
@@ -159,13 +159,13 @@
 "VQF-Ne-GWu.ibShadowedToolTip" = "0: 允许扫描所有可用的硬盘\n其它值请参考官方文档, 对给出的选项做 16 进制加法运算";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_FILE_SYSTEM_LOCK"; ObjectID = "Wnm-4q-QJ3"; */
-"Wnm-4q-QJ3.title" = "OC_SCAN_FILE_SYSTEM_LOCK";
+"Wnm-4q-QJ3.title" = "扫描已知文件系统";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_NTFS"; ObjectID = "WsC-yj-V3g"; */
-"WsC-yj-V3g.title" = "OC_SCAN_ALLOW_FS_NTFS";
+"WsC-yj-V3g.title" = "允许扫描NTFS文件系统。";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SCSI"; ObjectID = "X1h-DD-gjM"; */
-"X1h-DD-gjM.title" = "OC_SCAN_ALLOW_DEVICE_SCSI";
+"X1h-DD-gjM.title" = "允许扫描SCSI设备";
 
 /* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "XRf-Yz-PVv"; */
 "XRf-Yz-PVv.headerCell.title" = "名称";
@@ -177,7 +177,7 @@
 "YKi-Mp-w6e.title" = "Show Picker\n显示引导菜单";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_NVME"; ObjectID = "YQh-9A-q5Q"; */
-"YQh-9A-q5Q.title" = "OC_SCAN_ALLOW_DEVICE_NVME";
+"YQh-9A-q5Q.title" = "允许扫描NVMe设备";
 
 /* Class = "NSTabViewItem"; label = "Debug"; ObjectID = "Yod-ne-FH8"; */
 "Yod-ne-FH8.label" = "Debug";
@@ -192,7 +192,7 @@
 "Zxi-ww-dWk.ibShadowedToolTip" = "倒计时进入指定可启动系统，这里我们按需求填写，我填写5，代表5秒钟进入指定系统。";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SATA"; ObjectID = "aQY-Kx-ZCy"; */
-"aQY-Kx-ZCy.title" = "OC_SCAN_ALLOW_DEVICE_SATA";
+"aQY-Kx-ZCy.title" = "允许扫描SATA设备";
 
 /* Class = "NSTextFieldCell"; title = "Scan Policy"; ObjectID = "aUx-rK-UTX"; */
 "aUx-rK-UTX.title" = "Scan Policy";
@@ -210,7 +210,7 @@
 "dl8-kF-ipf.title" = "为引导项提供预定义的标签图像，而无需自定义项";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
-"eFc-bE-Fl5.title" = "OC_SCAN_ALLOW_DEVICE_USB";
+"eFc-bE-Fl5.title" = "允许扫描USB设备";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory."; ObjectID = "eH6-nm-MdQ"; */
 "eH6-nm-MdQ.ibShadowedToolTip" = "用于运行一些UEFI工具, 例如验证CFG Lock(VerifyMsrE2.efi),CleanNvram.efi\n名称:OpenCore 启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助属性\n路径:Tools文件夹下的文件名\n如: VerifyMsrE2.efi,Shell.efi等";
@@ -234,7 +234,7 @@
 "hdQ-rL-KAo.ibShadowedToolTip" = "设置启动菜单(GUI界面)的属性。\n可以配置自定义的GUI界面风格，设置值包括:\n• 0x0001 —提供引导项的自定义图标:\n\t– APFS分区的预引导根目录下的.VolumeIcon.icns文件。 \n\t– 其他文件系统的卷根目录下的.VolumeIcon.icns文件。\n\t– <TOOL_NAME>.icns的工具图标文件.￼ ￼ ￼\n可以在Finder中设置卷图标。 \n• 0x0002 — 提供引导条目的自定义渲染标题:  \t– 引导器相关的.disk_label（.disk_label_2x）文件，用于所有文件系统。 \t– 工具相关的<TOOL_NAME.lbl和<TOOL_NAME.l2x文件. 可以通过disklabel实用程序或bless命令生成预渲染的标签.禁用或缺少文本标签时 (.contentDetails 或 .disk_label.contentDetails) 将被使用.\n • 0x0004 — 提供引导条目的预定义标签图像，而无需自定义条目. 可能会缺少实际启动项的详细信息. \n• 0x0008 — 如果支持，将使用过的图标集更改为备用图标. 这样可以使用带有自定义背景色的老式图标。";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
-"i2m-65-2vq.title" = "OC_SCAN_ALLOW_DEVICE_ATAPI";
+"i2m-65-2vq.title" = "允许扫描CD/DVD设备";
 
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "jPS-Bu-Ar4"; */
 "jPS-Bu-Ar4.headerCell.title" = "路径*";
@@ -243,13 +243,13 @@
 "mSr-7J-5Qp.title" = "自定义版本中的DEBUG_VERBOSE";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_APFS"; ObjectID = "mpH-5M-L70"; */
-"mpH-5M-L70.title" = "OC_SCAN_ALLOW_FS_APFS";
+"mpH-5M-L70.title" = "允许扫描APFS文件系统";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_FIREWIRE"; ObjectID = "nmh-33-tbM"; */
-"nmh-33-tbM.title" = "OC_SCAN_ALLOW_DEVICE_FIREWIRE";
+"nmh-33-tbM.title" = "允许扫描FireWire设备";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "nsA-hY-r1Q"; */
-"nsA-hY-r1Q.title" = "可以多项选择";
+"nsA-hY-r1Q.title" = "可以多项选择(也可以直接拖拽efi文件到表格里)";
 
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
 "oFg-pn-DgG.label" = "Tools-添加附加工具";
@@ -279,7 +279,7 @@
 "sTe-vF-jmH.title" = "Hide Self\n隐藏自身";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SDCARD"; ObjectID = "sti-pn-v4l"; */
-"sti-pn-v4l.title" = "OC_SCAN_ALLOW_DEVICE_SDCARD";
+"sti-pn-v4l.title" = "允许扫描读卡器设备";
 
 /* Class = "NSButtonCell"; title = "AppleDebug"; ObjectID = "tBp-D4-d9x"; */
 "tBp-D4-d9x.title" = "AppleDebug";
@@ -303,7 +303,7 @@
 "uks-Bw-Ph4.label" = "Entries-自定义条目";
 
 /* Class = "NSTabViewItem"; label = "BlessOverride"; ObjectID = "uyb-X6-nFt"; */
-"uyb-X6-nFt.label" = "BlessOverride-添加微软启动项";
+"uyb-X6-nFt.label" = "BlessOverride-设置自定义启动项绝对路径";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known modifier hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode."; ObjectID = "vvg-w7-KxC"; */
 "vvg-w7-KxC.ibShadowedToolTip" = "是否开启一些热键功能，包括Cmd+K;Cmd+S。\n设置为YES后允许在引导过程中使用苹果原生快捷键, 需要与Quirk选项中KeySupport=Yes或UsbKbDxe.efi结合使用, 具体体验取决于主板固件。常用快捷键组合:\nCmd + V: 启用 -v 跑码啰嗦模式\nCmd + Opt + P + R: 重置 NVRAM\nCmd + R: 启动恢复分区\nCmd + S: 启动至单用户模式\nOption/ALT: 在ShowPicker设置成NO时显示引导菜单, ALT键不可用时可用ESC键代替(狂按ESC键)。\n如果你开机发现键盘无法选择，请选NO，并且删除OC/Drivers下的UsbKbDxe.efi 。";
@@ -318,7 +318,7 @@
 "yDl-hK-Eml.title" = "TakeoffDelay\n激活快捷键延迟";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_DEVICE_LOCK"; ObjectID = "yNo-gi-9zr"; */
-"yNo-gi-9zr.title" = "OC_SCAN_DEVICE_LOCK";
+"yNo-gi-9zr.title" = "扫描已知设备类型";
 
 /* Class = "NSTableColumn"; headerCell.title = "Auxiliary"; ObjectID = "yTI-cV-qsU"; */
 "yTI-cV-qsU.headerCell.title" = "辅助";
@@ -327,13 +327,13 @@
 "z6D-gM-UDa.title" = "将可打印的引导程序路径公开为UEFI变量.";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_HFS"; ObjectID = "zCH-tB-ca6"; */
-"zCH-tB-ca6.title" = "OC_SCAN_ALLOW_FS_HFS";
+"zCH-tB-ca6.title" = "允许扫描HFS文件系统";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Hides auxiliary entries from picker menu by default. \nAn entry is considered auxiliary when at least one of the following applies:\n• Entry is macOS recovery.\n• Entry is macOS Time Machine.\n• Entry is explicitly marked as Auxiliary.\n• Entry is system (e.g. Clean NVRAM).\n\nTo see all entries picker menu needs to be reloaded in extended mode by pressing Spacebar key. Hiding auxiliary \nentries may increase boot performance for multidisk systems."; ObjectID = "zgV-bT-EgH"; */
 "zgV-bT-EgH.ibShadowedToolTip" = "隐藏选择器菜单中的辅助条目,如果启用隐藏默认条目，选为YES。\n至少满足以下条件之一时，该条目被认为是辅助条目:\n•条目是macOS Recovery。\n•条目被明确标记为辅助。\n•条目是一个efi程序(例如Clean NVRAM)\n\n通过按空格键，重新加载所有条目选择器菜单。";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SASEX"; ObjectID = "zj4-Hs-Xjk"; */
-"zj4-Hs-Xjk.title" = "OC_SCAN_ALLOW_DEVICE_SASEX";
+"zj4-Hs-Xjk.title" = "允许扫描SAS和Mac NVMe设备";
 
 /* Class = "NSButtonCell"; title = "DEBUG_ERROR in DEBUG, NOOPT, RELEASE"; ObjectID = "zlC-gM-dIj"; */
 "zlC-gM-dIj.title" = "DEBUG，NOOPT和RELEASE中的DEBUG_ERROR";

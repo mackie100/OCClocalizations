@@ -204,7 +204,7 @@
 "bdr-Pu-Crr.title" = "ProvideConsoleGop";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "cNF-Pq-AYe"; */
-"cNF-Pq-AYe.title" = "可以多项选择";
+"cNF-Pq-AYe.title" = "可以多项选择(也可直接拖拽efi驱动文件到表格里)";
 
 /* Class = "NSButtonCell"; title = "KeySupport"; ObjectID = "cia-MM-Epa"; */
 "cia-MM-Epa.title" = "KeySupport";

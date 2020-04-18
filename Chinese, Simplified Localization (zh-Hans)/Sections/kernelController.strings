@@ -108,7 +108,7 @@
 "SHQ-fm-Uec.title" = "ExternalDiskIcons";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "VgW-t5-zY9"; */
-"VgW-t5-zY9.title" = "可以多项选择";
+"VgW-t5-zY9.title" = "可以多项选择(也可以直接拖拽kext驱动包到表格里)";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "WGU-Ke-n07"; */
 "WGU-Ke-n07.title" = "浏览";
