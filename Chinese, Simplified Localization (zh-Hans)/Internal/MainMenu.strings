@@ -12,7 +12,7 @@
 "1b7-l0-nxx.title" = "查找";
 
 /* Class = "NSMenuItem"; title = "Text Mode"; ObjectID = "1mO-LS-7hU"; */
-"1mO-LS-7hU.title" = "文字模式";
+"1mO-LS-7hU.title" = "纯文本编辑模式";
 
 /* Class = "NSMenuItem"; title = "Lower"; ObjectID = "1tx-W0-xDw"; */
 "1tx-W0-xDw.title" = "降低";
@@ -204,7 +204,7 @@
 "Mw8-wH-EAB.title" = "重置首选项";
 
 /* Class = "NSMenuItem"; title = "Advanced User"; ObjectID = "NGL-Uc-o6p"; */
-"NGL-Uc-o6p.title" = "高级用户";
+"NGL-Uc-o6p.title" = "高手模式";
 
 /* Class = "NServices"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "服务";
@@ -354,7 +354,7 @@
 "gDt-SB-jBP.title" = "扫描配置文件";
 
 /* Class = "NSMenuItem"; title = "Outline Mode"; ObjectID = "gUQ-fT-kVg"; */
-"gUQ-fT-kVg.title" = "提纲模式";
+"gUQ-fT-kVg.title" = "树形编辑模式";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "粘贴";

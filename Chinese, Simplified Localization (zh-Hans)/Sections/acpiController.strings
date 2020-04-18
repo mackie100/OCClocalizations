@@ -60,7 +60,7 @@
 "OG6-fc-Q9m.title" = "RebaseRegions";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "SPY-Vf-Izp"; */
-"SPY-Vf-Izp.title" = "可以多项选择";
+"SPY-Vf-Izp.title" = "可以多项选择(也可以直接拖拽aml补丁文件到表格里)";
 
 /* Class = "NSButtonCell"; title = "ResetHwSig"; ObjectID = "Z6k-wb-4yC"; */
 "Z6k-wb-4yC.title" = "ResetHwSig";
