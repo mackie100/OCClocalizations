@@ -1,5 +1,5 @@
 
-/* Class = "NSButton"; ibjectID = "0hR-wG-mgt"; */
+/* Class = "NSButtonCell"; title = "DEBUG_INFO in DEBUG, NOOPT"; ObjectID = "0hR-wG-mgt"; */
 "0hR-wG-mgt.title" = "DEBUG，NOOPT中的DEBUG信息";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. To perform authenticated restart one can use a dedicated terminal command: sudo fdesetup authrestart. It is also used when installing operating system updates.\nVirtualSMC performs authenticated restart by saving disk encryption key split in NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional."; ObjectID = "0sy-D3-AKk"; */
@@ -121,6 +121,9 @@
 
 /* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
 "PIX-Ia-ajs.title" = "ConsoleAttributes\n文本启动菜单颜色";
+
+/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Pkl-Zl-stw"; */
+"Pkl-Zl-stw.title" = "浏览";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console)."; ObjectID = "PwU-cB-LIO"; */
 "PwU-cB-LIO.ibShadowedToolTip" = "在屏幕上可见的每条打印行(即控制台)之后执行的延迟(以微秒为单位).默认忽略！";
