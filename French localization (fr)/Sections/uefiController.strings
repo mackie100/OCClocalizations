@@ -155,9 +155,6 @@
 /* Class = "NSButtonCell"; title = "KeyFiltering"; ObjectID = "Of8-Ba-FhQ"; */
 "Of8-Ba-FhQ.title" = "KeyFiltering";
 
-/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Own-A5-wm6"; */
-"Own-A5-wm6.title" = "Cellule de texte";
-
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Minimal heard volume level from 0 to 100.\n\nScreen reader will use this volume level, when the calculated volume level is less than MinimumVolume. Boot chime sound will not play if the calculated volume level is less than MinimumVolume."; ObjectID = "PF5-bc-9Z2"; */
 "PF5-bc-9Z2.ibShadowedToolTip" = "Le volume minimum est compris entre 0 et 100. \n  \n Lorsque le niveau de volume calculé est inférieur à MinimumVolume, le lecteur d'écran utilisera ce niveau de volume. Si le volume calculé est inférieur à MinimumVolume, aucune tonalité de démarrage ne retentira.";
 
@@ -190,6 +187,9 @@
 
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "Pilote UEFI";
+
+/* Class = "NSButtonCell"; title = "AppleRtcRam"; ObjectID = "Xjp-N3-zFD"; */
+"Xjp-N3-zFD.title" = "AppleRtcRam";
 
 /* Class = "NSButtonCell"; title = "UnblockFsConnect"; ObjectID = "YFj-X6-x1j"; */
 "YFj-X6-x1j.title" = "UnblockFsConnect";
@@ -322,6 +322,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some firmwares clear only part of screen when switching from graphics to text mode, leaving a fragment of previously drawn image visible. This option fills the entire graphics screen with black color before switching to text mode.\n\nNote: This option only applies to System renderer."; ObjectID = "qMh-AF-g0P"; */
 "qMh-AF-g0P.ibShadowedToolTip" = "Lorsque le mode graphique passe en mode texte, certains micrologiciels n'effacent qu'une partie de l'écran, rendant visibles les fragments d'image précédemment dessinés. Cette option remplit tout l'écran graphique de noir avant de passer en mode texte. \n Remarque: cette option fonctionne uniquement avec le rendu système.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false \nDescription: Reinstalls Apple RTC RAM protocol with builtin version.\n\nNote: Builtin version of Apple RTC RAM protocol may filter out I/O attempts to select RTC memory addresses. \nThe list of addresses can be specified in 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:rtc-blacklist variable as a data array."; ObjectID = "r1b-ma-oOs"; */
+"r1b-ma-oOs.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false \nDescription: Reinstalls Apple RTC RAM protocol with builtin version.\n\nNote: Builtin version of Apple RTC RAM protocol may filter out I/O attempts to select RTC memory addresses. \nThe list of addresses can be specified in 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:rtc-blacklist variable as a data array.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls apple boot policy protocol with a builtin version. This may be used to ensure APFS compatibility on VMs or legacy Macs.\n\nNote: Some Macs, namely MacPro5,1, do have APFS compatibility, but their Apple Boot Policy protocol contains recovery detection issues, thus using this option is advised on them as well."; ObjectID = "rMl-Kr-h3I"; */
 "rMl-Kr-h3I.ibShadowedToolTip" = "Il est utilisé pour assurer la compatibilité APFS sur les machines virtuelles ou les vieilles pommes blanches. En règle générale, sélectionnez NON.";

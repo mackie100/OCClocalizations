@@ -270,10 +270,10 @@
 "Mount Point:" = "Point de montage:";
 
 /* mountefiController */
-"Mount Point: %@" = "InsPoint de montage: %@";
+"Mount Point: %@" = "Point de montage: %@";
 
 /* mountefiController */
-"Mount Point: N/A" = "InsPoint de montage: Inconnu";
+"Mount Point: N/A" = "Point de montage: Inconnu";
 
 /* opencoreDownloaderController */
 "No EFI folder found. Creating one...." = "Impossible de trouver la partition EFI montée. Créez-en un ...";
@@ -560,3 +560,12 @@
 
 /* miscController */
 "No efi boot path found." = "Aucun chemin de démarrage efi trouvé.";
+
+/* quicktoolsController */
+"%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";
+
+/* quicktoolsController */
+"Status: [%@]" = "Status: [%@]";
+
+/* quicktoolsController */
+"OpenCore Boot Partition" = "OpenCore Boot Partition";
