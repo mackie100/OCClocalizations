@@ -562,10 +562,10 @@
 "No efi boot path found." = "Aucun chemin de démarrage efi trouvé.";
 
 /* quicktoolsController */
-"%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";
+"%@ on Disk Identifier: %@" = "%1$@ sur l'identificateur de disque: %2$@";
 
 /* quicktoolsController */
-"Status: [%@]" = "Status: [%@]";
+"Status: [%@]" = "Statut: [%@]";
 
 /* quicktoolsController */
-"OpenCore Boot Partition" = "OpenCore Boot Partition";
+"OpenCore Boot Partition" = "Partition de démarrage OpenCore";
