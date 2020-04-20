@@ -571,4 +571,4 @@
 "OpenCore Boot Partition" = "Partition de démarrage OpenCore";
 
 /* uefiController */
-"ProtocolOverrides";
+"ProtocolOverrides" = "ProtocolOverrides";
