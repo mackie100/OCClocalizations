@@ -499,7 +499,7 @@
 "You seem to have an old version of OpenCore bootloader." = "Vous semblez avoir une ancienne version du chargeur de démarrage OpenCore.";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed." = "The bootloader looks like it is not installed.";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "The bootloader looks like it is not installed or your NVRAM isn't native.";
 
 /* compatibilityWarningScreen */
 "2nd_message" = "Cette application crée un fichier de configuration pour %1$@ et versions supérieures.";
@@ -569,3 +569,6 @@
 
 /* quicktoolsController */
 "OpenCore Boot Partition" = "OpenCore Boot Partition";
+
+/* uefiController */
+"ProtocolOverrides";
