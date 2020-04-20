@@ -101,6 +101,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Patch various kexts (AppleUSBXHCI.kext, AppleUSBXHCIPCI.kext, IOUSBHostFamily.kext) to remove USB port count limit of 15 ports.\nNote: This option should avoided whenever possible. USB port limit is imposed by the amount of used bits in locationID format and there is no possible way to workaround this without heavy OS modification. The only valid solution is to limit the amount of used ports to 15 (discarding some)."; ObjectID = "QzX-0b-2d3"; */
 "QzX-0b-2d3.ibShadowedToolTip" = "解除15个端口限制，如果USB端口已经定制，请选择NO。";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables primary checksum (0x58-0x59) writing in AppleRTC.\n\nNote 1: This option will not protect other areas from being overwritten, see RTCMemoryFixup kernel extension if this is desired.\n\nNote 2: This option will not protect areas from being overwritten at firmware stage (e.g. macOS bootloader), see RTC (FIXME) section if this is desired."; ObjectID = "RA3-U5-VwM"; */
+"RA3-U5-VwM.ibShadowedToolTip" = "在AppleRTC中禁止写入主校验和。\n\n注意 1: 此选项不会保护其他区域不被覆盖，如果需要，请参见RTCMemoryFixup内核扩展。\n\n注意 2: 此选项不能保护区域在固件阶段不被覆盖 (例如 macOS bootloader), 如果需要，请参见RTC（FIXME）部分。";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\nNote: This option should be avoided whenever possible. Modern firmwares usually have compatible AHCI controllers."; ObjectID = "SGM-P1-Mz5"; */
 "SGM-P1-Mz5.ibShadowedToolTip" = "AHCI控制器相关，现在的主板都对AHCI支持的很好，一般选择NO。";
 
@@ -196,6 +199,9 @@
 
 /* Class = "NSBox"; title = "Emulate"; ObjectID = "wEr-yw-cwt"; */
 "wEr-yw-cwt.title" = "仿冒CPU";
+
+/* Class = "NSButtonCell"; title = "DisableRtcChecksum"; ObjectID = "xIA-cT-lWe"; */
+"xIA-cT-lWe.title" = "DisableRtcChecksum";
 
 /* Class = "NSTextFieldCell"; title = "Cpuid1Mask"; ObjectID = "xNJ-1G-bdS"; */
 "xNJ-1G-bdS.title" = "Cpuid1Mask";
