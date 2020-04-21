@@ -499,7 +499,7 @@
 "You seem to have an old version of OpenCore bootloader." = "您似乎加载了一个旧版本的OpenCore引导程序。";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed or your NVRAM isn't native." = "The bootloader looks like it is not installed or your NVRAM isn't native.";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "引导加载程序看起来好像没有安装，或者您的NVRAM不是本机的。";
 
 /* compatibilityWarningScreen */
 "2nd_message" = "此应用为%1$@或更高版本创建配置文件.";
@@ -571,4 +571,4 @@
 "OpenCore Boot Partition" = "OpenCore引导分区";
 
 /* uefiController */
-"ProtocolOverrides" = "ProtocolOverrides";
+"ProtocolOverrides" = "协议覆盖";
