@@ -499,7 +499,7 @@
 "You seem to have an old version of OpenCore bootloader." = "Vous semblez avoir une ancienne version du chargeur de démarrage OpenCore.";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed." = "The bootloader looks like it is not installed.";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "Le chargeur de démarrage semble ne pas être installé ou votre NVRAM n'est pas native.";
 
 /* compatibilityWarningScreen */
 "2nd_message" = "Cette application crée un fichier de configuration pour %1$@ et versions supérieures.";
@@ -562,10 +562,13 @@
 "No efi boot path found." = "Aucun chemin de démarrage efi trouvé.";
 
 /* quicktoolsController */
-"%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";
+"%@ on Disk Identifier: %@" = "%1$@ sur l'identificateur de disque: %2$@";
 
 /* quicktoolsController */
-"Status: [%@]" = "Status: [%@]";
+"Status: [%@]" = "Statut: [%@]";
 
 /* quicktoolsController */
-"OpenCore Boot Partition" = "OpenCore Boot Partition";
+"OpenCore Boot Partition" = "Partition de démarrage OpenCore";
+
+/* uefiController */
+"ProtocolOverrides" = "ProtocolOverrides";
