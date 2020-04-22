@@ -291,7 +291,7 @@
 "l9b-pk-oii.ibShadowedToolTip" = "强制使用内置版本重新安装OS Info协议。该协议通常用于从macOS引导程序，固件或其他应用程序接收通知\n暂时没什么用，选择NO.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Address"; ObjectID = "ldi-uY-9wO"; */
-"ldi-uY-9wO.headerCell.title" = "Address\n地址";
+"ldi-uY-9wO.headerCell.title" = "地址";
 
 /* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string \nFailsafe: Empty string \nDescription: Sets console output mode as specified with the WxH (e.g. 80x24) formatted string.\nSet to empty string not to change console mode. Set to Max to try to use largest available console mode. Currently Builtin text renderer supports only one console mode, so this option is ignored.\n\nNote: This field is best to be left empty on most firmwares."; ObjectID = "lye-vu-fi3"; Note = "Do Not Translate"; */
 "lye-vu-fi3.ibShadowedToolTip" = "设置为空字符串不更改控制台模式.设置为Max以尝试使用最大可用控制台模式.\n大多数情况下都选择留空！";
@@ -303,7 +303,7 @@
 "mlh-hW-OqT.ibShadowedToolTip" = "为通过标准控制台输出的文本选择渲染器。\n目前支持两个渲染器: Builtin 和 System. System渲染器使用主板固件自带文字渲染进行文本渲染。 Builtin则绕过固件服务，使用 OpenCore 内置文字渲染执行文本渲染。 不同的渲染器支持不同的选项集。建议使用内置渲染器，因为它支持HiDPI模式并使用全屏分辨率。\n选项内容是文本渲染器和渲染模式的组合:\n• BuiltinGraphics — 使用 OpenCore 内置文字渲染的图形模式, 并同时启用 OpenCore 自带的控制台管理, 支持 HIDPI 和全屏范围显示, 通常效果胜于下面的选项。\n• SystemGraphics — 使用主板固件自带文字渲染的图形模式, 并同时启用 OpenCore 自带的控制台管理。\n• SystemText — 使用主板固件自带文字渲染的文字模式, 并同时启用 OpenCore 自带的控制台管理。\n• SystemGeneric — 使用主板固件自带文字渲染的文字模式和自带的控制台管理。\nBuiltinGraphics的使用通常很简单。对于大多数平台，必须启用ProvideConsoleGop，将分辨率选项设置为Max，并选择配置Scale。\n系统协议的使用更加复杂。通常，首选设置是SystemGraphics或SystemText。启用ProvideConsoleGop，将“分辨率”设置为“最大”，启用“ReplaceTabWithSpace”在几乎所有平台上都很有用。 SanitiseClearScreen，IgnoreTextInGraphics和ClearScreenOnModeSwitch更具体，它们的使用取决于固件。\n\n注意:某些Mac机型，比如MacPro5,1，可能在较新的GPU上的控制台输出已损坏，因此只有BuiltinGraphics可以为它们工作。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "n2P-We-NTM"; */
-"n2P-We-NTM.headerCell.title" = "Enabled\启用";
+"n2P-We-NTM.headerCell.title" = "启用";
 
 /* Class = "NSButtonCell"; title = "DirectGopRendering"; ObjectID = "nIf-jD-bYP"; */
 "nIf-jD-bYP.title" = "DirectGopRendering";
@@ -351,7 +351,7 @@
 "tqx-Ek-u4V.title" = "ClearScreenOnModeSwitch";
 
 /* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "ufL-Er-oh9"; */
-"ufL-Er-oh9.headerCell.title" = "Size\n大小";
+"ufL-Er-oh9.headerCell.title" = "大小";
 
 /* Class = "NSButtonCell"; title = "AppleDebugLog"; ObjectID = "uqk-49-YG8"; */
 "uqk-49-YG8.title" = "AppleDebugLog";
