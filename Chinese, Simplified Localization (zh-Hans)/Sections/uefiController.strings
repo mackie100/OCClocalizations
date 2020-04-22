@@ -51,7 +51,7 @@
 "51n-pL-3hs.title" = "RequestBootVarFallback";
 
 /* Class = "NSTabViewItem"; label = "Audio"; ObjectID = "5Gm-fv-IpR"; */
-"5Gm-fv-IpR.label" = "Audio";
+"5Gm-fv-IpR.label" = "开机音频";
 
 /* Class = "NSButtonCell"; title = "JumpstartHotPlug"; ObjectID = "6B4-NA-lHR"; */
 "6B4-NA-lHR.title" = "JumpstartHotPlug";
@@ -111,7 +111,7 @@
 "ErN-ks-EzO.title" = "KeyForgetThreshold";
 
 /* Class = "NSTabViewItem"; label = "APFS"; ObjectID = "F1Q-I5-6w7"; */
-"F1Q-I5-6w7.label" = "嵌入式APFS驱动";
+"F1Q-I5-6w7.label" = "嵌入式APFS";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple SMC I/O protocol with a builtin version.\nThis protocol replaces legacy VirtualSmc UEFI driver, and is compatible with any SMC kernel extension. \nHowever, in case FakeSMC kernel extension is used, manual NVRAM key variable addition may be needed."; ObjectID = "FPA-9t-OzA"; */
 "FPA-9t-OzA.ibShadowedToolTip" = "最新版本已经内置VirtualSmc.efi协议。\n使用此选项可以删除drivers目录下的VirtualSmc.efi文件。\n但是，如果使用FakeSMC内核扩展，则可能需要手动添加NVRAM密钥变量。";
@@ -252,7 +252,7 @@
 "fda-QM-Vl4.ibShadowedToolTip" = "固件时钟刷新的频率 (单位: 100纳秒)\n华硕主板为自己的界面使用 60000\n苹果使用 100000";
 
 /* Class = "NSTabViewItem"; label = "Output"; ObjectID = "gJG-UT-7D3"; */
-"gJG-UT-7D3.label" = "显示输出相关";
+"gJG-UT-7D3.label" = "显示输出";
 
 /* Class = "NSButtonCell"; title = "KeySwap"; ObjectID = "h6b-rN-daY"; */
 "h6b-rN-daY.title" = "KeySwap";
