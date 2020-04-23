@@ -17,5 +17,8 @@
 /* Class = "NSTextFieldCell"; title = "Search (⌘F)"; ObjectID = "Wd6-KD-rqx"; */
 "Wd6-KD-rqx.title" = "Recherche（⌘F)";
 
+/* Class = "NSTextFieldCell"; title = "Opencore Configuration Properties"; ObjectID = "aIc-ln-iIV"; */
+"aIc-ln-iIV.title" = "Opencore Configuration Properties";
+
 /* Class = "NSButtonCell"; title = "Synchronize"; ObjectID = "cZ7-39-tJB"; */
 "cZ7-39-tJB.title" = "Synchroniser";

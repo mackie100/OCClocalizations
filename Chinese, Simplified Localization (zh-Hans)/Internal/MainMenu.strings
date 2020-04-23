@@ -1,4 +1,10 @@
 
+/* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
+"11s-5L-eLA.label" = "Bootloader Settings";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
+"11s-5L-eLA.paletteLabel" = "Bootloader Settings";
+
 /* Class = "NSMenuItem"; title = "Boot.log"; ObjectID = "1OT-QB-Wyo"; */
 "1OT-QB-Wyo.title" = "Boot.log";
 
@@ -206,7 +212,7 @@
 /* Class = "NSMenuItem"; title = "Advanced User"; ObjectID = "NGL-Uc-o6p"; */
 "NGL-Uc-o6p.title" = "高手模式";
 
-/* Class = "NServices"; ObjectID = "NMo-om-nkz"; */
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
 "NMo-om-nkz.title" = "服务";
 
 /* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "NZD-7J-lLZ"; */
@@ -241,6 +247,9 @@
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "放大";
+
+/* Class = "NSTextFieldCell"; title = "Fork"; ObjectID = "R79-If-kEu"; */
+"R79-If-kEu.title" = "Fork";
 
 /* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "RB4-Sm-HuC"; */
 "RB4-Sm-HuC.title" = "\t右到左";
@@ -376,6 +385,12 @@
 
 /* Class = "NSMenu"; title = "Baseline"; ObjectID = "ijk-EB-dga"; */
 "ijk-EB-dga.title" = "基线";
+
+/* Class = "NSToolbarItem"; label = "App Settings"; ObjectID = "it2-TA-a3o"; */
+"it2-TA-a3o.label" = "App Settings";
+
+/* Class = "NSToolbarItem"; paletteLabel = "App Settings"; ObjectID = "it2-TA-a3o"; */
+"it2-TA-a3o.paletteLabel" = "App Settings";
 
 /* Class = "NSMenuItem"; title = "Kern"; ObjectID = "jBQ-r6-VK2"; */
 "jBQ-r6-VK2.title" = "字距";

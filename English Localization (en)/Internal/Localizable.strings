@@ -1,4 +1,4 @@
-﻿/* mountefiController */
+/* mountefiController */
 "%@ APFS Container [%@]" = "%1$@ APFS Container [%2$@]";
 
 /* mountefiController */
@@ -411,12 +411,6 @@
 /* installDriversController opencoreDownloaderController */
 "No EFI folder found.....\n" = "No EFI folder found.....\n";
 
-/* titleBar */
-"for Release Configuration" = "for Release Configuration";
-
-/* titleBar */
-"for Development Configuration" = "for Development Configuration";
-
 /* preferencesPanel */
 "Release Version" = "Release Version";
 
@@ -572,3 +566,30 @@
 
 /* uefiController */
 "ProtocolOverrides" = "ProtocolOverrides";
+
+/* preferencesPanel */
+"Official" = "Official";
+
+/* preferencesPanel */
+"NDK" = "NDK";
+
+/* preferencesPanel */
+"App Settings" = "App Settings";
+
+/* preferencesPanel */
+"OpenCore Settings" = "OpenCore Settings";
+
+/* titleBar */
+"Release Configuration" = "%1$@ Release Configuration";
+
+/* titleBar */
+"Development Configuration" = "%1$@ Development Configuration";
+
+/* titleBar */
+"for Official OpenCore" = "for Official OpenCore";
+
+/* titleBar */
+"for NDK OpenCore" = "for NDK OpenCore";
+
+/* reading_savingOperation */
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?";
