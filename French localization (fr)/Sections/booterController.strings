@@ -77,6 +77,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this unless you fully understand the consequences."; ObjectID = "cTN-CD-c3M"; */
 "cTN-CD-c3M.ibShadowedToolTip" = "Cette option permet à ces très anciennes cartes mères d'utiliser également l'adressage mémoire. Normalement, sélectionnez NON.";
 
+/* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "hF2-W3-w6Y"; */
+"hF2-W3-w6Y.title" = "EnableForAll";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures. Currently new firmwares with memory protection support (like OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "Indique s'il faut établir une mémoire virtuelle et mapper la mémoire physique. Lorsque nous démarrons, le programme OC a besoin d'une mémoire continue pour stocker le noyau et d'autres choses, et la mémoire physique réelle est généralement dispersée. Par conséquent, nous utilisons la mémoire virtuelle pour créer une mémoire contiguë pour une utilisation OC et la mapper dans la mémoire physique décentralisée. Généralement, nous choisissons OUI.";
 
