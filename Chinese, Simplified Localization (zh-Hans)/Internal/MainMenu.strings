@@ -1,9 +1,9 @@
 
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
-"11s-5L-eLA.label" = "Bootloader Settings";
+"11s-5L-eLA.label" = "引导程序设置";
 
 /* Class = "NSToolbarItem"; paletteLabel = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
-"11s-5L-eLA.paletteLabel" = "Bootloader Settings";
+"11s-5L-eLA.paletteLabel" = "引导程序设置";
 
 /* Class = "NSMenuItem"; title = "Boot.log"; ObjectID = "1OT-QB-Wyo"; */
 "1OT-QB-Wyo.title" = "Boot.log";
@@ -249,7 +249,7 @@
 "R4o-n2-Eq4.title" = "放大";
 
 /* Class = "NSTextFieldCell"; title = "Fork"; ObjectID = "R79-If-kEu"; */
-"R79-If-kEu.title" = "Fork";
+"R79-If-kEu.title" = "分支";
 
 /* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "RB4-Sm-HuC"; */
 "RB4-Sm-HuC.title" = "\t右到左";

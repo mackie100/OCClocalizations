@@ -568,28 +568,28 @@
 "ProtocolOverrides" = "协议覆盖";
 
 /* preferencesPanel */
-"Official" = "Official";
+"Official" = "官方原版";
 
 /* preferencesPanel */
-"NDK" = "NDK";
+"NDK" = "NDK分支版";
 
 /* preferencesPanel */
-"App Settings" = "App Settings";
+"App Settings" = "应用设定";
 
 /* preferencesPanel */
-"OpenCore Settings" = "OpenCore Settings";
+"OpenCore Settings" = "OpenCore设置";
 
 /* titleBar */
-"Release Configuration" = "%1$@ Release Configuration";
+"Release Configuration" = "%1$@ 正式版配置";
 
 /* titleBar */
-"Development Configuration" = "%1$@ Development Configuration";
+"Development Configuration" = "%1$@ 开发版配置";
 
 /* titleBar */
-"for Official OpenCore" = "for Official OpenCore";
+"for Official OpenCore" = "官方原版OpenCore";
 
 /* titleBar */
-"for NDK OpenCore" = "for NDK OpenCore";
+"for NDK OpenCore" = "NDK分支版OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "此配置包含一个或多个官方OpenCore通常不使用的属性。是否要以NDK分支版本模式打开此配置？";
