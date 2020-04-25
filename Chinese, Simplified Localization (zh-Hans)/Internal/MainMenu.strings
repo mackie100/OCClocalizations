@@ -249,7 +249,7 @@
 "R4o-n2-Eq4.title" = "放大";
 
 /* Class = "NSTextFieldCell"; title = "Fork"; ObjectID = "R79-If-kEu"; */
-"R79-If-kEu.title" = "分支";
+"R79-If-kEu.title" = "版本";
 
 /* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "RB4-Sm-HuC"; */
 "RB4-Sm-HuC.title" = "\t右到左";
@@ -459,7 +459,7 @@
 "qzY-w2-2R4.title" = "自动保存文件";
 
 /* Class = "NSTextFieldCell"; title = "Configuration Properties"; ObjectID = "rOA-u4-5Yj"; */
-"rOA-u4-5Yj.title" = "配置属性";
+"rOA-u4-5Yj.title" = "版本属性";
 
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
 "rbD-Rh-wIN.title" = "键入时检查拼写";
