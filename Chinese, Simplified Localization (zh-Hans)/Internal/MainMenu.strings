@@ -387,10 +387,10 @@
 "ijk-EB-dga.title" = "基线";
 
 /* Class = "NSToolbarItem"; label = "App Settings"; ObjectID = "it2-TA-a3o"; */
-"it2-TA-a3o.label" = "App Settings";
+"it2-TA-a3o.label" = "应用程序设置";
 
 /* Class = "NSToolbarItem"; paletteLabel = "App Settings"; ObjectID = "it2-TA-a3o"; */
-"it2-TA-a3o.paletteLabel" = "App Settings";
+"it2-TA-a3o.paletteLabel" = "应用程序设置";
 
 /* Class = "NSMenuItem"; title = "Kern"; ObjectID = "jBQ-r6-VK2"; */
 "jBQ-r6-VK2.title" = "字距";
@@ -516,7 +516,7 @@
 "w0m-vy-SC9.title" = "连字";
 
 /* Class = "NSTextFieldCell"; title = "Visual Mode"; ObjectID = "w4M-OZ-zq9"; */
-"w4M-OZ-zq9.title" = "Visual Mode";
+"w4M-OZ-zq9.title" = "视觉模式";
 
 /* Class = "NSMenuItem"; title = "Align Right"; ObjectID = "wb2-vD-lq4"; */
 "wb2-vD-lq4.title" = "对齐";
@@ -528,7 +528,7 @@
 "x3v-GG-iWU.title" = "复制";
 
 /* Class = "NSButtonCell"; title = "Load at startup as a normal plist editor"; ObjectID = "x59-kK-iWF"; */
-"x59-kK-iWF.title" = "Load at startup as a normal plist editor";
+"x59-kK-iWF.title" = "启动时作为普通plist编辑器模式加载";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "xPa-T4-3mJ"; */
 "xPa-T4-3mJ.title" = "保存";

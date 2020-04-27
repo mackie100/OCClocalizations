@@ -595,10 +595,10 @@
 "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "此配置包含一个或多个官方OpenCore通常不使用的属性。是否要以NDK分支版本模式打开此配置？";
 
 /* outlinemodeController */
-"If you continue, all unknown keys will be lost" = "If you continue, all unknown keys will be lost";
+"If you continue, all unknown keys will be lost" = "如果继续，所有未知键值将丢失！";
 
 /* textmodeController */
-"Syncronize" = "Syncronize";
+"Syncronize" = "同步";
 
 /* textmodeController */
-"Syncronize Outline Mode" = "Syncronize Outline Mode";
+"Syncronize Outline Mode" = "同步树形编辑器模式";
