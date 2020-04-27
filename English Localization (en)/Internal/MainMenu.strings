@@ -515,6 +515,9 @@
 /* Class = "NSMenu"; title = "Ligatures"; ObjectID = "w0m-vy-SC9"; */
 "w0m-vy-SC9.title" = "Ligatures";
 
+/* Class = "NSTextFieldCell"; title = "Visual Mode"; ObjectID = "w4M-OZ-zq9"; */
+"w4M-OZ-zq9.title" = "Visual Mode";
+
 /* Class = "NSMenuItem"; title = "Align Right"; ObjectID = "wb2-vD-lq4"; */
 "wb2-vD-lq4.title" = "Align Right";
 
@@ -523,6 +526,9 @@
 
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
 "x3v-GG-iWU.title" = "Copy";
+
+/* Class = "NSButtonCell"; title = "Load at startup as a normal plist editor"; ObjectID = "x59-kK-iWF"; */
+"x59-kK-iWF.title" = "Load at startup as a normal plist editor";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "xPa-T4-3mJ"; */
 "xPa-T4-3mJ.title" = "Save";
