@@ -523,6 +523,9 @@
 "Paste" = "Paste";
 
 /* outlineMode */
+"Delete" = "Delete";
+
+/* outlineMode */
 "Value Type" = "Value Type";
 
 /* outlineMode */
