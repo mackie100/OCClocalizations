@@ -528,7 +528,7 @@
 "x3v-GG-iWU.title" = "复制";
 
 /* Class = "NSButtonCell"; title = "Load at startup as a normal plist editor"; ObjectID = "x59-kK-iWF"; */
-"x59-kK-iWF.title" = "启动时作为普通plist编辑器模式加载";
+"x59-kK-iWF.title" = "启动时作为独立plist编辑器模式运行";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "xPa-T4-3mJ"; */
 "xPa-T4-3mJ.title" = "保存";
