@@ -33,7 +33,7 @@
 "FLp-3q-DSv.headerCell.title" = "Activer";
 
 /* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "HdU-pu-zKX"; */
-"HdU-pu-zKX.title" = "EnableForAll";
+"HdU-pu-zKX.title" = "Activer pour tous";
 
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "JFF-S2-t99"; */
 "JFF-S2-t99.headerCell.title" = "Remplacer le masque";

@@ -1,9 +1,9 @@
 
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
-"11s-5L-eLA.label" = "Bootloader Settings";
+"11s-5L-eLA.label" = "Paramètres du chargeur de démarrage";
 
 /* Class = "NSToolbarItem"; paletteLabel = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
-"11s-5L-eLA.paletteLabel" = "Bootloader Settings";
+"11s-5L-eLA.paletteLabel" = "Paramètres du chargeur de démarrage";
 
 /* Class = "NSMenuItem"; title = "Boot.log"; ObjectID = "1OT-QB-Wyo"; */
 "1OT-QB-Wyo.title" = "Boot.log";
@@ -249,7 +249,7 @@
 "R4o-n2-Eq4.title" = "Zoom";
 
 /* Class = "NSTextFieldCell"; title = "Fork"; ObjectID = "R79-If-kEu"; */
-"R79-If-kEu.title" = "Fork";
+"R79-If-kEu.title" = "Fourchette";
 
 /* Class = "NSMenuItem"; title = "\tRight to Left"; ObjectID = "RB4-Sm-HuC"; */
 "RB4-Sm-HuC.title" = "\tDe droite à gauche";
@@ -387,10 +387,10 @@
 "ijk-EB-dga.title" = "Référence";
 
 /* Class = "NSToolbarItem"; label = "App Settings"; ObjectID = "it2-TA-a3o"; */
-"it2-TA-a3o.label" = "App Settings";
+"it2-TA-a3o.label" = "Paramètre d'application";
 
 /* Class = "NSToolbarItem"; paletteLabel = "App Settings"; ObjectID = "it2-TA-a3o"; */
-"it2-TA-a3o.paletteLabel" = "App Settings";
+"it2-TA-a3o.paletteLabel" = "Paramètre d'application";
 
 /* Class = "NSMenuItem"; title = "Kern"; ObjectID = "jBQ-r6-VK2"; */
 "jBQ-r6-VK2.title" = "Crénage";
@@ -516,7 +516,7 @@
 "w0m-vy-SC9.title" = "Liaisons";
 
 /* Class = "NSTextFieldCell"; title = "Visual Mode"; ObjectID = "w4M-OZ-zq9"; */
-"w4M-OZ-zq9.title" = "Visual Mode";
+"w4M-OZ-zq9.title" = "Mode visuel";
 
 /* Class = "NSMenuItem"; title = "Align Right"; ObjectID = "wb2-vD-lq4"; */
 "wb2-vD-lq4.title" = "Aligné";
@@ -528,7 +528,7 @@
 "x3v-GG-iWU.title" = "Copier";
 
 /* Class = "NSButtonCell"; title = "Load at startup as a normal plist editor"; ObjectID = "x59-kK-iWF"; */
-"x59-kK-iWF.title" = "Load at startup as a normal plist editor";
+"x59-kK-iWF.title" = "Charger au démarrage en tant qu'éditeur plist normal";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "xPa-T4-3mJ"; */
 "xPa-T4-3mJ.title" = "Enregistrer";

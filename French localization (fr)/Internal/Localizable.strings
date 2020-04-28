@@ -568,37 +568,37 @@
 "ProtocolOverrides" = "ProtocolOverrides";
 
 /* preferencesPanel */
-"Official" = "Official";
+"Official" = "Officiel";
 
 /* preferencesPanel */
 "NDK" = "NDK";
 
 /* preferencesPanel */
-"App Settings" = "App Settings";
+"App Settings" = "Paramètres de l'application";
 
 /* preferencesPanel */
-"OpenCore Settings" = "OpenCore Settings";
+"OpenCore Settings" = "Paramètres OpenCore";
 
 /* titleBar */
-"Release Configuration" = "%1$@ Release Configuration";
+"Release Configuration" = "%1$@ Configuration de la version";
 
 /* titleBar */
-"Development Configuration" = "%1$@ Development Configuration";
+"Development Configuration" = "%1$@ Configuration de développement";
 
 /* titleBar */
-"for Official OpenCore" = "for Official OpenCore";
+"for Official OpenCore" = "pour OpenCore officiel";
 
 /* titleBar */
-"for NDK OpenCore" = "for NDK OpenCore";
+"for NDK OpenCore" = "pour NDK OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "Cette configuration contient une ou plusieurs propriétés que Official OpenCore n'utilise généralement pas. Voulez-vous ouvrir cette configuration en mode NDK?";
 
 /* outlinemodeController */
-"If you continue, all unknown keys will be lost" = "If you continue, all unknown keys will be lost";
+"If you continue, all unknown keys will be lost" = "Si vous continuez, toutes les clés inconnues seront perdues";
 
 /* textmodeController */
-"Syncronize" = "Syncronize";
+"Syncronize" = "Syncroniser";
 
 /* textmodeController */
-"Syncronize Outline Mode" = "Syncronize Outline Mode";
+"Syncronize Outline Mode" = "Synchroniser le mode plan";
