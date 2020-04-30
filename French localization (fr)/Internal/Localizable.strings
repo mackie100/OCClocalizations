@@ -597,6 +597,12 @@
 /* reading_savingOperation */
 "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "Cette configuration contient une ou plusieurs propriétés que Official OpenCore n'utilise généralement pas. Voulez-vous ouvrir cette configuration en mode NDK?";
 
+/* reading_savingOperation */
+"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?";
+
+/* reading_savingOperation */
+"For changes to take effect, this app will be relaunched" = "For changes to take effect, this app will be relaunched";
+
 /* outlinemodeController */
 "If you continue, all unknown keys will be lost" = "Si vous continuez, toutes les clés inconnues seront perdues";
 
