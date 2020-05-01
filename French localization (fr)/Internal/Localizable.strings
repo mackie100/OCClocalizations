@@ -347,6 +347,12 @@
 /* mainMenu */
 "To apply this change, you must restart the app" = "Pour appliquer cette modification, vous devez redémarrer l'application";
 
+/* mainMenu */
+"Do you also want to change fork type?" = "Do you also want to change fork type?";
+
+/* mainMenu */
+"Do you also want to change configuration properties type?" = "Do you also want to change configuration properties type?";
+
 /* sidebarMenu */
 "UEFI" = "UEFI - Paramètres UEFI";
 
