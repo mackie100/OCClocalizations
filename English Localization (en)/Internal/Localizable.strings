@@ -1,5 +1,5 @@
 /* mountefiController */
-"%@ APFS Container [%@]" = "%1$@ Conteneur APFS [%2$@]";
+"%@ APFS Container [%@]" = "%1$@ APFS Container [%2$@]";
 
 /* mountefiController */
 "%lu partitions" = "%lu partitions";
@@ -11,248 +11,248 @@
 "B/s" = "B/s";
 
 /* startScreen */
-"Backup Configurations" = "Sauvegarde de configuration";
+"Backup Configurations" = "Backup Configurations";
 
 /* sectionSourceListHexConverterPopover */
-"base64 string" = "Chaîne base64";
+"base64 string" = "base64 string";
 
 /* sidebarMenu */
-"Booter" = "Booter - Paramètres de BOOT";
+"Booter" = "Booter";
 
-/* opencoreDownloaderController */
-"Cancel" = "Annuler";
+/* opencoreDownloaderController outlinemodeController */
+"Cancel" = "Cancel";
 
 /* mountefiController */
-"Capacity In Use:" = "Capacité utilisée:";
+"Capacity In Use:" = "Capacity In Use:";
 
 /* kextsInstallerController */
-"Check" = "Vérifier";
+"Check" = "Check";
 
 /* mountefiController */
-"Check Partition" = "Vérifier Partition";
+"Check Partition" = "Check Partition";
 
 /* startScreen */
-"Configurations Acquired" = "Configuration acquise";
+"Configurations Acquired" = "Configurations Acquired";
 
 /* pasteBoardController */
-"Copy" = "Copier";
+"Copy" = "Copy";
 
 /* AFNetworking */
-"Could not decode string: %@" = "Impossible de décoder la chaîne: %@";
+"Could not decode string: %@" = "Could not decode string: %@";
 
 /* pasteBoardController */
-"Cut" = "Couper";
+"Cut" = "Cut";
 
 /* AFNetworking */
-"Data failed decoding as a UTF-8 string" = "Échec du décodage des données de la chaîne UTF-8";
+"Data failed decoding as a UTF-8 string" = "Data failed decoding as a UTF-8 string";
 
 /* No comment provided by engineer. */
-"Day" = "Jour";
+"Day" = "Day";
 
 /* No comment provided by engineer. */
-"Days" = "Jours";
+"Days" = "Days";
 
 /* sectionSourceListHexConverterPopover */
-"decimal string" = "Chaîne décimale";
+"decimal string" = "decimal string";
 
 /* kextsInstallerController */
-"Delete: %@ successfully removed" = "Suppression: %@ a été supprimé avec succès";
+"Delete: %@ successfully removed" = "Delete: %@ successfully removed";
 
 /* installDriversController */
-"Delete: %@.efi successfully removed" = "Suppression: %@.efi a été supprimé avec succès";
+"Delete: %@.efi successfully removed" = "Delete: %@.efi successfully removed";
 
 /* mountefiController */
-"Device BSD Name:" = "Nom de l'appareil BSD:";
+"Device BSD Name:" = "Device BSD Name:";
 
 /* mountefiController */
-"Device BSD Name: %@" = "Nom de l'appareil BSD: %@";
+"Device BSD Name: %@" = "Device BSD Name: %@";
 
 /* mountefiController */
-"Device BSD Name: N/A" = "Nom de l'appareil BSD: N/A";
+"Device BSD Name: N/A" = "Device BSD Name: N/A";
 
 /* mountefiController */
-"Device Identifier: %@ - APFS Physical Store Disk: %@ - UUID: %@ - Size: %@" = "Noeud d'appareil BSD: %1$@ - Disque du conteneur APFS: %2$@ - UUID: %3$@ - Capacité: %4$@";
+"Device Identifier: %@ - APFS Physical Store Disk: %@ - UUID: %@ - Size: %@" = "Device Identifier: %1$@ - APFS Physical Store Disk: %2$@ - UUID: %3$@ - Size: %4$@";
 
 /* mountefiController */
-"Device Identifier: %@ - Partition Scheme: %@ - Size: %@" = "Noeud d'appareil BSD: %1$@ - Table de partition: %2$@ - Capacité: %3$@";
+"Device Identifier: %@ - Partition Scheme: %@ - Size: %@" = "Device Identifier: %1$@ - Partition Scheme: %2$@ - Size: %3$@";
 
 /* sidebarMenu */
-"DeviceProperties" = "DeviceProperties - Propriétés de l'appareil";
+"DeviceProperties" = "DeviceProperties";
 
 /* mountefiController */
-"Devices / Media Name:" = "Nom du média:";
+"Devices / Media Name:" = "Devices / Media Name:";
 
 /* mountefiController */
-"Devices / Media Name: %@" = "Nom du média: %@";
+"Devices / Media Name: %@" = "Devices / Media Name: %@";
 
 /* mountefiController */
-"Disk Identifier:" = "Identifiant du disque:";
+"Disk Identifier:" = "Disk Identifier:";
 
 /* mountefiController */
-"Disk Identifier: %@ Status: [Current Boot Disk]" = "Identifiant du disque: %@ État: [Disque de démarrage actuel]";
+"Disk Identifier: %@ Status: [Current Boot Disk]" = "Disk Identifier: %@ Status: [Current Boot Disk]";
 
 /* mountefiController */
-"Disk Type:" = "Type de disque:";
+"Disk Type:" = "Disk Type:";
 
 /* mountefiController */
-"Disk Type: %@" = "Type de disque: %@";
+"Disk Type: %@" = "Disk Type: %@";
 
 /* mountefiController */
-"Disk Type: APFS Container" = "Type de disque: conteneur APFS";
+"Disk Type: APFS Container" = "Disk Type: APFS Container";
 
 /* mountefiController */
-"Disk Type: APFS Volume" = "Type de disque: Volume APFS";
+"Disk Type: APFS Volume" = "Disk Type: APFS Volume";
 
 /* mountefiController */
-"Disk Type: Apple HFS+" = "Type de disque: Apple HFS+";
+"Disk Type: Apple HFS+" = "Disk Type: Apple HFS+";
 
 /* mountefiController */
-"Disk Type: N/A" = "Type de disque: inconnu";
+"Disk Type: N/A" = "Disk Type: N/A";
 
 /* mountefiController */
-"Disk Type: SoftRAID Cache" = "Type de disque: SoftRAID Cache";
+"Disk Type: SoftRAID Cache" = "Disk Type: SoftRAID Cache";
 
 /* mountefiController */
-"Disk Type: SoftRAID Scratch" = "Type de disque: SoftRAID Scratch";
+"Disk Type: SoftRAID Scratch" = "Disk Type: SoftRAID Scratch";
 
 /* mountefiController */
-"Disk Type: SoftRAID Status" = "Type de disque: SoftRAID Status";
+"Disk Type: SoftRAID Status" = "Disk Type: SoftRAID Status";
 
 /* mountefiController */
-"Disk Type: SoftRAID Volume" = "Type de disque: SoftRAID Volume";
+"Disk Type: SoftRAID Volume" = "Disk Type: SoftRAID Volume";
 
 /* mountefiController */
-"Disk UUID:" = "Disque UUID:";
+"Disk UUID:" = "Disk UUID:";
 
 /* mountefiController */
-"Disk UUID: %@" = "Disque UUID: %@";
+"Disk UUID: %@" = "Disk UUID: %@";
 
 /* mountefiController */
-"Disk UUID: N/A" = "Disque UUID: N/A";
+"Disk UUID: N/A" = "Disk UUID: N/A";
 
 /* installDriversController
    kextsInstallerController
    opencoreDownloaderController */
-"Download" = "Télécharger";
+"Download" = "Download";
 
 /* installDriversController
    kextsInstallerController */
-"Download: %@ has been successfully copied to %@" = "Téléchargement: %1$@ copié avec succès vers %2$@";
+"Download: %@ has been successfully copied to %@" = "Download: %1$@ has been successfully copied to %2$@";
 
 /* installDriversController
    kextsInstallerController */
-"Download: %@ has been successfully updated to %@" = "Téléchargement: %1$@ mise à jour réussie vers %2$@";
+"Download: %@ has been successfully updated to %@" = "Download: %1$@ has been successfully updated to %2$@";
 
 /* kextsInstallerController */
-"Download: %@ successfully backed up to %@" = "Téléchargement: %1$@ sauvegardé avec succès vers %2$@";
+"Download: %@ successfully backed up to %@" = "Download: %1$@ successfully backed up to %2$@";
 
 /* installDriversController
    kextsInstallerController */
-"Download: %@ successfully downloaded...." = "Téléchargement: %@ télécharger avec succès....";
+"Download: %@ successfully downloaded...." = "Download: %@ successfully downloaded....";
 
 /* installDriversController
    kextsInstallerController */
-"Download: Error: %@" = "Téléchargement: Erreur: %@";
+"Download: Error: %@" = "Download: Error: %@";
 
 /* kextsInstallerController */
-"Download: ERROR: %@" = "Téléchargement: ERREUR: %@";
+"Download: ERROR: %@" = "Download: ERROR: %@";
 
 /* installDriversController
    kextsInstallerController */
-"Download: ERROR: You don't have permission to write here!" = "Téléchargement: ERREUR: Vous n'avez pas la permission d'écrire ici!";
+"Download: ERROR: You don't have permission to write here!" = "Download: ERROR: You don't have permission to write here!";
 
 /* installDriversController
    kextsInstallerController */
-"Download: Path doesn't exist!" = "Téléchargement: le chemin n'existe pas!";
+"Download: Path doesn't exist!" = "Download: Path doesn't exist!";
 
 /* installDriversController */
-"Download: Please select a driver name!" = "Téléchargement：Veuillez choisir un nom de pilote!";
+"Download: Please select a driver name!" = "Download: Please select a driver name!";
 
 /* installToolsController */
-"Download: Please select a tool name!" = "Téléchargement: Veuillez sélectionner un nom d'outil!";
+"Download: Please select a tool name!" = "Download: Please select a tool name!";
 
 /* kextsInstallerController */
-"Download: Please select a kext name!" = "Téléchargement：Veuillez choisir un nom kext!";
+"Download: Please select a kext name!" = "Download: Please select a kext name!";
 
 /* opencoreDownloaderController */
-"Downloading %@" = "Téléchargement %@";
+"Downloading %@" = "Downloading %@";
 
 /* reading_savingOperation */
-"Error" = "Erreur";
+"Error" = "Error";
 
 /* opencoreDownloaderController */
-"Error during unzipping file!" = "Une erreur s'est produite lors de la décompression du fichier!";
+"Error during unzipping file!" = "Error during unzipping file!";
 
 /* opencoreDownloaderController */
-"Error: %@" = "Erreur: %@";
+"Error: %@" = "Error: %@";
 
 /* kextsInstallerController */
-"FakeSMC detected... Choose an add on to install..." = "FakeSMC détecté ... Choisissez un module complémentaire à installer ...";
+"FakeSMC detected... Choose an add on to install..." = "FakeSMC detected... Choose an add on to install...";
 
 /* No comment provided by engineer. */
 "GB/s" = "GB/s";
 
 /* sectionSourceListHexConverterPopover */
-"HEX converter" = "Convertisseur Hexadécimal";
+"HEX Converter" = "HEX Converter";
 
 /* sectionSourceListHexConverterPopover */
-"HEX string" = "Chaîne Hexadécimale";
+"HEX string" = "HEX string";
 
 /* No comment provided by engineer. */
-"Hour" = "Heure";
+"Hour" = "Hour";
 
 /* No comment provided by engineer. */
-"Hours" = "Heures";
+"Hours" = "Hours";
 
 /* openPanelConfigConverterTool */
-"Import a Clover config file for conversion" = "Importer un fichier de configuration Clover pour la conversion";
+"Import a Clover config file for conversion" = "Import a Clover config file for conversion";
 
 /* installDriversController
    kextsInstallerController
    opencoreDownloaderController */
-"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "Initialisation: impossible de lire la base de données. Impossible de trouver le serveur ou pas de connexion Internet.";
+"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "Initialization: Unable to read database. Cannot find server or there's no internet connection.";
 
 /* bdmesgController */
-"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "Rien à lire ici! Essayer de configurer \"Target\", clé dans la section Divers->Déboguer";
+"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "Nothing to read here! Try to configure \"Target\" key in Misc->Debug section";
 
 /* sectionSourceListHexConverterPopover */
-"Invalid base64 data" = "Données base64 non valides";
+"Invalid base64 data" = "Invalid base64 data";
 
 /* sectionSourceListHexConverterPopover */
-"Invalid data" = "Données invalides";
+"Invalid data" = "Invalid data";
 
 /* sectionSourceListHexConverterPopover */
-"Invalid HEX data" = "Données Hexadécimales invalides";
+"Invalid HEX data" = "Invalid HEX data";
 
 /* No comment provided by engineer. */
 "KB/s" = "KB/s";
 
 /* sidebarMenu */
-"Kernel" = "Kernel - Noyeau";
+"Kernel" = "Kernel";
 
 /* left_toolbar */
-"Load Configuration" = "Charger la configuration";
+"Load Configuration" = "Load Configuration";
 
 /* kextsInstallerController */
-"Manual Installation: %@ has been successfully copied to %@" = "Installation manuelle %1$@ a été copié avec succès dans %2$@";
+"Manual Installation: %@ has been successfully copied to %@" = "Manual Installation: %1$@ has been successfully copied to %2$@";
 
 /* kextsInstallerController */
-"Manual Installation: %@ has been successfully updated to %@" = "Installation manuelle: %1$@ a été mis à jour avec succès dans %2$@";
+"Manual Installation: %@ has been successfully updated to %@" = "Manual Installation: %1$@ has been successfully updated to %2$@";
 
 /* kextsInstallerController */
-"Manual Installation: %@ successfully backed up to %@" = "Installation manuelle: %1$@ sauvegardé avec succès dans %2$@";
+"Manual Installation: %@ successfully backed up to %@" = "Manual Installation: %1$@ successfully backed up to %2$@";
 
 /* kextsInstallerController */
-"Manual Installation: ERROR: %@" = "Installation manuelle :ERREUR: %@";
+"Manual Installation: ERROR: %@" = "Manual Installation: ERROR: %@";
 
 /* kextsInstallerController */
-"Manual Installation: ERROR: You don't have permission to write here!" = "Installation manuelle: ERREUR: Vous n'avez pas la permission d'écrire ici!";
+"Manual Installation: ERROR: You don't have permission to write here!" = "Manual Installation: ERROR: You don't have permission to write here!";
 
 /* kextsInstallerController */
-"Manual Installation: Kext file required!" = "Installation manuelle：fichier kext requis!";
+"Manual Installation: Kext file required!" = "Manual Installation: Kext file required!";
 
 /* kextsInstallerController */
-"Manual Installation: Path doesn't exist!" = "Installation manuelle：Le chemin n'existe pas！";
+"Manual Installation: Path doesn't exist!" = "Manual Installation: Path doesn't exist!";
 
 /* No comment provided by engineer. */
 "MB/s" = "MB/s";
@@ -264,338 +264,344 @@
 "Minutes" = "Minutes";
 
 /* sidebarMenu */
-"Misc" = "MISC - Divers";
+"Misc" = "Misc";
 
 /* mountefiController */
-"Mount Point:" = "Point de montage:";
+"Mount Point:" = "Mount Point:";
 
 /* mountefiController */
-"Mount Point: %@" = "Point de montage: %@";
+"Mount Point: %@" = "Mount Point: %@";
 
 /* mountefiController */
-"Mount Point: N/A" = "Point de montage: Inconnu";
+"Mount Point: N/A" = "Mount Point: N/A";
 
 /* opencoreDownloaderController */
-"No EFI folder found. Creating one...." = "Impossible de trouver la partition EFI montée. Créez-en un ...";
+"No EFI folder found. Creating one...." = "No EFI folder found. Creating one....";
 
 /* sidebarMenu */
 "NVRAM" = "NVRAM";
 
 /* opencoreDownloaderController */
-"Old file has been renamed to BOOTx64_%@.efi.bak" = "L'ancien fichier a été renommé BOOTx64_%@.efi.bak";
+"Old file has been renamed to BOOTx64_%@.efi.bak" = "Old file has been renamed to BOOTx64_%@.efi.bak";
 
 /* opencoreDownloaderController */
-"Old file has been renamed to OpenCore_%@.efi.bak" = "L'ancien fichier a été renommé OpenCoree_%@.efi.bak";
+"Old file has been renamed to OpenCore_%@.efi.bak" = "Old file has been renamed to OpenCore_%@.efi.bak";
 
 /* reading_savingOperation */
-"OpenCore Configurator could not be synchronized because an error occurred: %@" = "Le configurateur OpenCore n'a pas pu se synchroniser en raison d'une erreur: %@";
+"OpenCore Configurator could not be synchronized because an error occurred: %@" = "OpenCore Configurator could not be synchronized because an error occurred: %@";
 
 /* pasteBoardController */
-"Paste" = "Coller";
+"Paste" = "Paste";
 
 /* left_toolbar */
-"Paypal - Free Donation" = "Donation libre Paypal";
+"Paypal - Free Donation" = "Paypal - Free Donation";
 
 /* sidebarMenu */
-"PlatformInfo" = "PlatformInfo - Informations sur la plateforme";
+"PlatformInfo" = "PlatformInfo";
 
 /* reading_savingOperation */
-"Repair" = "Réparer";
+"Repair" = "Repair";
 
 /* mainMenu */
-"Restart" = "Redémarrer";
+"Restart" = "Restart";
 
 /* left_toolbar */
-"Save" = "Enregistrer";
+"Save" = "Save";
 
 /* left_toolbar */
-"Save As..." = "Enregistrer vers...";
+"Save As..." = "Save As...";
 
 /* left_toolbar */
-"Save, Save As Configuration" = "Enregistrer, enregistrer la configuration sous ";
+"Save, Save As Configuration" = "Save, Save As Configuration";
 
 /* No comment provided by engineer. */
-"Second" = "Seconde";
+"Second" = "Second";
 
 /* No comment provided by engineer. */
-"Seconds" = "Secondes";
+"Seconds" = "Seconds";
 
 /* left_toolbar */
-"Share" = "Partager";
+"Share" = "Share";
 
 /* kextsInstallerController */
-"Show Location: Path doesn't exist!" = "Montrer l'emplacement: le chemin n'existe pas!";
+"Show Location: Path doesn't exist!" = "Show Location: Path doesn't exist!";
 
 /* mountefiController */
-"Size:" = "Capacité:";
+"Size:" = "Size:";
 
 /* kextsInstallerController */
-"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "Quelques infos pour: %1$@.kext =>Identifiant: %2$@ | Version: %3$@%4$@";
+"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "Some info for %1$@.kext =>Identifier: %2$@ | Version: %3$@%4$@";
 
 /* rtvariablesController */
-"Sorry to generate a valid ROM, you need unique UUID in SystemParameters->Custom UUID (copy from system or generate one) or go in SMBIOS->Smuuid and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "Désolé, pour générer une ROM valide, vous avez besoin de l'UUID unique dans Paramètres Système -> UUID personnalisé (copier depuis le système ou en générer un) ou aller dans SMBIOS-> Smuuid et ajouter un UUID valide dans le format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
+"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
 
 /* mountefiController */
 "Status:" = "Status:";
 
 /* reading_savingOperation */
-"Synchronized" = "Synchronisé";
+"Synchronized" = "Synchronized";
 
 /* sectionSourceListHexConverterPopover */
-"text string" = "Chaîne de texte";
+"text string" = "text string";
 
 /* mainMenu */
-"To apply this change, you must restart the app" = "Pour appliquer cette modification, vous devez redémarrer l'application";
+"To apply this change, you must restart the app" = "To apply this change, you must restart the app";
+
+/* mainMenu */
+"Do you also want to change fork type?" = "Do you also want to change fork type?";
+
+/* mainMenu */
+"Do you also want to change configuration properties type?" = "Do you also want to change configuration properties type?";
 
 /* sidebarMenu */
-"UEFI" = "UEFI - Paramètres UEFI";
+"UEFI" = "UEFI";
 
 /* installDriversController
    opencoreDownloaderController */
-"Unable to read database." = "Impossible de lire la base de données.";
+"Unable to read database." = "Unable to read database.";
 
 /* mountefiController */
-"Untitled" = "Sans titre";
+"Untitled" = "Untitled";
 
 /* opencoreDownloaderController */
-"Unzip process was aborted because I can't create a backup" = "Le processus de décompression a été abandonné car je ne peux pas créer de sauvegarde";
+"Unzip process was aborted because I can't create a backup" = "Unzip process was aborted because I can't create a backup";
 
 /* kextsInstallerController */
-"Unzip: Error during unzipping file!" = "Décompression: Erreur lors de la décompression du fichier!";
+"Unzip: Error during unzipping file!" = "Unzip: Error during unzipping file!";
 
 /* opencoreDownloaderController */
-"Unzipped..." = "Décompressé...";
+"Unzipped..." = "Unzipped...";
 
 /* kextsInstallerController */
-"Update available for %@.kext => Local version: %@ | Remote version: %@" = "Mise à jour disponible pour %1$@.kext => version locale: %2$@ | version distante: %3$@";
+"Update available for %@.kext => Local version: %@ | Remote version: %@" = "Update available for %1$@.kext =>Local version: %2$@ | Remote version: %3$@";
 
 /* kextsInstallerController */
-"VirtualSMC detected... Choose an add on to install..." = "VirtualSMC détecté ...Sélectionnez l'installation à ajouter...";
+"VirtualSMC detected... Choose an add on to install..." = "VirtualSMC detected... Choose an add on to install...";
 
 /* mountefiController */
-"Volume Identifier:" = "Identifiant du volume:";
+"Volume Identifier:" = "Volume Identifier:";
 
 /* mountefiController */
-"Volume Identifier: %@" = "Identifiant du volume: %@";
+"Volume Identifier: %@" = "Volume Identifier: %@";
 
 /* mountefiController */
-"Volume Identifier: %@ Status: [Current Boot Disk]" = "Identifiant du volume: %@ Status: [Disque de démarrage actuel]";
+"Volume Identifier: %@ Status: [Current Boot Disk]" = "Volume Identifier: %@ Status: [Current Boot Disk]";
 
 /* mountefiController */
-"Volume Name:" = "Nom du volume:";
+"Volume Name:" = "Volume Name:";
 
 /* mountefiController */
-"Volume Name: %@" = "Nom du volume: %@";
+"Volume Name: %@" = "Volume Name: %@";
 
 /* mountefiController */
-"Volume UUID:" = "UUID du volume:";
+"Volume UUID:" = "Volume UUID:";
 
 /* mountefiController */
-"Volume UUID: %@" = "UUID du volume: %@";
+"Volume UUID: %@" = "Volume UUID: %@";
 
 /* mountefiController */
-"Volume UUID: N/A" = "UUID du volume: N/A";
+"Volume UUID: N/A" = "Volume UUID: N/A";
 
 /* opencoreDownloaderController */
-"You don't have permission to write here!" = "Vous n'avez pas la permission d'écrire ici!";
+"You don't have permission to write here!" = "You don't have permission to write here!";
 
 /* dockMenu */
-"New Configuration..." = "Nouvelle configuration...";
+"New Configuration..." = "New Configuration...";
 
 /* dockMenu */
-"Open Configuration..." = "Ouvrir configuration...";
+"Open Configuration..." = "Open Configuration...";
 
 /* dockMenu */
-"Leave A Message" = "Laisser un message";
+"Leave A Message" = "Leave A Message";
 
 /* installDriversController opencoreDownloaderController */
-"No EFI folder found.....\n" = "Aucune partition EFI trouvée!\n";
+"No EFI folder found.....\n" = "No EFI folder found.....\n";
 
 /* preferencesPanel */
-"Release Version" = "Version officielle";
+"Release Version" = "Release Version";
 
 /* preferencesPanel */
-"Development Version" = "Edition de développement";
+"Development Version" = "Development Version";
 
 /* deviceProperties_table_properties_menu */
-"Audio Device Properties" = "Propriétés du périphérique audio";
+"Audio Device Properties" = "Audio Device Properties";
 
 /* deviceProperties_table_properties_menu */
-"Video Device Properties" = "Propriétés du périphérique vidéo";
+"Video Device Properties" = "Video Device Properties";
 
 /* deviceProperties_table_properties_menu */
-"Advanced Properties" = "Propriétés avancées";
+"Advanced Properties" = "Advanced Properties";
 
 /* deviceProperties_table_properties_menu */
-"display number" = "Afficher le numéro";
+"display number" = "display number";
 
 /* deviceProperties_table_properties_menu */
-"Connections" = "Connexions";
+"Connections" = "Connections";
 
 /* deviceProperties_table_properties_menu */
-"connector index" = "Index d'interface";
+"connector index" = "connector index";
 
 /* deviceProperties_table_properties_menu */
-"Other" = "Autre";
+"Other" = "Other";
 
 /* deviceProperties_table_properties_menu */
-"Presets" = "Préconfigurations";
+"Presets" = "Presets";
 
 /* deviceProperties_table_properties_menu */
 "High Sierra" = "High Sierra";
 
 /* deviceProperties_table_properties_menu */
-"Mojave and above" = "Mojave ou supérieur";
+"Mojave and above" = "Mojave and above";
 
 /* deviceProperties_table_properties_menu */
-"Device Properties" = "Propriétés de l'appareil";
+"Device Properties" = "Device Properties";
 
 /* deviceProperties_table_properties_menu */
-"Help" = "Aide";
+"Help" = "Help";
 
 /* deviceProperties_table_properties_menu */
-"Select '%@' device before adding '%@' key" = "Sélectionnez le périphérique '%2$@' avant d'ajouter la clé '%1$@'";
+"Select '%@' device before adding '%@' key" = "Select '%1$@' device before adding '%2$@' key";
 
 /* deviceProperties_table_properties_menu */
-"Select a '%@' device before adding a preset" = "Sélectionnez le périphérique '%1$@' avant d'ajouter un préréglage";
+"Select a '%@' device before adding a preset" = "Select a '%1$@' device before adding a preset";
 
 /* deviceProperties_table_properties_menu */
-"Select a Platform ID before adding a preset" = "Sélectionnez l'ID de la plateforme avant d'ajouter un préréglage";
+"Select a Platform ID before adding a preset" = "Select a Platform ID before adding a preset";
 
 /* deviceProperties_table_properties_menu */
-"Select a valid device path" = "Choisissez un chemin de périphérique valide";
+"Select a valid device path" = "Select a valid device path";
 
 /* deviceProperties_table_properties_menu */
-"Product Name" = "Nom du produit";
+"Product Name" = "Product Name";
 
 /* deviceProperties_table_properties_menu */
-"CPU Codename" = "Architecture CPU";
+"CPU Codename" = "CPU Codename";
 
 /* deviceProperties_table_properties_menu */
-"Platform ID" = "ID de la plateforme";
+"Platform ID" = "Platform ID";
 
 /* deviceProperties_table_properties_menu */
-"Device ID" = "ID de l'appareil";
+"Device ID" = "Device ID";
 
 /* deviceProperties_table_properties_menu */
-"Device Name" = "Nom de l'appareil";
+"Device Name" = "Device Name";
 
 /* deviceProperties_table_properties_menu */
-"Available Device IDs" = "ID d'appareil disponible";
+"Available Device IDs" = "Available Device IDs";
 
 /* deviceProperties_table_properties_menu */
-"Available Models" = "Modèles disponibles";
+"Available Models" = "Available Models";
 
 /* nvram_add_properties_table */
-"Select a valid UUID" = "Choisissez un UUID valide";
+"Select a valid UUID" = "Select a valid UUID";
 
 /* compatibilityWarningScreen */
-"You seem to have an old version of OpenCore bootloader." = "Vous semblez avoir une ancienne version du chargeur de démarrage OpenCore.";
+"You seem to have an old version of OpenCore bootloader." = "You seem to have an old version of OpenCore bootloader.";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed or your NVRAM isn't native." = "Le chargeur de démarrage semble ne pas être installé ou votre NVRAM n'est pas native.";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "The bootloader looks like it is not installed or your NVRAM isn't native.";
 
 /* compatibilityWarningScreen */
-"2nd_message" = "Cette application crée un fichier de configuration pour %1$@ et versions supérieures.";
+"2nd_message" = "This app creates a configuration file for %1$@ and higher versions.";
 
 /* compatibilityWarningScreen */
-"Use at your own risk" = "Utilisez à vos risques et périls";
+"Use at your own risk" = "Use at your own risk";
 
 /* compatibilityWarningScreen */
-"(select 'Backup File Before Saving' in Preferences Pane)" = "(sélectionnez 'Sauvegarder le fichier avant l'enregistrement' dans le volet des préférences)";
+"(select 'Backup File Before Saving' in Preferences Pane)" = "(select 'Backup File Before Saving' in Preferences Pane)";
 
 /* advancedUser */
-"The key “%@” already exists in containing item." = "La clé “%@” existe déjà dans l'élément contenant.";
+"The key “%@” already exists in containing item." = "The key “%@” already exists in containing item.";
 
 /* advancedUser */
-"(%lu items)" = "(%lu articles)";
+"(%lu items)" = "(%lu items)";
 
 /* advancedUser */
-"Item %lu" = "Articles %lu";
+"Item %lu" = "Item %lu";
 
 /* outlineMode */
-"Cut" = "Couper";
+"Cut" = "Cut";
 
 /* outlineMode */
-"Copy" = "Copier";
+"Copy" = "Copy";
 
 /* outlineMode */
-"Paste" = "Coller";
+"Paste" = "Paste";
 
 /* outlineMode */
-"Delete" = "Effacer";
+"Delete" = "Delete";
 
 /* outlineMode */
-"Value Type" = "Type de valeur";
+"Value Type" = "Value Type";
 
 /* outlineMode */
-"Array" = "Tableau";
+"Array" = "Array";
 
 /* outlineMode */
-"Dictionary" = "dictionnaire";
+"Dictionary" = "Dictionary";
 
 /* outlineMode */
-"Boolean" = "Booléen";
+"Boolean" = "Boolean";
 
 /* outlineMode */
-"Data" = "Donnée";
+"Data" = "Data";
 
 /* outlineMode */
 "Date" = "Date";
 
 /* outlineMode */
-"Number" = "Nombre";
+"Number" = "Number";
 
 /* outlineMode */
-"String" = "Chaîne";
+"String" = "String";
 
 /* outlineMode */
-"Add Item" = "Ajouter un item";
+"Add Item" = "Add Item";
 
 /* miscController */
-"Please make sure to select a file from a boot efi path." = "Veuillez vous assurer de sélectionner un fichier à partir d'un chemin efi de démarrage.";
+"Please make sure to select a file from a boot efi path." = "Please make sure to select a file from a boot efi path.";
 
 /* miscController */
-"No efi boot path found." = "Aucun chemin de démarrage efi trouvé.";
+"No efi boot path found." = "No efi boot path found.";
 
 /* quicktoolsController */
-"%@ on Disk Identifier: %@" = "%1$@ sur l'identificateur de disque: %2$@";
+"%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";
 
 /* quicktoolsController */
-"Status: [%@]" = "Statut: [%@]";
+"Status: [%@]" = "Status: [%@]";
 
 /* quicktoolsController */
-"OpenCore Boot Partition" = "Partition de démarrage OpenCore";
+"OpenCore Boot Partition" = "OpenCore Boot Partition";
 
 /* uefiController */
 "ProtocolOverrides" = "ProtocolOverrides";
 
 /* preferencesPanel */
-"Official" = "Officiel";
+"Official" = "Official";
 
 /* preferencesPanel */
 "NDK" = "NDK";
 
 /* preferencesPanel */
-"App Settings" = "Paramètres de l'application";
+"App Settings" = "App Settings";
 
 /* preferencesPanel */
-"OpenCore Settings" = "Paramètres OpenCore";
+"OpenCore Settings" = "OpenCore Settings";
 
 /* titleBar */
-"Release Configuration" = "%1$@ Configuration de la version";
+"Release Configuration" = "%1$@ Release Configuration";
 
 /* titleBar */
-"Development Configuration" = "%1$@ Configuration de développement";
+"Development Configuration" = "%1$@ Development Configuration";
 
 /* titleBar */
-"for Official OpenCore" = "pour OpenCore officiel";
+"for Official OpenCore" = "for Official OpenCore";
 
 /* titleBar */
-"for NDK OpenCore" = "pour NDK OpenCore";
+"for NDK OpenCore" = "for NDK OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "Cette configuration contient une ou plusieurs propriétés que Official OpenCore n'utilise généralement pas. Voulez-vous ouvrir cette configuration en mode NDK?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?";
 
 /* reading_savingOperation */
 "This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?";
@@ -604,10 +610,10 @@
 "For changes to take effect, this app will be relaunched" = "For changes to take effect, this app will be relaunched";
 
 /* outlinemodeController */
-"If you continue, all unknown keys will be lost" = "Si vous continuez, toutes les clés inconnues seront perdues";
+"If you continue, all unknown keys will be lost" = "If you continue, all unknown keys will be lost";
 
 /* textmodeController */
-"Syncronize" = "Syncroniser";
+"Syncronize" = "Syncronize";
 
 /* textmodeController */
-"Syncronize Outline Mode" = "Synchroniser le mode plan";
+"Syncronize Outline Mode" = "Syncronize Outline Mode";
