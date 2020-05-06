@@ -129,7 +129,7 @@
 "ILy-av-YYi.ibShadowedToolTip" = "Reconstruisez l'icône de la pomme, sélectionnez généralement NON.";
 
 /* Class = "NSTabViewItem"; label = "Protocols"; ObjectID = "Ife-ug-MJ5"; */
-"Ife-ug-MJ5.label" = "Protocoles";
+"Ife-ug-MJ5.label" = "ProtocolOverrides";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version."; ObjectID = "JLv-Tn-pJQ"; */
 "JLv-Tn-pJQ.ibShadowedToolTip" = "Réinstallez le protocole Apple Debug Log avec une version intégrée.";

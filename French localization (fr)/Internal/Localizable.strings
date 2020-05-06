@@ -573,9 +573,6 @@
 /* quicktoolsController */
 "OpenCore Boot Partition" = "Partition de démarrage OpenCore";
 
-/* uefiController */
-"ProtocolOverrides" = "ProtocolOverrides";
-
 /* preferencesPanel */
 "Official" = "Officiel";
 
