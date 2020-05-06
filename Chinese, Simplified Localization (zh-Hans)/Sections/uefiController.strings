@@ -129,7 +129,7 @@
 "ILy-av-YYi.ibShadowedToolTip" = "重建apple图标，一般选择NO。";
 
 /* Class = "NSTabViewItem"; label = "Protocols"; ObjectID = "Ife-ug-MJ5"; */
-"Ife-ug-MJ5.label" = "协议";
+"Ife-ug-MJ5.label" = "协议覆盖";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version."; ObjectID = "JLv-Tn-pJQ"; */
 "JLv-Tn-pJQ.ibShadowedToolTip" = "重新安装具有内置版本的Apple Debug Log协议。";

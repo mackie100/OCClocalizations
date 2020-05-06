@@ -129,7 +129,7 @@
 "ILy-av-YYi.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Image Conversion protocol with a builtin version.";
 
 /* Class = "NSTabViewItem"; label = "Protocols"; ObjectID = "Ife-ug-MJ5"; */
-"Ife-ug-MJ5.label" = "Protocols";
+"Ife-ug-MJ5.label" = "ProtocolOverrides";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version."; ObjectID = "JLv-Tn-pJQ"; */
 "JLv-Tn-pJQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version.";

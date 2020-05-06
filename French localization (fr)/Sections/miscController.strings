@@ -77,6 +77,9 @@
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
 "E7L-MW-EuK.ibShadowedToolTip" = "Il est utilisé pour couvrir l'emplacement de Windows bootmgfw.efi afin d'identifier les éléments de démarrage Windows. Généralement, les fichiers de démarrage OpenCore et Windows sont utilisés sous la même partition ESP sur le même disque dur. Sauf si vous avez cette situation, nous n'avons pas besoin de remplir quoi que ce soit. \nPar exemple: chemin WINDOWS: \\ EFI \\ Microsoft \\ Boot \\ bootmgfw.efi";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi)."; ObjectID = "EQZ-0e-EuC"; */
+"EQZ-0e-EuC.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).";
+
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_ESP"; ObjectID = "Edm-Vw-KuX"; */
 "Edm-Vw-KuX.title" = "OC_SCAN_ALLOW_FS_ESP";
 
@@ -91,9 +94,6 @@
 
 /* Class = "NSButtonCell"; title = "Enable serial port logging"; ObjectID = "HjZ-gH-Q0b"; */
 "HjZ-gH-Q0b.title" = "Activer la journalisation du port série";
-
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used."; ObjectID = "I4v-gd-78g"; */
-"I4v-gd-78g.ibShadowedToolTip" = "Masquez votre propre option de disque de démarrage EFI, choisissez généralement OUI.";
 
 /* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
 "Jpe-QB-x2r.title" = "AllowNvramReset";
@@ -139,6 +139,9 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0x80000000 (DEBUG_ERROR)\nDescription: EDK II debug level bitmask (sum) causing CPU to halt (stop execution) after obtaining a message of HaltLevel. Possible values match DisplayLevel values."; ObjectID = "QbL-ID-H0a"; */
 "QbL-ID-H0a.ibShadowedToolTip" = "Reportez-vous au manuel OC!";
+
+/* Class = "NSButtonCell"; title = "BlacklistAppleUpdate"; ObjectID = "RvC-iy-QL7"; */
+"RvC-iy-QL7.title" = "BlacklistAppleUpdate";
 
 /* Class = "NSButtonCell"; title = "Expose OEM information as a set of UEFI variables."; ObjectID = "SLo-CJ-cas"; */
 "SLo-CJ-cas.title" = "Expose les informations OEM comme un ensemble de variables UEFI.";
@@ -284,9 +287,6 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker."; ObjectID = "rQF-20-vFl"; */
 "rQF-20-vFl.ibShadowedToolTip" = "Autorisez CTRL + Entrée ou CTRL + Index (numéro d'élément du menu de démarrage) pour définir l'option de démarrage par défaut suivante dans le menu de démarrage.";
 
-/* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "sTe-vF-jmH"; */
-"sTe-vF-jmH.title" = "Masquer soi-même";
-
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SDCARD"; ObjectID = "sti-pn-v4l"; */
 "sti-pn-v4l.title" = "OC_SCAN_ALLOW_DEVICE_SDCARD";
 
@@ -314,16 +314,22 @@
 /* Class = "NSTabViewItem"; label = "BlessOverride"; ObjectID = "uyb-X6-nFt"; */
 "uyb-X6-nFt.label" = "BlessOverride-Ajouter des éléments de démarrage Microsoft";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used."; ObjectID = "vN0-Ec-Ara"; */
+"vN0-Ec-Ara.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used.";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known modifier hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode."; ObjectID = "vvg-w7-KxC"; */
 "vvg-w7-KxC.ibShadowedToolTip" = "Indique s'il faut activer certaines fonctions de raccourci clavier, notamment Cmd + K; Cmd + S. \nRéglez sur YES pour autoriser l'utilisation des touches de raccourci natives d'Apple pendant le processus de démarrage, qui doit être combiné avec KeySupport = Yes ou UsbKbDxe.efi dans l'option Quirk, l'expérience spécifique dépend du micrologiciel de la carte mère. Combinaisons de touches de raccourci courantes: \nCmd + V: activer le mode de code d'exécution -v \nCmd + Opt + P + R: réinitialiser la NVRAM \nCmd + R: partition de récupération de démarrage \nCmd + S: démarrer en mode mono-utilisateur \nOption / ALT: affiche le menu de démarrage lorsque ShowPicker est défini sur NON. Utilisez la touche ESC à la place lorsque la touche ALT n'est pas disponible (appuyez sur la touche ESC). \nSi vous constatez que le clavier ne peut pas être sélectionné lorsque vous allumez l'ordinateur, sélectionnez NON et supprimez UsbKbDxe.efi sous OC / Drivers.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "wFf-6v-O3P"; */
 "wFf-6v-O3P.headerCell.title" = "Paramètres";
 
+/* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "wLx-ad-U2s"; */
+"wLx-ad-U2s.title" = "Hide Self";
+
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Hibernation detection mode. The following modes are supported:\n• None — Avoid hibernation for your own good.\n• Auto — Use RTC and NVRAM detection.\n• RTC — Use RTC detection.\n• NVRAM — Use NVRAM detection."; ObjectID = "wPi-6s-R0s"; */
 "wPi-6s-R0s.ibShadowedToolTip" = "Détecte le mode veille. Nos machines ne prennent généralement pas en charge l'hibernation, alors n'en sélectionnez aucune. Si votre carte mère prend en charge le nvram natif et que vous souhaitez tester l'hibernation, vous pouvez envisager de remplir auto. \nEn conjonction avec le mode d'hibernation du système, le démarrage du système restaurera l'état avant l'hibernation. Cela peut affecter la durée de vie du SSD. Il est recommandé de le fermer!";
 
-/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Attempt to provide bootloader persistence.\nValid values:\n• None — do nothing.\n• Bootstrap — create or update top-priority \\EFI\\OC\\Bootstrap\\Bootstrap.efi boot option (Boot9696) in UEFI variable storage at bootloader startup. For this option to work RequestBootVarRouting is required to be enabled.\nThis option provides integration with third-party operating system installation and upgrade at the times they overwrite \\EFI\\BOOT\\BOOTx64.efi file. By creating a custom option in Bootstrap mode this file path becomes no longer used for bootstraping OpenCore.\n\nNote 1: Some firmewares may have broken NVRAM, no boot option support, or various other incompatibilities of any kind. While unlikely, the use of this option may even cause boot failure. Use at your own risk on boards known to be compatible.\n\nNote 2: Be warned that NVRAM reset will also erase the boot option created in Bootstrap mode."; ObjectID = "xNT-zI-wd8"; */
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Attempt to provide bootloader persistence.\nValid values:\n• None — do nothing.\n• Bootstrap — create or update top-priority \\EFI\\OC\\Bootstrap\\Bootstrap.efi boot option (Boot9696) in UEFI variable storage at bootloader startup. For this option to work RequestBootVarRouting is required to be enabled.\nThis option provides integration with third-party operating system installation and upgrade at the times they overwrite \\EFI\\BOOT\\BOOTx64.efi file. By creating a custom option in Bootstrap mode this file path becomes no longer used for bootstraping OpenCore.\n\nNote 1: Some firmewares may have broken NVRAM, no boot option support, or various other incompatibilities of any kind. While unlikely, the use of this option may even cause boot failure. Use at your own risk on boards known to be compatible.\n\nNote 2: Be warned that while NVRAM reset executed from OpenCore should not erase the boot option created in Bootstrap, executing NVRAM reset prior to loading OpenCore will remove it."; ObjectID = "xNT-zI-wd8"; */
 "xNT-zI-wd8.ibShadowedToolTip" = "Type: chaîne de plist \nFailsafe: Aucun \nDescription: Tentative de fournir la persistance du chargeur de démarrage. \nValeurs valides: \n • Aucune - ne rien faire. \n • Bootstrap - créer ou mettre à jour la priorité absolue \\ EFI \\ OC \\ Bootstrap \ Option de démarrage \ Bootstrap.efi (Boot9696) dans le stockage variable UEFI au démarrage du chargeur de démarrage. Pour que cette option fonctionne, RequestBootVarRouting doit être activé. \nCette option permet une intégration avec l'installation et la mise à niveau d'un système d'exploitation tiers au moment où ils remplacent le fichier \\ EFI \\ BOOT \\ BOOTx64.efi. En créant une option personnalisée en mode Bootstrap, ce chemin de fichier n'est plus utilisé pour démarrer OpenCore. \n \nRemarque 1: Certains firmwares peuvent avoir cassé la NVRAM, aucune prise en charge des options de démarrage ou diverses autres incompatibilités de toute nature. Bien que peu probable, l'utilisation de cette option peut même entraîner l'échec du démarrage. Utilisez à vos risques et périls sur les cartes connues pour être compatibles. \n \nRemarque 2: soyez averti que la réinitialisation de la NVRAM effacera également l'option de démarrage créée en mode Bootstrap.";
 
 /* Class = "NSTextFieldCell"; title = "TakeoffDelay"; ObjectID = "yDl-hK-Eml"; */
