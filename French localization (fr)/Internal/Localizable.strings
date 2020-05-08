@@ -348,10 +348,10 @@
 "To apply this change, you must restart the app" = "Pour appliquer cette modification, vous devez redémarrer l'application";
 
 /* mainMenu */
-"Do you also want to change fork type?" = "Do you also want to change fork type?";
+"Do you also want to change fork type?" = "Voulez-vous également changer le type de fourche?";
 
 /* mainMenu */
-"Do you also want to change configuration properties type?" = "Do you also want to change configuration properties type?";
+"Do you also want to change configuration properties type?" = "Voulez-vous également modifier le type de propriétés de configuration?";
 
 /* sidebarMenu */
 "UEFI" = "UEFI - Paramètres UEFI";
@@ -601,10 +601,10 @@
 "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "Cette configuration contient une ou plusieurs propriétés que Official OpenCore n'utilise généralement pas. Voulez-vous ouvrir cette configuration en mode NDK?";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?";
+"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "Cette configuration contient des propriétés standard mais vous travaillez en mode NDK. Voulez-vous passer en mode officiel?";
 
 /* reading_savingOperation */
-"For changes to take effect, this app will be relaunched" = "For changes to take effect, this app will be relaunched";
+"For changes to take effect, this app will be relaunched" = "Pour que les modifications prennent effet, cette application sera relancée";
 
 /* outlinemodeController */
 "If you continue, all unknown keys will be lost" = "Si vous continuez, toutes les clés inconnues seront perdues";

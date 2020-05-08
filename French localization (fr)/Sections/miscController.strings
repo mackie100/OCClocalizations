@@ -78,7 +78,7 @@
 "E7L-MW-EuK.ibShadowedToolTip" = "Il est utilisé pour couvrir l'emplacement de Windows bootmgfw.efi afin d'identifier les éléments de démarrage Windows. Généralement, les fichiers de démarrage OpenCore et Windows sont utilisés sous la même partition ESP sur le même disque dur. Sauf si vous avez cette situation, nous n'avons pas besoin de remplir quoi que ce soit. \nPar exemple: chemin WINDOWS: \\ EFI \\ Microsoft \\ Boot \\ bootmgfw.efi";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi)."; ObjectID = "EQZ-0e-EuC"; */
-"EQZ-0e-EuC.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).";
+"EQZ-0e-EuC.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Ignorez les options de démarrage en essayant de mettre à jour le firmware du périphérique Apple (par exemple MultiUpdater.efi).";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_ESP"; ObjectID = "Edm-Vw-KuX"; */
 "Edm-Vw-KuX.title" = "OC_SCAN_ALLOW_FS_ESP";
