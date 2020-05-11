@@ -23,6 +23,9 @@
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "2dj-hB-QBF"; */
 "2dj-hB-QBF.title" = "Unselect All";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Save macOS kernel panic to OpenCore root partition.\nThe file is saved as panic-YYYY-MM-DD-HHMMSS.txt. It is strongly recommended to have keepsyms=1 boot argument to see debug symbols in the panic log. In case it was not present kpdescribe.sh utility (bundled with OpenCore) may be used to partially recover the stacktrace.\nDevelopment and debug kernels produce more helpful kernel panics. Consider downloading and installing\nKernelDebugKit from developer.apple.com when debugging a problem. To activate a development kernel you will need to add a kcsuffix=development boot argument. Use uname -a command to ensure that your current loaded kernel is a development (or a debug) kernel.\nIn case OpenCore kernel panic saving mechanism was not used, kernel panics may still be found in /Library/Logs/Diagnostic directory. Starting with macOS Catalina kernel panics are stored in JSON format, so they need to be preprocessedbefore passing to kpdescribe.sh: \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'"; ObjectID = "2lk-2r-hIW"; */
+"2lk-2r-hIW.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Save macOS kernel panic to OpenCore root partition.\nThe file is saved as panic-YYYY-MM-DD-HHMMSS.txt. It is strongly recommended to have keepsyms=1 boot argument to see debug symbols in the panic log. In case it was not present kpdescribe.sh utility (bundled with OpenCore) may be used to partially recover the stacktrace.\nDevelopment and debug kernels produce more helpful kernel panics. Consider downloading and installing\nKernelDebugKit from developer.apple.com when debugging a problem. To activate a development kernel you will need to add a kcsuffix=development boot argument. Use uname -a command to ensure that your current loaded kernel is a development (or a debug) kernel.\nIn case OpenCore kernel panic saving mechanism was not used, kernel panics may still be found in /Library/Logs/Diagnostic directory. Starting with macOS Catalina kernel panics are stored in JSON format, so they need to be preprocessedbefore passing to kpdescribe.sh: \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'";
+
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "3K9-EU-jse"; */
 "3K9-EU-jse.title" = "Select All";
 
@@ -340,6 +343,9 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Auxiliary"; ObjectID = "yTI-cV-qsU"; */
 "yTI-cV-qsU.headerCell.title" = "Auxiliary";
+
+/* Class = "NSButtonCell"; title = "ApplePanic"; ObjectID = "yaU-Lw-vco"; */
+"yaU-Lw-vco.title" = "ApplePanic";
 
 /* Class = "NSButtonCell"; title = "Expose printable booter path as an UEFI variable."; ObjectID = "z6D-gM-UDa"; */
 "z6D-gM-UDa.title" = "Expose printable booter path as an UEFI variable.";
