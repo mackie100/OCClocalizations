@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>url</key>
-			<string></string>
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/OS-Rename.plist</string>
 			<key>title</key>
 			<string>OS-Rename</string>
 		</dict>
