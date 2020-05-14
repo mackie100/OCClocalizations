@@ -614,3 +614,9 @@
 
 /* textmodeController */
 "Syncronize Outline Mode" = "Syncronize Outline Mode";
+
+/* importPatchesController */
+"Import set of patches" = "Import set of patches";
+
+/* importPatchesController */
+"Import set of kexts" = "Import set of kexts";
