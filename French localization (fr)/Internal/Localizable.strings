@@ -620,3 +620,9 @@
 
 /* importPatchesController */
 "Import set of kexts" = "Import set of kexts";
+
+/* importPatchesController */
+"Export set of patches" = "Export set of patches";
+
+/* importPatchesController */
+"Export set of kexts" = "Export set of kexts";
