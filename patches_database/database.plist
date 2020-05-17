@@ -30,7 +30,7 @@
 	<array>
 		<dict>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/I2C_Drivers_List.plist.plist</string>
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/I2C_Drivers_List.plist</string>
 			<key>title</key>
 			<string>I2C Drivers Preset List</string>
 		</dict>
