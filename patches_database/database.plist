@@ -8,9 +8,13 @@
 			<key>title</key>
 			<string>ACPI_6D_Renamed_patches</string>
 			<key>url</key>
+<<<<<<< HEAD
 			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/ACPI_6D_Renamed_patches.plist</string>
 		</dict>
 		<dict>
+=======
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_patches.plist</string>
+>>>>>>> 5e4f82cd0482060c5e7e4f7dbfd51493363f47ea
 			<key>title</key>
 			<string>APCI_0D_Renamed_patches</string>
 			<key>url</key>
@@ -32,9 +36,13 @@
 			<key>title</key>
 			<string>OS_patches</string>
 			<key>url</key>
+<<<<<<< HEAD
 			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_patches.plist</string>
 		</dict>
 		<dict>
+=======
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kernel/AMD_AM4_and_FX_series_Kernel_patches.plist</string>
+>>>>>>> 5e4f82cd0482060c5e7e4f7dbfd51493363f47ea
 			<key>title</key>
 			<string>OS_Renamed_patches</string>
 			<key>url</key>
@@ -71,9 +79,13 @@
 			<key>title</key>
 			<string>BCM WIFI Bluetooth Drivers</string>
 			<key>url</key>
+<<<<<<< HEAD
 			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/BCM_WIFI_Bluetooth_Drivers_Order_List.plist</string>
 		</dict>
 		<dict>
+=======
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/I2C_Drivers_List.plist</string>
+>>>>>>> 5e4f82cd0482060c5e7e4f7dbfd51493363f47ea
 			<key>title</key>
 			<string>I2C Drivers Preset List</string>
 			<key>url</key>
