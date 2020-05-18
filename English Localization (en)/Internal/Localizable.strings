@@ -626,3 +626,6 @@
 
 /* importPatchesController */
 "Export set of kexts" = "Export set of kexts";
+
+/* acpiController devicePropertiesController nvramController*/
+"Delete" = "Delete";
