@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_ patches.plist</string>
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_patches.plist</string>
 			<key>title</key>
 			<string>OS Renamed patches</string>
 		</dict>
@@ -21,7 +21,7 @@
 		</dict>
 		<dict>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kernel/AMD_AM4_and_FX_series_ Kernel_patches.plist</string>
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kernel/AMD_AM4_and_FX_series_Kernel_patches.plist</string>
 			<key>title</key>
 			<string>AMD AM4 and FX series Kernel patches</string>
 		</dict>
@@ -30,7 +30,7 @@
 	<array>
 		<dict>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/I2C_Drivers_List.plist.plist</string>
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/I2C_Drivers_List.plist</string>
 			<key>title</key>
 			<string>I2C Drivers Preset List</string>
 		</dict>
