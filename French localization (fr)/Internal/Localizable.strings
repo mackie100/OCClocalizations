@@ -627,5 +627,11 @@
 /* importPatchesController */
 "Export set of kexts" = "Export set of kexts";
 
+/* importPatchesController */
+"Add set of patches from database" = "Add set of patches from database";
+
+/* importPatchesController */
+"Add set of kexts from database" = "Add set of kexts from database";
+
 /* acpiController devicePropertiesController nvramController*/
 "Delete" = "Effacer";
