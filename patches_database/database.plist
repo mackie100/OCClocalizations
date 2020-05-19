@@ -8,55 +8,55 @@
 			<key>title</key>
 			<string>ACPI_6D_Renamed_patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/ACPI_6D_Renamed_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/ACPI_6D_Renamed_patches.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>APCI_0D_Renamed_patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/APCI_0D_Renamed_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/APCI_0D_Renamed_patches.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>Asrock_Z390_RTC_Patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Asrock_Z390_RTC_Patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Asrock_Z390_RTC_Patches.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>Brightness_hotkey_Renamed</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Brightness_hotkey_Renamed.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Brightness_hotkey_Renamed.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>OS_Renamed_patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_patches.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>PNLF_renamed_XNLF_For_Lenovo_laptop</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PNLF_renamed_XNLF_For_Lenovo_laptop.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PNLF_renamed_XNLF_For_Lenovo_laptop.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>PTSWAK_Renamed_patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PTSWAK_Renamed_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PTSWAK_Renamed_patches.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>S3_Renamed_XS3_for_Disable_S3_Sleep</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/S3_Renamed_XS3_for_Disable_S3_Sleep.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/S3_Renamed_XS3_for_Disable_S3_Sleep.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>Sleep_button_LID_Renamed_patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Sleep_button_LID_Renamed_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Sleep_button_LID_Renamed_patches.plist</string>
 		</dict>
 	</array>
 	<key>KEXT_Preset_List</key>
@@ -65,31 +65,31 @@
 			<key>title</key>
 			<string>BCM WIFI Bluetooth Drivers</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/BCM_WIFI_Bluetooth_Drivers_Order_List.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/Kext/BCM_WIFI_Bluetooth_Drivers_Order_List.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>I2C Drivers Preset List</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/I2C_Drivers_List.plist.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/Kext/I2C_Drivers_List.plist.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>Lilu-SMC-WEG-ALC-Drivers</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/Lilu-SMC-WEG-ALC-Drivers_Order_List.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/Kext/Lilu-SMC-WEG-ALC-Drivers_Order_List.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>PS2Keyboard Drivers</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/PS2Keyboard_Driver_Order_List.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/Kext/PS2Keyboard_Driver_Order_List.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>PS2SmartKeyboard Drivers</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kext/PS2SmartKeyboard_Drivers_Order_List.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/Kext/PS2SmartKeyboard_Drivers_Order_List.plist</string>
 		</dict>
 	</array>
 	<key>Kernel_patches</key>
@@ -98,13 +98,13 @@
 			<key>title</key>
 			<string>AMD Ryzen series Kernel patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kernel/AMD_Ryzen_series_Kernel_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/Kernel/AMD_Ryzen_series_Kernel_patches.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
 			<string>AMD AM4 and FX series Kernel patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/Kernel/AMD_AM4_and_FX_series_ Kernel_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/master/patches_database/patches/Kernel/AMD_AM4_and_FX_series_ Kernel_patches.plist</string>
 		</dict>
 	</array>
 </dict>
