@@ -12,6 +12,42 @@
 				<key>title</key>
 				<string>HP_840G_Series_renamed</string>
 			</dict>
+			<dict>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Pavilion_Series_renamed.plist</string>
+				<key>title</key>
+				<string>HP_Pavilion_Series_renamed</string>
+			</dict>
+			<dict>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Z66_14ProG2_renamed.plist</string>
+				<key>title</key>
+				<string>HP_Z66_14ProG2_renamed</string>
+			</dict>
+			<dict>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/Thinkpad_series_basically_renamed.plist</string>
+				<key>title</key>
+				<string>Thinkpad_series_basically_renamed</string>
+			</dict>
+			<dict>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Disable_BAT1_devices_Renamed.plist</string>
+				<key>title</key>
+				<string>ThinkPad_series_Disable_BAT1_devices_Renamed</string>
+			</dict>
+			<dict>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_dual_physical_battery_Notify_renamed.plist</string>
+				<key>title</key>
+				<string>ThinkPad_series_dual_physical_battery_Notify_renamed</string>
+			</dict>
+			<dict>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Mutex_reset_to_0_Renamed.plist</string>
+				<key>title</key>
+				<string>ThinkPad_series_Mutex_reset_to_0_Renamed</string>
+			</dict>
 		</array>
 		<key>Rename Patches</key>
 		<array>
