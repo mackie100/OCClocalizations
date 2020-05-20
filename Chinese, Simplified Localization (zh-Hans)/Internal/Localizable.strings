@@ -1,4 +1,4 @@
-﻿/* mountefiController */
+/* mountefiController */
 "%@ APFS Container [%@]" = "%1$@ APFS容器 [%2$@]";
 
 /* mountefiController */
@@ -626,3 +626,12 @@
 
 /* importPatchesController */
 "Export set of kexts" = "导出为kexts集";
+
+/* importPatchesController */
+"Add set of patches from database" = "Add set of patches from database";
+
+/* importPatchesController */
+"Add set of kexts from database" = "Add set of kexts from database";
+
+/* acpiController devicePropertiesController nvramController*/
+"Delete" = "删除";
