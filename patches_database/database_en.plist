@@ -3,88 +3,74 @@
 <plist version="1.0">
 <dict>
 	<key>ACPI_patches</key>
-	<array>
-		<dict>
-			<key>title</key>
-			<string>HP_840G_Series_renamed</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_840G_Series_renamed.plist</string>
-			<key>category</key>
-			<string>Battery Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>ACPI_6D_Renamed_patches</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/ACPI_6D_Renamed_patches.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>APCI_0D_Renamed_patches</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/APCI_0D_Renamed_patches.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Asrock_Z390_RTC_Patches</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Asrock_Z390_RTC_Patches.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Brightness_hotkey_Renamed</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Brightness_hotkey_Renamed.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>OS_Renamed_patches</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_patches.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>PNLF_renamed_XNLF_For_Lenovo_laptop</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PNLF_renamed_XNLF_For_Lenovo_laptop.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>PTSWAK_Renamed_patches</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PTSWAK_Renamed_patches.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>S3_Renamed_XS3_for_Disable_S3_Sleep</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/S3_Renamed_XS3_for_Disable_S3_Sleep.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-		<dict>
-			<key>title</key>
-			<string>Sleep_button_LID_Renamed_patches</string>
-			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Sleep_button_LID_Renamed_patches.plist</string>
-			<key>category</key>
-			<string>Renamed Patches</string>
-		</dict>
-	</array>
+	<dict>
+		<key>Battery Patches</key>
+		<array>
+			<dict>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_840G_Series_renamed.plist</string>
+				<key>title</key>
+				<string>HP_840G_Series_renamed</string>
+			</dict>
+		</array>
+		<key>Rename Paches</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>ACPI_6D_Renamed_patches</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/ACPI_6D_Renamed_patches.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>APCI_0D_Renamed_patches</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/APCI_0D_Renamed_patches.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Asrock_Z390_RTC_Patches</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Asrock_Z390_RTC_Patches.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Brightness_hotkey_Renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Brightness_hotkey_Renamed.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>OS_Renamed_patches</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_patches.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>PNLF_renamed_XNLF_For_Lenovo_laptop</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PNLF_renamed_XNLF_For_Lenovo_laptop.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>PTSWAK_Renamed_patches</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PTSWAK_Renamed_patches.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>S3_Renamed_XS3_for_Disable_S3_Sleep</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/S3_Renamed_XS3_for_Disable_S3_Sleep.plist</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>Sleep_button_LID_Renamed_patches</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Sleep_button_LID_Renamed_patches.plist</string>
+			</dict>
+		</array>
+	</dict>
 	<key>KEXT_Preset_List</key>
 	<array>
 		<dict>
