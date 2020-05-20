@@ -633,5 +633,11 @@
 /* importPatchesController */
 "Add set of kexts from database" = "Add set of kexts from database";
 
+/* importPatchesController */
+"Battery Patches" = "Battery Patches";
+
+/* importPatchesController */
+"Rename Patches" = "Rename Patches";
+
 /* acpiController devicePropertiesController nvramController*/
 "Delete" = "Effacer";

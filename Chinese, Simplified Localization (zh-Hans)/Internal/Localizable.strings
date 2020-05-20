@@ -633,5 +633,11 @@
 /* importPatchesController */
 "Add set of kexts from database" = "导入在线预设KEXT集合";
 
+/* importPatchesController */
+"Battery Patches" = "Battery Patches";
+
+/* importPatchesController */
+"Rename Patches" = "Rename Patches";
+
 /* acpiController devicePropertiesController nvramController*/
 "Delete" = "删除";
