@@ -616,22 +616,22 @@
 "Syncronize Outline Mode" = "同步树形编辑器模式";
 
 /* importPatchesController */
-"Import set of patches" = "导入自定义补丁集";
+"Import set of patches" = "导入补丁集合";
 
 /* importPatchesController */
-"Import set of kexts" = "导入一组Kext集";
+"Import set of kexts" = "导入Kext集合";
 
 /* importPatchesController */
-"Export set of patches" = "导出为补丁集";
+"Export set of patches" = "导出补丁集合";
 
 /* importPatchesController */
-"Export set of kexts" = "导出为kexts集";
+"Export set of kexts" = "导出kexts集合";
 
 /* importPatchesController */
-"Add set of patches from database" = "Add set of patches from database";
+"Add set of patches from database" = "导入在线预设补丁集合";
 
 /* importPatchesController */
-"Add set of kexts from database" = "Add set of kexts from database";
+"Add set of kexts from database" = "导入在线预设KEXT集合";
 
 /* acpiController devicePropertiesController nvramController*/
 "Delete" = "删除";
