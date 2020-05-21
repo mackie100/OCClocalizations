@@ -622,10 +622,10 @@
 "Import set of kexts" = "导入Kext集合";
 
 /* importPatchesController */
-"Export selected patches" = "Export selected patches";
+"Export selected patches" = "导出所选为补丁集";
 
 /* importPatchesController */
-"Export selected kexts" = "Export selected kexts";
+"Export selected kexts" = "导出所选kexts集合";
 
 /* importPatchesController */
 "Add set of patches from database" = "导入在线预设补丁集合";
@@ -634,10 +634,10 @@
 "Add set of kexts from database" = "导入在线预设KEXT集合";
 
 /* importPatchesController */
-"Battery Patches" = "Battery Patches";
+"Battery Patches" = "电池更名补丁";
 
 /* importPatchesController */
-"Rename Patches" = "Rename Patches";
+"Rename Patches" = "常规更名补丁";
 
 /* acpiController devicePropertiesController nvramController*/
 "Delete" = "删除";

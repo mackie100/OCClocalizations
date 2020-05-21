@@ -99,7 +99,7 @@
 "HjZ-gH-Q0b.title" = "启用串行端口日志记录";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_PCI"; ObjectID = "I0K-dq-ofU"; */
-"I0K-dq-ofU.title" = "OC_SCAN_ALLOW_DEVICE_PCI";
+"I0K-dq-ofU.title" = "允许扫描PCI设备";
 
 /* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
 "Jpe-QB-x2r.title" = "AllowNvramReset";

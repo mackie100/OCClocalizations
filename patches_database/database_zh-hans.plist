@@ -8,43 +8,43 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>HP_840G_Series_renamed</string>
+				<string>HP_840G系列电池更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_840G_Series_renamed.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>HP_Pavilion_Series_renamed</string>
+				<string>HP_Pavilion系列电池更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Pavilion_Series_renamed.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>HP_Z66_14ProG2_renamed</string>
+				<string>HP_Z66_14ProG2电池更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Z66_14ProG2_renamed.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Thinkpad_series_basically_renamed</string>
+				<string>Thinkpad系列电池基本更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/Thinkpad_series_basically_renamed.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>ThinkPad_series_Disable_BAT1_devices_Renamed</string>
+				<string>ThinkPad系列电池禁用BAT1更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Disable_BAT1_devices_Renamed.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>ThinkPad_series_dual_physical_battery_Notify_renamed</string>
+				<string>ThinkPad系列双物理电池更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_dual_physical_battery_Notify_renamed.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>ThinkPad_series_Mutex_reset_to_0_Renamed</string>
+				<string>ThinkPad系列Mutex重置为0更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Mutex_reset_to_0_Renamed.plist</string>
 			</dict>
@@ -53,13 +53,13 @@
 		<array>
 			<dict>
 				<key>title</key>
-				<string>ACPI_6D更名补丁(来自OC-Little)</string>
+				<string>ACPI_6D更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/ACPI_6D_Renamed_patches.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>APCI_0D更名补丁(来自OC-Little)</string>
+				<string>APCI_0D更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/APCI_0D_Renamed_patches.plist</string>
 			</dict>
@@ -71,37 +71,37 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>亮度快捷键更名补丁(来自OC-Little)</string>
+				<string>亮度快捷键更名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Brightness_hotkey_Renamed.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>OSI重命名补丁(来自OC-Little)</string>
+				<string>OSI和OSID重命名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OSI_Renamed_patches.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>Lenovo笔记本PNLF重命名为XNLF(来自OC-Little)</string>
+				<string>Lenovo笔记本PNLF重命名为XNLF(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PNLF_renamed_XNLF_For_Lenovo_laptop.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>PTSWAK重命名补丁(来自OC-Little)</string>
+				<string>PTSWAK重命名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/PTSWAK_Renamed_patches.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>禁用S3睡眠-S3重命名为XS3(来自OC-Little)</string>
+				<string>禁用S3睡眠-S3重命名为XS3(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/S3_Renamed_XS3_for_Disable_S3_Sleep.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>睡眠按钮 LID重命名补丁(来自OC-Little)</string>
+				<string>睡眠按钮 LID重命名补丁(来自宪武OC-Little)</string>
 				<key>url</key>
 				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/Sleep_button_LID_Renamed_patches.plist</string>
 			</dict>
