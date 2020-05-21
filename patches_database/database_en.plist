@@ -7,46 +7,46 @@
 		<key>Battery Patches</key>
 		<array>
 			<dict>
-				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_840G_Series_renamed.plist</string>
 				<key>title</key>
 				<string>HP_840G_Series_renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_840G_Series_renamed.plist</string>
 			</dict>
 			<dict>
-				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Pavilion_Series_renamed.plist</string>
 				<key>title</key>
 				<string>HP_Pavilion_Series_renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Pavilion_Series_renamed.plist</string>
 			</dict>
 			<dict>
-				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Z66_14ProG2_renamed.plist</string>
 				<key>title</key>
 				<string>HP_Z66_14ProG2_renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/HP_Z66_14ProG2_renamed.plist</string>
 			</dict>
 			<dict>
-				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/Thinkpad_series_basically_renamed.plist</string>
 				<key>title</key>
 				<string>Thinkpad_series_basically_renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/Thinkpad_series_basically_renamed.plist</string>
 			</dict>
 			<dict>
-				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Disable_BAT1_devices_Renamed.plist</string>
 				<key>title</key>
 				<string>ThinkPad_series_Disable_BAT1_devices_Renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Disable_BAT1_devices_Renamed.plist</string>
 			</dict>
 			<dict>
-				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_dual_physical_battery_Notify_renamed.plist</string>
 				<key>title</key>
 				<string>ThinkPad_series_dual_physical_battery_Notify_renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_dual_physical_battery_Notify_renamed.plist</string>
 			</dict>
 			<dict>
-				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Mutex_reset_to_0_Renamed.plist</string>
 				<key>title</key>
 				<string>ThinkPad_series_Mutex_reset_to_0_Renamed</string>
+				<key>url</key>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Battery_renamed_patch/ThinkPad_series_Mutex_reset_to_0_Renamed.plist</string>
 			</dict>
 		</array>
 		<key>Rename Patches</key>
@@ -77,9 +77,9 @@
 			</dict>
 			<dict>
 				<key>title</key>
-				<string>OS_Renamed_patches</string>
+				<string>OSI_OSID_Renamed_patches</string>
 				<key>url</key>
-				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OS_Renamed_patches.plist</string>
+				<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/patches_database/patches/ACPI/Rename_Patches/OSI_Renamed_patches.plist</string>
 			</dict>
 			<dict>
 				<key>title</key>
