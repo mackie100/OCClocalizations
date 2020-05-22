@@ -140,6 +140,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Base"; ObjectID = "djM-Oe-omR"; */
 "djM-Oe-omR.headerCell.title" = "基本";
 
+/* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "ewU-gZ-tet"; */
+"ewU-gZ-tet.title" = "Loading Resources";
+
 /* Class = "NSButtonCell"; title = "CustomSMBIOSGuid"; ObjectID = "faf-ix-5sI"; */
 "faf-ix-5sI.title" = "CustomSMBIOSGuid";
 
@@ -151,6 +154,9 @@
 
 /* Class = "NSButtonCell"; title = "AppleXcpmExtraMsrs"; ObjectID = "jRH-bz-ZFw"; */
 "jRH-bz-ZFw.title" = "AppleXcpmExtraMsrs";
+
+/* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "je9-Z0-9pa"; */
+"je9-Z0-9pa.title" = "Loading Resources";
 
 /* Class = "NSButtonCell"; title = "AppleCpuPmCfgLock"; ObjectID = "jfB-nu-ijp"; */
 "jfB-nu-ijp.title" = "AppleCpuPmCfgLock";
