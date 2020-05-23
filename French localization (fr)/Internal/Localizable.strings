@@ -614,3 +614,30 @@
 
 /* textmodeController */
 "Syncronize Outline Mode" = "Synchroniser le mode plan";
+
+/* importPatchesController */
+"Import set of patches" = "Import set of patches";
+
+/* importPatchesController */
+"Import set of kexts" = "Import set of kexts";
+
+/* importPatchesController */
+"Export selected patches" = "Export selected patches";
+
+/* importPatchesController */
+"Export selected kexts" = "Export selected kexts";
+
+/* importPatchesController */
+"Add set of patches from database" = "Add set of patches from database";
+
+/* importPatchesController */
+"Add set of kexts from database" = "Add set of kexts from database";
+
+/* importPatchesController */
+"Battery Patches" = "Battery Patches";
+
+/* importPatchesController */
+"Rename Patches" = "Rename Patches";
+
+/* acpiController devicePropertiesController nvramController*/
+"Delete" = "Effacer";
