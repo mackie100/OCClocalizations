@@ -610,34 +610,34 @@
 "If you continue, all unknown keys will be lost" = "Si vous continuez, toutes les clés inconnues seront perdues";
 
 /* textmodeController */
-"Syncronize" = "Syncroniser";
+"Syncronize" = "Synchroniser";
 
 /* textmodeController */
 "Syncronize Outline Mode" = "Synchroniser le mode plan";
 
 /* importPatchesController */
-"Import set of patches" = "Import set of patches";
+"Import set of patches" = "Importer un ensemble de correctifs";
 
 /* importPatchesController */
-"Import set of kexts" = "Import set of kexts";
+"Import set of kexts" = "Importer un ensemble de kexts";
 
 /* importPatchesController */
-"Export selected patches" = "Export selected patches";
+"Export selected patches" = "Exporter les patchs sélectionnés";
 
 /* importPatchesController */
-"Export selected kexts" = "Export selected kexts";
+"Export selected kexts" = "Exporter les kexts sélectionnés";
 
 /* importPatchesController */
-"Add set of patches from database" = "Add set of patches from database";
+"Add set of patches from database" = "Ajouter un ensemble de correctifs à partir de la base de données";
 
 /* importPatchesController */
-"Add set of kexts from database" = "Add set of kexts from database";
+"Add set of kexts from database" = "Ajouter un ensemble de kexts à partir de la base de données";
 
 /* importPatchesController */
-"Battery Patches" = "Battery Patches";
+"Battery Patches" = "Patchs de batterie";
 
 /* importPatchesController */
-"Rename Patches" = "Rename Patches";
+"Rename Patches" = "Renommer les correctifs";
 
 /* acpiController devicePropertiesController nvramController*/
 "Delete" = "Effacer";
