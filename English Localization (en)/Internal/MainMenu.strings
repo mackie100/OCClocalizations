@@ -74,6 +74,9 @@
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
 "78Y-hA-62v.title" = "Correct Spelling Automatically";
 
+/* Class = "NSTextFieldCell"; title = "Network Resources"; ObjectID = "7jI-RZ-eJQ"; */
+"7jI-RZ-eJQ.title" = "Network Resources";
+
 /* Class = "NSMenu"; title = "Advanced User"; ObjectID = "8k6-J4-O8u"; */
 "8k6-J4-O8u.title" = "Advanced User";
 
