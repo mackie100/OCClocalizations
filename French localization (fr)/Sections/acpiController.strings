@@ -110,8 +110,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "OemTableId"; ObjectID = "qk5-w1-h2Q"; */
 "qk5-w1-h2Q.headerCell.title" = "OemTableId";
 
-/* Class = "NSTabViewItem"; label = "Block"; ObjectID = "swX-ck-WbC"; */
-"swX-ck-WbC.label" = "Bloquer";
+/* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "swX-ck-WbC"; */
+"swX-ck-WbC.label" = "Effacer";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmwares that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation."; ObjectID = "u3f-B9-p1e"; */
 "u3f-B9-p1e.ibShadowedToolTip" = "Le matériel qui a le problème de se réveiller de l'hibernation en raison de l'impossibilité de maintenir la signature matérielle après le redémarrage doit être activé. Sélectionnez généralement NO \nRemarque: cette option peut être supprimée à l'avenir.";

@@ -638,6 +638,3 @@
 
 /* importPatchesController */
 "Rename Patches" = "Rename Patches";
-
-/* acpiController devicePropertiesController nvramController*/
-"Delete" = "Delete";

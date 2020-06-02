@@ -89,6 +89,9 @@
 /* Class = "NSTextFieldCell"; title = "Display Delay"; ObjectID = "FHv-7q-Wq3"; */
 "FHv-7q-Wq3.title" = "Display Delay";
 
+/* Class = "NSButtonCell"; title = "SysReport"; ObjectID = "GOG-QD-oyI"; */
+"GOG-QD-oyI.title" = "SysReport";
+
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Gaf-gn-k6J"; */
 "Gaf-gn-k6J.title" = "全选";
 
@@ -224,6 +227,9 @@
 /* Class = "NSButtonCell"; title = "Provides predefined label images for boot entries without custom entries"; ObjectID = "dl8-kF-ipf"; */
 "dl8-kF-ipf.title" = "为引导项提供预定义的标签图像，而无需自定义项";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option."; ObjectID = "eFH-QH-phT"; */
+"eFH-QH-phT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option.";
+
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
 "eFc-bE-Fl5.title" = "允许扫描USB设备";
 
@@ -320,17 +326,11 @@
 /* Class = "NSTabViewItem"; label = "BlessOverride"; ObjectID = "uyb-X6-nFt"; */
 "uyb-X6-nFt.label" = "BlessOverride-设置自定义启动项绝对路径";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used."; ObjectID = "vN0-Ec-Ara"; */
-"vN0-Ec-Ara.ibShadowedToolTip" = "隐藏自身的EFI引导盘选项，一般选YES\n 例如， 当在同一卷上安装了另一个UEFI OS并引导时，可能会隐藏其他条目。";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known modifier hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode."; ObjectID = "vvg-w7-KxC"; */
 "vvg-w7-KxC.ibShadowedToolTip" = "是否开启一些热键功能，包括Cmd+K;Cmd+S。\n设置为YES后允许在引导过程中使用苹果原生快捷键, 需要与Quirk选项中KeySupport=Yes或UsbKbDxe.efi结合使用, 具体体验取决于主板固件。常用快捷键组合:\nCmd + V: 启用 -v 跑码啰嗦模式\nCmd + Opt + P + R: 重置 NVRAM\nCmd + R: 启动恢复分区\nCmd + S: 启动至单用户模式\nOption/ALT: 在ShowPicker设置成NO时显示引导菜单, ALT键不可用时可用ESC键代替(狂按ESC键)。\n如果你开机发现键盘无法选择，请选NO，并且删除OC/Drivers下的UsbKbDxe.efi 。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "wFf-6v-O3P"; */
 "wFf-6v-O3P.headerCell.title" = "参数";
-
-/* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "wLx-ad-U2s"; */
-"wLx-ad-U2s.title" = "Hide Self\n隐藏自己";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Hibernation detection mode. The following modes are supported:\n• None — Avoid hibernation for your own good.\n• Auto — Use RTC and NVRAM detection.\n• RTC — Use RTC detection.\n• NVRAM — Use NVRAM detection."; ObjectID = "wPi-6s-R0s"; */
 "wPi-6s-R0s.ibShadowedToolTip" = "检测休眠模式。我们的机器一般都不支持休眠，选none。如果你的主板支持原生nvram、并想测试休眠，可以考虑填auto。\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭！";

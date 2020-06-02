@@ -638,6 +638,3 @@
 
 /* importPatchesController */
 "Rename Patches" = "常规更名补丁";
-
-/* acpiController devicePropertiesController nvramController*/
-"Delete" = "删除";

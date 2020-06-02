@@ -38,8 +38,8 @@
 /* Class = "NSView"; ibShadowedToolTip = "3. LegacySchema\nType: plist dict\nDescription: Allows setting select NVRAM variables from a map (plist dict) of GUIDs to an array (plist array) of variable names in plist string format.\nYou can use * value to accept all variables for select GUID.\nWARNING: Choose variables very carefully, as nvram.plist is not vaulted. For instance, do not put boot-args or csr-active-config, as this can bypass SIP.\nTo read NVRAM variable value from macOS one could use nvram by concatenating variable GUID and name separated by : symbol. For example, nvram 7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-args.\nA continuously updated variable list can be found in a corresponding document: NVRAM Variables.\n\nWARNING: Choose variables very carefully, as nvram.plist is not vaulted. For instance, do not put boot-args\nor csr-active-config, as this can bypass SIP."; ObjectID = "cVF-o8-z0z"; */
 "cVF-o8-z0z.ibShadowedToolTip" = "用于分配 NVRAM 变量, 与 LegacyEnable 配合使用\n您可以使用*值来接受所有用于选择GUID的变量。\n警告：由于nvram.plist未被存储，因此请非常谨慎地选择变量。 例如，请勿放入boot-args或csr-active-config，因为这会绕过SIP。\n要从macOS读取NVRAM变量值，可以使用nvram，方法是将变量GUID和名称以：符号分隔。 例如，nvram 7C436110-AB2A-4BBB-A880-FE41995C9F82：boot-args。\n可以在相应的文档：NVRAM变量中找到连续更新的变量列表。\n警告：由于nvram.plist未被存储，因此请非常谨慎地选择变量。 例如，不要放入boot-args或csr-active-config，因为它可以绕过SIP。";
 
-/* Class = "NSTabViewItem"; label = "Block"; ObjectID = "dmH-cD-uzh"; */
-"dmH-cD-uzh.label" = "阻止";
+/* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "dmH-cD-uzh"; */
+"dmH-cD-uzh.label" = "删除";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "eSY-j6-jWD"; */
 "eSY-j6-jWD.label" = "添加";
