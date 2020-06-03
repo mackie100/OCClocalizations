@@ -89,6 +89,9 @@
 /* Class = "NSTextFieldCell"; title = "Display Delay"; ObjectID = "FHv-7q-Wq3"; */
 "FHv-7q-Wq3.title" = "Délai d'affichage";
 
+/* Class = "NSButtonCell"; title = "SysReport"; ObjectID = "GOG-QD-oyI"; */
+"GOG-QD-oyI.title" = "SysReport";
+
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Gaf-gn-k6J"; */
 "Gaf-gn-k6J.title" = "Tout sélectionner";
 
@@ -224,6 +227,9 @@
 /* Class = "NSButtonCell"; title = "Provides predefined label images for boot entries without custom entries"; ObjectID = "dl8-kF-ipf"; */
 "dl8-kF-ipf.title" = "Fournit des images d'étiquette prédéfinies pour les entrées de démarrage sans entrées personnalisées";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option."; ObjectID = "eFH-QH-phT"; */
+"eFH-QH-phT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option.";
+
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
 "eFc-bE-Fl5.title" = "OC_SCAN_ALLOW_DEVICE_USB";
 
@@ -320,17 +326,11 @@
 /* Class = "NSTabViewItem"; label = "BlessOverride"; ObjectID = "uyb-X6-nFt"; */
 "uyb-X6-nFt.label" = "BlessOverride-Ajouter des éléments de démarrage Microsoft";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Hides own boot entry from boot picker. This may potentially hide other entries, for instance, when another UEFI OS is installed on the same volume and driver boot is used."; ObjectID = "vN0-Ec-Ara"; */
-"vN0-Ec-Ara.ibShadowedToolTip" = "Type: plist boolean \nValeur par défaut: false \nDescription: Masque la propre entrée de démarrage du sélecteur de démarrage. Cela peut potentiellement masquer d'autres entrées, par exemple, lorsqu'un autre système d'exploitation UEFI est installé sur le même volume et que le démarrage du pilote est utilisé.";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable modifier hotkey handling in boot picker.\nIn addition to action hotkeys, which are partially described in UsePicker section and are normally handled by Apple BDS, there exist modifier keys, which are handled by operating system bootloader, namely boot.efi. These keys allow to change operating system behaviour by providing different boot modes.\nOn some firmwares it may be problematic to use modifier keys due to driver incompatibilities. To workaround this problem this option allows registering select hotkeys in a more permissive manner from within boot picker. Such extensions include the support of tapping on keys in addition to holding and pressing Shift along with other keys instead of just Shift alone, which is not detectible on many PS/2 keyboards. This list of known modifier hotkeys includes:\n• CMD+C+MINUS — disable board compatibility checking.\n• CMD+K — boot release kernel, similar to kcsuffix=release.\n• CMD+S — single user mode.\n• CMD+S+MINUS — disable KASLR slide, requires disabled SIP.\n• CMD+V — verbose mode.\n• Shift — safe mode."; ObjectID = "vvg-w7-KxC"; */
 "vvg-w7-KxC.ibShadowedToolTip" = "Indique s'il faut activer certaines fonctions de raccourci clavier, notamment Cmd + K; Cmd + S. \nRéglez sur YES pour autoriser l'utilisation des touches de raccourci natives d'Apple pendant le processus de démarrage, qui doit être combiné avec KeySupport = Yes ou UsbKbDxe.efi dans l'option Quirk, l'expérience spécifique dépend du micrologiciel de la carte mère. Combinaisons de touches de raccourci courantes: \nCmd + V: activer le mode de code d'exécution -v \nCmd + Opt + P + R: réinitialiser la NVRAM \nCmd + R: partition de récupération de démarrage \nCmd + S: démarrer en mode mono-utilisateur \nOption / ALT: affiche le menu de démarrage lorsque ShowPicker est défini sur NON. Utilisez la touche ESC à la place lorsque la touche ALT n'est pas disponible (appuyez sur la touche ESC). \nSi vous constatez que le clavier ne peut pas être sélectionné lorsque vous allumez l'ordinateur, sélectionnez NON et supprimez UsbKbDxe.efi sous OC / Drivers.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "wFf-6v-O3P"; */
 "wFf-6v-O3P.headerCell.title" = "Paramètres";
-
-/* Class = "NSButtonCell"; title = "Hide Self"; ObjectID = "wLx-ad-U2s"; */
-"wLx-ad-U2s.title" = "Hide Self";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: None\nDescription: Hibernation detection mode. The following modes are supported:\n• None — Avoid hibernation for your own good.\n• Auto — Use RTC and NVRAM detection.\n• RTC — Use RTC detection.\n• NVRAM — Use NVRAM detection."; ObjectID = "wPi-6s-R0s"; */
 "wPi-6s-R0s.ibShadowedToolTip" = "Détecte le mode veille. Nos machines ne prennent généralement pas en charge l'hibernation, alors n'en sélectionnez aucune. Si votre carte mère prend en charge le nvram natif et que vous souhaitez tester l'hibernation, vous pouvez envisager de remplir auto. \nEn conjonction avec le mode d'hibernation du système, le démarrage du système restaurera l'état avant l'hibernation. Cela peut affecter la durée de vie du SSD. Il est recommandé de le fermer!";
