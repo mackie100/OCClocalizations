@@ -228,7 +228,7 @@
 "dl8-kF-ipf.title" = "为引导项提供预定义的标签图像，而无需自定义项";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option."; ObjectID = "eFH-QH-phT"; */
-"eFH-QH-phT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\nThis option will create a SysReport directory on ESP partition unless it is already present. The directory will contain ACPI and SMBIOS dumps.\n\nNote: For security reasons SysReport option is not available in RELEASE builds. Use a DEBUG build if you need this option.";
+"eFH-QH-phT.ibShadowedToolTip" = "在EFI分区上生成系统报告。\n此选项将在ESP分区上创建SysReport目录， 该目录将包含ACPI和SMBIOS转储。\n\n注意：出于安全原因，RELEASE版本中不提供SysReport功能。如果需要此选项，请使用DEBUG版本。";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
 "eFc-bE-Fl5.title" = "允许扫描USB设备";
