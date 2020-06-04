@@ -53,8 +53,8 @@
 /* Class = "NSMenuItem"; title = "NUMBER"; ObjectID = "lI7-XR-ash"; */
 "lI7-XR-ash.title" = "数字类型";
 
-/* Class = "NSTabViewItem"; label = "Block"; ObjectID = "n3V-ht-3yU"; */
-"n3V-ht-3yU.label" = "阻止";
+/* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "n3V-ht-3yU"; */
+"n3V-ht-3yU.label" = "删除";
 
 /* Class = "NSTabViewItem"; label = "Platform IDs"; ObjectID = "n7N-Fd-plx"; */
 "n7N-Fd-plx.label" = "平台ID";
