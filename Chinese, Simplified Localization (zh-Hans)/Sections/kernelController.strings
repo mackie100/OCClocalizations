@@ -149,8 +149,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "gFl-jZ-XPd"; */
 "gFl-jZ-XPd.headerCell.title" = "最大内核";
 
-/* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "gy1-1j-jtJ"; */
-"gy1-1j-jtJ.label" = "删除";
+/* Class = "NSTabViewItem"; label = "Block"; ObjectID = "gy1-1j-jtJ"; */
+"gy1-1j-jtJ.label" = "阻止";
 
 /* Class = "NSButtonCell"; title = "AppleXcpmExtraMsrs"; ObjectID = "jRH-bz-ZFw"; */
 "jRH-bz-ZFw.title" = "AppleXcpmExtraMsrs";
