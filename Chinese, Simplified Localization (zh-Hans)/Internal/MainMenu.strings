@@ -102,7 +102,10 @@
 "BgM-ve-c93.title" = "\t左到右";
 
 /* Class = "NSMenuItem"; title = "Templates"; ObjectID = "BtA-nJ-hmS"; */
-"BtA-nJ-hmS.title" = "配置模板";
+"BtA-nJ-hmS.title" = "Templates";
+
+/* Class = "NSMenuItem"; title = "Config Checker"; ObjectID = "C9y-Q3-nK5"; */
+"C9y-Q3-nK5.title" = "Config Checker";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
 "D1d-8G-YO3.title" = "官方Differences.PDF";
