@@ -104,6 +104,9 @@
 /* Class = "NSMenuItem"; title = "Templates"; ObjectID = "BtA-nJ-hmS"; */
 "BtA-nJ-hmS.title" = "Modèles";
 
+/* Class = "NSMenuItem"; title = "Config Checker"; ObjectID = "C9y-Q3-nK5"; */
+"C9y-Q3-nK5.title" = "Config Checker";
+
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
 "D1d-8G-YO3.title" = "Différences";
 
