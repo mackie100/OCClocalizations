@@ -647,3 +647,9 @@
 
 /* configCheckerController */
 "Drag your configuration here" = "Drag your configuration here";
+
+/* configCheckerController */
+"No Network Access" = "No Network Access";
+
+/* configCheckerController */
+"Uploading..." = "Uploading...";
