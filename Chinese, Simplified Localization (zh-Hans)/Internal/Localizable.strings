@@ -638,3 +638,12 @@
 
 /* importPatchesController */
 "Rename Patches" = "常规更名补丁";
+
+/* configCheckerController */
+"Check current configurations (if you managing multiple windows, select the window you want to check)" = "Check current configurations (if you managing multiple windows, select the window you want to check)";
+
+/* configCheckerController */
+"Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
+
+/* configCheckerController */
+"Drag your configuration here" = "Drag your configuration here";
