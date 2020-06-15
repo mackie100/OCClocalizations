@@ -640,16 +640,16 @@
 "Rename Patches" = "常规更名补丁";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check)" = "Check current configurations (if you managing multiple windows, select the window you want to check)";
+"Check current configurations (if you managing multiple windows, select the window you want to check)" = "检查当前配置 (如果管理多个窗口，请选择要检查的窗口)";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
+"Import configuration from local selecting \"Choose...\"" = "从本地选择导入配置 \"选择...\"";
 
 /* configCheckerController */
-"Drag your configuration here" = "Drag your configuration here";
+"Drag your configuration here" = "将您的配置拖拽到此处";
 
 /* configCheckerController */
-"No Network Access" = "No Network Access";
+"No Network Access" = "无网络访问";
 
 /* configCheckerController */
-"Uploading..." = "Uploading...";
+"Uploading..." = "上传...";
