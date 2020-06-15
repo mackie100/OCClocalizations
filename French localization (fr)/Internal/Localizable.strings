@@ -638,3 +638,18 @@
 
 /* importPatchesController */
 "Rename Patches" = "Renommer les correctifs";
+
+/* configCheckerController */
+"Check current configurations (if you managing multiple windows, select the window you want to check)" = "Check current configurations (if you managing multiple windows, select the window you want to check)";
+
+/* configCheckerController */
+"Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
+
+/* configCheckerController */
+"Drag your configuration here" = "Drag your configuration here";
+
+/* configCheckerController */
+"No Network Access" = "No Network Access";
+
+/* configCheckerController */
+"Uploading..." = "Uploading...";
