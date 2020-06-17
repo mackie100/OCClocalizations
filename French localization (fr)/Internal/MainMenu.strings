@@ -75,7 +75,7 @@
 "78Y-hA-62v.title" = "Corriger l'orthographe automatiquement";
 
 /* Class = "NSTextFieldCell"; title = "Network Resources"; ObjectID = "7jI-RZ-eJQ"; */
-"7jI-RZ-eJQ.title" = "Network Resources";
+"7jI-RZ-eJQ.title" = "Ressources réseau";
 
 /* Class = "NSMenu"; title = "Advanced User"; ObjectID = "8k6-J4-O8u"; */
 "8k6-J4-O8u.title" = "Utilisateur avancé";
@@ -105,7 +105,7 @@
 "BtA-nJ-hmS.title" = "Modèles";
 
 /* Class = "NSMenuItem"; title = "Config Checker"; ObjectID = "C9y-Q3-nK5"; */
-"C9y-Q3-nK5.title" = "Config Checker";
+"C9y-Q3-nK5.title" = "Vérificateur de configuration";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
 "D1d-8G-YO3.title" = "Différences";
@@ -369,7 +369,7 @@
 "gDt-SB-jBP.title" = "Configurations de numérisation";
 
 /* Class = "NSMenuItem"; title = "Outline Mode"; ObjectID = "gUQ-fT-kVg"; */
-"gUQ-fT-kVg.title" = "Outline Mode";
+"gUQ-fT-kVg.title" = "Mode contour";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "Coller";
