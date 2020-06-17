@@ -640,7 +640,7 @@
 "Rename Patches" = "常规更名补丁";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置 (如果管理多个窗口，请选择要检查的窗口). 继续检测配置前保存你的配置文件.";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置 (如果管理多个窗口，请选择要检查的窗口). 继续检查配置前保存你的配置文件.";
 
 /* configCheckerController */
 "Import configuration from local selecting \"Choose...\"" = "从本地选择导入配置 \"选择...\"";
