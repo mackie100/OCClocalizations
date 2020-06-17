@@ -640,16 +640,16 @@
 "Rename Patches" = "Renommer les correctifs";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check)" = "Check current configurations (if you managing multiple windows, select the window you want to check)";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Vérifiez les configurations actuelles (si vous gérez plusieurs fenêtres, sélectionnez la fenêtre que vous souhaitez vérifier). Enregistrez votre configuration avant de continuer la vérification.";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
+"Import configuration from local selecting \"Choose...\"" = "Importer la configuration à partir de la sélection locale \"Choisir ... \"";
 
 /* configCheckerController */
-"Drag your configuration here" = "Drag your configuration here";
+"Drag your configuration here" = "Faites glisser votre configuration ici";
 
 /* configCheckerController */
-"No Network Access" = "No Network Access";
+"No Network Access" = "Pas d'accès au réseau";
 
 /* configCheckerController */
-"Uploading..." = "Uploading...";
+"Uploading..." = "Téléchargement...";

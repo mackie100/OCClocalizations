@@ -640,7 +640,7 @@
 "Rename Patches" = "Rename Patches";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check)" = "Check current configurations (if you managing multiple windows, select the window you want to check)";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check.";
 
 /* configCheckerController */
 "Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
