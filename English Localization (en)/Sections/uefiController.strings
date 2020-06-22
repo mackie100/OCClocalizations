@@ -116,6 +116,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple SMC I/O protocol with a builtin version.\nThis protocol replaces legacy VirtualSmc UEFI driver, and is compatible with any SMC kernel extension. \nHowever, in case FakeSMC kernel extension is used, manual NVRAM key variable addition may be needed."; ObjectID = "FPA-9t-OzA"; */
 "FPA-9t-OzA.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple SMC I/O protocol with a builtin version.\nThis protocol replaces legacy VirtualSmc UEFI driver, and is compatible with any SMC kernel extension. \nHowever, in case FakeSMC kernel extension is used, manual NVRAM key variable addition may be needed.";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Perform full device connection during APFS loading.\nInstead of partition handle connection normally used for APFS driver loading every handle is connected recursively.\nThis may take more time than usual but can be the only way to access APFS partitions on some firmwares like those found on older HP laptops."; ObjectID = "H5Y-DY-WOe"; */
+"H5Y-DY-WOe.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Perform full device connection during APFS loading.\nInstead of partition handle connection normally used for APFS driver loading every handle is connected recursively.\nThis may take more time than usual but can be the only way to access APFS partitions on some firmwares like those found on older HP laptops.";
+
 /* Class = "NSButtonCell"; title = "ReplaceTabWithSpace"; ObjectID = "HIh-Oc-UT7"; */
 "HIh-Oc-UT7.title" = "ReplaceTabWithSpace";
 
@@ -166,6 +169,9 @@
 
 /* Class = "NSTextFieldCell"; title = "TextRenderer"; ObjectID = "QQF-qM-yZS"; */
 "QQF-qM-yZS.title" = "TextRenderer";
+
+/* Class = "NSButtonCell"; title = "GlobalConnect"; ObjectID = "SDU-Ok-pEv"; */
+"SDU-Ok-pEv.title" = "GlobalConnect";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Attempt to detach USB controller ownership from the firmware driver. While most firmwares manage to properly do that, or at least have an option for, select firmwares do not. As a result, operating system may freeze upon boot. Not recommended unless required."; ObjectID = "TTJ-UT-Xng"; */
 "TTJ-UT-Xng.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Attempt to detach USB controller ownership from the firmware driver. While most firmwares manage to properly do that, or at least have an option for, select firmwares do not. As a result, operating system may freeze upon boot. Not recommended unless required.";
