@@ -117,7 +117,7 @@
 "FPA-9t-OzA.ibShadowedToolTip" = "最新版本已经内置VirtualSmc.efi协议。\n使用此选项可以删除drivers目录下的VirtualSmc.efi文件。\n但是，如果使用FakeSMC内核扩展，则可能需要手动添加NVRAM密钥变量。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Perform full device connection during APFS loading.\nInstead of partition handle connection normally used for APFS driver loading every handle is connected recursively.\nThis may take more time than usual but can be the only way to access APFS partitions on some firmwares like those found on older HP laptops."; ObjectID = "H5Y-DY-WOe"; */
-"H5Y-DY-WOe.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Perform full device connection during APFS loading.\nInstead of partition handle connection normally used for APFS driver loading every handle is connected recursively.\nThis may take more time than usual but can be the only way to access APFS partitions on some firmwares like those found on older HP laptops.";
+"H5Y-DY-WOe.ibShadowedToolTip" = "在APFS加载期间执行完整的设备连接。\n代替通常用于APFS驱动程序加载的分区句柄连接，每个句柄都是递归连接的。\n这可能比平时花费更多的时间，但可能是访问某些固件（如旧版HP笔记本电脑上的固件）上的APFS分区的唯一方法。";
 
 /* Class = "NSButtonCell"; title = "ReplaceTabWithSpace"; ObjectID = "HIh-Oc-UT7"; */
 "HIh-Oc-UT7.title" = "ReplaceTabWithSpace";
