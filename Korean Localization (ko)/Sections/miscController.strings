@@ -21,13 +21,13 @@
 "2Vb-s2-Ejp.ibShadowedToolTip" = "Type: plist integer\nDefault value: 0\nDescription: A bitmask (sum) of enabled logging targets. By default all the logging output is hidden, so this option is required to be set when debugging is necessary.\nThe following logging targets are supported:\n• 0x01 — Enable logging, otherwise all log is discarded.\n• 0x02 — Enable basic console (onscreen) logging.\n• 0x04 — Enable logging to Data Hub.\n• 0x08 — Enable serial port logging.\n• 0x10 — Enable UEFI variable logging.\n• 0x20 — Enable non-volatile UEFI variable logging.\n• 0x40 — Enable logging to file.\nConsole logging prints less than all the other variants. Depending on the build type (RELEASE, DEBUG, or NOOPT) different amount of logging may be read (from least to most).";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "2dj-hB-QBF"; */
-"2dj-hB-QBF.title" = "Unselect All";
+"2dj-hB-QBF.title" = "모두 선택 취소";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Save macOS kernel panic to OpenCore root partition.\nThe file is saved as panic-YYYY-MM-DD-HHMMSS.txt. It is strongly recommended to have keepsyms=1 boot argument to see debug symbols in the panic log. In case it was not present kpdescribe.sh utility (bundled with OpenCore) may be used to partially recover the stacktrace.\nDevelopment and debug kernels produce more helpful kernel panics. Consider downloading and installing\nKernelDebugKit from developer.apple.com when debugging a problem. To activate a development kernel you will need to add a kcsuffix=development boot argument. Use uname -a command to ensure that your current loaded kernel is a development (or a debug) kernel.\nIn case OpenCore kernel panic saving mechanism was not used, kernel panics may still be found in /Library/Logs/Diagnostic directory. Starting with macOS Catalina kernel panics are stored in JSON format, so they need to be preprocessedbefore passing to kpdescribe.sh: \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'"; ObjectID = "2lk-2r-hIW"; */
 "2lk-2r-hIW.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Save macOS kernel panic to OpenCore root partition.\nThe file is saved as panic-YYYY-MM-DD-HHMMSS.txt. It is strongly recommended to have keepsyms=1 boot argument to see debug symbols in the panic log. In case it was not present kpdescribe.sh utility (bundled with OpenCore) may be used to partially recover the stacktrace.\nDevelopment and debug kernels produce more helpful kernel panics. Consider downloading and installing\nKernelDebugKit from developer.apple.com when debugging a problem. To activate a development kernel you will need to add a kcsuffix=development boot argument. Use uname -a command to ensure that your current loaded kernel is a development (or a debug) kernel.\nIn case OpenCore kernel panic saving mechanism was not used, kernel panics may still be found in /Library/Logs/Diagnostic directory. Starting with macOS Catalina kernel panics are stored in JSON format, so they need to be preprocessedbefore passing to kpdescribe.sh: \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "3K9-EU-jse"; */
-"3K9-EU-jse.title" = "Select All";
+"3K9-EU-jse.title" = "모두 선택";
 
 /* Class = "NSTabViewItem"; label = "Boot"; ObjectID = "3fm-9G-OpP"; */
 "3fm-9G-OpP.label" = "Boot";
@@ -60,7 +60,7 @@
 "AEq-Xa-8FR.title" = "DEBUG_WARN in DEBUG, NOOPT, RELEASE";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Ai7-te-FXf"; */
-"Ai7-te-FXf.title" = "Select All";
+"Ai7-te-FXf.title" = "모두 선택";
 
 /* Class = "NSTextFieldCell"; title = "Picker Mode"; ObjectID = "BYc-kG-loi"; */
 "BYc-kG-loi.title" = "Picker Mode";
@@ -69,7 +69,7 @@
 "Bcn-4Z-d2d.title" = "Expose OpenCore version as an UEFI variable.";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Bpe-6y-ybA"; */
-"Bpe-6y-ybA.title" = "Browse";
+"Bpe-6y-ybA.title" = "찾아보기";
 
 /* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
 "DAS-KM-gwG.title" = "Expose Sensitive Data";
@@ -93,7 +93,7 @@
 "GOG-QD-oyI.title" = "SysReport";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Gaf-gn-k6J"; */
-"Gaf-gn-k6J.title" = "Select All";
+"Gaf-gn-k6J.title" = "모두선택";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_EXT"; ObjectID = "H6a-QA-xQu"; */
 "H6a-QA-xQu.title" = "OC_SCAN_ALLOW_FS_EXT";
@@ -108,7 +108,7 @@
 "Jpe-QB-x2r.title" = "AllowNvramReset";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
-"KRE-fs-cVq.title" = "Unselect All";
+"KRE-fs-cVq.title" = "모두 선택취소";
 
 /* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
 "L3h-6q-xRi.title" = "Provides custom rendered titles for boot entries";
@@ -120,7 +120,7 @@
 "NFd-Yp-DAy.title" = "Changes used icon set to an alternate one if it is supported";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "NXw-uw-Jsu"; */
-"NXw-uw-Jsu.headerCell.title" = "Enabled";
+"NXw-uw-Jsu.headerCell.title" = "활성화";
 
 /* Class = "NSTextFieldCell"; title = "BootProtect"; ObjectID = "OeD-Mz-a2a"; */
 "OeD-Mz-a2a.title" = "BootProtect";
@@ -129,13 +129,13 @@
 "PDS-bo-Qx8.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details.";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "PDr-JO-EKf"; */
-"PDr-JO-EKf.title" = "Unselect All";
+"PDr-JO-EKf.title" = "모두 선택취소";
 
 /* Class = "NSTextFieldCell"; title = "ConsoleAttributes"; ObjectID = "PIX-Ia-ajs"; */
 "PIX-Ia-ajs.title" = "ConsoleAttributes";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Pkl-Zl-stw"; */
-"Pkl-Zl-stw.title" = "Browse";
+"Pkl-Zl-stw.title" = "찾아보기";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console)."; ObjectID = "PwU-cB-LIO"; */
 "PwU-cB-LIO.ibShadowedToolTip" = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console).";
@@ -156,10 +156,10 @@
 "SLo-CJ-cas.title" = "Expose OEM information as a set of UEFI variables.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "SPw-C4-qwL"; */
-"SPw-C4-qwL.headerCell.title" = "Enabled";
+"SPw-C4-qwL.headerCell.title" = "활성화";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "SZj-0R-9Uu"; */
-"SZj-0R-9Uu.title" = "Unselect All";
+"SZj-0R-9Uu.title" = "모두 선택취소";
 
 /* Class = "NSButtonCell"; title = "PollAppleHotKeys"; ObjectID = "TDv-Al-hb0"; */
 "TDv-Al-hb0.title" = "PollAppleHotKeys";
@@ -216,7 +216,7 @@
 "aUx-rK-UTX.title" = "Scan Policy";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "b27-wQ-s5W"; */
-"b27-wQ-s5W.title" = "Select All";
+"b27-wQ-s5W.title" = "모두선택";
 
 /* Class = "NSButtonCell"; title = "PickerAudioAssist"; ObjectID = "cN2-ao-nCB"; */
 "cN2-ao-nCB.title" = "PickerAudioAssist";
@@ -279,13 +279,13 @@
 "oFg-pn-DgG.label" = "Tools";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "oL1-jF-NNm"; */
-"oL1-jF-NNm.title" = "Unselect All";
+"oL1-jF-NNm.title" = "모두 선택 취소";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE."; ObjectID = "omf-bH-d4v"; */
 "omf-bH-d4v.ibShadowedToolTip" = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE.";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "pIV-PK-mVi"; */
-"pIV-PK-mVi.title" = "Select All";
+"pIV-PK-mVi.title" = "모두 선택";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux)."; ObjectID = "pTC-aG-QK1"; */
 "pTC-aG-QK1.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux).";

@@ -99,7 +99,7 @@
 "iwn-0u-n3y.headerCell.title" = "All";
 
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "jB3-Fa-Mq9"; */
-"jB3-Fa-Mq9.label" = "Patch";
+"jB3-Fa-Mq9.label" = "패치";
 
 /* Class = "NSButtonCell"; title = "FadtEnableReset"; ObjectID = "l7b-Bk-2B3"; */
 "l7b-Bk-2B3.title" = "FadtEnableReset";
@@ -111,7 +111,7 @@
 "qk5-w1-h2Q.headerCell.title" = "OemTableId";
 
 /* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "swX-ck-WbC"; */
-"swX-ck-WbC.label" = "Delete";
+"swX-ck-WbC.label" = "지우기";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmwares that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation."; ObjectID = "u3f-B9-p1e"; */
 "u3f-B9-p1e.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmwares that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation.";
@@ -123,7 +123,7 @@
 "xYB-OX-ce7.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Provide reset register and flag in FADT table to enable reboot and shutdown on legacy hardware. Not recommended unless required.";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "y3O-8J-sex"; */
-"y3O-8J-sex.label" = "Add";
+"y3O-8J-sex.label" = "추가";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "z8k-hB-WoQ"; */
-"z8k-hB-WoQ.headerCell.title" = "Enabled";
+"z8k-hB-WoQ.headerCell.title" = "활성";

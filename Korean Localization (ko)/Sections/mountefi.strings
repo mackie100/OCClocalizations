@@ -1,9 +1,9 @@
 
 /* Class = "NSTextFieldCell"; title = "N/A"; ObjectID = "8qh-Kt-MSO"; */
-"8qh-Kt-MSO.title" = "N/A";
+"8qh-Kt-MSO.title" = "알수없음";
 
 /* Class = "NSButtonCell"; title = "unMount partition"; ObjectID = "9m5-em-cDq"; */
-"9m5-em-cDq.title" = "unMount partition";
+"9m5-em-cDq.title" = "unMount 파티션";
 
 /* Class = "NSBox"; title = "Partition Scheme"; ObjectID = "Ags-Fc-odA"; */
 "Ags-Fc-odA.title" = "Partition Scheme";
@@ -33,13 +33,13 @@
 "ZmL-3I-KOU.title" = "Volume UUID";
 
 /* Class = "NSTextFieldCell"; title = "Mount Point"; ObjectID = "azg-58-iVC"; */
-"azg-58-iVC.title" = "Mount Point";
+"azg-58-iVC.title" = "Mount 지점";
 
 /* Class = "NSTextFieldCell"; title = "Size:"; ObjectID = "dXq-m8-waT"; */
-"dXq-m8-waT.title" = "Size:";
+"dXq-m8-waT.title" = "용량:";
 
 /* Class = "NSButtonCell"; title = "Update Partitions"; ObjectID = "mri-4d-h4k"; */
-"mri-4d-h4k.title" = "Update Partitions";
+"mri-4d-h4k.title" = "Partitions 업데이트";
 
 /* Class = "NSBox"; title = "Efi Partitions"; ObjectID = "tx8-c5-kb6"; */
-"tx8-c5-kb6.title" = "Efi Partitions";
+"tx8-c5-kb6.title" = "Efi 파티션";

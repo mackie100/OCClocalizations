@@ -111,16 +111,16 @@
 "SHQ-fm-Uec.title" = "ExternalDiskIcons";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "VgW-t5-zY9"; */
-"VgW-t5-zY9.title" = "Multiple selection allowed";
+"VgW-t5-zY9.title" = "동시 선택 가능";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "WGU-Ke-n07"; */
-"WGU-Ke-n07.title" = "Browse";
+"WGU-Ke-n07.title" = "찾아보기";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise."; ObjectID = "WQz-t0-GJT"; */
 "WQz-t0-GJT.ibShadowedToolTip" = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "aAH-qz-ikl"; */
-"aAH-qz-ikl.headerCell.title" = "Skip";
+"aAH-qz-ikl.headerCell.title" = "무시";
 
 /* Class = "NSTextFieldCell"; title = "Cpuid1Data"; ObjectID = "aVm-Of-4z9"; */
 "aVm-Of-4z9.title" = "Cpuid1Data";
@@ -192,7 +192,7 @@
 "tya-o0-N6w.headerCell.title" = "MaxKernel";
 
 /* Class = "NSMenuItem"; title = "List Of Patches"; ObjectID = "urM-4i-kap"; */
-"urM-4i-kap.title" = "List Of Patches";
+"urM-4i-kap.title" = "패치 리스트";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables multiple MSR access critical for select CPUs, which have no native XCPM support.\nThis is normally used in conjunction with Emulate section on Haswell-E, Broadwell-E, Skylake-SP, and similar CPUs.\nNote: Additional not provided patches will be required for Ivy Bridge or Pentium CPUs. It is recommended to use AppleIntelCpuPowerManagement.kext for the former."; ObjectID = "v6y-N9-uHT"; */
 "v6y-N9-uHT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disables multiple MSR access critical for select CPUs, which have no native XCPM support.\nThis is normally used in conjunction with Emulate section on Haswell-E, Broadwell-E, Skylake-SP, and similar CPUs.\nNote: Additional not provided patches will be required for Ivy Bridge or Pentium CPUs. It is recommended to use AppleIntelCpuPowerManagement.kext for the former.";

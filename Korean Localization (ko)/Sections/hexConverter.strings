@@ -1,18 +1,18 @@
 
 /* Class = "NSTextFieldCell"; placeholderString = "decimal string"; ObjectID = "1JV-bN-KRu"; */
-"1JV-bN-KRu.placeholderString" = "decimal string";
+"1JV-bN-KRu.placeholderString" = "숫자 string";
 
 /* Class = "NSTextFieldCell"; placeholderString = "text string"; ObjectID = "8Wn-hg-GPm"; */
-"8Wn-hg-GPm.placeholderString" = "text string";
+"8Wn-hg-GPm.placeholderString" = "텍스트 string";
 
 /* Class = "NSBox"; title = "decimal <-> HEX "; ObjectID = "AbW-Wf-IH2"; */
-"AbW-Wf-IH2.title" = "decimal <-> HEX ";
+"AbW-Wf-IH2.title" = "숫자 <-> HEX ";
 
 /* Class = "NSSegmentedCell"; CBm-Dw-zMx.ibShadowedLabels[0] = "encode"; ObjectID = "CBm-Dw-zMx"; */
-"CBm-Dw-zMx.ibShadowedLabels[0]" = "encode";
+"CBm-Dw-zMx.ibShadowedLabels[0]" = "인코드";
 
 /* Class = "NSSegmentedCell"; CBm-Dw-zMx.ibShadowedLabels[1] = "decode"; ObjectID = "CBm-Dw-zMx"; */
-"CBm-Dw-zMx.ibShadowedLabels[1]" = "decode";
+"CBm-Dw-zMx.ibShadowedLabels[1]" = "디코드";
 
 /* Class = "NSTextFieldCell"; placeholderString = "HEX string"; ObjectID = "DEE-Cf-wUo"; */
 "DEE-Cf-wUo.placeholderString" = "HEX string";

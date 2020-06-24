@@ -249,10 +249,10 @@
 "Manual Installation: ERROR: You don't have permission to write here!" = "수동설치: 에러: 쓰기 권한이 없습니다.";
 
 /* kextsInstallerController */
-"Manual Installation: Kext file required!" = "수동설치: Kext file required!";
+"Manual Installation: Kext file required!" = "수동설치: 켁스트 파일 필요";
 
 /* kextsInstallerController */
-"Manual Installation: Path doesn't exist!" = "Manual Installation: Path doesn't exist!";
+"Manual Installation: Path doesn't exist!" = "수동설치: 경로가 존재하지 않습니다.";
 
 /* No comment provided by engineer. */
 "MB/s" = "MB/s";
@@ -267,52 +267,52 @@
 "Misc" = "Misc";
 
 /* mountefiController */
-"Mount Point:" = "Mount Point:";
+"Mount Point:" = "Mount 지점:";
 
 /* mountefiController */
-"Mount Point: %@" = "Mount Point: %@";
+"Mount Point: %@" = "Mount 지점: %@";
 
 /* mountefiController */
-"Mount Point: N/A" = "Mount Point: N/A";
+"Mount Point: N/A" = "Mount 지점: N/A";
 
 /* opencoreDownloaderController */
-"No EFI folder found. Creating one...." = "No EFI folder found. Creating one....";
+"No EFI folder found. Creating one...." = "EFI 폴더를 찾을수 없습니다.";
 
 /* sidebarMenu */
 "NVRAM" = "NVRAM";
 
 /* opencoreDownloaderController */
-"Old file has been renamed to BOOTx64_%@.efi.bak" = "Old file has been renamed to BOOTx64_%@.efi.bak";
+"Old file has been renamed to BOOTx64_%@.efi.bak" = "BOOTx64_%@.efi.bak 로 백업완료";
 
 /* opencoreDownloaderController */
-"Old file has been renamed to OpenCore_%@.efi.bak" = "Old file has been renamed to OpenCore_%@.efi.bak";
+"Old file has been renamed to OpenCore_%@.efi.bak" = "OpenCore_%@.efi.bak 로 백업완료";
 
 /* reading_savingOperation */
-"OpenCore Configurator could not be synchronized because an error occurred: %@" = "OpenCore Configurator could not be synchronized because an error occurred: %@";
+"OpenCore Configurator could not be synchronized because an error occurred: %@" = "동기화 할수 없습니다. 에러 : %@";
 
 /* pasteBoardController */
-"Paste" = "Paste";
+"Paste" = "붙여넣기";
 
 /* left_toolbar */
-"Paypal - Free Donation" = "Paypal - Free Donation";
+"Paypal - Free Donation" = "Paypal - 자유 후원하기";
 
 /* sidebarMenu */
 "PlatformInfo" = "PlatformInfo";
 
 /* reading_savingOperation */
-"Repair" = "Repair";
+"Repair" = "복구";
 
 /* mainMenu */
-"Restart" = "Restart";
+"Restart" = "재시작";
 
 /* left_toolbar */
-"Save" = "Save";
+"Save" = "저장하기";
 
 /* left_toolbar */
-"Save As..." = "Save As...";
+"Save As..." = "다른이름으로 저장하기...";
 
 /* left_toolbar */
-"Save, Save As Configuration" = "Save, Save As Configuration";
+"Save, Save As Configuration" = "다른 이름으로 설정 저장하기";
 
 /* No comment provided by engineer. */
 "Second" = "Second";
@@ -321,62 +321,62 @@
 "Seconds" = "Seconds";
 
 /* left_toolbar */
-"Share" = "Share";
+"Share" = "공유";
 
 /* kextsInstallerController */
-"Show Location: Path doesn't exist!" = "Show Location: Path doesn't exist!";
+"Show Location: Path doesn't exist!" = "위치: 경로가 존재하지 않습니다.";
 
 /* mountefiController */
-"Size:" = "Size:";
+"Size:" = "용량:";
 
 /* kextsInstallerController */
-"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "Some info for %1$@.kext =>Identifier: %2$@ | Version: %3$@%4$@";
+"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "개요 for %1$@.kext =>Identifier: %2$@ | Version: %3$@%4$@";
 
 /* rtvariablesController */
-"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
+"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "형식에 맞는 UUID 를 사용 해야 합니다. 형태 : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
 
 /* mountefiController */
-"Status:" = "Status:";
+"Status:" = "상태:";
 
 /* reading_savingOperation */
-"Synchronized" = "Synchronized";
+"Synchronized" = "동기화";
 
 /* sectionSourceListHexConverterPopover */
-"text string" = "text string";
+"text string" = "텍스트 값";
 
 /* mainMenu */
-"To apply this change, you must restart the app" = "To apply this change, you must restart the app";
+"To apply this change, you must restart the app" = "변화사항 적용을 위해 앱 재시작 필요합니다.";
 
 /* mainMenu */
-"Do you also want to change fork type?" = "Do you also want to change fork type?";
+"Do you also want to change fork type?" = "fork type 변경을 하시겠습니까?";
 
 /* mainMenu */
-"Do you also want to change configuration properties type?" = "Do you also want to change configuration properties type?";
+"Do you also want to change configuration properties type?" = "컨피규레이션 내용을 변경 하시겠습니까?";
 
 /* sidebarMenu */
 "UEFI" = "UEFI";
 
 /* installDriversController
    opencoreDownloaderController */
-"Unable to read database." = "Unable to read database.";
+"Unable to read database." = "데이터를 읽을수가 없습니다.";
 
 /* mountefiController */
-"Untitled" = "Untitled";
+"Untitled" = "무제";
 
 /* opencoreDownloaderController */
-"Unzip process was aborted because I can't create a backup" = "Unzip process was aborted because I can't create a backup";
+"Unzip process was aborted because I can't create a backup" = "백업 파일 생성이 불가능 하여 압축 풀기 중단 ";
 
 /* kextsInstallerController */
-"Unzip: Error during unzipping file!" = "Unzip: Error during unzipping file!";
+"Unzip: Error during unzipping file!" = "압축을 푸는 도중 오류가 생겼습니다.";
 
 /* opencoreDownloaderController */
-"Unzipped..." = "Unzipped...";
+"Unzipped..." = "압축이 풀렸습니다...";
 
 /* kextsInstallerController */
-"Update available for %@.kext => Local version: %@ | Remote version: %@" = "Update available for %1$@.kext =>Local version: %2$@ | Remote version: %3$@";
+"Update available for %@.kext => Local version: %@ | Remote version: %@" = "업데이트가 있습니다. %1$@.kext => 사용중인 version: %2$@ | 리모트 version: %3$@";
 
 /* kextsInstallerController */
-"VirtualSMC detected... Choose an add on to install..." = "VirtualSMC detected... Choose an add on to install...";
+"VirtualSMC detected... Choose an add on to install..." = "VirtualSMC 발견됨... 설치해주세요.";
 
 /* mountefiController */
 "Volume Identifier:" = "Volume Identifier:";
@@ -385,7 +385,7 @@
 "Volume Identifier: %@" = "Volume Identifier: %@";
 
 /* mountefiController */
-"Volume Identifier: %@ Status: [Current Boot Disk]" = "Volume Identifier: %@ Status: [Current Boot Disk]";
+"Volume Identifier: %@ Status: [Current Boot Disk]" = "Volume Identifier: %@ 상태: [Current Boot Disk]";
 
 /* mountefiController */
 "Volume Name:" = "Volume Name:";
@@ -403,25 +403,25 @@
 "Volume UUID: N/A" = "Volume UUID: N/A";
 
 /* opencoreDownloaderController */
-"You don't have permission to write here!" = "You don't have permission to write here!";
+"You don't have permission to write here!" = "쓰기 권한이 없습니다.";
 
 /* dockMenu */
-"New Configuration..." = "New Configuration...";
+"New Configuration..." = "새로운 Configuration 작성하기";
 
 /* dockMenu */
-"Open Configuration..." = "Open Configuration...";
+"Open Configuration..." = "Configuration 불러오기";
 
 /* dockMenu */
-"Leave A Message" = "Leave A Message";
+"Leave A Message" = "공식 포럼에 메세지 작성하기";
 
 /* installDriversController opencoreDownloaderController */
-"No EFI folder found.....\n" = "No EFI folder found.....\n";
+"No EFI folder found.....\n" = "EFI 폴더가 없습니다.\n";
 
 /* preferencesPanel */
-"Release Version" = "Release Version";
+"Release Version" = "정식 Version";
 
 /* preferencesPanel */
-"Development Version" = "Development Version";
+"Development Version" = "개발 Version";
 
 /* deviceProperties_table_properties_menu */
 "Audio Device Properties" = "Audio Device Properties";
@@ -430,7 +430,7 @@
 "Video Device Properties" = "Video Device Properties";
 
 /* deviceProperties_table_properties_menu */
-"Advanced Properties" = "Advanced Properties";
+"Advanced Properties" = "고급항목";
 
 /* deviceProperties_table_properties_menu */
 "display number" = "display number";
@@ -460,16 +460,16 @@
 "Help" = "Help";
 
 /* deviceProperties_table_properties_menu */
-"Select '%@' device before adding '%@' key" = "Select '%1$@' device before adding '%2$@' key";
+"Select '%@' device before adding '%@' key" = "'%2$@' 키를 추가하기전에 '%1$@'를 선택해주세요. ";
 
 /* deviceProperties_table_properties_menu */
-"Select a '%@' device before adding a preset" = "Select a '%1$@' device before adding a preset";
+"Select a '%@' device before adding a preset" = "프리셋을 추가하기 전에 '%1$@'를 선택해주세요.";
 
 /* deviceProperties_table_properties_menu */
-"Select a Platform ID before adding a preset" = "Select a Platform ID before adding a preset";
+"Select a Platform ID before adding a preset" = "Platform ID를 선택해주세요.";
 
 /* deviceProperties_table_properties_menu */
-"Select a valid device path" = "Select a valid device path";
+"Select a valid device path" = "유효한 Device 경로를 선택해주세요";
 
 /* deviceProperties_table_properties_menu */
 "Product Name" = "Product Name";
@@ -496,73 +496,73 @@
 "Select a valid UUID" = "Select a valid UUID";
 
 /* compatibilityWarningScreen */
-"You seem to have an old version of OpenCore bootloader." = "You seem to have an old version of OpenCore bootloader.";
+"You seem to have an old version of OpenCore bootloader." = "구 버전 Opencore 를 사용중";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed or your NVRAM isn't native." = "The bootloader looks like it is not installed or your NVRAM isn't native.";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "부트로더가 설치되지 않았거나, Nvram 인식에 문제가 있습니다.";
 
 /* compatibilityWarningScreen */
-"2nd_message" = "This app creates a configuration file for %1$@ and higher versions.";
+"2nd_message" = "이 앱은 %1$@ 보다 높은 버전의 config 생성을 지원 합니다. ";
 
 /* compatibilityWarningScreen */
-"Use at your own risk" = "Use at your own risk";
+"Use at your own risk" = "알려지지 않은 문제가 생길수도 있습니다. 사용에 주의 바랍니다.";
 
 /* compatibilityWarningScreen */
-"(select 'Backup File Before Saving' in Preferences Pane)" = "(select 'Backup File Before Saving' in Preferences Pane)";
+"(select 'Backup File Before Saving' in Preferences Pane)" = "('Backup File Before Saving'을 설정에서 선택해주세요.)";
 
 /* advancedUser */
-"The key “%@” already exists in containing item." = "The key “%@” already exists in containing item.";
+"The key “%@” already exists in containing item." = "“%@” 값은 이미 존재합니다.";
 
 /* advancedUser */
-"(%lu items)" = "(%lu items)";
+"(%lu items)" = "(%lu 아이템)";
 
 /* advancedUser */
-"Item %lu" = "Item %lu";
+"Item %lu" = "아이템 %lu";
 
 /* outlineMode */
-"Cut" = "Cut";
+"Cut" = "잘라내기";
 
 /* outlineMode */
-"Copy" = "Copy";
+"Copy" = "복사";
 
 /* outlineMode */
-"Paste" = "Paste";
+"Paste" = "붙여넣기";
 
 /* outlineMode */
-"Delete" = "Delete";
+"Delete" = "지우기";
 
 /* outlineMode */
 "Value Type" = "Value Type";
 
 /* outlineMode */
-"Array" = "Array";
+"Array" = "나열";
 
 /* outlineMode */
-"Dictionary" = "Dictionary";
+"Dictionary" = "사전";
 
 /* outlineMode */
-"Boolean" = "Boolean";
+"Boolean" = "불리언값";
 
 /* outlineMode */
-"Data" = "Data";
+"Data" = "데이터";
 
 /* outlineMode */
-"Date" = "Date";
+"Date" = "날자";
 
 /* outlineMode */
-"Number" = "Number";
+"Number" = "숫자";
 
 /* outlineMode */
-"String" = "String";
+"String" = "문자열";
 
 /* outlineMode */
-"Add Item" = "Add Item";
+"Add Item" = "아이템 추가하기";
 
 /* miscController */
-"Please make sure to select a file from a boot efi path." = "Please make sure to select a file from a boot efi path.";
+"Please make sure to select a file from a boot efi path." = "boot efi 경로해서 파일을 선택해주세요.";
 
 /* miscController */
-"No efi boot path found." = "No efi boot path found.";
+"No efi boot path found." = "EFI boot 경로를 찾을수 없습니다.";
 
 /* quicktoolsController */
 "%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";

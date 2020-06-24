@@ -39,10 +39,10 @@
 "cVF-o8-z0z.ibShadowedToolTip" = "3. LegacySchema\nType: plist dict\nDescription: Allows setting select NVRAM variables from a map (plist dict) of GUIDs to an array (plist array) of variable names in plist string format.\nYou can use * value to accept all variables for select GUID.\nWARNING: Choose variables very carefully, as nvram.plist is not vaulted. For instance, do not put boot-args or csr-active-config, as this can bypass SIP.\nTo read NVRAM variable value from macOS one could use nvram by concatenating variable GUID and name separated by : symbol. For example, nvram 7C436110-AB2A-4BBB-A880-FE41995C9F82:boot-args.\nA continuously updated variable list can be found in a corresponding document: NVRAM Variables.\n\nWARNING: Choose variables very carefully, as nvram.plist is not vaulted. For instance, do not put boot-args\nor csr-active-config, as this can bypass SIP.";
 
 /* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "dmH-cD-uzh"; */
-"dmH-cD-uzh.label" = "Delete";
+"dmH-cD-uzh.label" = "지우기";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "eSY-j6-jWD"; */
-"eSY-j6-jWD.label" = "Add";
+"eSY-j6-jWD.label" = "추가하기";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "ia9-0E-fQ8"; */
 "ia9-0E-fQ8.headerCell.title" = "Key";

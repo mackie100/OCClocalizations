@@ -69,10 +69,10 @@
 "o31-92-wcY.ibShadowedToolTip" = "Open Folder";
 
 /* Class = "NSBox"; title = "Status"; ObjectID = "rk5-54-iPh"; */
-"rk5-54-iPh.title" = "Status";
+"rk5-54-iPh.title" = "상태";
 
 /* Class = "NSTableColumn"; headerCell.title = "Description"; ObjectID = "s02-B6-VcE"; */
-"s02-B6-VcE.headerCell.title" = "Description";
+"s02-B6-VcE.headerCell.title" = "설명";
 
 /* Class = "NSButtonCell"; title = "SMCLightSensor"; ObjectID = "skX-jk-rAB"; */
 "skX-jk-rAB.title" = "SMCLightSensor";
@@ -87,10 +87,10 @@
 "wJK-pT-UcH.title" = "FakeSMC Detected";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Delete"; ObjectID = "xLd-aS-xuu"; */
-"xLd-aS-xuu.ibShadowedToolTip" = "Delete";
+"xLd-aS-xuu.ibShadowedToolTip" = "지우기";
 
 /* Class = "NSButtonCell"; title = "CPUSensors"; ObjectID = "yyM-ue-Kqj"; */
 "yyM-ue-Kqj.title" = "CPUSensors";
 
 /* Class = "NSTextFieldCell"; title = "Location:"; ObjectID = "zsE-Kv-XLB"; */
-"zsE-Kv-XLB.title" = "Location:";
+"zsE-Kv-XLB.title" = "위치:";

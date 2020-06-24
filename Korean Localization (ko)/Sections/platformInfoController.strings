@@ -18,7 +18,7 @@
 "38m-qA-it7.ibShadowedToolTip" = "Add or remove this section from plist\nDefault value: Add";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "4bx-F9-aab"; */
-"4bx-F9-aab.title" = "Generate";
+"4bx-F9-aab.title" = "생성";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nDefault value: 0\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeatures and ExtendedFirmwareFeatures Description: 64-bit firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeatures. Upper 64 bits match ExtendedFirmwareFeatures."; ObjectID = "4l3-Do-kcw"; */
 "4l3-Do-kcw.ibShadowedToolTip" = "Type: plist data, 8 bytes\nDefault value: 0\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeatures and ExtendedFirmwareFeatures Description: 64-bit firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeatures. Upper 64 bits match ExtendedFirmwareFeatures.";
@@ -57,7 +57,7 @@
 "8wz-5k-5Zd.title" = "DataHub";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "9UV-S4-eO3"; */
-"9UV-S4-eO3.title" = "Generate";
+"9UV-S4-eO3.title" = "생성";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write SMBIOS tables (gEfiSmbios(3)TableGuid) to gOcCustomSmbios(3)TableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII), done automatically by CustomSMBIOSGuid quirk.\n\nNote: A side effect of using Custom approach is making SMBIOS updates exclusive to macOS, avoiding a collission with existing Windows activation and custom OEM software but potentially breaking Apple-specific tools."; ObjectID = "9o2-8y-dq6"; */
 "9o2-8y-dq6.ibShadowedToolTip" = "Type: plist string\nDefault value: Auto\nDescription: Update SMBIOS fields approach:\n• Auto — Overwrite if new size is <= than the page-aligned original and there are no issues with legacy region unlock. Create otherwise.\n• Create — Replace the tables with newly allocated EfiReservedMemoryType at AllocateMaxAddress without any fallbacks.\n• Overwrite — Overwrite existing gEfiSmbiosTableGuid and gEfiSmbiosTable3Guid data if it fits new size. Abort with unspecified state otherwise.\n• Custom — Write SMBIOS tables (gEfiSmbios(3)TableGuid) to gOcCustomSmbios(3)TableGuid to workaround firmwares overwriting SMBIOS contents at ExitBootServices. Otherwise equivalent to Create. Requires patching AppleSmbios.kext and AppleACPIPlatform.kext to read from another GUID: \"EB9D2D31\" -> \"EB9D2D35\" (in ASCII), done automatically by CustomSMBIOSGuid quirk.\n\nNote: A side effect of using Custom approach is making SMBIOS updates exclusive to macOS, avoiding a collission with existing Windows activation and custom OEM software but potentially breaking Apple-specific tools.";
@@ -144,7 +144,7 @@
 "Lof-UF-S84.title" = "Release Date";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "MRn-KI-kxS"; */
-"MRn-KI-kxS.title" = "Generate";
+"MRn-KI-kxS.title" = "생성";
 
 /* Class = "NSTextFieldCell"; title = "Serial Number"; ObjectID = "MW7-wk-hds"; */
 "MW7-wk-hds.title" = "Serial Number";
@@ -303,7 +303,7 @@
 "eez-pY-d3O.ibShadowedLabels[1]" = "Hack";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "fWq-dP-cDy"; */
-"fWq-dP-cDy.title" = "Add this section in config.plist";
+"fWq-dP-cDy.title" = "config.plist에 추가";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type, refer to Table 17 — System Enclosure or Chassis Types for more details."; ObjectID = "frw-3J-2Cg"; */
 "frw-3J-2Cg.ibShadowedToolTip" = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type, refer to Table 17 — System Enclosure or Chassis Types for more details.";
@@ -336,7 +336,7 @@
 "hxm-Qi-SkM.title" = "MLB";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "iJ4-50-puj"; */
-"iJ4-50-puj.title" = "Generate";
+"iJ4-50-puj.title" = "생성";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nDefault value: 0\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeaturesMask and ExtendedFirmwareFeaturesMask Description: Supported bits of extended firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeaturesMask. Upper 64 bits match ExtendedFirmwareFeaturesMask."; ObjectID = "ih3-wv-2Kc"; */
 "ih3-wv-2Kc.ibShadowedToolTip" = "Type: plist data, 8 bytes\nDefault value: 0\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeaturesMask and ExtendedFirmwareFeaturesMask Description: Supported bits of extended firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeaturesMask. Upper 64 bits match ExtendedFirmwareFeaturesMask.";
@@ -363,7 +363,7 @@
 "l5R-bG-c9M.title" = "Version";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "lvE-6L-IGl"; */
-"lvE-6L-IGl.title" = "Add this section in config.plist";
+"lvE-6L-IGl.title" = "config.plist 에 추가";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 8-bit\nDefault value: OEM specified\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Memory form factor. On Macs it should be DIMM or SODIMM."; ObjectID = "m9k-yK-AdV"; */
 "m9k-yK-AdV.ibShadowedToolTip" = "Type: plist integer, 8-bit\nDefault value: OEM specified\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Memory form factor. On Macs it should be DIMM or SODIMM.";

@@ -1,153 +1,153 @@
 
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
-"11s-5L-eLA.label" = "Bootloader Settings";
+"11s-5L-eLA.label" = "부트로더 설정";
 
 /* Class = "NSToolbarItem"; paletteLabel = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
-"11s-5L-eLA.paletteLabel" = "Bootloader Settings";
+"11s-5L-eLA.paletteLabel" = "부트로더 설정";
 
 /* Class = "NSMenuItem"; title = "Boot.log"; ObjectID = "1OT-QB-Wyo"; */
 "1OT-QB-Wyo.title" = "Boot.log";
 
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
-"1UK-8n-QPP.title" = "Customize Toolbar…";
+"1UK-8n-QPP.title" = "툴바 설정…";
 
 /* Class = "NSMenuItem"; title = "OpenCore Configurator"; ObjectID = "1Xt-HY-uBw"; */
-"1Xt-HY-uBw.title" = "OpenCore Configurator";
+"1Xt-HY-uBw.title" = "OpenCore 콘피규레이터";
 
 /* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
-"1b7-l0-nxx.title" = "Find";
+"1b7-l0-nxx.title" = "찾기";
 
 /* Class = "NSMenuItem"; title = "Text Mode"; ObjectID = "1mO-LS-7hU"; */
-"1mO-LS-7hU.title" = "Text Mode";
+"1mO-LS-7hU.title" = "텍스트 모드";
 
 /* Class = "NSMenuItem"; title = "Lower"; ObjectID = "1tx-W0-xDw"; */
-"1tx-W0-xDw.title" = "Lower";
+"1tx-W0-xDw.title" = "줄이기";
 
 /* Class = "NSMenuItem"; title = "Leave A Message"; ObjectID = "1uS-ai-nwN"; */
-"1uS-ai-nwN.title" = "Leave A Message";
+"1uS-ai-nwN.title" = "메세지 남기기";
 
 /* Class = "NSMenuItem"; title = "Raise"; ObjectID = "2h7-ER-AoG"; */
-"2h7-ER-AoG.title" = "Raise";
+"2h7-ER-AoG.title" = "키우기";
 
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
-"2oI-Rn-ZJC.title" = "Transformations";
+"2oI-Rn-ZJC.title" = "변형";
 
 /* Class = "NSMenu"; title = "Spelling"; ObjectID = "3IN-sU-3Bg"; */
-"3IN-sU-3Bg.title" = "Spelling";
+"3IN-sU-3Bg.title" = "철자검사";
 
 /* Class = "NSMenuItem"; title = "OpenCore Documentation"; ObjectID = "3Ie-4w-VRA"; */
-"3Ie-4w-VRA.title" = "OpenCore Documentation";
+"3Ie-4w-VRA.title" = "OpenCore 문서";
 
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "3Om-Ey-2VK"; */
-"3Om-Ey-2VK.title" = "Use Default";
+"3Om-Ey-2VK.title" = "기본값 사용";
 
 /* Class = "NSMenu"; title = "Speech"; ObjectID = "3rS-ZA-NoH"; */
-"3rS-ZA-NoH.title" = "Speech";
+"3rS-ZA-NoH.title" = "음성";
 
 /* Class = "NSMenuItem"; title = "Tighten"; ObjectID = "46P-cB-AYj"; */
-"46P-cB-AYj.title" = "Tighten";
+"46P-cB-AYj.title" = "좁히기";
 
 /* Class = "NSMenuItem"; title = "Find"; ObjectID = "4EN-yA-p0u"; */
-"4EN-yA-p0u.title" = "Find";
+"4EN-yA-p0u.title" = "찾기";
 
 /* Class = "NSMenuItem"; title = "Tools"; ObjectID = "4Eq-aR-Tzb"; */
-"4Eq-aR-Tzb.title" = "Tools";
+"4Eq-aR-Tzb.title" = "도구";
 
 /* Class = "NSButtonCell"; title = "Make transparent"; ObjectID = "4hf-lk-adQ"; */
-"4hf-lk-adQ.title" = "Make transparent";
+"4hf-lk-adQ.title" = "투명하게";
 
 /* Class = "NSMenuItem"; title = "Quit OpenCore Configurator"; ObjectID = "4sb-4s-VLi"; */
-"4sb-4s-VLi.title" = "Quit OpenCore Configurator";
+"4sb-4s-VLi.title" = "종료하기";
 
 /* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
-"5QF-Oa-p0T.title" = "Edit";
+"5QF-Oa-p0T.title" = "에디트";
 
 /* Class = "NSMenuItem"; title = "Copy Style"; ObjectID = "5Vv-lz-BsD"; */
-"5Vv-lz-BsD.title" = "Copy Style";
+"5Vv-lz-BsD.title" = "스타일 복사";
 
 /* Class = "NSMenuItem"; title = "About OpenCore Configurator"; ObjectID = "5kV-Vb-QxS"; */
-"5kV-Vb-QxS.title" = "About OpenCore Configurator";
+"5kV-Vb-QxS.title" = "오픈코어 콘피규레이터에 대해서";
 
 /* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
-"6dh-zS-Vam.title" = "Redo";
+"6dh-zS-Vam.title" = "돌려놓기";
 
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
-"78Y-hA-62v.title" = "Correct Spelling Automatically";
+"78Y-hA-62v.title" = "자동으로 철자 검사";
 
 /* Class = "NSTextFieldCell"; title = "Network Resources"; ObjectID = "7jI-RZ-eJQ"; */
-"7jI-RZ-eJQ.title" = "Network Resources";
+"7jI-RZ-eJQ.title" = "네트워크 자료";
 
 /* Class = "NSMenu"; title = "Advanced User"; ObjectID = "8k6-J4-O8u"; */
-"8k6-J4-O8u.title" = "Advanced User";
+"8k6-J4-O8u.title" = "고급 유저용";
 
 /* Class = "NSMenu"; title = "Writing Direction"; ObjectID = "8mr-sm-Yjd"; */
-"8mr-sm-Yjd.title" = "Writing Direction";
+"8mr-sm-Yjd.title" = "쓰기 지도";
 
 /* Class = "NSTextFieldCell"; title = "Files"; ObjectID = "9bg-zu-Dqr"; */
-"9bg-zu-Dqr.title" = "Files";
+"9bg-zu-Dqr.title" = "파일";
 
 /* Class = "NSMenuItem"; title = "Clear Menu"; ObjectID = "9fr-XT-GHp"; */
-"9fr-XT-GHp.title" = "Clear Menu";
+"9fr-XT-GHp.title" = "메뉴 제거";
 
 /* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
-"9ic-FL-obx.title" = "Substitutions";
+"9ic-FL-obx.title" = "대체";
 
 /* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "9yt-4B-nSM"; */
-"9yt-4B-nSM.title" = "Smart Copy/Paste";
+"9yt-4B-nSM.title" = "스마트 복사/붙여넣기";
 
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
-"AYu-sK-qS6.title" = "Main Menu";
+"AYu-sK-qS6.title" = "메인메뉴";
 
 /* Class = "NSMenuItem"; title = "\tLeft to Right"; ObjectID = "BgM-ve-c93"; */
-"BgM-ve-c93.title" = "\tLeft to Right";
+"BgM-ve-c93.title" = "\t왼쪽 to 오른쪽";
 
 /* Class = "NSMenuItem"; title = "Templates"; ObjectID = "BtA-nJ-hmS"; */
-"BtA-nJ-hmS.title" = "Templates";
+"BtA-nJ-hmS.title" = "템플릿";
 
 /* Class = "NSMenuItem"; title = "Config Checker"; ObjectID = "C9y-Q3-nK5"; */
-"C9y-Q3-nK5.title" = "Config Checker";
+"C9y-Q3-nK5.title" = "Config 체크";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
-"D1d-8G-YO3.title" = "Differences";
+"D1d-8G-YO3.title" = "차이점";
 
 /* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
-"Dv1-io-Yv7.title" = "Spelling and Grammar";
+"Dv1-io-Yv7.title" = "철자 와 문법";
 
 /* Class = "NSMenuItem"; title = "File"; ObjectID = "Ebn-j6-R4c"; */
-"Ebn-j6-R4c.title" = "File";
+"Ebn-j6-R4c.title" = "파일";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
-"F2S-fz-NVQ.title" = "Help";
+"F2S-fz-NVQ.title" = "도움말";
 
 /* Class = "NSWindow"; title = "Preferences"; ObjectID = "F4O-Rd-GWc"; */
-"F4O-Rd-GWc.title" = "Preferences";
+"F4O-Rd-GWc.title" = "설정";
 
 /* Class = "NSMenuItem"; title = "OpenCore Configurator Help"; ObjectID = "FKE-Sm-Kum"; */
-"FKE-Sm-Kum.title" = "OpenCore Configurator Help";
+"FKE-Sm-Kum.title" = "OpenCore Configurator 도움말";
 
 /* Class = "NSMenuItem"; title = "Text"; ObjectID = "Fal-I4-PZk"; */
-"Fal-I4-PZk.title" = "Text";
+"Fal-I4-PZk.title" = "텍스트";
 
 /* Class = "NSMenu"; title = "Substitutions"; ObjectID = "FeM-D8-WVr"; */
-"FeM-D8-WVr.title" = "Substitutions";
+"FeM-D8-WVr.title" = "대체";
 
 /* Class = "NSMenuItem"; title = "OpenCore Bootloader"; ObjectID = "FpP-Sa-O4X"; */
-"FpP-Sa-O4X.title" = "OpenCore Bootloader";
+"FpP-Sa-O4X.title" = "OpenCore 부트로더";
 
 /* Class = "NSMenuItem"; title = "Bold"; ObjectID = "GB9-OM-e27"; */
-"GB9-OM-e27.title" = "Bold";
+"GB9-OM-e27.title" = "굻게";
 
 /* Class = "NSMenu"; title = "Format"; ObjectID = "GEO-Iw-cKr"; */
-"GEO-Iw-cKr.title" = "Format";
+"GEO-Iw-cKr.title" = "형식";
 
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "GUa-eO-cwY"; */
-"GUa-eO-cwY.title" = "Use Default";
+"GUa-eO-cwY.title" = "기본값 사용";
 
 /* Class = "NSMenu"; title = "File"; ObjectID = "Gew-q2-lDB"; */
-"Gew-q2-lDB.title" = "File";
+"Gew-q2-lDB.title" = "파일";
 
 /* Class = "NSMenuItem"; title = "Font"; ObjectID = "Gi5-1S-RQB"; */
-"Gi5-1S-RQB.title" = "Font";
+"Gi5-1S-RQB.title" = "폰트";
 
 /* Class = "NSMenuItem"; title = "Sample.plist"; ObjectID = "Gli-qs-3eC"; */
 "Gli-qs-3eC.title" = "Sample.plist";
@@ -156,7 +156,7 @@
 "Gr2-89-j5f.ibShadowedIsNilPlaceholder" = "0.8";
 
 /* Class = "NSMenuItem"; title = "Writing Direction"; ObjectID = "H1b-Si-o9J"; */
-"H1b-Si-o9J.title" = "Writing Direction";
+"H1b-Si-o9J.title" = "쓰기 지도";
 
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
 "H8h-7b-M4v.title" = "View";
