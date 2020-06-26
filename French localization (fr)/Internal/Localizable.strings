@@ -643,7 +643,7 @@
 "Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Vérifiez les configurations actuelles (si vous gérez plusieurs fenêtres, sélectionnez la fenêtre que vous souhaitez vérifier). Enregistrez votre configuration avant de continuer la vérification.";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "Importer la configuration à partir de la sélection locale \"Choisir ... \"";
+"Import configuration from local selecting \"Choose...\"" = "Importer la configuration à partir de la sélection locale \"Choisir...\"";
 
 /* configCheckerController */
 "Drag your configuration here" = "Faites glisser votre configuration ici";
@@ -653,3 +653,16 @@
 
 /* configCheckerController */
 "Uploading..." = "Téléchargement...";
+
+/* configCheckerController */
+"Downloading Resources..." = "Downloading Resources...";
+
+/* configCheckerController */
+"Downloaded %.2f MB of %.2f MB (%@)" = "Downloaded %1$.2f MB of %2$.2f MB (%3$@)";
+
+/* configCheckerController */
+"Resources Extraction..." = "Resources Extraction...";
+
+/* configCheckerController */
+"Ready!" = "Ready!";
+
