@@ -653,3 +653,15 @@
 
 /* configCheckerController */
 "Uploading..." = "Uploading...";
+
+/* configCheckerController */
+"Downloading Resources..." = "Downloading Resources...";
+
+/* configCheckerController */
+"Downloaded %.2f MB of %.2f MB (%@)" = "Downloaded %1$.2f MB of %2$.2f MB (%3$@)";
+
+/* configCheckerController */
+"Resources Extraction..." = "Resources Extraction...";
+
+/* configCheckerController */
+"Ready!" = "Ready!";
