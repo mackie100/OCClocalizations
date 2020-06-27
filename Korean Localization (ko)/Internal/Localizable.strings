@@ -586,70 +586,82 @@
 "OpenCore Settings" = "OpenCore Settings";
 
 /* titleBar */
-"Release Configuration" = "%1$@ Release Configuration";
+"Release Configuration" = "%1$@ 정식 Configuration";
 
 /* titleBar */
-"Development Configuration" = "%1$@ Development Configuration";
+"Development Configuration" = "%1$@ 개발중 Configuration";
 
 /* titleBar */
-"for Official OpenCore" = "for Official OpenCore";
+"for Official OpenCore" = "for 공식 OpenCore";
 
 /* titleBar */
 "for NDK OpenCore" = "for NDK OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "이 콘피그는 오픈코어에서 공식적으로 사용하지 않는 내용이 포함되어 있습니다. . 개발자 모드로 여시겠습니까?";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?";
+"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "이 콘피그는 스탠더드 콘피그입니다. 개발자 모드가 정식 릴리즈 모드로 변경하시겠습니까?";
 
 /* reading_savingOperation */
-"For changes to take effect, this app will be relaunched" = "For changes to take effect, this app will be relaunched";
+"For changes to take effect, this app will be relaunched" = "변경 사항 업데이트를 위해 앱이 재실행 됩니다.";
 
 /* outlinemodeController */
-"If you continue, all unknown keys will be lost" = "If you continue, all unknown keys will be lost";
+"If you continue, all unknown keys will be lost" = "계속 진행시 알수 없는 값들은 모두 사라집니다";
 
 /* textmodeController */
-"Syncronize" = "Syncronize";
+"Syncronize" = "동기화";
 
 /* textmodeController */
-"Syncronize Outline Mode" = "Syncronize Outline Mode";
+"Syncronize Outline Mode" = "Outline Mode 동기화";
 
 /* importPatchesController */
-"Import set of patches" = "Import set of patches";
+"Import set of patches" = "패치 세트 들여오기";
 
 /* importPatchesController */
-"Import set of kexts" = "Import set of kexts";
+"Import set of kexts" = "켁스트 세트 들여오기";
 
 /* importPatchesController */
-"Export selected patches" = "Export selected patches";
+"Export selected patches" = "선택한 패치 내보내기";
 
 /* importPatchesController */
-"Export selected kexts" = "Export selected kexts";
+"Export selected kexts" = "선택한 켁스트 내보내기";
 
 /* importPatchesController */
-"Add set of patches from database" = "Add set of patches from database";
+"Add set of patches from database" = "데이터 베이스로 부터 패치 불러오기";
 
 /* importPatchesController */
-"Add set of kexts from database" = "Add set of kexts from database";
+"Add set of kexts from database" = "데이터 베이스로 부터 켁스트 불러오기";
 
 /* importPatchesController */
-"Battery Patches" = "Battery Patches";
+"Battery Patches" = "배터리 패치";
 
 /* importPatchesController */
-"Rename Patches" = "Rename Patches";
+"Rename Patches" = "패치 리네임";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check.";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "현재 콘피그 체크 (복수의 콘피그를 수정중이라면 변경을 원한는 윈도우를 선택해주세요.). 먼저 저장을 해주세요.";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
+"Import configuration from local selecting \"Choose...\"" = "들여오기 \"Choose...\"";
 
 /* configCheckerController */
-"Drag your configuration here" = "Drag your configuration here";
+"Drag your configuration here" = "콘피그를 드래그";
 
 /* configCheckerController */
-"No Network Access" = "No Network Access";
+"No Network Access" = "인터넷 접속 불가능";
 
 /* configCheckerController */
-"Uploading..." = "Uploading...";
+"Uploading..." = "업로드중...";
+
+/* configCheckerController */
+"Downloading Resources..." = "다운로드중...";
+
+/* configCheckerController */
+"Downloaded %.2f MB of %.2f MB (%@)" = "다운로드됨 %1$.2f MB of %2$.2f MB (%3$@)";
+
+/* configCheckerController */
+"Resources Extraction..." = "추출중...";
+
+/* configCheckerController */
+"Ready!" = "시작!";
