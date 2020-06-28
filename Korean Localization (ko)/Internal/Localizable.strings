@@ -640,7 +640,7 @@
 "Rename Patches" = "패치 리네임";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "현재 콘피그 체크 (복수의 콘피그를 수정중이라면 변경을 원한는 윈도우를 선택해주세요.). 먼저 저장을 해주세요.";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "현재 콘피그 체크 (복수의 콘피그를 수정중이라면 변경을 원한는 윈도우를 선택해주세요.). 확인하기전에 콘피그를 저장 하세요.";
 
 /* configCheckerController */
 "Import configuration from local selecting \"Choose...\"" = "들여오기 \"Choose...\"";
