@@ -665,3 +665,9 @@
 
 /* configCheckerController */
 "Ready!" = "완료";
+
+/* configCheckerController */
+"Error extracting resources files!" = "Error extracting resources files!";
+
+/* configCheckerController */
+"Failed to download resources!" = "Failed to download resources!";

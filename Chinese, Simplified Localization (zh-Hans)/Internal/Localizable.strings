@@ -643,10 +643,10 @@
 "Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置 (如果管理多个窗口，请选择要检查的窗口). 继续检查配置前保存你的配置文件.";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "从本地文件选择导入 \"选择...\"";
+"Import configuration from local selecting \"Choose...\"" = "从本地选择导入配置 \"选择...\"";
 
 /* configCheckerController */
-"Drag your configuration here" = "将您的配置文件拖拽到此处";
+"Drag your configuration here" = "将您的配置拖拽到此处";
 
 /* configCheckerController */
 "No Network Access" = "无网络访问";
@@ -655,14 +655,20 @@
 "Uploading..." = "上传...";
 
 /* configCheckerController */
-"Downloading Resources..." = "下载资源...";
+"Downloading Resources..." = "Downloading Resources...";
 
 /* configCheckerController */
-"Downloaded %.2f MB of %.2f MB (%@)" = "已下载 %1$.2f MB/%2$.2f MB (%3$@)";
+"Downloaded %.2f MB of %.2f MB (%@)" = "Downloaded %1$.2f MB of %2$.2f MB (%3$@)";
 
 /* configCheckerController */
-"Resources Extraction..." = "提取资源...";
+"Resources Extraction..." = "Resources Extraction...";
 
 /* configCheckerController */
-"Ready!" = "已完成!";
+"Ready!" = "Ready!";
+
+/* configCheckerController */
+"Error extracting resources files!" = "Error extracting resources files!";
+
+/* configCheckerController */
+"Failed to download resources!" = "Failed to download resources!";
 

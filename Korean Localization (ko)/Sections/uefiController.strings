@@ -251,6 +251,9 @@
 /* Class = "NSTextFieldCell"; title = "MinimumVolume"; ObjectID = "ehu-K3-gbY"; */
 "ehu-K3-gbY.title" = "MinimumVolume";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Provide UGA protocol instances on top of GOP protocol.\n\nSome firmwares do not implement legacy UGA protocol, but it may be required for screen output by older EFI applications like EfiBoot from 10.4."; ObjectID = "ejz-UL-xuF"; */
+"ejz-UL-xuF.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Provide UGA protocol instances on top of GOP protocol.\n\nSome firmwares do not implement legacy UGA protocol, but it may be required for screen output by older EFI applications like EfiBoot from 10.4.";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Remove duplicate entries BootOrder variable in EFI_GLOBAL_VARIABLE_GUID.\n\nThis quirk requires RequestBootVarRouting to be enabled and therefore OC_FIRMWARE_RUNTIME protocol imple- mented in OpenRuntime.efi.\nBy redirecting Boot prefixed variables to a separate GUID namespace with the help of RequestBootVarRouting quirk we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation\nwakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or anyhow corrupted.\nHowever, some firmwares do their own boot option scanning upon startup by checking file presence on the available disks. Quite often this scanning includes non-standard locations, such as Windows Bootloader paths. Normally it is not an issue, but some firmwares, ASUS firmwares on APTIO V in particular, have bugs. For them scanning is implemented improperly, and firmware preferences may get accidentally corrupted due to BootOrder entry duplication (each option will be added twice) making it impossible to boot without resetting NVRAM.\nTo trigger the bug one should have some valid boot options (e.g. OpenCore) and then install Windows with RequestBootVarRouting enabled. As Windows bootloader option will not be created by Windows installer, the firmware will attempt to create it itself, and then corrupt its boot option list.\nThis quirk removes all duplicates in BootOrder variable attempting to resolve the consequences of the bugs upon OpenCore loading. It is recommended to use this key along with BootProtect option."; ObjectID = "esT-oy-xWe"; */
 "esT-oy-xWe.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Remove duplicate entries BootOrder variable in EFI_GLOBAL_VARIABLE_GUID.\n\nThis quirk requires RequestBootVarRouting to be enabled and therefore OC_FIRMWARE_RUNTIME protocol imple- mented in OpenRuntime.efi.\nBy redirecting Boot prefixed variables to a separate GUID namespace with the help of RequestBootVarRouting quirk we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation\nwakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or anyhow corrupted.\nHowever, some firmwares do their own boot option scanning upon startup by checking file presence on the available disks. Quite often this scanning includes non-standard locations, such as Windows Bootloader paths. Normally it is not an issue, but some firmwares, ASUS firmwares on APTIO V in particular, have bugs. For them scanning is implemented improperly, and firmware preferences may get accidentally corrupted due to BootOrder entry duplication (each option will be added twice) making it impossible to boot without resetting NVRAM.\nTo trigger the bug one should have some valid boot options (e.g. OpenCore) and then install Windows with RequestBootVarRouting enabled. As Windows bootloader option will not be created by Windows installer, the firmware will attempt to create it itself, and then corrupt its boot option list.\nThis quirk removes all duplicates in BootOrder variable attempting to resolve the consequences of the bugs upon OpenCore loading. It is recommended to use this key along with BootProtect option.";
 
@@ -278,6 +281,9 @@
 /* Class = "NSTextFieldCell"; title = "TscSyncTimeout"; ObjectID = "ifT-4Q-EvN"; */
 "ifT-4Q-EvN.title" = "TscSyncTimeout";
 
+/* Class = "NSButtonCell"; title = "AppleFramebufferInfo"; ObjectID = "ixW-rs-w20"; */
+"ixW-rs-w20.title" = "AppleFramebufferInfo";
+
 /* Class = "NSView"; ibShadowedToolTip = "Type: plist array \nDescription: Designed to be filled with plist dict values, describing memory areas exquisite to particular firmware and hardware functioning, which should not be used by the operating system. An example of such\nmemory region could be second 256 MB corrupted by Intel HD 3000 or an area with faulty RAM. See Reserved-Memory Properties section below."; ObjectID = "k2W-U9-Ysu"; */
 "k2W-U9-Ysu.ibShadowedToolTip" = "Type: plist array \nDescription: Designed to be filled with plist dict values, describing memory areas exquisite to particular firmware and hardware functioning, which should not be used by the operating system. An example of such\nmemory region could be second 256 MB corrupted by Intel HD 3000 or an area with faulty RAM. See Reserved-Memory Properties section below.";
 
@@ -301,6 +307,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications."; ObjectID = "l9b-pk-oii"; */
 "l9b-pk-oii.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false \nDescription: Reinstalls Apple Framebuffer Info protocol with a builtin version. This may be used to override framebuffer information on VMs or legacy Macs to improve compatibility with legacy EfiBoot like the one in macOS 10.4."; ObjectID = "lAy-Dr-HPx"; */
+"lAy-Dr-HPx.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false \nDescription: Reinstalls Apple Framebuffer Info protocol with a builtin version. This may be used to override framebuffer information on VMs or legacy Macs to improve compatibility with legacy EfiBoot like the one in macOS 10.4.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Address"; ObjectID = "ldi-uY-9wO"; */
 "ldi-uY-9wO.headerCell.title" = "Address";
@@ -361,6 +370,9 @@
 
 /* Class = "NSButtonCell"; title = "AppleDebugLog"; ObjectID = "uqk-49-YG8"; */
 "uqk-49-YG8.title" = "AppleDebugLog";
+
+/* Class = "NSButtonCell"; title = "UgaPassThrough"; ObjectID = "vav-dM-ieV"; */
+"vav-dM-ieV.title" = "UgaPassThrough";
 
 /* Class = "NSTextFieldCell"; title = "ExitBootServicesDelay"; ObjectID = "wxD-TC-lrQ"; */
 "wxD-TC-lrQ.title" = "ExitBootServicesDelay";
