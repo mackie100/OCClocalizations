@@ -12,7 +12,7 @@
 "As9-X4-iHB.title" = "Device BSD Name";
 
 /* Class = "NSTextFieldCell"; title = "Disk Type"; ObjectID = "Edn-Sq-BEn"; */
-"Edn-Sq-BEn.title" = "Disk Type";
+"Edn-Sq-BEn.title" = "Disk 종류";
 
 /* Class = "NSTextFieldCell"; title = "Volume Name"; ObjectID = "K7n-YQ-8gF"; */
 "K7n-YQ-8gF.title" = "Volume Name";

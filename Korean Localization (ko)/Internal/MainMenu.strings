@@ -156,7 +156,7 @@
 "Gr2-89-j5f.ibShadowedIsNilPlaceholder" = "0.8";
 
 /* Class = "NSMenuItem"; title = "Writing Direction"; ObjectID = "H1b-Si-o9J"; */
-"H1b-Si-o9J.title" = "쓰기 지도";
+"H1b-Si-o9J.title" = "문단정렬";
 
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
 "H8h-7b-M4v.title" = "View";
