@@ -105,7 +105,7 @@
 "BtA-nJ-hmS.title" = "配置模板";
 
 /* Class = "NSMenuItem"; title = "Config Checker"; ObjectID = "C9y-Q3-nK5"; */
-"C9y-Q3-nK5.title" = "Config检查器";
+"C9y-Q3-nK5.title" = "Config配置完善性检查";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
 "D1d-8G-YO3.title" = "官方Differences.PDF";
