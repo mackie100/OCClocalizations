@@ -97,7 +97,7 @@ class OpenCorePlist extends CFPropertyList\CFPropertyList {
                     }
                 }
             }
-            echo "<hr>\n";
+            echo "<hr noshade=\"noshade\" />\n";
             $seen_title = [];
         }
     }
