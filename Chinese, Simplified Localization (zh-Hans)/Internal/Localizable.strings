@@ -640,13 +640,13 @@
 "Rename Patches" = "常规更名补丁";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置 (如果管理多个窗口，请选择要检查的窗口). 继续检查配置前保存你的配置文件.";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置完善性 (如果管理多个窗口，请选择要检查的窗口). 继续检查配置前保存你的配置文件.";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "从本地选择导入配置 \"选择...\"";
+"Import configuration from local selecting \"Choose...\"" = "从\"选择...\"选择本地文件导入 ";
 
 /* configCheckerController */
-"Drag your configuration here" = "将您的配置拖拽到此处";
+"Drag your configuration here" = "将您的配置文件拖拽到此处";
 
 /* configCheckerController */
 "No Network Access" = "无网络访问";
@@ -655,20 +655,20 @@
 "Uploading..." = "上传...";
 
 /* configCheckerController */
-"Downloading Resources..." = "Downloading Resources...";
+"Downloading Resources..." = "下载资源文件...";
 
 /* configCheckerController */
-"Downloaded %.2f MB of %.2f MB (%@)" = "Downloaded %1$.2f MB of %2$.2f MB (%3$@)";
+"Downloaded %.2f MB of %.2f MB (%@)" = "已下载 %1$.2f MB/%2$.2f MB (%3$@)";
 
 /* configCheckerController */
-"Resources Extraction..." = "Resources Extraction...";
+"Resources Extraction..." = "提取资源文件...";
 
 /* configCheckerController */
-"Ready!" = "Ready!";
+"Ready!" = "完成!";
 
 /* configCheckerController */
-"Error extracting resources files!" = "Error extracting resources files!";
+"Error extracting resources files!" = "提取资源文件时出错!";
 
 /* configCheckerController */
-"Failed to download resources!" = "Failed to download resources!";
+"Failed to download resources!" = "下载资源文件失败!";
 
