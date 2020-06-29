@@ -1,0 +1,673 @@
+/* mountefiController */
+"%@ APFS Container [%@]" = "%1$@ APFS 컨테이너 [%2$@]";
+
+/* mountefiController */
+"%lu partitions" = "%lu 파티션";
+
+/* sidebarMenu */
+"ACPI" = "ACPI";
+
+/* No comment provided by engineer. */
+"B/s" = "B/s";
+
+/* startScreen */
+"Backup Configurations" = "Backup Configurations";
+
+/* sectionSourceListHexConverterPopover */
+"base64 string" = "base64 string";
+
+/* sidebarMenu */
+"Booter" = "Booter";
+
+/* opencoreDownloaderController outlinemodeController */
+"Cancel" = "Cancel";
+
+/* mountefiController */
+"Capacity In Use:" = "사용됨:";
+
+/* kextsInstallerController */
+"Check" = "체크";
+
+/* mountefiController */
+"Check Partition" = "파티션 체크";
+
+/* startScreen */
+"Configurations Acquired" = "Configurations 로딩됨";
+
+/* pasteBoardController */
+"Copy" = "복사";
+
+/* AFNetworking */
+"Could not decode string: %@" = "decode 할수 없습니다.: %@";
+
+/* pasteBoardController */
+"Cut" = "잘라내기";
+
+/* AFNetworking */
+"Data failed decoding as a UTF-8 string" = "UTF-8 string으로 불러올수 없습니다.";
+
+/* No comment provided by engineer. */
+"Day" = "Day";
+
+/* No comment provided by engineer. */
+"Days" = "Days";
+
+/* sectionSourceListHexConverterPopover */
+"decimal string" = "숫자 string";
+
+/* kextsInstallerController */
+"Delete: %@ successfully removed" = "삭제 : %@ 성공적으로 제거됨";
+
+/* installDriversController */
+"Delete: %@.efi successfully removed" = "삭제 : %@.efi 성공적으로 제거됨";
+
+/* mountefiController */
+"Device BSD Name:" = "Device BSD 이름:";
+
+/* mountefiController */
+"Device BSD Name: %@" = "Device BSD 이름: %@";
+
+/* mountefiController */
+"Device BSD Name: N/A" = "Device BSD 이름: N/A";
+
+/* mountefiController */
+"Device Identifier: %@ - APFS Physical Store Disk: %@ - UUID: %@ - Size: %@" = "Device Identifier: %1$@ - APFS Physical Store Disk: %2$@ - UUID: %3$@ - Size: %4$@";
+
+/* mountefiController */
+"Device Identifier: %@ - Partition Scheme: %@ - Size: %@" = "Device Identifier: %1$@ - Partition Scheme: %2$@ - Size: %3$@";
+
+/* sidebarMenu */
+"DeviceProperties" = "DeviceProperties";
+
+/* mountefiController */
+"Devices / Media Name:" = "Devices / Media Name:";
+
+/* mountefiController */
+"Devices / Media Name: %@" = "Devices / Media Name: %@";
+
+/* mountefiController */
+"Disk Identifier:" = "Disk Identifier:";
+
+/* mountefiController */
+"Disk Identifier: %@ 상태: [Current Boot Disk]" = "Disk Identifier: %@ 상태: [현 Boot Disk]";
+
+/* mountefiController */
+"Disk Type:" = "Disk 타입:";
+
+/* mountefiController */
+"Disk Type: %@" = "Disk 타입: %@";
+
+/* mountefiController */
+"Disk Type: APFS Container" = "Disk 타입: APFS 컨테이너";
+
+/* mountefiController */
+"Disk Type: APFS Volume" = "Disk 타입: APFS 볼륨";
+
+/* mountefiController */
+"Disk Type: Apple HFS+" = "Disk 타입: Apple HFS+";
+
+/* mountefiController */
+"Disk Type: N/A" = "Disk Type: N/A";
+
+/* mountefiController */
+"Disk Type: SoftRAID Cache" = "Disk 타입 : SoftRAID Cache";
+
+/* mountefiController */
+"Disk Type: SoftRAID Scratch" = "Disk 타입: SoftRAID Scratch";
+
+/* mountefiController */
+"Disk Type: SoftRAID Status" = "Disk 타입: SoftRAID Status";
+
+/* mountefiController */
+"Disk Type: SoftRAID Volume" = "Disk 타입: SoftRAID Volume";
+
+/* mountefiController */
+"Disk UUID:" = "Disk UUID:";
+
+/* mountefiController */
+"Disk UUID: %@" = "Disk UUID: %@";
+
+/* mountefiController */
+"Disk UUID: N/A" = "Disk UUID: N/A";
+
+/* installDriversController
+   kextsInstallerController
+   opencoreDownloaderController */
+"Download" = "Download";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: %@ has been successfully copied to %@" = "Download: %1$@ 성공적으로 복사됨 to %2$@";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: %@ has been successfully updated to %@" = "Download: %1$@ 성공적으로 업데이트됨 to %2$@";
+
+/* kextsInstallerController */
+"Download: %@ successfully backed up to %@" = "Download: %1$@ 성공적으로 백업됨 to %2$@";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: %@ successfully downloaded...." = "Download: %@ 성공적으로 다운로드됨....";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: Error: %@" = "Download: 에러: %@";
+
+/* kextsInstallerController */
+"Download: ERROR: %@" = "Download: 에러: %@";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: ERROR: You don't have permission to write here!" = "Download: 에러: 쓰기 권한이 없습니다";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: Path doesn't exist!" = "Download: 경로가 존재하지 않습니다.";
+
+/* installDriversController */
+"Download: Please select a driver name!" = "Download: Driver Name을 선택해주세요.";
+
+/* installToolsController */
+"Download: Please select a tool name!" = "Download: tool name을 선택해주세요.";
+
+/* kextsInstallerController */
+"Download: Please select a kext name!" = "Download: kext name을 선택해주세요.";
+
+/* opencoreDownloaderController */
+"Downloading %@" = "다운로드중 %@";
+
+/* reading_savingOperation */
+"Error" = "에러";
+
+/* opencoreDownloaderController */
+"Error during unzipping file!" = "압축을 푸는 동안 오류가 발생했습니다.";
+
+/* opencoreDownloaderController */
+"Error: %@" = "에러: %@";
+
+/* kextsInstallerController */
+"FakeSMC detected... Choose an add on to install..." = "FakeSMC 발견됨... 설치해 주세요.";
+
+/* No comment provided by engineer. */
+"GB/s" = "GB/s";
+
+/* sectionSourceListHexConverterPopover */
+"HEX Converter" = "HEX Converter";
+
+/* sectionSourceListHexConverterPopover */
+"HEX string" = "HEX string";
+
+/* No comment provided by engineer. */
+"Hour" = "Hour";
+
+/* No comment provided by engineer. */
+"Hours" = "Hours";
+
+/* openPanelConfigConverterTool */
+"Import a Clover config file for conversion" = "클로버 Config 파일 불러오기";
+
+/* installDriversController
+   kextsInstallerController
+   opencoreDownloaderController */
+"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "초기화: 데이터 읽기 오류. 서버를 찾지 못했거나, 인터넷 연결 문제가 있습니다.";
+
+/* bdmesgController */
+"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "읽기 에러. Misc->Debug 로 이동해 \"Target\" 키를 설정해보세요.";
+
+/* sectionSourceListHexConverterPopover */
+"Invalid base64 data" = "유효하지 않은 base64 data 값";
+
+/* sectionSourceListHexConverterPopover */
+"Invalid data" = "유요하지 않은 값";
+
+/* sectionSourceListHexConverterPopover */
+"Invalid HEX data" = "유효하지 않은 HEX 값";
+
+/* No comment provided by engineer. */
+"KB/s" = "KB/s";
+
+/* sidebarMenu */
+"Kernel" = "Kernel";
+
+/* left_toolbar */
+"Load Configuration" = "설정 불러오기";
+
+/* kextsInstallerController */
+"Manual Installation: %@ has been successfully copied to %@" = "수동설치: %1$@ 가 %2$@ 로 성송적으로 복사됨";
+
+/* kextsInstallerController */
+"Manual Installation: %@ has been successfully updated to %@" = "수동설치: %1$@ 가 %2$@ 로 성공적으로 업데이트됨";
+
+/* kextsInstallerController */
+"Manual Installation: %@ successfully backed up to %@" = "수동설치: %1$@ 가 %2$@ 로 성공적으로 백업됨";
+
+/* kextsInstallerController */
+"Manual Installation: ERROR: %@" = "수동설치: 에러: %@";
+
+/* kextsInstallerController */
+"Manual Installation: ERROR: You don't have permission to write here!" = "수동설치: 에러: 쓰기 권한이 없습니다.";
+
+/* kextsInstallerController */
+"Manual Installation: Kext file required!" = "수동설치: 켁스트 파일 필요";
+
+/* kextsInstallerController */
+"Manual Installation: Path doesn't exist!" = "수동설치: 경로가 존재하지 않습니다.";
+
+/* No comment provided by engineer. */
+"MB/s" = "MB/s";
+
+/* No comment provided by engineer. */
+"Minute" = "Minute";
+
+/* No comment provided by engineer. */
+"Minutes" = "Minutes";
+
+/* sidebarMenu */
+"Misc" = "Misc";
+
+/* mountefiController */
+"Mount Point:" = "Mount 지점:";
+
+/* mountefiController */
+"Mount Point: %@" = "Mount 지점: %@";
+
+/* mountefiController */
+"Mount Point: N/A" = "Mount 지점: N/A";
+
+/* opencoreDownloaderController */
+"No EFI folder found. Creating one...." = "EFI 폴더를 찾을수 없습니다.";
+
+/* sidebarMenu */
+"NVRAM" = "NVRAM";
+
+/* opencoreDownloaderController */
+"Old file has been renamed to BOOTx64_%@.efi.bak" = "BOOTx64_%@.efi.bak 로 백업완료";
+
+/* opencoreDownloaderController */
+"Old file has been renamed to OpenCore_%@.efi.bak" = "OpenCore_%@.efi.bak 로 백업완료";
+
+/* reading_savingOperation */
+"OpenCore Configurator could not be synchronized because an error occurred: %@" = "동기화 할수 없습니다. 에러 : %@";
+
+/* pasteBoardController */
+"Paste" = "붙여넣기";
+
+/* left_toolbar */
+"Paypal - Free Donation" = "Paypal - 자유 후원하기";
+
+/* sidebarMenu */
+"PlatformInfo" = "PlatformInfo";
+
+/* reading_savingOperation */
+"Repair" = "복구";
+
+/* mainMenu */
+"Restart" = "재시작";
+
+/* left_toolbar */
+"Save" = "저장하기";
+
+/* left_toolbar */
+"Save As..." = "다른이름으로 저장하기...";
+
+/* left_toolbar */
+"Save, Save As Configuration" = "다른 이름으로 설정 저장하기";
+
+/* No comment provided by engineer. */
+"Second" = "Second";
+
+/* No comment provided by engineer. */
+"Seconds" = "Seconds";
+
+/* left_toolbar */
+"Share" = "공유";
+
+/* kextsInstallerController */
+"Show Location: Path doesn't exist!" = "위치: 경로가 존재하지 않습니다.";
+
+/* mountefiController */
+"Size:" = "용량:";
+
+/* kextsInstallerController */
+"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "개요 for %1$@.kext =>Identifier: %2$@ | Version: %3$@%4$@";
+
+/* rtvariablesController */
+"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "형식에 맞는 UUID 를 사용 해야 합니다. 형태 : XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
+
+/* mountefiController */
+"Status:" = "상태:";
+
+/* reading_savingOperation */
+"Synchronized" = "동기화";
+
+/* sectionSourceListHexConverterPopover */
+"text string" = "텍스트 값";
+
+/* mainMenu */
+"To apply this change, you must restart the app" = "변화사항 적용을 위해 앱 재시작 필요합니다.";
+
+/* mainMenu */
+"Do you also want to change fork type?" = "fork type 변경을 하시겠습니까?";
+
+/* mainMenu */
+"Do you also want to change configuration properties type?" = "컨피규레이션 내용을 변경 하시겠습니까?";
+
+/* sidebarMenu */
+"UEFI" = "UEFI";
+
+/* installDriversController
+   opencoreDownloaderController */
+"Unable to read database." = "데이터를 읽을수가 없습니다.";
+
+/* mountefiController */
+"Untitled" = "무제";
+
+/* opencoreDownloaderController */
+"Unzip process was aborted because I can't create a backup" = "백업 파일 생성이 불가능 하여 압축 풀기 중단 ";
+
+/* kextsInstallerController */
+"Unzip: Error during unzipping file!" = "압축을 푸는 도중 오류가 생겼습니다.";
+
+/* opencoreDownloaderController */
+"Unzipped..." = "압축이 풀렸습니다...";
+
+/* kextsInstallerController */
+"Update available for %@.kext => Local version: %@ | Remote version: %@" = "업데이트가 있습니다. %1$@.kext => 사용중인 version: %2$@ | 리모트 version: %3$@";
+
+/* kextsInstallerController */
+"VirtualSMC detected... Choose an add on to install..." = "VirtualSMC 발견됨... 설치해주세요.";
+
+/* mountefiController */
+"Volume Identifier:" = "Volume Identifier:";
+
+/* mountefiController */
+"Volume Identifier: %@" = "Volume Identifier: %@";
+
+/* mountefiController */
+"Volume Identifier: %@ Status: [Current Boot Disk]" = "Volume Identifier: %@ 상태: [Current Boot Disk]";
+
+/* mountefiController */
+"Volume Name:" = "Volume Name:";
+
+/* mountefiController */
+"Volume Name: %@" = "Volume Name: %@";
+
+/* mountefiController */
+"Volume UUID:" = "Volume UUID:";
+
+/* mountefiController */
+"Volume UUID: %@" = "Volume UUID: %@";
+
+/* mountefiController */
+"Volume UUID: N/A" = "Volume UUID: N/A";
+
+/* opencoreDownloaderController */
+"You don't have permission to write here!" = "쓰기 권한이 없습니다.";
+
+/* dockMenu */
+"New Configuration..." = "새로운 Configuration 작성하기";
+
+/* dockMenu */
+"Open Configuration..." = "Configuration 불러오기";
+
+/* dockMenu */
+"Leave A Message" = "공식 포럼에 메세지 작성하기";
+
+/* installDriversController opencoreDownloaderController */
+"No EFI folder found.....\n" = "EFI 폴더가 없습니다.\n";
+
+/* preferencesPanel */
+"Release Version" = "정식 Version";
+
+/* preferencesPanel */
+"Development Version" = "개발 Version";
+
+/* deviceProperties_table_properties_menu */
+"Audio Device Properties" = "Audio Device Properties";
+
+/* deviceProperties_table_properties_menu */
+"Video Device Properties" = "Video Device Properties";
+
+/* deviceProperties_table_properties_menu */
+"Advanced Properties" = "고급항목";
+
+/* deviceProperties_table_properties_menu */
+"display number" = "display number";
+
+/* deviceProperties_table_properties_menu */
+"Connections" = "Connections";
+
+/* deviceProperties_table_properties_menu */
+"connector index" = "connector index";
+
+/* deviceProperties_table_properties_menu */
+"Other" = "Other";
+
+/* deviceProperties_table_properties_menu */
+"Presets" = "Presets";
+
+/* deviceProperties_table_properties_menu */
+"High Sierra" = "High Sierra";
+
+/* deviceProperties_table_properties_menu */
+"Mojave and above" = "Mojave and above";
+
+/* deviceProperties_table_properties_menu */
+"Device Properties" = "Device Properties";
+
+/* deviceProperties_table_properties_menu */
+"Help" = "Help";
+
+/* deviceProperties_table_properties_menu */
+"Select '%@' device before adding '%@' key" = "'%2$@' 키를 추가하기전에 '%1$@'를 선택해주세요. ";
+
+/* deviceProperties_table_properties_menu */
+"Select a '%@' device before adding a preset" = "프리셋을 추가하기 전에 '%1$@'를 선택해주세요.";
+
+/* deviceProperties_table_properties_menu */
+"Select a Platform ID before adding a preset" = "Platform ID를 선택해주세요.";
+
+/* deviceProperties_table_properties_menu */
+"Select a valid device path" = "유효한 Device 경로를 선택해주세요";
+
+/* deviceProperties_table_properties_menu */
+"Product Name" = "Product Name";
+
+/* deviceProperties_table_properties_menu */
+"CPU Codename" = "CPU Codename";
+
+/* deviceProperties_table_properties_menu */
+"Platform ID" = "Platform ID";
+
+/* deviceProperties_table_properties_menu */
+"Device ID" = "Device ID";
+
+/* deviceProperties_table_properties_menu */
+"Device Name" = "Device Name";
+
+/* deviceProperties_table_properties_menu */
+"Available Device IDs" = "Available Device IDs";
+
+/* deviceProperties_table_properties_menu */
+"Available Models" = "Available Models";
+
+/* nvram_add_properties_table */
+"Select a valid UUID" = "Select a valid UUID";
+
+/* compatibilityWarningScreen */
+"You seem to have an old version of OpenCore bootloader." = "구 버전 Opencore 를 사용중";
+
+/* compatibilityWarningScreen */
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "부트로더가 설치되지 않았거나, Nvram 인식에 문제가 있습니다.";
+
+/* compatibilityWarningScreen */
+"2nd_message" = "이 앱은 %1$@ 보다 높은 버전의 config 생성을 지원 합니다. ";
+
+/* compatibilityWarningScreen */
+"Use at your own risk" = "알려지지 않은 문제가 생길수도 있습니다. 사용에 주의 바랍니다.";
+
+/* compatibilityWarningScreen */
+"(select 'Backup File Before Saving' in Preferences Pane)" = "('Backup File Before Saving'을 설정에서 선택해주세요.)";
+
+/* advancedUser */
+"The key “%@” already exists in containing item." = "“%@” 값은 이미 존재합니다.";
+
+/* advancedUser */
+"(%lu items)" = "(%lu 아이템)";
+
+/* advancedUser */
+"Item %lu" = "아이템 %lu";
+
+/* outlineMode */
+"Cut" = "잘라내기";
+
+/* outlineMode */
+"Copy" = "복사";
+
+/* outlineMode */
+"Paste" = "붙여넣기";
+
+/* outlineMode */
+"Delete" = "지우기";
+
+/* outlineMode */
+"Value Type" = "Value Type";
+
+/* outlineMode */
+"Array" = "나열";
+
+/* outlineMode */
+"Dictionary" = "사전";
+
+/* outlineMode */
+"Boolean" = "불리언값";
+
+/* outlineMode */
+"Data" = "데이터";
+
+/* outlineMode */
+"Date" = "날자";
+
+/* outlineMode */
+"Number" = "숫자";
+
+/* outlineMode */
+"String" = "문자열";
+
+/* outlineMode */
+"Add Item" = "아이템 추가하기";
+
+/* miscController */
+"Please make sure to select a file from a boot efi path." = "boot efi 경로해서 파일을 선택해주세요.";
+
+/* miscController */
+"No efi boot path found." = "EFI boot 경로를 찾을수 없습니다.";
+
+/* quicktoolsController */
+"%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";
+
+/* quicktoolsController */
+"Status: [%@]" = "Status: [%@]";
+
+/* quicktoolsController */
+"OpenCore Boot Partition" = "OpenCore Boot Partition";
+
+/* preferencesPanel */
+"Official" = "Official";
+
+/* preferencesPanel */
+"NDK" = "NDK";
+
+/* preferencesPanel */
+"App Settings" = "App Settings";
+
+/* preferencesPanel */
+"OpenCore Settings" = "OpenCore Settings";
+
+/* titleBar */
+"Release Configuration" = "%1$@ 정식 Configuration";
+
+/* titleBar */
+"Development Configuration" = "%1$@ 개발중 Configuration";
+
+/* titleBar */
+"for Official OpenCore" = "for 공식 OpenCore";
+
+/* titleBar */
+"for NDK OpenCore" = "for NDK OpenCore";
+
+/* reading_savingOperation */
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "이 콘피그는 오픈코어에서 공식적으로 사용하지 않는 내용이 포함되어 있습니다. . 개발자 모드로 여시겠습니까?";
+
+/* reading_savingOperation */
+"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "이 콘피그는 스탠더드 콘피그입니다. 개발자 모드가 정식 릴리즈 모드로 변경하시겠습니까?";
+
+/* reading_savingOperation */
+"For changes to take effect, this app will be relaunched" = "변경 사항 업데이트를 위해 앱이 재실행 됩니다.";
+
+/* outlinemodeController */
+"If you continue, all unknown keys will be lost" = "계속 진행시 알수 없는 값들은 모두 사라집니다";
+
+/* textmodeController */
+"Syncronize" = "동기화";
+
+/* textmodeController */
+"Syncronize Outline Mode" = "Outline Mode 동기화";
+
+/* importPatchesController */
+"Import set of patches" = "패치 세트 들여오기";
+
+/* importPatchesController */
+"Import set of kexts" = "켁스트 세트 들여오기";
+
+/* importPatchesController */
+"Export selected patches" = "선택한 패치 내보내기";
+
+/* importPatchesController */
+"Export selected kexts" = "선택한 켁스트 내보내기";
+
+/* importPatchesController */
+"Add set of patches from database" = "데이터 베이스로 부터 패치 불러오기";
+
+/* importPatchesController */
+"Add set of kexts from database" = "데이터 베이스로 부터 켁스트 불러오기";
+
+/* importPatchesController */
+"Battery Patches" = "배터리 패치";
+
+/* importPatchesController */
+"Rename Patches" = "패치 리네임";
+
+/* configCheckerController */
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "현재 콘피그 체크 (복수의 콘피그를 수정중이라면 변경을 원한는 윈도우를 선택해주세요.). 확인하기전에 콘피그를 저장 하세요.";
+
+/* configCheckerController */
+"Import configuration from local selecting \"Choose...\"" = "들여오기 \"Choose...\"";
+
+/* configCheckerController */
+"Drag your configuration here" = "콘피그를 드래그";
+
+/* configCheckerController */
+"No Network Access" = "인터넷 접속 불가능";
+
+/* configCheckerController */
+"Uploading..." = "업로드중...";
+
+/* configCheckerController */
+"Downloading Resources..." = "다운로드중...";
+
+/* configCheckerController */
+"Downloaded %.2f MB of %.2f MB (%@)" = "다운로드됨 %1$.2f MB of %2$.2f MB (%3$@)";
+
+/* configCheckerController */
+"Resources Extraction..." = "추출중...";
+
+/* configCheckerController */
+"Ready!" = "완료";
+
+/* configCheckerController */
+"Error extracting resources files!" = "파일을 추출하는 동안 오류가 발생하였습니다";
+
+/* configCheckerController */
+"Failed to download resources!" = "다운로드에 실패하였습니다.";
