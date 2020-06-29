@@ -667,7 +667,7 @@
 "Ready!" = "완료";
 
 /* configCheckerController */
-"Error extracting resources files!" = "Error extracting resources files!";
+"Error extracting resources files!" = "파일을 추출하는 동안 오류가 발생하였습니다";
 
 /* configCheckerController */
-"Failed to download resources!" = "Failed to download resources!";
+"Failed to download resources!" = "다운로드에 실패하였습니다.";
