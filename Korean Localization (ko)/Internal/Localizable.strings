@@ -671,3 +671,9 @@
 
 /* configCheckerController */
 "Failed to download resources!" = "다운로드에 실패하였습니다.";
+
+/* configCheckerController */
+"Updating Resources..." = "Updating Resources...";
+
+/* configCheckerController */
+"Checking For Resources..." = "Checking For Resources...";
