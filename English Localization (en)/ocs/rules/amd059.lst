@@ -13,7 +13,7 @@
 ACPI
 :Add
  count==0 "-You have no SSDT Patches. Please review the <a href=https://desktop.dortania.ml/AMD/fx.html#acpi>[ACPI Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the [ACPI Docs][acpi]."
+ [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the <a href=https://desktop.dortania.ml/AMD/fx.html#acpi>[ACPI Docs]</a>."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> This is just an example SSDT. If you really made this yourself, call it something more descriptive"
  [Path]~=".dsl$" "!<b>{$Path}</b> Only include .aml files here. dsl files need to be compiled to .aml"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. Either enable it or remove it to get rid of this warning"
