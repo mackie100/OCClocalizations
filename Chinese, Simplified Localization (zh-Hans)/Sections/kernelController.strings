@@ -141,7 +141,7 @@
 "djM-Oe-omR.headerCell.title" = "基本";
 
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "ewU-gZ-tet"; */
-"ewU-gZ-tet.title" = "Loading Resources";
+"ewU-gZ-tet.title" = "正在加载资源";
 
 /* Class = "NSButtonCell"; title = "CustomSMBIOSGuid"; ObjectID = "faf-ix-5sI"; */
 "faf-ix-5sI.title" = "CustomSMBIOSGuid";
