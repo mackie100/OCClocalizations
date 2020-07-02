@@ -1,8 +1,8 @@
-=<div style="text-align:center;font-size:30px;">Broadwell-E OpenCore 0.5.9</div><br/>
+=<div style="text-align:center;font-size:30px;">Broadwell-E OpenCore 0.5.9 健全性查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 Intel Broadwell-E Sanity Check
 =参考文章:<a href="https://desktop.dortania.ml/config-HEDT/broadwell-e.html">https://desktop.dortania.ml/config-HEDT/broadwell-e.html</a>
-=<hr>
+=<hr noshade=\"noshade\" />
 # [kernel]:https://desktop.dortania.ml/config-HEDT/broadwell-e#kernel
 # [acpi]:https://desktop.dortania.ml/config-HEDT/broadwell-e#acpi
 # [kexts]:https://desktop.dortania.ml/ktext.html#kexts
@@ -14,13 +14,13 @@
 ACPI
 :Add
  count==0 "-您没有SSDT补丁。请查看<a href=https://desktop.dortania.ml/config.plist/kaby-lake.html#acpi>[Acpi Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> -->您不应该包括转储的DSDT。请查看<a href=https://desktop.dortania.ml/config.plist/skylake.html#acpi>[ACPI文档]</a>."
+ [Path]==DSDT.aml "-<b>{$Path}</b> -->您不应该包括转储的DSDT。请查看<a href=https://desktop.dortania.ml/config-HEDT/broadwell-e.html#acpi>[ACPI文档]</a>."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> -->这只是SSDT的一个例子。如果你真的是自己做的, 称它为更具描述性的东西"
  [Path]~=".dsl$" "!<b>{$Path}</b> -->在此处只能是.aml文件。 dsl文件需要编译为.aml"
  [Enabled]==no "-<b>{$Path}</b> -->状态是<b>已禁用</b>. 启用或删除它可以去除此警告"
- [Path]!=SSDT-PLUG.aml "--->缺少<b>SSDT-PLUG.aml</b>. 请查看<a href=https://desktop.dortania.ml/config.plist/skylake.html#acpi>[Acpi Docs]</a>"
+ [Path]!=SSDT-PLUG.aml "--->缺少<b>SSDT-PLUG.aml</b>. 请查看<a href=https://desktop.dortania.ml/config-HEDT/broadwell-e.html#acpi>[Acpi Docs]</a>"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml"-->-<b>{$Path}/b>不要同时使用 <b>SSDT-EC-USBX-DESKTOP</b>和<b>SSDT-EC</b>"
- [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX-DESKTOP.aml的文件.请查看<a href=https://desktop.dortania.ml/config.plist/skylake.html#acpi>[ACPI文档]</a>"
+ [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX-DESKTOP.aml的文件.请查看<a href=https://desktop.dortania.ml/config-HEDT/broadwell-e.html#acpi>[ACPI文档]</a>"
  [Path]==* " <b>{$Path}</b> -->确保此文件在您的<b>OC/ACPI</b>目录中"
 
 :Quirks
@@ -65,7 +65,7 @@ Kernel
  [BundlePath]==FakeSMC.kext&VirtualSMC.kext "---><b>{$BundlePath}<b> 不要同时使用 <b>FakeSMC.kext<b> 和 <b>VirtualSMC.kext<b>"
  [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "--->你应该在此处添加 <b>FakeSMC.kext</b> 或 <b>VirtualSMC.kext</b>"
  [BundlePath]==VoodooHDA.kext&AppleALC.kext "---><b>{$BundlePath}</b> 不要同时使用 <b>VoodooHDA.kext</b> 和 <b>AppleALC.kext</b>"
- [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>layout_id 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
+ [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>N 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
  [BundlePath]!=WhateverGreen.kext "---><b>WhateverGreen.kext</b>缺少. 请查看<a href=https://desktop.dortania.ml/ktext.html#kexts>[Kexts Docs]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 这是AMD专用的kext，请勿在Intel上使用"
  [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然这可能有效, 但<b>SmallTreeIntel82576.kext</b> 被认为更可靠"
@@ -102,8 +102,8 @@ Misc
  BuiltinTextRenderer~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 参见UEFI/TextRenderer"
  ConsoleBehaviourOs~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
  ConsoleBehaviourUi~="" "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
- ConsoleMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI / Output部分"
- Resolution~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI / Output部分"
+ ConsoleMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI/Output部分"
+ Resolution~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI/Output部分"
  ConsoleAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  HideSelf~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  PollAppleHotKeys=no

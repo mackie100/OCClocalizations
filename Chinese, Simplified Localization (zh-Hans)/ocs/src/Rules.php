@@ -321,7 +321,7 @@ class SettingRule extends Rule {
                 }
             } else if($this->left === $key) {
                 if(!is_array($val)) {
-                    return ["!<b>$key</b> -->内容缺失"];
+                    return ["!<font color=red><b>$key</b></font> -->内容缺失"];
                 }
                 //
                 // Special case, regex across all remaining attributes
@@ -401,7 +401,7 @@ class SettingRule extends Rule {
 
             $vars = $this->vars + [ '{$setting}' => $this->left, '{$value}' => $right ];
             // Overriding user-supplied msgfalse in this missing setting case
-            $msgfalse = "-<b>{$this->left}</b> -->缺失内容. 通常设置为 <b>{$right}</b>";
+            $msgfalse = "-<font color=red><b>{$this->left}</b></font> -->缺失内容. 通常设置为 <b>{$right}</b>";
             $ret = [$msgfalse];
         }
         return $ret;

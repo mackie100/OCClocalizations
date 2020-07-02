@@ -1,8 +1,8 @@
-=<div style="text-align:center;font-size:30px;">Ivy Bridge Desktop OpenCore 0.5.9</div><br/>
+=<div style="text-align:center;font-size:30px;">Ivy Bridge Desktop OpenCore 0.5.9 健全性查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 Intel Ivy Bridge Desktop Sanity Check
 =参考文章:<a href="https://desktop.dortania.ml/config.plist/ivy-bridge.html">https://desktop.dortania.ml/config.plist/ivy-bridge.html</a>
-=<hr>
+=<hr noshade=\"noshade\" />
 # [kernel]:https://desktop.dortania.ml/config.plist/ivy-bridge.html#kernel
 # [acpi]:https://desktop.dortania.ml/config.plist/ivy-bridge.html#acpi
 # [kexts]:https://desktop.dortania.ml/ktext.html#kexts
@@ -74,7 +74,7 @@ Kernel
  [BundlePath]==FakeSMC.kext&VirtualSMC.kext "---><b>{$BundlePath}<b> 不要同时使用 <b>FakeSMC.kext<b> 和 <b>VirtualSMC.kext<b>"
  [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "--->你应该在此处添加 <b>FakeSMC.kext</b> 或 <b>VirtualSMC.kext</b>"
  [BundlePath]==VoodooHDA.kext&AppleALC.kext "---><b>{$BundlePath}</b> 不要同时使用 <b>VoodooHDA.kext</b> 和 <b>AppleALC.kext</b>"
- [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>layout_id 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
+ [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>N 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
  [BundlePath]==VoodooHDA.kext " <b>{$BundlePath}</b> -->请注意:<b>AppleALC.kext</b> 往往具有更好的音频质量"
  [BundlePath]!=WhateverGreen.kext "---><b>WhateverGreen.kext</b>缺少. 请查看<a href=https://desktop.dortania.ml/ktext.html#kexts>[Kexts Docs]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 这是AMD专用的kext，请勿在Intel上使用"
@@ -108,8 +108,8 @@ Misc
  BuiltinTextRenderer~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 参见UEFI/TextRenderer"
  ConsoleBehaviourOs~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
  ConsoleBehaviourUi~="" "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
- ConsoleMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI / Output部分"
- Resolution~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI / Output部分"
+ ConsoleMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI/Output部分"
+ Resolution~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI/Output部分"
  ConsoleAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  HideSelf~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  PollAppleHotKeys=no
