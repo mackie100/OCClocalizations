@@ -1,4 +1,4 @@
-=<div style="text-align:center;font-size:30px;">AMD Zen OpenCore 0.5.9 健全性查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">AMD Zen OpenCore 0.6.0 健全性查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 AMD Zen Sanity Check
 =参考文章:<a href="https://desktop.dortania.ml/AMD/zen.html">https://desktop.dortania.ml/AMD/zen.html</a>
@@ -17,15 +17,15 @@ ACPI
  [Path]==SSDT-1.aml "-<b>{$Path}</b> -->这只是SSDT的一个例子。如果你真的是自己做的, 称它为更具描述性的东西"
  [Path]~=".dsl$" "!<b>{$Path}</b> -->在此处只能是.aml文件。 dsl文件需要编译为.aml"
  [Enabled]==no "-<b>{$Path}</b> -->状态是<b>已禁用</b>. 启用或删除它可以去除此警告"
- [Path]!=SSDT-PLUG.aml "--->缺少<b>SSDT-PLUG.aml</b>. 请查看<a href=https://desktop.dortania.ml/AMD/zen.html#acpi>[Acpi Docs]</a>"
+ [Path]!=SSDT-PLUG.aml "--->缺少<font color=red><b>SSDT-PLUG.aml</b></font>. 请查看<a href=https://desktop.dortania.ml/AMD/zen.html#acpi>[Acpi Docs]</a>"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml"-->-<b>{$Path}/b>不要同时使用 <b>SSDT-EC-USBX-DESKTOP</b>和<b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX-DESKTOP.aml的文件.请查看<a href=https://desktop.dortania.ml/AMD/zen.html#acpi>[ACPI文档]</a>"
- [Path]~=AWAC.+aml "-<b>{$Path}</b> -->在AMD上不需要"
- [Path]~=RTC0.+aml "-<b>{$Path}</b> -->在AMD上不需要"
- [Path]~=ALS0.+aml "-<b>{$Path}</b> -->在AMD上不需要"
- [Path]==SSDT-PMC.aml "-<b>{$Path}</b> -->在AMD上不需要"
- [Path]==SSDT-PNLF.aml "-<b>{$Path}</b> -->在AMD上不需要"
- [Path]==SSDT-SBUS-MCHC.aml "-<b>{$Path}</b> -->在AMD上不需要"
+ [Path]~=AWAC.+aml "-<b>{$Path}</b> --><font color=red>在AMD上不需要</font>"
+ [Path]~=RTC0.+aml "-<b>{$Path}</b> --><font color=red>在AMD上不需要</font>"
+ [Path]~=ALS0.+aml "-<b>{$Path}</b> --><font color=red>在AMD上不需要</font>"
+ [Path]==SSDT-PMC.aml "-<b>{$Path}</b> --><font color=red>在AMD上不需要</font>"
+ [Path]==SSDT-PNLF.aml "-<b>{$Path}</b> --><font color=red>在AMD上不需要</font>"
+ [Path]==SSDT-SBUS-MCHC.aml "-<b>{$Path}</b> --><font color=red>在AMD上不需要</font>"
  [Path]==* " <b>{$Path}</b> -->确保此文件在您的<b>OC/ACPI</b>目录中"
 
 :Quirks
@@ -60,7 +60,7 @@ Booter
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
  SyncRuntimePermissions=yes
- ProvideMaxSlide~=.* "!<b>{$setting}</b> -->这是OpenCore最新开发版0.6.0新加选项，对于0.5.9不需要"
+ ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>ProvideMaxSlide</font></b>选项"
 
 DeviceProperties
 
@@ -137,6 +137,7 @@ Misc
  Target=67 :" <b>{$setting}</b> -->有关调试目标编号的更多信息，请参见<a href=https://desktop.dortania.ml/troubleshooting/debug.html>[Debugging Docs]</a>"
  DisplayLevel=2147483714 :" <b>{$setting}</b> -->有关更多信息，请参见<a href=https://desktop.dortania.ml/troubleshooting/debug.html>[Debugging Docs]</a>调试显示级别"
  DisplayDelay=0
+ SysReport=no : " -->只有在使用OpenCore 0.6.0 Debug版时才可以使用<b>{$setting}</b>=yes"
 
 :Entries
  [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> -->boot-args进入nvram部分，而不是这里"
@@ -145,7 +146,7 @@ Misc
  AllowNvramReset=yes
  AllowSetDefault=yes
  AuthRestart=no
- BlacklistAppleUpdate=yes
+ BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用，可以使用NVRAM参数里添加"
  BootProtect=Bootstrap
  RequireSignature~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
@@ -197,7 +198,7 @@ UEFI
  ConnectDrivers=yes
  Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "$hfs={$value}; <b>{$value}</b>":"!-->这里需要 <b>VBoxHfs.efi</b> 或 <b>HFSPlus.efi</b> here"
  Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "!<b>{$value}</b> -->你已经有了 <b>{$hfs}</b>"
- Drivers==OpenRuntime.efi " <b>{$value}</b>":"!--><b>OpenRuntime.efi</b>缺少"
+ Drivers==OpenRuntime.efi " <b>{$value}</b>":"!-->缺少<font color=red><b>OpenRuntime.efi</b></font>"
  Drivers==FwRuntimeServices.efi "!<b>{$value}</b> -->从OpenCore v0.5.7开始已由OpenRuntime.efi取代"
  Drivers==ApfsDriverLoader.efi "!<b>ApfsDriverLoader.efi</b> -->自OpenCore v0.5.8起，已合并在UEFI/APFS部分"
  Drivers==OpenCore.efi "!<b>OpenCore.efi</b> -->不应该在这里!"
@@ -216,7 +217,7 @@ UEFI
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
- GlobalConnect~=.* "!<b>{$setting}</b> -->这是OpenCore最新开发版0.6.0新加选项，对于0.5.9不需要"
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>GlobalConnect</font></b>选项"
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -239,11 +240,12 @@ UEFI
  TimerResolution=50000
 
 :ProtocolOverrides
- count==15 :"!-->您应该在UEFI/ProtocolOverrides部分中正确设置15个选项"
+ count==16 :"!-->在OpenCore 0.6.0里，您应该在UEFI/ProtocolOverrides部分中正确设置16个选项"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
+ AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
  AppleImageConversion=no
  AppleKeyMap=no
  AppleRtcRam=no
@@ -257,7 +259,7 @@ UEFI
  UnicodeCollation=no
 
 :Output
- count==10 :"!-->您应该在<b>UEFI/OUTPUT</b>部分中设置10个设置"
+ count==11 :"!-->在OpenCore 0.6.0里，您应该在<b>UEFI/OUTPUT</b>部分中设置11个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -270,6 +272,7 @@ UEFI
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  Scale~=.* "!<b>{$setting}</b> -->不应该在这里"
+ UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>UgaPassThrough</font></b>选项"
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
