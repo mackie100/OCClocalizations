@@ -32,9 +32,6 @@ ACPI
  ResetHwSig=no
  ResetLogoStatus=no
 
-:Patch
- count>15 "커널 패치는 커널 섹션에 추가해야 합니다. 참고 [Kernel Docs][kernel]"
-
 Booter
 
 :Quirks

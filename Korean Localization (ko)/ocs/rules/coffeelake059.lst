@@ -11,7 +11,6 @@
 # [platforminfo]:https://desktop.dortania.ml/config.plist/coffee-lake#platforminfo
 # [deviceproperties]:https://desktop.dortania.ml/config.plist/coffee-lake##deviceproperties
 
-
 ACPI
 :Add
  count==0 "-SSDT 파일이 없습니다. 참고<a href="https://desktop.dortania.ml/config.plist/coffee-lake#acpi">[ACPI Docs]</a>"
@@ -31,9 +30,6 @@ ACPI
  RebaseRegions=no
  ResetHwSig=no
  ResetLogoStatus=no
-
-:Patch
- count>15 "커널 패치는 커널 섹션에 추가해야 합니다. 참고 [Kernel Docs][kernel]"
 
 Booter
 
@@ -59,6 +55,10 @@ Booter
 
 DeviceProperties
 
+:Add
+::PciRoot(0x0)/Pci(0x2,0x0)
+ AAPL,ig-platform-id~="0900a53e|0900923e|09009b3e|0000a53e|0000923e|0000003e|00009b3e|0400a53e|0500a53e|0500a63e|06009b3e|08009b3e|07009b3e|0300923e|0300913e|0300983e" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU 가 제대로 설정 되지 않았습니다. 참고 <a href=https://desktop.dortania.ml/config.plist/coffee-lake##deviceproperties>[DeviceProperties Docs]</a>"
+
 Kernel
 
 :Add
@@ -77,10 +77,6 @@ Kernel
  [BundlePath]==FakePCIID.kext "-<b>{$BundlePath}</b> 대신에 fake device ids 사용을 고려"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext "-<b>{$BundlePath}</b> 대신에 fake device ids 사용을 고려"
  [BundlePath]==* " <b>{$BundlePath}</b> <b>OC/Kexts</b> 폴더에 위치 해야 합니다."
-
-:Emulate
- Cpuid1Data=d4060300000000000000000000000000 " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> 올바른 CPU spoofing 값이 필요합니다."
- Cpuid1Mask=ffffffff000000000000000000000000 " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b>"
 
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
@@ -129,7 +125,6 @@ Misc
 
 :Entries
  [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> boot-args 는 nvram 섹션을 이용."
-
 
 :Security
  AllowNvramReset=yes
