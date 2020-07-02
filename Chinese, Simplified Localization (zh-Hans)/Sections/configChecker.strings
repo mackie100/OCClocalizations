@@ -3,7 +3,7 @@
 "5Yb-KF-2Ys.title" = "Opencore版本";
 
 /* Class = "NSWindow"; title = "Config Checker"; ObjectID = "F0z-JX-Cv5"; */
-"F0z-JX-Cv5.title" = "Config完善性检查";
+"F0z-JX-Cv5.title" = "Config健全性检查";
 
 /* Class = "NSTextFieldCell"; title = "CPU Family"; ObjectID = "K8h-i1-pzV"; */
 "K8h-i1-pzV.title" = "CPU平台";
