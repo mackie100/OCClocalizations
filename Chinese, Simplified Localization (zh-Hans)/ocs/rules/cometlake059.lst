@@ -1,4 +1,4 @@
-=<div style="text-align:center;font-size:30px;">Comet Lake Desktop OpenCore 0.5.9 健全性查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">Comet Lake Desktop OpenCore 0.5.9 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 Intel Coffee Lake Sanity Check
 =参考文章:<a href="https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/comet-lake.html.html">https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/comet-lake.html.html</a>

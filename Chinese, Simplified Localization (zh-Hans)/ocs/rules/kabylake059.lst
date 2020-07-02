@@ -1,4 +1,4 @@
-=<div style="text-align:center;font-size:30px;">Kaby Lake Desktop OpenCore 0.5.9 健全性查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">Kaby Lake Desktop OpenCore 0.5.9 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 Intel Kaby Lake Sanity Check
 =参考文章:<a href="https://desktop.dortania.ml/config.plist/kaby-lake.html">https://desktop.dortania.ml/config.plist/kaby-lake.html</a>

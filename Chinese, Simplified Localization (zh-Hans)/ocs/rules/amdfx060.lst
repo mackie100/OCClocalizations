@@ -1,4 +1,4 @@
-=<div style="text-align:center;font-size:30px;">AMD FX OpenCore 0.6.0 健全性查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">AMD FX OpenCore 0.6.0 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 AMD FX Sanity Check
 =参考文章:<a href="https://desktop.dortania.ml/AMD/fx.html">https://desktop.dortania.ml/AMD/fx.html</a>
