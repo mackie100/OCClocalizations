@@ -11,7 +11,6 @@
 # [platforminfo]:https://desktop.dortania.ml/config-HEDT/broadwell-e#platforminfo
 # [deviceproperties]:https://desktop.dortania.ml/config-HEDT/broadwell-e#deviceproperties
 
-
 ACPI
 :Add
  count==0 "-SSDT 파일이 없습니다. 참고<a href="https://desktop.dortania.ml/AMD/fx.html#acpi">[ACPI Docs]</a>"
@@ -36,7 +35,7 @@ Booter
 
 :Quirks
  AvoidRuntimeDefrag=yes
- DevirtualiseMmio=no
+ DevirtualiseMmio=yes
  DisableSingleUser=no
  DisableVariableWrite=no
  DiscardHibernateMap=no
@@ -49,10 +48,10 @@ Booter
  ProtectUefiServices=no
  ProvideCustomSlide=yes
  RebuildAppleMemoryMap=yes
- SetupVirtualMap=no
+ SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
- SyncRuntimePermissions=yes
+ SyncRuntimePermissions=no
 
 DeviceProperties
 
@@ -110,23 +109,22 @@ Misc
  UsePicker~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
  TakeoffDelay=0
  HibernateMode=None
- PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> <b>Builtin</b> 또는 <b>External</b> 로 설정되어야 합니다."
+ PickerMode=Builtin
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
  Timeout=5
 
 :Debug
- AppleDebug=no
+ AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> 디버깅 용도"
- Target=67 :" <b>{$setting}</b> 참고 [Debugging Docs][debug]"
- DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 [Debugging Docs][debug]"
+ Target=67 :" <b>{$setting}</b> 참고 <a href=https://desktop.dortania.ml/troubleshooting/debug.html>[Debugging Docs][debug]"
+ DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 <a href=https://desktop.dortania.ml/troubleshooting/debug.html>[Debugging Docs][debug]"
  DisplayDelay=0
 
 :Entries
  [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> boot-args 는 nvram 섹션을 이용."
-
 
 :Security
  AllowNvramReset=yes
@@ -147,7 +145,7 @@ Misc
 NVRAM
  LegacyEnable=no
  LegacyOverwrite=no
- WriteFlash=yes
+ WriteFlash=no
 
 :Add
 ::4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14
@@ -174,9 +172,9 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> OpenCore v0.5.5 부터 <b>AdviseWindows</b> 로 변경 "
- SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
- MLB~="(M000000000001|M0000000000000001)" "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
- ROM~="(112233000000|112233445566)" "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ SystemProductName~="(iMacPro1,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
+ MLB=M000000000001 "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> system serial 넘버 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> SmUUID 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
 
@@ -191,9 +189,9 @@ UEFI
  Drivers==AppleUsbKbdxe.efi "!<b>AppleUsbKbdxe.efi</b> 레거시 모드가 아니라면 필요하지 않습니다."
  Drivers==NvmExpressDxe.efi "!<b>NvmExpressDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==XhciDxe.efi "!<b>XhciDxe.efi</b> 추가 하지 않아야합니다."
+ Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==AppleUsbKbDxe.efi "-<b>AppleUsbKbDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==VirtualSmc.efi "!<b>VirtualSmc.efi</b> 는 <b>AppleSmcIo</b> quirk 값으로 대체 되었습니다."
- Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==~^#.* "!<b>{$value}</b> 삭제 </b>#</b>"
  Drivers==* " <b>{$value}</b>"
 
@@ -255,13 +253,13 @@ UEFI
  ReconnectOnResChange=no
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- Scale~=.* "!<b>{$setting}</b> 추가 하지 않아야 합니다."
+ Scale=100 "!<b>{$setting}</b> 추가 하지 않아야 합니다."
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다."
  DeduplicateBootOrder=yes
  ExitBootServicesDelay=0
- IgnoreInvalidFlexRatio=no
+ IgnoreInvalidFlexRatio=yes
  ReconnectOnResChange~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  ProvideConsoleGop~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
@@ -272,6 +270,6 @@ UEFI
  ReplaceTabWithSpace~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  SanitiseClearScreen~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  ClearScreenOnModeSwitch~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
- UnblockFsConnect=no
+ UnblockFsConnect~=.*
 
 :ReservedMemory
