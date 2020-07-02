@@ -55,10 +55,10 @@ Booter
  ProtectUefiServices=no
  ProvideCustomSlide=yes
  RebuildAppleMemoryMap=yes
- SetupVirtualMap=no
+ SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
- SyncRuntimePermissions=yes
+ SyncRuntimePermissions=no
 
 DeviceProperties
 
@@ -99,7 +99,7 @@ Kernel
  CustomSMBIOSGuid=no
  DisableIoMapper=no
  DisableRtcChecksum=no
- DummyPowerManagement=yes " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> 활성화 필요"
+ DummyPowerManagement=yes
  ExternalDiskIcons=no
  IncreasePciBarSize=no
  LapicKernelPanic~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -122,7 +122,7 @@ Misc
  UsePicker~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
  TakeoffDelay=0
  HibernateMode=None
- PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> <b>Builtin</b> 또는 <b>External</b> 로 설정되어야 합니다."
+ PickerMode=Builtin
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no

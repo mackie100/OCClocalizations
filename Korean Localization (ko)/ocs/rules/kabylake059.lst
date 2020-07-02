@@ -42,13 +42,13 @@ Booter
  EnableSafeModeSlide=yes
  EnableWriteUnprotector=yes
  ForceExitBootServices=no
- ProtectCsmRegion~=.* "!<b>{$setting}</b> 0.5.7 이후 <b>ProtectMemoryRegions</b> 를 사용 합니다."
- ProtectMemoryRegions=no
  ProtectSecureBoot=no
+ ProtectMemoryRegions=no
+ ProtectCsmRegion~=.* "!<b>{$setting}</b> 0.5.7 이후 <b>ProtectMemoryRegions</b> 를 사용 합니다."
  ProtectUefiServices=no
  ProvideCustomSlide=yes
  RebuildAppleMemoryMap=yes
- SetupVirtualMap=no
+ SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
  SyncRuntimePermissions=yes
@@ -68,7 +68,6 @@ Kernel
  [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "-<b>FakeSMC.kext</b> 와 <b>VirtualSMC.kext</b> 둘중에 하나 사용 필요"
  [BundlePath]==VoodooHDA.kext&AppleALC.kext "-<b>{$BundlePath}</b> b>VoodooHDA.kext</b> 와 <b>AppleALC.kext</b>는 동시 사용 불가능"
  [BundlePath]==AppleALC.kext "$alcbootarg='-<b>{$setting}</b> = <b>{$value}</b> <b>alcid=</b><_layout_\> 추가 필요":"$alcbootarg=;"
- [BundlePath]==VoodooHDA.kext " <b>{$BundlePath}</b> 가능하다면 <b>AppleALC.kext</b> 를 추천"
  [BundlePath]!=WhateverGreen.kext "-<b>WhateverGreen.kext</b> 를 찾을수 없습니다. 참고 <a href=https://desktop.dortania.ml/ktext.html#kexts>[Kexts Docs]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!<b>XLNCUSBFIX.kext</b> AMD용 kext"
  [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-<b>{$BundlePath}</b> 동작하겠지만 <b>SmallTreeIntel82576.kext</b>를 추천"
@@ -82,7 +81,7 @@ Kernel
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
- AppleXcpmExtraMsrs=yes
+ AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no
  DisableIoMapper=yes
@@ -100,7 +99,7 @@ Misc
 :Boot
  BuiltinTextRenderer~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다.- See UEFI/TextRenderer"
  ConsoleBehaviourOs~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
- ConsoleBehaviourUi~="" "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
+ ConsoleBehaviourUi~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
  ConsoleMode~=.* "!<b>{$setting}</b> OpenCore v0.5.6 이후 UEFI/Output section로 이동"
  Resolution~=.* "!<b>{$setting}</b> OpenCore v0.5.6 이후 UEFI/Output section로 이동"
  ConsoleAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -110,14 +109,14 @@ Misc
  UsePicker~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
  TakeoffDelay=0
  HibernateMode=None
- PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> <b>Builtin</b> 또는 <b>External</b> 로 설정되어야 합니다."
+ PickerMode=Builtin
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
  Timeout=5
 
 :Debug
- AppleDebug=no
+ AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> 디버깅 용도"
  Target=67 :" <b>{$setting}</b> 참고 [Debugging Docs][debug]"
@@ -126,7 +125,6 @@ Misc
 
 :Entries
  [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> boot-args 는 nvram 섹션을 이용."
-
 
 :Security
  AllowNvramReset=yes
@@ -174,9 +172,9 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> OpenCore v0.5.5 부터 <b>AdviseWindows</b> 로 변경 "
- SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
- MLB~="(M000000000001|M0000000000000001)" "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
- ROM~="(112233000000|112233445566)" "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ SystemProductName~="(iMac18,1|iMac18,3)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
+ MLB=M000000000001"!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> system serial 넘버 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> SmUUID 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
 
@@ -191,9 +189,9 @@ UEFI
  Drivers==AppleUsbKbdxe.efi "!<b>AppleUsbKbdxe.efi</b> 레거시 모드가 아니라면 필요하지 않습니다."
  Drivers==NvmExpressDxe.efi "!<b>NvmExpressDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==XhciDxe.efi "!<b>XhciDxe.efi</b> 추가 하지 않아야합니다."
+ Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==AppleUsbKbDxe.efi "-<b>AppleUsbKbDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==VirtualSmc.efi "!<b>VirtualSmc.efi</b> 는 <b>AppleSmcIo</b> quirk 값으로 대체 되었습니다."
- Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==~^#.* "!<b>{$value}</b> 삭제 </b>#</b>"
  Drivers==* " <b>{$value}</b>"
 

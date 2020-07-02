@@ -11,7 +11,6 @@
 # [platforminfo]:https://desktop.dortania.ml/config.plist/coffee-lake#platforminfo
 # [deviceproperties]:https://desktop.dortania.ml/config.plist/coffee-lake##deviceproperties
 
-
 ACPI
 :Add
  count==0 "-SSDT 파일이 없습니다. 참고<a href="https://desktop.dortania.ml/config.plist/coffee-lake#acpi">[ACPI Docs]</a>"
@@ -23,6 +22,8 @@ ACPI
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> 동시 사용 금지 <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%SSDT-EC.aml 또는 SSDT-EC-USBX-DESKTOP.aml. 가 필요할수 있습니다. 참고 <a href="https://desktop.dortania.ml/config.plist/coffee-lake#acpi">ACPI Docs]</a>"
  [Path]==* " <b>{$Path}</b> OC/ACPI 폴더에 위치 해야 합니다."
+ [Path]!=SSDT-PMC.aml "-<b>SSDT-PMC.aml<b>가 없습니다. See the <a href=https://desktop.dortania.ml/config.plist/coffee-lake#acpi>[Acpi Docs]</a> if you need it"
+ [Path]==* " <b>{$Path}</b> OC/ACPI 폴더에 파일이 위치 해야 합니다."
 
 :Quirks
  count==5
@@ -32,14 +33,11 @@ ACPI
  ResetHwSig=no
  ResetLogoStatus=no
 
-:Patch
- count>15 "커널 패치는 커널 섹션에 추가해야 합니다. 참고 [Kernel Docs][kernel]"
-
 Booter
 
 :Quirks
  AvoidRuntimeDefrag=yes
- DevirtualiseMmio=no
+ DevirtualiseMmio=yes
  DisableSingleUser=no
  DisableVariableWrite=no
  DiscardHibernateMap=no
@@ -52,12 +50,16 @@ Booter
  ProtectUefiServices=no
  ProvideCustomSlide=yes
  RebuildAppleMemoryMap=yes
- SetupVirtualMap=no
+ SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
  SyncRuntimePermissions=yes
 
 DeviceProperties
+
+:Add
+::PciRoot(0x0)/Pci(0x2,0x0)
+ AAPL,ig-platform-id~="0900a53e|0900923e|09009b3e|0000a53e|0000923e|0000003e|00009b3e|0400a53e|0500a53e|0500a63e|06009b3e|08009b3e|07009b3e|0300923e|0300913e|0300983e" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU 가 제대로 설정 되지 않았습니다. 참고 <a href=https://desktop.dortania.ml/config.plist/coffee-lake##deviceproperties>[DeviceProperties Docs]</a>"
 
 Kernel
 
@@ -78,14 +80,10 @@ Kernel
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext "-<b>{$BundlePath}</b> 대신에 fake device ids 사용을 고려"
  [BundlePath]==* " <b>{$BundlePath}</b> <b>OC/Kexts</b> 폴더에 위치 해야 합니다."
 
-:Emulate
- Cpuid1Data=d4060300000000000000000000000000 " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> 올바른 CPU spoofing 값이 필요합니다."
- Cpuid1Mask=ffffffff000000000000000000000000 " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b>"
-
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
- AppleXcpmExtraMsrs=yes
+ AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no
  DisableIoMapper=yes
@@ -113,14 +111,14 @@ Misc
  UsePicker~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
  TakeoffDelay=0
  HibernateMode=None
- PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> <b>Builtin</b> 또는 <b>External</b> 로 설정되어야 합니다."
+ PickerMode=Builtin
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
  Timeout=5
 
 :Debug
- AppleDebug=no
+ AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> 디버깅 용도"
  Target=67 :" <b>{$setting}</b> 참고 [Debugging Docs][debug]"
@@ -129,7 +127,6 @@ Misc
 
 :Entries
  [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> boot-args 는 nvram 섹션을 이용."
-
 
 :Security
  AllowNvramReset=yes
@@ -177,9 +174,9 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> OpenCore v0.5.5 부터 <b>AdviseWindows</b> 로 변경 "
- SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
- MLB~="(M000000000001|M0000000000000001)" "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
- ROM~="(112233000000|112233445566)" "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ SystemProductName~="(iMac19,1|iMac18,3)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
+ MLB=M000000000001 "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> system serial 넘버 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> SmUUID 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
 
@@ -197,7 +194,6 @@ UEFI
  Drivers==AppleUsbKbDxe.efi "-<b>AppleUsbKbDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==VirtualSmc.efi "!<b>VirtualSmc.efi</b> 는 <b>AppleSmcIo</b> quirk 값으로 대체 되었습니다."
  Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
- Drivers==~^#.* "!<b>{$value}</b> 삭제 </b>#</b>"
  Drivers==* " <b>{$value}</b>"
 
 :APFS
