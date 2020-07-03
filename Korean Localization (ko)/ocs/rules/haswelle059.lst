@@ -14,13 +14,14 @@
 ACPI
 :Add
  count==0 "-SSDT 파일이 없습니다. 참고<a href="https://desktop.dortania.ml/config-HEDT/haswell-e#acpi">[ACPI Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. [ACPI Docs][acpi] 문서참고."
+ [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. <a href=https://desktop.dortania.ml/config.plist/haswell.html#acpi> [ACPI Docs][acpi] 문서참고."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> 샘플 SSDT 입니다."
  [Path]~=".dsl$" "!<b>{$Path}</b> .aml 만 지원합니다. dsl 파일은 컴파일해서 첨부"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. 경고 메세지지를 제거하기 위해서는 활성화 시키거나 지워주세요."
- [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 를 찾을수 없습니다. 참고 [ACPI Docs][acpi]"
+ [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 를 찾을수 없습니다. 참고 <a href=https://desktop.dortania.ml/config.plist/haswell.html#acpi> [ACPI Docs][acpi]"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> 동시 사용 금지 <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%SSDT-EC.aml 또는 SSDT-EC-USBX-DESKTOP.aml. 가 필요할수 있습니다. 참고  <a href="https://desktop.dortania.ml/config-HEDT/haswell-e#acpi">[Acpi Docs]</a>"
+ [Path]!=SSDT-EHCx_OFF.aml "-<b>SSDT-EHCx_OFF.aml</b>를 찾을수 없습니다. 참고 <a href=https://desktop.dortania.ml/config.plist/haswell.html#acpi>[Acpi Docs]</a>"
  [Path]==* " <b>{$Path}</b> OC/ACPI 폴더에 위치 해야 합니다."
 
 :Quirks
@@ -48,12 +49,16 @@ Booter
  ProtectUefiServices=no
  ProvideCustomSlide=yes
  RebuildAppleMemoryMap=yes
- SetupVirtualMap=no
+ SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
- SyncRuntimePermissions=yes
+ SyncRuntimePermissions=no
 
 DeviceProperties
+
+:Add
+::PciRoot(0x0)/Pci(0x2,0x0)
+ AAPL,ig-platform-id~="0000060c|0000160c|0000260c|00000604|00001604|00002604|0000260d|0000160a|0000260a|0500260a|0600260a|08002e0a|0c00160a|0700260d|0300220d|0a002e0a|0a00260a|0d002e0a|0d00260a|04001204|0b001204|0900260d|0e00260d|0f00260d" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU may not be set correctly. Please read the <a href=https://desktop.dortania.ml/config.plist/haswell.html##deviceproperties>[DeviceProperties Docs]</a>"
 
 Kernel
 
@@ -69,16 +74,15 @@ Kernel
  [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-<b>{$BundlePath}</b> 동작하겠지만 <b>SmallTreeIntel82576.kext</b>를 추천"
  [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> 랩탑용 플러그인"
  [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> 랩탑용 플러그인"
+ [BundlePath]==XHCI-unsupported.kext  "-<b>{$BundlePath}</b> 필요 하지 않을수 있는 켁스트"
+ [BundlePath]==FakePCIID.kext "-<b>{$BundlePath}</b> fake device ids 를 사용하는 걸 추천합니다."
+ [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext "-<b>{$BundlePath}</b> fake device ids 를 사용하는 걸 추천합니다."
  [BundlePath]==* " <b>{$BundlePath}</b> <b>OC/Kexts</b> 폴더에 위치 해야 합니다."
-
-:Emulate
- Cpuid1Data=d4060300000000000000000000000000 " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> 올바른 CPU spoofing 값이 필요합니다."
- Cpuid1Mask=ffffffff000000000000000000000000 " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b>"
 
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
- AppleXcpmExtraMsrs=yes
+ AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no
  DisableIoMapper=yes
@@ -106,23 +110,22 @@ Misc
  UsePicker~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
  TakeoffDelay=0
  HibernateMode=None
- PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> <b>Builtin</b> 또는 <b>External</b> 로 설정되어야 합니다."
+ PickerMode=Builtin 
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
  Timeout=5
 
 :Debug
- AppleDebug=no
+ AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> 디버깅 용도"
- Target=67 :" <b>{$setting}</b> 참고 [Debugging Docs][debug]"
- DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 [Debugging Docs][debug]"
+ Target=67 :" <b>{$setting}</b> 참고 <a href=https://desktop.dortania.ml/troubleshooting/debug.html> [Debugging Docs][debug]"
+ DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 <a href=https://desktop.dortania.ml/troubleshooting/debug.html> [Debugging Docs][debug]"
  DisplayDelay=0
 
 :Entries
  [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> boot-args 는 nvram 섹션을 이용."
-
 
 :Security
  AllowNvramReset=yes
@@ -170,10 +173,9 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> OpenCore v0.5.5 부터 <b>AdviseWindows</b> 로 변경 "
- SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
- MLB~="(M000000000001|M0000000000000001)" "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
- ROM~="(112233000000|112233445566)" "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
- SystemSerialNumber=W0000000001 "!<b>{$setting}</b> system serial 넘버 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ SystemProductName~="(iMac14,1|iMac14,2|iMac15,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
+ MLB=M000000000001"!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> SmUUID 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
 
 UEFI
@@ -187,9 +189,9 @@ UEFI
  Drivers==AppleUsbKbdxe.efi "!<b>AppleUsbKbdxe.efi</b> 레거시 모드가 아니라면 필요하지 않습니다."
  Drivers==NvmExpressDxe.efi "!<b>NvmExpressDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==XhciDxe.efi "!<b>XhciDxe.efi</b> 추가 하지 않아야합니다."
+ Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==AppleUsbKbDxe.efi "-<b>AppleUsbKbDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==VirtualSmc.efi "!<b>VirtualSmc.efi</b> 는 <b>AppleSmcIo</b> quirk 값으로 대체 되었습니다."
- Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==~^#.* "!<b>{$value}</b> 삭제 </b>#</b>"
  Drivers==* " <b>{$value}</b>"
 
@@ -242,7 +244,7 @@ UEFI
  count==10 :"!정확히 Output 의 각 항목 총 10 개의 설정 값을 입력해 두어야 합니다."
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
- Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ Resolution=Max" <b>{$setting}</b> = <b>{$value}</b>"
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
@@ -257,7 +259,7 @@ UEFI
  AvoidHighAlloc~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다."
  DeduplicateBootOrder=yes
  ExitBootServicesDelay=0
- IgnoreInvalidFlexRatio=no
+ IgnoreInvalidFlexRatio=yes
  ReconnectOnResChange~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  ProvideConsoleGop~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"

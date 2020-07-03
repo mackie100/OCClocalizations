@@ -49,10 +49,10 @@ Booter
  ProtectUefiServices=no
  ProvideCustomSlide=yes
  RebuildAppleMemoryMap=yes
- SetupVirtualMap=no
+ SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
- SyncRuntimePermissions=yes
+ SyncRuntimePermissions=no
 
 DeviceProperties
 
@@ -79,11 +79,10 @@ Kernel
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext "-<b>{$BundlePath}</b> 대신에 fake device ids 사용을 고려"
  [BundlePath]==* " <b>{$BundlePath}</b> <b>OC/Kexts</b> 폴더에 위치 해야 합니다."
 
-
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천":" <b>{$setting}</b> = <b>{$value}</b> 대신 바이오스에서 CFG-Lock 비활성화 추천"
- AppleXcpmExtraMsrs=yes
+ AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no
  DisableIoMapper=yes
@@ -111,14 +110,14 @@ Misc
  UsePicker~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용되지 않습니다."
  TakeoffDelay=0
  HibernateMode=None
- PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> <b>Builtin</b> 또는 <b>External</b> 로 설정되어야 합니다."
+ PickerMode=Builtin
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
  Timeout=5
 
 :Debug
- AppleDebug=no
+ AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> 디버깅 용도"
  Target=67 :" <b>{$setting}</b> 참고 [Debugging Docs][debug]"
@@ -127,7 +126,6 @@ Misc
 
 :Entries
  [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> boot-args 는 nvram 섹션을 이용."
-
 
 :Security
  AllowNvramReset=yes
@@ -174,10 +172,9 @@ PlatformInfo
 :Generic
  SpoofVendor=yes
  AdviseWindows=no
- SupportsCsm~=.* "!<b>{$setting}</b> OpenCore v0.5.5 부터 <b>AdviseWindows</b> 로 변경 "
- SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
- MLB~="(M000000000001|M0000000000000001)" "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
- ROM~="(112233000000|112233445566)" "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ SystemProductName~="(iMac14,1|iMac14,2|iMac15,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> AMD 시스템을 위한 추천 smbios 는 아닙니다. 참고 [PlatformInfo Docs][platforminfo]"
+ MLB=M0000000000000001 "!<b>{$setting}</b> 보드 시리얼 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> NIC MAC address 용도. 참고 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> system serial 넘버 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
  SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> SmUUID 용. 참고 [PlaformInfo Docs][platforminfo]":" <b>{$setting}</b> is set"
 
@@ -192,9 +189,9 @@ UEFI
  Drivers==AppleUsbKbdxe.efi "!<b>AppleUsbKbdxe.efi</b> 레거시 모드가 아니라면 필요하지 않습니다."
  Drivers==NvmExpressDxe.efi "!<b>NvmExpressDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==XhciDxe.efi "!<b>XhciDxe.efi</b> 추가 하지 않아야합니다."
+ Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==AppleUsbKbDxe.efi "-<b>AppleUsbKbDxe.efi</b> 추가 하지 않아야합니다."
  Drivers==VirtualSmc.efi "!<b>VirtualSmc.efi</b> 는 <b>AppleSmcIo</b> quirk 값으로 대체 되었습니다."
- Drivers==HiiDatabase.efi "!<b>{$value}</b> 추가 하지 않아야합니다.!"
  Drivers==~^#.* "!<b>{$value}</b> 삭제 </b>#</b>"
  Drivers==* " <b>{$value}</b>"
 
@@ -247,7 +244,7 @@ UEFI
  count==10 :"!정확히 Output 의 각 항목 총 10 개의 설정 값을 입력해 두어야 합니다."
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
- Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ Resolution=Max " <b>{$setting}</b> = <b>{$value}</b>"
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
@@ -262,7 +259,7 @@ UEFI
  AvoidHighAlloc~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다."
  DeduplicateBootOrder=yes
  ExitBootServicesDelay=0
- IgnoreInvalidFlexRatio=no
+ IgnoreInvalidFlexRatio=yes
  ReconnectOnResChange~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
  ProvideConsoleGop~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다. - See Output/${setting}"
@@ -276,4 +273,3 @@ UEFI
  UnblockFsConnect=no
 
 :ReservedMemory
-

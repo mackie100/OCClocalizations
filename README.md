@@ -1,2 +1,2 @@
 # OpenCore Configurator
-Localization strings for OpenCore Configurator
+Localization strings and other resources for OpenCore Configurator
