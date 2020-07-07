@@ -679,8 +679,8 @@
 "Checking For Resources..." = "检查资源文件...";
 
 /* configCheckerController */
-"Desktop" = "Desktop";
+"Desktop" = "台式机";
 
 /* configCheckerController */
-"High-End Desktop" = "High-End Desktop";
+"High-End Desktop" = "高端台式机";
 
