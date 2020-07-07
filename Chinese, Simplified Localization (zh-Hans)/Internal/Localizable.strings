@@ -678,3 +678,9 @@
 /* configCheckerController */
 "Checking For Resources..." = "检查资源文件...";
 
+/* configCheckerController */
+"Desktop" = "Desktop";
+
+/* configCheckerController */
+"High-End Desktop" = "High-End Desktop";
+
