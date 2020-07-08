@@ -586,7 +586,7 @@
 "OpenCore Settings" = "OpenCore Settings";
 
 /* titleBar */
-"Release Configuration" = "%1$@ onfiguration";
+"Release Configuration" = "%1$@ configuration";
 
 /* titleBar */
 "Development Configuration" = "%1$@ 디벨로퍼 Configuration";
