@@ -75,7 +75,7 @@
 "bMR-Kw-wwp.title" = "DisableSingleUser";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "c3O-jR-hal"; */
-"c3O-jR-hal.headerCell.title" = "Enabled";
+"c3O-jR-hal.headerCell.title" = "활성화";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this unless you fully understand the consequences."; ObjectID = "cTN-CD-c3M"; */
 "cTN-CD-c3M.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this unless you fully understand the consequences.";

@@ -57,7 +57,7 @@
 "Ndv-7C-25y.title" = "찾기";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "NtB-gi-4nw"; */
-"NtB-gi-4nw.headerCell.title" = "교체";
+"NtB-gi-4nw.headerCell.title" = "Replace";
 
 /* Class = "NSTableColumn"; headerCell.title = "OemTableId"; ObjectID = "Nxc-pO-D4k"; */
 "Nxc-pO-D4k.headerCell.title" = "OemTableId";

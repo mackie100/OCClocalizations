@@ -54,7 +54,7 @@
 "9hf-l6-OjL.ibShadowedToolTip" = "1. Base\nType: plist string\nDefault value: Empty string\nDescription: Selects symbol-matched base for patch lookup (or immediate replacement) by obtaining the address of provided symbol name. Can be set to empty string to be ignored.\n2. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Count\nType: plist integer\nDefault value: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n4. Enabled\nType: plist boolean\nDefault value: false\nDescription: This kernel patch will not be used unless set to true.\n5. Find\nType: plist data\nDefault value: Empty data\nDescription: Data to find. Can be set to empty for immediate replacement at Base. Must equal to Replace in size otherwise.\n6. Identifier\nType: plist string\nDefault value: Empty string\nDescription: Kext bundle identifier (e.g. com.apple.driver.AppleHDA) or kernel for kernel patch.\n7. Limit\nType: plist integer\nDefault value: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole kext or kernel.\n8. Mask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n9. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Patches data on specified macOS version or older.\n10. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Patches data on specified macOS version or newer.\n11. Replace\nType: plist data\nDefault value: Empty data\nDescription: Replacement data of one or more bytes.\n12. ReplaceMask\nType: plist data\nDefault value: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n13. Skip\nType: plist integer\nDefault value: 0\nDescription: Number of found occurrences to be skipped before replacement is done.";
 
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "9tr-6R-vGd"; */
-"9tr-6R-vGd.label" = "Patch";
+"9tr-6R-vGd.label" = "패치";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nCertain firmwares lock PKG_CST_CONFIG_CONTROL MSR register. To check its state one can use bundled VerifyMsrE2 tool. Select firmwares have this register locked on some cores only.\nAs modern firmwares provide CFG Lock setting, which allows configuring PKG_CST_CONFIG_CONTROL MSR register lock, this option should be avoided whenever possible. For several APTIO firmwares not displaying CFG Lock setting in the GUI it is possible to access the option directly:\n(a) Download UEFITool and IFR-Extractor.\n(b) Open your firmware image in UEFITool and find CFG Lock unicode string. If it is not present, your firmware may not have this option and you should stop.\n(c) Extract the Setup.bin PE32 Image Section (the one UEFITool found) through Extract Body menu option.\n(d) Run IFR-Extractor on the extracted file (e.g. ./ifrextract Setup.bin Setup.txt).\n(e) Find CFG Lock, VarStoreInfo (VarOffset/VarName): in Setup.txt and remember the offset right after it (e.g. 0x123).\n(f) Download and run Modified GRUB Shell compiled by brainsucker or use a newer version by datasone.\n(g) Enter setup_var 0x123 0x00 command, where 0x123 should be replaced by your actual offset, and reboot.\nWARNING: Variable offsets are unique not only to each motherboard but even to its firmware version. Never ever try to use an offset without checking."; ObjectID = "FUx-RJ-QTK"; */
 "FUx-RJ-QTK.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nCertain firmwares lock PKG_CST_CONFIG_CONTROL MSR register. To check its state one can use bundled VerifyMsrE2 tool. Select firmwares have this register locked on some cores only.\nAs modern firmwares provide CFG Lock setting, which allows configuring PKG_CST_CONFIG_CONTROL MSR register lock, this option should be avoided whenever possible. For several APTIO firmwares not displaying CFG Lock setting in the GUI it is possible to access the option directly:\n(a) Download UEFITool and IFR-Extractor.\n(b) Open your firmware image in UEFITool and find CFG Lock unicode string. If it is not present, your firmware may not have this option and you should stop.\n(c) Extract the Setup.bin PE32 Image Section (the one UEFITool found) through Extract Body menu option.\n(d) Run IFR-Extractor on the extracted file (e.g. ./ifrextract Setup.bin Setup.txt).\n(e) Find CFG Lock, VarStoreInfo (VarOffset/VarName): in Setup.txt and remember the offset right after it (e.g. 0x123).\n(f) Download and run Modified GRUB Shell compiled by brainsucker or use a newer version by datasone.\n(g) Enter setup_var 0x123 0x00 command, where 0x123 should be replaced by your actual offset, and reboot.\nWARNING: Variable offsets are unique not only to each motherboard but even to its firmware version. Never ever try to use an offset without checking.";
@@ -81,7 +81,7 @@
 "IWc-Ff-bdQ.headerCell.title" = "Identifier*";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "K9H-md-xVS"; */
-"K9H-md-xVS.headerCell.title" = "Enabled";
+"K9H-md-xVS.headerCell.title" = "활성화";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "Kyb-jI-0pq"; */
 "Kyb-jI-0pq.headerCell.title" = "Replace";
@@ -93,7 +93,7 @@
 "Oe6-LD-h7w.headerCell.title" = "BundlePath*";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "PdE-OW-Faw"; */
-"PdE-OW-Faw.headerCell.title" = "Enabled";
+"PdE-OW-Faw.headerCell.title" = "활성화";
 
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "QBz-fY-8R7"; */
 "QBz-fY-8R7.title" = "Quirks";
@@ -135,7 +135,7 @@
 "cKa-I9-gvM.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false\nDescription: Forces maximum performance in XCPM mode.\nThis patch writes 0xFF00 to MSR_IA32_PERF_CONTROL (0x199), effectively setting maximum multiplier for all the time.\nNote: While this may increase the performance, this patch is strongly discouraged on all systems but those explicitly dedicated to scientific or media calculations. In general only certain Xeon models benefit from the patch.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "cUJ-Nj-uY7"; */
-"cUJ-Nj-uY7.headerCell.title" = "Enabled";
+"cUJ-Nj-uY7.headerCell.title" = "활성화";
 
 /* Class = "NSTableColumn"; headerCell.title = "Base"; ObjectID = "djM-Oe-omR"; */
 "djM-Oe-omR.headerCell.title" = "Base";
@@ -150,7 +150,7 @@
 "gFl-jZ-XPd.headerCell.title" = "MaxKernel";
 
 /* Class = "NSTabViewItem"; label = "Block"; ObjectID = "gy1-1j-jtJ"; */
-"gy1-1j-jtJ.label" = "Block";
+"gy1-1j-jtJ.label" = "블럭";
 
 /* Class = "NSButtonCell"; title = "AppleXcpmExtraMsrs"; ObjectID = "jRH-bz-ZFw"; */
 "jRH-bz-ZFw.title" = "AppleXcpmExtraMsrs";
@@ -174,7 +174,7 @@
 "lXN-nk-zjA.headerCell.title" = "MinKernel";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "mWg-wh-eGt"; */
-"mWg-wh-eGt.label" = "Add";
+"mWg-wh-eGt.label" = "추가";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disables kernel panic on LAPIC interrupts."; ObjectID = "nsg-T6-DJT"; */
 "nsg-T6-DJT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disables kernel panic on LAPIC interrupts.";
