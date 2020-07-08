@@ -586,10 +586,10 @@
 "OpenCore Settings" = "OpenCore Settings";
 
 /* titleBar */
-"Release Configuration" = "%1$@ 정식 Configuration";
+"Release Configuration" = "%1$@ configuration";
 
 /* titleBar */
-"Development Configuration" = "%1$@ 개발중 Configuration";
+"Development Configuration" = "%1$@ 디벨로퍼 Configuration";
 
 /* titleBar */
 "for Official OpenCore" = "for 공식 OpenCore";

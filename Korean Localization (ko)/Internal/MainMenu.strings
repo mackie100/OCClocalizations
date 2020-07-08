@@ -159,7 +159,7 @@
 "H1b-Si-o9J.title" = "문단정렬";
 
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
-"H8h-7b-M4v.title" = "View";
+"H8h-7b-M4v.title" = "보기";
 
 /* Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "HFQ-gK-NFA"; */
 "HFQ-gK-NFA.title" = "Text Replacement";
@@ -168,10 +168,10 @@
 "HFo-cy-zxI.title" = "Show Spelling and Grammar";
 
 /* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "HkR-hj-D4X"; */
-"HkR-hj-D4X.title" = "Preferences...";
+"HkR-hj-D4X.title" = "설정...";
 
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
-"HyV-fh-RgO.title" = "View";
+"HyV-fh-RgO.title" = "보기";
 
 /* Class = "NSMenuItem"; title = "Subscript"; ObjectID = "I0S-gh-46l"; */
 "I0S-gh-46l.title" = "Subscript";
@@ -186,7 +186,7 @@
 "J7y-lM-qPV.title" = "Use None";
 
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "JPS-kd-8vb"; */
-"JPS-kd-8vb.title" = "Close";
+"JPS-kd-8vb.title" = "닫기";
 
 /* Class = "NSTextFieldCell"; title = "Languages"; ObjectID = "K7T-KM-ZRz"; */
 "K7T-KM-ZRz.title" = "Languages";
@@ -198,7 +198,7 @@
 "Kd2-mp-pUS.title" = "Show All";
 
 /* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
-"LE2-aR-0XJ.title" = "Bring All to Front";
+"LE2-aR-0XJ.title" = "모두 앞으로 가져오기";
 
 /* Class = "NSMenuItem"; title = "Paste Ruler"; ObjectID = "LVM-kO-fVI"; */
 "LVM-kO-fVI.title" = "Paste Ruler";
@@ -207,7 +207,7 @@
 "Lbh-J2-qVU.title" = "\tLeft to Right";
 
 /* Class = "NSMenuItem"; title = "OpenCore Forum"; ObjectID = "LnW-Pe-lWu"; */
-"LnW-Pe-lWu.title" = "OpenCore Forum";
+"LnW-Pe-lWu.title" = "OpenCore 포럼";
 
 /* Class = "NSMenuItem"; title = "Copy Ruler"; ObjectID = "MkV-Pr-PK5"; */
 "MkV-Pr-PK5.title" = "Copy Ruler";
@@ -222,13 +222,13 @@
 "NMo-om-nkz.title" = "Services";
 
 /* Class = "NSMenuItem"; title = "Save As…"; ObjectID = "NZD-7J-lLZ"; */
-"NZD-7J-lLZ.title" = "Save As…";
+"NZD-7J-lLZ.title" = "다른 이름으로 저장…";
 
 /* Class = "NSMenuItem"; title = "\tDefault"; ObjectID = "Nop-cj-93Q"; */
 "Nop-cj-93Q.title" = "\tDefault";
 
 /* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
-"OY7-WF-poV.title" = "Minimize";
+"OY7-WF-poV.title" = "최소화";
 
 /* Class = "NSMenuItem"; title = "Baseline"; ObjectID = "OaQ-X3-Vso"; */
 "OaQ-X3-Vso.title" = "Baseline";
@@ -252,7 +252,7 @@
 "QT1-6J-6cg.title" = "SampleFull.plist";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
-"R4o-n2-Eq4.title" = "Zoom";
+"R4o-n2-Eq4.title" = "확대";
 
 /* Class = "NSTextFieldCell"; title = "Fork"; ObjectID = "R79-If-kEu"; */
 "R79-If-kEu.title" = "Fork";
@@ -273,7 +273,7 @@
 "S0p-oC-mLd.title" = "Jump to Selection";
 
 /* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
-"Td7-aD-5lo.title" = "Window";
+"Td7-aD-5lo.title" = "윈도우";
 
 /* Class = "NSMenuItem"; title = "Capitalize"; ObjectID = "UEZ-Bs-lqG"; */
 "UEZ-Bs-lqG.title" = "Capitalize";
@@ -291,7 +291,7 @@
 "VrP-EM-cCj.title" = "Mount EFI";
 
 /* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
-"W48-6f-4Dl.title" = "Edit";
+"W48-6f-4Dl.title" = "편집";
 
 /* Class = "NSMenuItem"; title = "Underline"; ObjectID = "WRG-CD-K1S"; */
 "WRG-CD-K1S.title" = "Underline";
@@ -330,7 +330,7 @@
 "agt-UL-0e3.title" = "Use Default";
 
 /* Class = "NSMenuItem"; title = "Open…"; ObjectID = "b8C-wR-FEF"; */
-"b8C-wR-FEF.title" = "Open…";
+"b8C-wR-FEF.title" = "열기";
 
 /* Class = "NSMenuItem"; title = "Show Colors"; ObjectID = "bgn-CT-cEk"; */
 "bgn-CT-cEk.title" = "Show Colors";
@@ -360,7 +360,7 @@
 "dRJ-4n-Yzg.title" = "Undo";
 
 /* Class = "NSMenuItem"; title = "New"; ObjectID = "drq-uo-Unf"; */
-"drq-uo-Unf.title" = "New";
+"drq-uo-Unf.title" = "새 파일";
 
 /* Class = "NSTextFieldCell"; title = "Tips Window"; ObjectID = "fd6-Kc-KJr"; */
 "fd6-Kc-KJr.title" = "Tips Window";
@@ -390,7 +390,7 @@
 "i1d-Er-qST.title" = "Smaller";
 
 /* Class = "NSMenu"; title = "Tools"; ObjectID = "iNj-EH-98P"; */
-"iNj-EH-98P.title" = "Tools";
+"iNj-EH-98P.title" = "도구모음";
 
 /* Class = "NSMenu"; title = "Baseline"; ObjectID = "ijk-EB-dga"; */
 "ijk-EB-dga.title" = "Baseline";
@@ -408,7 +408,7 @@
 "jFq-tB-4Kx.title" = "\tRight to Left";
 
 /* Class = "NSMenuItem"; title = "Check for Updates…"; ObjectID = "jIP-f7-0x8"; */
-"jIP-f7-0x8.title" = "Check for Updates…";
+"jIP-f7-0x8.title" = "업데이트 확인..";
 
 /* Class = "NSMenu"; title = "Documentations"; ObjectID = "jYQ-AF-wIJ"; */
 "jYQ-AF-wIJ.title" = "Documentations";
@@ -423,7 +423,7 @@
 "jxp-Hf-MpR.title" = "OpenCore Downloader";
 
 /* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "lZi-F2-Buy"; */
-"lZi-F2-Buy.title" = "Open Recent";
+"lZi-F2-Buy.title" = "최근 파일열기";
 
 /* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
 "mK6-2p-4JG.title" = "Check Grammar With Spelling";
@@ -441,7 +441,7 @@
 "o6e-r0-MWq.title" = "Ligatures";
 
 /* Class = "NSMenuItem"; title = "Resources"; ObjectID = "obn-2D-QqW"; */
-"obn-2D-QqW.title" = "Resources";
+"obn-2D-QqW.title" = "도움자료";
 
 /* Class = "NSMenuItem"; title = "Loosen"; ObjectID = "ogc-rX-tC1"; */
 "ogc-rX-tC1.title" = "Loosen";
@@ -465,7 +465,7 @@
 "q0U-gA-ewe.title" = "Configuration";
 
 /* Class = "NSButtonCell"; title = "Autosave File"; ObjectID = "qzY-w2-2R4"; */
-"qzY-w2-2R4.title" = "Autosave File";
+"qzY-w2-2R4.title" = "자동 저장 파일";
 
 /* Class = "NSTextFieldCell"; title = "Configuration Properties"; ObjectID = "rOA-u4-5Yj"; */
 "rOA-u4-5Yj.title" = "Configuration Properties";
@@ -483,7 +483,7 @@
 "sC4-7i-sgZ.title" = "Automatically Check For Updates";
 
 /* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
-"snW-S8-Cw5.title" = "Show Toolbar";
+"snW-S8-Cw5.title" = "툴바 보기";
 
 /* Class = "NSMenu"; title = "Resources"; ObjectID = "szL-gC-fh3"; */
 "szL-gC-fh3.title" = "Resources";
@@ -498,7 +498,7 @@
 "tlD-Oa-oAM.title" = "Kern";
 
 /* Class = "NSMenuItem"; title = "Documentations"; ObjectID = "toU-XT-mIr"; */
-"toU-XT-mIr.title" = "Documentations";
+"toU-XT-mIr.title" = "문서";
 
 /* Class = "NSButtonCell"; title = "Keep in front"; ObjectID = "uKn-Sr-CBs"; */
 "uKn-Sr-CBs.title" = "Keep in front";
@@ -510,7 +510,7 @@
 "uRl-iY-unG.title" = "Cut";
 
 /* Class = "NSMenuItem"; title = "Show Tips"; ObjectID = "uVv-sy-xB2"; */
-"uVv-sy-xB2.title" = "Show Tips";
+"uVv-sy-xB2.title" = "팁 보기";
 
 /* Class = "NSMenuItem"; title = "Paste Style"; ObjectID = "vKC-jM-MkH"; */
 "vKC-jM-MkH.title" = "Paste Style";
@@ -534,13 +534,13 @@
 "wpr-3q-Mcd.title" = "Help";
 
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
-"x3v-GG-iWU.title" = "Copy";
+"x3v-GG-iWU.title" = "복사";
 
 /* Class = "NSButtonCell"; title = "Load at startup as a normal plist editor"; ObjectID = "x59-kK-iWF"; */
-"x59-kK-iWF.title" = "Load at startup as a normal plist editor";
+"x59-kK-iWF.title" = "실행시 plist editor 모드로 시작하기";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "xPa-T4-3mJ"; */
-"xPa-T4-3mJ.title" = "Save";
+"xPa-T4-3mJ.title" = "저장하기";
 
 /* Class = "NSMenuItem"; title = "Use All"; ObjectID = "xQD-1f-W4t"; */
 "xQD-1f-W4t.title" = "Use All";
