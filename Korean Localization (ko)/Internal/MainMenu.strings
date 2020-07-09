@@ -189,7 +189,7 @@
 "JPS-kd-8vb.title" = "닫기";
 
 /* Class = "NSTextFieldCell"; title = "Languages"; ObjectID = "K7T-KM-ZRz"; */
-"K7T-KM-ZRz.title" = "Languages";
+"K7T-KM-ZRz.title" = "언어선택";
 
 /* Class = "NSMenu"; title = "Templates"; ObjectID = "KGo-Ce-Wkm"; */
 "KGo-Ce-Wkm.title" = "Templates";
@@ -213,7 +213,7 @@
 "MkV-Pr-PK5.title" = "Copy Ruler";
 
 /* Class = "NSButtonCell"; title = "Reset Preferences"; ObjectID = "Mw8-wH-EAB"; */
-"Mw8-wH-EAB.title" = "Reset Preferences";
+"Mw8-wH-EAB.title" = "환경 설정 초기화";
 
 /* Class = "NSMenuItem"; title = "Advanced User"; ObjectID = "NGL-Uc-o6p"; */
 "NGL-Uc-o6p.title" = "Advanced User";
@@ -261,7 +261,7 @@
 "RB4-Sm-HuC.title" = "\tRight to Left";
 
 /* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "RT7-FS-H5T"; */
-"RT7-FS-H5T.title" = "*To apply this change, you must restart the app";
+"RT7-FS-H5T.title" = "*앱이 재시작 됩니다.";
 
 /* Class = "NSMenuItem"; title = "Superscript"; ObjectID = "Rqc-34-cIF"; */
 "Rqc-34-cIF.title" = "Superscript";
@@ -429,7 +429,7 @@
 "mK6-2p-4JG.title" = "Check Grammar With Spelling";
 
 /* Class = "NSButtonCell"; title = "Backup File Before Saving"; ObjectID = "mUr-sU-3WZ"; */
-"mUr-sU-3WZ.title" = "Backup File Before Saving";
+"mUr-sU-3WZ.title" = "저장하기 전 백업 파일 생성";
 
 /* Class = "NSMenuItem"; ibShadowedToolTip = "Converts Clover configuration to OpenCore configuration"; ObjectID = "mp0-5L-sme"; */
 "mp0-5L-sme.ibShadowedToolTip" = "Converts Clover configuration to OpenCore configuration";
@@ -468,7 +468,7 @@
 "qzY-w2-2R4.title" = "자동 저장 파일";
 
 /* Class = "NSTextFieldCell"; title = "Configuration Properties"; ObjectID = "rOA-u4-5Yj"; */
-"rOA-u4-5Yj.title" = "Configuration Properties";
+"rOA-u4-5Yj.title" = "Configuration 속성";
 
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
 "rbD-Rh-wIN.title" = "Check Spelling While Typing";
@@ -480,7 +480,7 @@
 "sB6-Iv-xg4.title" = "Open Recent";
 
 /* Class = "NSButtonCell"; title = "Automatically Check For Updates"; ObjectID = "sC4-7i-sgZ"; */
-"sC4-7i-sgZ.title" = "Automatically Check For Updates";
+"sC4-7i-sgZ.title" = "업데이트 자동 확인";
 
 /* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
 "snW-S8-Cw5.title" = "툴바 보기";
@@ -501,7 +501,7 @@
 "toU-XT-mIr.title" = "문서";
 
 /* Class = "NSButtonCell"; title = "Keep in front"; ObjectID = "uKn-Sr-CBs"; */
-"uKn-Sr-CBs.title" = "Keep in front";
+"uKn-Sr-CBs.title" = "최 상위에 두기";
 
 /* Class = "NSMenu"; title = "OpenCore Configurator"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "OpenCore Configurator";
