@@ -11,7 +11,7 @@
 "B/s" = "B/s";
 
 /* startScreen */
-"Backup Configurations" = "Backup Configurations";
+"Backup Configurations" = "백업 Configurations";
 
 /* sectionSourceListHexConverterPopover */
 "base64 string" = "base64 string";
@@ -20,7 +20,7 @@
 "Booter" = "Booter";
 
 /* opencoreDownloaderController outlinemodeController */
-"Cancel" = "Cancel";
+"Cancel" = "취소";
 
 /* mountefiController */
 "Capacity In Use:" = "사용됨:";
@@ -571,7 +571,7 @@
 "Status: [%@]" = "Status: [%@]";
 
 /* quicktoolsController */
-"OpenCore Boot Partition" = "OpenCore Boot Partition";
+"OpenCore Boot Partition" = "OpenCore 부트 Partition";
 
 /* preferencesPanel */
 "Official" = "Official";
@@ -580,10 +580,10 @@
 "NDK" = "NDK";
 
 /* preferencesPanel */
-"App Settings" = "App Settings";
+"App Settings" = "환경 설정";
 
 /* preferencesPanel */
-"OpenCore Settings" = "OpenCore Settings";
+"OpenCore Settings" = "오픈코어 셋팅";
 
 /* titleBar */
 "Release Configuration" = "%1$@ configuration";
@@ -592,7 +592,7 @@
 "Development Configuration" = "%1$@ 디벨로퍼 Configuration";
 
 /* titleBar */
-"for Official OpenCore" = "for 공식 OpenCore";
+"for Official OpenCore" = "for OpenCore";
 
 /* titleBar */
 "for NDK OpenCore" = "for NDK OpenCore";
