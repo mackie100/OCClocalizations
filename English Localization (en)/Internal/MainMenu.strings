@@ -455,8 +455,8 @@
 /* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
 "pa3-QI-u2k.title" = "Delete";
 
-/* Class = "NSMenuItem"; title = "SampleFull.plist"; ObjectID = "paC-6u-bhk"; */
-"paC-6u-bhk.title" = "SampleFull.plist";
+/* Class = "NSMenuItem"; title = "SampleCustom.plist"; ObjectID = "paC-6u-bhk"; */
+"paC-6u-bhk.title" = "SampleCustom.plist";
 
 /* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "q09-fT-Sye"; */
 "q09-fT-Sye.title" = "Find Next";
