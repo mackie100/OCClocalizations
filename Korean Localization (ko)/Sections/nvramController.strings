@@ -21,7 +21,7 @@
 "C9A-DN-Ig8.title" = "NUMBER";
 
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "Eac-Nq-33R"; */
-"Eac-Nq-33R.headerCell.title" = "Value";
+"Eac-Nq-33R.headerCell.title" = "값";
 
 /* Class = "NSButtonCell"; title = "LegacyOverwrite"; ObjectID = "Hrg-If-vgt"; */
 "Hrg-If-vgt.title" = "LegacyOverwrite";
@@ -45,13 +45,13 @@
 "eSY-j6-jWD.label" = "추가하기";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "ia9-0E-fQ8"; */
-"ia9-0E-fQ8.headerCell.title" = "Key";
+"ia9-0E-fQ8.headerCell.title" = "키";
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "imy-5n-EEC"; */
-"imy-5n-EEC.headerCell.title" = "Type";
+"imy-5n-EEC.headerCell.title" = "타입";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "j1D-Eg-beZ"; */
-"j1D-Eg-beZ.headerCell.title" = "Key*";
+"j1D-Eg-beZ.headerCell.title" = "키*";
 
 /* Class = "NSButtonCell"; title = "WriteFlash"; ObjectID = "oGQ-n7-FKX"; */
 "oGQ-n7-FKX.title" = "WriteFlash";

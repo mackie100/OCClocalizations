@@ -21,13 +21,13 @@
 "9ZU-zR-Tmy.ibShadowedToolTip" = "1. Comment\nType: plist string\nDefault value: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n\n2. Enabled\nType: plist boolean\nDefault value: false\nDescription: This ACPI table will not be added unless set to true.\n\n3. Path\nType: plist string\nDefault value: Empty string\nDescription: File paths meant to be loaded as ACPI tables. Example values include DSDT.aml, SubDir/SSDT-8.aml, SSDT-USBX.aml, etc.\n\nACPI table load order follows the item order in the array. All ACPI tables load from OC/ACPI/Custom directory. Note: All tables but tables with DSDT table identifier (determined by parsing data not by filename) insert new tables into ACPI stack. DSDT, unlike the rest, performs replacement of DSDT table.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "A4Q-If-0AG"; */
-"A4Q-If-0AG.headerCell.title" = "무시";
+"A4Q-If-0AG.headerCell.title" = "ignore";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableLength"; ObjectID = "CVl-gt-v4L"; */
 "CVl-gt-v4L.headerCell.title" = "TableLength";
 
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "CbM-86-go4"; */
-"CbM-86-go4.headerCell.title" = "Path*";
+"CbM-86-go4.headerCell.title" = "파일위치*";
 
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "DxA-Lh-I4Q"; */
 "DxA-Lh-I4Q.title" = "Quirks";
@@ -42,10 +42,10 @@
 "JFF-S2-t99.headerCell.title" = "ReplaceMask";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "JjS-7V-0PV"; */
-"JjS-7V-0PV.headerCell.title" = "Comment";
+"JjS-7V-0PV.headerCell.title" = "코멘트";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "K4n-vm-jxn"; */
-"K4n-vm-jxn.headerCell.title" = "Find";
+"K4n-vm-jxn.headerCell.title" = "찾기";
 
 /* Class = "NSMenuItem"; title = "List Of Patches"; ObjectID = "Kbb-Cq-tfz"; */
 "Kbb-Cq-tfz.title" = "패치 리스트";
@@ -66,7 +66,7 @@
 "OG6-fc-Q9m.title" = "RebaseRegions";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "SPY-Vf-Izp"; */
-"SPY-Vf-Izp.title" = "Multiple selection allowed";
+"SPY-Vf-Izp.title" = "다중 선택 가능";
 
 /* Class = "NSButtonCell"; title = "ResetHwSig"; ObjectID = "Z6k-wb-4yC"; */
 "Z6k-wb-4yC.title" = "ResetHwSig";
@@ -75,7 +75,7 @@
 "c8a-dM-DNw.headerCell.title" = "활성화";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "cAx-1U-xJ9"; */
-"cAx-1U-xJ9.headerCell.title" = "Comment";
+"cAx-1U-xJ9.headerCell.title" = "코멘트";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Cleanup ACPI header fields to workaround macOS ACPI implementation bug causing boot crashes. Reference: Debugging AppleACPIPlatform on 10.13 by Alex James aka theracermaster. The issue is fixed in macOS Mojave (10.14)."; ObjectID = "eza-Xg-dPF"; */
 "eza-Xg-dPF.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Cleanup ACPI header fields to workaround macOS ACPI implementation bug causing boot crashes. Reference: Debugging AppleACPIPlatform on 10.13 by Alex James aka theracermaster. The issue is fixed in macOS Mojave (10.14).";
@@ -84,7 +84,7 @@
 "fCv-Py-taQ.title" = "ResetLogoStatus";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "gIS-d5-pG5"; */
-"gIS-d5-pG5.headerCell.title" = "Comment";
+"gIS-d5-pG5.headerCell.title" = "코멘트";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "ger-9o-NnS"; */
 "ger-9o-NnS.headerCell.title" = "Limit";
