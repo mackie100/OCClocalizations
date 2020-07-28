@@ -3,7 +3,7 @@
 "1eh-jH-TX2.ibShadowedToolTip" = "Removes device properties from a map (plist dict) of deivce paths to an array (plist array) of variable names in plist string format.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "6on-lJ-yiP"; */
-"6on-lJ-yiP.headerCell.title" = "Value";
+"6on-lJ-yiP.headerCell.title" = "값";
 
 /* Class = "NSWindow"; title = "Presets"; ObjectID = "7dM-hm-O9O"; */
 "7dM-hm-O9O.title" = "Presets";
@@ -12,7 +12,7 @@
 "9kg-WA-Eir.headerCell.title" = "Devices";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "F6A-yy-QfQ"; */
-"F6A-yy-QfQ.headerCell.title" = "Key*";
+"F6A-yy-QfQ.headerCell.title" = "키*";
 
 /* Class = "NSMenuItem"; title = "List of PCI Devices"; ObjectID = "JHu-SN-nN7"; */
 "JHu-SN-nN7.title" = "PCI Devices 리스트";
@@ -27,7 +27,7 @@
 "MD8-eq-jtV.label" = "CPU Codenames";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "NLq-sd-yYz"; */
-"NLq-sd-yYz.label" = "Add";
+"NLq-sd-yYz.label" = "추가하기";
 
 /* Class = "NSMenuItem"; title = "DATA"; ObjectID = "POL-aB-DNF"; */
 "POL-aB-DNF.title" = "DATA";
@@ -39,7 +39,7 @@
 "V5x-oc-YnL.title" = "PCI Devices 리스트";
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "dpG-4m-Tya"; */
-"dpG-4m-Tya.headerCell.title" = "Type";
+"dpG-4m-Tya.headerCell.title" = "타입";
 
 /* Class = "NSTabViewItem"; label = "Device IDs"; ObjectID = "ej0-LP-73g"; */
 "ej0-LP-73g.label" = "Device IDs";
@@ -57,7 +57,7 @@
 "n3V-ht-3yU.label" = "지우기";
 
 /* Class = "NSTabViewItem"; label = "Platform IDs"; ObjectID = "n7N-Fd-plx"; */
-"n7N-Fd-plx.label" = "Platform IDs";
+"n7N-Fd-plx.label" = "플랫폼 IDs";
 
 /* Class = "NSView"; ibShadowedToolTip = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of deivce paths to a map (plist dict) of variable names and their values in plist metadata format. Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)). Properties will only be set if not present and not deleted.\nNote: Currently properties may only be (formerly) added by the original driver, so unless a separate driver was installed, there is no reason to delete the variables."; ObjectID = "ogK-XX-Zb9"; */
 "ogK-XX-Zb9.ibShadowedToolTip" = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of deivce paths to a map (plist dict) of variable names and their values in plist metadata format. Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)). Properties will only be set if not present and not deleted.\nNote: Currently properties may only be (formerly) added by the original driver, so unless a separate driver was installed, there is no reason to delete the variables.";
