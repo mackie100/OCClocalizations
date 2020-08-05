@@ -248,8 +248,8 @@
 /* Class = "NSMenuItem"; title = "Show Fonts"; ObjectID = "Q5e-8K-NDq"; */
 "Q5e-8K-NDq.title" = "Show Fonts";
 
-/* Class = "NSMenuItem"; title = "SampleFull.plist"; ObjectID = "QT1-6J-6cg"; */
-"QT1-6J-6cg.title" = "SampleFull.plist";
+/* Class = "NSMenuItem"; title = "SampleCustom.plist"; ObjectID = "QT1-6J-6cg"; */
+"QT1-6J-6cg.title" = "SampleCustom.plist";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Zoom";

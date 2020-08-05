@@ -80,9 +80,6 @@
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
 "E7L-MW-EuK.ibShadowedToolTip" = "用于添加自定义efi文件的引导绝对路径，比如添加Windows的bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用，除非你有这种情况，不然我们不需要填写任何东西。\n比如启动WINDOWS路径:\\EFI\\Microsoft\\Boot\\bootmgfw.efi\n这允许引导选择器自动发现异常的引导路径,也可用于其他操作系统的引导路劲";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi)."; ObjectID = "EQZ-0e-EuC"; */
-"EQZ-0e-EuC.ibShadowedToolTip" = "禁止尝试更新Apple外设固件的引导选项，因为我们不是白苹果！";
-
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_ESP"; ObjectID = "Edm-Vw-KuX"; */
 "Edm-Vw-KuX.title" = "允许扫描EFI系统分区文件系统。";
 
@@ -109,6 +106,9 @@
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
 "KRE-fs-cVq.title" = "取消全选";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Signed\nDescription: Attempt to provide bootloader persistence.\n\nValid values:\n• Disabled — loading DMG images will fail.\n• Signed — only Apple-signed DMG images will load.\n• Any — any DMG images will mount as normal filesystems."; ObjectID = "KUQ-Na-LT4"; */
+"KUQ-Na-LT4.ibShadowedToolTip" = "Type: plist string\nFailsafe: Signed\nDescription: Attempt to provide bootloader persistence.\n\nValid values:\n• Disabled — loading DMG images will fail.\n• Signed — only Apple-signed DMG images will load.\n• Any — any DMG images will mount as normal filesystems.";
 
 /* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
 "L3h-6q-xRi.title" = "提供引导条目的自定义渲染标题";
@@ -148,9 +148,6 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0x80000000 (DEBUG_ERROR)\nDescription: EDK II debug level bitmask (sum) causing CPU to halt (stop execution) after obtaining a message of HaltLevel. Possible values match DisplayLevel values."; ObjectID = "QbL-ID-H0a"; */
 "QbL-ID-H0a.ibShadowedToolTip" = "参考OC手册！";
-
-/* Class = "NSButtonCell"; title = "BlacklistAppleUpdate"; ObjectID = "RvC-iy-QL7"; */
-"RvC-iy-QL7.title" = "BlacklistAppleUpdate";
 
 /* Class = "NSButtonCell"; title = "Expose OEM information as a set of UEFI variables."; ObjectID = "SLo-CJ-cas"; */
 "SLo-CJ-cas.title" = "将OEM信息公开为一组UEFI变量.";
@@ -242,13 +239,16 @@
 /* Class = "NSTextFieldCell"; title = "Vault"; ObjectID = "fN9-q5-dg3"; */
 "fN9-q5-dg3.title" = "Vault";
 
+/* Class = "NSTextFieldCell"; title = "DmgLoading"; ObjectID = "fVY-aJ-OPc"; */
+"fVY-aJ-OPc.title" = "DmgLoading";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable boot.efi debug log saving to OpenCore log.\n\nNote: This option only applies to 10.15.4 and newer."; ObjectID = "fcn-ha-taM"; */
 "fcn-ha-taM.ibShadowedToolTip" = "启用boot.efi调试日志保存到OpenCore日志。\n\n注意：此选项仅适用于10.15.4及更高版本。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Perform serial port initialisation.\nThis option will perform serial port initialisation within OpenCore prior to enabling (any) debug logging. Serial port configuration is defined via PCDs at compile time in gEfiMdeModulePkgTokenSpaceGuid GUID. Default values as found in MdeModulePkg.dec are as follows:\n• PcdSerialBaudRate — Baud rate: 115200.\n• PcdSerialLineControl — Line control: no parity, 8 data bits, 1 stop bit.\n\nSee more details in Debugging section."; ObjectID = "fmg-zD-rrJ"; */
 "fmg-zD-rrJ.ibShadowedToolTip" = "执行串行端口初始化。\n此选项将在启用调试日志记录之前在OpenCore中执行串行端口初始化。默认值如下:\n• PcdSerialBaudRate — Baud rate: 115200.\n• PcdSerialLineControl — Line control: no parity, 8 data bits, 1 stop bit.\n\n在“调试”部分中查看更多详细信息.";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nBuiltin picker supports colour arguments as a sum of foreground and background colors according to UEFI specification. The value of black background and black foreground (0) is reserved. List of colour names:\n• 0x00 — EFI_BLACK\n• 0x01 — EFI_BLUE\n• 0x02 — EFI_GREEN\n• 0x03 — EFI_CYAN\n• 0x04 — EFI_RED\n• 0x05 — EFI_MAGENTA\n• 0x06 — EFI_BROWN\n• 0x07 — EFI_LIGHTGRAY\n• 0x08 — EFI_DARKGRAY\n• 0x09 — EFI_LIGHTBLUE\n• 0x0A — EFI_LIGHTGREEN\n• 0x0B — EFI_LIGHTCYAN\n• 0x0C — EFI_LIGHTRED\n• 0x0D — EFI_LIGHTMAGENTA \n• 0x0E — EFI_YELLOW\n• 0x0F — EFI_WHITE\n• 0x00 — EFI_BACKGROUND_BLACK\n• 0x10 — EFI_BACKGROUND_BLUE\n• 0x20 — EFI_BACKGROUND_GREEN\n• 0x30 — EFI_BACKGROUND_CYAN\n• 0x40 — EFI_BACKGROUND_RED\n• 0x50 — EFI_BACKGROUND_MAGENTA\n• 0x60 — EFI_BACKGROUND_BROWN\n• 0x70 — EFI_BACKGROUND_LIGHTGRAY\nNote: This option may not work well with System text renderer. Setting a background different from black could help testing proper GOP functioning."; ObjectID = "gD0-Iz-n35"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nBuiltin picker supports colour arguments as a sum of foreground and background colours according to UEFI specification. The value of black background and black foreground (0) is reserved. List of colour names:\n• 0x00 — EFI_BLACK\n• 0x01 — EFI_BLUE\n• 0x02 — EFI_GREEN\n• 0x03 — EFI_CYAN\n• 0x04 — EFI_RED\n• 0x05 — EFI_MAGENTA\n• 0x06 — EFI_BROWN\n• 0x07 — EFI_LIGHTGRAY\n• 0x08 — EFI_DARKGRAY\n• 0x09 — EFI_LIGHTBLUE\n• 0x0A — EFI_LIGHTGREEN\n• 0x0B — EFI_LIGHTCYAN\n• 0x0C — EFI_LIGHTRED\n• 0x0D — EFI_LIGHTMAGENTA \n• 0x0E — EFI_YELLOW\n• 0x0F — EFI_WHITE\n• 0x00 — EFI_BACKGROUND_BLACK\n• 0x10 — EFI_BACKGROUND_BLUE\n• 0x20 — EFI_BACKGROUND_GREEN\n• 0x30 — EFI_BACKGROUND_CYAN\n• 0x40 — EFI_BACKGROUND_RED\n• 0x50 — EFI_BACKGROUND_MAGENTA\n• 0x60 — EFI_BACKGROUND_BROWN\n• 0x70 — EFI_BACKGROUND_LIGHTGRAY\nNote: This option may not work well with System text renderer. Setting a background different from black could help testing proper GOP functioning."; ObjectID = "gD0-Iz-n35"; */
 "gD0-Iz-n35.ibShadowedToolTip" = "设置启动菜单的颜色属性。\n支持根据UEFI规范将颜色参数的前景色和背景色之和计算并转为十进制填入。\n颜色名称列表：\n•0x00-EFI_BLACK\n•0x01-EFI_BLUE\n•0x02-EFI_GREEN\n•0x03-EFI_CYAN\n•0x04-EFI_RED\n•0x05-EFI_MAGENTA\n•0x06-EFI_BROWN\n•0x07-EFI_LIGHTGRAY\n•0x08-EFI_DARKGRAY\n•0x09-EFI_LIGHTBLUE\n•0x0A-EFI_LIGHTGREEN\n•0x0B-EFI_LIGHTCYAN\n•0x0C-EFI_LIGHTRED\n•0x0D-EFI_LIGHTMAGENTA\n•0x0E-EFI_BACKGROUND_LIGHTGRAY\n•0x0F-EFI_WHITE\n•0x00-EFI_BACKGROUND_BLACK\n•0x10-EFI_BACKGROUND_BLUE\n•0x20-EFI_BACKGROUND_GREEN\n•0x30-EFI_BACKGROUND_CYAN\n•0x40-EFI_BACK_ROG_RO_ROUND_RED\n•0x50-EFI_BACKGROUND_MAGENTA\n•0x60-EFI_BACKGROUND_BROWN\n•0x70-EFI_BACKGROUND_LIGHTGRAY\n注意：此选项可能不适用于系统文本渲染器。设置与黑色不同的背景可以帮助测试正确的GOP功能。";
 
 /* Class = "NSTextFieldCell"; title = "Target"; ObjectID = "hAm-Ha-Meb"; */
@@ -257,7 +257,7 @@
 /* Class = "NSButtonCell"; title = "SerialInit"; ObjectID = "hRO-hk-wy8"; */
 "hRO-hk-wy8.title" = "SerialInit";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\t– <TOOL_NAME>.icns  file for Tools.￼ ￼ ￼\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries:  \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems. \t– <TOOL_NAME.lbl  (<TOOL_NAME.l2x) file near tool for Tools. Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead. • 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour."; ObjectID = "hdQ-rL-KAo"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\nFor Tools OpenCore will try to load a custom icon and fallback to the default icon:\n– ResetNVRAM — Resources\\Image\\ResetNVRAM.icns — ResetNVRAM.icns from icons directory.\n– Tools\\<TOOL_RELATIVE_PATH>.icns — icon near the tool file with appended .icns extension.\nFor custom boot Entries OpenCore will try to load a custom icon and fallback to the volume icon or the \ndefault icon:\n– <ENTRY_PATH>.icns — icon near the entry file with appended .icns extension.\nFor all other entries OpenCore will try to load a volume icon and fallback to the default icon:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries:  \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems. \t– <TOOL_NAME>.lbl  (<TOOL_NAME>.l2x) file near tool for Tools. Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead. • 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour."; ObjectID = "hdQ-rL-KAo"; */
 "hdQ-rL-KAo.ibShadowedToolTip" = "设置启动菜单(GUI界面)的属性。\n可以配置自定义的GUI界面风格，设置值包括:\n• 0x0001 —提供引导项的自定义图标:\n\t– APFS分区的预引导根目录下的.VolumeIcon.icns文件。 \n\t– 其他文件系统的卷根目录下的.VolumeIcon.icns文件。\n\t– <TOOL_NAME>.icns的工具图标文件.￼ ￼ ￼\n可以在Finder中设置卷图标。 \n• 0x0002 — 提供引导条目的自定义渲染标题:  \t– 引导器相关的.disk_label（.disk_label_2x）文件，用于所有文件系统。 \t– 工具相关的<TOOL_NAME.lbl和<TOOL_NAME.l2x文件. 可以通过disklabel实用程序或bless命令生成预渲染的标签.禁用或缺少文本标签时 (.contentDetails 或 .disk_label.contentDetails) 将被使用.\n • 0x0004 — 提供引导条目的预定义标签图像，而无需自定义条目. 可能会缺少实际启动项的详细信息. \n• 0x0008 — 如果支持，将使用过的图标集更改为备用图标. 这样可以使用带有自定义背景色的老式图标。";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
@@ -293,7 +293,7 @@
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "pIV-PK-mVi"; */
 "pIV-PK-mVi.title" = "全选";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker."; ObjectID = "pTC-aG-QK1"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote 1: It is known that some Lenovo laptops have a firmware bug, which makes them unbootable after performing NVRAM reset.\n\nNote2: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux)."; ObjectID = "pTC-aG-QK1"; */
 "pTC-aG-QK1.ibShadowedToolTip" = "允许CMD + OPT + P + R或在启动菜单中显示ResetNVRAM重置菜单。";
 
 /* Class = "NSTextFieldCell"; title = "Halt Level"; ObjectID = "pqr-DX-ZAM"; */
@@ -362,7 +362,7 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_HFS"; ObjectID = "zCH-tB-ca6"; */
 "zCH-tB-ca6.title" = "允许扫描HFS文件系统";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Hides auxiliary entries from picker menu by default. \nAn entry is considered auxiliary when at least one of the following applies:\n• Entry is macOS recovery.\n• Entry is macOS Time Machine.\n• Entry is explicitly marked as Auxiliary.\n• Entry is system (e.g. Clean NVRAM).\n\nTo see all entries picker menu needs to be reloaded in extended mode by pressing Spacebar key. Hiding auxiliary \nentries may increase boot performance for multidisk systems."; ObjectID = "zgV-bT-EgH"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Hides auxiliary entries from picker menu by default. \nAn entry is considered auxiliary when at least one of the following applies:\n• Entry is macOS recovery.\n• Entry is macOS Time Machine.\n• Entry is explicitly marked as Auxiliary.\n• Entry is system (e.g. Reset NVRAM).\n\nTo see all entries picker menu needs to be reloaded in extended mode by pressing Spacebar key. Hiding auxiliary \nentries may increase boot performance for multidisk systems."; ObjectID = "zgV-bT-EgH"; */
 "zgV-bT-EgH.ibShadowedToolTip" = "隐藏选择器菜单中的辅助条目,如果启用隐藏默认条目，选为YES。\n至少满足以下条件之一时，该条目被认为是辅助条目:\n•条目是macOS Recovery。\n•条目被明确标记为辅助。\n•条目是一个efi程序(例如Clean NVRAM)\n\n通过按空格键，重新加载所有条目选择器菜单。";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SASEX"; ObjectID = "zj4-Hs-Xjk"; */

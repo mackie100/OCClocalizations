@@ -80,9 +80,6 @@
 /* Class = "NSTableView"; ibShadowedToolTip = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority."; ObjectID = "E7L-MW-EuK"; */
 "E7L-MW-EuK.ibShadowedToolTip" = "Type: plist array\nDescription: Add custom scanning paths through bless model.\nDesigned to be filled with plist string entries containing absolute UEFI paths to customised bootloaders, for example, \\EFI\\Microsoft\\bootmgfw.efi for Microsoft bootloader. This allows unusual boot paths to be automaticlly discovered by the boot picker. Designwise they are equivalent to predefined blessed path, such as \\System\\Library\\CoreServices\\boot.efi, but unlike predefined bless paths they have highest priority.";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi)."; ObjectID = "EQZ-0e-EuC"; */
-"EQZ-0e-EuC.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).";
-
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_ESP"; ObjectID = "Edm-Vw-KuX"; */
 "Edm-Vw-KuX.title" = "OC_SCAN_ALLOW_FS_ESP";
 
@@ -109,6 +106,9 @@
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
 "KRE-fs-cVq.title" = "모두 선택취소";
+
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Signed\nDescription: Attempt to provide bootloader persistence.\n\nValid values:\n• Disabled — loading DMG images will fail.\n• Signed — only Apple-signed DMG images will load.\n• Any — any DMG images will mount as normal filesystems."; ObjectID = "KUQ-Na-LT4"; */
+"KUQ-Na-LT4.ibShadowedToolTip" = "Type: plist string\nFailsafe: Signed\nDescription: Attempt to provide bootloader persistence.\n\nValid values:\n• Disabled — loading DMG images will fail.\n• Signed — only Apple-signed DMG images will load.\n• Any — any DMG images will mount as normal filesystems.";
 
 /* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
 "L3h-6q-xRi.title" = "Provides custom rendered titles for boot entries";
@@ -148,9 +148,6 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0x80000000 (DEBUG_ERROR)\nDescription: EDK II debug level bitmask (sum) causing CPU to halt (stop execution) after obtaining a message of HaltLevel. Possible values match DisplayLevel values."; ObjectID = "QbL-ID-H0a"; */
 "QbL-ID-H0a.ibShadowedToolTip" = "Type: plist integer, 64 bit\nDefault value: 0x80000000 (DEBUG_ERROR)\nDescription: EDK II debug level bitmask (sum) causing CPU to halt (stop execution) after obtaining a message of HaltLevel. Possible values match DisplayLevel values.";
-
-/* Class = "NSButtonCell"; title = "BlacklistAppleUpdate"; ObjectID = "RvC-iy-QL7"; */
-"RvC-iy-QL7.title" = "BlacklistAppleUpdate";
 
 /* Class = "NSButtonCell"; title = "Expose OEM information as a set of UEFI variables."; ObjectID = "SLo-CJ-cas"; */
 "SLo-CJ-cas.title" = "Expose OEM information as a set of UEFI variables.";
@@ -242,6 +239,9 @@
 /* Class = "NSTextFieldCell"; title = "Vault"; ObjectID = "fN9-q5-dg3"; */
 "fN9-q5-dg3.title" = "Vault";
 
+/* Class = "NSTextFieldCell"; title = "DmgLoading"; ObjectID = "fVY-aJ-OPc"; */
+"fVY-aJ-OPc.title" = "DmgLoading";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable boot.efi debug log saving to OpenCore log.\n\nNote: This option only applies to 10.15.4 and newer."; ObjectID = "fcn-ha-taM"; */
 "fcn-ha-taM.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable boot.efi debug log saving to OpenCore log.\n\nNote: This option only applies to 10.15.4 and newer.";
 
@@ -257,7 +257,7 @@
 /* Class = "NSButtonCell"; title = "SerialInit"; ObjectID = "hRO-hk-wy8"; */
 "hRO-hk-wy8.title" = "SerialInit";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\t– <TOOL_NAME>.icns  file for Tools.￼ ￼ ￼\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries: \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems.\t– <TOOL_NAME.lbl  (<TOOL_NAME.l2x) file near tool for Tools.Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead.• 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour."; ObjectID = "hdQ-rL-KAo"; */
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\nFor Tools OpenCore will try to load a custom icon and fallback to the default icon:\n– ResetNVRAM — Resources\\Image\\ResetNVRAM.icns — ResetNVRAM.icns from icons directory.\n– Tools\\<TOOL_RELATIVE_PATH>.icns — icon near the tool file with appended .icns extension.\nFor custom boot Entries OpenCore will try to load a custom icon and fallback to the volume icon or the \ndefault icon:\n– <ENTRY_PATH>.icns — icon near the entry file with appended .icns extension.\nFor all other entries OpenCore will try to load a volume icon and fallback to the default icon:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries:  \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems. \t– <TOOL_NAME>.lbl  (<TOOL_NAME>.l2x) file near tool for Tools. Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead. • 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour."; ObjectID = "hdQ-rL-KAo"; */
 "hdQ-rL-KAo.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Sets specific attributes for picker.\nDifferent pickers may be configured through\nthe attribute mask containing OpenCore-reserved (BIT0~BIT15) and OEM-specific (BIT16~BIT31) values.\nCurrent OpenCore values include:\n• 0x0001 — OC_ATTR_USE_VOLUME_ICON, provides custom icons for boot entries:\n\t– .VolumeIcon.icns  file at Preboot root for APFS. \n\t– .VolumeIcon.icns  file at volume root for other filesystems.\n\t– <TOOL_NAME>.icns  file for Tools.￼ ￼ ￼\nVolume icons can be set in Finder. \n• 0x0002 — OC_ATTR_USE_DISK_LABEL_FILE, provides custom rendered titles for boot entries: \t– .disk_label  (.disk_label_2x) file near bootloader for all filesystems.\t– <TOOL_NAME.lbl  (<TOOL_NAME.l2x) file near tool for Tools.Prerendered labels can be generated via disklabel utility or bless command. When disabled or missing text labels (.contentDetails or .disk_label.contentDetails) are to be rendered instead.• 0x0004 — OC_ATTR_USE_GENERIC_LABEL_IMAGE, provides predefined label images for boot entries without custom entries. May give less detail for the actual boot entry. \n• 0x0008 — OC_ATTR_USE_ALTERNATE_ICONS, changes used icon set to an alternate one if it is supported. For example, this could make a use of old-style icons with a custom background colour.";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
@@ -293,7 +293,7 @@
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "pIV-PK-mVi"; */
 "pIV-PK-mVi.title" = "모두 선택";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux)."; ObjectID = "pTC-aG-QK1"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote 1: It is known that some Lenovo laptops have a firmware bug, which makes them unbootable after performing NVRAM reset.\n\nNote2: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux)."; ObjectID = "pTC-aG-QK1"; */
 "pTC-aG-QK1.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in boot picker.\n\nNote: Resetting NVRAM will also erase all the boot options otherwise not backed up with bless (e.g. Linux).";
 
 /* Class = "NSTextFieldCell"; title = "Halt Level"; ObjectID = "pqr-DX-ZAM"; */
