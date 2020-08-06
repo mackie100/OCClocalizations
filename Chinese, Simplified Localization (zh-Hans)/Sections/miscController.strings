@@ -108,7 +108,7 @@
 "KRE-fs-cVq.title" = "取消全选";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Signed\nDescription: Attempt to provide bootloader persistence.\n\nValid values:\n• Disabled — loading DMG images will fail.\n• Signed — only Apple-signed DMG images will load.\n• Any — any DMG images will mount as normal filesystems."; ObjectID = "KUQ-Na-LT4"; */
-"KUQ-Na-LT4.ibShadowedToolTip" = "Type: plist string\nFailsafe: Signed\nDescription: Attempt to provide bootloader persistence.\n\nValid values:\n• Disabled — loading DMG images will fail.\n• Signed — only Apple-signed DMG images will load.\n• Any — any DMG images will mount as normal filesystems.";
+"KUQ-Na-LT4.ibShadowedToolTip" = "尝试提供引导加载程序的持久性。\n\n有效值s:\n• Disabled — 加载DMG映像将失败。\n• Signed — 仅Apple签署的DMG映像会加载。\n• Any — 任何DMG映像都将作为普通文件系统挂载。";
 
 /* Class = "NSButtonCell"; title = "Provides custom rendered titles for boot entries"; ObjectID = "L3h-6q-xRi"; */
 "L3h-6q-xRi.title" = "提供引导条目的自定义渲染标题";
