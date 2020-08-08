@@ -586,7 +586,7 @@
 "OpenCore Settings" = "오픈코어 셋팅";
 
 /* titleBar */
-"Release Configuration" = "%1$@ configuration";
+"Release Configuration" = "%1$@ Configuration";
 
 /* titleBar */
 "Development Configuration" = "%1$@ 디벨로퍼 Configuration";
@@ -683,3 +683,6 @@
 
 /* configCheckerController */
 "High-End Desktop" = "High-End 데스크탑";
+
+/* configCheckerController */
+"Laptop" = "Laptop";

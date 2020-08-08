@@ -684,3 +684,6 @@
 /* configCheckerController */
 "High-End Desktop" = "高端台式机";
 
+/* configCheckerController */
+"Laptop" = "Laptop";
+

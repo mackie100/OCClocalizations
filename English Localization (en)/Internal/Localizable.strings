@@ -683,3 +683,6 @@
 
 /* configCheckerController */
 "High-End Desktop" = "High-End Desktop";
+
+/* configCheckerController */
+"Laptop" = "Laptop";
