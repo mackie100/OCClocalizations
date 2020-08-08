@@ -1,7 +1,7 @@
 =<span class="title">Laptop: (7th Gen) Kaby Lake OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.0 Intel Kaby Lake Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html</a>
+=<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html>https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html</a>
 =<hr>
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake#acpi

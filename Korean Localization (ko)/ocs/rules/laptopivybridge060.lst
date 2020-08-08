@@ -1,7 +1,7 @@
 =<span class="title">Laptop: (3rd Gen) Ivy Bridge OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.0 Intel Ivy Bridge Desktop Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html</a>
+=<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html>https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html</a>
 =<hr>
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi

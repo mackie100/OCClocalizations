@@ -1,7 +1,7 @@
 =<span class="title">SkyLake Desktop OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.0 Intel SkyLake Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html</a>
+=<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html>https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html</a>
 =<hr>
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake#acpi

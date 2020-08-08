@@ -1,7 +1,7 @@
 =<span class="title">SkyLake-X OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.0 Intel SkyLake-X Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html">https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html</a>
+=<a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html>https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html</a>
 =<hr>
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x#acpi

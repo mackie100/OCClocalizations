@@ -1,7 +1,7 @@
 =<span class="title">Laptop: (5th Gen) Broadwell OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.0 Intel Broadwell Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html</a>
+=<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html>https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html</a>
 =<hr>
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell#acpi
@@ -13,14 +13,14 @@
 
 ACPI
 :Add
- count==0 "-SSDT 파일이 없습니다. 참고<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#acpi">[ACPI Docs]</a>"
+ count==0 "-SSDT 파일이 없습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#acpi>[ACPI Docs]</a>"
  [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. [ACPI Docs][acpi] 문서참고."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> 샘플 SSDT 입니다."
  [Path]~=".dsl$" "!<b>{$Path}</b> .aml 만 지원합니다. dsl 파일은 컴파일해서 첨부"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. 경고 메세지지를 제거하기 위해서는 활성화 시키거나 지워주세요."
  [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 를 찾을수 없습니다. 참고 [ACPI Docs][acpi]"
  [Path]==SSDT-EC-USBX.aml&SSDT-EC.aml "-<b>{$Path}</b> 동시 사용 금지 <b>SSDT-EC-USBX</b> and <b>SSDT-EC</b>"
- [Path]~=-EC.+aml :"%SSDT-EC.aml 또는 SSDT-EC-USBX.aml. 가 필요할수 있습니다. 참고 <a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell#acpi">[ACPI Docs]</a>"
+ [Path]~=-EC.+aml :"%SSDT-EC.aml 또는 SSDT-EC-USBX.aml. 가 필요할수 있습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell#acpi>[ACPI Docs]</a>"
  [Path]!=SSDT-PNLF.aml "-<b>{$Path}</b> 누락. 참고 [ACPI Docs][acpi]"
  [Path]==SSDT-PNLF-CFL.aml "-<b>{$Path}</b> Kaby Lake 및 구형 노트북에는 포함되지 않아야하며 대신 SSDT-PNLF를 사용하십시오. 검토하시기 바랍니다[ACPI Docs][acpi]."
  [Path]==* " <b>{$Path}</b> OC/ACPI 폴더에 위치 해야 합니다."
