@@ -1,7 +1,7 @@
 =<div style="text-align:center;font-size:30px;">Coffee Lake Desktop OpenCore 0.6.0 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 Intel Coffee Lake Sanity Check
-=参考文章:<a href="https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html">https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html</a>
+=参考文章:<a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html>https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#acpi

@@ -1,7 +1,7 @@
 =<span class="title">AMD Zen OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.0 AMD Zen Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html">https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html</a>
+=<a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html>https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html</a>
 =<hr>
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#acpi
@@ -12,7 +12,7 @@
 
 ACPI
 :Add
- count==0 "-SSDT 파일이 없습니다. 참고<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#acpi">[ACPI Docs]</a>"
+ count==0 "-SSDT 파일이 없습니다. 참고<a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#acpi>[ACPI Docs]</a>"
  [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. [ACPI Docs][acpi] 문서참고."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> 샘플 SSDT 입니다."
  [Path]~=".dsl$" "!<b>{$Path}</b> .aml 만 지원합니다. dsl 파일은 컴파일해서 첨부"

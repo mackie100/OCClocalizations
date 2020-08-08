@@ -1,7 +1,7 @@
 =<div style="text-align:center;font-size:30px;">AMD Zen OpenCore 0.6.0 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 AMD Zen Sanity Check
-=参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html">https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html</a>
+=参考文章:<a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html>https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#acpi

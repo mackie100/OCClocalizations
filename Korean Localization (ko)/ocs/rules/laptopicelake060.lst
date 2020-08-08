@@ -1,7 +1,7 @@
 =<span class="title">Laptop: (10th Gen) Ice Lake OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.0 Intel Coffee Lake Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Guide/config-laptop.plist/comet-lake.html.html">https://dortania.github.io/OpenCore-Guide/config-laptop.plist/comet-lake.html.html</a>
+=<a href=https://dortania.github.io/OpenCore-Guide/config-laptop.plist/comet-lake.html.html>https://dortania.github.io/OpenCore-Guide/config-laptop.plist/comet-lake.html.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Guide/config-laptop.plist/comet-lake.html#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Guide/config-laptop.plist/comet-lake.html#acpi
