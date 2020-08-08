@@ -595,13 +595,13 @@
 "for Official OpenCore" = "官方原版OpenCore";
 
 /* titleBar */
-"for NDK OpenCore" = "NDK分支版OpenCore";
+"for NDK OpenCore" = "MOD修改版OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "此配置包含一个或多个官方OpenCore通常不使用的属性。是否要以NDK分支版本模式打开此配置？";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "此配置包含一个或多个官方OpenCore通常不使用的属性。是否要以MOD修改本模式打开此配置？";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "此配置检测为官方版本，但是您正在NDK模式下工作。您要切换到官方版本模式吗？";
+"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "此配置检测为官方版本，但是您正在MOD版OC模式下工作。您要切换到官方版本模式吗？";
 
 /* reading_savingOperation */
 "For changes to take effect, this app will be relaunched" = "为了使更改生效，此应用将重新启动";
@@ -685,5 +685,5 @@
 "High-End Desktop" = "高端台式机";
 
 /* configCheckerController */
-"Laptop" = "Laptop";
+"Laptop" = "笔记本平台";
 
