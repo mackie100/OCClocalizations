@@ -14,11 +14,11 @@
 ACPI
 :Add
  count==0 "-SSDT 파일이 없습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/haswell-e#acpi>[ACPI Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell.html#acpi> [ACPI Docs][acpi] 문서참고."
+ [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell.html#acpi> [ACPI Docs][acpi]</a> 문서참고."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> 샘플 SSDT 입니다."
  [Path]~=".dsl$" "!<b>{$Path}</b> .aml 만 지원합니다. dsl 파일은 컴파일해서 첨부"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. 경고 메세지지를 제거하기 위해서는 활성화 시키거나 지워주세요."
- [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 를 찾을수 없습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell.html#acpi> [ACPI Docs][acpi]"
+ [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 를 찾을수 없습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell.html#acpi> [ACPI Docs][acpi]</a>"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> 동시 사용 금지 <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%SSDT-EC.aml 또는 SSDT-EC-USBX-DESKTOP.aml. 가 필요할수 있습니다. 참고  <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/haswell-e#acpi>[Acpi Docs]</a>"
  [Path]==* " <b>{$Path}</b> OC/ACPI 폴더에 위치 해야 합니다."
@@ -115,8 +115,8 @@ Misc
  AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> 디버깅 용도"
- Target=67 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html> [Debugging Docs][debug]"
- DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html> [Debugging Docs][debug]"
+ Target=67 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html> [Debugging Docs][debug]</a>"
+ DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html> [Debugging Docs][debug]</a>"
  DisplayDelay=0
  SysReport=no : " -->OpenCore 0.6.0 Debug version 용<b>{$setting}</b>=yes"
 :Entries

@@ -116,8 +116,8 @@ Misc
  AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> 디버깅 용도"
- Target=67 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs][debug]"
- DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs][debug]"
+ Target=67 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs][debug]</a>"
+ DisplayLevel=2147483714 :" <b>{$setting}</b> 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs][debug]</a>"
  DisplayDelay=0
  SysReport=no : " -->OpenCore 0.6.0 Debug version 용<b>{$setting}</b>=yes"
 
