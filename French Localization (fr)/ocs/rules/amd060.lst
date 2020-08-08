@@ -1,19 +1,19 @@
 =<span class="title">AMD Zen OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.5.9 AMD Zen Sanity Check
-=<a href="https://desktop.dortania.ml/AMD/zen.html">https://desktop.dortania.ml/AMD/zen.html</a>
+# OpenCore v0.6.0 AMD Zen Sanity Check
+=<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html">https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html</a>
 =<hr>
-# [kernel]:https://desktop.dortania.ml/AMD/zen.html#kernel
-# [acpi]:https://desktop.dortania.ml/AMD/zen.html#acpi
-# [kexts]:https://desktop.dortania.ml/ktext.html#kexts
-# [debug]:https://desktop.dortania.ml/troubleshooting/debug.html
-# [scanpolicy]:https://desktop.dortania.ml/post-install/security.html#scanpolicy
-# [platforminfo]:https://desktop.dortania.ml/AMD/zen.html#platforminfo
+# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#kernel
+# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#acpi
+# [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
+# [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
+# [scanpolicy]:https://dortania.github.io/OpenCore-Install-Guide/post-install/security.html#scanpolicy
+# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo
 
 ACPI
 :Add
- count==0 "-You have no SSDT Patches. Please review the <a href=https://desktop.dortania.ml/AMD/fx.html#acpi>[ACPI Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the <a href=https://desktop.dortania.ml/AMD/fx.html#acpi>[ACPI Docs]</a>."
+ count==0 "-You have no SSDT Patches. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#acpi>[ACPI Docs]</a>"
+ [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#acpi>[ACPI Docs]</a>."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> This is just an example SSDT. If you really made this yourself, call it something more descriptive"
  [Path]~=".dsl$" "!<b>{$Path}</b> Only include .aml files here. dsl files need to be compiled to .aml"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. Either enable it or remove it to get rid of this warning"
@@ -59,7 +59,7 @@ Booter
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.7 - See <b>RebuildAppleMemoryMap</b> instead"
  SignalAppleOS=no
  SyncRuntimePermissions=yes
- ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>This is a new option for the development OpenCore 0.6.0.</font>":"!--><b><font colore=red>ProvideMaxSlide</font></b>missing"
+ ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>ProvideMaxSlide</font></b>missing"
 
 DeviceProperties
 
@@ -171,6 +171,7 @@ NVRAM
  boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> I think you mean <b>npci=</b> there not <b>ncpi=</b>":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
  boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> If you have a navi10 GPU add <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
+ run-efi-updater="No"
  csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> Remove this setting completely. It is no longer used as of OpenCore v0.5.7"
  prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>. Unless you speak Russian, leave this blank":" <b>{$setting}</b> = <b>{$value} ({@value})</b>"
@@ -216,7 +217,7 @@ UEFI
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
- GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>This is the new options of the development OpenCore 0.6.0</font>":"!--><b><font colore=red>GlobalConnect</font></b>missing"
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>GlobalConnect</font></b>missing"
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -235,7 +236,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode=""
+ PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
@@ -244,7 +245,7 @@ UEFI
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
- AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>This is the new options of the development OpenCore 0.6.0</font>":"!--><b><font colore=red>AppleFramebufferInfo</font></b>missing"
+ AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>AppleFramebufferInfo</font></b>missing"
  AppleImageConversion=no
  AppleKeyMap=no
  AppleRtcRam=no
@@ -271,7 +272,7 @@ UEFI
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  Scale~=.* "!<b>{$setting}</b> shouldn't be here"
- UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>This is the new options of the development OpenCore 0.6.0</font>":"!--><b><font colore=red>UgaPassThrough</font></b>missing"
+ UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>UgaPassThrough</font></b>missing"
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"

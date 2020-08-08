@@ -1,18 +1,18 @@
 =<span class="title">AMD Zen OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.5.9 AMD Zen Sanity Check
-=<a href="https://desktop.dortania.ml/AMD/zen.html">https://desktop.dortania.ml/AMD/zen.html</a>
+# OpenCore v0.6.0 AMD Zen Sanity Check
+=<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html">https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html</a>
 =<hr>
-# [kernel]:https://desktop.dortania.ml/AMD/zen.html#kernel
-# [acpi]:https://desktop.dortania.ml/AMD/zen.html#acpi
-# [kexts]:https://desktop.dortania.ml/ktext.html#kexts
-# [debug]:https://desktop.dortania.ml/troubleshooting/debug.html
-# [scanpolicy]:https://desktop.dortania.ml/post-install/security.html#scanpolicy
-# [platforminfo]:https://desktop.dortania.ml/AMD/zen.html#platforminfo
+# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#kernel
+# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#acpi
+# [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
+# [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
+# [scanpolicy]:https://dortania.github.io/OpenCore-Install-Guide/post-install/security.html#scanpolicy
+# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo
 
 ACPI
 :Add
- count==0 "-SSDT 파일이 없습니다. 참고<a href="https://desktop.dortania.ml/AMD/zen.html#acpi">[ACPI Docs]</a>"
+ count==0 "-SSDT 파일이 없습니다. 참고<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#acpi">[ACPI Docs]</a>"
  [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. [ACPI Docs][acpi] 문서참고."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> 샘플 SSDT 입니다."
  [Path]~=".dsl$" "!<b>{$Path}</b> .aml 만 지원합니다. dsl 파일은 컴파일해서 첨부"
@@ -59,7 +59,7 @@ Booter
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
  SyncRuntimePermissions=no
- ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0. 개발버전 용</font>":"!--><b><font colore=red>ProvideMaxSlide</font></b>missing"
+ ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>ProvideMaxSlide</font></b>missing"
 
 DeviceProperties
 
@@ -171,6 +171,7 @@ NVRAM
  boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> <b>ncpi=</b> 가 아니라 <b>npci=</b> 가 맞는 값 입니다.":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
  boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> navi10 GPU 인 경우 추가 <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
+ run-efi-updater="No"
  csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> OpenCore v0.5.7 부터 더 이상 사용 되지 않습니다."
  prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>.러시아어를 제외하고 지우세요.":" <b>{$setting}</b> = <b>{$value} ({@value})</b>"
@@ -216,7 +217,7 @@ UEFI
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
- GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0 개발버전 용</font>":"!--><b><font colore=red>GlobalConnect</font></b>missing"
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>GlobalConnect</font></b>missing"
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -235,7 +236,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode=""
+ PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
@@ -244,7 +245,7 @@ UEFI
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
- AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0 개발버전 용</font>":"!--><b><font colore=red>AppleFramebufferInfo</font></b>missing"
+ AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>AppleFramebufferInfo</font></b>missing"
  AppleImageConversion=no
  AppleKeyMap=no
  AppleRtcRam=no
@@ -271,7 +272,7 @@ UEFI
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  Scale~=.* "!<b>{$setting}</b> 추가 하지 않아야 합니다."
- UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0 개발버전 용</font>":"!--><b><font colore=red>UgaPassThrough</font></b>missing"
+ UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>UgaPassThrough</font></b>missing"
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다."
