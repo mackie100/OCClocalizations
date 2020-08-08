@@ -1,7 +1,7 @@
 =<div style="text-align:center;font-size:30px;">SkyLake Desktop OpenCore 0.6.0 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.5.9 Intel SkyLake Sanity Check
-=参考文章:<a href="https://desktop.dortania.ml/config.plist/skylake.html">https://desktop.dortania.ml/config.plist/skylake.html</a>
+=参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://desktop.dortania.ml/config.plist/skylake#kernel
 # [acpi]:https://desktop.dortania.ml/config.plist/skylake#acpi
@@ -14,13 +14,13 @@
 ACPI
 :Add
  count==0 "-您没有SSDT补丁。请查看<a href=https://desktop.dortania.ml/config.plist/kaby-lake.html#acpi>[Acpi Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> -->您不应该包括转储的DSDT。请查看<a href=https://desktop.dortania.ml/config.plist/skylake.html#acpi>[ACPI文档]</a>."
+ [Path]==DSDT.aml "-<b>{$Path}</b> -->您不应该包括转储的DSDT。请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#acpi>[ACPI文档]</a>."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> -->这只是SSDT的一个例子。如果你真的是自己做的, 称它为更具描述性的东西"
  [Path]~=".dsl$" "!<b>{$Path}</b> -->在此处只能是.aml文件。 dsl文件需要编译为.aml"
  [Enabled]==no "-<b>{$Path}</b> -->状态是<b>已禁用</b>. 启用或删除它可以去除此警告"
- [Path]!=SSDT-PLUG.aml "--->缺少<font color=red><b>SSDT-PLUG.aml</b></font>. 请查看<a href=https://desktop.dortania.ml/config.plist/skylake.html#acpi>[Acpi Docs]</a>"
+ [Path]!=SSDT-PLUG.aml "--->缺少<font color=red><b>SSDT-PLUG.aml</b></font>. 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#acpi>[Acpi Docs]</a>"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml"-->-<b>{$Path}/b>不要同时使用 <b>SSDT-EC-USBX-DESKTOP</b>和<b>SSDT-EC</b>"
- [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX-DESKTOP.aml的文件.请查看<a href=https://desktop.dortania.ml/config.plist/skylake.html#acpi>[ACPI文档]</a>"
+ [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX-DESKTOP.aml的文件.请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#acpi>[ACPI文档]</a>"
  [Path]==* " <b>{$Path}</b> -->确保此文件在您的<b>OC/ACPI</b>目录中"
 
 :Quirks
@@ -52,13 +52,16 @@ Booter
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
  SyncRuntimePermissions=yes
- ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>ProvideMaxSlide</font></b>选项"
+ ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>ProvideMaxSlide</font></b>选项"
 
 DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="00001e19|00001619|00002619|00002719|00001b19|00003b19|00001219|01000219|01001719|01001219|01003219|02001619|02002619|03001e19|04002619|04002719|05003b19|06001b19|07002619" " <b>{$setting}<b> = <b>{$value}<b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读<a href=https://desktop.dortania.ml/config.plist/skylake.html#deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="00001219|01001219" " <b>{$setting}<b> = <b>{$value}<b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#deviceproperties>[DeviceProperties Docs]</a>"
+
+::PciRoot(0x0)/Pci(0x1b,0x0)
+ AAPL,ig-platform-id~=.* "!**{$setting}** 是错误的位置, iGPU的位置是 PciRoot(0x0)/Pci(0x2,0x0)"
 
 Kernel
 
@@ -158,6 +161,7 @@ NVRAM
  boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> -->我想你的意思是 <b>npci=</b> 而不是 <b>ncpi=</b>":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
  boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> -->如果您有navi10 GPU，请添加 <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
+ run-efi-updater="No"
  csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> -->完全删除此设置。从OpenCore v0.5.7开始不再使用"
  prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>. -->除非您使用俄语，否则请留空或设置其他语言":" <b>{$setting}</b> = <b>{$value} ({@value})</b>"
@@ -174,11 +178,11 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
- SystemProductName~="(iMac17,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于Skylake台式机系统，这不是建议的SMBIOS. 请参看<a href=https://desktop.dortania.ml/config.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>"
+ SystemProductName~="(iMac17,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于Skylake台式机系统，这不是建议的SMBIOS. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看<a href=https://desktop.dortania.ml/config-HEDT/skylake#platforminfo>[PlatformInfo Docs]</a>:" <b>{$setting}</b> -->已设置"
- ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看<a href=https://desktop.dortania.ml/config.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
- SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看<a href=https://desktop.dortania.ml/config.plist/skylake.html#platforminfo>[PlaformInfo Docs]</a>":" <b>{$setting}<b> -->已设置"
- SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> -->应该设置为您生成的SmUUID. 请参看<a href=https://desktop.dortania.ml/config.plist/skylake.html#platforminfo>[PlaformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlaformInfo Docs]</a>":" <b>{$setting}<b> -->已设置"
+ SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> -->应该设置为您生成的SmUUID. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlaformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
 
 UEFI
  ConnectDrivers=yes
@@ -203,7 +207,7 @@ UEFI
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
- GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>GlobalConnect</font></b>选项"
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>如果未显示APFS驱动器，建议在HP系统上启用</font>":"!-->缺少<b><font colore=red>GlobalConnect</font></b>选项"
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -222,7 +226,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode=""
+ PointerSupportMode=~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
@@ -231,7 +235,7 @@ UEFI
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
- AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
+ AppleFramebufferInfo=no
  AppleImageConversion=no
  AppleKeyMap=no
  AppleRtcRam=no
@@ -258,7 +262,7 @@ UEFI
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  Scale~=.* "!<b>{$setting}</b> -->不应该在这里"
- UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>这是OpenCore最新开发版0.6.0新加选项</font>":"!-->缺少<b><font colore=red>UgaPassThrough</font></b>选项"
+ UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>UgaPassThrough</font></b>选项"
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"

@@ -1,28 +1,28 @@
 =<span class="title">Coffee Lake Desktop OpenCore 0.6.0</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.5.9 Intel Coffee Lake Sanity Check
-=<a href="https://desktop.dortania.ml/config.plist/coffee-lake.html">https://desktop.dortania.ml/config.plist/coffee-lake.html</a>
+# OpenCore v0.6.0 Intel Coffee Lake Sanity Check
+=<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html</a>
 =<hr>
-# [kernel]:https://desktop.dortania.ml/config.plist/coffee-lake#kernel
-# [acpi]:https://desktop.dortania.ml/config.plist/coffee-lake#acpi
-# [kexts]:https://desktop.dortania.ml/ktext.html#kexts
-# [debug]:https://desktop.dortania.ml/troubleshooting/debug.html
-# [scanpolicy]:https://desktop.dortania.ml/post-install/security.html#scanpolicy
-# [platforminfo]:https://desktop.dortania.ml/config.plist/coffee-lake#platforminfo
-# [deviceproperties]:https://desktop.dortania.ml/config.plist/coffee-lake##deviceproperties
+# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#kernel
+# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#acpi
+# [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
+# [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
+# [scanpolicy]:https://dortania.github.io/OpenCore-Install-Guide/post-install/security.html#scanpolicy
+# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#platforminfo
+# [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake##deviceproperties
 
 ACPI
 :Add
- count==0 "-SSDT 파일이 없습니다. 참고<a href="https://desktop.dortania.ml/config.plist/coffee-lake#acpi">[ACPI Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. <a href=https://desktop.dortania.ml/config.plist/coffee-lake#acpi>[Acpi Docs][ACPI Docs][acpi] 문서참고."
+ count==0 "-SSDT 파일이 없습니다. 참고<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#acpi">[ACPI Docs]</a>"
+ [Path]==DSDT.aml "-<b>{$Path}</b> DSDT.AML은 추가하지 않습니다. <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#acpi>[Acpi Docs][ACPI Docs][acpi] 문서참고."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> 샘플 SSDT 입니다."
  [Path]~=".dsl$" "!<b>{$Path}</b> .aml 만 지원합니다. dsl 파일은 컴파일해서 첨부"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. 경고 메세지지를 제거하기 위해서는 활성화 시키거나 지워주세요."
- [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 를 찾을수 없습니다. 참고 <a href=https://desktop.dortania.ml/config.plist/coffee-lake#acpi>[Acpi Docs]"
+ [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 를 찾을수 없습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#acpi>[Acpi Docs]"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> 동시 사용 금지 <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
- [Path]~=-EC.+aml :"%SSDT-EC.aml 또는 SSDT-EC-USBX-DESKTOP.aml. 가 필요할수 있습니다. 참고 <a href="https://desktop.dortania.ml/config.plist/coffee-lake#acpi">ACPI Docs]</a>"
+ [Path]~=-EC.+aml :"%SSDT-EC.aml 또는 SSDT-EC-USBX-DESKTOP.aml. 가 필요할수 있습니다. 참고 <a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#acpi">ACPI Docs]</a>"
  [Path]==* " <b>{$Path}</b> OC/ACPI 폴더에 위치 해야 합니다."
- [Path]!=SSDT-PMC.aml "-<b>SSDT-PMC.aml<b>가 없습니다. See the <a href=https://desktop.dortania.ml/config.plist/coffee-lake#acpi>[Acpi Docs]</a> if you need it"
+ [Path]!=SSDT-PMC.aml "-<b>SSDT-PMC.aml<b>가 없습니다. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#acpi>[Acpi Docs]</a> if you need it"
  [Path]==* " <b>{$Path}</b> OC/ACPI 폴더에 파일이 위치 해야 합니다."
 
 :Quirks
@@ -54,13 +54,16 @@ Booter
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> OpenCore v0.5.7 이후로 <b>RebuildAppleMemoryMap</b> 를 사용합니다."
  SignalAppleOS=no
  SyncRuntimePermissions=yes
- ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0. 개발버전 용</font>":"!--><b><font colore=red>ProvideMaxSlide</font></b>missing"
+ ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>ProvideMaxSlide</font></b>missing"
 
 DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="0900a53e|0900923e|09009b3e|0000a53e|0000923e|0000003e|00009b3e|0400a53e|0500a53e|0500a63e|06009b3e|08009b3e|07009b3e|0300923e|0300913e|0300983e" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU 가 제대로 설정 되지 않았습니다. 참고 <a href=https://desktop.dortania.ml/config.plist/coffee-lake##deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="07009b3e|0300913e|00009b3e" " <b>{$setting}</b> = <b>{$value}</b> iGPU가 올바르게 설정 됨":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU 가 제대로 설정 되지 않았습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake##deviceproperties>[DeviceProperties Docs]</a>"
+
+::PciRoot(0x0)/Pci(0x1b,0x0)
+ AAPL,ig-platform-id~=.* "!<b>{$setting}</b> 잘못된 위치입니까, iGPU위치는 PciRoot(0x0)/Pci(0x2,0x0)"
 
 Kernel
 
@@ -71,7 +74,7 @@ Kernel
  [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "-<b>FakeSMC.kext</b> 와 <b>VirtualSMC.kext</b> 둘중에 하나 사용 필요"
  [BundlePath]==VoodooHDA.kext&AppleALC.kext "-<b>{$BundlePath}</b> b>VoodooHDA.kext</b> 와 <b>AppleALC.kext</b>는 동시 사용 불가능"
  [BundlePath]==AppleALC.kext "$alcbootarg='-<b>{$setting}</b> = <b>{$value}</b> <b>alcid=</b><_layout_\> 추가 필요":"$alcbootarg=;"
- [BundlePath]!=WhateverGreen.kext "-<b>WhateverGreen.kext</b> 를 찾을수 없습니다. 참고 <a href=https://desktop.dortania.ml/ktext.html#kexts>[Kexts Docs]</a>"
+ [BundlePath]!=WhateverGreen.kext "-<b>WhateverGreen.kext</b> 를 찾을수 없습니다. 참고 <a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts Docs]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!<b>XLNCUSBFIX.kext</b> AMD용 kext"
  [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-<b>{$BundlePath}</b> 동작하겠지만 <b>SmallTreeIntel82576.kext</b>를 추천"
  [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> 랩탑용 플러그인"
@@ -160,6 +163,7 @@ NVRAM
  boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> <b>ncpi=</b> 가 아니라 <b>npci=</b> 가 맞는 값 입니다.":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
  boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> navi10 GPU 인 경우 추가 <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
+ run-efi-updater="No"
  csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> OpenCore v0.5.7 부터 더 이상 사용 되지 않습니다."
  prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>.러시아어를 제외하고 지우세요.":" <b>{$setting}</b> = <b>{$value} ({@value})</b>"
@@ -204,7 +208,7 @@ UEFI
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
- GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0 개발버전 용</font>":"!--><b><font colore=red>GlobalConnect</font></b>missing"
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>GlobalConnect</font></b>missing"
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -223,7 +227,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode=""
+ PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
@@ -232,7 +236,7 @@ UEFI
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
- AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0 개발버전 용</font>":"!--><b><font colore=red>AppleFramebufferInfo</font></b>missing"
+ AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>AppleFramebufferInfo</font></b>missing"
  AppleImageConversion=no
  AppleKeyMap=no
  AppleRtcRam=no
@@ -259,7 +263,7 @@ UEFI
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  Scale~=.* "!<b>{$setting}</b> 추가 하지 않아야 합니다."
- UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>OpenCore 0.6.0 개발버전 용</font>":"!--><b><font colore=red>UgaPassThrough</font></b>missing"
+ UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>UgaPassThrough</font></b>missing"
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> OpenCore v0.5.6 부터 사용 되지 않습니다."
