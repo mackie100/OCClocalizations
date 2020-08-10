@@ -209,7 +209,7 @@ UEFI
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
- GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>如果未显示APFS驱动器，建议在HP系统上启用</font>":"!-->缺少<b><font colore=red>GlobalConnect</font></b>选项"
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> "
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -281,6 +281,6 @@ UEFI
  ReplaceTabWithSpace~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  SanitiseClearScreen~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  ClearScreenOnModeSwitch~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
- UnblockFsConnect=no" <b>{$setting}</b> = <b>{$value}</b> 如果你是惠普笔记本，请启用此项"
+ UnblockFsConnect=~=.* "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>如果未显示APFS驱动器，建议在HP系统上启用</font>":"!-->缺少<b><font colore=red>UnblockFsConnect</font></b>选项"
 
 :ReservedMemory
