@@ -206,7 +206,7 @@ UEFI
 
 :APFS
  EnableJumpstart=yes
- GlobalConnect=no :" <b>{$setting}</b> = <b>{$value}</b>"
+ GlobalConnect=no :" <b>{$setting}</b> = <b>{$value}</b> Recommended to enable on HP systems if APFS drives do not show up"
  HideVerbose=yes
  JumpstartHotPlug=no
  MinDate=0

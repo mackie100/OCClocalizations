@@ -210,7 +210,7 @@ UEFI
 
 :APFS
  EnableJumpstart=yes
- GlobalConnect=no :" <b>{$setting}</b> = <b>{$value}</b>"
+ GlobalConnect=no :" <b>{$setting}</b> = <b>{$value}</b> Recommended to enable on HP systems if APFS drives do not show up"
  HideVerbose=yes
  JumpstartHotPlug=no
  MinDate=0
@@ -253,7 +253,7 @@ UEFI
  FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this"
  HashServices=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this"
  OSInfo=no
- UnicodeCollation=no :" <b>{$setting}</b> = <b>{$value}</b> Recommended to enable on HP systems if APFS drives do not show up"
+ UnicodeCollation=no
 
 :Output
  count==11 :"!You should have exactly 11 settings in the UEFI/Output section"
