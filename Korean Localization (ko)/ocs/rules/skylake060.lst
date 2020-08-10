@@ -207,7 +207,7 @@ UEFI
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
- GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!--><b><font colore=red>GlobalConnect</font></b>missing"
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b> HP 시스템에서 APFS Driver 로딩 실패시 사용을 추천"
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
