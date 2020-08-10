@@ -131,8 +131,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Image Conversion protocol with a builtin version."; ObjectID = "ILy-av-YYi"; */
 "ILy-av-YYi.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Image Conversion protocol with a builtin version.";
 
-/* Class = "NSTabViewItem"; label = "Protocols"; ObjectID = "Ife-ug-MJ5"; */
-"Ife-ug-MJ5.label" = "Protocols";
+/* Class = "NSTabViewItem"; label = "ProtocolOverrides"; ObjectID = "Ife-ug-MJ5"; */
+"Ife-ug-MJ5.label" = "ProtocolOverrides";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version."; ObjectID = "JLv-Tn-pJQ"; */
 "JLv-Tn-pJQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Debug Log protocol with a builtin version.";
@@ -194,6 +194,9 @@
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "Drivers";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot."; ObjectID = "XQL-ML-llQ"; */
+"XQL-ML-llQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot.";
+
 /* Class = "NSButtonCell"; title = "AppleRtcRam"; ObjectID = "Xjp-N3-zFD"; */
 "Xjp-N3-zFD.title" = "AppleRtcRam";
 
@@ -242,8 +245,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is broken."; ObjectID = "dzp-p6-AHb"; */
 "dzp-p6-AHb.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is broken.";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP to be present on console handle, yet the exact location of GOP is not covered by the UEFI specification. This option will ensure GOP is installed on console handle if it is present.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs."; ObjectID = "eGd-xS-rQf"; */
-"eGd-xS-rQf.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP to be present on console handle, yet the exact location of GOP is not covered by the UEFI specification. This option will ensure GOP is installed on console handle if it is present.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs."; ObjectID = "eGd-xS-rQf"; */
+"eGd-xS-rQf.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs.";
 
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";
@@ -262,6 +265,9 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\nThis option allows to update firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value generally improves performance and responsiveness of the interface and input handling.\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. You may leave it as 0 in case there are issues."; ObjectID = "fda-QM-Vl4"; */
 "fda-QM-Vl4.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\nThis option allows to update firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value generally improves performance and responsiveness of the interface and input handling.\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. You may leave it as 0 in case there are issues.";
+
+/* Class = "NSButtonCell"; title = "AppleSecureBoot"; ObjectID = "gC4-eW-BlL"; */
+"gC4-eW-BlL.title" = "AppleSecureBoot";
 
 /* Class = "NSTabViewItem"; label = "Output"; ObjectID = "gJG-UT-7D3"; */
 "gJG-UT-7D3.label" = "Output";
@@ -365,6 +371,9 @@
 /* Class = "NSButtonCell"; title = "ClearScreenOnModeSwitch"; ObjectID = "tqx-Ek-u4V"; */
 "tqx-Ek-u4V.title" = "ClearScreenOnModeSwitch";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Secure Boot protocol with a builtin version."; ObjectID = "ub5-qQ-fLN"; */
+"ub5-qQ-fLN.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Secure Boot protocol with a builtin version.";
+
 /* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "ufL-Er-oh9"; */
 "ufL-Er-oh9.headerCell.title" = "Size";
 
@@ -377,14 +386,17 @@
 /* Class = "NSTextFieldCell"; title = "ExitBootServicesDelay"; ObjectID = "wxD-TC-lrQ"; */
 "wxD-TC-lrQ.title" = "ExitBootServicesDelay";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Remove key unless it was submitted during this timeout in milliseconds.\nAppleKeyMapAggregator protocol is supposed to contain a fixed length buffer of currently pressed keys. However, the majority of the drivers only report key presses as interrupts and pressing and holding the key on the keyboard results in subsequent submissions of this key with some defined time interval. As a result we use a timeout to remove once pressed keys from the buffer once the timeout expires and no new submission of this key happened.\nThis option allows to set this timeout based on your platform. The recommended value that works on the majority of the platforms is 5 milliseconds. For reference, holding one key on VMware will repeat it roughly every 2 milliseconds and the same value for APTIO V is 3-4 milliseconds. Thus it is possible to set a slightly lower value on faster platforms and slightly higher value on slower platforms for more responsive input."; ObjectID = "xNH-9V-3kd"; */
-"xNH-9V-3kd.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Remove key unless it was submitted during this timeout in milliseconds.\nAppleKeyMapAggregator protocol is supposed to contain a fixed length buffer of currently pressed keys. However, the majority of the drivers only report key presses as interrupts and pressing and holding the key on the keyboard results in subsequent submissions of this key with some defined time interval. As a result we use a timeout to remove once pressed keys from the buffer once the timeout expires and no new submission of this key happened.\nThis option allows to set this timeout based on your platform. The recommended value that works on the majority of the platforms is 5 milliseconds. For reference, holding one key on VMware will repeat it roughly every 2 milliseconds and the same value for APTIO V is 3-4 milliseconds. Thus it is possible to set a slightly lower value on faster platforms and slightly higher value on slower platforms for more responsive input.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Remove key unless it was submitted during this timeout in milliseconds.\nAppleKeyMapAggregator protocol is supposed to contain a fixed length buffer of currently pressed keys. However, the majority of the drivers only report key presses as interrupts and pressing and holding the key on the keyboard results in subsequent submissions of this key with some defined time interval. As a result we use a timeout to remove once pressed keys from the buffer once the timeout expires and no new submission of this key happened.\nThis option allows to set this timeout based on your platform. The recommended value that works on the majority of the platforms is 5 milliseconds. For reference, holding one key on VMware will repeat it roughly every 2 milliseconds and the same value for APTIO V is 3-4 milliseconds. Thus it is possible to set a slightly lower value on faster platforms and slightly higher value on slower platforms for more responsive input.\n\nNote: Some platforms may require different values, higher or lower. For example, when detecting key misses in OpenCanopy try increasing this value (e.g. to 10), and when detecting key stall, try decreasing this value. Since every platform is different it may be reasonable to check every value from 1 to 25."; ObjectID = "xNH-9V-3kd"; */
+"xNH-9V-3kd.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Remove key unless it was submitted during this timeout in milliseconds.\nAppleKeyMapAggregator protocol is supposed to contain a fixed length buffer of currently pressed keys. However, the majority of the drivers only report key presses as interrupts and pressing and holding the key on the keyboard results in subsequent submissions of this key with some defined time interval. As a result we use a timeout to remove once pressed keys from the buffer once the timeout expires and no new submission of this key happened.\nThis option allows to set this timeout based on your platform. The recommended value that works on the majority of the platforms is 5 milliseconds. For reference, holding one key on VMware will repeat it roughly every 2 milliseconds and the same value for APTIO V is 3-4 milliseconds. Thus it is possible to set a slightly lower value on faster platforms and slightly higher value on slower platforms for more responsive input.\n\nNote: Some platforms may require different values, higher or lower. For example, when detecting key misses in OpenCanopy try increasing this value (e.g. to 10), and when detecting key stall, try decreasing this value. Since every platform is different it may be reasonable to check every value from 1 to 25.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\nThis is a very ugly quirk to circumvent \"Still waiting for root device\" message on select APTIO IV firmwares, namely ASUS Z87-Pro, when using FileVault 2 in particular. It seems that for some reason they execute code in parallel to EXIT_BOOT_SERVICES, which results in SATA controller being inaccessible from macOS. A better approach should be found in some future. Expect 3-5 seconds to be enough in case the quirk is needed."; ObjectID = "yXm-Kd-A6O"; */
 "yXm-Kd-A6O.ibShadowedToolTip" = "Type: plist integer\nDefault value: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\nThis is a very ugly quirk to circumvent \"Still waiting for root device\" message on select APTIO IV firmwares, namely ASUS Z87-Pro, when using FileVault 2 in particular. It seems that for some reason they execute code in parallel to EXIT_BOOT_SERVICES, which results in SATA controller being inaccessible from macOS. A better approach should be found in some future. Expect 3-5 seconds to be enough in case the quirk is needed.";
 
 /* Class = "NSButtonCell"; title = "IgnoreTextInGraphics"; ObjectID = "ygR-oy-xAC"; */
 "ygR-oy-xAC.title" = "IgnoreTextInGraphics";
+
+/* Class = "NSButtonCell"; title = "AppleImg4Verification"; ObjectID = "ytA-jO-wqX"; */
+"ytA-jO-wqX.title" = "AppleImg4Verification";
 
 /* Class = "NSButtonCell"; title = "ReconnectOnResChange"; ObjectID = "zen-LP-Fan"; */
 "zen-LP-Fan.title" = "ReconnectOnResChange";

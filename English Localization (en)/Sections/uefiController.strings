@@ -194,6 +194,9 @@
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "Drivers";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot."; ObjectID = "XQL-ML-llQ"; */
+"XQL-ML-llQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot.";
+
 /* Class = "NSButtonCell"; title = "AppleRtcRam"; ObjectID = "Xjp-N3-zFD"; */
 "Xjp-N3-zFD.title" = "AppleRtcRam";
 
@@ -262,6 +265,9 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\nThis option allows to update firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value generally improves performance and responsiveness of the interface and input handling.\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. You may leave it as 0 in case there are issues."; ObjectID = "fda-QM-Vl4"; */
 "fda-QM-Vl4.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\nThis option allows to update firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value generally improves performance and responsiveness of the interface and input handling.\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. You may leave it as 0 in case there are issues.";
+
+/* Class = "NSButtonCell"; title = "AppleSecureBoot"; ObjectID = "gC4-eW-BlL"; */
+"gC4-eW-BlL.title" = "AppleSecureBoot";
 
 /* Class = "NSTabViewItem"; label = "Output"; ObjectID = "gJG-UT-7D3"; */
 "gJG-UT-7D3.label" = "Output";
@@ -365,6 +371,9 @@
 /* Class = "NSButtonCell"; title = "ClearScreenOnModeSwitch"; ObjectID = "tqx-Ek-u4V"; */
 "tqx-Ek-u4V.title" = "ClearScreenOnModeSwitch";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Secure Boot protocol with a builtin version."; ObjectID = "ub5-qQ-fLN"; */
+"ub5-qQ-fLN.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Secure Boot protocol with a builtin version.";
+
 /* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "ufL-Er-oh9"; */
 "ufL-Er-oh9.headerCell.title" = "Size";
 
@@ -385,6 +394,9 @@
 
 /* Class = "NSButtonCell"; title = "IgnoreTextInGraphics"; ObjectID = "ygR-oy-xAC"; */
 "ygR-oy-xAC.title" = "IgnoreTextInGraphics";
+
+/* Class = "NSButtonCell"; title = "AppleImg4Verification"; ObjectID = "ytA-jO-wqX"; */
+"ytA-jO-wqX.title" = "AppleImg4Verification";
 
 /* Class = "NSButtonCell"; title = "ReconnectOnResChange"; ObjectID = "zen-LP-Fan"; */
 "zen-LP-Fan.title" = "ReconnectOnResChange";
