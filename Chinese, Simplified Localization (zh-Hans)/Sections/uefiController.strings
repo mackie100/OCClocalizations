@@ -195,7 +195,7 @@
 "V9Z-z9-Ejd.label" = "UEFI驱动";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot."; ObjectID = "XQL-ML-llQ"; */
-"XQL-ML-llQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot.";
+"XQL-ML-llQ.ibShadowedToolTip" = "重新安装具有内置版本的Apple IMG4 Verification协议。 此协议用于验证Apple Secure Boot使用的im4m清单文件。";
 
 /* Class = "NSButtonCell"; title = "AppleRtcRam"; ObjectID = "Xjp-N3-zFD"; */
 "Xjp-N3-zFD.title" = "AppleRtcRam";
@@ -372,7 +372,7 @@
 "tqx-Ek-u4V.title" = "ClearScreenOnModeSwitch";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Secure Boot protocol with a builtin version."; ObjectID = "ub5-qQ-fLN"; */
-"ub5-qQ-fLN.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple Secure Boot protocol with a builtin version.";
+"ub5-qQ-fLN.ibShadowedToolTip" = "重新安装具有内置版本的Apple Secure Boot协议。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "ufL-Er-oh9"; */
 "ufL-Er-oh9.headerCell.title" = "大小";
