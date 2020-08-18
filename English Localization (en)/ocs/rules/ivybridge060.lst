@@ -7,7 +7,7 @@
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi
 # [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
 # [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
-# [scanpolicy]:https://dortania.github.io/OpenCore-Install-Guide/post-install/security.html#scanpolicy
+# [scanpolicy]:https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy
 # [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo
 # [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#deviceproperties
 
@@ -23,6 +23,8 @@ ACPI
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-USBX-DESKTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
  [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
+ [Path]==SSDT-OLA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
 
 :Block
  [Enabled]==no "!<b>{$Comment}</b> Patch is <b>disabled</b>! Enable this to make sure SSDT-CPU-PM works."
@@ -93,16 +95,16 @@ Kernel
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
- CustomSMBIOSGuid=no
+ CustomSMBIOSGuid=no " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please enable this"
  DisableIoMapper=yes
- DisableRtcChecksum=no
+ DisableRtcChecksum~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  DummyPowerManagement=no
- ExternalDiskIcons=no
+ ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  IncreasePciBarSize=no
  LapicKernelPanic~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PanicNoKextDump=yes
  PowerTimeoutKernelPanic=yes
- ThirdPartyDrives=no
+ ThirdPartyDrives~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  XhciPortLimit=yes " <b>{$setting}</b> = <b>{$value}</b> turn off after USB port mapping":" <b>{$setting}</b> = <b>{$value}</b> enable if you have USB issues"
 
 Misc
@@ -177,7 +179,7 @@ PlatformInfo
  UpdateDataHub=yes
  UpdateNVRAM=yes
  UpdateSMBIOS=yes
- UpdateSMBIOSMode=Create
+ UpdateSMBIOSMode=Create " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please set this to <b>Custom</b>"
 
 :Generic
  SpoofVendor=yes
@@ -202,9 +204,9 @@ UEFI
  Drivers==HiiDatabase.efi "!<b>{$value}</b> should not be here!"
  Drivers==NvmExpressDxe.efi "!<b>{$value}</b> should not be here!"
  Drivers==OpenUsbKbDxe.efi "-<b>{$value}</b> Unless you are doing a legacy install, you don't need this"
- Drivers==Ps2KeyboardDxe.efi "!<b>{$value}</b> should not be here!"
- Drivers==Ps2MouseDxe.efi "!<b>{$value}</b> should not be here!"
- Drivers==UsbMouseDxe.efi "!<b>{$value}</b> should not be here!"
+ Drivers==Ps2KeyboardDxe.efi "-<b>{$value}</b> Unless you are using a PS2 keyboard, this should not be here!"
+ Drivers==Ps2MouseDxe.efi "-<b>{$value}</b> Unless you are using a PS2 mouse/trackpad with OpenCanopy, this should not be here!"
+ Drivers==UsbMouseDxe.efi "-<b>{$value}</b> Unless you are using a USB mouse/trackpad with OpenCanopy, this should not be here!"
  Drivers==XhciDxe.efi "!<b>{$value}</b> should not be here!"
  Drivers==VirtualSmc.efi "!<b>VirtualSmc.efi</b> was merged into OpenCore under the quirk <b>AppleSmcIo</b>!"
  Drivers==~^#.* "!<b>{$value}</b> remove the </b>#</b> if you want this to load otherwise remove entirely"
