@@ -658,6 +658,12 @@
 	</dict>
 	<dict>
 		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM202.plist</string>
+		<key>title</key>
+		<string>iMac20,2 - iMac (27-inch, Retina 5K, 2020) | Intel Core i9-10910 @ 3.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
 		<string>master/Resources/SMBIOS/iMacPro/IMP11.plist</string>
 		<key>title</key>
 		<string>iMacPro1,1 - iMac Pro (27-inch, Retina 5K, 8-Core, Mid 2017) | Intel Xeon W-2140B CPU @ 3.20 GHz</string>
