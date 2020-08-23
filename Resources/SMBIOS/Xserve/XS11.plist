@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BIOSVendor</key>
+	<string>Apple Computer, Inc.</string>
+	<key>BIOSVersion</key>
+	<string>XS11.88Z.0080.B01.0706271533</string>
+	<key>BIOSLegacyVersion</key>
+	<string>XS11.88Z.0080.B01.0706271533</string>
+	<key>BIOSReleaseDate</key>
+	<string>06/27/2007</string>
+	<key>SystemManufacturer</key>
+	<string>Apple Computer, Inc.</string>
+	<key>SystemProductName</key>
+	<string>Xserve1,1</string>
+	<key>SystemVersion</key>
+	<string>1.0</string>
+	<key>SystemSerialNumber</key>
+	<string>CK703E1EV2Q</string>
+	<key>SystemSKUNumber</key>
+	<string>System SKU#</string>
+	<key>SystemFamily</key>
+	<string>Xserve</string>
+	<key>BoardManufacturer</key>
+	<string>Apple Computer, Inc.</string>
+	<key>BoardProduct</key>
+	<string>Mac-F4208AC8</string>
+	<key>BoardVersion</key>
+	<string>Proto</string>
+	<key>BoardRevision</key>
+	<string></string>
+	<key>BoardAssetTag</key>
+	<string>Base Board Asset Tag</string>
+	<key>BoardType</key>
+	<string>0xA</string>
+	<key>BoardLocationInChassis</key>
+	<string>Part Component</string>
+	<key>ChassisManufacturer</key>
+	<string>Apple Computer, Inc.</string>
+	<key>ChassisType</key>
+	<string>0x17</string>
+	<key>ChassisVersion</key>
+	<string>Mac-F4208AC8</string>
+	<key>ChassisAssetTag</key>
+	<string>Asset Tag#</string>
+	<key>PlatformFeature</key>
+	<string></string>
+	<key>FirmwareFeatures</key>
+	<string></string>
+	<key>FirmwareFeaturesMask</key>
+	<string></string>
+	<key>ExtendedFirmwareFeatures</key>
+	<string></string>
+	<key>ExtendedFirmwareFeaturesMask</key>
+	<string></string>
+	<key>MemoryFormFactor</key>
+	<string>0x9</string>
+	<key>ProcessorType</key>
+	<array>
+		<string>0x0401</string>
+	</array>
+	<key>ProcessorBusSpeed</key>
+	<array>
+		<string>12345</string>
+	</array>
+	<key>SmcGeneration</key>
+	<string>1</string>
+	<key>SmcRevision</key>
+	<array>
+		<string>0x01</string>
+		<string>0x11</string>
+		<string>0x0f</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x05</string>
+	</array>
+	<key>SmcBranch</key>
+	<array>
+		<string>0x4E</string>
+		<string>0x41</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+	</array>
+	<key>SmcPlatform</key>
+	<array>
+		<string>0x4E</string>
+		<string>0x41</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+	</array>
+	<key>SmcEPCI</key>
+	<string>0x79001</string>
+	<key>AppleModelCode</key>
+	<array>
+		<string>V2Q</string>
+	</array>
+	<key>AppleBoardCode</key>
+	<array>
+		<string>V1C</string>
+	</array>
+	<key>AppleModelYear</key>
+	<array>
+		<string>2006</string>
+		<string>2007</string>
+		<string>2008</string>
+	</array>
+</dict>
+</plist>

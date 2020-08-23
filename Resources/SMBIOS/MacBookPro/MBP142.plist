@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BIOSVendor</key>
+	<string>Apple Inc.</string>
+	<key>BIOSVersion</key>
+	<string>428.0.0.0.0</string>
+	<key>BIOSLegacyVersion</key>
+	<string>MBP142.88Z.F000.B00.2006161750</string>
+	<key>BIOSReleaseDate</key>
+	<string>06/16/2020</string>
+	<key>SystemManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>SystemProductName</key>
+	<string>MacBookPro14,2</string>
+	<key>SystemVersion</key>
+	<string>1.0</string>
+	<key>SystemSerialNumber</key>
+	<string>C02TQHACHV2N</string>
+	<key>SystemSKUNumber</key>
+	<string>System SKU#</string>
+	<key>SystemFamily</key>
+	<string>MacBook Pro</string>
+	<key>BoardManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>BoardProduct</key>
+	<string>Mac-CAD6701F7CEA0921</string>
+	<key>BoardVersion</key>
+	<string>MacBookPro14,2</string>
+	<key>BoardRevision</key>
+	<string>0x1B</string>
+	<key>BoardAssetTag</key>
+	<string>Base Board Asset Tag</string>
+	<key>BoardType</key>
+	<string>0xA</string>
+	<key>BoardLocationInChassis</key>
+	<string>Part Component</string>
+	<key>ChassisManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>ChassisType</key>
+	<string>0x9</string>
+	<key>ChassisVersion</key>
+	<string>Mac-CAD6701F7CEA0921</string>
+	<key>ChassisAssetTag</key>
+	<string>Asset Tag#</string>
+	<key>PlatformFeature</key>
+	<string>0x1A</string>
+	<key>FirmwareFeatures</key>
+	<string>0xFF0FF57E</string>
+	<key>FirmwareFeaturesMask</key>
+	<string>0xFF1FFF7F</string>
+	<key>ExtendedFirmwareFeatures</key>
+	<string>0x00000000FF0FF57E</string>
+	<key>ExtendedFirmwareFeaturesMask</key>
+	<string>0x00000000FF1FFF7F</string>
+	<key>MemoryFormFactor</key>
+	<string>0xD</string>
+	<key>ProcessorType</key>
+	<array>
+		<string>0x0605</string>
+	</array>
+	<key>ProcessorBusSpeed</key>
+	<array>
+		<string>12345</string>
+	</array>
+	<key>SmcGeneration</key>
+	<string>2</string>
+	<key>SmcRevision</key>
+	<array>
+		<string>0x02</string>
+		<string>0x44</string>
+		<string>0x0f</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x05</string>
+	</array>
+	<key>SmcBranch</key>
+	<array>
+		<string>0x32</string>
+		<string>0x30</string>
+		<string>0x31</string>
+		<string>0x37</string>
+		<string>0x6D</string>
+		<string>0x62</string>
+		<string>0x70</string>
+		<string>0x00</string>
+	</array>
+	<key>SmcPlatform</key>
+	<array>
+		<string>0x6A</string>
+		<string>0x37</string>
+		<string>0x39</string>
+		<string>0x61</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+	</array>
+	<key>SmcEPCI</key>
+	<string>0xF09009</string>
+	<key>AppleModelCode</key>
+	<array>
+		<string>HV2N</string>
+	</array>
+	<key>AppleBoardCode</key>
+	<array>
+		<string>HRPC</string>
+	</array>
+	<key>AppleModelYear</key>
+	<array>
+		<string>2017</string>
+		<string>2018</string>
+	</array>
+</dict>
+</plist>

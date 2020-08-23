@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BIOSVendor</key>
+	<string>Apple Inc.</string>
+	<key>BIOSVersion</key>
+	<string>1554.40.9.0.0</string>
+	<key>BIOSLegacyVersion</key>
+	<string>IM201.88Z.F000.B00.2008092228</string>
+	<key>BIOSReleaseDate</key>
+	<string>08/09/2020</string>
+	<key>SystemManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>SystemProductName</key>
+	<string>iMac20,1</string>
+	<key>SystemVersion</key>
+	<string>1.0</string>
+	<key>SystemSerialNumber</key>
+	<string>C02D38RCPN5T</string>
+	<key>SystemSKUNumber</key>
+	<string>System SKU#</string>
+	<key>SystemFamily</key>
+	<string>iMac</string>
+	<key>BoardManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>BoardProduct</key>
+	<string>Mac-CFF7D910A743CAAF</string>
+	<key>BoardVersion</key>
+	<string>iMac20,1</string>
+	<key>BoardRevision</key>
+	<string>0x1</string>
+	<key>BoardAssetTag</key>
+	<string>Base Board Asset Tag</string>
+	<key>BoardType</key>
+	<string>0xA</string>
+	<key>BoardLocationInChassis</key>
+	<string>Part Component</string>
+	<key>ChassisManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>ChassisType</key>
+	<string>0xD</string>
+	<key>ChassisVersion</key>
+	<string>Mac-CFF7D910A743CAAF</string>
+	<key>ChassisAssetTag</key>
+	<string>Asset Tag#</string>
+	<key>PlatformFeature</key>
+	<string>0x20</string>
+	<key>FirmwareFeatures</key>
+	<string>0xFD8FF576</string>
+	<key>FirmwareFeaturesMask</key>
+	<string>0xFFDFFF7F</string>
+	<key>ExtendedFirmwareFeatures</key>
+	<string>0x00000000FD8FF576</string>
+	<key>ExtendedFirmwareFeaturesMask</key>
+	<string>0x00000000FFDFFF7F</string>
+	<key>MemoryFormFactor</key>
+	<string>0x9</string>
+	<key>ProcessorType</key>
+	<array>
+		<string>0x1009</string>
+	</array>
+	<key>ProcessorBusSpeed</key>
+	<array>
+		<string>12345</string>
+	</array>
+	<key>SmcGeneration</key>
+	<string>3</string>
+	<key>SmcRevision</key>
+	<array/>
+	<key>SmcBranch</key>
+	<array/>
+	<key>SmcPlatform</key>
+	<array>
+		<string>0x6A</string>
+		<string>0x31</string>
+		<string>0x38</string>
+		<string>0x35</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+		<string>0x00</string>
+	</array>
+	<key>SmcEPCI</key>
+	<string></string>
+	<key>AppleModelCode</key>
+	<array>
+		<string>PN5T</string>
+	</array>
+	<key>AppleBoardCode</key>
+	<array>
+		<string>PHCD</string>
+	</array>
+	<key>AppleModelYear</key>
+	<array>
+		<string>2020</string>
+	</array>
+</dict>
+</plist>
