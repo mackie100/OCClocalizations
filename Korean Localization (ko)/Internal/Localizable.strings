@@ -577,7 +577,7 @@
 "Official" = "Official";
 
 /* preferencesPanel */
-"NDK" = "NDK";
+"MOD" = "MOD";
 
 /* preferencesPanel */
 "App Settings" = "환경 설정";
@@ -595,13 +595,13 @@
 "for Official OpenCore" = "for OpenCore";
 
 /* titleBar */
-"for NDK OpenCore" = "for NDK OpenCore";
+"for MOD OpenCore" = "for MOD OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "이 콘피그는 오픈코어에서 공식적으로 사용하지 않는 내용이 포함되어 있습니다. . 개발자 모드로 여시겠습니까?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "이 콘피그는 오픈코어에서 공식적으로 사용하지 않는 내용이 포함되어 있습니다. . 개발자 모드로 여시겠습니까?";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "이 콘피그는 스탠더드 콘피그입니다. 개발자 모드가 정식 릴리즈 모드로 변경하시겠습니까?";
+"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "이 콘피그는 스탠더드 콘피그입니다. 개발자 모드가 정식 릴리즈 모드로 변경하시겠습니까?";
 
 /* reading_savingOperation */
 "For changes to take effect, this app will be relaunched" = "변경 사항 업데이트를 위해 앱이 재실행 됩니다.";

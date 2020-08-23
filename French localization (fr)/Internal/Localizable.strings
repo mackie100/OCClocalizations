@@ -577,7 +577,7 @@
 "Official" = "Officiel";
 
 /* preferencesPanel */
-"NDK" = "NDK";
+"MOD" = "MOD";
 
 /* preferencesPanel */
 "App Settings" = "Paramètres de l'application";
@@ -595,13 +595,13 @@
 "for Official OpenCore" = "pour OpenCore officiel";
 
 /* titleBar */
-"for NDK OpenCore" = "pour NDK OpenCore";
+"for MOD OpenCore" = "pour MOD OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in NDK mode?" = "Cette configuration contient une ou plusieurs propriétés que Official OpenCore n'utilise généralement pas. Voulez-vous ouvrir cette configuration en mode NDK?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "Cette configuration contient une ou plusieurs propriétés que Official OpenCore n'utilise généralement pas. Voulez-vous ouvrir cette configuration en mode MOD?";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in NDK mode. Do you want switch to Official mode?" = "Cette configuration contient des propriétés standard mais vous travaillez en mode NDK. Voulez-vous passer en mode officiel?";
+"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "Cette configuration contient des propriétés standard mais vous travaillez en mode MOD. Voulez-vous passer en mode officiel?";
 
 /* reading_savingOperation */
 "For changes to take effect, this app will be relaunched" = "Pour que les modifications prennent effet, cette application sera relancée";
