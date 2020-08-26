@@ -230,6 +230,9 @@
 /* Class = "NSBox"; title = "Emulate"; ObjectID = "wEr-yw-cwt"; */
 "wEr-yw-cwt.title" = "Emulate";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false \nDescription: Use kernelcache with different checksums when available.\nOn macOS 10.6 and earlier kernelcache filename has a checksum, which essentially is adler32 from SMBIOS product name and EfiBoot device path. On certain firmwares EfiBoot device path differs between UEFI and macOS due to ACPI or hardware specifics, rendering kernelcache checksum as always different.\nThis setting allows matching the latest kernelcache with a suitable architecture when the kernelcache without suffix is unavailable, improving macOS 10.6 boot performance on several platforms."; ObjectID = "wLJ-kT-oLE"; */
+"wLJ-kT-oLE.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false \nDescription: Use kernelcache with different checksums when available.\nOn macOS 10.6 and earlier kernelcache filename has a checksum, which essentially is adler32 from SMBIOS product name and EfiBoot device path. On certain firmwares EfiBoot device path differs between UEFI and macOS due to ACPI or hardware specifics, rendering kernelcache checksum as always different.\nThis setting allows matching the latest kernelcache with a suitable architecture when the kernelcache without suffix is unavailable, improving macOS 10.6 boot performance on several platforms.";
+
 /* Class = "NSButtonCell"; title = "DisableRtcChecksum"; ObjectID = "xIA-cT-lWe"; */
 "xIA-cT-lWe.title" = "DisableRtcChecksum";
 
