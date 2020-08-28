@@ -42,13 +42,13 @@
 "8Db-Hu-t2R.ibShadowedToolTip" = "解决卡PCI configuration，如果碰到请选择yes, 一般选择no。\n注意，一般卡pci configuration都是因为自己错误的设置或硬件问题。\n在 BIOS 中启用 Above4GDecoding 是一种更加干净和安全的方法。某些 X99 板可能需要开启, 这些主板通常会在 IOPCIFamily 上遇到内核崩溃";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "8Qp-io-xPv"; */
-"8Qp-io-xPv.headerCell.title" = "Arch";
+"8Qp-io-xPv.headerCell.title" = "架构";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Kext block architecture (Any, i386, x86_64).\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This kernel driver will not be blocked unless set to true.\n4. Identifier\nType: plist string\nFailsafe: Empty string\nDescription: Kext bundle identifier (e.g. com.apple.driver.AppleTyMCEDriver).\n5. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or older.\n6. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Blocks kernel driver on specified macOS version or newer."; ObjectID = "8UL-f2-RSc"; */
 "8UL-f2-RSc.ibShadowedToolTip" = "1. Arch\n安全值: Any\n描述: Kext阻止架构 (Any, i386, x86_64).\n2. Comment\n安全值: 空字符\n描述: 用于为条目提供可读参考的任意ASCII字符串。是否使用此值由实现定义.\n3. Enabled\n安全值: false\n描述: 除非设置为true，否则不会阻止此内核驱动程序.\n4. Identifier\n安全值: 空字符\n描述: Kext捆绑包标识符（例如com.apple.driver.AppleTyMCEDriver）.\n5. MaxKernel\n安全值: 空字符\n描述: 在指定的macOS版本或更早版本上阻止内核驱动程序.\n6. MinKernel\n安全值: 空字符\n描述: 在指定的macOS版本或更高版本上阻止内核驱动程序.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "8fi-fb-Eq7"; */
-"8fi-fb-Eq7.headerCell.title" = "Arch";
+"8fi-fb-Eq7.headerCell.title" = "架构";
 
 /* Class = "NSButtonCell"; title = "DisableIoMapper"; ObjectID = "8qF-5E-PkG"; */
 "8qF-5E-PkG.title" = "DisableIoMapper";
@@ -63,7 +63,7 @@
 "9tr-6R-vGd.label" = "补丁";
 
 /* Class = "NSTextFieldCell"; title = "KernelArch"; ObjectID = "Edd-Fj-thV"; */
-"Edd-Fj-thV.title" = "KernelArch";
+"Edd-Fj-thV.title" = "内核架构";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nRequirement: 10.6 (64-bit)\nDescription: Disables PKG_CST_CONFIG_CONTROL (0xE2) MSR modification in AppleIntelCPUPowerManage- ment.kext, commonly causing early kernel panic, when it is locked from writing.\nCertain firmwares lock PKG_CST_CONFIG_CONTROL MSR register. To check its state one can use bundled VerifyMsrE2 tool. Select firmwares have this register locked on some cores only.\nAs modern firmwares provide CFG Lock setting, which allows configuring PKG_CST_CONFIG_CONTROL MSR register lock, this option should be avoided whenever possible. For several APTIO firmwares not displaying CFG Lock setting in the GUI it is possible to access the option directly:\n(a) Download UEFITool and IFR-Extractor.\n(b) Open your firmware image in UEFITool and find CFG Lock unicode string. If it is not present, your firmware may not have this option and you should stop.\n(c) Extract the Setup.bin PE32 Image Section (the one UEFITool found) through Extract Body menu option.\n(d) Run IFR-Extractor on the extracted file (e.g. ./ifrextract Setup.bin Setup.txt).\n(e) Find CFG Lock, VarStoreInfo (VarOffset/VarName): in Setup.txt and remember the offset right after it (e.g. 0x123).\n(f) Download and run Modified GRUB Shell compiled by brainsucker or use a newer version by datasone.\n(g) Enter setup_var 0x123 0x00 command, where 0x123 should be replaced by your actual offset, and reboot.\nWARNING: Variable offsets are unique not only to each motherboard but even to its firmware version. Never ever try to use an offset without checking."; ObjectID = "FUx-RJ-QTK"; */
 "FUx-RJ-QTK.ibShadowedToolTip" = "请确保你的BIOS中已经关闭了CFG Lock。如果你不会解这个锁，你就选择YES，这个适用于四代以前的机型。\n选择这项一般就不要选后面的XcpmCfgLock选项，解锁的情况下选择NO。";
@@ -156,16 +156,16 @@
 "ewU-gZ-tet.title" = "正在加载资源";
 
 /* Class = "NSBox"; title = "Scheme"; ObjectID = "fHU-xs-V2l"; */
-"fHU-xs-V2l.title" = "Scheme";
+"fHU-xs-V2l.title" = "方案";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "fUC-fp-4l5"; */
-"fUC-fp-4l5.headerCell.title" = "Arch";
+"fUC-fp-4l5.headerCell.title" = "架构";
 
 /* Class = "NSButtonCell"; title = "CustomSMBIOSGuid"; ObjectID = "faf-ix-5sI"; */
 "faf-ix-5sI.title" = "CustomSMBIOSGuid";
 
 /* Class = "NSTextFieldCell"; title = "KernelCache"; ObjectID = "g1H-e8-UUH"; */
-"g1H-e8-UUH.title" = "KernelCache";
+"g1H-e8-UUH.title" = "内核缓存";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "gFl-jZ-XPd"; */
 "gFl-jZ-XPd.headerCell.title" = "最大内核";
@@ -210,7 +210,7 @@
 "rXc-DS-H2x.ibShadowedToolTip" = "禁用 AppleIntelCpuPowerManagement.\n对于在macOS中不支持原生电源管理驱动程序的CPU，此选项是NullCpuPowerManagement.kext的首选替代方案。";
 
 /* Class = "NSButtonCell"; title = "FuzzyMatch"; ObjectID = "srr-gQ-RrN"; */
-"srr-gQ-RrN.title" = "FuzzyMatch";
+"srr-gQ-RrN.title" = "模糊匹配";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "tya-o0-N6w"; */
 "tya-o0-N6w.headerCell.title" = "最大内核";
