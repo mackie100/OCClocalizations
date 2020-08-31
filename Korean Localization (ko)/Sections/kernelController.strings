@@ -12,7 +12,7 @@
 "19Q-wm-aZQ.headerCell.title" = "코멘트";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier"; ObjectID = "4ac-sL-evA"; */
-"4ac-sL-evA.headerCell.title" = "Identifier";
+"4ac-sL-evA.headerCell.title" = "구분자";
 
 /* Class = "NSTableColumn"; headerCell.title = "ExecutablePath"; ObjectID = "5Zf-0g-20b"; */
 "5Zf-0g-20b.headerCell.title" = "적용위치";
@@ -24,7 +24,7 @@
 "6Aa-HL-hah.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8 (not required for older)\nDescription: Disables IOMapper support in XNU (VT-d), which may conflict with the firmware implementation.\nNote: This option is a preferred alternative to dropping DMAR ACPI table and disabling VT-d in firmware preferences, which does not break VT-d support in other systems in case they need it.";
 
 /* Class = "NSTableColumn"; headerCell.title = "ExecutablePath"; ObjectID = "6KC-Ck-oJg"; */
-"6KC-Ck-oJg.headerCell.title" = "ExecutablePath";
+"6KC-Ck-oJg.headerCell.title" = "적용위치";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.15 (not required for older)\nDescription: Disables kernel panic on setPowerState timeout.\nAn additional security measure was added to macOS Catalina (10.15) causing kernel panic on power change timeout for Apple drivers. Sometimes it may cause issues on misconfigured hardware, notably digital audio, which sometimes fails to wake up. For debug kernels setpowerstate_panic=0 boot argument should be used, which is otherwise equivalent to this quirk."; ObjectID = "6Mq-wE-cHt"; */
 "6Mq-wE-cHt.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.15 (not required for older)\nDescription: Disables kernel panic on setPowerState timeout.\nAn additional security measure was added to macOS Catalina (10.15) causing kernel panic on power change timeout for Apple drivers. Sometimes it may cause issues on misconfigured hardware, notably digital audio, which sometimes fails to wake up. For debug kernels setpowerstate_panic=0 boot argument should be used, which is otherwise equivalent to this quirk.";
@@ -39,10 +39,10 @@
 "7u5-bu-FWR.title" = "PanicNoKextDump";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier*"; ObjectID = "838-ax-A45"; */
-"838-ax-A45.headerCell.title" = "Identifier*";
+"838-ax-A45.headerCell.title" = "구분자*";
 
 /* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "8BF-rh-btZ"; */
-"8BF-rh-btZ.headerCell.title" = "Count";
+"8BF-rh-btZ.headerCell.title" = "카운트";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.10\nDescription: Increases 32-bit PCI bar size in IOPCIFamily from 1 to 4 GBs.\nNote: This option should be avoided whenever possible. In general the necessity of this option means misconfigured or broken firmware."; ObjectID = "8Db-Hu-t2R"; */
 "8Db-Hu-t2R.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.10\nDescription: Increases 32-bit PCI bar size in IOPCIFamily from 1 to 4 GBs.\nNote: This option should be avoided whenever possible. In general the necessity of this option means misconfigured or broken firmware.";
@@ -96,7 +96,7 @@
 "IQu-iO-MYc.headerCell.title" = "Mask";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier*"; ObjectID = "IWc-Ff-bdQ"; */
-"IWc-Ff-bdQ.headerCell.title" = "Identifier*";
+"IWc-Ff-bdQ.headerCell.title" = "구분자*";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "K9H-md-xVS"; */
 "K9H-md-xVS.headerCell.title" = "활성화";
@@ -111,7 +111,7 @@
 "N6C-NB-CMk.headerCell.title" = "Arch";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "Ntg-7A-K1a"; */
-"Ntg-7A-K1a.headerCell.title" = "Comment";
+"Ntg-7A-K1a.headerCell.title" = "코멘트";
 
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "Oe6-LD-h7w"; */
 "Oe6-LD-h7w.headerCell.title" = "파일위치*";
@@ -135,7 +135,7 @@
 "SHQ-fm-Uec.title" = "ExternalDiskIcons";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "TcN-ku-fY2"; */
-"TcN-ku-fY2.headerCell.title" = "Enabled";
+"TcN-ku-fY2.headerCell.title" = "활성화";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "VgW-t5-zY9"; */
 "VgW-t5-zY9.title" = "동시 선택 가능";
@@ -228,7 +228,7 @@
 "mWg-wh-eGt.label" = "추가";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "mup-PJ-Q4D"; */
-"mup-PJ-Q4D.title" = "Browse";
+"mup-PJ-Q4D.title" = "찾아보기";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.6 (64-bit)\nDescription: Disables kernel panic on LAPIC interrupts."; ObjectID = "nsg-T6-DJT"; */
 "nsg-T6-DJT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.6 (64-bit)\nDescription: Disables kernel panic on LAPIC interrupts.";
@@ -258,7 +258,7 @@
 "v6y-N9-uHT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8 (not required for older)\nDescription: Disables multiple MSR access critical for select CPUs, which have no native XCPM support.\nThis is normally used in conjunction with Emulate section on Haswell-E, Broadwell-E, Skylake-SP, and similar CPUs.\nNote: Additional not provided patches will be required for Ivy Bridge or Pentium CPUs. It is recommended to use AppleIntelCpuPowerManagement.kext for the former.";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "vgG-WU-Sc2"; */
-"vgG-WU-Sc2.title" = "Multiple selection allowed";
+"vgG-WU-Sc2.title" = "다중 선택 허용됨";
 
 /* Class = "NSButtonCell"; title = "ThirdPartyDrives"; ObjectID = "w0k-rY-QSy"; */
 "w0k-rY-QSy.title" = "ThirdPartyDrives";
