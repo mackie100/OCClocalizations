@@ -147,7 +147,7 @@
 "PIX-Ia-ajs.title" = "ConsoleAttributes\n文本启动菜单颜色";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable password protection to allow sensitive operations.\n\nPassword protection ensures that sensitive operations like booting a non-default operating system (e.g. macOS recovery or a tool), resetting NVRAM storage, trying to boot into a non-default mode (e.g. verbose mode or safe mode) are not allowed without explicit user authentication by a custom password. Currently password and salt are hashed with 5000000 iterations of SHA-512.\n\nNote: This functionality is currently in development and is not ready for daily usage."; ObjectID = "PbU-if-N7O"; */
-"PbU-if-N7O.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable password protection to allow sensitive operations.\n\nPassword protection ensures that sensitive operations like booting a non-default operating system (e.g. macOS recovery or a tool), resetting NVRAM storage, trying to boot into a non-default mode (e.g. verbose mode or safe mode) are not allowed without explicit user authentication by a custom password. Currently password and salt are hashed with 5000000 iterations of SHA-512.\n\nNote: This functionality is currently in development and is not ready for daily usage.";
+"PbU-if-N7O.ibShadowedToolTip" = "启用密码保护以允许敏感操作.\n\n密码保护可确保敏感操作，例如引导非默认操作系统 (例如: macOS recovery或工具), 重置NVRAM存储，尝试引导到非默认模式 (例如: verbose(啰嗦)模式或safe(安全)模式) 如果没有通过自定义密码进行明确的用户身份验证，则不允许. 当前，密码和密码加盐值(一种对密码加密的算法)已通过SHA-512的5000000次迭代进行哈希处理.\n\n注意: 此功能当前正在开发中，尚不能用于日常使用.";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Pkl-Zl-stw"; */
 "Pkl-Zl-stw.title" = "浏览";
@@ -234,7 +234,7 @@
 "cN2-ao-nCB.title" = "PickerAudioAssist\n启用语音辅助";
 
 /* Class = "NSTextFieldCell"; title = "PasswordHash"; ObjectID = "cz1-6R-TEf"; */
-"cz1-6R-TEf.title" = "PasswordHash";
+"cz1-6R-TEf.title" = "PasswordHash\n密码加盐算法";
 
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Display Level";
@@ -288,7 +288,7 @@
 "l6D-xS-M37.ibShadowedToolTip" = "Apple安全启动硬件模型。\n定义Apple安全启动硬件模型和策略。 指定此值将定义可引导的操作系统。 在指定型号发布之前出厂的操作系统将无法启动。有效值:\n\n• Default — 最近可用的模型，当前设置为j137。\n• Disabled — 没有型号，安全启动将被禁用。\n• j137 — iMacPro1,1 (2017年12月),最低macOS 10.13.2（17C2111）\n• j680 — MacBookPro15,1 (2018年七月),最低macOS 10.13.6（17C2112）\n• j132 — MacBookPro15,2 (2018年七月),最低macOS 10.13.6（17C2112）\n• j174 — Macmini8,1 (2018年十月) 最低macOS 10.14（18A2063）\n• j140k — MacBookAir8,1 (2018年十月) 最低macOS 10.14.1 (18B2084)\n• j780 — MacBookPro15,3 (2019年五月) 最低macOS 10.14.5 (18F132)\n• j213 — MacBookPro15,4 (2019年七月) 最低macOS 10.14.5 (18F2058)\n• j140a — MacBookAir8,2 (2019年七月) 最低macOS 10.14.5 (18F2058)\n• j152f — MacBookPro16,1 (2019年十一月) 最低macOS 10.15.1 (19B2093)\n• j160 — MacPro7,1 (2019年十二月) 最低macOS 10.15.1 (19B88)\n• j230k — MacBookAir9,1 (2020年3月) 最低macOS 10.15.3 (19D2064)\n• j214k — MacBookPro16,2 (2020年5月) 最低macOS 10.15.4 (19E2269)\n• j223 — MacBookPro16,3 (2020年5月) 最低macOS 10.15.4 (19E2265)\n• j215 — MacBookPro16,4 (2020年6月) 最低macOS 10.15.5 (19F96)\n• j185 — iMac20,1 (2020年8月) 最低macOS 10.15.6 (19G2005)\n• j185f — iMac20,2 (2020年8月) 最低macOS 10.15.6 (19G2005)\n\nPlatformInfo和SecureBootModel是独立的，从而可以通过任何SMBIOS启用Apple Secure Boot。\n将SecureBootModel设置为任何有效值但Disabled等效于Apple Secure Boot的\"中级安全性\"。 要获得完全安全性，还需要指定ApECID值。\n\n注意: 默认值会随着时间的增加而增加，以支持最新的主发行版操作系统。 不建议同时使用ApECID和默认值。";
 
 /* Class = "NSButtonCell"; title = "EnablePassword"; ObjectID = "lLV-4d-gWP"; */
-"lLV-4d-gWP.title" = "EnablePassword";
+"lLV-4d-gWP.title" = "启用密码";
 
 /* Class = "NSButtonCell"; title = "SkipCustomEntryCheck"; ObjectID = "mB0-8o-rL6"; */
 "mB0-8o-rL6.title" = "SkipCustomEntryCheck";
