@@ -57,7 +57,7 @@
 "8Gl-6A-OsL.ibShadowedToolTip" = "用于指定OpenCore无法自动找到的无规律引导路径。\n名称:OpenCore启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助条目，可在启动菜单中隐藏\n路径:\n引导磁盘的PCI路径，一般可以通过替换启动文件为DEBUG版本，然后勾选Disable WatchDog选项，Target选项填入67，启动一次后，在EFI分区里产生的日志文件里查找如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi这样的信息。\n可以提前在MACOS里使用diskutil info disk0s2 |grep \"UUID\"这样的命令提前获取到你想要启动的分区UUID，然后在日志文件里搜索UUID的值，可以快速获取到完整PCI路径！\n对于MOD的fork(MOD)版本，可在启动界面按F9保存所有启动设备路径到文件并保存在EFI分区";
 
 /* Class = "NSTextFieldCell"; title = "PasswordSalt"; ObjectID = "8Xp-t8-QVB"; */
-"8Xp-t8-QVB.title" = "PasswordSalt";
+"8Xp-t8-QVB.title" = "PasswordSalt\n密码加盐";
 
 /* Class = "NSButtonCell"; title = "Disable WatchDog"; ObjectID = "9LG-wP-7Np"; */
 "9LG-wP-7Np.title" = "Disable WatchDog";
@@ -111,7 +111,7 @@
 "I0K-dq-ofU.title" = "允许扫描PCI设备";
 
 /* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
-"Jpe-QB-x2r.title" = "AllowNvramReset";
+"Jpe-QB-x2r.title" = "AllowNvramReset\n启用重置Nvram功能";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
 "KRE-fs-cVq.title" = "取消全选";
@@ -126,7 +126,7 @@
 "LCd-qL-7KC.ibShadowedToolTip" = "如果macOS在启动时卡在某些地方, 可能需要设置为YES, 通常用于排除错误干扰";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data 64 bytes\nFailsafe: all zero\nDescription: Password hash used when EnabledPassword is set."; ObjectID = "NCW-lH-X8S"; */
-"NCW-lH-X8S.ibShadowedToolTip" = "Type: plist data 64 bytes\nFailsafe: all zero\nDescription: Password hash used when EnabledPassword is set.";
+"NCW-lH-X8S.ibShadowedToolTip" = "设置启用密码保护时使用密码哈希算法.";
 
 /* Class = "NSButtonCell"; title = "Changes used icon set to an alternate one if it is supported"; ObjectID = "NFd-Yp-DAy"; */
 "NFd-Yp-DAy.title" = "如果支持，将使用过的图标集更改为备用图标";
@@ -234,7 +234,7 @@
 "cN2-ao-nCB.title" = "PickerAudioAssist\n启用语音辅助";
 
 /* Class = "NSTextFieldCell"; title = "PasswordHash"; ObjectID = "cz1-6R-TEf"; */
-"cz1-6R-TEf.title" = "PasswordHash\n密码加盐算法";
+"cz1-6R-TEf.title" = "PasswordHash\n密码哈希";
 
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Display Level";
@@ -288,7 +288,7 @@
 "l6D-xS-M37.ibShadowedToolTip" = "Apple安全启动硬件模型。\n定义Apple安全启动硬件模型和策略。 指定此值将定义可引导的操作系统。 在指定型号发布之前出厂的操作系统将无法启动。有效值:\n\n• Default — 最近可用的模型，当前设置为j137。\n• Disabled — 没有型号，安全启动将被禁用。\n• j137 — iMacPro1,1 (2017年12月),最低macOS 10.13.2（17C2111）\n• j680 — MacBookPro15,1 (2018年七月),最低macOS 10.13.6（17C2112）\n• j132 — MacBookPro15,2 (2018年七月),最低macOS 10.13.6（17C2112）\n• j174 — Macmini8,1 (2018年十月) 最低macOS 10.14（18A2063）\n• j140k — MacBookAir8,1 (2018年十月) 最低macOS 10.14.1 (18B2084)\n• j780 — MacBookPro15,3 (2019年五月) 最低macOS 10.14.5 (18F132)\n• j213 — MacBookPro15,4 (2019年七月) 最低macOS 10.14.5 (18F2058)\n• j140a — MacBookAir8,2 (2019年七月) 最低macOS 10.14.5 (18F2058)\n• j152f — MacBookPro16,1 (2019年十一月) 最低macOS 10.15.1 (19B2093)\n• j160 — MacPro7,1 (2019年十二月) 最低macOS 10.15.1 (19B88)\n• j230k — MacBookAir9,1 (2020年3月) 最低macOS 10.15.3 (19D2064)\n• j214k — MacBookPro16,2 (2020年5月) 最低macOS 10.15.4 (19E2269)\n• j223 — MacBookPro16,3 (2020年5月) 最低macOS 10.15.4 (19E2265)\n• j215 — MacBookPro16,4 (2020年6月) 最低macOS 10.15.5 (19F96)\n• j185 — iMac20,1 (2020年8月) 最低macOS 10.15.6 (19G2005)\n• j185f — iMac20,2 (2020年8月) 最低macOS 10.15.6 (19G2005)\n\nPlatformInfo和SecureBootModel是独立的，从而可以通过任何SMBIOS启用Apple Secure Boot。\n将SecureBootModel设置为任何有效值但Disabled等效于Apple Secure Boot的\"中级安全性\"。 要获得完全安全性，还需要指定ApECID值。\n\n注意: 默认值会随着时间的增加而增加，以支持最新的主发行版操作系统。 不建议同时使用ApECID和默认值。";
 
 /* Class = "NSButtonCell"; title = "EnablePassword"; ObjectID = "lLV-4d-gWP"; */
-"lLV-4d-gWP.title" = "启用密码";
+"lLV-4d-gWP.title" = "EnablePassword\n启用密码保护";
 
 /* Class = "NSButtonCell"; title = "SkipCustomEntryCheck"; ObjectID = "mB0-8o-rL6"; */
 "mB0-8o-rL6.title" = "SkipCustomEntryCheck";
@@ -324,13 +324,13 @@
 "pTC-aG-QK1.ibShadowedToolTip" = "允许CMD + OPT + P + R或在启动菜单中显示ResetNVRAM重置菜单。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data\nFailsafe: empty\nDescription: Password salt used when EnabledPassword is set."; ObjectID = "pYq-Ve-K08"; */
-"pYq-Ve-K08.ibShadowedToolTip" = "Type: plist data\nFailsafe: empty\nDescription: Password salt used when EnabledPassword is set.";
+"pYq-Ve-K08.ibShadowedToolTip" = "设置启用密码保护时使用密码加盐算法.";
 
 /* Class = "NSTextFieldCell"; title = "Halt Level"; ObjectID = "pqr-DX-ZAM"; */
 "pqr-DX-ZAM.title" = "Halt Level";
 
 /* Class = "NSButtonCell"; title = "AllowSetDefault"; ObjectID = "qpq-Le-cti"; */
-"qpq-Le-cti.title" = "AllowSetDefault";
+"qpq-Le-cti.title" = "AllowSetDefault\n启用设置默认启动项";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker."; ObjectID = "rQF-20-vFl"; */
 "rQF-20-vFl.ibShadowedToolTip" = "允许用CTRL+Enter或CTRL+Index(启动菜单项目编号)来设置启动菜单中的下次默认启动选项。";
@@ -342,7 +342,7 @@
 "tBp-D4-d9x.title" = "AppleDebug";
 
 /* Class = "NSButtonCell"; title = "AuthRestart"; ObjectID = "tI2-d3-co4"; */
-"tI2-d3-co4.title" = "AuthRestart";
+"tI2-d3-co4.title" = "AuthRestart\n身份验证重启";
 
 /* Class = "NSButtonCell"; title = "Provides custom icons for boot entries"; ObjectID = "tLD-8o-zGU"; */
 "tLD-8o-zGU.title" = "为引导项提供自定义图标";
