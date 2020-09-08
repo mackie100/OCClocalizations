@@ -27,7 +27,7 @@ ACPI
  [Path]==SSDT-OLA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件，这些文件会注入很可能阻止启动的随机数据。 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
  [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件，这些文件会注入很可能阻止启动的随机数据。 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
 
-:Block
+:Delete
  [Enabled]==no "!<b>{$Comment}</b> 补丁状态: <b>禁用</b>! 启用它以确保SSDT-CPU-PM正常工作."
  [Enabled]==yes " <b>{$Comment}</b> 补丁状态: <b>>启用</b>"
 

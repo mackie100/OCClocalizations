@@ -1,6 +1,6 @@
-=<div style="text-align:center;font-size:30px;">三代Ivy Bridge笔记本 OpenCore 0.6.0 健全性检查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">三代Ivy Bridge笔记本 OpenCore 0.6.1 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.0 Intel Ivy Bridge Desktop Sanity Check
+# OpenCore v0.6.1 Intel Ivy Bridge Desktop Sanity Check
 =参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#kernel
@@ -99,6 +99,7 @@ Kernel
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no" <b>{$setting}</b> = <b>{$value}</b> -->如果您有Dell或VIAO主板，请启用此功能"
  DisableIoMapper=yes
+ DisableLinkeditJettison=yes
  DisableRtcChecksum=no
  DummyPowerManagement=no
  ExternalDiskIcons=no
@@ -144,12 +145,16 @@ Misc
 :Security
  AllowNvramReset=yes
  AllowSetDefault=yes
+ ApECID=0
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用，可以使用NVRAM参数里添加"
- BootProtect=Bootstrap
+ BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ DmgLoading~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ EnablePassword=no
  RequireSignature~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  Vault=Optional
+ SecureBootModel~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  HaltLevel=2147483648
  ExposeSensitiveData=6 :" <b>{$setting}</b> = <b>{$value}</b>"
  ScanPolicy=0 :"-<b>{$setting}</b> = <b>{$value}</b>. -->初始配置时候这里可以为0，但是配置完成后，请在OCC里自定义显示哪些启动盘"
@@ -244,16 +249,19 @@ UEFI
  TimerResolution=50000
 
 :ProtocolOverrides
- count==16 :"!-->在OpenCore 0.6.0里，您应该在UEFI/ProtocolOverrides部分中正确设置16个选项"
+ count==18 :"!-->在OpenCore 0.6.1里，您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
  AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
  AppleImageConversion=no
+ AppleImg4Verification=no
  AppleKeyMap=no
  AppleRtcRam=no
+ AppleSecureBoot=no
  AppleSmcIo=no
+ AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
  ConsoleControl~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 UEFI/TextRenderer"
@@ -263,7 +271,7 @@ UEFI
  UnicodeCollation=no
 
 :Output
- count==11 :"!-->在OpenCore 0.6.0里，您应该在<b>UEFI/OUTPUT</b>部分中设置11个设置"
+ count==11 :"!-->在OpenCore 0.6.1里，您应该在<b>UEFI/OUTPUT</b>部分中设置11个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"

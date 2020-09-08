@@ -1,6 +1,6 @@
-=<div style="text-align:center;font-size:30px;">三代Ivy Bridge笔记本 OpenCore 0.6.0 健全性检查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">二代Sandy Bridge笔记本 OpenCore 0.6.1 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.0 Intel Ivy Bridge Desktop Sanity Check
+# OpenCore v0.6.1 Intel Sandy Bridge Laptop Sanity Check
 =参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#kernel
@@ -29,7 +29,7 @@ ACPI
  [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件，这些文件会注入很可能阻止启动的随机数据。 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
 
 :Delete
- [Enabled]==no "!<b>{$Comment}</b> Patch is <b>disabled</b>! Enable this to make sure SSDT-CPU-PM works."
+ [Enabled]==no "!<b>{$Comment}</b> -->补丁是 <b>禁用</b>状态! 启用它以确保SSDT-CPU-PM正常工作."
  [Enabled]==yes " <b>{$Comment}</b> -->补丁现在是 <b>启用</b>状态"
 
 :Quirks
@@ -67,7 +67,7 @@ DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="03006601|04006601|09006601" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="00000100" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
  AAPL,ig-platform-id~=.* "!**{$setting}** 是错误的位置, iGPU位置是 PciRoot(0x0)/Pci(0x2,0x0)"
@@ -99,7 +99,8 @@ Kernel
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no" <b>{$setting}</b> = <b>{$value}</b> -->如果您有Dell或VIAO主板，请启用此功能"
  DisableIoMapper=yes
- DisableRtcChecksum=no
+ DisableLinkeditJettison=yes
+ DisableRtcChecksum~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  DummyPowerManagement=no
  ExternalDiskIcons=no
  IncreasePciBarSize=no
@@ -144,12 +145,16 @@ Misc
 :Security
  AllowNvramReset=yes
  AllowSetDefault=yes
+ ApECID=0
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用，可以使用NVRAM参数里添加"
- BootProtect=Bootstrap
+ BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ DmgLoading~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ EnablePassword=no
  RequireSignature~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  Vault=Optional
+ SecureBootModel~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  HaltLevel=2147483648
  ExposeSensitiveData=6 :" <b>{$setting}</b> = <b>{$value}</b>"
  ScanPolicy=0 :"-<b>{$setting}</b> = <b>{$value}</b>. -->初始配置时候这里可以为0，但是配置完成后，请在OCC里自定义显示哪些启动盘"
@@ -188,7 +193,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
- SystemProductName~="((MacBookAir5,1|MacBookAir5,2|MacBookPro10,1|MacBookPro10,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于三代Ivy Bridge笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>"
+ SystemProductName~="(MacBookAir4,1|MacBookAir4,2|MacBookPro8,1|MacBookPro8,2|MacBookPro8,3)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于二代Sandy Bridge笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
@@ -244,16 +249,19 @@ UEFI
  TimerResolution=50000
 
 :ProtocolOverrides
- count==16 :"!-->在OpenCore 0.6.0里，您应该在UEFI/ProtocolOverrides部分中正确设置16个选项"
+ count==18 :"!-->在OpenCore 0.6.1里，您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
  AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
  AppleImageConversion=no
+ AppleImg4Verification=no
  AppleKeyMap=no
  AppleRtcRam=no
+ AppleSecureBoot=no
  AppleSmcIo=no
+ AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
  ConsoleControl~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 UEFI/TextRenderer"
@@ -263,7 +271,7 @@ UEFI
  UnicodeCollation=no
 
 :Output
- count==11 :"!-->在OpenCore 0.6.0里，您应该在<b>UEFI/OUTPUT</b>部分中设置11个设置"
+ count==11 :"!-->在OpenCore 0.6.1里，您应该在<b>UEFI/OUTPUT</b>部分中设置11个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"

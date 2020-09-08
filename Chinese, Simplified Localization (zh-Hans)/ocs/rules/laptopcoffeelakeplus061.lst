@@ -1,36 +1,34 @@
-=<div style="text-align:center;font-size:30px;">三代Ivy Bridge笔记本 OpenCore 0.6.0 健全性检查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">九代/十代CoffeeLake系列笔记本 OpenCore 0.6.1 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.0 Intel Ivy Bridge Desktop Sanity Check
-=参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html</a>
+# OpenCore v0.6.1 Intel Coffee Lake Sanity Check
+=参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html</a>
 =<hr noshade=\"noshade\" />
-# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#kernel
-# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi
-# [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
-# [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
-# [scanpolicy]:https://dortania.github.io/OpenCore-Install-Guide/post-install/security.html#scanpolicy
-# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo
-# [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#deviceproperties
+# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#kernel
+# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#acpi
+# [kexts]:https://dortania.github.io/ktext.html#kexts
+# [debug]:https://dortania.github.io/troubleshooting/debug.html
+# [scanpolicy]:https://dortania.github.io/post-install/security.html#scanpolicy
+# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo
+# [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html##deviceproperties
 
 ACPI
 :Add
- count==0 "-您没有SSDT补丁。请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> -->您不应该包括转储的DSDT。请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
+ count==0 "-您没有SSDT补丁。请查看<a href=https://dortania.github.io/config-laptop.plist/kaby-lake.html#acpi>[Acpi Docs]</a>"
+ [Path]==DSDT.aml "-<b>{$Path}</b> -->您不应该包括转储的DSDT。请查看<a href=https://dortania.github.io/config-laptop.plist/coffee-lake-plus.html#acpi>[ACPI文档]</a>."
  [Path]==SSDT-1.aml "-<b>{$Path}</b> -->这只是SSDT的一个例子。如果你真的是自己做的, 称它为更具描述性的东西"
- [Path]==SSDT-PLUG.aml "-<b>{$Path}</b> -->在Sandy和Ivy Bridge系统上不起作用"
- [Path]==SSDT-GPIO.aml "-<b>{$Path}</b> -->这不属于Ivy Bridge平台下的"
  [Path]~=".dsl$" "!<b>{$Path}</b> -->在此处只能是.aml文件。 dsl文件需要编译为.aml"
  [Enabled]==no "-<b>{$Path}</b> -->状态是<b>已禁用</b>. 启用或删除它可以去除此警告"
- [Path]==SSDT-EC-USBX.aml&SSDT-EC.aml "---><b>{$Path}</b> 不要同时使用 <b>SSDT-EC-USBX</b> 和 <b>SSDT-EC</b>"
- [Path]~=-EC.+aml :"%-->您可能需要类似SSDT-EC.aml或SSDT-EC-USBX.aml的文件.请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
+ [Path]!=SSDT-PLUG.aml "--->缺少<font color=red><b>SSDT-PLUG.aml</b></font>. 请查看<a href=https://dortania.github.io/config-laptop.plist/coffee-lake-plus.html#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-EC-USBX.aml&SSDT-EC.aml"-->-<b>{$Path}/b>不要同时使用 <b>SSDT-EC-USBX</b>和<b>SSDT-EC</b>"
+ [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX.aml的文件.请查看<a href=https://dortania.github.io/config-laptop.plist/coffee-lake-plus.html#acpi>[ACPI文档]</a>"
+ [Path]!=SSDT-AWAC.aml "-<b>SSDT-AWAC.aml<b> --->缺少. 如果你需要它，请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#acpi>[Acpi Docs]</a>"
+ [Path]!=SSDT-PMC.aml "-<b>SSDT-PMC.aml<b> --->缺少. 如果你需要它，请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#acpi>[Acpi Docs]</a>"
  [Path]!=SSDT-PNLF.aml "-<b>{$Path}</b> -->文件缺失!"
- [Path]==SSDT-PNLF-CFL.aml "-<b>{$Path}</b> -->这不包括KabyLake和较旧的笔记本电脑上，而应使用SSDT-PNLF。 请查看 [ACPI Docs][acpi]."
+ [Path]==SSDT-PNLF-CFL.aml "-<b>{$Path}</b> -->不应在Coffee Lake和更新的笔记本电脑中包括此设备，而应使用SSDT-PNLF-CFL。 请查看 [ACPI Docs][acpi]."
  [Path]==* " <b>{$Path}</b> -->确保此文件在您的<b>OC/ACPI</b>目录中"
- [Path]==SSDT-OLA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件，这些文件会注入很可能阻止启动的随机数据。 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
- [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件，这些文件会注入很可能阻止启动的随机数据。 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
-
-:Delete
- [Enabled]==no "!<b>{$Comment}</b> Patch is <b>disabled</b>! Enable this to make sure SSDT-CPU-PM works."
- [Enabled]==yes " <b>{$Comment}</b> -->补丁现在是 <b>启用</b>状态"
+ [Path]==SSDT-XOSI.aml&SSDT-GPI0.aml "-<b>{$Path}</b> --> 不要同时使用<b>SSDT-XOSI</b>和<b>SSDT-GPI0</b>"
+ [Path]==SSDT-OLA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件，这些文件会注入很可能阻止启动的随机数据。 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件，这些文件会注入很可能阻止启动的随机数据。 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#acpi>[Acpi Docs]</a>"
 
 :Quirks
  count==5
@@ -44,7 +42,7 @@ Booter
 
 :Quirks
  AvoidRuntimeDefrag=yes
- DevirtualiseMmio=no
+ DevirtualiseMmio=yes
  DisableSingleUser=no
  DisableVariableWrite=no
  DiscardHibernateMap=no
@@ -56,33 +54,32 @@ Booter
  ProtectSecureBoot=no
  ProtectUefiServices=no
  ProvideCustomSlide=yes
- RebuildAppleMemoryMap=no
+ RebuildAppleMemoryMap=yes
  SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
- SyncRuntimePermissions=no
+ SyncRuntimePermissions=yes
  ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>ProvideMaxSlide</font></b>选项"
 
 DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="03006601|04006601|09006601" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="00009B3e" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html##deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
- AAPL,ig-platform-id~=.* "!**{$setting}** 是错误的位置, iGPU位置是 PciRoot(0x0)/Pci(0x2,0x0)"
+ AAPL,ig-platform-id~=.* "!<b>{$setting}</b> 位置错误, iGPU位置为 PciRoot(0x0)/Pci(0x2,0x0)"
 
 Kernel
 
 :Add
- count==0 "!-->您没有Kexts. 您至少得需要Lilu.kext和VirtualSMC.kext. 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts文档]</a>"
+ count==0 "!-->您没有Kexts. 您至少得需要Lilu.kext和VirtualSMC.kext. 请查看<a href=https://dortania.github.io/ktext.html#kexts>[Kexts文档]</a>"
  [BundlePath]==Lilu.kext " <b>Lilu.kext</b>-->确保此Kext在您的 <b>OC/Kexts</b> 目录,这是需要放在第一个的kext":"!-->缺少<b>Lilu.kext</b>. 将其添加到此列表的顶部"
  [BundlePath]==FakeSMC.kext&VirtualSMC.kext "---><b>{$BundlePath}<b> 不要同时使用 <b>FakeSMC.kext<b> 和 <b>VirtualSMC.kext<b>"
  [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "--->你应该在此处添加 <b>FakeSMC.kext</b> 或 <b>VirtualSMC.kext</b>"
  [BundlePath]==VoodooHDA.kext&AppleALC.kext "---><b>{$BundlePath}</b> 不要同时使用 <b>VoodooHDA.kext</b> 和 <b>AppleALC.kext</b>"
  [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>N 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
- [BundlePath]==VoodooHDA.kext " <b>{$BundlePath}</b> -->请注意:<b>AppleALC.kext</b> 往往具有更好的音频质量"
- [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts Docs]</a>"
+ [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 请查看<a href=https://dortania.github.io/ktext.html#kexts>[Kexts Docs]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 这是AMD专用的kext，请勿在Intel上使用"
  [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然这可能有效, 但<b>SmallTreeIntel82576.kext</b> 被认为更可靠"
  [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->请确保您的笔记本电脑装有光传感器，否则可能会导致问题"
@@ -99,6 +96,7 @@ Kernel
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no" <b>{$setting}</b> = <b>{$value}</b> -->如果您有Dell或VIAO主板，请启用此功能"
  DisableIoMapper=yes
+ DisableLinkeditJettison=yes
  DisableRtcChecksum=no
  DummyPowerManagement=no
  ExternalDiskIcons=no
@@ -133,8 +131,8 @@ Misc
  AppleDebug=yes
  ApplePanic=yes
  DisableWatchDog=yes :" <b>{$setting}</b> -->启用此功能将有助于调试"
- Target=67 :" <b>{$setting}</b> -->有关调试目标编号的更多信息，请参见<a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs]</a>"
- DisplayLevel=2147483714 :" <b>{$setting}</b> -->有关更多信息，请参见<a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs]</a>调试显示级别"
+ Target=67 :" <b>{$setting}</b> -->有关调试目标编号的更多信息，请参见<a href=https://dortania.github.io/troubleshooting/debug.html>[Debugging Docs]</a>"
+ DisplayLevel=2147483714 :" <b>{$setting}</b> -->有关更多信息，请参见<a href=https://dortania.github.io/troubleshooting/debug.html>[Debugging Docs]</a>调试显示级别"
  DisplayDelay=0
  SysReport=no : " -->只有在使用Debug版时才可以使用<b>{$setting}</b>=yes"
 
@@ -144,12 +142,16 @@ Misc
 :Security
  AllowNvramReset=yes
  AllowSetDefault=yes
+ ApECID=0
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用，可以使用NVRAM参数里添加"
- BootProtect=Bootstrap
+ BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ DmgLoading~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ EnablePassword=no
  RequireSignature~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  Vault=Optional
+ SecureBootModel~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  HaltLevel=2147483648
  ExposeSensitiveData=6 :" <b>{$setting}</b> = <b>{$value}</b>"
  ScanPolicy=0 :"-<b>{$setting}</b> = <b>{$value}</b>. -->初始配置时候这里可以为0，但是配置完成后，请在OCC里自定义显示哪些启动盘"
@@ -171,8 +173,8 @@ NVRAM
  boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> -->我想你的意思是 <b>npci=</b> 而不是 <b>ncpi=</b>":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
  boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> -->如果您有navi10 GPU，请添加 <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
- csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  run-efi-updater="No"
+ csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> -->完全删除此设置。从OpenCore v0.5.7开始不再使用"
  prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>. -->除非您使用俄语，否则请留空或设置其他语言":" <b>{$setting}</b> = <b>{$value} ({@value})</b>"
  SystemAudioVolume~="^\d+$" " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> -->这应该是一个正数"
@@ -188,11 +190,11 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
- SystemProductName~="((MacBookAir5,1|MacBookAir5,2|MacBookPro10,1|MacBookPro10,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于三代Ivy Bridge笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>"
- MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
- ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
- SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
- SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> -->应该设置为您生成的SmUUID. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ SystemProductName~="(MacBookPro16,1|MacBookPro16,3|MacBookPro16,4)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于九代/十代Coffeelake-plus笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo>[PlatformInfo Docs]</a>"
+ MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> -->应该设置为您生成的SmUUID. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
 
 UEFI
  ConnectDrivers=yes
@@ -244,16 +246,19 @@ UEFI
  TimerResolution=50000
 
 :ProtocolOverrides
- count==16 :"!-->在OpenCore 0.6.0里，您应该在UEFI/ProtocolOverrides部分中正确设置16个选项"
+ count==18 :"!-->在OpenCore 0.6.1里，您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
  AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
  AppleImageConversion=no
+ AppleImg4Verification=no
  AppleKeyMap=no
  AppleRtcRam=no
+ AppleSecureBoot=no
  AppleSmcIo=no
+ AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
  ConsoleControl~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 UEFI/TextRenderer"
@@ -263,7 +268,7 @@ UEFI
  UnicodeCollation=no
 
 :Output
- count==11 :"!-->在OpenCore 0.6.0里，您应该在<b>UEFI/OUTPUT</b>部分中设置11个设置"
+ count==11 :"!-->在OpenCore 0.6.1里，您应该在<b>UEFI/OUTPUT</b>部分中设置11个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"

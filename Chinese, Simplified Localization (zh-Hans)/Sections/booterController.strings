@@ -1,6 +1,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument."; ObjectID = "1iQ-04-Ahz"; */
-"1iQ-04-Ahz.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument.";
+"1iQ-04-Ahz.ibShadowedToolTip" = " 禁用__LINKEDIT抛弃代码.\n\n此选项使Lilu.kext和可能的其他功能在macOS Big Sur中以最佳性能运行而不适用keepsyms = 1启动参数.";
 
 /* Class = "NSButtonCell"; title = "DiscardHibernateMap"; ObjectID = "2QZ-Md-QHk"; */
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
@@ -123,7 +123,7 @@
 "wGH-hP-xhD.ibShadowedToolTip" = "是否使用slide值。一般选择连续性注入内存并配合slide，所以选择YES。\nBat.bat解释:\n如果 Slide 值存在冲突, 此选项将强制 macOS 执行以下操作:\n使用一个伪随机值。 只有在遇到 Only N/256 slide values are usable! 时需要。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Permit write access to UEFI runtime services code.\nThis option bypasses RˆX permissions in code pages of UEFI runtime services by removing write protection (WP) bit from CR0 register during their execution. This quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi.\nNote: This quirk may potentially weaken firmware security, please use RebuildAppleMemoryMap  if your firmware supports memory attributes table (MAT). Refer to OCABC: MAT support is 1/0 log entry to determine whether\nMAT is supported."; ObjectID = "xH6-La-kRg"; */
-"xH6-La-kRg.ibShadowedToolTip" = "保证nvram能正常写入而不受到UEFI内的一些服务的影响，无论什么主板都要选择YES。";
+"xH6-La-kRg.ibShadowedToolTip" = "允许对UEFI运行时服务代码的写访问\n保证nvram能正常写入而不受到UEFI内的一些服务的影响，无论什么主板都要选择YES。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Update memory permissions for OpenRuntime to function. \n\nSome firmwares may incorrectly mark OpenRuntime as not executable, this quirks updates memory map and  memory attributes table to correct this.\n\nNote: The necessity of this quirk is determined by early boot failures either in macOS or in Linux/Windows. In general only firmwares released in 2018 or later are affected."; ObjectID = "ymv-yt-Lvn"; */
 "ymv-yt-Lvn.ibShadowedToolTip" = "更新内存权限以使OpenRuntime起作用. \n\n某些固件可能会错误地将OpenRuntime标记为不可执行，此选项会更新内存映射和内存属性表以更正此错误.\n\n注意：此怪癖的必要性取决于macOS或Linux/Windows中的早期启动故障. 一般而言，仅2018年或之后发布的固件会受到影响.";
