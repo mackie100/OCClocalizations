@@ -281,6 +281,9 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
 "i2m-65-2vq.title" = "OC_SCAN_ALLOW_DEVICE_ATAPI";
 
+/* Class = "NSButtonCell"; title = "Download/Update tools"; ObjectID = "i6P-Lb-eX2"; */
+"i6P-Lb-eX2.title" = "Download/Update tools";
+
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "jPS-Bu-Ar4"; */
 "jPS-Bu-Ar4.headerCell.title" = "Path*";
 
@@ -301,9 +304,6 @@
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_FIREWIRE"; ObjectID = "nmh-33-tbM"; */
 "nmh-33-tbM.title" = "OC_SCAN_ALLOW_DEVICE_FIREWIRE";
-
-/* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "nsA-hY-r1Q"; */
-"nsA-hY-r1Q.title" = "Multiple selection allowed";
 
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
 "oFg-pn-DgG.label" = "Tools";

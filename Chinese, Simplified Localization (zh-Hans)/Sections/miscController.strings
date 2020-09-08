@@ -281,6 +281,9 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
 "i2m-65-2vq.title" = "允许扫描CD/DVD设备";
 
+/* Class = "NSButtonCell"; title = "Download/Update tools"; ObjectID = "i6P-Lb-eX2"; */
+"i6P-Lb-eX2.title" = "Download/Update tools";
+
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "jPS-Bu-Ar4"; */
 "jPS-Bu-Ar4.headerCell.title" = "路径*";
 
@@ -301,9 +304,6 @@
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_FIREWIRE"; ObjectID = "nmh-33-tbM"; */
 "nmh-33-tbM.title" = "允许扫描FireWire设备";
-
-/* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "nsA-hY-r1Q"; */
-"nsA-hY-r1Q.title" = "可以多项选择(也可以直接拖拽efi文件到表格里)";
 
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
 "oFg-pn-DgG.label" = "Tools-添加附加工具";

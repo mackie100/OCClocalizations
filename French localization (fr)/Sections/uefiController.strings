@@ -206,6 +206,9 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: empty string\nDescription: Device path of the specified audio controller for audio support.\nNormally this contains builtin analog audio controller (HDEF) device path, e.g. PciRoot(0x0)/Pci(0x1b,0x0).\nThe list of recognised audio controllers can be found in the debug log:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\nAs an alternative gfxutil -f HDEF command can be used in macOS. Specifying empty device path will result in the first available audio controller to be used."; ObjectID = "YTE-Ba-80O"; */
 "YTE-Ba-80O.ibShadowedToolTip" = "Chemin du périphérique pour le contrôleur audio spécifié pour la prise en charge des fonctionnalités audio. \n Habituellement, il contient le chemin de périphérique du contrôleur audio analogique (HDEF) intégré, tel que: PciRoot (0x0) / Pci (0x1b, 0x0). \n Une liste de contrôleurs audio se trouve dans le journal de débogage: \n OCAU: 1 / 3 PciRoot (0x0) / Pci (0x1,0x0) / Pci (0x0,0x1) / VenMsg (<expurgé>, 00000000) (4 sorties) \n OCAU: 2/3 PciRoot (0x0) / Pci (0x3,0x0) / VenMsg (<réduit>, 00000000) (1 sorties) \n OCAU: 3/3 PciRoot (0x0) / Pci (0x1B, 0x0) / VenMsg (<redigned>, 02000000) (7 sorties) \n  \n Également disponible sur Sous macOS, utilisez la commande gfxutil -f HDEF pour obtenir ou afficher l'adresse du périphérique audio à l'aide de l'outil Hackintool. Si vous spécifiez un chemin de périphérique vide, le premier contrôleur audio disponible sera utilisé.";
 
+/* Class = "NSButtonCell"; title = "Download/Update drivers"; ObjectID = "YW9-8V-SGH"; */
+"YW9-8V-SGH.title" = "Download/Update drivers";
+
 /* Class = "NSButtonCell"; title = "UnicodeCollation"; ObjectID = "ZCa-Hx-UFl"; */
 "ZCa-Hx-UFl.title" = "UnicodeCollation";
 
@@ -220,9 +223,6 @@
 
 /* Class = "NSButtonCell"; title = "ProvideConsoleGop"; ObjectID = "bdr-Pu-Crr"; */
 "bdr-Pu-Crr.title" = "ProvideConsoleGop";
-
-/* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "cNF-Pq-AYe"; */
-"cNF-Pq-AYe.title" = "Choix multiples autorisés";
 
 /* Class = "NSButtonCell"; title = "KeySupport"; ObjectID = "cia-MM-Epa"; */
 "cia-MM-Epa.title" = "KeySupport";

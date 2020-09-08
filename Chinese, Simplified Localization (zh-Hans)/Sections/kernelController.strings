@@ -47,6 +47,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.10\nDescription: Increases 32-bit PCI bar size in IOPCIFamily from 1 to 4 GBs.\nNote: This option should be avoided whenever possible. In general the necessity of this option means misconfigured or broken firmware."; ObjectID = "8Db-Hu-t2R"; */
 "8Db-Hu-t2R.ibShadowedToolTip" = "解决卡PCI configuration，如果碰到请选择yes, 一般选择no。\n注意，一般卡pci configuration都是因为自己错误的设置或硬件问题。\n在 BIOS 中启用 Above4GDecoding 是一种更加干净和安全的方法。某些 X99 板可能需要开启, 这些主板通常会在 IOPCIFamily 上遇到内核崩溃";
 
+/* Class = "NSButtonCell"; title = "Download/Update kexts"; ObjectID = "8LM-uC-YZk"; */
+"8LM-uC-YZk.title" = "Download/Update kexts";
+
 /* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "8Qp-io-xPv"; */
 "8Qp-io-xPv.headerCell.title" = "架构";
 
