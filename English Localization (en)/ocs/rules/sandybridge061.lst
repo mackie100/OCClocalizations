@@ -1,30 +1,30 @@
 =<span class="title">Desktop: (2rd Gen) Sandy Bridge OpenCore 0.6.1</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.1 Intel Sandy Bridge Desktop Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html</a>
+=<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html</a>
 =<hr>
-# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#kernel
-# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi
+# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#kernel
+# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridgee.html#acpi
 # [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
 # [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
 # [scanpolicy]:https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy
-# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo
-# [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#deviceproperties
+# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#platforminfo
+# [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#deviceproperties
 
 ACPI
 :Add
- count==0 "-You have no SSDT Patches. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
+ count==0 "-You have no SSDT Patches. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#acpi>[Acpi Docs]</a>"
+ [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#acpi>[Acpi Docs]</a>"
  [Path]==SSDT-1.aml "-<b>{$Path}</b> This is just an example SSDT. If you really made this yourself, call it something more descriptive"
  [Path]==SSDT-PLUG.aml "-<b>{$Path}</b> does not work on Sandy and Ivy Bridge systems"
  [Path]==SSDT-GPIO.aml "-<b>{$Path}</b> this doesn't belong on an Ivy Bridge system"
  [Path]~=".dsl$" "!<b>{$Path}</b> Only include .aml files here. dsl files need to be compiled to .aml"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. Either enable it or remove it to get rid of this warning"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
- [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-USBX-DESKTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
+ [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-USBX-DESKTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#acpi>[Acpi Docs]</a>"
  [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
- [Path]==SSDT-OLA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
- [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-OLA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/isandy-bridge.html#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#acpi>[Acpi Docs]</a>"
 
 :Delete
  [Enabled]==no "!<b>{$Comment}</b> Patch is <b>disabled</b>! Enable this to make sure SSDT-CPU-PM works."
@@ -65,7 +65,7 @@ DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="10000300|00000500" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU may not be set correctly. Please read the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.htm#deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="10000300|00000500" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU may not be set correctly. Please read the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.htm#deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
  AAPL,ig-platform-id~=.* "!<b>{$setting}</b> is in the wrong location, iGPU location is PciRoot(0x0)/Pci(0x2,0x0)"
@@ -146,7 +146,7 @@ Misc
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.0 - See <b>run-efi-updater</b> under NVRAM instead"
  BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- DmgLoading~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ DmgLoading=Signed
  EnablePassword=no
  RequireSignature~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
@@ -191,15 +191,15 @@ PlatformInfo
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5"
  SystemProductName~="(iMac12,1|iMac12,2|MacPro6,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Sandy Bridge Desktop systems. See <a href=hhttps://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>"
- MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
- ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> You should set this to your NIC MAC address. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
- SystemSerialNumber=W0000000001 "!<b>{$setting}</b> should be set to your generated system serial number. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
- SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> should be set to your generated SmUUID. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> You should set this to your NIC MAC address. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ SystemSerialNumber=W0000000001 "!<b>{$setting}</b> should be set to your generated system serial number. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> should be set to your generated SmUUID. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/sandy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
 
 UEFI
  ConnectDrivers=yes
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "$hfs={$value}; <b>{$value}</b>":"!Need either <b>VBoxHfs.efi</b> or <b>HFSPlus.efi</b> here"
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "!<b>{$value}</b> you already have <b>{$hfs}</b>"
+ Drivers==VBoxHfs.efi|HfsPlusLegacy.efi "$hfs={$value}; <b>{$value}</b>":"!Need either <b>VBoxHfs.efi</b> or<b>HfsPlusLegacy.efi</b> here"
+ Drivers==VBoxHfs.efi|HFSPlusLegacy.efi|HfsPlus.efi "!<b>{$value}</b> you already have <b>{$hfs}</b>"
  Drivers==OpenRuntime.efi " <b>{$value}</b>":"!<b>OpenRuntime.efi</b> is missing"
  Drivers==FwRuntimeServices.efi "!<b>{$value}</b> has been replaced by OpenRuntime.efi as of OpenCore v0.5.7"
  Drivers==ApfsDriverLoader.efi "!<b>ApfsDriverLoader.efi</b> was merged into OpenCore under the UEFI/APFS section as of OpenCore v0.5.8"
@@ -246,7 +246,7 @@ UEFI
  TimerResolution=50000
 
 :ProtocolOverrides
- count==18 :"!You should have exactly 18 settings in the UEFI/ProtocolOverrides section"
+ count==17 :"!You should have exactly 17 settings in the UEFI/ProtocolOverrides section"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no

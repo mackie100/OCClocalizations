@@ -26,7 +26,7 @@ ACPI
  [Path]==SSDT-PNLF.aml "-<b>{$Path}</b> is not needed on AMD"
  [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
  [Path]==SSDT-OLA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#acpi>[ACPI Docs]</a>."
- [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#acpi>[ACPI Docs]</a>."
+ [Path]==SSDT-OLARILA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#acpi>[ACPI Docs]</a>."
 
 :Quirks
  count==5
@@ -149,7 +149,7 @@ Misc
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.0 - See <b>run-efi-updater</b> under NVRAM instead"
  BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- DmgLoading~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ DmgLoading=Signed
  EnablePassword=no
  RequireSignature~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
@@ -249,7 +249,7 @@ UEFI
  TimerResolution=50000
 
 :ProtocolOverrides
- count==18 :"!You should have exactly 18 settings in the UEFI/ProtocolOverrides section"
+ count==17 :"!You should have exactly 17 settings in the UEFI/ProtocolOverrides section"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
