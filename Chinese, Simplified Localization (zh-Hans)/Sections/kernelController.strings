@@ -116,6 +116,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "Ntg-7A-K1a"; */
 "Ntg-7A-K1a.headerCell.title" = "注释";
 
+/* Class = "NSButtonCell"; title = "DisableLinkeditJettison"; ObjectID = "OSa-QT-Lhq"; */
+"OSa-QT-Lhq.title" = "DisableLinkeditJettison";
+
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "Oe6-LD-h7w"; */
 "Oe6-LD-h7w.headerCell.title" = "捆绑路径 *";
 
@@ -217,6 +220,9 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "kGJ-yd-xi8"; */
 "kGJ-yd-xi8.headerCell.title" = "注释";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument."; ObjectID = "koV-S4-Tkn"; */
+"koV-S4-Tkn.ibShadowedToolTip" = " 禁用__LINKEDIT抛弃代码.\n\n此选项使Lilu.kext和可能的其他功能在macOS Big Sur中以最佳性能运行而不适用keepsyms = 1启动参数.";
 
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "lAD-ms-SMV"; */
 "lAD-ms-SMV.headerCell.title" = "替换Mask";

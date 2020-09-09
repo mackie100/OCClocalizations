@@ -1,7 +1,4 @@
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument."; ObjectID = "1iQ-04-Ahz"; */
-"1iQ-04-Ahz.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument.";
-
 /* Class = "NSButtonCell"; title = "DiscardHibernateMap"; ObjectID = "2QZ-Md-QHk"; */
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
 
@@ -88,9 +85,6 @@
 
 /* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "hF2-W3-w6Y"; */
 "hF2-W3-w6Y.title" = "EnableForAll";
-
-/* Class = "NSButtonCell"; title = "DisableLinkeditJettison"; ObjectID = "hG7-jQ-gGM"; */
-"hG7-jQ-gGM.title" = "DisableLinkeditJettison";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures. Currently new firmwares with memory protection support (like OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures. Currently new firmwares with memory protection support (like OVMF) do not support this quirk.";

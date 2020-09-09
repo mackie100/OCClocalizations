@@ -1,7 +1,4 @@
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument."; ObjectID = "1iQ-04-Ahz"; */
-"1iQ-04-Ahz.ibShadowedToolTip" = " 禁用__LINKEDIT抛弃代码.\n\n此选项使Lilu.kext和可能的其他功能在macOS Big Sur中以最佳性能运行而不适用keepsyms = 1启动参数.";
-
 /* Class = "NSButtonCell"; title = "DiscardHibernateMap"; ObjectID = "2QZ-Md-QHk"; */
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
 
@@ -88,9 +85,6 @@
 
 /* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "hF2-W3-w6Y"; */
 "hF2-W3-w6Y.title" = "EnableForAll";
-
-/* Class = "NSButtonCell"; title = "DisableLinkeditJettison"; ObjectID = "hG7-jQ-gGM"; */
-"hG7-jQ-gGM.title" = "DisableLinkeditJettison";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\nSelect firmwares access memory by virtual addresses after SetVirtualAddresses call, which results in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\nNote: The necessity of this quirk is determined by early boot failures. Currently new firmwares with memory protection support (like OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "是否建立虚拟内存并对物理内存进行映射。我们在开机时，OC的程序需要一块连续性的内存进行存放内核等东西，而实际的物理内存一般都是分散的。因此，我们通过虚拟内存建立连续性内存供OC使用，并映射到分散的物理内存中。一般我们选择YES。";
