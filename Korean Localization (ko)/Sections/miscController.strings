@@ -282,7 +282,7 @@
 "i2m-65-2vq.title" = "OC_SCAN_ALLOW_DEVICE_ATAPI";
 
 /* Class = "NSButtonCell"; title = "Download/Update tools"; ObjectID = "i6P-Lb-eX2"; */
-"i6P-Lb-eX2.title" = "Download/Update tools";
+"i6P-Lb-eX2.title" = "다운로드/도구 업데이트";
 
 /* Class = "NSTableColumn"; headerCell.title = "Path*"; ObjectID = "jPS-Bu-Ar4"; */
 "jPS-Bu-Ar4.headerCell.title" = "Path*";
