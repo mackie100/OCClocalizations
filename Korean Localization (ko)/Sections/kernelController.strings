@@ -48,7 +48,7 @@
 "8Db-Hu-t2R.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.10\nDescription: Increases 32-bit PCI bar size in IOPCIFamily from 1 to 4 GBs.\nNote: This option should be avoided whenever possible. In general the necessity of this option means misconfigured or broken firmware.";
 
 /* Class = "NSButtonCell"; title = "Download/Update kexts"; ObjectID = "8LM-uC-YZk"; */
-"8LM-uC-YZk.title" = "Download/Update kexts";
+"8LM-uC-YZk.title" = "다운로드/켁스트 업데이트";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "8Qp-io-xPv"; */
 "8Qp-io-xPv.headerCell.title" = "Arch";
