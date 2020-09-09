@@ -120,7 +120,7 @@
 "OSa-QT-Lhq.title" = "DisableLinkeditJettison";
 
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "Oe6-LD-h7w"; */
-"Oe6-LD-h7w.headerCell.title" = "파일위치*";
+"Oe6-LD-h7w.headerCell.title" = "번들위치*";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "PdE-OW-Faw"; */
 "PdE-OW-Faw.headerCell.title" = "활성화";
@@ -177,10 +177,10 @@
 "djM-Oe-omR.headerCell.title" = "Base";
 
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "eFP-6O-woi"; */
-"eFP-6O-woi.headerCell.title" = "BundlePath*";
+"eFP-6O-woi.headerCell.title" = "번들위치*";
 
 /* Class = "NSTableColumn"; headerCell.title = "PlistPath"; ObjectID = "ek6-EY-0uZ"; */
-"ek6-EY-0uZ.headerCell.title" = "PlistPath";
+"ek6-EY-0uZ.headerCell.title" = "Plist위치";
 
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "ewU-gZ-tet"; */
 "ewU-gZ-tet.title" = "리소스 불러오는중";
@@ -240,7 +240,7 @@
 "nsg-T6-DJT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.6 (64-bit)\nDescription: Disables kernel panic on LAPIC interrupts.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "nyt-5D-3es"; */
-"nyt-5D-3es.headerCell.title" = "Limit";
+"nyt-5D-3es.headerCell.title" = "리밋";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Kext architecture (Any, i386, x86_64). \n2. BundlePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext bundle path (e.g. System\\Library \\Extensions \\IONetworkingFamily.kext).\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This kernel driver will not be added when not present unless set to true.\n5. ExecutablePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/IONetworkingFamily).\n6. Identifier\nType: plist string\nFailsafe: Empty string\nDescription: Kext identifier to perform presence checking before adding (e.g. com.apple.iokit.IONetworkingFamily).\nOnly drivers which identifiers are not be found in the cache will be added.\n7. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or older.\nNote: Refer to Add Add MaxKernel description for matching logic.\n8. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or newer.\nNote: Refer to Add Add MaxKernel description for matching logic.\n9. PlistPath\nType: plist string\nFailsafe: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist)."; ObjectID = "p2g-8y-f45"; */
 "p2g-8y-f45.ibShadowedToolTip" = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Kext architecture (Any, i386, x86_64). \n2. BundlePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext bundle path (e.g. System\\Library \\Extensions \\IONetworkingFamily.kext).\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This kernel driver will not be added when not present unless set to true.\n5. ExecutablePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/IONetworkingFamily).\n6. Identifier\nType: plist string\nFailsafe: Empty string\nDescription: Kext identifier to perform presence checking before adding (e.g. com.apple.iokit.IONetworkingFamily).\nOnly drivers which identifiers are not be found in the cache will be added.\n7. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or older.\nNote: Refer to Add Add MaxKernel description for matching logic.\n8. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or newer.\nNote: Refer to Add Add MaxKernel description for matching logic.\n9. PlistPath\nType: plist string\nFailsafe: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist).";
