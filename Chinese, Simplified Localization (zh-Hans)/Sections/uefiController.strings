@@ -207,7 +207,7 @@
 "YTE-Ba-80O.ibShadowedToolTip" = "用于音频功能支持的指定音频控制器的设备路径。\n通常，它包含内置的模拟音频控制器（HDEF）设备路径, 比如:PciRoot(0x0)/Pci(0x1b,0x0).\n可以在调试日志中找到音频控制器的列表:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n也可以在macOS中使用gfxutil -f HDEF命令获取或者用Hackintool工具查看音频设备地址。指定空的设备路径将导致使用第一个可用的音频控制器.";
 
 /* Class = "NSButtonCell"; title = "Download/Update drivers"; ObjectID = "YW9-8V-SGH"; */
-"YW9-8V-SGH.title" = "Download/Update drivers";
+"YW9-8V-SGH.title" = "下载/更新 efi驱动";
 
 /* Class = "NSButtonCell"; title = "UnicodeCollation"; ObjectID = "ZCa-Hx-UFl"; */
 "ZCa-Hx-UFl.title" = "UnicodeCollation";
