@@ -60,7 +60,7 @@
 "VnZ-XI-LOq.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI Secure Boot variables from being written.\nReports security violation during attempts to write to db, dbx, PK, and KEK variables from the operating system.\n\nNote: This quirk mainly attempts to avoid issues with NVRAM implementations with problematic defragmentation, such as select Insyde or MacPro5,1.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Address*"; ObjectID = "XBA-aR-mC0"; */
-"XBA-aR-mC0.headerCell.title" = "Address*";
+"XBA-aR-mC0.headerCell.title" = "주소*";
 
 /* Class = "NSButtonCell"; title = "SyncRuntimePermissions"; ObjectID = "XIy-K6-Der"; */
 "XIy-K6-Der.title" = "SyncRuntimePermissions";
@@ -93,7 +93,7 @@
 "mrQ-IT-UQ3.label" = "MmioWhitelist";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "ndf-NP-2rM"; */
-"ndf-NP-2rM.headerCell.title" = "Comment";
+"ndf-NP-2rM.headerCell.title" = "코멘트";
 
 /* Class = "NSButtonCell"; title = "DevirtualiseMmio"; ObjectID = "pkh-Nr-Lgr"; */
 "pkh-Nr-Lgr.title" = "DevirtualiseMmio";

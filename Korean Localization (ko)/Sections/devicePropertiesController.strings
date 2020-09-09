@@ -9,7 +9,7 @@
 "7dM-hm-O9O.title" = "Presets";
 
 /* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "9kg-WA-Eir"; */
-"9kg-WA-Eir.headerCell.title" = "Devices";
+"9kg-WA-Eir.headerCell.title" = "장치";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key*"; ObjectID = "F6A-yy-QfQ"; */
 "F6A-yy-QfQ.headerCell.title" = "키*";
