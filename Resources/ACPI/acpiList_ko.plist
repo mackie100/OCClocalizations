@@ -6,75 +6,105 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>Enter Apple BootPicker menu (exclusive for Macs with compatible GPUs).</string>
+			<string></string>
 			<key>name</key>
-			<string>BootKicker</string>
-		</dict>
-		<dict>
-			<key>description</key>
-			<string>Test BeepGen protocol and generate audio signals of different style and length.</string>
-			<key>name</key>
-			<string>ChipTune</string>
-		</dict>
-		<dict>
-			<key>description</key>
-			<string>Reset NVRAM alternative bundled as a standalone tool.</string>
-			<key>name</key>
-			<string>CleanNvram</string>
-		</dict>
-		<dict>
-			<key>description</key>
-			<string>Test GraphicsOutput protocol with a simple scenario.</string>
-			<key>name</key>
-			<string>GopStop</string>
-		</dict>
-		<dict>
-			<key>description</key>
-			<string>Parse and dump High Definition Audio codec information (requires AudioDxe).</string>
-			<key>name</key>
-			<string>HdaCodecDump</string>
-		</dict>
-		<dict>
-			<key>description</key>
-			<string>Test keyboard input in SimpleText mode.</string>
-			<key>name</key>
-			<string>KeyTester</string>
+			<string>SSDT-ALS0</string>
 		</dict>
 		<dict>
 			<key>description</key>
 			<string></string>
 			<key>name</key>
-			<string>MmapDump</string>
+			<string>SSDT-ARTC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Unlock and lock back NVRAM protection for other tools to be able to get full NVRAM access when launching from OpenCore.</string>
+			<string></string>
 			<key>name</key>
-			<string>OpenControl</string>
+			<string>SSDT-AWAC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>OpenCore-configured UEFI Shell for compatibility with a broad range of firmwares.</string>
+			<string></string>
 			<key>name</key>
-			<string>OpenShell</string>
+			<string>SSDT-CPUR</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Utility to perform system reset. Takes reset type as an argument: ColdReset, WarmReset, Shutdown. Defaults to ColdReset.</string>
+			<string></string>
 			<key>name</key>
-			<string>ResetSystem</string>
+			<string>SSDT-EC-DESKTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Utility to read and write RTC (CMOS) memory.</string>
+			<string></string>
 			<key>name</key>
-			<string>RtcRw</string>
+			<string>SSDT-EC-LAPTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Check CFG Lock (MSR 0xE2 write protection) consistency across all cores.</string>
+			<string></string>
 			<key>name</key>
-			<string>VerifyMsrE2</string>
+			<string>SSDT-EC-USBX-DESKTOP</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-EC-USBX-LAPTOP</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-EHCx_OFF</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-IMEI-S</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-IMEI</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-PLUG-DRTNIA</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-PMC</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-PNLF-CFL</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-PNLF</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-RHUB</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>SSDT-XOSI</string>
 		</dict>
 	</array>
 </dict>
