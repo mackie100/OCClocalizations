@@ -191,7 +191,7 @@
 /* Class = "NSTextFieldCell"; title = "Generic"; ObjectID = "Rcs-Ds-NTm"; */
 "Rcs-Ds-NTm.title" = "Générique";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Generate PlatformInfo based on Generic section instead of using values from DataHub, NVRAM, and SMBIOS sections.\nEnabling this option is useful when Generic section is flexible enough. When enabled SMBIOS, DataHub, and PlatformNVRAM data is unused."; ObjectID = "RfW-jb-UfW"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Generate PlatformInfo based on Generic section instead of using values from DataHub, NVRAM, and SMBIOS sections.\nEnabling this option is useful when Generic section is flexible enough:\n• When enabled SMBIOS, DataHub, and PlatformNVRAM data is unused.\n• When disabled Generic section is unused.\n\nWarning: It is strongly discouraged set this option to false when intending to update platform information. The only reason to do that is when doing minor correction of the SMBIOS present and alike. In all other cases not using Automatic may lead to hard to debug errors."; ObjectID = "RfW-jb-UfW"; */
 "RfW-jb-UfW.ibShadowedToolTip" = "Lorsque cette option est sélectionnée, OC n'appliquera pas tout le contenu de DataHub, PlatformNVRAM, SMBIOS. L'option \"Auto\" nécessite qu'elle soit compatible avec la partie générique. Les détails d'OpenCore.efi complèteront tous les remplissages automatiques en fonction de la correspondance SystemProductName dans Generic. \nPar conséquent, lors de la sélection automatique, vous devez supprimer la case à cocher \"Ajouter ce contenu dans config.plist\", ce qui a empêché l'écriture de ces trois parties dans le fichier de configuration";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: BIOS Information (Type 0) — Vendor\nDescription: BIOS Vendor. All rules of SystemManufacturer do apply."; ObjectID = "SO7-47-4Z3"; */
@@ -244,6 +244,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Update DataHub fields. These fields are read from Generic or DataHub sections depending on Automatic value."; ObjectID = "XRB-18-dHU"; */
 "XRB-18-dHU.ibShadowedToolTip" = "Vous devez sélectionner OUI, que l'option \"Auto\" soit sélectionnée ou non!";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nDefault value: Automatic\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types."; ObjectID = "YN8-NU-Zgm"; */
+"YN8-NU-Zgm.ibShadowedToolTip" = "Type: plist integer, 16-bit\nDefault value: Automatic\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details."; ObjectID = "YgB-Sp-EZ5"; */
 "YgB-Sp-EZ5.ibShadowedToolTip" = "Valeur par défaut: spécifique à l'OEM \nSMBIOS: informations sur le fond de panier (ou module) (type 2) - Type de carte \n Description: 0xA (carte mère (y compris processeur, mémoire et E / S) ou module 0xB (processeur / mémoire)), Voir Tableau 15-Fond de panier: Type de carte pour plus de détails.";
@@ -412,6 +415,9 @@
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "rjU-uH-nCF"; */
 "rjU-uH-nCF.title" = "Box";
+
+/* Class = "NSTextFieldCell"; title = "ProcessorType"; ObjectID = "sTq-fo-o3l"; */
+"sTq-fo-o3l.title" = "ProcessorType";
 
 /* Class = "NSTextFieldCell"; title = "System Serial Number"; ObjectID = "sXU-di-o5I"; */
 "sXU-di-o5I.title" = "System Serial Number";

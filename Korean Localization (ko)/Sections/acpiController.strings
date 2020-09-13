@@ -65,9 +65,6 @@
 /* Class = "NSButtonCell"; title = "RebaseRegions"; ObjectID = "OG6-fc-Q9m"; */
 "OG6-fc-Q9m.title" = "RebaseRegions";
 
-/* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "SPY-Vf-Izp"; */
-"SPY-Vf-Izp.title" = "다중 선택 가능";
-
 /* Class = "NSButtonCell"; title = "ResetHwSig"; ObjectID = "Z6k-wb-4yC"; */
 "Z6k-wb-4yC.title" = "ResetHwSig";
 
@@ -100,6 +97,9 @@
 
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "jB3-Fa-Mq9"; */
 "jB3-Fa-Mq9.label" = "패치";
+
+/* Class = "NSButtonCell"; title = "Download/Update Acpi"; ObjectID = "l2s-yf-wZB"; */
+"l2s-yf-wZB.title" = "Download/Update Acpi";
 
 /* Class = "NSButtonCell"; title = "FadtEnableReset"; ObjectID = "l7b-Bk-2B3"; */
 "l7b-Bk-2B3.title" = "FadtEnableReset";
