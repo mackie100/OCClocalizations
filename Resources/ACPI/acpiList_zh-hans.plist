@@ -6,103 +6,103 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>亮度补丁</string>
 			<key>name</key>
 			<string>SSDT-ALS0</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>时钟补丁</string>
 			<key>name</key>
 			<string>SSDT-ARTC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>Z390类型主板的时钟补丁</string>
 			<key>name</key>
 			<string>SSDT-AWAC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>AMD主板B550和A520修复补丁</string>
 			<key>name</key>
 			<string>SSDT-CPUR</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>Broadwell和更老的台式电脑的EC补丁</string>
 			<key>name</key>
 			<string>SSDT-EC-DESKTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>Broadwell和更老的笔记本的EC补丁</string>
 			<key>name</key>
 			<string>SSDT-EC-LAPTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>Skylake和更新的以及所有AMD系统用于台式机的EC补丁</string>
 			<key>name</key>
 			<string>SSDT-EC-USBX-DESKTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>Skylake和更新的以及所有AMD系统用于笔记本的EC补丁</string>
 			<key>name</key>
 			<string>SSDT-EC-USBX-LAPTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>禁用USB2.0端口补丁</string>
 			<key>name</key>
 			<string>SSDT-EHCx_OFF</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>IMEI补丁</string>
 			<key>name</key>
 			<string>SSDT-IMEI-S</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>IMEI补丁</string>
 			<key>name</key>
 			<string>SSDT-IMEI</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>对于Haswell及更高版本CPU电源管理补丁</string>
 			<key>name</key>
 			<string>SSDT-PLUG-DRTNIA</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>300系列主板原生NVRAM补丁</string>
 			<key>name</key>
 			<string>SSDT-PMC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>Coffee Lake和更新的平台亮度控制支持补丁</string>
 			<key>name</key>
 			<string>SSDT-PNLF-CFL</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>大多主板的背光补丁</string>
 			<key>name</key>
 			<string>SSDT-PNLF</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>400系列主板关闭RHUB端口补丁</string>
 			<key>name</key>
 			<string>SSDT-RHUB</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>具有I2C触控板的修补</string>
 			<key>name</key>
 			<string>SSDT-XOSI</string>
 		</dict>
