@@ -53,7 +53,7 @@
 /* Class = "NSTableColumn"; headerCell.title = "TableLength"; ObjectID = "MtH-av-7W0"; */
 "MtH-av-7W0.headerCell.title" = "TableLength";
 
-/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Ndv-7C-25y"; */
+/* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "Ndv-7C-25y"; */
 "Ndv-7C-25y.title" = "찾기";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "NtB-gi-4nw"; */
