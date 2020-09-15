@@ -144,7 +144,7 @@
 "TcN-ku-fY2.headerCell.title" = "Enabled";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "WGU-Ke-n07"; */
-"WGU-Ke-n07.title" = "Browse";
+"WGU-Ke-n07.title" = "Snapshot Add";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise."; ObjectID = "WQz-t0-GJT"; */
 "WQz-t0-GJT.ibShadowedToolTip" = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise.";
@@ -234,7 +234,7 @@
 "mWg-wh-eGt.label" = "Add";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "mup-PJ-Q4D"; */
-"mup-PJ-Q4D.title" = "Browse";
+"mup-PJ-Q4D.title" = "Snapshot Add";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.6 (64-bit)\nDescription: Disables kernel panic on LAPIC interrupts."; ObjectID = "nsg-T6-DJT"; */
 "nsg-T6-DJT.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.6 (64-bit)\nDescription: Disables kernel panic on LAPIC interrupts.";
