@@ -144,7 +144,7 @@
 "TcN-ku-fY2.headerCell.title" = "启用";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "WGU-Ke-n07"; */
-"WGU-Ke-n07.title" = "浏览";
+"WGU-Ke-n07.title" = "快照添加";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise."; ObjectID = "WQz-t0-GJT"; */
 "WQz-t0-GJT.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
@@ -234,7 +234,7 @@
 "mWg-wh-eGt.label" = "添加";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "mup-PJ-Q4D"; */
-"mup-PJ-Q4D.title" = "浏览";
+"mup-PJ-Q4D.title" = "快照添加";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.6 (64-bit)\nDescription: Disables kernel panic on LAPIC interrupts."; ObjectID = "nsg-T6-DJT"; */
 "nsg-T6-DJT.ibShadowedToolTip" = "禁用由 AP 核心 lapic 中断造成的内核崩溃, 通常用于「惠普电脑」 (等同于 Clover 的 Kernel LAPIC),无此问题选择NO。";

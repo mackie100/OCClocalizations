@@ -54,7 +54,7 @@
 "MtH-av-7W0.headerCell.title" = "TableLength";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Ndv-7C-25y"; */
-"Ndv-7C-25y.title" = "Browse";
+"Ndv-7C-25y.title" = "Snapshot Add";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "NtB-gi-4nw"; */
 "NtB-gi-4nw.headerCell.title" = "Replace";

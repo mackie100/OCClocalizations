@@ -54,7 +54,7 @@
 "MtH-av-7W0.headerCell.title" = "ACPI表长度";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Ndv-7C-25y"; */
-"Ndv-7C-25y.title" = "浏览";
+"Ndv-7C-25y.title" = "快照添加";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "NtB-gi-4nw"; */
 "NtB-gi-4nw.headerCell.title" = "替换";
