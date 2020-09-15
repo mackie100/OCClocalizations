@@ -12,7 +12,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string></string>
+			<string>Fix the system clocks found on newer hardware.</string>
 			<key>name</key>
 			<string>SSDT-ARTC</string>
 		</dict>
