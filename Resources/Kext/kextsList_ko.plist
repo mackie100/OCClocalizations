@@ -100,7 +100,7 @@
 			<key>name</key>
 			<string>BT4LEContiunityFixup</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/BT4LEContinuityFixup/releases/download/vVERSION/BT4LEContinuityFixup-VERSION-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/BT4LEContinuityFixup/releases/download/VERSION/BT4LEContinuityFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>remoteFolder</key>
@@ -128,7 +128,7 @@
 			<key>name</key>
 			<string>RTCMemoryFixup</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/RTCMemoryFixup/releases/download/vVERSION/RTCMemoryFixup-VERSION-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/RTCMemoryFixup/releases/download/VERSION/RTCMemoryFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>remoteFolder</key>

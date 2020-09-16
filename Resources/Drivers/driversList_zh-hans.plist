@@ -20,7 +20,7 @@
 			<key>description</key>
 			<string></string>
 			<key>name</key>
-			<string>ExFatLegacyDxe</string>
+			<string>ExFatDxeLegacy</string>
 		</dict>
 		<dict>
 			<key>description</key>
