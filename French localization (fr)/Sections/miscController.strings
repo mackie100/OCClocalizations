@@ -77,7 +77,7 @@
 /* Class = "NSButtonCell"; title = "Expose OpenCore version as an UEFI variable."; ObjectID = "Bcn-4Z-d2d"; */
 "Bcn-4Z-d2d.title" = "Exposez la version d'OpenCore en tant que variable UEFI.";
 
-/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Bpe-6y-ybA"; */
+/* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "Bpe-6y-ybA"; */
 "Bpe-6y-ybA.title" = "Parcourir";
 
 /* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
