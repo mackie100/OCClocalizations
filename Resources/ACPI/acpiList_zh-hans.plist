@@ -102,7 +102,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>可以使用此SSDT代替&quot;OS Check Fix&quot;补丁来模拟Windows版本的Darwin。</string>
+			<string>可以使用此SSDT代替OS Check Fix补丁来模拟Windows版本的Darwin。</string>
 			<key>name</key>
 			<string>SSDT-XOSI</string>
 		</dict>
