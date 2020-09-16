@@ -106,7 +106,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 			<key>description</key>
 			<string>OpenCore引导界面用于截图的工具，快捷键为F10</string>
 			<key>name</key>
-			<string>CrScreenshotDxe.efi</string>
+			<string>CrScreenshotDxe</string>
 		</dict>
 	</array>
 </dict>
