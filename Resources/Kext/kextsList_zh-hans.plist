@@ -8,7 +8,7 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>开源内核扩展为macOS的整个系统提供了一个平台，用于任意kext，库和程序修补。</string>
 			<key>name</key>
@@ -24,7 +24,7 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>内核中的高级Apple SMC模拟器。需要Lilu 1.2.7才能正常运行。</string>
 			<key>name</key>
@@ -38,7 +38,7 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>Lilu插件提供了用于在macOS上选择GPU的补丁​​。需要Lilu 1.2.5或更高版本。</string>
 			<key>name</key>
@@ -52,7 +52,7 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>一个开放源代码内核扩展，无需更改任何文件系统，即可为未经官方支持的编解码器提供本机macOS HD音频。需要Lilu 1.2.5及更高版本，默认情况下已在10.14上启用。</string>
 			<key>name</key>
@@ -66,7 +66,7 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>一个开放源代码内核扩展，提供了非本机Airport Broadcom Wi-Fi卡所需的一组补丁。需要Lilu 1.1.6及更高版本。</string>
 			<key>name</key>
@@ -80,7 +80,7 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>一个开源内核扩展，可在RTC变量和NVRAM之间提供同步。需要Lilu v1.2.4或更高版本。</string>
 			<key>name</key>
@@ -94,7 +94,7 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>该工具进行了必要的更改，以在兼容的硬件上启用OS X 10.10和10.11 Continuity功能。此补丁激活的连续性功能包括切换，即时热点和新空投。 OS X 10.11（El Capitan）加密狗支持尚不稳定！</string>
 			<key>name</key>
@@ -108,7 +108,7 @@
 			<key>author</key>
 			<string>PMheart</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>用于动态电源管理数据注入的Lilu插件。</string>
 			<key>name</key>
@@ -122,7 +122,7 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>开源内核扩展，提供了一种仿真CMOS（RTC）内存中偏移的方法。它可以帮助您避免osx AppleRTC和PC的固件/ BIOS之间的某些冲突。</string>
 			<key>name</key>
@@ -136,7 +136,7 @@
 			<key>author</key>
 			<string>acidanthera</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>NVMeFix是Apple NVMe存储驱动程序IONVMeFamily的一组修补程序。其目标是改善与非Apple SSD的兼容性。它可以在Apple和非Apple计算机上使用。</string>
 			<key>name</key>
@@ -150,7 +150,7 @@
 			<key>author</key>
 			<string>David Elliot RehabMan</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>新的VoodooPS2Trackpad使用VoodooInput的Magic Trackpad II仿真，以便使用macOS本机驱动程序而不是自己处理所有手势。这样就可以使用Apple定义的从一到四个手指手势中的任何一个。</string>
 			<key>name</key>
@@ -164,7 +164,7 @@
 			<key>author</key>
 			<string>TimeWalker</string>
 			<key>category</key>
-			<string>Kernel extension</string>
+			<string>内核扩展</string>
 			<key>description</key>
 			<string>用于更新HDA（高保真音频）编解码器上的EAPD（外部放大器）状态，该编解码器使用扬声器或耳机节点上的给定放大器（在某些情况下甚至是额外的放大器）。</string>
 			<key>name</key>
@@ -182,9 +182,9 @@
 			<key>author</key>
 			<string>RehabMan</string>
 			<key>category</key>
-			<string>Injector</string>
+			<string>注入类</string>
 			<key>description</key>
-			<string>This kext attempts to inject all ports for each controller, and for hubs as well. You can use this kext (temporarily) to enable all ports so you can determine which ports really need to be in the final injector.</string>
+			<string>此kext尝试为每个控制器以及集线器注入所有端口。您可以（临时）使用此kext启用所有端口，以便确定哪些端口确实需要在最终进样器中。</string>
 			<key>name</key>
 			<string>USBInjectAll</string>
 			<key>url</key>
@@ -200,7 +200,7 @@
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
-			<string>Ethernet driver</string>
+			<string>网卡驱动</string>
 			<key>description</key>
 			<string>Qualcomm Atheros Killer E2200驱动程序。用于OSX。支持Qualcomm Atheros AR816x，AR817x，Killer E220x，Killer E2400和Killer E2500。</string>
 			<key>name</key>
@@ -214,7 +214,7 @@
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
-			<string>Ethernet driver</string>
+			<string>网卡驱动</string>
 			<key>description</key>
 			<string>适用于macOS的Intel板载LAN驱动程序。</string>
 			<key>name</key>
@@ -228,7 +228,7 @@
 			<key>author</key>
 			<string>SergeySlice</string>
 			<key>category</key>
-			<string>Ethernet driver</string>
+			<string>网卡驱动</string>
 			<key>description</key>
 			<string>用于macOS的LAN驱动程序，支持Realtek芯片8111B，C，D，E，EP，F，G，GU，8411B</string>
 			<key>name</key>
@@ -242,7 +242,7 @@
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
-			<string>Ethernet driver</string>
+			<string>网卡驱动</string>
 			<key>description</key>
 			<string>Realtek RTL8111/8168系列的OS X开源驱动程序</string>
 			<key>name</key>
