@@ -99,7 +99,7 @@
 "jB3-Fa-Mq9.label" = "패치";
 
 /* Class = "NSButtonCell"; title = "Download/Update Acpi"; ObjectID = "l2s-yf-wZB"; */
-"l2s-yf-wZB.title" = "Download/Update Acpi";
+"l2s-yf-wZB.title" = "다운로드/ACPI 업데이트";
 
 /* Class = "NSButtonCell"; title = "FadtEnableReset"; ObjectID = "l7b-Bk-2B3"; */
 "l7b-Bk-2B3.title" = "FadtEnableReset";
