@@ -143,7 +143,7 @@
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "TcN-ku-fY2"; */
 "TcN-ku-fY2.headerCell.title" = "활성화";
 
-/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "WGU-Ke-n07"; */
+/* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "WGU-Ke-n07"; */
 "WGU-Ke-n07.title" = "찾아보기";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise."; ObjectID = "WQz-t0-GJT"; */
@@ -233,7 +233,7 @@
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "mWg-wh-eGt"; */
 "mWg-wh-eGt.label" = "추가";
 
-/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "mup-PJ-Q4D"; */
+/* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "mup-PJ-Q4D"; */
 "mup-PJ-Q4D.title" = "찾아보기";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.6 (64-bit)\nDescription: Disables kernel panic on LAPIC interrupts."; ObjectID = "nsg-T6-DJT"; */

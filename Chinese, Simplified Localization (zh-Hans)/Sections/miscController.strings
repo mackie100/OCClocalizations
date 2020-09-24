@@ -77,8 +77,8 @@
 /* Class = "NSButtonCell"; title = "Expose OpenCore version as an UEFI variable."; ObjectID = "Bcn-4Z-d2d"; */
 "Bcn-4Z-d2d.title" = "将OpenCore版本公开为UEFI变量.";
 
-/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Bpe-6y-ybA"; */
-"Bpe-6y-ybA.title" = "浏览";
+/* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "Bpe-6y-ybA"; */
+"Bpe-6y-ybA.title" = "快照添加";
 
 /* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
 "DAS-KM-gwG.title" = "Expose Sensitive Data";
@@ -150,7 +150,7 @@
 "PbU-if-N7O.ibShadowedToolTip" = "启用密码保护以允许敏感操作.\n\n密码保护可确保敏感操作，例如引导非默认操作系统 (例如: macOS recovery或工具), 重置NVRAM存储，尝试引导到非默认模式 (例如: verbose(啰嗦)模式或safe(安全)模式) 如果没有通过自定义密码进行明确的用户身份验证，则不允许. 当前，密码和密码加盐值(一种对密码加密的算法)已通过SHA-512的5000000次迭代进行哈希处理.\n\n注意: 此功能当前正在开发中，尚不能用于日常使用.";
 
 /* Class = "NSButtonCell"; title = "Browse"; ObjectID = "Pkl-Zl-stw"; */
-"Pkl-Zl-stw.title" = "浏览";
+"Pkl-Zl-stw.title" = "浏览EFI";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Delay in microseconds performed after every printed line visible onscreen (i.e. console)."; ObjectID = "PwU-cB-LIO"; */
 "PwU-cB-LIO.ibShadowedToolTip" = "在屏幕上可见的每条打印行(即控制台)之后执行的延迟(以微秒为单位).默认忽略！";

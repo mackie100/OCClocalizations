@@ -679,11 +679,11 @@
 "Checking For Resources..." = "检查资源文件...";
 
 /* configCheckerController */
-"Desktop" = "台式机";
+"Desktop" = "普通台式机";
 
 /* configCheckerController */
-"High-End Desktop" = "高端台式机";
+"High-End Desktop" = "高性能台式机";
 
 /* configCheckerController */
-"Laptop" = "笔记本平台";
+"Laptop" = "笔记本电脑";
 

@@ -98,9 +98,9 @@
 			<key>description</key>
 			<string>This tool makes the necessary changes to enable OS X 10.10 and 10.11 Continuity features on compatible hardware. Continuity features activated by this patch include Handoff, Instant Hotspot, and New Airdrop. OS X 10.11 (El Capitan) dongle support is not stable yet!</string>
 			<key>name</key>
-			<string>BT4LEContiunityFixup</string>
+			<string>BT4LEContinuityFixup</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/BT4LEContinuityFixup/releases/download/vVERSION/BT4LEContinuityFixup-VERSION-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/BT4LEContinuityFixup/releases/download/VERSION/BT4LEContinuityFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>remoteFolder</key>
@@ -128,7 +128,7 @@
 			<key>name</key>
 			<string>RTCMemoryFixup</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/RTCMemoryFixup/releases/download/vVERSION/RTCMemoryFixup-VERSION-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/RTCMemoryFixup/releases/download/VERSION/RTCMemoryFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>remoteFolder</key>

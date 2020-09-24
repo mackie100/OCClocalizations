@@ -246,7 +246,7 @@
 "XRB-18-dHU.ibShadowedToolTip" = "必须选YES, 无论\"自动\"选项是否选择！";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nDefault value: Automatic\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types."; ObjectID = "YN8-NU-Zgm"; */
-"YN8-NU-Zgm.ibShadowedToolTip" = "Type: plist integer, 16-bit\nDefault value: Automatic\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types.";
+"YN8-NU-Zgm.ibShadowedToolTip" = "填写十进制整数值\n\n自动值生成会尝试为当前安装的CPU提供最准确的值。有关完整列表可用值及其限制(该值仅在CPU核心数量匹配时适用)是指Apple SMBIOS,可以在https://github.com/acidanthera/OpenCorePkg/blob/master/Include/Apple/IndustryStandard/AppleSmBios.h查看定义标头\n另请参阅此处以获取Mac型号上使用的CPU列表:https://docs.google.com/spreadsheets/d/1x09b5-DGh8ozNwN5ZjAi7TMnOp4TDm6DbmrKu86i_bQ\n\n例如:我的CPU是I5-6400,属于I5系列，四核心，通过查表获知CPU型号为0x0605，转换为十进制数为1541，如果想显示为I7处理器，对应的CPU型号为0x0705，转为十进制整数为1797，这里填1797，重启后就显示为I7处理器";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details."; ObjectID = "YgB-Sp-EZ5"; */
 "YgB-Sp-EZ5.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 板类型\n描述:0xA（主板（包括处理器，内存和I / O）或0xB（处理器/内存）模块），请参阅表15  - 底板:电路板类型以获取更多详细信息。";
@@ -417,7 +417,7 @@
 "rjU-uH-nCF.title" = "Box";
 
 /* Class = "NSTextFieldCell"; title = "ProcessorType"; ObjectID = "sTq-fo-o3l"; */
-"sTq-fo-o3l.title" = "ProcessorType";
+"sTq-fo-o3l.title" = "ProcessorType\n自定义CPU型号";
 
 /* Class = "NSTextFieldCell"; title = "System Serial Number"; ObjectID = "sXU-di-o5I"; */
 "sXU-di-o5I.title" = "System Serial Number";

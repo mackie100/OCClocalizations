@@ -86,7 +86,7 @@
 /* Class = "NSButtonCell"; title = "AppleUserInterfaceTheme"; ObjectID = "BvY-5w-QBw"; */
 "BvY-5w-QBw.title" = "AppleUserInterfaceTheme";
 
-/* Class = "NSButtonCell"; title = "Browse"; ObjectID = "CLg-lY-N26"; */
+/* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "CLg-lY-N26"; */
 "CLg-lY-N26.title" = "Parcourir";
 
 /* Class = "NSButtonCell"; title = "IgnoreInvalidFlexRatio"; ObjectID = "CWI-LU-4dW"; */

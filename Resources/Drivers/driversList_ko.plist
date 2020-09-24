@@ -20,7 +20,7 @@
 			<key>description</key>
 			<string></string>
 			<key>name</key>
-			<string>ExFatLegacyDxe</string>
+			<string>ExFatDxeLegacy</string>
 		</dict>
 		<dict>
 			<key>description</key>
@@ -101,6 +101,12 @@ Note: OpenCanopy is currently considered experimental and is not recommended for
 			<string>NTFS filesystem driver.</string>
 			<key>name</key>
 			<string>NTFS</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>The tool for taking screenshots on the OpenCanopy boot interface, the shortcut key is F10</string>
+			<key>name</key>
+			<string>CrScreenshotDxe</string>
 		</dict>
 	</array>
 </dict>
