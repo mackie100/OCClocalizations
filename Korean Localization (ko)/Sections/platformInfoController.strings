@@ -224,8 +224,8 @@
 /* Class = "NSButtonCell"; title = "from System"; ObjectID = "VKd-ep-fuP"; */
 "VKd-ep-fuP.title" = "from System";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64-bit\nDefault value: Automatic\nDescription: Sets FSBFrequency in gEfiProcessorSubClassGuid. Sets CPU FSB frequency."; ObjectID = "W2E-oe-9Uq"; */
-"W2E-oe-9Uq.ibShadowedToolTip" = "Type: plist integer, 64-bit\nDefault value: Automatic\nDescription: Sets FSBFrequency in gEfiProcessorSubClassGuid. Sets CPU FSB frequency.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64-bit\nFailsafe: 0 (Automatic)\nDescription: Sets FSBFrequency in gEfiProcessorSubClassGuid. Sets CPU FSB frequency."; ObjectID = "W2E-oe-9Uq"; */
+"W2E-oe-9Uq.ibShadowedToolTip" = "Type: plist integer, 64-bit\nFailsafe: 0 (Automatic)\nDescription: Sets FSBFrequency in gEfiProcessorSubClassGuid. Sets CPU FSB frequency.";
 
 /* Class = "NSTextFieldCell"; title = "Board Product"; ObjectID = "WDt-qb-GcR"; */
 "WDt-qb-GcR.title" = "Board Product";
@@ -245,8 +245,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Update DataHub fields. These fields are read from Generic or DataHub sections depending on Automatic value."; ObjectID = "XRB-18-dHU"; */
 "XRB-18-dHU.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Update DataHub fields. These fields are read from Generic or DataHub sections depending on Automatic value.";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nDefault value: Automatic\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types."; ObjectID = "YN8-NU-Zgm"; */
-"YN8-NU-Zgm.ibShadowedToolTip" = "Type: plist integer, 16-bit\nDefault value: Automatic\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nFailsafe: 0 (Automatic)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types."; ObjectID = "YN8-NU-Zgm"; */
+"YN8-NU-Zgm.ibShadowedToolTip" = "Type: plist integer, 16-bit\nFailsafe: 0 (Automatic)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details."; ObjectID = "YgB-Sp-EZ5"; */
 "YgB-Sp-EZ5.ibShadowedToolTip" = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details.";
@@ -398,8 +398,8 @@
 /* Class = "NSTextFieldCell"; title = "Family"; ObjectID = "pbb-64-p0X"; */
 "pbb-64-p0X.title" = "Family";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64-bit\nDefault value: Not installed\nDescription: Sets ARTFrequency in gEfiProcessorSubClassGuid. Sets CPU ART frequency, Skylake and newer."; ObjectID = "qOV-63-yas"; */
-"qOV-63-yas.ibShadowedToolTip" = "Type: plist integer, 64-bit\nDefault value: Not installed\nDescription: Sets ARTFrequency in gEfiProcessorSubClassGuid. Sets CPU ART frequency, Skylake and newer.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64-bit\nFailsafe: 0 (Automatic)\nDescription: Sets ARTFrequency in gEfiProcessorSubClassGuid. Sets CPU ART frequency, Skylake and newer."; ObjectID = "qOV-63-yas"; */
+"qOV-63-yas.ibShadowedToolTip" = "Type: plist integer, 64-bit\nFailsafe: 0 (Automatic)\nDescription: Sets ARTFrequency in gEfiProcessorSubClassGuid. Sets CPU ART frequency, Skylake and newer.";
 
 /* Class = "NSTextFieldCell"; title = "Firmware"; ObjectID = "qoc-xS-eEN"; */
 "qoc-xS-eEN.title" = "Firmware";
