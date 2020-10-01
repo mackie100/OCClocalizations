@@ -156,7 +156,7 @@
 "Ljq-q2-IwF.title" = "OSInfo";
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "McE-CL-fQD"; */
-"McE-CL-fQD.headerCell.title" = "Type";
+"McE-CL-fQD.headerCell.title" = "类型";
 
 /* Class = "NSButtonCell"; title = "DataHub"; ObjectID = "NGa-cY-Uzn"; */
 "NGa-cY-Uzn.title" = "DataHub";
