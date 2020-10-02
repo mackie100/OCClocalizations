@@ -131,6 +131,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nRequirement: 10.11 (not required for older)\nDescription: Patch various kexts (AppleUSBXHCI.kext, AppleUSBXHCIPCI.kext, IOUSBHostFamily.kext) to remove USB port count limit of 15 ports.\nNote: This option should avoided whenever possible. USB port limit is imposed by the amount of used bits in locationID format and there is no possible way to workaround this without heavy OS modification. The only valid solution is to limit the amount of used ports to 15 (discarding some)."; ObjectID = "QzX-0b-2d3"; */
 "QzX-0b-2d3.ibShadowedToolTip" = "解除15个端口限制，如果USB端口已经定制，请选择NO。";
 
+/* Class = "NSButtonCell"; title = "ExtendBTFeatureFlags"; ObjectID = "R97-OT-r6W"; */
+"R97-OT-r6W.title" = "ExtendBTFeatureFlags";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Disables primary checksum (0x58-0x59) writing in AppleRTC.\n\nNote 1: This option will not protect other areas from being overwritten, see RTCMemoryFixup kernel extension if this is desired.\n\nNote 2: This option will not protect areas from being overwritten at firmware stage (e.g. macOS bootloader), see AppleRtcRam protocol description if this is desired."; ObjectID = "RA3-U5-VwM"; */
 "RA3-U5-VwM.ibShadowedToolTip" = "在AppleRTC中禁止写入主校验和。\n\n注意 1: 此选项不会保护其他区域不被覆盖，如果需要，请参见RTCMemoryFixup内核扩展。\n\n注意 2: 此选项不能保护区域在固件阶段不被覆盖 (例如 macOS bootloader), 如果需要，请参见RTC（FIXME）部分。";
 
@@ -148,6 +151,9 @@
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nDescription: Bit mask of active bits in Cpuid1Data. When each Cpuid1Mask is set to 0, the original CPU bit is used, otherwise."; ObjectID = "WQz-t0-GJT"; */
 "WQz-t0-GJT.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument."; ObjectID = "XZ1-7z-v2l"; */
+"XZ1-7z-v2l.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument.";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Auto\nDescription: Prefer specified kernel cache type (Auto, Cacheless, Mkext, Prelinked) when available. \nDifferent variants of macOS support different kernel caching variants designed to improve boot performance.\nThis setting allows to prevent using faster kernel caching variants if slower variants are available for debugging and stability reasons. I.e. by specifying Mkext one will disable Prelinked for e.g. 10.6 but not 10.7."; ObjectID = "ZjB-iQ-yjq"; */
 "ZjB-iQ-yjq.ibShadowedToolTip" = "如果可用，首选指定的内核缓存类型(Auto, Cacheless, Mkext, Prelinked). \nmacOS的不同变体支持旨在提高启动性能的不同内核缓存变体.\n如果出于调试和稳定性的原因而可以使用较慢的变体，则此设置可以防止使用较快的内核缓存变体。即通过指定Mkext可以例如禁用预链接10.6但不是10.7.";
