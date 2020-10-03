@@ -95,6 +95,9 @@
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
 
+/* Class = "NSMenuItem"; title = "UnusableMemory — EfiUnusableMemory"; ObjectID = "DwL-VG-qNh"; Note = "Do not localize"; */
+"DwL-VG-qNh.title" = "UnusableMemory — EfiUnusableMemory";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key."; ObjectID = "EIc-ff-Thn"; */
 "EIc-ff-Thn.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key.";
 
@@ -140,6 +143,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls Data Hub protocol with a builtin version. This will delete all previous properties if the protocol was already installed."; ObjectID = "KN0-dq-pSV"; */
 "KN0-dq-pSV.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls Data Hub protocol with a builtin version. This will delete all previous properties if the protocol was already installed.";
 
+/* Class = "NSMenuItem"; title = "ACPIReclaimMemory — EfiACPIReclaimMemory"; ObjectID = "KsW-za-ip4"; Note = "Do not localize"; */
+"KsW-za-ip4.title" = "ACPIReclaimMemory — EfiACPIReclaimMemory";
+
 /* Class = "NSTextFieldCell"; title = "AudioCodec"; ObjectID = "L2f-gE-rBP"; */
 "L2f-gE-rBP.title" = "AudioCodec";
 
@@ -148,6 +154,9 @@
 
 /* Class = "NSButtonCell"; title = "OSInfo"; ObjectID = "Ljq-q2-IwF"; */
 "Ljq-q2-IwF.title" = "OSInfo";
+
+/* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "McE-CL-fQD"; */
+"McE-CL-fQD.headerCell.title" = "Type";
 
 /* Class = "NSButtonCell"; title = "DataHub"; ObjectID = "NGa-cY-Uzn"; */
 "NGa-cY-Uzn.title" = "DataHub";
@@ -163,6 +172,9 @@
 
 /* Class = "NSButtonCell"; title = "AppleAudio"; ObjectID = "POq-ge-Ugg"; */
 "POq-ge-Ugg.title" = "AppleAudio";
+
+/* Class = "NSMenuItem"; title = "LoaderData — EfiLoaderData"; ObjectID = "PUI-Gl-EfE"; Note = "Do not localize"; */
+"PUI-Gl-EfE.title" = "LoaderData — EfiLoaderData";
 
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "PVa-Cc-beC"; */
 "PVa-Cc-beC.title" = "Quirks";
@@ -185,6 +197,9 @@
 /* Class = "NSButtonCell"; title = "ReleaseUsbOwnership"; ObjectID = "UMT-DK-9B5"; */
 "UMT-DK-9B5.title" = "ReleaseUsbOwnership";
 
+/* Class = "NSMenuItem"; title = "BootServiceCode — EfiBootServicesCode"; ObjectID = "UNS-wv-SeD"; Note = "Do not localize"; */
+"UNS-wv-SeD.title" = "BootServiceCode — EfiBootServicesCode";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls device property protocol with a builtin version. This will delete all previous properties if it was already installed. This may be used to ensure full compatibility on VMs or legacy Macs."; ObjectID = "Ueb-hn-jBT"; */
 "Ueb-hn-jBT.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Reinstalls device property protocol with a builtin version. This will delete all previous properties if it was already installed. This may be used to ensure full compatibility on VMs or legacy Macs.";
 
@@ -193,6 +208,9 @@
 
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "Drivers";
+
+/* Class = "NSMenuItem"; title = "MemoryMappedIO — EfiMemoryMappedIO"; ObjectID = "XBh-jM-PDL"; Note = "Do not localize"; */
+"XBh-jM-PDL.title" = "MemoryMappedIO — EfiMemoryMappedIO";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot."; ObjectID = "XQL-ML-llQ"; */
 "XQL-ML-llQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot.";
@@ -221,8 +239,14 @@
 /* Class = "NSTextFieldCell"; title = "PointerSupportMode"; ObjectID = "anR-lZ-CjV"; */
 "anR-lZ-CjV.title" = "PointerSupportMode";
 
+/* Class = "NSMenuItem"; title = "LoaderCode — EfiLoaderCode"; ObjectID = "b7Y-CD-r7l"; Note = "Do not localize"; */
+"b7Y-CD-r7l.title" = "LoaderCode — EfiLoaderCode";
+
 /* Class = "NSButtonCell"; title = "ProvideConsoleGop"; ObjectID = "bdr-Pu-Crr"; */
 "bdr-Pu-Crr.title" = "ProvideConsoleGop";
+
+/* Class = "NSMenuItem"; title = "RuntimeData — EfiRuntimeServicesData"; ObjectID = "c5S-aW-uXu"; Note = "Do not localize"; */
+"c5S-aW-uXu.title" = "RuntimeData — EfiRuntimeServicesData";
 
 /* Class = "NSButtonCell"; title = "KeySupport"; ObjectID = "cia-MM-Epa"; */
 "cia-MM-Epa.title" = "KeySupport";
@@ -242,11 +266,20 @@
 /* Class = "NSTextFieldCell"; title = "KeyMergeThreshold"; ObjectID = "du6-Wl-DOI"; */
 "du6-Wl-DOI.title" = "KeyMergeThreshold";
 
+/* Class = "NSMenuItem"; title = "PalCode — EfiPalCode"; ObjectID = "dzI-am-EZX"; Note = "Do not localize"; */
+"dzI-am-EZX.title" = "PalCode — EfiPalCode";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is broken."; ObjectID = "dzp-p6-AHb"; */
 "dzp-p6-AHb.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is broken.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs."; ObjectID = "eGd-xS-rQf"; */
 "eGd-xS-rQf.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs.";
+
+/* Class = "NSMenuItem"; title = "Persistent — EfiPersistentMemory"; ObjectID = "eMM-3b-cBd"; Note = "Do not localize"; */
+"eMM-3b-cBd.title" = "Persistent — EfiPersistentMemory";
+
+/* Class = "NSMenuItem"; title = "MemoryMappedIOPortSpace — EfiMemoryMappedIOPortSpace"; ObjectID = "eQX-uX-ZBd"; Note = "Do not localize"; */
+"eQX-uX-ZBd.title" = "MemoryMappedIOPortSpace — EfiMemoryMappedIOPortSpace";
 
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";
@@ -335,11 +368,17 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs.\n\nNote: Several virtual machines including VMware may have corrupted cursor image in HiDPI mode and thus may also require this setting to be enabled."; ObjectID = "nvr-JF-3ne"; */
 "nvr-JF-3ne.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs.\n\nNote: Several virtual machines including VMware may have corrupted cursor image in HiDPI mode and thus may also require this setting to be enabled.";
 
+/* Class = "NSMenuItem"; title = "Available — EfiConventionalMemory"; ObjectID = "nyc-OA-Vfg"; Note = "Do not localize"; */
+"nyc-OA-Vfg.title" = "Available — EfiConventionalMemory";
+
 /* Class = "NSButtonCell"; title = "DeviceProperties"; ObjectID = "oMi-yN-r8X"; */
 "oMi-yN-r8X.title" = "DeviceProperties";
 
 /* Class = "NSButtonCell"; title = "AudioSupport"; ObjectID = "oT1-Q2-rhc"; */
 "oT1-Q2-rhc.title" = "AudioSupport";
+
+/* Class = "NSMenuItem"; title = "BootServiceData — EfiBootServicesData"; ObjectID = "q2q-z0-cAo"; Note = "Do not localize"; */
+"q2q-z0-cAo.title" = "BootServiceData — EfiBootServicesData";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some firmwares clear only part of screen when switching from graphics to text mode, leaving a fragment of previously drawn image visible. This option fills the entire graphics screen with black colour before switching to text mode.\n\nNote: This option only applies to System renderer."; ObjectID = "qMh-AF-g0P"; */
 "qMh-AF-g0P.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Some firmwares clear only part of screen when switching from graphics to text mode, leaving a fragment of previously drawn image visible. This option fills the entire graphics screen with black colour before switching to text mode.\n\nNote: This option only applies to System renderer.";
@@ -383,11 +422,20 @@
 /* Class = "NSButtonCell"; title = "UgaPassThrough"; ObjectID = "vav-dM-ieV"; */
 "vav-dM-ieV.title" = "UgaPassThrough";
 
+/* Class = "NSMenuItem"; title = "ACPIMemoryNVS — EfiACPIMemoryNVS"; ObjectID = "wdW-0Y-LKj"; Note = "Do not localize"; */
+"wdW-0Y-LKj.title" = "ACPIMemoryNVS — EfiACPIMemoryNVS";
+
 /* Class = "NSTextFieldCell"; title = "ExitBootServicesDelay"; ObjectID = "wxD-TC-lrQ"; */
 "wxD-TC-lrQ.title" = "ExitBootServicesDelay";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Remove key unless it was submitted during this timeout in milliseconds.\nAppleKeyMapAggregator protocol is supposed to contain a fixed length buffer of currently pressed keys. However, the majority of the drivers only report key presses as interrupts and pressing and holding the key on the keyboard results in subsequent submissions of this key with some defined time interval. As a result we use a timeout to remove once pressed keys from the buffer once the timeout expires and no new submission of this key happened.\nThis option allows to set this timeout based on your platform. The recommended value that works on the majority of the platforms is 5 milliseconds. For reference, holding one key on VMware will repeat it roughly every 2 milliseconds and the same value for APTIO V is 3-4 milliseconds. Thus it is possible to set a slightly lower value on faster platforms and slightly higher value on slower platforms for more responsive input.\n\nNote: Some platforms may require different values, higher or lower. For example, when detecting key misses in OpenCanopy try increasing this value (e.g. to 10), and when detecting key stall, try decreasing this value. Since every platform is different it may be reasonable to check every value from 1 to 25."; ObjectID = "xNH-9V-3kd"; */
 "xNH-9V-3kd.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Remove key unless it was submitted during this timeout in milliseconds.\nAppleKeyMapAggregator protocol is supposed to contain a fixed length buffer of currently pressed keys. However, the majority of the drivers only report key presses as interrupts and pressing and holding the key on the keyboard results in subsequent submissions of this key with some defined time interval. As a result we use a timeout to remove once pressed keys from the buffer once the timeout expires and no new submission of this key happened.\nThis option allows to set this timeout based on your platform. The recommended value that works on the majority of the platforms is 5 milliseconds. For reference, holding one key on VMware will repeat it roughly every 2 milliseconds and the same value for APTIO V is 3-4 milliseconds. Thus it is possible to set a slightly lower value on faster platforms and slightly higher value on slower platforms for more responsive input.\n\nNote: Some platforms may require different values, higher or lower. For example, when detecting key misses in OpenCanopy try increasing this value (e.g. to 10), and when detecting key stall, try decreasing this value. Since every platform is different it may be reasonable to check every value from 1 to 25.";
+
+/* Class = "NSMenuItem"; title = "RuntimeCode — EfiRuntimeServicesCode"; ObjectID = "xWU-hM-Ed8"; Note = "Do not localize"; */
+"xWU-hM-Ed8.title" = "RuntimeCode — EfiRuntimeServicesCode";
+
+/* Class = "NSMenuItem"; title = "Reserved — EfiReservedMemoryType"; ObjectID = "xhv-Jg-JKE"; Note = "Do not localize"; */
+"xhv-Jg-JKE.title" = "Reserved — EfiReservedMemoryType";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\nThis is a very ugly quirk to circumvent \"Still waiting for root device\" message on select APTIO IV firmwares, namely ASUS Z87-Pro, when using FileVault 2 in particular. It seems that for some reason they execute code in parallel to EXIT_BOOT_SERVICES, which results in SATA controller being inaccessible from macOS. A better approach should be found in some future. Expect 3-5 seconds to be enough in case the quirk is needed."; ObjectID = "yXm-Kd-A6O"; */
 "yXm-Kd-A6O.ibShadowedToolTip" = "Type: plist integer\nDefault value: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\nThis is a very ugly quirk to circumvent \"Still waiting for root device\" message on select APTIO IV firmwares, namely ASUS Z87-Pro, when using FileVault 2 in particular. It seems that for some reason they execute code in parallel to EXIT_BOOT_SERVICES, which results in SATA controller being inaccessible from macOS. A better approach should be found in some future. Expect 3-5 seconds to be enough in case the quirk is needed.";
