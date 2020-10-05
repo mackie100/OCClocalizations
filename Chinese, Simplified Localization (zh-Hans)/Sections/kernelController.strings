@@ -153,7 +153,7 @@
 "WQz-t0-GJT.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument."; ObjectID = "XZ1-7z-v2l"; */
-"XZ1-7z-v2l.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some others function in macOS Big Sur with best performance without keepsyms=1 boot argument.";
+"XZ1-7z-v2l.ibShadowedToolTip" = "将FeatureFlags设置为0x0F，以获取蓝牙的全部功能，包括Continuity。\n\n注意：此选项代替了由于后期修补进度而无法正常运行的BT4LEContinuityFixup.kex。";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Auto\nDescription: Prefer specified kernel cache type (Auto, Cacheless, Mkext, Prelinked) when available. \nDifferent variants of macOS support different kernel caching variants designed to improve boot performance.\nThis setting allows to prevent using faster kernel caching variants if slower variants are available for debugging and stability reasons. I.e. by specifying Mkext one will disable Prelinked for e.g. 10.6 but not 10.7."; ObjectID = "ZjB-iQ-yjq"; */
 "ZjB-iQ-yjq.ibShadowedToolTip" = "如果可用，首选指定的内核缓存类型(Auto, Cacheless, Mkext, Prelinked). \nmacOS的不同变体支持旨在提高启动性能的不同内核缓存变体.\n如果出于调试和稳定性的原因而可以使用较慢的变体，则此设置可以防止使用较快的内核缓存变体。即通过指定Mkext可以例如禁用预链接10.6但不是10.7.";
