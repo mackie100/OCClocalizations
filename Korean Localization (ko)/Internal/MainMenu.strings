@@ -6,7 +6,7 @@
 "11s-5L-eLA.paletteLabel" = "부트로더 설정";
 
 /* Class = "NSMenuItem"; title = "Boot.log"; ObjectID = "1OT-QB-Wyo"; */
-"1OT-QB-Wyo.title" = "Boot.log";
+"1OT-QB-Wyo.title" = "Boot.log 보기";
 
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
 "1UK-8n-QPP.title" = "툴바 설정…";
@@ -108,7 +108,7 @@
 "C9y-Q3-nK5.title" = "Config 체크";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
-"D1d-8G-YO3.title" = "차이점";
+"D1d-8G-YO3.title" = "변화사항";
 
 /* Class = "NSMenuItem"; title = "Spelling and Grammar"; ObjectID = "Dv1-io-Yv7"; */
 "Dv1-io-Yv7.title" = "철자 와 문법";
@@ -162,10 +162,10 @@
 "H8h-7b-M4v.title" = "보기";
 
 /* Class = "NSMenuItem"; title = "Text Replacement"; ObjectID = "HFQ-gK-NFA"; */
-"HFQ-gK-NFA.title" = "Text Replacement";
+"HFQ-gK-NFA.title" = "텍스트 교체";
 
 /* Class = "NSMenuItem"; title = "Show Spelling and Grammar"; ObjectID = "HFo-cy-zxI"; */
-"HFo-cy-zxI.title" = "Show Spelling and Grammar";
+"HFo-cy-zxI.title" = "맞춤법";
 
 /* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "HkR-hj-D4X"; */
 "HkR-hj-D4X.title" = "설정...";
@@ -456,7 +456,7 @@
 "q09-fT-Sye.title" = "Find Next";
 
 /* Class = "NSMenuItem"; title = "Configuration"; ObjectID = "q0U-gA-ewe"; */
-"q0U-gA-ewe.title" = "Configuration";
+"q0U-gA-ewe.title" = "레퍼런스 메뉴얼";
 
 /* Class = "NSButtonCell"; title = "Autosave File"; ObjectID = "qzY-w2-2R4"; */
 "qzY-w2-2R4.title" = "자동 저장 파일";
@@ -489,7 +489,7 @@
 "tlD-Oa-oAM.title" = "Kern";
 
 /* Class = "NSMenuItem"; title = "Documentations"; ObjectID = "toU-XT-mIr"; */
-"toU-XT-mIr.title" = "문서";
+"toU-XT-mIr.title" = "메뉴얼";
 
 /* Class = "NSButtonCell"; title = "Keep in front"; ObjectID = "uKn-Sr-CBs"; */
 "uKn-Sr-CBs.title" = "최 상위에 두기";
