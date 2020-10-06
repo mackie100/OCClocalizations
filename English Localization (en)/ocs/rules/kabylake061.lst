@@ -22,8 +22,8 @@ ACPI
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-USBX-DESKTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake#acpi>[Acpi Docs]</a>"
  [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
- [Path]==SSDT-OLA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake#acpi>[Acpi Docs]</a>"
- [Path]==SSDT-OLARILA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-OLA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-OLARILA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake#acpi>[Acpi Docs]</a>"
 
 :Quirks
  count==5
@@ -160,7 +160,7 @@ NVRAM
 
 :Add
 ::4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14
- UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> but it is usally set to <b>01</b> or <b>02</b>"
+ UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> but it is usually set to <b>01</b> or <b>02</b>"
  DefaultBackgroundColor~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 ::7C436110-AB2A-4BBB-A880-FE41995C9F82
@@ -284,7 +284,7 @@ UEFI
  IgnoreInvalidFlexRatio=no
  ReconnectOnResChange~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- ProvideConsoleGop=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ ProvideConsoleGop~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
  ReleaseUsbOwnership=no
  RequestBootVarFallback~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
  RequestBootVarRouting=yes
