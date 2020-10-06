@@ -72,7 +72,7 @@
 "9tr-6R-vGd.label" = "补丁";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4 - 10.6\nDescription: Replaces the default 64-bit commpage bcopy implementation with one that does not require SSSE3, useful for legacy platforms. This prevents a commpage no match for last panic due to no available 64-bit bcopy functions that do not require SSSE3."; ObjectID = "Bdo-0T-kr8"; */
-"Bdo-0T-kr8.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4 - 10.6\nDescription: Replaces the default 64-bit commpage bcopy implementation with one that does not require SSSE3, useful for legacy platforms. This prevents a commpage no match for last panic due to no available 64-bit bcopy functions that do not require SSSE3.";
+"Bdo-0T-kr8.ibShadowedToolTip" = "将默认的64位Combpage bcopy实现替换为不需要SSSE3的实现, 对旧平台有用. 由于没有可用的不需要SSSE3的64位bcopy函数，这可以防止没有最后一次紧急情况的commpage。.";
 
 /* Class = "NSTabViewItem"; label = "Force"; ObjectID = "Dip-Qx-lAB"; */
 "Dip-Qx-lAB.label" = "强制加载";
@@ -93,7 +93,7 @@
 "H8d-aU-LbU.headerCell.title" = "Plist文件路径";
 
 /* Class = "NSTextFieldCell"; title = "MinKernel"; ObjectID = "Hvv-Zp-P5b"; */
-"Hvv-Zp-P5b.title" = "MinKernel";
+"Hvv-Zp-P5b.title" = "最小内核";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "IQk-iw-L5E"; */
 "IQk-iw-L5E.headerCell.title" = "最大内核";
@@ -150,7 +150,7 @@
 "SHQ-fm-Uec.title" = "ExternalDiskIcons";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty string\nDescription: Emulates CPUID and applies DummyPowerManagement on specified macOS version or older.\n\nNote: Refer to Add MaxKernel description for matching logic."; ObjectID = "SZI-EW-Tfa"; */
-"SZI-EW-Tfa.ibShadowedToolTip" = "Type: plist string\nFailsafe: Empty string\nDescription: Emulates CPUID and applies DummyPowerManagement on specified macOS version or older.\n\nNote: Refer to Add MaxKernel description for matching logic.";
+"SZI-EW-Tfa.ibShadowedToolTip" = "模拟CPUID并在指定的macOS版本或更早版本上应用DummyPowerManagement.\n\n注意：有关匹配逻辑，请参阅添加MaxKernel(最大内核)描述.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "TcN-ku-fY2"; */
 "TcN-ku-fY2.headerCell.title" = "启用";
@@ -162,13 +162,13 @@
 "WQz-t0-GJT.ibShadowedToolTip" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的，所有选项按默认即可。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty string\nDescription: Emulates CPUID and applies DummyPowerManagement on specified macOS version or newer.\n\nNote: Refer to Add MaxKernel description for matching logic."; ObjectID = "Wjh-w3-4g8"; */
-"XZ1-7z-v2l.ibShadowedToolTip" = "将FeatureFlags设置为0x0F，以获取蓝牙的全部功能，包括Continuity。\n\n注意：此选项代替了由于后期修补进度而无法正常运行的BT4LEContinuityFixup.kex。";
+"Wjh-w3-4g8.ibShadowedToolTip" = "模拟CPUID并在指定的macOS版本或更高版本上应用DummyPowerManagement.\n\n注意：有关匹配逻辑，请参阅添加MaxKernel描述.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8\nDescription: Set FeatureFlags to 0x0F for full functionality of Bluetooth, including Continuity.\n\nNote: This option is a substitution for BT4LEContinuityFixup.kext, which does not function properly due to late patching progress."; ObjectID = "XZ1-7z-v2l"; */
-"ZjB-iQ-yjq.ibShadowedToolTip" = "如果可用，首选指定的内核缓存类型(Auto, Cacheless, Mkext, Prelinked). \nmacOS的不同变体支持旨在提高启动性能的不同内核缓存变体.\n如果出于调试和稳定性的原因而可以使用较慢的变体，则此设置可以防止使用较快的内核缓存变体。即通过指定Mkext可以例如禁用预链接10.6但不是10.7.";
+"XZ1-7z-v2l.ibShadowedToolTip" = "将FeatureFlags设置为0x0F，以获取蓝牙的全部功能，包括Continuity。\n\n注意：此选项代替了由于后期修补进度而无法正常运行的BT4LEContinuityFixup.kext。";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Auto\nDescription: Prefer specified kernel cache type (Auto, Cacheless, Mkext, Prelinked) when available.\n\nDifferent variants of macOS support different kernel caching variants designed to improve boot performance.\nThis setting prevents the use of faster kernel caching variants if slower variants are available for debugging and stability reasons. I.e., by specifying Mkext, Prelinked will be disabled for e.g. 10.6 but not for 10.7."; ObjectID = "ZjB-iQ-yjq"; */
-"ZjB-iQ-yjq.ibShadowedToolTip" = "Type: plist string\nFailsafe: Auto\nDescription: Prefer specified kernel cache type (Auto, Cacheless, Mkext, Prelinked) when available.\n\nDifferent variants of macOS support different kernel caching variants designed to improve boot performance.\nThis setting prevents the use of faster kernel caching variants if slower variants are available for debugging and stability reasons. I.e., by specifying Mkext, Prelinked will be disabled for e.g. 10.6 but not for 10.7.";
+"ZjB-iQ-yjq.ibShadowedToolTip" = "如果可用，首选指定的内核缓存类型(Auto, Cacheless, Mkext, Prelinked).\n\nmacOS的不同变量支持旨在提高启动性能的不同内核缓存变量.\n如果出于调试和稳定性的原因而可以使用较慢的变量，则此设置将阻止使用较快的内核缓存变量. 比如通过指定Mkext，预链接将被禁用，比如只用于10.6，但不适用于10.7.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "aAH-qz-ikl"; */
 "aAH-qz-ikl.headerCell.title" = "跳过次数后开始替换";
@@ -186,7 +186,7 @@
 "axF-O3-KF9.ibShadowedToolTip" = "一般选择NO\n在发生内核崩溃时阻止输出 Kext 列表, 提供可供排错参考的崩溃日志, 排错时请务必开启。";
 
 /* Class = "NSTextFieldCell"; title = "MaxKernel"; ObjectID = "b9n-9m-IDX"; */
-"b9n-9m-IDX.title" = "MaxKernel";
+"b9n-9m-IDX.title" = "最大内核";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nRequirement: 10.8 (not required for older)\nDescription: Forces maximum performance in XCPM mode.\nThis patch writes 0xFF00 to MSR_IA32_PERF_CONTROL (0x199), effectively setting maximum multiplier for all the time.\nNote: While this may increase the performance, this patch is strongly discouraged on all systems but those explicitly dedicated to scientific or media calculations. In general only certain Xeon models benefit from the patch."; ObjectID = "cKa-I9-gvM"; */
 "cKa-I9-gvM.ibShadowedToolTip" = "强制在XCPM模式下将电脑的cpu频率锁定为最高频率，不建议开启。\n此补丁将0xFF00写入MSR_IA32_PERF_CONTROL（0x199），一般而言，只有某些Xeon型号才能从该补丁中受益。";
@@ -270,7 +270,7 @@
 "p2g-8y-f45.ibShadowedToolTip" = "1. Arch\n Kext体系架构 (Any, i386, x86_64). \n2. BundlePath(捆绑路径)\n Kext捆绑路径 (例如 System\\Library \\Extensions \\IONetworkingFamily.kext).\n3. Comment(注释)\n安全值: 空字符\n描述: 任意ASCII字符串，用于为条目提供可读的参考.\n4. Enabled(启用)\n除非设置为true，否则不会添加此内核驱动程序.\n5. ExecutablePath(可执行路径)\n Kext相对于包的可执行路径 (例如: Contents/MacOS/IONetworkingFamily).\n6. Identifier(标识符)\n Kext标识符在添加之前执行状态检查 (例如 com.apple.iokit.IONetworkingFamily).\n仅添加在高速缓存中找不到标识符的驱动程序.\n7. MaxKernel(最大内核)\n 在指定的macOS版本或更早版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n8. MinKernel(最小内核)\n 在指定的macOS版本或更高版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n9. PlistPath(plist路径)\n 相对于包的Kext Info.plist路径 (例如: Contents/Info.plist).";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Kext architecture (Any, i386, x86_64).\n2. BundlePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext bundle path (e.g. Lilu.kext or MyKext.kext/Contents/PlugIns/MySubKext.kext).\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This kernel driver will not be added unless set to true.\n5. ExecutablePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/Lilu).\n6. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or older.\nKernel version can be obtained with uname -r command, and should look like 3 numbers separated by dots, for example 18.7.0 is the kernel version for 10.14.6.\n7. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or newer.\n\nNote: Refer to Add MaxKernel description for matching logic.\n8. PlistPath\nType: plist string\nFailsafe: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist)."; ObjectID = "pIA-W6-XA0"; */
-"pIA-W6-XA0.ibShadowedToolTip" = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Kext architecture (Any, i386, x86_64).\n2. BundlePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext bundle path (e.g. Lilu.kext or MyKext.kext/Contents/PlugIns/MySubKext.kext).\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This kernel driver will not be added unless set to true.\n5. ExecutablePath\nType: plist string\nFailsafe: Empty string\nDescription: Kext executable path relative to bundle (e.g. Contents/MacOS/Lilu).\n6. MaxKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or older.\nKernel version can be obtained with uname -r command, and should look like 3 numbers separated by dots, for example 18.7.0 is the kernel version for 10.14.6.\n7. MinKernel\nType: plist string\nFailsafe: Empty string\nDescription: Adds kernel driver on specified macOS version or newer.\n\nNote: Refer to Add MaxKernel description for matching logic.\n8. PlistPath\nType: plist string\nFailsafe: Empty string\nDescription: Kext Info.plist path relative to bundle (e.g. Contents/Info.plist).";
+"pIA-W6-XA0.ibShadowedToolTip" = "1. Arch\n Kext体系架构 (Any, i386, x86_64). \n2. BundlePath(捆绑路径)\n Kext捆绑路径 (例如 System\\Library \\Extensions \\IONetworkingFamily.kext).\n3. Comment(注释)\n安全值: 空字符\n描述: 任意ASCII字符串，用于为条目提供可读的参考.\n4. Enabled(启用)\n除非设置为true，否则不会添加此内核驱动程序.\n5. ExecutablePath(可执行路径)\n Kext相对于包的可执行路径 (例如: Contents/MacOS/IONetworkingFamily).\n6. Identifier(标识符)\n Kext标识符在添加之前执行状态检查 (例如 com.apple.iokit.IONetworkingFamily).\n仅添加在高速缓存中找不到标识符的驱动程序.\n7. MaxKernel(最大内核)\n 在指定的macOS版本或更早版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n8. MinKernel(最小内核)\n 在指定的macOS版本或更高版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n9. PlistPath(plist路径)\n 相对于包的Kext Info.plist路径 (例如: Contents/Info.plist).";
 
 /* Class = "NSButtonCell"; title = "DummyPowerManagement"; ObjectID = "pr8-6X-rta"; */
 "pr8-6X-rta.title" = "DummyPowerManagement";
@@ -282,7 +282,7 @@
 "tya-o0-N6w.headerCell.title" = "最大内核";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nRequirement: 10.4\nDescription: Disables AppleIntelCpuPowerManagement.\nNote: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS."; ObjectID = "uAI-EN-XUe"; */
-"uAI-EN-XUe.ibShadowedToolTip" = "Type: plist boolean \nFailsafe: false\nRequirement: 10.4\nDescription: Disables AppleIntelCpuPowerManagement.\nNote: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS.";
+"uAI-EN-XUe.ibShadowedToolTip" = "禁用AppleIntelCpuPowerManagement.\n注意:对于在macOS中没有本机电源管理驱动程序的CPU，此选项是NullCpuPowerManagement.kext的首选替代方案.";
 
 /* Class = "NSMenuItem"; title = "List Of Patches"; ObjectID = "urM-4i-kap"; */
 "urM-4i-kap.title" = "补丁列表";
@@ -291,7 +291,7 @@
 "v6y-N9-uHT.ibShadowedToolTip" = "主要在没有原生电源管理的CPU上启用，一般是Haswell-E, Broadwell-E, Skylake-X这三种CPU需要填写YES。除此之外的CPU选择NO。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Disables AppleIntelCpuPowerManagement.\n\nNote 1: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS.\n\nNote 2: While this option is usually needed to disable AppleIntelCpuPowerManagement on unsupported platforms, it can also be used to disable this kext in other situations (e.g. with Cpuid1Data left blank)."; ObjectID = "vK8-Z1-ZOI"; */
-"vK8-Z1-ZOI.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Disables AppleIntelCpuPowerManagement.\n\nNote 1: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS.\n\nNote 2: While this option is usually needed to disable AppleIntelCpuPowerManagement on unsupported platforms, it can also be used to disable this kext in other situations (e.g. with Cpuid1Data left blank).";
+"vK8-Z1-ZOI.ibShadowedToolTip" = "禁用AppleIntelCpuPowerManagement.\n\n注意 1: 对于在macOS中没有本机电源管理驱动程序的CPU，此选项是NullCpuPowerManagement.kext的首选替代方案.\n\n注意 2: 虽然通常需要此选项来在不受支持的平台上禁用AppleIntelCpuPowerManagement，但在其他情况下，也可以使用它来禁用此kext (例如对于Cpuid1Data留为空白).";
 
 /* Class = "NSTextFieldCell"; title = "Multiple selection allowed"; ObjectID = "vgG-WU-Sc2"; */
 "vgG-WU-Sc2.title" = "允许多项选择";
