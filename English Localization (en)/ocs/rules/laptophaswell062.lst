@@ -1,4 +1,4 @@
-=<span class="title">Laptop: (4th Gen) Haswell OpenCore 0.6.2</span><br/>
+SystemMemoryStatus=<span class="title">Laptop: (4th Gen) Haswell OpenCore 0.6.2</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.2 Intel Haswell Laptop Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html</a>
@@ -191,7 +191,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SystemProductName~="(MacBookAir6,1|MacBookAir6,2|MacBookPro11,1|MacBookPro11,2|MacBookPro11,3|MacBookPro11,4|MacBookPro11,5)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Haswell Laptop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> You should set this to your NIC MAC address. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"

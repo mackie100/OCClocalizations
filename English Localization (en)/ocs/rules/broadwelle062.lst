@@ -1,4 +1,4 @@
-=<span class="title">HEDT: (6th Gen) Broadwell-E OpenCore 0.6.2</span><br/>
+SystemMemoryStatus=<span class="title">HEDT: (6th Gen) Broadwell-E OpenCore 0.6.2</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.2 Intel Broadwell-E Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/broadwell-e.html">https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/broadwell-e.html</a>
@@ -183,7 +183,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " **{$setting}** = **{$value}**"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5"
  SystemProductName~="(iMacPro1,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Broadwell-E Desktop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/broadwell-e#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/broadwell-e#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"

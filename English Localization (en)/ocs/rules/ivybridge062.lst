@@ -193,7 +193,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5"
  SystemProductName~="(iMac13,1|iMac13,2|MacPro6,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Ivy Bridge Desktop systems. See <a href=hhttps://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"

@@ -1,4 +1,4 @@
-=<span class="title">AMD Zen OpenCore 0.6.2</span><br/>
+SystemMemoryStatus=<span class="title">AMD Zen OpenCore 0.6.2</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.2 AMD Zen Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html">https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html</a>
@@ -197,7 +197,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5"
  SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2|iMac15,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for AMD systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB~="(M000000000001|M0000000000000001)" "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo>[PlatformInfo Docs][</a>":" <b>{$setting}</b> is set"

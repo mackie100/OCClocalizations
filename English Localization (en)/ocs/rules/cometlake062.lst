@@ -1,4 +1,4 @@
-=<span class="title">Desktop: (10th Gen) Comet Lake OpenCore 0.6.2</span><br/>
+SystemMemoryStatus=<span class="title">Desktop: (10th Gen) Comet Lake OpenCore 0.6.2</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.2 Intel Coffee Lake Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake.html</a>
@@ -191,7 +191,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " **{$setting}** = **{$value}**"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm=no "!<b>{$setting}</b> was replaced with <b>AdviseWindows<b> in OpenCore v0.5.5": SupportsCsm=no "!<b>{$setting}</b> was replaced with <b>AdviseWindows<b> in OpenCore v0.5.5":"!<b>{$setting}</b> was replaced with <b>AdviseWindows<b> in OpenCore v0.5.5"
  SystemProductName~="(iMac20,1|iMac20,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Coffee Lake Desktop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
