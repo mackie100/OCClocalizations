@@ -1,4 +1,4 @@
-SystemMemoryStatus=<span class="title">HEDT: (7th, 9th, 10th Gen) SkyLake-X OpenCore 0.6.2</span><br/>
+=<span class="title">HEDT: (7th, 9th, 10th Gen) SkyLake-X OpenCore 0.6.2</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.2 Intel SkyLake-X Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html">https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html</a>

@@ -194,7 +194,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm=no "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5":"!**{$setting}** was replaced with **AdviseWindows** in OpenCore v0.5.5"
  SystemProductName~="(MacBookPro15,1|MacBookPro15,2|MacBookPro15,3|MacBookPro15,4)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Coffee Lake Laptop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"

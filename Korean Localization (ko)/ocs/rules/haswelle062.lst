@@ -180,7 +180,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " **{$setting}** = **{$value}**"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5"
  SystemProductName~=(^$)|(MacPro5,1) "!<b>{$setting}</b> You need to set this. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/haswell-e#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> = <b>{$value}</b>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/haswell-e#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"

@@ -1,4 +1,4 @@
-SystemMemoryStatus=<span class="title">Laptop: (10th Gen) Ice Lake OpenCore 0.6.2</span><br/>
+=<span class="title">Laptop: (10th Gen) Ice Lake OpenCore 0.6.2</span><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.6.2 Intel Ice Lake Laptop Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html</a>

@@ -194,7 +194,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm=no "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5":"!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5"
  SystemProductName~="(MacBookAir9,1|MacBookPro16,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Ice Lake systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
