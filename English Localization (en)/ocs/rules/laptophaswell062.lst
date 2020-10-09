@@ -18,7 +18,7 @@ ACPI
  [Path]==SSDT-1.aml "-<b>{$Path}</b> This is just an example SSDT. If you really made this yourself, call it something more descriptive"
  [Path]~=".dsl$" "!<b>{$Path}</b> Only include .aml files here. dsl files need to be compiled to .aml"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. Either enable it or remove it to get rid of this warning"
- [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#acpi>[ACPI Docs]</a>"
+ [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> is missing, please add this if you're using a laptop. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#acpi>[ACPI Docs]</a>"
  [Path]==SSDT-EC-LAPTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-LAPTOP</b> and <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-LAPTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#acpi>[ACPI Docs]</a>"
  [Path]!=SSDT-PNLF.aml "-<b>{$Path}</b> is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#acpi>[ACPI Docs]</a>"
@@ -63,7 +63,7 @@ DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="0500260a|0600260a" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU may not be set correctly. Please read the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="0500260a|0600260a|0300220d" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU may not be set correctly. Please read the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
  AAPL,ig-platform-id~=.* "!<b>{$setting}</b> is in the wrong location, iGPU location is PciRoot(0x0)/Pci(0x2,0x0)"
@@ -192,7 +192,7 @@ PlatformInfo
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SystemMemoryStatus=Auto
- SystemProductName~="(MacBookAir6,1|MacBookAir6,2|MacBookPro11,1|MacBookPro11,2|MacBookPro11,3|MacBookPro11,4|MacBookPro11,5)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Haswell Laptop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>"
+ SystemProductName~="(MacBookAir6,1|MacBookAir6,2|MacBookPro11,1|MacBookPro11,2|MacBookPro11,3|MacBookPro11,4|MacBookPro11,5|Macmini7,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Haswell Laptop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> You should set this to your NIC MAC address. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> should be set to your generated system serial number. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"

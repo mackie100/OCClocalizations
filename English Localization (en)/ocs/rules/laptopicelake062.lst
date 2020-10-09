@@ -22,7 +22,7 @@ ACPI
  [Path]==SSDT-EC-USBX-LAPTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-USBX-LAPTOP</b> and <b>SSDT-EC</b>"
  [Path]==SSDT-EC-USBX-DESKTOP.aml "-<b>{$Path}</b> Please use <b>SSDT-EC-USBX-LAPTOP</b> instead"
  [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-USBX-LAPTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#acpi>[ACPI Docs]</a>"
- [Path]!=SSDT-AWAC.aml "-<b>SSDT-AWAC.aml</b>  is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#acpi>[ACPI Docs]</a> if you need it""
+ [Path]!=SSDT-AWAC.aml "-<b>SSDT-AWAC.aml</b>  is missing, please add this if you're using a laptop. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#acpi>[ACPI Docs]</a> if you need it""
  [Path]==SSDT-PMC.aml "-<b>{$Path}</b> This should not be included on Ice Lake laptops. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#acpi>[ACPI Docs]</a>"
  [Path]!=SSDT-PNLF-CFL.aml "-<b>{$Path}</b> is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#acpi>[ACPI Docs]</a>"
  [Path]==SSDT-PNLF.aml "-<b>{$Path}</b> This should not be included on Coffee Lake and newer laptops, instead use SSDT-PNLF-CFL. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake#acpi>[ACPI Docs]</a>."

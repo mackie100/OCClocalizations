@@ -189,7 +189,7 @@ PlatformInfo
  AdviseWindows=no
  ProcessorType~=.* " **{$setting}** = **{$value}**"
  SystemMemoryStatus=Auto
- SystemProductName~="(iMac14,1|iMac14,2|iMac14,4|iMac15,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Coffee Lake Desktop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>"
+ SystemProductName~="(iMac14,1|iMac14,2|iMac14,4|iMac15,1|iMac16,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Coffee Lake Desktop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> You should set this to your NIC MAC address. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> should be set to your generated system serial number. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
