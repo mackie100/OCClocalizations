@@ -168,7 +168,7 @@
 "PHO-4O-OIP.ibShadowedToolTip" = "从plist添加或删除此部分\n默认值:添加";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Auto\nDescription: Indicates whether system memory is upgradable in PlatformFeature. This controls the visibility of the Memory tab in About This Mac.\n\nValid values:\n• Auto — use the original PlatformFeature value.\n• Upgradable — explicitly unset PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY (0x2) in PlatformFeature.\n• Soldered — explicitly set PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY (0x2) in PlatformFeature.\n\nNote: On certain Mac models (namely MacBookPro10,x and any MacBookAir), SPMemoryReporter.spreporter will ignore PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY and assume that system memory is non-upgradable."; ObjectID = "PPQ-0x-9Ub"; */
-"PPQ-0x-9Ub.ibShadowedToolTip" = "指示系统内存是否可以在PlatformFeature中升级,控制“关于本机”中“内存”选项卡的可见性.\n\n有效值:\n• Auto — 使用原始的PlatformFeature值(默认).\n• Upgradable — 在PlatformFeature中取消设置PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY（0x2）.\n• Soldered — 在PlatformFeature中设置PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY（0x2）.\n\n注意: 在某些Mac型号上（即MacBookPro10,x和任何MacBookAir）, SPMemoryReporter.spreporter将忽略PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY，并假定系统内存不可升级.";
+"PPQ-0x-9Ub.ibShadowedToolTip" = "指示系统内存是否可以在PlatformFeature中升级,控制“关于本机”中“内存”选项卡的可见性.\n\n有效值:\n• Auto — 根据机型选择自动设置对应的机型内存状态(默认).\n• Upgradable — 设内存状态为可更换模式(关于本机里显示内存标签).\n• Soldered — 设置内存状态为不可更换模式(关于本机里不显示内存标签)\n\n注意: 在某些Mac型号上（即MacBookPro10,x和任何MacBookAir）, SPMemoryReporter.spreporter将忽略PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY，并假定系统内存不可升级.";
 
 /* Class = "NSSegmentedCell"; PVt-qS-yBp.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "PVt-qS-yBp"; */
 "PVt-qS-yBp.ibShadowedLabels[0]" = "机型查询";
