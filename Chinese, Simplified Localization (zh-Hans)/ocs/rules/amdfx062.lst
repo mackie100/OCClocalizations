@@ -56,8 +56,8 @@ Booter
  ProtectSecureBoot=no
  ProtectUefiServices=no
  ProvideCustomSlide=yes
- RebuildAppleMemoryMap=yes
- SetupVirtualMap=no
+ RebuildAppleMemoryMap=no
+ SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
  SyncRuntimePermissions=no
@@ -199,9 +199,9 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
- SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->这不是建议用于AMD系统的SMBIOS. 请查阅 <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#platforminfo>[PlatformInfo Docs]</a>"
+ SystemProductName~="(iMacPro1,1|MacPro7,1|MacPro6,1|iMac14,2|iMac15,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->这不是建议用于AMD系统的SMBIOS. 请查阅 <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB~="(M000000000001|M0000000000000001)" "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#platforminfo]>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  ROM~="(112233000000|112233445566)" "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#platforminfo>[PlaformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"

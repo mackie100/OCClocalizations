@@ -196,7 +196,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
  SystemProductName~="(MacBookPro6,1|MacBookPro6,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->这不是建议用于Arrandale Laptop系统的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/arrandale.html#platforminfo>[PlatformInfo Docs][platforminfo]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号。请查看 [PlatformInfo Docs][platforminfo]":" <b>{$setting}</b> 已设置"
@@ -299,7 +299,7 @@ UEFI
  IgnoreInvalidFlexRatio=yes
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  ProvideConsoleGop~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
- ReleaseUsbOwnership=no
+ ReleaseUsbOwnership=yes
  RequestBootVarFallback~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  RequestBootVarRouting=yes
  TscSyncTimeout=0

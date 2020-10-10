@@ -7,7 +7,7 @@
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#acpi
 # [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
 # [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
-# [scanpolicy]:https://dortania.github.io/OpenCore-Install-Guide/post-install/security.html#scanpolicy
+# [scanpolicy]:https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy
 # [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#platforminfo
 # [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell#deviceproperties
 
@@ -51,7 +51,7 @@ Booter
  ProtectSecureBoot=no
  ProtectUefiServices=no
  ProvideCustomSlide=yes
- RebuildAppleMemoryMap=yes
+ RebuildAppleMemoryMap=no
  SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
@@ -62,7 +62,7 @@ DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="0500260a|0600260a" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html##deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="0500260a|0600260a|0300220d" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html##deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
  AAPL,ig-platform-id~=.* "!<b>{$setting}</b> 是错误的位置, iGPU的位置是 PciRoot(0x0)/Pci(0x2,0x0)"
@@ -85,6 +85,9 @@ Kernel
  [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的伪造设备ID的方法"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的伪造设备ID的方法"
  [BundlePath]==* "<b>{$BundlePath}</b> -->确保此Kext位于您的 <b>OC/Kexts</b> 目录"
+
+:Emulate
+ DummyPowerManagement=no
 
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您应该在BIOS中禁用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->确保在您的BIOS中禁用了CFG-Lock"
@@ -145,7 +148,7 @@ Misc
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用，可以使用NVRAM参数里添加"
  BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- DmgLoading~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ DmgLoading=Signed
  EnablePassword=no
  RequireSignature~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
@@ -191,8 +194,8 @@ PlatformInfo
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  MemoryFormFactor=Auto
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
- SystemProductName~="(MacBookAir6,1|MacBookAir6,2|MacBookPro11,1|MacBookPro11,2|MacBookPro11,3|MacBookPro11,4|MacBookPro11,5)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于四代Haswell笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo>[PlatformInfo Docs]</a>"
+ SystemMemoryStatus=Auto
+ SystemProductName~="(MacBookAir6,1|MacBookAir6,2|MacBookPro11,1|MacBookPro11,2|MacBookPro11,3|MacBookPro11,4|MacBookPro11,5|Macmini7,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于四代Haswell笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
@@ -253,7 +256,7 @@ UEFI
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
- AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
+ AppleFramebufferInfo=no
  AppleImageConversion=no
  AppleImg4Verification=no
  AppleKeyMap=no
@@ -293,7 +296,7 @@ UEFI
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  ProvideConsoleGop~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
- ReleaseUsbOwnership=no
+ ReleaseUsbOwnership=yes
  RequestBootVarFallback~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  RequestBootVarRouting=yes
  TscSyncTimeout=0
