@@ -56,14 +56,14 @@ Booter
  SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
- SyncRuntimePermissions=yes
+ SyncRuntimePermissions=no
  ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>ProvideMaxSlide</font></b>选项"
 
 DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="00001619|00001b19|00002619|00001219|" " <b>{$setting}<b> = <b>{$value}<b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="00001619|00001b19|00002619|00001219|00001b19|02001619|02002619|05003b19|" " <b>{$setting}<b> = <b>{$value}<b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
  AAPL,ig-platform-id~=.* "!<b>{$setting}</b> 是错误的位置, iGPU的位置是 PciRoot(0x0)/Pci(0x2,0x0)"
@@ -86,6 +86,9 @@ Kernel
  [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的伪造设备ID的方法"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的伪造设备ID的方法"
  [BundlePath]==* "<b>{$BundlePath}</b> -->确保此Kext位于您的 <b>OC/Kexts</b> 目录"
+
+:Emulate
+ DummyPowerManagement=no
 
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您应该在BIOS中禁用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->确保在您的BIOS中禁用了CFG-Lock"
@@ -190,11 +193,10 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
- SystemProductName~="(MacBook9,1|MacBookPro13,1|MacBookPro13,2|MacBookPro13,3)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于六代Skylake笔记本平台，这不是建议的SMBIOS. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>"
+ SystemProductName~="(MacBook9,1|MacBookPro13,1|MacBookPro13,2|MacBookPro13,3|iMac17,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于六代Skylake笔记本平台，这不是建议的SMBIOS. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看<a href=https://desktop.dortania.ml/config-HEDT/skylake#platforminfo>[PlatformInfo Docs]</a>:" <b>{$setting}</b> -->已设置"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo>[PlaformInfo Docs]</a>":" <b>{$setting}<b> -->已设置"

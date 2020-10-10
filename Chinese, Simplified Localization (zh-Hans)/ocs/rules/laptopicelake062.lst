@@ -19,7 +19,8 @@ ACPI
  [Path]~=".dsl$" "!<b>{$Path}</b> -->在此处只能是.aml文件。 dsl文件需要编译为.aml"
  [Enabled]==no "-<b>{$Path}</b> -->状态是<b>已禁用</b>. 启用或删除它可以去除此警告"
  [Path]!=SSDT-PLUG.aml "--->缺少<font color=red><b>SSDT-PLUG.aml</b></font>. 请查看<a href=https://dortania.github.io/config-laptop.plist/icelake.html#acpi>[Acpi Docs]</a>"
- [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml"-->-<b>{$Path}/b>不要同时使用 <b>SSDT-EC-USBX-DESKTOP</b>和<b>SSDT-EC</b>"
+ [Path]==SSDT-EC-USBX-LAPTOP.aml&SSDT-EC.aml"-->-<b>{$Path}/b>不要同时使用 <b>SSDT-EC-USBX-DESKTOP</b>和<b>SSDT-EC</b>"
+ [Path]==SSDT-EC-USBX-DESKTOP.aml "-<b>{$Path}</b> -->请使用 <b>SSDT-EC-USBX-LAPTOP</b> 代替"
  [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX.aml的文件.请查看<a href=https://dortania.github.io/config-laptop.plist/icelake.html#acpi>[ACPI文档]</a>"
  [Path]!=SSDT-AWAC.aml "-<b>SSDT-AWAC.aml<b> --->缺少. 如果你需要它，请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html#acpi>[Acpi Docs]</a>"
  [Path]!=SSDT-PMC.aml "-<b>SSDT-PMC.aml<b> --->缺少. 如果你需要它，请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html#acpi>[Acpi Docs]</a>"
@@ -54,7 +55,7 @@ Booter
  ProtectUefiServices=yes
  ProvideCustomSlide=yes
  RebuildAppleMemoryMap=yes
- SetupVirtualMap=yes
+ SetupVirtualMap=no
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
  SyncRuntimePermissions=yes
@@ -87,6 +88,9 @@ Kernel
  [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的伪造设备ID的方法"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的伪造设备ID的方法"
  [BundlePath]==* "<b>{$BundlePath}</b> -->确保此Kext位于您的 <b>OC/Kexts</b> 目录"
+
+:Emulate
+ DummyPowerManagement=no
 
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您应该在BIOS中禁用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->确保在您的BIOS中禁用了CFG-Lock"
@@ -193,7 +197,7 @@ PlatformInfo
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  MemoryFormFactor=Auto
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
  SystemProductName~="(MacBookAir9,1|MacBookPro16,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于十代Icelake笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
@@ -247,7 +251,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode=""
+ PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
@@ -256,7 +260,7 @@ UEFI
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
- AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
+ AppleFramebufferInfo=no
  AppleImageConversion=no
  AppleImg4Verification=no
  AppleKeyMap=no
@@ -296,7 +300,7 @@ UEFI
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  ProvideConsoleGop~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
- ReleaseUsbOwnership=no
+ ReleaseUsbOwnership=yes
  RequestBootVarFallback~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  RequestBootVarRouting=yes
  TscSyncTimeout=0

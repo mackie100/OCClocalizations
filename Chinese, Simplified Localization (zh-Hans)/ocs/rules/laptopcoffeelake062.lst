@@ -65,7 +65,7 @@ DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="00009B3e" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html##deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="00009B3e|0900a53e|07009B3e|0000a53e" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html##deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
  AAPL,ig-platform-id~=.* "!<b>{$setting}</b> 位置错误, iGPU位置为 PciRoot(0x0)/Pci(0x2,0x0)"
@@ -88,6 +88,9 @@ Kernel
  [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的伪造设备ID的方法"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的伪造设备ID的方法"
  [BundlePath]==* "<b>{$BundlePath}</b> -->确保此Kext位于您的 <b>OC/Kexts</b> 目录"
+
+:Emulate
+ DummyPowerManagement=no
 
 :Quirks
  AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您应该在BIOS中禁用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->确保在您的BIOS中禁用了CFG-Lock"
@@ -148,7 +151,7 @@ Misc
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用，可以使用NVRAM参数里添加"
  BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- DmgLoading~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ DmgLoading=Signed
  EnablePassword=no
  RequireSignature~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
@@ -192,9 +195,9 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
- SystemProductName~="(MacBookPro15,1|MacBookPro15,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于八代Coffeelake笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>"
+ SystemProductName~="(MacBookPro15,1|MacBookPro15,2|MacBookPro15,3|MacBookPro15,4|Macmini8,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于八代Coffeelake笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
@@ -246,7 +249,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode=""
+ PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
@@ -295,7 +298,7 @@ UEFI
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  ProvideConsoleGop~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
- ReleaseUsbOwnership=no
+ ReleaseUsbOwnership=yes
  RequestBootVarFallback~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  RequestBootVarRouting=yes
  TscSyncTimeout=0

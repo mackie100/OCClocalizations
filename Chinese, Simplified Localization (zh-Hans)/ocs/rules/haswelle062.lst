@@ -49,7 +49,7 @@ Booter
  ProtectSecureBoot=no
  ProtectUefiServices=no
  ProvideCustomSlide=yes
- RebuildAppleMemoryMap=yes
+ RebuildAppleMemoryMap=no
  SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
@@ -182,7 +182,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
+ SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
  SystemProductName~=(^$)|(MacPro5,1) "!<b>{$setting}</b> -->你需要设置这个。请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/haswell-e#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> = <b>{$value}</b>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/haswell-e#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
