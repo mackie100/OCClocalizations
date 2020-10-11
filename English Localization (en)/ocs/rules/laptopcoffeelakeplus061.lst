@@ -27,8 +27,8 @@ ACPI
  [Path]!=SSDT-PNLF-CFL.aml "-<b>{$Path}</b> is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus#acpi>[ACPI Docs]</a>"
  [Path]==SSDT-PNLF.aml "-<b>{$Path}</b> This should not be included on Coffee Lake and newer laptops, instead use SSDT-PNLF-CFL. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus#acpi>[ACPI Docs]</a>."
  [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
- [Path]==SSDT-OLA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus#acpi>[Acpi Docs]</a>"
- [Path]==SSDT-OLARILA.aml "-<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-OLA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-OLARILA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus#acpi>[Acpi Docs]</a>"
  [Path]==SSDT-XOSI.aml&SSDT-GPI0.aml "-<b>{$Path}</b> don't use both <b>SSDT-XOSI</b> and <b>SSDT-GPI0</b>"
 
 :Quirks
@@ -151,7 +151,7 @@ Misc
  RequireSignature~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
  RequireVault~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
  Vault=Optional
- SecureBootModel~=.* " <b>{$setting}</b> = <b>{$value}<b>"
+ SecureBootModel~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  HaltLevel=2147483648
  ExposeSensitiveData=6 :" <b>{$setting}</b> = <b>{$value}</b>"
  ScanPolicy=0 :"-<b>{$setting}</b> = <b>{$value}</b>. Initially you want 0 here, but once you are up and running check <a href=https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy>[Scanpolicy Docs]</a> for why you should change this"
@@ -170,7 +170,7 @@ NVRAM
  DefaultBackgroundColor~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 ::7C436110-AB2A-4BBB-A880-FE41995C9F82
- boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> I think you mean <b>npci=</b>there not <b>ncpi=</b>":""
+ boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> I think you mean <b>npci=</b> there not <b>ncpi=</b>":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
  boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> If you have a navi10 GPU add <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
  run-efi-updater="No"

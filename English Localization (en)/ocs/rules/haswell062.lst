@@ -1,33 +1,33 @@
-# Desktop: (4th Gen) Haswell OpenCore 0.6.2
+=<span class="title">Desktop: (4th Gen) Haswell OpenCore 0.6.2</span><br/>
 # Generic config suitable for initial installation
-=# OpenCore v0.6.2 Intel Haswell Sanity Check
-=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell.html
+# OpenCore v0.6.2 Intel Haswell Sanity Check
+=<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell.html</a>
 =<hr>
-=[kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#kernel
-=[acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi
-=[kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
-=[debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
-=[scanpolicy]:https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy
-=[platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo
-=[deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#deviceproperties
+# [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#kernel
+# [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi
+# [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
+# [debug]:https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
+# [scanpolicy]:https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy
+# [platforminfo]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo
+# [deviceproperties]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#deviceproperties
 
 ACPI
 :Add
- count==0 "-You have no SSDT Patches. Please review the [ACPI Docs][acpi]"
- [Path]==DSDT.aml "-**{$Path}** You should not be including your dumped DSDT. Please review the [ACPI Docs][acpi]."
- [Path]==SSDT-1.aml "-**{$Path}** This is just an example SSDT. If you really made this yourself, call it something more descriptive"
- [Path]~=".dsl$" "!**{$Path}** Only include .aml files here. dsl files need to be compiled to .aml"
- [Enabled]==no "-**{$Path}** is **disabled**. Either enable it or remove it to get rid of this warning"
- [Path]!=SSDT-PLUG.aml "-**SSDT-PLUG.aml** is missing. See the [ACPI Docs][acpi]"
- [Path]==SSDT-EC-DESKTOP.aml&SSDT-EC.aml "-**{$Path}** don't use both **SSDT-EC-DESKTOP** and **SSDT-EC**"
- [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-DESKTOP.aml. See the [ACPI Docs][acpi]"
- [Path]==* " **{$Path}** Make sure this file is in your OC/ACPI directory"
- [Path]==SSDT-OLA.aml "!**{$Path}** Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the [ACPI Docs][acpi]."
- [Path]==SSDT-OLARILA.aml "!**{$Path}** Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the [ACPI Docs][acpi]."
+ count==0 "-You have no SSDT Patches. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi>[Acpi Docs]</a>"
+ [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi>[Acpi Docs]</a>."
+ [Path]==SSDT-1.aml "-<b>{$Path}</b> This is just an example SSDT. If you really made this yourself, call it something more descriptive"
+ [Path]~=".dsl$" "!<b>{$Path}</b> Only include .aml files here. dsl files need to be compiled to .aml"
+ [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. Either enable it or remove it to get rid of this warning"
+ [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-EC-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-USBX-DESKTOP</b> and <b>SSDT-EC</b>"
+ [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-DESKTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi>[Acpi Docs]</a>"
+ [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
+ [Path]==SSDT-OLA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi>[ACPI Docs]</a>."
+ [Path]==SSDT-OLARILA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#acpi>[ACPI Docs]</a>."
 
 :Quirks
  count==5
- FadtEnableReset~=.* " **{$setting}** = **{$value}**"
+ FadtEnableReset~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  NormalizeHeaders=no
  RebaseRegions=no
  ResetHwSig=no
@@ -44,7 +44,7 @@ Booter
  EnableSafeModeSlide=yes
  EnableWriteUnprotector=yes
  ForceExitBootServices=no
- ProtectCsmRegion~=.* "!**{$setting}** was deprecated in OpenCore v0.5.7 - See **ProtectMemoryRegions** instead"
+ ProtectCsmRegion~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.7 - See <b>ProtectMemoryRegions</b> instead"
  ProtectMemoryRegions=no
  ProtectSecureBoot=no
  ProtectUefiServices=no
@@ -52,7 +52,7 @@ Booter
  ProvideMaxSlide=0
  RebuildAppleMemoryMap=no
  SetupVirtualMap=yes
- ShrinkMemoryMap~=.* "!**{$setting}** was deprecated in OpenCore v0.5.7 - See **RebuildAppleMemoryMap** instead"
+ ShrinkMemoryMap~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.7 - See <b>RebuildAppleMemoryMap</b> instead"
  SignalAppleOS=no
  SyncRuntimePermissions=no
 
@@ -60,78 +60,78 @@ DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="0300220d|04001204|07002216" " **{$setting}** = **{$value}** iGPU set correctly":"-**{$setting}** = **{$value}** - iGPU may not be set correctly. Please read the [DeviceProperties Docs][deviceproperties]"
+ AAPL,ig-platform-id~="0300220d|04001204|07002216" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU may not be set correctly. Please read the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake##deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
- AAPL,ig-platform-id~=.* "!**{$setting}** is in the wrong location, iGPU location is PciRoot(0x0)/Pci(0x2,0x0)"
+ AAPL,ig-platform-id~=.* "!<b>{$setting}</b> is in the wrong location, iGPU location is PciRoot(0x0)/Pci(0x2,0x0)"
 
 Kernel
 
 :Add
- count==0 "!You have no Kexts. You definitely need at least Lilu.kext and VirtualSMC.kext. Please review the [Kexts Docs][kexts]"
- [BundlePath]==Lilu.kext " **Lilu.kext** make sure this Kext is in your **OC/Kexts** directory and the first kext listed here":"!**Lilu.kext** is missing. Add it to the top of this list"
- [BundlePath]==FakeSMC.kext&VirtualSMC.kext "-**{$BundlePath}** don't use both **FakeSMC.kext** and **VirtualSMC.kext**"
- [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "-you should have either **FakeSMC.kext** or **VirtualSMC.kext** here"
- [BundlePath]==VoodooHDA.kext&AppleALC.kext "-**{$BundlePath}** don't use both **VoodooHDA.kext** and **AppleALC.kext**"
- [BundlePath]==AppleALC.kext "$alcbootarg='-**{$setting}** = **{$value}** You need to add **alcid=**<_layout_\> here since you are using AppleALC.kext';":"$alcbootarg=;"
- [BundlePath]!=WhateverGreen.kext "-**WhateverGreen.kext** is missing. Please review the [Kexts Docs][kexts]"
- [BundlePath]==XLNCUSBFIX.kext "!**XLNCUSBFIX.kext** this is an AMD-specific kext, don't use on Intel"
- [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-**{$BundlePath}** while this might work, **SmallTreeIntel82576.kext** is considered more reliable"
- [BundlePath]==SMCLightSensor.kext     "!**{$BundlePath}** VirtualSMC laptop plugins don't work on Desktop"
- [BundlePath]==SMCBatteryManager.kext  "!**{$BundlePath}** VirtualSMC laptop plugins don't work on Desktop"
- [BundlePath]==XHCI-unsupported.kext  "-**{$BundlePath}** you probably don't need this"
- [BundlePath]==FakePCIID.kext "-**{$BundlePath}** there are better ways to fake device ids"
- [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext "-**{$BundlePath}** there are better ways to fake device ids"
- [BundlePath]==* " **{$BundlePath}** make sure this Kext is in your **OC/Kexts** directory"
+ count==0 "!You have no Kexts. You definitely need at least Lilu.kext and VirtualSMC.kext. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts Docs]</a>"
+ [BundlePath]==Lilu.kext " <b>Lilu.kext</b> make sure this Kext is in your <b>OC/Kexts</b> directory and the first kext listed here":"!<b>Lilu.kext</b> is missing. Add it to the top of this list"
+ [BundlePath]==FakeSMC.kext&VirtualSMC.kext "-<b>{$BundlePath}</b> don't use both <b>FakeSMC.kext</b> and <b>VirtualSMC.kext</b>"
+ [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "-you should have either <b>FakeSMC.kext</b> or <b>VirtualSMC.kext</b> here"
+ [BundlePath]==VoodooHDA.kext&AppleALC.kext "-<b>{$BundlePath}</b> don't use both <b>VoodooHDA.kext</b> and <b>AppleALC.kext</b>"
+ [BundlePath]==AppleALC.kext "$alcbootarg='-<b>{$setting}</b> = <b>{$value}</b> You need to add <b>alcid=</b><_layout_\> here since you are using AppleALC.kext';":"$alcbootarg=;"
+ [BundlePath]!=WhateverGreen.kext "-<b>WhateverGreen.kext</b> is missing. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts Docs]</a>"
+ [BundlePath]==XLNCUSBFIX.kext "!<b>XLNCUSBFIX.kext</b> this is an AMD-specific kext, don't use on Intel"
+ [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-<b>{$BundlePath}</b> while this might work, <b>SmallTreeIntel82576.kext</b> is considered more reliable"
+ [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> VirtualSMC laptop plugins don't work on Desktop"
+ [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> VirtualSMC laptop plugins don't work on Desktop"
+ [BundlePath]==XHCI-unsupported.kext  "-<b>{$BundlePath}</b> you probably don't need this"
+ [BundlePath]==FakePCIID.kext "-<b>{$BundlePath}</b> there are better ways to fake device ids"
+ [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext "-<b>{$BundlePath}</b> there are better ways to fake device ids"
+ [BundlePath]==* " <b>{$BundlePath}</b> make sure this Kext is in your <b>OC/Kexts</b> directory"
 
 :Emulate
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " **{$setting}** = **{$value}** You should disable CFG-Lock in your bios instead of using this":" **{$setting}** = **{$value}** Make sure CFG-Lock is disabled in your bios"
- AppleXcpmCfgLock=yes " **{$setting}** = **{$value}** You should disable CFG-Lock in your bios instead of using this":" **{$setting}** = **{$value}** Make sure CFG-Lock is disabled in your bios"
+ AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios"
+ AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
- CustomSMBIOSGuid=no " **{$setting}** = **{$value}** If you have a Dell or VIAO motherboard, please enable this":" **{$setting}** = **{$value}** This is only required if you have a Dell or VIAO motherboard"
+ CustomSMBIOSGuid=no " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have a Dell or VIAO motherboard"
  DisableIoMapper=yes
- DisableRtcChecksum~=.* " **{$setting}** = **{$value}**"
- DummyPowerManagement~=.* "!**{$setting}** was moved in OpenCore v0.6.2 - See **Kernel -> Emulate**"
- ExtendBTFeatureFlags~=.* " **{$setting}** = **{$value}**"
+ DisableRtcChecksum~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ DummyPowerManagement~=.* "!<b>{$setting}</b> was moved in OpenCore v0.6.2 - See <b>Kernel -> Emulate</b>"
+ ExtendBTFeatureFlags~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  LegacyCommpage=no
- ExternalDiskIcons~=.* " **{$setting}** = **{$value}**"
+ ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  IncreasePciBarSize=no
- LapicKernelPanic=no " **{$setting}** = **{$value}** If you have an HP laptop, please enable this":" **{$setting}** = **{$value}** This is only required if you have an HP laptop"
+ LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> If you have an HP laptop, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have an HP laptop"
  PanicNoKextDump=yes
  PowerTimeoutKernelPanic=yes
- ThirdPartyDrives~=.* " **{$setting}** = **{$value}**"
- XhciPortLimit=yes " **{$setting}** = **{$value}** turn off after USB port mapping":" **{$setting}** = **{$value}** enable if you have USB issues"
+ ThirdPartyDrives~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ XhciPortLimit=yes " <b>{$setting}</b> = <b>{$value}</b> turn off after USB port mapping":" <b>{$setting}</b> = <b>{$value}</b> enable if you have USB issues"
 
 Misc
 :Boot
- BuiltinTextRenderer~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"
- ConsoleBehaviourOs~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6"
- ConsoleBehaviourUi~="" "!**{$setting}** was deprecated in OpenCore v0.5.6"
- ConsoleMode~=.* "!**{$setting}** has been moved to UEFI/Output section as of OpenCore v0.5.6"
- Resolution~=.* "!**{$setting}** has been moved to UEFI/Output section as of OpenCore v0.5.6"
- ConsoleAttributes~=.* " **{$setting}** = **{$value}**"
- HideSelf~=.* "!**{$setting}** was deprecated in OpenCore v0.5.9"
+ BuiltinTextRenderer~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"
+ ConsoleBehaviourOs~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
+ ConsoleBehaviourUi~="" "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
+ ConsoleMode~=.* "!<b>{$setting}</b> has been moved to UEFI/Output section as of OpenCore v0.5.6"
+ Resolution~=.* "!<b>{$setting}</b> has been moved to UEFI/Output section as of OpenCore v0.5.6"
+ ConsoleAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ HideSelf~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
  PollAppleHotKeys=no
  ShowPicker=yes
- UsePicker~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6"
+ UsePicker~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
  TakeoffDelay=0
  HibernateMode=None
  PickerMode=Builtin
  HideAuxiliary=no
- PickerAttributes~=.* " **{$setting}** = **{$value}**"
+ PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
  Timeout=5
 
 :Debug
  AppleDebug=yes
  ApplePanic=yes
- DisableWatchDog=yes :" **{$setting}** enabling this will help debugging"
- Target=67 :" **{$setting}** see the [Debugging Docs][debug] for more info on debug target numbers"
- DisplayLevel=2147483714 :" **{$setting}** see [Debugging Docs][debug] for more info debug display levels"
+ DisableWatchDog=yes :" <b>{$setting}</b> enabling this will help debugging"
+ Target=67 :" <b>{$setting}</b> see the <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs]</a> for more info on debug target numbers"
+ DisplayLevel=2147483714 :" <b>{$setting}</b> see <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs]</a> for more info debug display levels"
  DisplayDelay=0
 
 :Entries
@@ -142,17 +142,17 @@ Misc
  AllowSetDefault=yes
  ApECID=0
  AuthRestart=no
- BlacklistAppleUpdate~=.* "!**{$setting}** was deprecated in OpenCore v0.6.0 - See **run-efi-updater** under NVRAM instead"
- BootProtect~=.* " **{$setting}** = **{$value}**"
+ BlacklistAppleUpdate~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.0 - See <b>run-efi-updater</b> under NVRAM instead"
+ BootProtect~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  DmgLoading=Signed
  EnablePassword=no
- RequireSignature~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See **Vault**"
- RequireVault~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See **Vault**"
+ RequireSignature~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
+ RequireVault~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
  Vault=Optional
- SecureBootModel~=.* " **{$setting}** = **{$value}**"
+ SecureBootModel~=.* " <b>{$setting}</b> = <b>{$value}<b>"
  HaltLevel=2147483648
- ExposeSensitiveData=6 :" **{$setting}** = **{$value}**"
- ScanPolicy=0 :"-**{$setting}** = **{$value}**. Initially you want 0 here, but once you are up and running check [Scanpolicy Docs][scanpolicy] for why you should change this"
+ ExposeSensitiveData=6 :" <b>{$setting}</b> = <b>{$value}</b>"
+ ScanPolicy=0 :"-<b>{$setting}</b> = <b>{$value}</b>. Initially you want 0 here, but once you are up and running check <a href=https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy>[Scanpolicy Docs]</a> for why you should change this"
 
 :Tools
  count==0 " You removed the tool EFIs":"%You can remove the tool EFIs here"
@@ -164,74 +164,74 @@ NVRAM
 
 :Add
 ::4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14
- UIScale~=(01|02) " **{$setting}** = **{$value}**":" **{$setting}** = **{$value}** but it is usually set to **01** or **02**"
- DefaultBackgroundColor~=.* " **{$setting}** = **{$value}**"
+ UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> but it is usually set to **01** or **02**"
+ DefaultBackgroundColor~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 ::7C436110-AB2A-4BBB-A880-FE41995C9F82
- boot-args~="ncpi=" "!**{$setting}** = **{$value}** I think you mean **npci=** there not **ncpi=**":""
+ boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> I think you mean **npci=** there not **ncpi=**":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
- boot-args="-v keepsyms=1" " **{$setting}** = **{$value}** If you have a navi10 GPU add **agdpmod=pikera**":" **{$setting}** = **{$value}**"
+ boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> If you have a navi10 GPU add **agdpmod=pikera**":" <b>{$setting}</b> = <b>{$value}</b>"
  run-efi-updater="No"
- csr-active-config~=.* " **{$setting}** = **{$value}**"
- nvda_drv~=.* "!**{$setting}** = **{$value}** Remove this setting completely. It is no longer used as of OpenCore v0.5.7"
- prev-lang:kbd=72752d52553a323532 "-**{$setting}** = **{$value} ({@value})**. Unless you speak Russian, leave this blank":" **{$setting}** = **{$value} ({@value})**"
- SystemAudioVolume~="^\d+$" " **{$setting}** = **{$value}**":"!**{$setting}** = **{$value}** this should be a positive number"
+ csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> Remove this setting completely. It is no longer used as of OpenCore v0.5.7"
+ prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>. Unless you speak Russian, leave this blank":" <b>{$setting}</b> = **{$value} ({@value})**"
+ SystemAudioVolume~="^\d+$" " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> this should be a positive number"
 
 PlatformInfo
  Automatic=yes
  UpdateDataHub=yes
  UpdateNVRAM=yes
  UpdateSMBIOS=yes
- UpdateSMBIOSMode=Create " **{$setting}** = **{$value}** If you have a Dell or VIAO motherboard, please set this to **Custom**":" **{$setting}** = **{$value}** This is only required if you have a Dell or VIAO motherboard"
+ UpdateSMBIOSMode=Create " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please set this to **Custom**":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have a Dell or VIAO motherboard"
 
 :Generic
  SpoofVendor=yes
  AdviseWindows=no
- ProcessorType~=.* " **{$setting}** = **{$value}**"
- MemoryFormFactor=Auto
- SystemProductName~="(iMac14,1|iMac14,2|iMac14,4|iMac15,1)" " **{$setting}** = **{$value}**":"-**{$setting}** = **{$value}** this is not a suggested SMBIOS for Haswell Desktop systems. See [PlatformInfo Docs][platforminfo]"
- MLB=M000000000001 "!**{$setting}** should be set to your generated board serial. See [PlatformInfo Docs][platforminfo]":" **{$setting}** is set"
- ROM=112233000000 "-**{$setting}** = **{$value}** You should set this to your NIC MAC address. See [PlatformInfo Docs][platforminfo]":" **{$setting}** is set"
- SystemSerialNumber=W0000000001 "!**{$setting}** should be set to your generated system serial number. See the [PlaformInfo Docs][platforminfo]":" **{$setting}** is set"
- SystemUUID=00000000-0000-0000-0000-000000000000 "!**{$setting}** should be set to your generated SmUUID. See the [PlaformInfo Docs][platforminfo]":" **{$setting}** is set"
+ ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ SystemMemoryStatus=Auto
+ SystemProductName~="(iMac14,1|iMac14,2|iMac14,4|iMac15,1|iMac16,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Coffee Lake Desktop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>"
+ MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> You should set this to your NIC MAC address. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ SystemSerialNumber=W0000000001 "!<b>{$setting}</b> should be set to your generated system serial number. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> should be set to your generated SmUUID. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
 
 UEFI
  ConnectDrivers=yes
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "$hfs={$value}; **{$value}**":"!Need either **VBoxHfs.efi** or **HFSPlus.efi** here"
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "!**{$value}** you already have **{$hfs}**"
- Drivers==OpenRuntime.efi " **{$value}**":"!**OpenRuntime.efi** is missing"
- Drivers==FwRuntimeServices.efi "!**{$value}** has been replaced by OpenRuntime.efi as of OpenCore v0.5.7"
- Drivers==ApfsDriverLoader.efi "!**ApfsDriverLoader.efi** was merged into OpenCore under the UEFI/APFS section as of OpenCore v0.5.8"
- Drivers==OpenCore.efi "!**OpenCore.efi** should not be here!"
- Drivers==AppleUsbKbdxe.efi "!**{$value}** has been replaced by OpenUsbKbDxe.efi as of OpenCore v0.5.7"
- Drivers==CrScreenshotDxe.efi "!**{$value}** should not be here!"
- Drivers==HiiDatabase.efi "!**{$value}** should not be here!"
- Drivers==NvmExpressDxe.efi "!**{$value}** should not be here!"
- Drivers==OpenUsbKbDxe.efi "-**{$value}** Unless you are doing a legacy install, you don't need this"
- Drivers==Ps2KeyboardDxe.efi "-**{$value}** Unless you are using a PS2 keyboard, this should not be here!"
- Drivers==Ps2MouseDxe.efi "-**{$value}** Unless you are using a PS2 mouse/trackpad with OpenCanopy, this should not be here!"
- Drivers==UsbMouseDxe.efi "-**{$value}** Unless you are using a USB mouse/trackpad with OpenCanopy, this should not be here!"
- Drivers==XhciDxe.efi "!**{$value}** should not be here!"
- Drivers==VirtualSmc.efi "!**VirtualSmc.efi** was merged into OpenCore under the quirk **AppleSmcIo**!"
- Drivers==~^#.* "!**{$value}** remove the **#** if you want this to load otherwise remove entirely"
- Drivers==* " **{$value}**"
+ Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "$hfs={$value}; <b>{$value}</b>":"!Need either <b>VBoxHfs.efi</b> or <b>HFSPlus.efi</b> here"
+ Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "!<b>{$value}</b> you already have <b>{$hfs}</b>"
+ Drivers==OpenRuntime.efi " <b>{$value}</b>":"!<b>OpenRuntime.efi</b> is missing"
+ Drivers==FwRuntimeServices.efi "!<b>{$value}</b> has been replaced by OpenRuntime.efi as of OpenCore v0.5.7"
+ Drivers==ApfsDriverLoader.efi "!<b>ApfsDriverLoader.efi</b> was merged into OpenCore under the UEFI/APFS section as of OpenCore v0.5.8"
+ Drivers==OpenCore.efi "!<b>OpenCore.efi</b> should not be here!"
+ Drivers==AppleUsbKbdxe.efi "!<b>{$value}</b>  has been replaced by OpenUsbKbDxe.efi as of OpenCore v0.5.7"
+ Drivers==CrScreenshotDxe.efi "!<b>{$value}</b> should not be here!"
+ Drivers==HiiDatabase.efi "!<b>{$value}</b> should not be here!"
+ Drivers==NvmExpressDxe.efi "!<b>{$value}</b> should not be here!"
+ Drivers==OpenUsbKbDxe.efi "-<b>{$value}</b> Unless you are doing a legacy install, you don't need this"
+ Drivers==Ps2KeyboardDxe.efi "-<b>{$value}</b> Unless you are using a PS2 keyboard, this should not be here!"
+ Drivers==Ps2MouseDxe.efi "-<b>{$value}</b> Unless you are using a PS2 mouse/trackpad with OpenCanopy, this should not be here!"
+ Drivers==UsbMouseDxe.efi "-<b>{$value}</b> Unless you are using a USB mouse/trackpad with OpenCanopy, this should not be here!"
+ Drivers==XhciDxe.efi "!<b>{$value}</b> should not be here!"
+ Drivers==VirtualSmc.efi "!<b>VirtualSmc.efi</b> was merged into OpenCore under the quirk <b>AppleSmcIo</b>!"
+ Drivers==~^#.* "!<b>{$value}</b> remove the </b>#</b> if you want this to load otherwise remove entirely"
+ Drivers==* " <b>{$value}</b>"
 
 :APFS
  EnableJumpstart=yes
- GlobalConnect=no " **{$setting}** = **{$value}** If you have an HP motherboard and can't see APFS drives in OpenCore, please enable this":" **{$setting}** = **{$value}** Only required for HP motherboard that cannot see APFS drives in OpenCore"
+ GlobalConnect=no " <b>{$setting}</b> = <b>{$value}</b> If you have an HP motherboard and can't see APFS drives in OpenCore, please enable this":" <b>{$setting}</b> = <b>{$value}</b> Only required for HP motherboard that cannot see APFS drives in OpenCore"
  HideVerbose=yes
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
 
 :Audio
- AudioSupport~=.* " **{$setting}** = **{$value}**"
- AudioDevice~=.* " **{$setting}** = **{$value}**"
- AudioCodec~=.* " **{$setting}** = **{$value}**"
- AudioOut~=.* " **{$setting}** = **{$value}**"
- MinimumVolume~=.* " **{$setting}** = **{$value}**"
- PlayChime~=.* " **{$setting}** = **{$value}**"
- VolumeAmplifier~=.* " **{$setting}** = **{$value}**"
+ AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ AudioDevice~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ AudioCodec~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ AudioOut~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ MinimumVolume~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ PlayChime~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ VolumeAmplifier~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 :Input
  KeyFiltering=no
@@ -241,7 +241,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode~=.* " **{$setting}** = **{$value}**"
+ PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
@@ -256,47 +256,47 @@ UEFI
  AppleKeyMap=no
  AppleRtcRam=no
  AppleSecureBoot=no
- AppleSmcIo=no " **{$setting}** = **{$value}** If you plan to use FileVault2, please enable this":" **{$setting}** = **{$value}** This is only required if you plan to use FileVault"
+ AppleSmcIo=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
  AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
- FirmwareVolume=no " **{$setting}** = **{$value}** If you plan to use FileVault2, please enable this":" **{$setting}** = **{$value}** This is only required if you plan to use FileVault"
- HashServices=no " **{$setting}** = **{$value}** If you plan to use FileVault2, please enable this":" **{$setting}** = **{$value}** This is only required if you plan to use FileVault"
+ FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
+ HashServices=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
  OSInfo=no
  UnicodeCollation=no
- ConsoleControl~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"
+ ConsoleControl~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"
 
 :Output
  count==11 :"!You should have exactly 11 settings in the UEFI/Output section"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
- Resolution=Max " **{$setting}** = **{$value}**":" **{$setting}** = **{$value}**"
+ Resolution=Max " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b>"
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
  DirectGopRendering=no
- DirectGopCacheMode~=.* "!**{$setting}** was deprecated in OpenCore v0.5.9"
+ DirectGopCacheMode~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
  ReconnectOnResChange=no
  ReplaceTabWithSpace=no
- SanitiseClearScreen~=.* " **{$setting}** = **{$value}**"
+ SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  UgaPassThrough=no
- Scale~=.* "!**{$setting}** shouldn't be here"
+ Scale~=.* "!<b>{$setting}</b> shouldn't be here"
 
 :Quirks
- AvoidHighAlloc~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6"
+ AvoidHighAlloc~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
  DeduplicateBootOrder=yes
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=yes
- ReconnectOnResChange~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- IgnoreTextInGraphics~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- ProvideConsoleGop~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ ReconnectOnResChange~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ IgnoreTextInGraphics~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ ProvideConsoleGop~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
  ReleaseUsbOwnership=no
- RequestBootVarFallback~=.* "!**{$setting}** was deprecated in OpenCore v0.5.9"
+ RequestBootVarFallback~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
  RequestBootVarRouting=yes
  TscSyncTimeout=0
- ReplaceTabWithSpace~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- SanitiseClearScreen~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- ClearScreenOnModeSwitch~=.* "!**{$setting}** was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- UnblockFsConnect=no " **{$setting}** = **{$value}** If you have an HP system, please enable this"
+ ReplaceTabWithSpace~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ SanitiseClearScreen~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ ClearScreenOnModeSwitch~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ UnblockFsConnect=no " <b>{$setting}</b> = <b>{$value}</b> If you have an HP system, please enable this"
 
 :ReservedMemory

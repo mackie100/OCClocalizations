@@ -149,7 +149,7 @@ NVRAM
 
 :Add
 ::4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14
- UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> but it is usally set to <b>01</b> or <b>02</b>"
+ UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> but it is usually set to <b>01</b> or <b>02</b>"
  DefaultBackgroundColor~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 ::7C436110-AB2A-4BBB-A880-FE41995C9F82
