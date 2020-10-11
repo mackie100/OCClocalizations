@@ -9,7 +9,7 @@
 "1OT-QB-Wyo.title" = "Boot.log 보기";
 
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
-"1UK-8n-QPP.title" = "툴바 설정…";
+"1UK-8n-QPP.title" = "툴바 설정";
 
 /* Class = "NSMenuItem"; title = "OpenCore Configurator"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "OpenCore 콘피규레이터";
