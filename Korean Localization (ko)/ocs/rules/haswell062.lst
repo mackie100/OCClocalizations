@@ -88,7 +88,7 @@ Kernel
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios"
+ AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable if you don't plan to boot 10.10 or older":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios if you don't plan to boot 10.10 or older"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
@@ -164,30 +164,30 @@ NVRAM
 
 :Add
 ::4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14
- UIScale~=(01|02) " **{$setting}** = **{$value}**":" **{$setting}** = **{$value}** but it is usually set to **01** or **02**"
- DefaultBackgroundColor~=.* " **{$setting}** = **{$value}**"
+ UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> but it is usually set to **01** or **02**"
+ DefaultBackgroundColor~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 ::7C436110-AB2A-4BBB-A880-FE41995C9F82
- boot-args~="ncpi=" "!**{$setting}** = **{$value}** I think you mean **npci=** there not **ncpi=**":""
+ boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> I think you mean **npci=** there not **ncpi=**":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
- boot-args="-v keepsyms=1" " **{$setting}** = **{$value}** If you have a navi10 GPU add **agdpmod=pikera**":" **{$setting}** = **{$value}**"
+ boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> If you have a navi10 GPU add **agdpmod=pikera**":" <b>{$setting}</b> = <b>{$value}</b>"
  run-efi-updater="No"
- csr-active-config~=.* " **{$setting}** = **{$value}**"
- nvda_drv~=.* "!**{$setting}** = **{$value}** Remove this setting completely. It is no longer used as of OpenCore v0.5.7"
- prev-lang:kbd=72752d52553a323532 "-**{$setting}** = **{$value} ({@value})**. Unless you speak Russian, leave this blank":" **{$setting}** = **{$value} ({@value})**"
- SystemAudioVolume~="^\d+$" " **{$setting}** = **{$value}**":"!**{$setting}** = **{$value}** this should be a positive number"
+ csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> Remove this setting completely. It is no longer used as of OpenCore v0.5.7"
+ prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>. Unless you speak Russian, leave this blank":" <b>{$setting}</b> = **{$value} ({@value})**"
+ SystemAudioVolume~="^\d+$" " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> this should be a positive number"
 
 PlatformInfo
  Automatic=yes
  UpdateDataHub=yes
  UpdateNVRAM=yes
  UpdateSMBIOS=yes
- UpdateSMBIOSMode=Create " **{$setting}** = **{$value}** If you have a Dell or VIAO motherboard, please set this to **Custom**":" **{$setting}** = **{$value}** This is only required if you have a Dell or VIAO motherboard"
+ UpdateSMBIOSMode=Create " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please set this to **Custom**":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have a Dell or VIAO motherboard"
 
 :Generic
  SpoofVendor=yes
  AdviseWindows=no
- ProcessorType~=.* " **{$setting}** = **{$value}**"
+ ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SystemMemoryStatus=Auto
  SystemProductName~="(iMac14,1|iMac14,2|iMac14,4|iMac15,1|iMac16,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Coffee Lake Desktop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/haswell#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
