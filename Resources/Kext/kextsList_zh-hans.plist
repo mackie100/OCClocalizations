@@ -13,14 +13,12 @@
 			<string>开源内核扩展为macOS的整个系统提供了一个平台，用于任意kext，库和程序修补。</string>
 			<key>name</key>
 			<string>Lilu</string>
-			<key>url</key>
-			<string>https://github.com/acidanthera/Lilu/releases/download/VERSION/Lilu-VERSION-RELEASE.zip</string>
 			<key>remoteFolder</key>
 			<string>Lilu</string>
+			<key>url</key>
+			<string>https://github.com/acidanthera/Lilu/releases/download/VERSION/Lilu-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>VirtualSMC</string>
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
@@ -29,12 +27,12 @@
 			<string>内核中的高级Apple SMC模拟器。需要Lilu 1.2.7才能正常运行。</string>
 			<key>name</key>
 			<string>VirtualSMC</string>
+			<key>remoteFolder</key>
+			<string>VirtualSMC</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/VirtualSMC/releases/download/VERSION/VirtualSMC-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>WhateverGreen</string>
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
@@ -43,12 +41,12 @@
 			<string>Lilu插件提供了用于在macOS上选择GPU的补丁​​。需要Lilu 1.2.5或更高版本。</string>
 			<key>name</key>
 			<string>WhateverGreen</string>
+			<key>remoteFolder</key>
+			<string>WhateverGreen</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/WhateverGreen/releases/download/VERSION/WhateverGreen-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>AppleALC</string>
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
@@ -57,12 +55,12 @@
 			<string>一个开放源代码内核扩展，无需更改任何文件系统，即可为未经官方支持的编解码器提供本机macOS HD音频。需要Lilu 1.2.5及更高版本，默认情况下已在10.14上启用。</string>
 			<key>name</key>
 			<string>AppleALC</string>
+			<key>remoteFolder</key>
+			<string>AppleALC</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/AppleALC/releases/download/VERSION/AppleALC-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>AirportBrcmFixup</string>
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
@@ -71,12 +69,12 @@
 			<string>一个开放源代码内核扩展，提供了非本机Airport Broadcom Wi-Fi卡所需的一组补丁。需要Lilu 1.1.6及更高版本。</string>
 			<key>name</key>
 			<string>AirportBrcmFixup</string>
+			<key>remoteFolder</key>
+			<string>AirportBrcmFixup</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/AirportBrcmFixup/releases/download/VERSION/AirportBrcmFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>HibernationFixup</string>
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
@@ -85,12 +83,12 @@
 			<string>一个开源内核扩展，可在RTC变量和NVRAM之间提供同步。需要Lilu v1.2.4或更高版本。</string>
 			<key>name</key>
 			<string>HibernationFixup</string>
+			<key>remoteFolder</key>
+			<string>HibernationFixup</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/HibernationFixup/releases/download/VERSION/HibernationFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>BT4LEContinuityFixup</string>
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
@@ -99,12 +97,12 @@
 			<string>该工具进行了必要的更改，以在兼容的硬件上启用OS X 10.10和10.11 Continuity功能。此补丁激活的连续性功能包括切换，即时热点和新空投。 OS X 10.11（El Capitan）加密狗支持尚不稳定！</string>
 			<key>name</key>
 			<string>BT4LEContinuityFixup</string>
+			<key>remoteFolder</key>
+			<string>BT4LEContinuityFixup</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/BT4LEContinuityFixup/releases/download/VERSION/BT4LEContinuityFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>CPUFriend</string>
 			<key>author</key>
 			<string>PMheart</string>
 			<key>category</key>
@@ -113,12 +111,12 @@
 			<string>用于动态电源管理数据注入的Lilu插件。</string>
 			<key>name</key>
 			<string>CPUFriend</string>
+			<key>remoteFolder</key>
+			<string>CPUFriend</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/CPUFriend/releases/download/VERSION/CPUFriend-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>RTCMemoryFixup</string>
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
@@ -127,12 +125,12 @@
 			<string>开源内核扩展，提供了一种仿真CMOS（RTC）内存中偏移的方法。它可以帮助您避免osx AppleRTC和PC的固件/ BIOS之间的某些冲突。</string>
 			<key>name</key>
 			<string>RTCMemoryFixup</string>
+			<key>remoteFolder</key>
+			<string>RTCMemoryFixup</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/RTCMemoryFixup/releases/download/VERSION/RTCMemoryFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>NVMeFix</string>
 			<key>author</key>
 			<string>acidanthera</string>
 			<key>category</key>
@@ -141,12 +139,12 @@
 			<string>NVMeFix是Apple NVMe存储驱动程序IONVMeFamily的一组修补程序。其目标是改善与非Apple SSD的兼容性。它可以在Apple和非Apple计算机上使用。</string>
 			<key>name</key>
 			<string>NVMeFix</string>
+			<key>remoteFolder</key>
+			<string>NVMeFix</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/NVMeFix/releases/download/VERSION/NVMeFix-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>VoodooPS2</string>
 			<key>author</key>
 			<string>David Elliot RehabMan</string>
 			<key>category</key>
@@ -155,12 +153,12 @@
 			<string>新的VoodooPS2Trackpad使用VoodooInput的Magic Trackpad II仿真，以便使用macOS本机驱动程序而不是自己处理所有手势。这样就可以使用Apple定义的从一到四个手指手势中的任何一个。</string>
 			<key>name</key>
 			<string>VoodooPS2Controller</string>
+			<key>remoteFolder</key>
+			<string>VoodooPS2</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/VoodooPS2/releases/download/VERSION/VoodooPS2Controller-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>EAPD-Codec-Commander</string>
 			<key>author</key>
 			<string>TimeWalker</string>
 			<key>category</key>
@@ -169,24 +167,26 @@
 			<string>用于更新HDA（高保真音频）编解码器上的EAPD（外部放大器）状态，该编解码器使用扬声器或耳机节点上的给定放大器（在某些情况下甚至是额外的放大器）。</string>
 			<key>name</key>
 			<string>CodecCommander</string>
+			<key>remoteFolder</key>
+			<string>EAPD-Codec-Commander</string>
 			<key>url</key>
 			<string>https://github.com/Sniki/EAPD-Codec-Commander/releases/download/VERSION/CodecCommander-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder2</key>
-			<string>os-x-usb-inject-all</string>
-			<key>remoteName</key>
-			<string>RehabMan-USBInjectAll</string>
-			<key>host</key>
-			<string>bitbucket</string>
 			<key>author</key>
 			<string>RehabMan</string>
 			<key>category</key>
 			<string>注入类</string>
 			<key>description</key>
 			<string>此kext尝试为每个控制器以及集线器注入所有端口。您可以（临时）使用此kext启用所有端口，以便确定哪些端口确实需要在最终进样器中。</string>
+			<key>host</key>
+			<string>bitbucket</string>
 			<key>name</key>
 			<string>USBInjectAll</string>
+			<key>remoteFolder2</key>
+			<string>os-x-usb-inject-all</string>
+			<key>remoteName</key>
+			<string>RehabMan-USBInjectAll</string>
 			<key>url</key>
 			<string>https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/RehabMan-USBInjectAll-2018-1108.zip</string>
 			<key>url2</key>
@@ -195,8 +195,6 @@
 			<string>0.7.1</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>AtherosE2200Ethernet</string>
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
@@ -205,12 +203,12 @@
 			<string>Qualcomm Atheros Killer E2200驱动程序。用于OSX。支持Qualcomm Atheros AR816x，AR817x，Killer E220x，Killer E2400和Killer E2500。</string>
 			<key>name</key>
 			<string>AtherosE2200Ethernet</string>
+			<key>remoteFolder</key>
+			<string>AtherosE2200Ethernet</string>
 			<key>url</key>
 			<string>https://github.com/Mieze/AtherosE2200Ethernet/releases/download/VERSION/AtherosE2200Ethernet-VVERSION.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>IntelMausi</string>
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
@@ -219,12 +217,12 @@
 			<string>适用于macOS的Intel板载LAN驱动程序。</string>
 			<key>name</key>
 			<string>IntelMausi</string>
+			<key>remoteFolder</key>
+			<string>IntelMausi</string>
 			<key>url</key>
 			<string>https://github.com/acidanthera/IntelMausi/releases/download/VERSION/IntelMausi-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>RealtekLANv3</string>
 			<key>author</key>
 			<string>SergeySlice</string>
 			<key>category</key>
@@ -233,12 +231,12 @@
 			<string>用于macOS的LAN驱动程序，支持Realtek芯片8111B，C，D，E，EP，F，G，GU，8411B</string>
 			<key>name</key>
 			<string>RealtekR1000SL</string>
+			<key>remoteFolder</key>
+			<string>RealtekLANv3</string>
 			<key>url</key>
 			<string>https://github.com/SergeySlice/RealtekLANv3/releases/download/vVERSION/RealtekR1000SL.kext.zip</string>
 		</dict>
 		<dict>
-			<key>remoteFolder</key>
-			<string>RTL8111_driver_for_OS_X</string>
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
@@ -247,8 +245,24 @@
 			<string>Realtek RTL8111/8168系列的OS X开源驱动程序</string>
 			<key>name</key>
 			<string>RealtekRTL8111</string>
+			<key>remoteFolder</key>
+			<string>RTL8111_driver_for_OS_X</string>
 			<key>url</key>
 			<string>https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/VVERSION/RealtekRTL8111-VVERSION.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>vit9696</string>
+			<key>category</key>
+			<string>亮度快捷键驱动</string>
+			<key>description</key>
+			<string>自动处理没有DSDT补丁的亮度键</string>
+			<key>name</key>
+			<string>BrightnessKeys</string>
+			<key>remoteFolder</key>
+			<string>BrightnessKeys</string>
+			<key>url</key>
+			<string>https://github.com/acidanthera/BrightnessKeys/releases/download/VERSION/BrightnessKeys-VERSION-RELEASE.zip</string>
 		</dict>
 	</array>
 </dict>
