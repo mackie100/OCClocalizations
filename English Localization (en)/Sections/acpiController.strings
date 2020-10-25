@@ -113,8 +113,8 @@
 /* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "swX-ck-WbC"; */
 "swX-ck-WbC.label" = "Delete";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmwares that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation."; ObjectID = "u3f-B9-p1e"; */
-"u3f-B9-p1e.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmwares that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmware that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation."; ObjectID = "u3f-B9-p1e"; */
+"u3f-B9-p1e.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reset FACS table HardwareSignature value to 0.\nThis works around firmware that fail to maintain hardware signature across the reboots and cause issues with waking from hibernation.";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableSignature*"; ObjectID = "wld-sU-lGp"; */
 "wld-sU-lGp.headerCell.title" = "TableSignature*";
