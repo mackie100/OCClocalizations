@@ -262,7 +262,7 @@
 			<key>remoteFolder</key>
 			<string>BrightnessKeys</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/BrightnessKeys/releases/download/1.0.0/BrightnessKeys-1.0.0-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/BrightnessKeys/releases/download/VERSION/BrightnessKeys-VERSION-RELEASE.zip</string>
 		</dict>
 	</array>
 </dict>
