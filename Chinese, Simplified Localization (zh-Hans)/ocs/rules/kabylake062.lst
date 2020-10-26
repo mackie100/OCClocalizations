@@ -88,7 +88,7 @@ Kernel
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您应该在BIOS中禁用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->确保在您的BIOS中禁用了CFG-Lock"
+ AppleCpuPmCfgLock=no
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您应该在BIOS中禁用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->确保在您的BIOS中禁用了CFG-Lock"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
