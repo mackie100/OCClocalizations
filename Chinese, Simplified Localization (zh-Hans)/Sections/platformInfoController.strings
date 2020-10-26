@@ -24,7 +24,7 @@
 "4l3-Do-kcw.ibShadowedToolTip" = "默认值:0\nSMBIOS:APPLE_SMBIOS_TABLE_TYPE128  -  FirmwareFeatures和ExtendedFirmwareFeatures说明:64位固件具有位掩码。有关更多详细信息，请参阅AppleFeatures.h。低32位与FirmwareFeatures匹配。高64位与ExtendedFirmwareFeatures匹配。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Speed"; ObjectID = "4m4-WW-5Mc"; */
-"4m4-WW-5Mc.headerCell.title" = "Speed";
+"4m4-WW-5Mc.headerCell.title" = "频率";
 
 /* Class = "NSTextFieldCell"; title = "PlatformNVRAM"; ObjectID = "5bx-Mf-EOd"; */
 "5bx-Mf-EOd.title" = "PlatformNVRAM";
@@ -39,7 +39,7 @@
 "6gn-IY-sd7.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:BIOS信息（类型0） -  BIOS发布日期\n说明:固件发布日期。与BIOSVersion相似。可能看起来像12/08/2017。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nFailsafe: 0xFFFF (unknown)\nSMBIOS: Memory Device (Type 17) — Total Width\nDescription: Specifies the total width, in bits, of the memory, including any check or error-correction bits. If there are no error-correction bits, this value should be equal to DataWidth."; ObjectID = "73U-MV-8lJ"; */
-"73U-MV-8lJ.ibShadowedToolTip" = "Type: plist integer, 16-bit\nFailsafe: 0xFFFF (unknown)\nSMBIOS: Memory Device (Type 17) — Total Width\nDescription: Specifies the total width, in bits, of the memory, including any check or error-correction bits. If there are no error-correction bits, this value should be equal to DataWidth.";
+"73U-MV-8lJ.ibShadowedToolTip" = "Total Width\n指定内存的总宽度(以bits为单位),包括所有检查或纠错位. 如果没有纠错位，则此值应等于DataWidth.";
 
 /* Class = "NSTextFieldCell"; title = "Startup Power Events"; ObjectID = "7XG-zt-wiU"; */
 "7XG-zt-wiU.title" = "Startup Power Events";
@@ -87,7 +87,7 @@
 "CdO-kb-3WH.ibShadowedToolTip" = "默认值:0\n描述:在gEfiMiscSubClassGuid中设置StartupPowerEvents。在Mac上找到的值是电源管理状态位掩码，通常为0. X86PlatformPlugin.kext读取的已知位:\n•0x00000001  - 关闭原因是PWROK事件（与GEN_PMCON_2位0相同）\n•0x00000002  - 关闭原因是SYS_PWROK事件（与GEN_PMCON_2位1相同）\n•0x00000004  - 关闭原因是THRMTRIP＃事件（与GEN_PMCON_2位3相同）\n•0x00000008  - 由于SYS_RESET＃事件而重新启动（与GEN_PMCON_2位4相同）\n•0x00000010  - 电源故障（与GEN_PMCON_3位1 PWR_FLR相同）\n•0x00000020  -  RTC电源损耗（与GEN_PMCON_3位2 RTC_PWR_STS相同）\n•0x00000040  - 通用复位状态（与GEN_PMCON_3位9 GEN_RST_STS相同）\n•0xffffff80  -  SUS功率损耗良好（与GEN_PMCON_3位14相同）\n•0x00010000  - 唤醒原因是ME唤醒事件（与PRSTS位0相同，ME_WAKE_STS）\n•0x00020000  - 冷重启是ME诱发事件（与PRSTS位1 ME_HRST_COLD_STS相同） •0x00040000  - 热重启是ME诱发事件（与PRSTS位2 ME相同_HRST_WARM_STS）•0x00080000  - 关闭是ME诱发事件（与PRSTS位3 ME_HOST_PWRDN相同）\n•0x00100000  - 全局复位ME Wachdog定时器事件（与PRSTS位6相同）\n•0x00200000  - 全局复位PowerManagment Wachdog定时器事件（与PRSTS第15位）";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "CtR-KN-0F7"; */
-"CtR-KN-0F7.title" = "Unselect All";
+"CtR-KN-0F7.title" = "取消全选";
 
 /* Class = "NSTextFieldCell"; title = "MemoryFormFactor"; ObjectID = "CxA-si-OgU"; */
 "CxA-si-OgU.title" = "MemoryFormFactor";
@@ -99,7 +99,7 @@
 "FGe-q0-v48.title" = "Asset Tag";
 
 /* Class = "NSTableColumn"; headerCell.title = "SerialNumber"; ObjectID = "FHK-PM-4JZ"; */
-"FHK-PM-4JZ.headerCell.title" = "SerialNumber";
+"FHK-PM-4JZ.headerCell.title" = "序列号";
 
 /* Class = "NSButtonCell"; title = "UpdateDataHub"; ObjectID = "FvU-m3-lup"; */
 "FvU-m3-lup.title" = "UpdateDataHub";
@@ -108,16 +108,16 @@
 "GJj-A4-bd9.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 资产标签\n说明:资产标签号。变化，可能是空的或Type2  - 董事会资产标签。";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. AssetTag\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Asset Tag\nDescription: Specifies the asset tag of this memory device.\n2. BankLocator\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Bank Locator\nDescription: Specifies the physically labeled bank where the memory device is located.\n3. DeviceLocator\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Device Locator\nDescription: Specifies the physically-labeled socket or board position where the memory device is located.\n4. Manufacturer\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Manufacturer\nDescription: Specifies the manufacturer of this memory device.\n5. PartNumber\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Part Number\nDescription: Specifies the part number of this memory device.\n6. SerialNumber\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Serial Number\nDescription: Specifies the serial number of this memory device.\n7. Size\nType: plist integer, 32-bit\nFailsafe: 0\nSMBIOS: Memory Device (Type 17) — Size\nDescription: Specifies the size of the memory device, in megabytes. 0 indicates this slot is not populated.\n8. Speed\nType: plist integer, 16-bit\nFailsafe: 0\nSMBIOS: Memory Device (Type 17) — Speed\nDescription: Specifies the maximum capable speed of the device, in megatransfers per second (MT/s). 0 indicates an unknown speed."; ObjectID = "GR6-98-yvG"; */
-"GR6-98-yvG.ibShadowedToolTip" = "1. AssetTag\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Asset Tag\nDescription: Specifies the asset tag of this memory device.\n2. BankLocator\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Bank Locator\nDescription: Specifies the physically labeled bank where the memory device is located.\n3. DeviceLocator\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Device Locator\nDescription: Specifies the physically-labeled socket or board position where the memory device is located.\n4. Manufacturer\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Manufacturer\nDescription: Specifies the manufacturer of this memory device.\n5. PartNumber\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Part Number\nDescription: Specifies the part number of this memory device.\n6. SerialNumber\nType: plist string\nFailsafe: Unknown\nSMBIOS: Memory Device (Type 17) — Serial Number\nDescription: Specifies the serial number of this memory device.\n7. Size\nType: plist integer, 32-bit\nFailsafe: 0\nSMBIOS: Memory Device (Type 17) — Size\nDescription: Specifies the size of the memory device, in megabytes. 0 indicates this slot is not populated.\n8. Speed\nType: plist integer, 16-bit\nFailsafe: 0\nSMBIOS: Memory Device (Type 17) — Speed\nDescription: Specifies the maximum capable speed of the device, in megatransfers per second (MT/s). 0 indicates an unknown speed.";
+"GR6-98-yvG.ibShadowedToolTip" = "1. Asset Tag\n指定此内存设备的资产标签.\n2. BankLocator\n指定内存设备所在的带有物理插槽,例如BANK 0,BANK 1.\n3.Device Locator\n指定物理插槽或内存所在的板卡位置,例如ChannelA-DIMM0,ChannelB-DIMM0.\n4.Manufacturer\n指定此内存设备的制造商.\n5.Part Number\n指定此内存设备的部件号,例如M00001-4GB.\n6.Serial Number\n指定此内存设备的序列号.\n7.Size\n指定存储设备的大小(以MB为单位),例如2048,4096。 0表示此插槽未填充.\n8.Speed\n指定设备的最大速度，以每秒兆传输(MT/s)为单位,例如:2400,2666,3200. 0表示未知速度.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Use custom memory configuration defined in the Memory section. This completely replaces any existing memory configuration in SMBIOS, and is only active when UpdateSMBIOS is set to true."; ObjectID = "GZV-Yr-hPJ"; */
-"GZV-Yr-hPJ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Use custom memory configuration defined in the Memory section. This completely replaces any existing memory configuration in SMBIOS, and is only active when UpdateSMBIOS is set to true.";
+"GZV-Yr-hPJ.ibShadowedToolTip" = "使用自定义内存配置. 这将完全替换SMBIOS中的任何现有内存配置, 并且仅在UpdateSMBIOS设置为true时有效.";
 
 /* Class = "NSTextFieldCell"; title = "Product Name"; ObjectID = "GbE-LE-4eK"; */
 "GbE-LE-4eK.title" = "Product Name";
 
 /* Class = "NSButtonCell"; title = " Registered (buffered)"; ObjectID = "GfA-Fq-uLx"; */
-"GfA-Fq-uLx.title" = " Registered (buffered)";
+"GfA-Fq-uLx.title" = " 已注册 (已缓存)";
 
 /* Class = "NSTextFieldCell"; title = "Board Revision"; ObjectID = "GiG-2a-PMR"; */
 "GiG-2a-PMR.title" = "Board Revision";
@@ -132,13 +132,13 @@
 "IFz-U9-319.title" = "ErrorCorrection";
 
 /* Class = "NSTableColumn"; headerCell.title = "DeviceLocator"; ObjectID = "IGv-sT-Ard"; */
-"IGv-sT-Ard.headerCell.title" = "DeviceLocator";
+"IGv-sT-Ard.headerCell.title" = "设备路径";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Add or remove this section from plist\nDefault value: Add"; ObjectID = "IJO-Va-YDO"; */
 "IJO-Va-YDO.ibShadowedToolTip" = "从plist添加或删除此部分:\n默认值:添加";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "IlY-dq-QQD"; */
-"IlY-dq-QQD.title" = "Select All";
+"IlY-dq-QQD.title" = "全选";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "IqG-Mw-D8N"; */
 "IqG-Mw-D8N.title" = "在config.plist里添加此部分内容";
@@ -195,7 +195,7 @@
 "OTt-Ne-MaI.title" = "FormFactor";
 
 /* Class = "NSButtonCell"; title = "Other"; ObjectID = "Oe7-gh-kqX"; */
-"Oe7-gh-kqX.title" = "Other";
+"Oe7-gh-kqX.title" = "其他";
 
 /* Class = "NSTextFieldCell"; title = "Manufacturer"; ObjectID = "Oqy-j7-kv6"; */
 "Oqy-j7-kv6.title" = "Manufacturer";
@@ -258,7 +258,7 @@
 "UNS-re-qUK.title" = "来自机型";
 
 /* Class = "NSBox"; title = "Devices"; ObjectID = "Uex-z6-JSb"; */
-"Uex-z6-JSb.title" = "Devices";
+"Uex-z6-JSb.title" = "设备";
 
 /* Class = "NSButtonCell"; title = "UpdateSMBIOS"; ObjectID = "Uzb-U1-Thj"; */
 "Uzb-U1-Thj.title" = "UpdateSMBIOS";
@@ -294,13 +294,13 @@
 "Xed-CT-3f5.title" = "系统内存状态";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64-bit\nFailsafe: 0\nSMBIOS: Physical Memory Array (Type 16) — Maximum Capacity\nDescription: Specifies the maximum amount of memory, in bytes, supported by the system."; ObjectID = "Y4W-6h-1G9"; */
-"Y4W-6h-1G9.ibShadowedToolTip" = "Type: plist integer, 64-bit\nFailsafe: 0\nSMBIOS: Physical Memory Array (Type 16) — Maximum Capacity\nDescription: Specifies the maximum amount of memory, in bytes, supported by the system.";
+"Y4W-6h-1G9.ibShadowedToolTip" = "Maximum Capacity\n指定系统支持的最大内存量（以字节为单位）.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nFailsafe: 0 (Automatic)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE131 - ProcessorType Description: Combined of Processor Major and Minor types."; ObjectID = "YN8-NU-Zgm"; */
 "YN8-NU-Zgm.ibShadowedToolTip" = "填写十进制整数值\n\n自动值生成会尝试为当前安装的CPU提供最准确的值。有关完整列表可用值及其限制(该值仅在CPU核心数量匹配时适用)是指Apple SMBIOS,可以在https://github.com/acidanthera/OpenCorePkg/blob/master/Include/Apple/IndustryStandard/AppleSmBios.h查看定义标头\n另请参阅此处以获取Mac型号上使用的CPU列表:https://docs.google.com/spreadsheets/d/1x09b5-DGh8ozNwN5ZjAi7TMnOp4TDm6DbmrKu86i_bQ\n\n例如:我的CPU是I5-6400,属于I5系列，四核心，通过查表获知CPU型号为0x0605，转换为十进制数为1541，如果想显示为I7处理器，对应的CPU型号为0x0705，转为十进制整数为1797，这里填1797，重启后就显示为I7处理器";
 
 /* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "YeX-yd-sEF"; */
-"YeX-yd-sEF.headerCell.title" = "Size";
+"YeX-yd-sEF.headerCell.title" = "容量";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details."; ObjectID = "YgB-Sp-EZ5"; */
 "YgB-Sp-EZ5.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 板类型\n描述:0xA（主板（包括处理器，内存和I / O）或0xB（处理器/内存）模块），请参阅表15  - 底板:电路板类型以获取更多详细信息。";
@@ -354,13 +354,13 @@
 "e58-CU-R3q.title" = "DataWidth";
 
 /* Class = "NSTableColumn"; headerCell.title = "Manufacturer"; ObjectID = "e8B-2J-n0w"; */
-"e8B-2J-n0w.headerCell.title" = "Manufacturer";
+"e8B-2J-n0w.headerCell.title" = "制造商";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Version Description: Should match BoardProduct."; ObjectID = "eGy-sp-yaM"; */
 "eGy-sp-yaM.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 版本描述:应匹配BoardProduct。";
 
 /* Class = "NSTabViewItem"; label = "Memory"; ObjectID = "ecE-11-C0P"; */
-"ecE-11-C0P.label" = "Memory";
+"ecE-11-C0P.label" = "自定义内存";
 
 /* Class = "NSSegmentedCell"; eez-pY-d3O.ibShadowedLabels[0] = "Mac"; ObjectID = "eez-pY-d3O"; */
 "eez-pY-d3O.ibShadowedLabels[0]" = "Mac";
@@ -378,16 +378,16 @@
 "fux-7e-g2r.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） -  UUID\n描述:UUID是一个标识符，设计为在时间和空间上都是唯一的。它不需要中央注册过程。";
 
 /* Class = "NSButtonCell"; title = "Synchronous"; ObjectID = "fzR-ns-Nmh"; */
-"fzR-ns-Nmh.title" = "Synchronous";
+"fzR-ns-Nmh.title" = "同步";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Version Description: Should match SystemSerialNumber."; ObjectID = "gTB-8E-Nin"; */
 "gTB-8E-Nin.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 版本描述:应与SystemSerialNumber匹配。";
 
 /* Class = "NSButtonCell"; title = "Unknown"; ObjectID = "gVq-zr-fCy"; */
-"gVq-zr-fCy.title" = "Unknown";
+"gVq-zr-fCy.title" = "未知";
 
 /* Class = "NSButtonCell"; title = "Unbuffered (unregistered)"; ObjectID = "go3-WJ-YA1"; */
-"go3-WJ-YA1.title" = "Unbuffered (unregistered)";
+"go3-WJ-YA1.title" = "无缓存 (未注册)";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Information (Type 1) — Manufacturer\nDescription: OEM manufacturer of the particular board. Shall not be specified unless strictly required. Should not contain Apple Inc., as this confuses numerous services present in the operating system, such as firmware updates, eficheck, as well as kernel extensions developed in Acidanthera, such as Lilu and its plugins."; ObjectID = "gqH-S3-VMd"; */
 "gqH-S3-VMd.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） - 制造商\n说明:特定电路板的OEM制造商。除非严格要求，否则不得指定。不应包含Apple Inc.，因为这会混淆操作系统中存在的大量服务，例如固件更新，eficheck，以及Acidanthera中开发的内核扩展，例如Lilu及其插件。";
@@ -405,13 +405,13 @@
 "h7z-Be-rOD.ibShadowedToolTip" = "默认值:未安装\n说明:在gEfiMiscSubClassGuid中设置board-id。在Mac上找到的值等于ASCII中的SMBIOS BoardProduct。";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist integer, 8-bit\nFailsafe: 0x03\nSMBIOS: Physical Memory Array (Type 16) — Memory Error Correction\nDescription: Specifies the primary hardware error correction or detection method supported by the memory.\n• 0x01 — Other\n• 0x02 — Unknown\n• 0x03 — None\n• 0x04 — Parity\n• 0x05 — Single-bit ECC\n• 0x06 — Multi-bit ECC\n• 0x07 — CRC"; ObjectID = "hF3-5Q-b46"; */
-"hF3-5Q-b46.ibShadowedToolTip" = "Type: plist integer, 8-bit\nFailsafe: 0x03\nSMBIOS: Physical Memory Array (Type 16) — Memory Error Correction\nDescription: Specifies the primary hardware error correction or detection method supported by the memory.\n• 0x01 — Other\n• 0x02 — Unknown\n• 0x03 — None\n• 0x04 — Parity\n• 0x05 — Single-bit ECC\n• 0x06 — Multi-bit ECC\n• 0x07 — CRC";
+"hF3-5Q-b46.ibShadowedToolTip" = "Memory Error Correction\n指定内存支持的主要硬件错误纠正或检测方法.\n• 0x01 — 其他\n• 0x02 — 未知\n• 0x03 — 无\n• 0x04 — 奇偶性\n• 0x05 — 单ECC\n• 0x06 — 多位ECC\n• 0x07 — CRC";
 
 /* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "hOi-c7-jOJ"; */
 "hOi-c7-jOJ.title" = "Type";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist integer, 8-bit\nFailsafe: 0x02\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Specifies the form factor of the memory. On Macs this should usually be DIMM or SODIMM.\nCommonly used form factors are listed below.\nWhen CustomMemory is false, this value is automatically set based on Mac product name.\n• 0x01 — Other\n• 0x02 — Unknown\n• 0x09 — DIMM\n• 0x0D — SODIMM\n• 0x0F — FB-DIMM"; ObjectID = "haT-n9-1ut"; */
-"haT-n9-1ut.ibShadowedToolTip" = "Type: plist integer, 8-bit\nFailsafe: 0x02\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Specifies the form factor of the memory. On Macs this should usually be DIMM or SODIMM.\nCommonly used form factors are listed below.\nWhen CustomMemory is false, this value is automatically set based on Mac product name.\n• 0x01 — Other\n• 0x02 — Unknown\n• 0x09 — DIMM\n• 0x0D — SODIMM\n• 0x0F — FB-DIMM";
+"haT-n9-1ut.ibShadowedToolTip" = "Form Factor\n指定内存的形式. 在Mac上，通常应为DIMM或SODIMM.\n下面列出了常用的外形形式.\n如果CustomMemory为false，则根据Mac产品名称自动设置此值.\n• 0x01 — 其他\n• 0x02 — 未知\n• 0x09 — DIMM\n• 0x0D — SODIMM\n• 0x0F — FB-DIMM";
 
 /* Class = "NSTextFieldCell"; title = "MLB"; ObjectID = "hxm-Qi-SkM"; */
 "hxm-Qi-SkM.title" = "MLB";
@@ -438,7 +438,7 @@
 "jzf-Ga-G68.title" = "Manufacturer";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nFailsafe: 0x4\nSMBIOS: Memory Device (Type 17) — Type Detail\nDescription: Specifies additional memory type information.\n• Bit 0 — Reserved, set to 0\n• Bit 1 — Other\n• Bit 2 — Unknown\n• Bit 7 — Synchronous\n• Bit 13 — Registered (buffered)\n• Bit 14 — Unbuffered (unregistered)"; ObjectID = "kmI-CT-lAM"; */
-"kmI-CT-lAM.ibShadowedToolTip" = "Type: plist integer, 16-bit\nFailsafe: 0x4\nSMBIOS: Memory Device (Type 17) — Type Detail\nDescription: Specifies additional memory type information.\n• Bit 0 — Reserved, set to 0\n• Bit 1 — Other\n• Bit 2 — Unknown\n• Bit 7 — Synchronous\n• Bit 13 — Registered (buffered)\n• Bit 14 — Unbuffered (unregistered)";
+"kmI-CT-lAM.ibShadowedToolTip" = "Type Detail\n指定其他内存类型信息.\n• Bit 0 — 保留, 设为0\n• Bit 1 — 其他\n• Bit 2 — 未知\n• Bit 7 — 同步\n• Bit 13 — 已注册 (已缓存)\n• Bit 14 — 无缓存 (未注册)";
 
 /* Class = "NSTextFieldCell"; title = "ProcessorType"; ObjectID = "kwQ-r3-1fQ"; */
 "kwQ-r3-1fQ.title" = "ProcessorType";
@@ -471,7 +471,7 @@
 "oMm-l1-RDC.ibShadowedToolTip" = "去苹果官网看看你的三码是什么状态，但我们是黑苹果，嘿嘿，你懂得！";
 
 /* Class = "NSButtonCell"; title = "CustomMemory"; ObjectID = "olD-tN-2HW"; */
-"olD-tN-2HW.title" = "CustomMemory";
+"olD-tN-2HW.title" = "自定义内存";
 
 /* Class = "NSTextFieldCell"; title = "SmcPlatform"; ObjectID = "p5r-L2-V0b"; */
 "p5r-L2-V0b.title" = "SmcPlatform";
@@ -522,7 +522,7 @@
 "vrV-lt-VAU.ibShadowedToolTip" = "默认值:0\n描述:在gEfiMiscSubClassGuid中设置board-rev。在Mac上找到的值似乎对应于内部板修订（例如01）。";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist integer, 8-bit\nFailsafe: 0x02\nSMBIOS: Memory Device (Type 17) — Memory Type\nDescription: Specifies the memory type. Commonly used types are listed below.\n• 0x01 — Other\n• 0x02 — Unknown\n• 0x0F — SDRAM\n• 0x12 — DDR\n• 0x13 — DDR2\n• 0x14 — DDR2 FB-DIMM\n• 0x18 — DDR3\n• 0x1A — DDR4\n• 0x1B — LPDDR\n• 0x1C — LPDDR2\n• 0x1D — LPDDR3\n• 0x1E — LPDDR4"; ObjectID = "w6I-Xj-IPK"; */
-"w6I-Xj-IPK.ibShadowedToolTip" = "Type: plist integer, 8-bit\nFailsafe: 0x02\nSMBIOS: Memory Device (Type 17) — Memory Type\nDescription: Specifies the memory type. Commonly used types are listed below.\n• 0x01 — Other\n• 0x02 — Unknown\n• 0x0F — SDRAM\n• 0x12 — DDR\n• 0x13 — DDR2\n• 0x14 — DDR2 FB-DIMM\n• 0x18 — DDR3\n• 0x1A — DDR4\n• 0x1B — LPDDR\n• 0x1C — LPDDR2\n• 0x1D — LPDDR3\n• 0x1E — LPDDR4";
+"w6I-Xj-IPK.ibShadowedToolTip" = "Memory Type\n指定内存类型。常用类型如下.\n• 0x01 — 其他\n• 0x02 — 未知\n• 0x0F — SDRAM\n• 0x12 — DDR\n• 0x13 — DDR2\n• 0x14 — DDR2 FB-DIMM\n• 0x18 — DDR3\n• 0x1A — DDR4\n• 0x1B — LPDDR\n• 0x1C — LPDDR2\n• 0x1D — LPDDR3\n• 0x1E — LPDDR4";
 
 /* Class = "NSTextFieldCell"; title = "FSBFrequency"; ObjectID = "wVQ-fG-k75"; */
 "wVQ-fG-k75.title" = "FSBFrequency";
@@ -537,19 +537,19 @@
 "xDD-P3-Saq.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 序列号\n说明:已定义格式的板序列号。已知格式以macserial描述。";
 
 /* Class = "NSTableColumn"; headerCell.title = "PartNumber"; ObjectID = "yFd-un-G1B"; */
-"yFd-un-G1B.headerCell.title" = "PartNumber";
+"yFd-un-G1B.headerCell.title" = "部件号";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 1 byte\nDefault value: Not installed\nDescription: Sets DevicePathsSupported in gEfiMiscSubClassGuid. Must be set to 01 for AppleACPIPlat- form.kext to append SATA device paths to Boot#### and efi-boot-device-data variables. Set to 01 on all modern Macs."; ObjectID = "yKq-oF-Y1T"; */
 "yKq-oF-Y1T.ibShadowedToolTip" = "默认值:未安装\n说明:在gEfiMiscSubClassGuid中设置DevicePathsSupported。对于AppleACPIPlat- form.kext，必须设置为01才能将SATA设备路径附加到Boot ####和efi-boot-device-data变量。在所有现代Mac上设置为01。";
 
 /* Class = "NSTableColumn"; headerCell.title = "BankLocator"; ObjectID = "yXa-IP-XI4"; */
-"yXa-IP-XI4.headerCell.title" = "BankLocator";
+"yXa-IP-XI4.headerCell.title" = "插槽位置";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 6 bytes\nDefault value: Not installed\nDescription: Specifies the values of NVRAM variables 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_ROM and 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:ROM"; ObjectID = "yhE-PH-xkY"; */
 "yhE-PH-xkY.ibShadowedToolTip" = "默认值:未安装\n说明:指定NVRAM变量的值4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_ROM和4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:ROM";
 
 /* Class = "NSTableColumn"; headerCell.title = "AssetTag"; ObjectID = "yms-EA-Jpq"; */
-"yms-EA-Jpq.headerCell.title" = "AssetTag";
+"yms-EA-Jpq.headerCell.title" = "资产标签";
 
 /* Class = "NSTextFieldCell"; title = "Firmware Features"; ObjectID = "z92-Rg-GSY"; */
 "z92-Rg-GSY.title" = "Firmware Features";
@@ -558,4 +558,4 @@
 "zXC-sw-kEf.ibShadowedToolTip" = "必须选YES, 无论\"自动\"选项是否选择！";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nFailsafe: 0xFFFF (unknown)\nSMBIOS: Memory Device (Type 17) — Data Width\nDescription: Specifies the data width, in bits, of the memory. A DataWidth of 0 and a TotalWidth of 8 indicates that the device is being used solely to provide 8 error-correction bits."; ObjectID = "zev-9o-4NS"; */
-"zev-9o-4NS.ibShadowedToolTip" = "Type: plist integer, 16-bit\nFailsafe: 0xFFFF (unknown)\nSMBIOS: Memory Device (Type 17) — Data Width\nDescription: Specifies the data width, in bits, of the memory. A DataWidth of 0 and a TotalWidth of 8 indicates that the device is being used solely to provide 8 error-correction bits.";
+"zev-9o-4NS.ibShadowedToolTip" = "Data Width\n指定存储器的数据宽度(以bits为单位). DataWidth为0且TotalWidth为8表示该设备仅用于提供8个纠错位.";

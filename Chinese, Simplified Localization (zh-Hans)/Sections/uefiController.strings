@@ -33,7 +33,7 @@
 "33a-jy-EES.title" = "HashServices";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi. The quirk lets default boot entry preservation at times when firmwares delete incompatible boot entries. Simply said, this quirk is required to reliably use Startup Disk preference pane in firmware that is not compatible with macOS boot entries by design."; ObjectID = "3Q0-sm-ooL"; */
-"3Q0-sm-ooL.ibShadowedToolTip" = "启用此项以便能够在与 macOS 引导项设计上不兼容的固件中可靠地使用[启动磁盘]设置。\n也和记住默认启动条目功能有关，推荐使用YES";
+"3Q0-sm-ooL.ibShadowedToolTip" = "启用此项以便能够在与 macOS 引导项设计上不兼容的固件中可靠地使用[启动磁盘]设置。\n\n提醒:一些主板如果启用此项，在使用resetNVRAM后会导致黑屏无法进入BIOS的硬件损坏，必须禁用此项和设置Misc-->Security-->BootProtect为None!!";
 
 /* Class = "NSTextFieldCell"; title = "TimerResolution"; ObjectID = "3Ql-TM-Oiv"; */
 "3Ql-TM-Oiv.title" = "TimerResolution";
