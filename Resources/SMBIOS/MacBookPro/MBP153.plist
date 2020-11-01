@@ -95,5 +95,7 @@
 	<array>
 		<string>2019</string>
 	</array>
+	<key>mobile</key>
+	<true/>
 </dict>
 </plist>

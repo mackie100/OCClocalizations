@@ -113,5 +113,7 @@
 		<string>2016</string>
 		<string>2017</string>
 	</array>
+	<key>mobile</key>
+	<true/>
 </dict>
 </plist>

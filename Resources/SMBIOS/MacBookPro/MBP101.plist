@@ -112,5 +112,7 @@
 		<string>2012</string>
 		<string>2013</string>
 	</array>
+	<key>mobile</key>
+	<true/>
 </dict>
 </plist>
