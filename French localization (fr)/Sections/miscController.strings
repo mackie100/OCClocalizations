@@ -135,7 +135,7 @@
 "NXw-uw-Jsu.headerCell.title" = "Activer";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).\n\nNote: This option exists due to some operating systems, namely macOS Big Sur, being incapable of disabling firmware updates with the NVRAM variable (run-efi-updater)."; ObjectID = "Nph-Bb-8b6"; */
-"Nph-Bb-8b6.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable password protection to allow sensitive operations.\n\nPassword protection ensures that sensitive operations such as booting a non-default operating system (e.g. macOS recovery or a tool), resetting NVRAM storage, trying to boot into a non-default mode (e.g. verbose mode or safe mode) are not allowed without explicit user authentication by a custom password. Currently password and salt are hashed with 5000000 iterations of SHA-512.\n\nNote: This functionality is currently in development and is not ready for daily usage.";
+"Nph-Bb-8b6.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).\n\nNote: This option exists due to some operating systems, namely macOS Big Sur, being incapable of disabling firmware updates with the NVRAM variable (run-efi-updater).";
 
 /* Class = "NSTextFieldCell"; title = "BootProtect"; ObjectID = "OeD-Mz-a2a"; */
 "OeD-Mz-a2a.title" = "BootProtect";
