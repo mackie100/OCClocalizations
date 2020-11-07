@@ -32,6 +32,9 @@
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "3K9-EU-jse"; */
 "3K9-EU-jse.title" = "全选";
 
+/* Class = "NSTableColumn"; headerCell.title = "TextMode"; ObjectID = "3a7-m4-eNo"; */
+"3a7-m4-eNo.headerCell.title" = "TextMode";
+
 /* Class = "NSTabViewItem"; label = "Boot"; ObjectID = "3fm-9G-OpP"; */
 "3fm-9G-OpP.label" = "Boot";
 
@@ -50,10 +53,13 @@
 /* Class = "NSButtonCell"; title = "HideAuxiliary"; ObjectID = "7BP-eo-vIZ"; */
 "7BP-eo-vIZ.title" = "HideAuxiliary\n隐藏辅助条目";
 
+/* Class = "NSTableColumn"; headerCell.title = "RealPath"; ObjectID = "7JW-1n-ZBx"; */
+"7JW-1n-ZBx.headerCell.title" = "RealPath";
+
 /* Class = "NSButtonCell"; title = "Expose OpenCore version in boot picker menu title."; ObjectID = "7NC-lm-XEM"; */
 "7NC-lm-XEM.title" = "在启动菜单标题中显示OpenCore版本.";
 
-/* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: OpenShell.efi."; ObjectID = "8Gl-6A-OsL"; */
+/* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n3. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable entry name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: Entry location depending on entry type.\n• Entries specify external boot options, and therefore take device paths in Path key. These values are not checked, thus be extremely careful. Example: PciRoot(0x0)/Pci(0x1,0x1)/.../\\EFI\\COOL.EFI\n• Tools specify internal boot options, which are part of bootloader vault, and therefore take file paths relative to OC/Tools directory. Example: OpenShell.efi.\n7. TextMode\nType: plist boolean\nFailsafe: false\nDescription: Run the entry in text mode instead of graphics mode."; ObjectID = "8Gl-6A-OsL"; */
 "8Gl-6A-OsL.ibShadowedToolTip" = "用于指定OpenCore无法自动找到的无规律引导路径。\n名称:OpenCore启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助条目，可在启动菜单中隐藏\n路径:\n引导磁盘的PCI路径，一般可以通过替换启动文件为DEBUG版本，然后勾选Disable WatchDog选项，Target选项填入67，启动一次后，在EFI分区里产生的日志文件里查找如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi这样的信息。\n可以提前在MACOS里使用diskutil info disk0s2 |grep \"UUID\"这样的命令提前获取到你想要启动的分区UUID，然后在日志文件里搜索UUID的值，可以快速获取到完整PCI路径！\n对于MOD的fork(MOD)版本，可在启动界面按F9保存所有启动设备路径到文件并保存在EFI分区";
 
 /* Class = "NSTextFieldCell"; title = "PasswordSalt"; ObjectID = "8Xp-t8-QVB"; */
@@ -245,6 +251,9 @@
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
 "dam-Nc-xFX.title" = "Display Level";
 
+/* Class = "NSTableColumn"; headerCell.title = "TextMode"; ObjectID = "deu-Ec-YkZ"; */
+"deu-Ec-YkZ.headerCell.title" = "TextMode";
+
 /* Class = "NSButtonCell"; title = "Provides predefined label images for boot entries without custom entries"; ObjectID = "dl8-kF-ipf"; */
 "dl8-kF-ipf.title" = "为引导项提供预定义的标签图像，而无需自定义项";
 
@@ -254,7 +263,7 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "eFc-bE-Fl5"; */
 "eFc-bE-Fl5.title" = "允许扫描USB设备";
 
-/* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory."; ObjectID = "eH6-nm-MdQ"; */
+/* Class = "NSTableView"; ibShadowedToolTip = "1. Arguments\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used as boot arguments (load options) of the specified entry.\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Auxiliary\nType: plist boolean\nFailsafe: false\nDescription: This entry will not be listed by default when HideAuxiliary is set to true.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This tool will not be listed unless set to true.\n5. Name\nType: plist string\nFailsafe: Empty string\nDescription: Human readable tool name displayed in boot picker.\n6. Path\nType: plist string\nFailsafe: Empty string\nDescription: File path to select UEFI tool relative to OC/Tools directory.\n7. RealPath\nType: plist boolean\nFailsafe: false\nDescription: Pass full path to the tool when launching.\n\nPassing tool directory may be unsafe for tool accidentally trying to access files without checking their integrity and thus should generally be disabled. Reason to enable this property may include cases where tools cannot work without external files or may need them for better function (e.g. memtest86 for logging and configuration or Shell for automatic script execution).\n\nNote: This property is only valid for Tools. For Entries this property cannot be specified and is always true.\n\n8. TextMode\nType: plist boolean\nFailsafe: false\nDescription: Run the entry in text mode instead of graphics mode.\n\nThis setting may be benefitial to some older tools that require text output. By default all the tools are launched in graphics mode. Read more about text modes in Output Properties section below."; ObjectID = "eH6-nm-MdQ"; */
 "eH6-nm-MdQ.ibShadowedToolTip" = "用于运行一些UEFI工具, 例如验证CFG Lock(VerifyMsrE2.efi),CleanNvram.efi\n名称:OpenCore 启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助属性\n路径:Tools文件夹下的文件名\n如: VerifyMsrE2.efi,Shell.efi等";
 
 /* Class = "NSTextFieldCell"; title = "Picker Attributes"; ObjectID = "eaZ-uU-2Tt"; */
