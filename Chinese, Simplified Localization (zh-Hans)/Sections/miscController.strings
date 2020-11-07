@@ -141,7 +141,7 @@
 "NXw-uw-Jsu.headerCell.title" = "启用";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).\n\nNote: This option exists due to some operating systems, namely macOS Big Sur, being incapable of disabling firmware updates with the NVRAM variable (run-efi-updater)."; ObjectID = "Nph-Bb-8b6"; */
-"Nph-Bb-8b6.ibShadowedToolTip" = "用于IMG4验证的强制x86方案.\n\n注意：当使用与x86legacy不同的SecureBootModel时，此选项在虚拟机上是必需的.";
+"Nph-Bb-8b6.ibShadowedToolTip" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统（即macOS Big Sur）无法使用NVRAM变量（run-efi-updater）禁用固件更新，因此存在此选项.";
 
 /* Class = "NSTextFieldCell"; title = "BootProtect"; ObjectID = "OeD-Mz-a2a"; */
 "OeD-Mz-a2a.title" = "BootProtect";

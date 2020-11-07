@@ -52,18 +52,18 @@ Booter
  ProtectCsmRegion~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>ProtectMemoryRegions</b>"
  ProtectUefiServices=no
  ProvideCustomSlide=yes
- RebuildAppleMemoryMap=yes
+ ProvideMaxSlide=0
+ RebuildAppleMemoryMap=no
  SetupVirtualMap=yes
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
  SyncRuntimePermissions=no
- ProvideMaxSlide~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>ProvideMaxSlide</font></b>选项"
 
 DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="00001619|00001b19|00002619|00001219|00001b19|02001619|02002619|05003b19|" " <b>{$setting}<b> = <b>{$value}<b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="00001619|00001b19|00002619|00001219|00001b19|02001619|02002619|05003b19" " <b>{$setting}<b> = <b>{$value}<b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
  AAPL,ig-platform-id~=.* "!<b>{$setting}</b> 是错误的位置, iGPU的位置是 PciRoot(0x0)/Pci(0x2,0x0)"
@@ -194,7 +194,6 @@ PlatformInfo
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SystemMemoryStatus=Auto
- ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
  SystemProductName~="(MacBook9,1|MacBookPro13,1|MacBookPro13,2|MacBookPro13,3|iMac17,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于六代Skylake笔记本平台，这不是建议的SMBIOS. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo>[PlatformInfo Docs]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看<a href=https://desktop.dortania.ml/config-HEDT/skylake#platforminfo>[PlatformInfo Docs]</a>:" <b>{$setting}</b> -->已设置"
@@ -248,7 +247,7 @@ UEFI
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
- PointerSupportMode=~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
 
 :ProtocolOverrides
