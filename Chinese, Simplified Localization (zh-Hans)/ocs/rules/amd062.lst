@@ -260,7 +260,7 @@ UEFI
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEvent=no
- AppleFramebufferInfo~=.* "<b>{$setting}</b> = <b>{$value}</b> -->":"!-->缺少<b><font colore=red>AppleFramebufferInfo</font></b>选项"
+ AppleFramebufferInfo=no
  AppleImageConversion=no
  AppleKeyMap=no
  AppleRtcRam=no

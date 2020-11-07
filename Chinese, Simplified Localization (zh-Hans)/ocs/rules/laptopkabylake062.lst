@@ -192,8 +192,6 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
- ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
  SystemProductName~="(MacBookPro14,1|MacBookPro14,2|MacBookPro14,3|iMac18,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于七代Kabalake笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/kaby-lake.html#platforminfo>[PlatformInfo Docs]</a>"

@@ -198,8 +198,6 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- MemoryFormFactor=Auto
- ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
  SystemProductName~="((MacBookAir5,1|MacBookAir5,2|MacBookPro10,1|MacBookPro10,2|Macmini6,1|Macmini6,2)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于三代Ivy Bridge笔记本平台，这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/ivy-bridge.html#platforminfo>[PlatformInfo Docs]</a>"
