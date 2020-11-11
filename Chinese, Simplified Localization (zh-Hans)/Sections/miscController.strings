@@ -36,10 +36,10 @@
 "3a7-m4-eNo.headerCell.title" = "文本模式";
 
 /* Class = "NSTabViewItem"; label = "Boot"; ObjectID = "3fm-9G-OpP"; */
-"3fm-9G-OpP.label" = "Boot";
+"3fm-9G-OpP.label" = "启动";
 
 /* Class = "NSTabViewItem"; label = "Security"; ObjectID = "3fm-Nz-fHj"; */
-"3fm-Nz-fHj.label" = "Security";
+"3fm-Nz-fHj.label" = "安全";
 
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Builtin\nDescription: Choose boot picker used for boot management.\nPicker describes underlying boot management with an optional user interface responsible for handling boot\noptions. The following values are supported:\n• Builtin — boot management is handled by OpenCore, a simple text only user interface is used.\n• External — an external boot management protocol is used if available. Otherwise Builtin mode is used.\n• Apple — Apple boot management is used if available. Otherwise Builtin mode is used.\n\nUpon success External mode will entirely disable all boot management in OpenCore except policy enforcement. See OpenCanopy plugin for an example of a custom user interface.\nOpenCore built-in boot picker contains a set of actions chosen during the boot process. The list of supported actions is similar to Apple BDS and in general can be accessed by holding action hotkeys during boot process. Currently the following actions are considered:\n• Default — this is the default option, and it lets OpenCore built-in boot picker to loads the default boot option as specified in Startup Disk preference pane.\n• ShowPicker — this option forces picker to show. Normally it can be achieved by holding OPT key during boot. Setting ShowPicker to true will make ShowPicker the default option.\n• ResetNvram — this option performs select UEFI variable erase and is normally achieved by holding CMD+OPT+P+R key combination during boot. Another way to erase UEFI variables is to choose Reset NVRAM in the picker. This option requires AllowNvramReset to be set to true.\n• BootApple — this options performs booting to the first found Apple operating system unless the default chosen operating system is already made by Apple. Hold X key to choose this option.\n• BootAppleRecovery — this option performs booting to Apple operating system recovery. Either the one related to the default chosen operating system, or first found in case default chosen operating system is not made by Apple or has no recovery. Hold CMD+R key combination to choose this option.\n\nNote 1: Activated KeySupport, OpenUsbKbDxe, or similar driver is required for key handling to work. On several types of firmware, it is not possible to get all the key functions.\n\nNote 2: In addition to OPT OpenCore supports Escape key to display picker when ShowPicker is disabled. This key exists for Apple picker mode and for firmware with PS/2 keyboards that fail to report held OPT keys and requiring continual presses of the Escape key to access the boot menu.\n\nNote 3: On Macs with problematic GOP, it may be difficult to access the Apple BootPicker. The BootKicker utility can be blessed to workaround this problem even without loading OpenCore. On some Macs however, the BootKicker utility cannot be run from OpenCore."; ObjectID = "5Or-M0-hZS"; */
 "5Or-M0-hZS.ibShadowedToolTip" = "选择用于启动管理的启动选择器\n支持以下值:\n•Builtin(默认值)-引导管理由OpenCore处理，使用纯文本用户界面。\n•External-使用外部引导管理协议（如果可用),否则，将使用Builtin模式。\n•Apple-使用Apple引导管理(如果可用),否则，将使用Builtin模式。";
@@ -66,7 +66,7 @@
 "8Xp-t8-QVB.title" = "PasswordSalt\n密码加盐";
 
 /* Class = "NSButtonCell"; title = "Disable WatchDog"; ObjectID = "9LG-wP-7Np"; */
-"9LG-wP-7Np.title" = "Disable WatchDog";
+"9LG-wP-7Np.title" = "禁用看门狗（WatchDog）";
 
 /* Class = "NSTextFieldCell"; title = "ApECID"; ObjectID = "A2A-xj-Bmf"; */
 "A2A-xj-Bmf.title" = "ApECID";
@@ -87,7 +87,7 @@
 "Bpe-6y-ybA.title" = "快照添加";
 
 /* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
-"DAS-KM-gwG.title" = "Expose Sensitive Data";
+"DAS-KM-gwG.title" = "暴露敏感数据";
 
 /* Class = "NSButtonCell"; title = "Enable non-volatile UEFI variable logging"; ObjectID = "Da8-bR-9wd"; */
 "Da8-bR-9wd.title" = "启用非易失性UEFI变量日志记录";
@@ -99,7 +99,7 @@
 "Edm-Vw-KuX.title" = "允许扫描EFI系统分区文件系统。";
 
 /* Class = "NSTextFieldCell"; title = "Display Delay"; ObjectID = "FHv-7q-Wq3"; */
-"FHv-7q-Wq3.title" = "Display Delay";
+"FHv-7q-Wq3.title" = "显示延迟";
 
 /* Class = "NSButtonCell"; title = "SysReport"; ObjectID = "GOG-QD-oyI"; */
 "GOG-QD-oyI.title" = "SysReport";
@@ -144,7 +144,7 @@
 "Nph-Bb-8b6.ibShadowedToolTip" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统（即macOS Big Sur）无法使用NVRAM变量（run-efi-updater）禁用固件更新，因此存在此选项.";
 
 /* Class = "NSTextFieldCell"; title = "BootProtect"; ObjectID = "OeD-Mz-a2a"; */
-"OeD-Mz-a2a.title" = "BootProtect";
+"OeD-Mz-a2a.title" = "启动保护（BootProtect）";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details."; ObjectID = "PDS-bo-Qx8"; */
 "PDS-bo-Qx8.ibShadowedToolTip" = "在启动选择器中启用屏幕语音助理功能。\n也可以使用Command + F5组合键在OpenCore引导选择器和macOS引导加载器FileVault 2登录窗口中切换屏幕语音助理功能。\ n注意：屏幕语音辅助功能需要加载AudioDxe.ef音频驱动。";
@@ -237,7 +237,7 @@
 "aQY-Kx-ZCy.title" = "允许扫描SATA设备";
 
 /* Class = "NSTextFieldCell"; title = "Scan Policy"; ObjectID = "aUx-rK-UTX"; */
-"aUx-rK-UTX.title" = "Scan Policy";
+"aUx-rK-UTX.title" = "扫描策略";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "b27-wQ-s5W"; */
 "b27-wQ-s5W.title" = "全选";
@@ -249,7 +249,7 @@
 "cz1-6R-TEf.title" = "PasswordHash\n密码哈希";
 
 /* Class = "NSTextFieldCell"; title = "Display Level"; ObjectID = "dam-Nc-xFX"; */
-"dam-Nc-xFX.title" = "Display Level";
+"dam-Nc-xFX.title" = "Display Level\n显示等级";
 
 /* Class = "NSTableColumn"; headerCell.title = "TextMode"; ObjectID = "deu-Ec-YkZ"; */
 "deu-Ec-YkZ.headerCell.title" = "文本模式";
@@ -270,7 +270,7 @@
 "eaZ-uU-2Tt.title" = "Picker Attributes\nGUI界面设置属性";
 
 /* Class = "NSTextFieldCell"; title = "Vault"; ObjectID = "fN9-q5-dg3"; */
-"fN9-q5-dg3.title" = "Vault";
+"fN9-q5-dg3.title" = "Vault\n保险箱";
 
 /* Class = "NSTextFieldCell"; title = "DmgLoading"; ObjectID = "fVY-aJ-OPc"; */
 "fVY-aJ-OPc.title" = "DmgLoading";
@@ -327,7 +327,7 @@
 "oL1-jF-NNm.title" = "取消全选";
 
 /* Class = "NSTextFieldCell"; title = "SecureBootModel"; ObjectID = "oef-cz-Kqc"; */
-"oef-cz-Kqc.title" = "SecureBootModel";
+"oef-cz-Kqc.title" = "SecureBootModel\n安全启动型号";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 64 bit\nDefault value: 0\nDescription: EDK II debug level bitmask (sum) showed onscreen. Unless Target enables console (onscreen) printing, onscreen debug output will not be visible. The following levels are supported (discover more in DebugLib.h):\n• 0x00000002 — DEBUG_WARN in DEBUG, NOOPT, RELEASE. \n• 0x00000040 — DEBUG_INFO in DEBUG, NOOPT.\n• 0x00400000 — DEBUG_VERBOSE in custom builds.\n• 0x80000000 — DEBUG_ERROR in DEBUG, NOOPT, RELEASE."; ObjectID = "omf-bH-d4v"; */
 "omf-bH-d4v.ibShadowedToolTip" = "2147483714 在屏幕上显示所有 Debug 信息\n0 隐藏所有 Debug 信息!";
