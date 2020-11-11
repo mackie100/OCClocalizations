@@ -9,7 +9,7 @@
 "0Sc-nS-2YL.ibShadowedToolTip" = "如果你没有在bios中解锁CFG，一定要选YES。";
 
 /* Class = "NSTextFieldCell"; title = "AudioDevice"; ObjectID = "0gM-HU-fz5"; */
-"0gM-HU-fz5.title" = "AudioDevice";
+"0gM-HU-fz5.title" = "音频设备";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Attempts to perform TSC synchronisation with a specified timeout.\n\nThe primary purpose of this quirk is to enable early bootstrap TSC synchronisation on some server and laptop models when running a debug XNU kernel. For the debug kernel the TSC needs to be kept in sync across the cores before any kext could kick in rendering all other solutions problematic. The timeout is specified in microseconds and depends on the amount of cores present on the platform, the recommended starting value is 500000.\n\nThis is an experimental quirk, which should only be used for the aforementioned problem. In all other cases the quirk may render the operating system unstable and is not recommended. The recommended solution in the other cases is to install a kernel driver such as VoodooTSCSync, TSCAdjustReset, or CpuTscSync (a more specialised variant of VoodooTSCSync for newer laptops).\n\nNote: The reason this quirk cannot replace the kernel driver is because it cannot operate in ACPI S3 mode (sleep wake) and because the UEFI firmware provides very limited multicore support preventing the precise update of the MSR registers."; ObjectID = "0un-PF-SFE"; */
 "0un-PF-SFE.ibShadowedToolTip" = "尝试执行具有指定超时的TSC同步。\n该怪癖的主要目的是在运行调试XNU内核时在某些服务器和便携式计算机模型上启用早期引导TSC同步。 对于调试内核，在任何kext可能导致所有其他解决方案出现问题之前，TSC必须在内核之间保持同步。超时以微秒为单位指定，并取决于平台上存在的内核数量，建议的起始值为500000。\n这是一个实验性的功能，只能用于上述问题。 在所有其他情况下，可能会使操作系统不稳定，因此不建议这样做。在其他情况下，推荐的解决方案是安装内核驱动程序，如VoodooTSCSync，TSAdjustReset或CpuTscSync。\n\n注意：该问题无法替换内核驱动程序的原因是，它无法在ACPI S3模式（睡眠唤醒）下运行，并且因为UEFI固件提供了非常有限的多核支持，从而阻止了MSR寄存器的精确更新。";
@@ -66,7 +66,7 @@
 "6zo-Jl-Ryl.ibShadowedToolTip" = "从OC/Drivers目录加载选定的驱动程序。\n注意一下填入的顺序\n根据硬件不同，可能需要不同的驱动程序。加载不兼容的驱动程序可能导致系统进入无法启动状态，甚至导致永久性固件损坏。一些已知的驱动程序包括:\n•ApfsDriverLoader-APFS文件系统引导驱动程序，在UEFI固件的可启动APFS容器中添加了对嵌入式APFS驱动程序的支持(OC现在已经内置)。\n•FwRuntimeServices-可提高OpenCore和Lilu的安全性通过支持只读和只读NVRAM变量(现已改名Openruntime)。有些怪癖（例如RequestBootVarRouting）需要此驱动程序才能正常运行。由于是runtime实时驱动程序的性质，即与目标操作系统并行运行，因此无法在OpenCore本身中实现，而是与OpenCore发行版捆绑在一起。\n•EnhancedFatDxe-FatPkg中的FAT文件系统驱动程序。此驱动程序已嵌入所有UEFI固件中，并且无法从OpenCore使用。众所周知，多种固件的FAT支持实现中都有错误，这会导致在尝试写操作时损坏文件系统。如果在引导过程中需要写入EFI分区，则可能需要将此驱动程序嵌入固件中。\n•NvmExpressDxe-来自MdeModulePkg的NVMe支持驱动程序。从Broadwell一代开始的大多数固件中都包含此驱动程序。对于Haswell及更早版本，如果安装了NVMe SSD驱动器，则将其更好地嵌入到固件中。\n•UsbKbDxe-USB键盘驱动程序在自定义USB键盘驱动程序实现的基础上增加了对AppleKeyMapAggregator协议的支持。这是内置KeySupport的替代方法。\n•VBoxHfs-具有支持HFS文件系统的驱动程序。此驱动程序可以替代Apple固件中常见的封闭源HFSPlus驱动程序。虽然功能齐全，但是大约速度慢3倍，并且尚未接受安全审核。\n•XhciDxe-MdeModulePkg中的XHCI USB控制器支持驱动程序。从Sandy Bridge代开始的大多数固件中都包含此驱动程序。对于较早的固件或旧系统，它可以用于支持外部USB 3.0 PCI卡\n•NdkBootPicker-标准OC第三方图形界面模块 ";
 
 /* Class = "NSTextFieldCell"; title = "MinVersion"; ObjectID = "7Ns-yB-e5j"; */
-"7Ns-yB-e5j.title" = "MinVersion";
+"7Ns-yB-e5j.title" = "最小版本";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Load embedded APFS drivers from APFS containers.\nAPFS EFI driver is bundled in all bootable APFS containers. This option performs loading of signed APFS drivers with respect to ScanPolicy. See more details in “EFI Jumpstart” section of Apple File System Reference."; ObjectID = "8Sc-F2-ONI"; */
 "8Sc-F2-ONI.ibShadowedToolTip" = "加载嵌入式APFS驱动程序.\n此选项替代之前使用的ApfsDriverLoader.efi驱动文件，变为OC嵌入式驱动！";
@@ -108,10 +108,10 @@
 "EeU-wj-caf.title" = "KeySupportMode";
 
 /* Class = "NSButtonCell"; title = "PointerSupport"; ObjectID = "Elq-pL-QTD"; */
-"Elq-pL-QTD.title" = "PointerSupport";
+"Elq-pL-QTD.title" = "指针支持";
 
 /* Class = "NSTextFieldCell"; title = "VolumeAmplifier"; ObjectID = "En7-ww-Uj5"; */
-"En7-ww-Uj5.title" = "VolumeAmplifier";
+"En7-ww-Uj5.title" = "音量放大器";
 
 /* Class = "NSTextFieldCell"; title = "KeyForgetThreshold"; ObjectID = "ErN-ks-EzO"; */
 "ErN-ks-EzO.title" = "KeyForgetThreshold";
@@ -126,7 +126,7 @@
 "H5Y-DY-WOe.ibShadowedToolTip" = "在APFS加载期间执行完整的设备连接。\n代替通常用于APFS驱动程序加载的分区句柄连接，每个句柄都是递归连接的。\n这可能比平时花费更多的时间，但可能是访问某些固件（如旧版HP笔记本电脑上的固件）上的APFS分区的唯一方法。";
 
 /* Class = "NSButtonCell"; title = "ReplaceTabWithSpace"; ObjectID = "HIh-Oc-UT7"; */
-"HIh-Oc-UT7.title" = "ReplaceTabWithSpace";
+"HIh-Oc-UT7.title" = "用空格代替Tab";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Hide verbose output from APFS driver.\nAPFS verbose output can be useful for debugging."; ObjectID = "HdB-KO-x50"; */
 "HdB-KO-x50.ibShadowedToolTip" = "隐藏APFS驱动程序加载时的详细输出.\nAPFS详细输出可用于调试.";
@@ -150,7 +150,7 @@
 "KsW-za-ip4.title" = "ACPIReclaimMemory — EfiACPIReclaimMemory";
 
 /* Class = "NSTextFieldCell"; title = "AudioCodec"; ObjectID = "L2f-gE-rBP"; */
-"L2f-gE-rBP.title" = "AudioCodec";
+"L2f-gE-rBP.title" = "音频解码";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Minimal allowed APFS driver date.\nAPFS driver date connects APFS driver with the calendar release date. Older versions of APFS drivers may contain unpatched vulnerabilities, which can be used to inflict harm to the computer. This option permits restricting APFS drivers to only recent releases.\n• 0 — require the default supported release date of APFS in OpenCore. The default release date will increase with time and thus this setting is recommended. Currently set to 2020/01/01.\n• -1 — permit any release date to load (strongly discouraged).\n• Other — use custom minimal APFS release date, e.g. 20200401 for 2020/04/01. APFS release dates can be found in OpenCore boot log and OcApfsLib."; ObjectID = "L9i-6i-Mis"; */
 "L9i-6i-Mis.ibShadowedToolTip" = "允许的最小APFS驱动程序日期.\n较早版本的APFS驱动程序可能包含未修补的漏洞，可用来对您的计算机造成伤害. 此选项允许将APFS驱动程序限制为仅最新版本.\n• 0 — 需要OpenCore中APFS的默认受支持发布日期. 默认发布日期会随着时间增加，因此建议使用此设置. 当前设置为2020/01/01.\n• -1 — 允许加载任何发布日期（强烈建议）.\n• Other — 使用自定义的最低APFS发布日期，例如2020/04/01写成20200401. APFS发行日期可以在OpenCore引导日志和OcApfsLib中找到.";
@@ -285,10 +285,10 @@
 "eQX-uX-ZBd.title" = "MemoryMappedIOPortSpace — EfiMemoryMappedIOPortSpace";
 
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
-"egr-8J-RIS.title" = "HideVerbose";
+"egr-8J-RIS.title" = "隐藏啰嗦模式";
 
 /* Class = "NSTextFieldCell"; title = "MinimumVolume"; ObjectID = "ehu-K3-gbY"; */
-"ehu-K3-gbY.title" = "MinimumVolume";
+"ehu-K3-gbY.title" = "最小音量";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Provide UGA protocol instances on top of GOP protocol.\n\nSome types of firmware do not implement the legacy UGA protocol but this may be required for screen output by older EFI applications such as EfiBoot from 10.4."; ObjectID = "ejz-UL-xuF"; */
 "ejz-UL-xuF.ibShadowedToolTip" = "在GOP协议的基础上提供UGA协议实例。\n\n某些固件未实现旧版UGA协议，但较早的EFI应用程序（如10.4版以上的EfiBoot）可能需要屏幕输出。";
@@ -333,7 +333,7 @@
 "k4I-Ol-kq5.title" = "AppleEvent";
 
 /* Class = "NSTextFieldCell"; title = "Console Mode"; ObjectID = "k5b-42-EPT"; */
-"k5b-42-EPT.title" = "Console Mode";
+"k5b-42-EPT.title" = "终端模式";
 
 /* Class = "NSButtonCell"; title = "Connect Drivers"; ObjectID = "kBk-75-acl"; */
 "kBk-75-acl.title" = "连接驱动程序";
@@ -342,7 +342,7 @@
 "kKb-0m-i9e.ibShadowedToolTip" = "按住按键被重置的时间间隔 (单位: 毫秒)\n与KeyForgetThreshold类似，此选项适用于密钥提交的顺序性质。 为了能够在所有按键顺序到达的情况下识别同时按下的按键，我们需要设置一个超时时间，在该超时时间内我们假定按键被同时按下。\n按住多个键将分别每2毫秒和1毫秒报告一次VMware和APTIOV。 对于同一平台，一个接一个地按下键会导致至少6到10毫秒的延迟。 此选项的建议值为2毫秒，但对于较快的平台，可能会减小，而对于较慢的平台，可能会增加。";
 
 /* Class = "NSTextFieldCell"; title = "AudioOut"; ObjectID = "kM6-tO-pns"; */
-"kM6-tO-pns.title" = "AudioOut";
+"kM6-tO-pns.title" = "音频输出";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Load APFS drivers for newly connected devices.\nPerforms APFS driver loading not only at OpenCore startup but also during boot picker. This permits APFS USB hot plug. Disable if not required."; ObjectID = "kSG-eA-B2o"; */
 "kSG-eA-B2o.ibShadowedToolTip" = "为新连接的设备加载APFS驱动程序.\n不仅在OpenCore启动时而且在启动选择器(启动菜单)期间加载APFS驱动程序. 这允许APFS文件系统的USB磁盘热插拔。如果不需要则禁用.";
