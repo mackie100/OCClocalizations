@@ -156,7 +156,7 @@
 "PIX-Ia-ajs.title" = "ConsoleAttributes\n文本启动菜单颜色";
 
 /* Class = "NSButtonCell"; title = "BlacklistAppleUpdate"; ObjectID = "PPp-Ea-yQN"; */
-"PPp-Ea-yQN.title" = "BlacklistAppleUpdate";
+"PPp-Ea-yQN.title" = "BlacklistAppleUpdate\n禁用Apple固件更新";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable password protection to allow sensitive operations.\n\nPassword protection ensures that sensitive operations such as booting a non-default operating system (e.g. macOS recovery or a tool), resetting NVRAM storage, trying to boot into a non-default mode (e.g. verbose mode or safe mode) are not allowed without explicit user authentication by a custom password. Currently password and salt are hashed with 5000000 iterations of SHA-512.\n\nNote: This functionality is currently in development and is not ready for daily usage."; ObjectID = "PbU-if-N7O"; */
 "PbU-if-N7O.ibShadowedToolTip" = "启用密码保护以允许敏感操作.\n\n密码保护可确保敏感操作，例如引导非默认操作系统 (例如: macOS recovery或工具), 重置NVRAM存储，尝试引导到非默认模式 (例如: verbose(啰嗦)模式或safe(安全)模式) 如果没有通过自定义密码进行明确的用户身份验证，则不允许. 当前，密码和密码加盐值(一种对密码加密的算法)已通过SHA-512的5000000次迭代进行哈希处理.\n\n注意: 此功能当前正在开发中，尚不能用于日常使用.";
