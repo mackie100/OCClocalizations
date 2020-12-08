@@ -2,6 +2,9 @@
 /* Class = "NSButtonCell"; title = "DiscardHibernateMap"; ObjectID = "2QZ-Md-QHk"; */
 "2QZ-Md-QHk.title" = "DiscardHibernateMap";
 
+/* Class = "NSTableColumn"; headerCell.title = "Mask"; ObjectID = "3Ee-Qq-8wZ"; */
+"3Ee-Qq-8wZ.headerCell.title" = "Mask";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI services from being overridden by the firmware.\n\nSome modernfirmware, including on virtual machines such as VMware, may update pointers to UEFI services during driver loading and related actions. Consequentially this directly breaks other quirks that affect memory management, such as DevirtualiseMmio, ProtectMemoryRegions, or RebuildAppleMemoryMap, and may also break other quirks depending on the effects of these.\n\nNote: On VMware the need for this quirk may be diagnosed by “Your Mac OS guest might run unreliably with more than one virtual core.” message."; ObjectID = "3fG-t6-MF7"; */
 "3fG-t6-MF7.ibShadowedToolTip" = "Protégez les services UEFI contre l'écrasement par le micrologiciel. \nCertains micrologiciels modernes, y compris le matériel et les machines virtuelles (comme VMware), peuvent mettre à jour les pointeurs vers les services UEFI pendant le chargement du pilote et les opérations associées. Ainsi, cela détruit directement d'autres bizarreries qui affectent la gestion de la mémoire, telles que VirtualiseMmio, ProtectCsmRegion ou ShrinkMemoryMap, et peut également casser d'autres bizarreries, selon l'impact de ces bizarreries. \n \nRemarque: Sur VMware, vous pouvez diagnostiquer avec le message \"Votre invité Mac OS peut s'exécuter de manière non fiable avec plusieurs cœurs virtuels.\" Ce problème. \n \nZ390 est recommandé!";
 
@@ -11,6 +14,15 @@
 /* Class = "NSButtonCell"; title = "ForceExitBootServices"; ObjectID = "5sK-91-1dQ"; */
 "5sK-91-1dQ.title" = "ForceExitBootServices";
 
+/* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "6o1-1f-ghJ"; */
+"6o1-1f-ghJ.headerCell.title" = "Enabled";
+
+/* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "7mi-i8-NsB"; */
+"7mi-i8-NsB.headerCell.title" = "Find";
+
+/* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "82c-6J-7Bc"; */
+"82c-6J-7Bc.headerCell.title" = "Arch";
+
 /* Class = "NSButtonCell"; title = "SignalAppleOS"; ObjectID = "9fL-0g-rLi"; */
 "9fL-0g-rLi.title" = "SignalAppleOS";
 
@@ -19,6 +31,9 @@
 
 /* Class = "NSButtonCell"; title = "ProtectUefiServices"; ObjectID = "9qv-tK-N7C"; */
 "9qv-tK-N7C.title" = "ProtectUefiServices";
+
+/* Class = "NSTableColumn"; headerCell.title = "Identifier"; ObjectID = "BvG-CB-C9w"; */
+"BvG-CB-C9w.headerCell.title" = "Identifier";
 
 /* Class = "NSTextFieldCell"; title = "ProvideMaxSlide"; ObjectID = "Dis-CN-0f1"; */
 "Dis-CN-0f1.title" = "ProvideMaxSlide";
@@ -34,6 +49,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Protect from macOS NVRAM write access.\nThis is a security option allowing one to restrict NVRAM access in macOS. This quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi.\nNote: This quirk can also be used as an ugly workaround to buggy UEFI runtime services implementations that fail to write variables to NVRAM and break the rest of the operating system."; ObjectID = "KE8-rd-Ty5"; */
 "KE8-rd-Ty5.ibShadowedToolTip" = "Les cartes mères NVRAM non natives doivent simuler nvram.plist et écrire des valeurs de variable, nous devons donc désactiver cette option pour empêcher d'autres programmes d'écrire dans nvram. Nous choisissons YES ici. Veuillez noter que si votre carte mère prend en charge le nvram natif (z370 / x299 / c422), veuillez sélectionner NON! \nLes cartes mères telles que Z390 / HM370 qui ne prennent pas en charge nativement macOS pour NVRAM doivent être activées.";
+
+/* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "N9f-29-rB5"; */
+"N9f-29-rB5.label" = "Patch";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Remove runtime attribute from select MMIO regions.\nThis option reduces stolen memory footprint from the memory map by removing runtime bit for known memory regions. This quirk may result in the increase of KASLR slides available, but is not necessarily compatible with the target board without additional measures. In general this frees from 64 to 256 megabytes of memory (present in the debug log), and on some platforms it is the only way to boot macOS, which otherwise fails with allocation error at bootloader stage.\nThis option is generally useful on all  types of firmware except some very old ones such as Sandy Bridge. On some types of firmware, a list of addresses that need virtual addresses for proper NVRAM and hibernation\nfunctionality may be required. Use the MmioWhitelist section for this."; ObjectID = "NUB-EN-5ql"; */
 "NUB-EN-5ql.ibShadowedToolTip" = "Les méthodes d'injection de mémoire incluent KASLR (injection distribuée dans chaque adresse mémoire) et la continuité. Lors de l'utilisation de KASLR, PCIE est chargé en mémoire, ce qui peut occuper toutes les valeurs disponibles et entraîner l'échec de l'injection du noyau OC et du cache du noyau, entraînant l'échec du démarrage. L'utilisation de la méthode KASLR est facile à commettre des erreurs. Nous sommes plus appropriés pour utiliser l'injection de mémoire continue et ajouter slide = 1 aux arguments de démarrage. Puisque nous ajouterons slide = 1 pour utiliser l'injection de mémoire continue, cette option est généralement sélectionnée NON.";
@@ -80,8 +98,17 @@
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "c3O-jR-hal"; */
 "c3O-jR-hal.headerCell.title" = "Activer";
 
+/* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "cCx-7g-cuM"; */
+"cCx-7g-cuM.headerCell.title" = "Count";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this without a full understanding of the consequences."; ObjectID = "cTN-CD-c3M"; */
 "cTN-CD-c3M.ibShadowedToolTip" = "Cette option permet à ces très anciennes cartes mères d'utiliser également l'adressage mémoire. Normalement, sélectionnez NON.";
+
+/* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "dwb-DP-v4I"; */
+"dwb-DP-v4I.headerCell.title" = "Skip";
+
+/* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "f4e-pW-Orc"; */
+"f4e-pW-Orc.headerCell.title" = "Comment";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Provide maximum KASLR slide when higher ones are unavailable.\n\nThis option overrides the maximum slide instead of TOTAL_SLIDE_NUM (256) when ProvideCustomSlide is enabled. It is believed that modern firmware allocates pool memory from top to bottom, effectively resulting in free memory when slide scanning is used later as temporary memory during kernel loading. When such memory is not available, this option can stop the evaluation of higher slides.\n\nNote: The necessity of this quirk is determined by random boot failure when ProvideCustomSlide is enabled  and the randomized slide fall into the unavailable range. When AppleDebug is enabled, usually the debug log may contain messages such as AAPL: [EB|‘LD:LKC] } Err(0x9). To find the optimal value, manually append slide=X to boot-args and log the largest one that will not result in boot failures."; ObjectID = "gi2-WY-dKJ"; */
 "gi2-WY-dKJ.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Provide maximum KASLR slide when higher ones are unavailable.\nThis option overrides the maximum slide instead of TOTAL_SLIDE_NUM (256) when ProvideCustomSlide is enabled. It is believed that modern firmwares allocate pool memory from top to bottom, effectively resulting in free memory at the time of slide scanning being later used as temporary memory during kernel loading. In case those memory are unavailable, this option can stop evaluating higher slides.\n\nNote: The necessity of this quirk is determined by random boot failure when ProvideCustomSlide is enabled  and the randomized slide fall into the unavailable range. When AppleDebug is enabled, usually the debug log may contain messages like AAPL: [EB|‘LD:LKC] } Err(0x9). To find the optimal value, manually append slide=X to boot-args and log the largest one that won’t cause boot failure.";
@@ -89,17 +116,26 @@
 /* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "hF2-W3-w6Y"; */
 "hF2-W3-w6Y.title" = "Activer pour tous";
 
+/* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "jK8-UP-6rI"; */
+"jK8-UP-6rI.headerCell.title" = "ReplaceMask";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\n\nSome types of firmware access memory by virtual addresses after a SetVirtualAddresses call, resulting in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\n\nNote: The necessity of this quirk is determined by early boot failures. Currently, new firmware with memory protection support (such as OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "Indique s'il faut établir une mémoire virtuelle et mapper la mémoire physique. Lorsque nous démarrons, le programme OC a besoin d'une mémoire continue pour stocker le noyau et d'autres choses, et la mémoire physique réelle est généralement dispersée. Par conséquent, nous utilisons la mémoire virtuelle pour créer une mémoire contiguë pour une utilisation OC et la mapper dans la mémoire physique décentralisée. Généralement, nous choisissons OUI.";
 
 /* Class = "NSTabViewItem"; label = "MmioWhitelist"; ObjectID = "mrQ-IT-UQ3"; */
 "mrQ-IT-UQ3.label" = "MmioWhitelist mémoire mappée liste blanche IO";
 
+/* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "mtD-yq-Tub"; */
+"mtD-yq-Tub.headerCell.title" = "Replace";
+
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "ndf-NP-2rM"; */
 "ndf-NP-2rM.headerCell.title" = "Commentaire";
 
 /* Class = "NSButtonCell"; title = "AllowRelocationBlock"; ObjectID = "oFh-ac-Blm"; */
 "oFh-ac-Blm.title" = "AllowRelocationBlock";
+
+/* Class = "NSTableView"; ibShadowedToolTip = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Booter patch architecture (Any, i386, x86_64).\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Count\nType: plist integer\nFailsafe: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This booter patch will not be used unless set to true.\n5. Find\nType: plist data\nFailsafe: Empty data\nDescription: Data to find. This must equal to Replace in size.\n6. Identifier\nType: plist string\nFailsafe: Empty string\nDescription: Apple for macOS booter (generally boot.efi); or a name with suffix (e.g. bootmgfw.efi) for a specific booter; or Any / empty string (failsafe) to match any booter.\n7. Limit\nType: plist integer\nFailsafe: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole booter.\n8. Mask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Find in size otherwise.\n9. Replace\nType: plist data\nFailsafe: Empty data\nDescription: Replacement data of one or more bytes.\n10. ReplaceMask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n11. Skip\nType: plist integer\nFailsafe: 0\nDescription: Number of found occurrences to be skipped before replacement is done."; ObjectID = "oWj-qp-bH5"; */
+"oWj-qp-bH5.ibShadowedToolTip" = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Booter patch architecture (Any, i386, x86_64).\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Count\nType: plist integer\nFailsafe: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This booter patch will not be used unless set to true.\n5. Find\nType: plist data\nFailsafe: Empty data\nDescription: Data to find. This must equal to Replace in size.\n6. Identifier\nType: plist string\nFailsafe: Empty string\nDescription: Apple for macOS booter (generally boot.efi); or a name with suffix (e.g. bootmgfw.efi) for a specific booter; or Any / empty string (failsafe) to match any booter.\n7. Limit\nType: plist integer\nFailsafe: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole booter.\n8. Mask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Find in size otherwise.\n9. Replace\nType: plist data\nFailsafe: Empty data\nDescription: Replacement data of one or more bytes.\n10. ReplaceMask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n11. Skip\nType: plist integer\nFailsafe: 0\nDescription: Number of found occurrences to be skipped before replacement is done.";
 
 /* Class = "NSButtonCell"; title = "DevirtualiseMmio"; ObjectID = "pkh-Nr-Lgr"; */
 "pkh-Nr-Lgr.title" = "DevirtualiseMmio";
@@ -121,6 +157,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Provide custom KASLR slide on low memory.\nThis option performs memory map analysis of the firmware and checks whether all slides (from 1 to 255) can be used. As boot.efi generates this value randomly with rdrand or pseudo randomly rdtsc, there is a chance of boot failure when it chooses a conflicting slide. In case potential conflicts exist, this option forces macOS to use a pseudo random value among the available ones. This also ensures that slide= argument is never passed to the operating system for security reasons.\nNote: The necessity of this quirk is determined by OCABC: Only N/256 slide values are usable! message in the debug log. If the message is present, this option is to be enabled."; ObjectID = "wGH-hP-xhD"; */
 "wGH-hP-xhD.ibShadowedToolTip" = "Indique s'il faut utiliser les valeurs des diapositives. Choisissez généralement une injection continue dans la mémoire et coopérez avec la diapositive, choisissez donc OUI. \nBat.bat a expliqué: \nS'il y a un conflit dans les valeurs Slide, cette option force macOS à effectuer les opérations suivantes: \nUtilisez une valeur pseudo-aléatoire. Requis uniquement si vous rencontrez Seules les valeurs de diapositives N / 256 sont utilisables!";
+
+/* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "xEr-hF-nBr"; */
+"xEr-hF-nBr.headerCell.title" = "Limit";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Permit write access to UEFI runtime services code.\nThis option bypasses RˆX permissions in code pages of UEFI runtime services by removing write protection (WP) bit from CR0 register during their execution. This quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi.\nNote: This quirk may potentially weaken firmware security, please use RebuildAppleMemoryMap if the firmware supports memory attributes table (MAT). Refer to OCABC: MAT support is 1/0 log entry to determine whether\nMAT is supported."; ObjectID = "xH6-La-kRg"; */
 "xH6-La-kRg.ibShadowedToolTip" = "Pour vous assurer que nvram peut écrire normalement sans être affecté par certains services dans UEFI, sélectionnez OUI, quelle que soit la carte mère.";
