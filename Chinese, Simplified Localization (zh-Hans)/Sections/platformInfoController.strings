@@ -89,9 +89,6 @@
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "CtR-KN-0F7"; */
 "CtR-KN-0F7.title" = "取消全选";
 
-/* Class = "NSTextFieldCell"; title = "MemoryFormFactor"; ObjectID = "CxA-si-OgU"; */
-"CxA-si-OgU.title" = "MemoryFormFactor";
-
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Asset Tag Number Description: Chassis type name. Varies, could be empty or MacBook-Aluminum."; ObjectID = "D26-kV-2wQ"; */
 "D26-kV-2wQ.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 资产标签号说明:机箱类型名称。各种各样，可能是空的或MacBook-Aluminium。";
 
@@ -187,6 +184,12 @@
 
 /* Class = "NSTextFieldCell"; title = "Location In Chassis"; ObjectID = "NKp-1W-cwW"; */
 "NKp-1W-cwW.title" = "Location In Chassis";
+
+/* Class = "NSTextFieldCell"; title = "System UUID"; ObjectID = "Nh2-fC-Gmv"; */
+"Nh2-fC-Gmv.title" = "System UUID";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id for boot services only. Value found on Macs is equal to SMBIOS SystemUUID."; ObjectID = "Nq6-s5-69T"; */
+"Nq6-s5-69T.ibShadowedToolTip" = "Type: plist string\nFailsafe: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id for boot services only. Value found on Macs is equal to SMBIOS SystemUUID.";
 
 /* Class = "NSTextFieldCell"; title = "Features"; ObjectID = "Ntb-g0-8oU"; */
 "Ntb-g0-8oU.title" = "Features";
@@ -448,9 +451,6 @@
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "lvE-6L-IGl"; */
 "lvE-6L-IGl.title" = "在config.plist里添加此部分内容";
-
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 8-bit\nDefault value: OEM specified\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Memory form factor. On Macs it should be DIMM or SODIMM."; ObjectID = "m9k-yK-AdV"; */
-"m9k-yK-AdV.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:内存设备（类型17） - 外形尺寸\n说明:内存形状因子。在Mac上它应该是DIMM或SODIMM。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) - Manufacturer Description: Board manufacturer. All rules of SystemManufacturer do apply."; ObjectID = "mON-cg-FYL"; */
 "mON-cg-FYL.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 制造商描述:电路板制造商。 SystemManufacturer的所有规则都适用。";

@@ -89,9 +89,6 @@
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "CtR-KN-0F7"; */
 "CtR-KN-0F7.title" = "Unselect All";
 
-/* Class = "NSTextFieldCell"; title = "MemoryFormFactor"; ObjectID = "CxA-si-OgU"; */
-"CxA-si-OgU.title" = "MemoryFormFactor";
-
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Asset Tag Number Description: Chassis type name. Varies, could be empty or MacBook-Aluminum."; ObjectID = "D26-kV-2wQ"; */
 "D26-kV-2wQ.ibShadowedToolTip" = "Type: plist string\nDefault value: OEM specified\nSMBIOS: System Enclosure or Chassis (Type 3) — Asset Tag Number Description: Chassis type name. Varies, could be empty or MacBook-Aluminum.";
 
@@ -187,6 +184,12 @@
 
 /* Class = "NSTextFieldCell"; title = "Location In Chassis"; ObjectID = "NKp-1W-cwW"; */
 "NKp-1W-cwW.title" = "Location In Chassis";
+
+/* Class = "NSTextFieldCell"; title = "System UUID"; ObjectID = "Nh2-fC-Gmv"; */
+"Nh2-fC-Gmv.title" = "System UUID";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id for boot services only. Value found on Macs is equal to SMBIOS SystemUUID."; ObjectID = "Nq6-s5-69T"; */
+"Nq6-s5-69T.ibShadowedToolTip" = "Type: plist string\nFailsafe: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id for boot services only. Value found on Macs is equal to SMBIOS SystemUUID.";
 
 /* Class = "NSTextFieldCell"; title = "Features"; ObjectID = "Ntb-g0-8oU"; */
 "Ntb-g0-8oU.title" = "Features";
@@ -448,9 +451,6 @@
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "lvE-6L-IGl"; */
 "lvE-6L-IGl.title" = "Add this section in config.plist";
-
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 8-bit\nDefault value: OEM specified\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Memory form factor. On Macs it should be DIMM or SODIMM."; ObjectID = "m9k-yK-AdV"; */
-"m9k-yK-AdV.ibShadowedToolTip" = "Type: plist integer, 8-bit\nDefault value: OEM specified\nSMBIOS: Memory Device (Type 17) — Form Factor\nDescription: Memory form factor. On Macs it should be DIMM or SODIMM.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) - Manufacturer Description: Board manufacturer. All rules of SystemManufacturer do apply."; ObjectID = "mON-cg-FYL"; */
 "mON-cg-FYL.ibShadowedToolTip" = "Type: plist string\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) - Manufacturer Description: Board manufacturer. All rules of SystemManufacturer do apply.";
