@@ -15,13 +15,13 @@
 "5sK-91-1dQ.title" = "ForceExitBootServices";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "6o1-1f-ghJ"; */
-"6o1-1f-ghJ.headerCell.title" = "Enabled";
+"6o1-1f-ghJ.headerCell.title" = "启用";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "7mi-i8-NsB"; */
-"7mi-i8-NsB.headerCell.title" = "Find";
+"7mi-i8-NsB.headerCell.title" = "查找";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "82c-6J-7Bc"; */
-"82c-6J-7Bc.headerCell.title" = "Arch";
+"82c-6J-7Bc.headerCell.title" = "架构";
 
 /* Class = "NSButtonCell"; title = "SignalAppleOS"; ObjectID = "9fL-0g-rLi"; */
 "9fL-0g-rLi.title" = "SignalAppleOS";
@@ -33,7 +33,7 @@
 "9qv-tK-N7C.title" = "ProtectUefiServices";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier"; ObjectID = "BvG-CB-C9w"; */
-"BvG-CB-C9w.headerCell.title" = "Identifier";
+"BvG-CB-C9w.headerCell.title" = "识别码";
 
 /* Class = "NSTextFieldCell"; title = "ProvideMaxSlide"; ObjectID = "Dis-CN-0f1"; */
 "Dis-CN-0f1.title" = "ProvideMaxSlide";
@@ -51,7 +51,7 @@
 "KE8-rd-Ty5.ibShadowedToolTip" = "非原生NVRAM主板需要模拟nvram.plist进而写入variable值，因此我们要禁止此项来防止其他程序对nvram进行写入，我们这里选YES。需要注意一点，如果你的主板支持原生nvram(z370/x299/c422)，请选择NO！\n在 Z390/HM370 等没有原生 macOS 支持 NVRAM 的主板上需要开启。";
 
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "N9f-29-rB5"; */
-"N9f-29-rB5.label" = "Patch";
+"N9f-29-rB5.label" = "补丁";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Remove runtime attribute from select MMIO regions.\nThis option reduces stolen memory footprint from the memory map by removing runtime bit for known memory regions. This quirk may result in the increase of KASLR slides available, but is not necessarily compatible with the target board without additional measures. In general this frees from 64 to 256 megabytes of memory (present in the debug log), and on some platforms it is the only way to boot macOS, which otherwise fails with allocation error at bootloader stage.\nThis option is generally useful on all  types of firmware except some very old ones such as Sandy Bridge. On some types of firmware, a list of addresses that need virtual addresses for proper NVRAM and hibernation\nfunctionality may be required. Use the MmioWhitelist section for this."; ObjectID = "NUB-EN-5ql"; */
 "NUB-EN-5ql.ibShadowedToolTip" = "内存注入方式包括KASLR方式(分布式注射到各个内存地址中）以及连续性方式。在使用KASLR时，PCIE加载到内存，可能会占据所有所有avaliable值而导致OC的内核以及内核缓存无法注入，导致启动失败。使用KASLR方式很容易出错，我们更适合使用连续性的内存注入方式，并在boot args中添加slide=1。因为我们之后会添加这个slide=1去使用连续性的内存注入方式，所以这个选项一般选择NO。";
@@ -99,16 +99,16 @@
 "c3O-jR-hal.headerCell.title" = "启用";
 
 /* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "cCx-7g-cuM"; */
-"cCx-7g-cuM.headerCell.title" = "Count";
+"cCx-7g-cuM.headerCell.title" = "计数";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Retry ExitBootServices with new memory map on failure.\nTry to ensure that ExitBootServices call succeeds even with outdated MemoryMap key argument by obtaining current memory map and retrying ExitBootServices call.\nNote: The necessity of this quirk is determined by early boot crashes of the firmware. Do not use this without a full understanding of the consequences."; ObjectID = "cTN-CD-c3M"; */
 "cTN-CD-c3M.ibShadowedToolTip" = "这个选项是让那些非常老旧的主板也能使用内存寻址，正常情况下选NO。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "dwb-DP-v4I"; */
-"dwb-DP-v4I.headerCell.title" = "Skip";
+"dwb-DP-v4I.headerCell.title" = "跳过";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "f4e-pW-Orc"; */
-"f4e-pW-Orc.headerCell.title" = "Comment";
+"f4e-pW-Orc.headerCell.title" = "注释";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Provide maximum KASLR slide when higher ones are unavailable.\n\nThis option overrides the maximum slide instead of TOTAL_SLIDE_NUM (256) when ProvideCustomSlide is enabled. It is believed that modern firmware allocates pool memory from top to bottom, effectively resulting in free memory when slide scanning is used later as temporary memory during kernel loading. When such memory is not available, this option can stop the evaluation of higher slides.\n\nNote: The necessity of this quirk is determined by random boot failure when ProvideCustomSlide is enabled  and the randomized slide fall into the unavailable range. When AppleDebug is enabled, usually the debug log may contain messages such as AAPL: [EB|‘LD:LKC] } Err(0x9). To find the optimal value, manually append slide=X to boot-args and log the largest one that will not result in boot failures."; ObjectID = "gi2-WY-dKJ"; */
 "gi2-WY-dKJ.ibShadowedToolTip" = "当没有更高KASLR slide时，提供最大的KASLR slide。\n启用ProvideCustomSlide时，此选项会覆盖最大slide，而不是TOTAL_SLIDE_NUM（256）。可以相信，现代固件从上到下分配池内存，有效地导致了slide扫描时的空闲内存，后来被用作内核加载期间的临时内存。如果这些内存不可用，此选项可以停止评估更高的幻灯片。\n\n注意：此问题的必要性由启用ProvideCustomSlide且随机slide落入不可用范围时的随机引导失败确定. 启用AppleDebug时，通常调试日志中可能包含诸如AAPL之类的消息: [EB|‘LD:LKC] } Err(0x9). 要找到最佳值，请手动将slide = X附加到boot-args并记录不会导致启动失败的最大参数.";
@@ -117,7 +117,7 @@
 "hF2-W3-w6Y.title" = "EnableForAll";
 
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "jK8-UP-6rI"; */
-"jK8-UP-6rI.headerCell.title" = "ReplaceMask";
+"jK8-UP-6rI.headerCell.title" = "替换Mask";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Setup virtual memory at SetVirtualAddresses.\n\nSome types of firmware access memory by virtual addresses after a SetVirtualAddresses call, resulting in early boot crashes. This quirk workarounds the problem by performing early boot identity mapping of assigned virtual addresses to physical memory.\n\nNote: The necessity of this quirk is determined by early boot failures. Currently, new firmware with memory protection support (such as OVMF) do not support this quirk."; ObjectID = "l3S-mh-5k0"; */
 "l3S-mh-5k0.ibShadowedToolTip" = "是否建立虚拟内存并对物理内存进行映射。我们在开机时，OC的程序需要一块连续性的内存进行存放内核等东西，而实际的物理内存一般都是分散的。因此，我们通过虚拟内存建立连续性内存供OC使用，并映射到分散的物理内存中。一般我们选择YES。";
@@ -126,7 +126,7 @@
 "mrQ-IT-UQ3.label" = "MmioWhitelist内存映射IO白名单";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "mtD-yq-Tub"; */
-"mtD-yq-Tub.headerCell.title" = "Replace";
+"mtD-yq-Tub.headerCell.title" = "替换";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "ndf-NP-2rM"; */
 "ndf-NP-2rM.headerCell.title" = "注释";
@@ -135,7 +135,7 @@
 "oFh-ac-Blm.title" = "AllowRelocationBlock";
 
 /* Class = "NSTableView"; ibShadowedToolTip = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Booter patch architecture (Any, i386, x86_64).\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Count\nType: plist integer\nFailsafe: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This booter patch will not be used unless set to true.\n5. Find\nType: plist data\nFailsafe: Empty data\nDescription: Data to find. This must equal to Replace in size.\n6. Identifier\nType: plist string\nFailsafe: Empty string\nDescription: Apple for macOS booter (generally boot.efi); or a name with suffix (e.g. bootmgfw.efi) for a specific booter; or Any / empty string (failsafe) to match any booter.\n7. Limit\nType: plist integer\nFailsafe: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole booter.\n8. Mask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Find in size otherwise.\n9. Replace\nType: plist data\nFailsafe: Empty data\nDescription: Replacement data of one or more bytes.\n10. ReplaceMask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n11. Skip\nType: plist integer\nFailsafe: 0\nDescription: Number of found occurrences to be skipped before replacement is done."; ObjectID = "oWj-qp-bH5"; */
-"oWj-qp-bH5.ibShadowedToolTip" = "1. Arch\nType: plist string\nFailsafe: Any\nDescription: Booter patch architecture (Any, i386, x86_64).\n2. Comment\nType: plist string\nFailsafe: Empty string\nDescription: Arbitrary ASCII string used to provide human readable reference for the entry. It is implementation defined whether this value is used.\n3. Count\nType: plist integer\nFailsafe: 0\nDescription: Number of patch occurrences to apply. 0 applies the patch to all occurrences found.\n4. Enabled\nType: plist boolean\nFailsafe: false\nDescription: This booter patch will not be used unless set to true.\n5. Find\nType: plist data\nFailsafe: Empty data\nDescription: Data to find. This must equal to Replace in size.\n6. Identifier\nType: plist string\nFailsafe: Empty string\nDescription: Apple for macOS booter (generally boot.efi); or a name with suffix (e.g. bootmgfw.efi) for a specific booter; or Any / empty string (failsafe) to match any booter.\n7. Limit\nType: plist integer\nFailsafe: 0\nDescription: Maximum number of bytes to search for. Can be set to 0 to look through the whole booter.\n8. Mask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during find comparison. Allows fuzzy search by ignoring not masked (set to zero) bits. Can be set to empty data to be ignored. Must equal to Find in size otherwise.\n9. Replace\nType: plist data\nFailsafe: Empty data\nDescription: Replacement data of one or more bytes.\n10. ReplaceMask\nType: plist data\nFailsafe: Empty data\nDescription: Data bitwise mask used during replacement. Allows fuzzy replacement by updating masked (set to non-zero) bits. Can be set to empty data to be ignored. Must equal to Replace in size otherwise.\n11. Skip\nType: plist integer\nFailsafe: 0\nDescription: Number of found occurrences to be skipped before replacement is done.";
+"oWj-qp-bH5.ibShadowedToolTip" = "1. Arch\n引导程序补丁架构 (Any, i386, x86_64).\n2. Comment\n用于为条目提供可读参考的任意ASCII字符串.\n3. Count\n要应用的补丁出现次数. 设置为0将补丁应用于发现的所有事件.\n4. Enabled\n除非设置为true，否则将不使用此启动程序补丁.\n5. Find\n数据查找。长度必须等于替换.\n6. Identifier\nApple for macOS引导程序（通常为boot.efi）; 或带有特定后缀的后缀名称（例如bootmgfw.efi）;或任何/空字符串（故障安全）以匹配任何引导程序.\n7. Limit\n搜索的最大字节数. 可以设置为 0 以查看整个引导程序.\n8. Mask\n查找比较期间使用的数据按位掩码。通过忽略未屏蔽（设置为零）位来允许模糊搜索。可以设置为空数据以忽略。否则长度必须等于查找.\n9. Replace\n一个或多个字节的替换数据.\n10. ReplaceMask\n替换期间使用的数据按位掩码。通过更新屏蔽（设置为非零）位来允许模糊替换. 可以设置为空数据忽略. 否则必须等于替换长度.\n11. Skip\n完成替换之前要跳过的发现事件次数.";
 
 /* Class = "NSButtonCell"; title = "DevirtualiseMmio"; ObjectID = "pkh-Nr-Lgr"; */
 "pkh-Nr-Lgr.title" = "DevirtualiseMmio";
@@ -159,7 +159,7 @@
 "wGH-hP-xhD.ibShadowedToolTip" = "是否使用slide值。一般选择连续性注入内存并配合slide，所以选择YES。\nBat.bat解释:\n如果 Slide 值存在冲突, 此选项将强制 macOS 执行以下操作:\n使用一个伪随机值。 只有在遇到 Only N/256 slide values are usable! 时需要。";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "xEr-hF-nBr"; */
-"xEr-hF-nBr.headerCell.title" = "Limit";
+"xEr-hF-nBr.headerCell.title" = "限制";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Permit write access to UEFI runtime services code.\nThis option bypasses RˆX permissions in code pages of UEFI runtime services by removing write protection (WP) bit from CR0 register during their execution. This quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi.\nNote: This quirk may potentially weaken firmware security, please use RebuildAppleMemoryMap if the firmware supports memory attributes table (MAT). Refer to OCABC: MAT support is 1/0 log entry to determine whether\nMAT is supported."; ObjectID = "xH6-La-kRg"; */
 "xH6-La-kRg.ibShadowedToolTip" = "允许对UEFI运行时服务代码的写访问\n保证nvram能正常写入而不受到UEFI内的一些服务的影响，无论什么主板都要选择YES。";

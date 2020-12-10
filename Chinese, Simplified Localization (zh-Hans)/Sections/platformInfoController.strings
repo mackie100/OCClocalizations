@@ -189,7 +189,7 @@
 "Nh2-fC-Gmv.title" = "System UUID";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id for boot services only. Value found on Macs is equal to SMBIOS SystemUUID."; ObjectID = "Nq6-s5-69T"; */
-"Nq6-s5-69T.ibShadowedToolTip" = "Type: plist string\nFailsafe: Not installed\nDescription: Specifies the value of NVRAM variable 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id for boot services only. Value found on Macs is equal to SMBIOS SystemUUID.";
+"Nq6-s5-69T.ibShadowedToolTip" = "指定仅用于引导服务的NVRAM变量4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id的值. 在Mac上找到的值等于SMBIOS SystemUUID.";
 
 /* Class = "NSTextFieldCell"; title = "Features"; ObjectID = "Ntb-g0-8oU"; */
 "Ntb-g0-8oU.title" = "Features";
