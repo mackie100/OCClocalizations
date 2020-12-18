@@ -687,3 +687,9 @@
 /* configCheckerController */
 "Laptop" = "笔记本电脑";
 
+/* opencoreDownloaderController */
+"Successfully backed up to %@" = "Successfully backed up to %@";
+
+/* opencoreDownloaderController */
+"Error during creating EFI backup folder!" = "Error during creating EFI backup folder!";
+
