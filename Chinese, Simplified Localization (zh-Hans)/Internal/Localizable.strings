@@ -688,8 +688,8 @@
 "Laptop" = "笔记本电脑";
 
 /* opencoreDownloaderController */
-"Successfully backed up to %@" = "Successfully backed up to %@";
+"Successfully backed up to %@" = "成功备份到 %@";
 
 /* opencoreDownloaderController */
-"Error during creating EFI backup folder!" = "Error during creating EFI backup folder!";
+"Error during creating EFI backup folder!" = "创建EFI备份文件夹时出错!";
 
