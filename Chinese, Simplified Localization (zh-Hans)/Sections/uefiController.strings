@@ -161,6 +161,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "McE-CL-fQD"; */
 "McE-CL-fQD.headerCell.title" = "类型";
 
+/* Class = "NSTextFieldCell"; title = "SetupDelay"; ObjectID = "N4u-Hw-eXM"; */
+"N4u-Hw-eXM.title" = "SetupDelay";
+
 /* Class = "NSButtonCell"; title = "DataHub"; ObjectID = "NGa-cY-Uzn"; */
 "NGa-cY-Uzn.title" = "DataHub";
 
@@ -328,6 +331,9 @@
 
 /* Class = "NSButtonCell"; title = "AppleFramebufferInfo"; ObjectID = "ixW-rs-w20"; */
 "ixW-rs-w20.title" = "AppleFramebufferInfo";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. In general the necessary delay may be as long as 0.5 seconds."; ObjectID = "jGE-sP-Rtr"; */
+"jGE-sP-Rtr.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. In general the necessary delay may be as long as 0.5 seconds.";
 
 /* Class = "NSView"; ibShadowedToolTip = "Type: plist array \nDescription: Designed to be filled with plist dict values, describing memory areas exquisite to particular firmware and hardware functioning, which should not be used by the operating system. An example of such\nmemory region could be second 256 MB corrupted by Intel HD 3000 or an area with faulty RAM. See Reserved-Memory Properties section below."; ObjectID = "k2W-U9-Ysu"; */
 "k2W-U9-Ysu.ibShadowedToolTip" = "设计为用plist dict值填充，描述了特定固件和硬件功能所独有的内存区域，操作系统不应使用。 例如\n内存区域可能是Intel HD 3000损坏的第二个256 MB内存或RAM故障的区域。请参阅下面的“保留内存属性”部分。";

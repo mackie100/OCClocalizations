@@ -32,7 +32,7 @@
 /* Class = "NSButtonCell"; title = "HashServices"; ObjectID = "33a-jy-EES"; */
 "33a-jy-EES.title" = "HashServices";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\n\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi. The quirk lets default boot entry preservation at times when the firmware deletes incompatible boot entries. In summary, this quirk is required to reliably use the Startup Disk preference pane in firmware that is not compatible with macOS boot entries by design."; ObjectID = "3Q0-sm-ooL"; */
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\n\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi. The quirk lets default boot entry preservation at times when the firmware deletes incompatible boot entries. In summary, this quirk is required to reliably use the Startup Disk preference pane in firmware that is not compatible with macOS boot entries by design.\n\nBy redirecting Boot prefixed variables to a separate GUID namespace with the help of RequestBootVarRouting quirk we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation wakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or anyhow corrupted."; ObjectID = "3Q0-sm-ooL"; */
 "3Q0-sm-ooL.ibShadowedToolTip" = "Activez cette option pour permettre une utilisation fiable du paramètre [disque de démarrage] dans le micrologiciel qui n'est pas compatible avec la conception d'entrée de démarrage macOS. \n Il est également lié à la mémorisation de la fonction d'entrée de démarrage par défaut, il est recommandé d'utiliser OUI";
 
 /* Class = "NSTextFieldCell"; title = "TimerResolution"; ObjectID = "3Ql-TM-Oiv"; */
@@ -160,6 +160,9 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Type"; ObjectID = "McE-CL-fQD"; */
 "McE-CL-fQD.headerCell.title" = "Type";
+
+/* Class = "NSTextFieldCell"; title = "SetupDelay"; ObjectID = "N4u-Hw-eXM"; */
+"N4u-Hw-eXM.title" = "SetupDelay";
 
 /* Class = "NSButtonCell"; title = "DataHub"; ObjectID = "NGa-cY-Uzn"; */
 "NGa-cY-Uzn.title" = "DataHub";
@@ -328,6 +331,9 @@
 
 /* Class = "NSButtonCell"; title = "AppleFramebufferInfo"; ObjectID = "ixW-rs-w20"; */
 "ixW-rs-w20.title" = "AppleFramebufferInfo";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. In general the necessary delay may be as long as 0.5 seconds."; ObjectID = "jGE-sP-Rtr"; */
+"jGE-sP-Rtr.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. In general the necessary delay may be as long as 0.5 seconds.";
 
 /* Class = "NSView"; ibShadowedToolTip = "Type: plist array \nDescription: Designed to be filled with plist dict values, describing memory areas exquisite to particular firmware and hardware functioning, which should not be used by the operating system. An example of such\nmemory region could be second 256 MB corrupted by Intel HD 3000 or an area with faulty RAM. See Reserved-Memory Properties section below."; ObjectID = "k2W-U9-Ysu"; */
 "k2W-U9-Ysu.ibShadowedToolTip" = "Type: tableau plist \nDescription: Conçu pour être rempli avec des valeurs dict plist, décrivant les zones de mémoire exquises pour un fonctionnement particulier du firmware et du matériel, qui ne doivent pas être utilisées par le système d'exploitation. Un exemple d'une telle région \nmemory pourrait être un second 256 Mo corrompu par Intel HD 3000 ou une zone avec une RAM défectueuse. Voir la section Propriétés de la mémoire réservée ci-dessous.";
