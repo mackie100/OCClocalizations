@@ -289,7 +289,7 @@ UEFI
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
- DeduplicateBootOrder=yes
+ DeduplicateBootOrder~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.5"
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=yes
  ReconnectOnResChange~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
