@@ -297,7 +297,7 @@ UEFI
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
- DeduplicateBootOrder=yes
+ DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.5中已弃用"
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=no
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
