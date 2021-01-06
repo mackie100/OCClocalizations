@@ -1,4 +1,7 @@
 
+/* Class = "NSMenuItem"; title = "OpenCore Validator"; ObjectID = "05d-N1-WMO"; */
+"05d-N1-WMO.title" = "OpenCore Validator";
+
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
 "11s-5L-eLA.label" = "Bootloader Settings";
 
