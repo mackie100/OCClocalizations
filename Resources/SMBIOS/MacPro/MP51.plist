@@ -17,7 +17,7 @@
 	<key>SystemVersion</key>
 	<string>1.2</string>
 	<key>SystemSerialNumber</key>
-	<string>C07JQ07TF4MC</string>
+	<string>CK151076EUH</string>
 	<key>SystemSKUNumber</key>
 	<string>System SKU#</string>
 	<key>SystemFamily</key>
@@ -101,7 +101,7 @@
 	<string>0xF09009</string>
 	<key>AppleModelCode</key>
 	<array>
-		<string>F4MC</string>
+		<string>EUH</string>
 	</array>
 	<key>AppleBoardCode</key>
 	<array>
@@ -109,7 +109,7 @@
 	</array>
 	<key>AppleModelYear</key>
 	<array>
-		<string>2012</string>
+		<string>2011</string>
 	</array>
 </dict>
 </plist>

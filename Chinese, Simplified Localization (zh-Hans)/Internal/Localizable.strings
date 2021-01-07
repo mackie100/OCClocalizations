@@ -693,3 +693,8 @@
 /* opencoreDownloaderController */
 "Error during creating EFI backup folder!" = "创建EFI备份文件夹时出错!";
 
+/* ocValidator */
+"Connection Established" = "Connection Established";
+
+/* ocValidator */
+"Failed to checking resources!" = "Failed to checking resources!";
