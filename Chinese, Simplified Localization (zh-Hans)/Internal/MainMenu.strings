@@ -1,6 +1,6 @@
 
 /* Class = "NSMenuItem"; title = "OpenCore Validator"; ObjectID = "05d-N1-WMO"; */
-"05d-N1-WMO.title" = "OpenCore Validator";
+"05d-N1-WMO.title" = "OC官方配置文件验证器";
 
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
 "11s-5L-eLA.label" = "引导程序设置";
