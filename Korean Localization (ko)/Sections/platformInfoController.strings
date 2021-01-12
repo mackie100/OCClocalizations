@@ -332,6 +332,9 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Not installed\nDescription: Sets SystemSerialNumber in gEfiMiscSubClassGuid. Value found on Macs is equal to SMBIOS SystemSerialNumber in Unicode."; ObjectID = "agr-Am-FjN"; */
 "agr-Am-FjN.ibShadowedToolTip" = "Type: plist string\nDefault value: Not installed\nDescription: Sets SystemSerialNumber in gEfiMiscSubClassGuid. Value found on Macs is equal to SMBIOS SystemSerialNumber in Unicode.";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Sets BIOSVersion to 9999.999.999.999.999, recommended for legacy Macs when using Automatic PlatformInfo to avoid BIOS updates in unofficially supported macOS versions."; ObjectID = "bKX-Jd-g28"; */
+"bKX-Jd-g28.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Sets BIOSVersion to 9999.999.999.999.999, recommended for legacy Macs when using Automatic PlatformInfo to avoid BIOS updates in unofficially supported macOS versions.";
+
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nDefault value: Not installed\nDescription: Sets RBr in gEfiMiscSubClassGuid. Custom property read by VirtualSMC or FakeSMC to generate SMC RBr key."; ObjectID = "bTa-i4-4eq"; */
 "bTa-i4-4eq.ibShadowedToolTip" = "Type: plist data, 8 bytes\nDefault value: Not installed\nDescription: Sets RBr in gEfiMiscSubClassGuid. Custom property read by VirtualSMC or FakeSMC to generate SMC RBr key.";
 
@@ -340,6 +343,9 @@
 
 /* Class = "NSTextFieldCell"; title = "System Product Name"; ObjectID = "baG-Ud-vWe"; */
 "baG-Ud-vWe.title" = "System Product Name";
+
+/* Class = "NSButtonCell"; title = "MaxBIOSVersion"; ObjectID = "cFo-d3-10A"; */
+"cFo-d3-10A.title" = "MaxBIOSVersion";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) - Version\nDescription: Board version number. Varies, may match SystemProductName or SystemProductVersion."; ObjectID = "cWR-8m-2Jn"; */
 "cWR-8m-2Jn.ibShadowedToolTip" = "Type: plist string\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) - Version\nDescription: Board version number. Varies, may match SystemProductName or SystemProductVersion.";

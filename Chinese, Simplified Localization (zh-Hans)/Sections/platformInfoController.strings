@@ -332,6 +332,9 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Not installed\nDescription: Sets SystemSerialNumber in gEfiMiscSubClassGuid. Value found on Macs is equal to SMBIOS SystemSerialNumber in Unicode."; ObjectID = "agr-Am-FjN"; */
 "agr-Am-FjN.ibShadowedToolTip" = "默认值:未安装\n说明:在gEfiMiscSubClassGuid中设置SystemSerialNumber。在Mac上找到的值等于Unicode中的SMBIOS SystemSerialNumber。";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Sets BIOSVersion to 9999.999.999.999.999, recommended for legacy Macs when using Automatic PlatformInfo to avoid BIOS updates in unofficially supported macOS versions."; ObjectID = "bKX-Jd-g28"; */
+"bKX-Jd-g28.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Sets BIOSVersion to 9999.999.999.999.999, recommended for legacy Macs when using Automatic PlatformInfo to avoid BIOS updates in unofficially supported macOS versions.";
+
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nDefault value: Not installed\nDescription: Sets RBr in gEfiMiscSubClassGuid. Custom property read by VirtualSMC or FakeSMC to generate SMC RBr key."; ObjectID = "bTa-i4-4eq"; */
 "bTa-i4-4eq.ibShadowedToolTip" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置RBr。 VirtualSMC或FakeSMC读取的自定义属性，用于生成SMC RBr密钥。";
 
@@ -340,6 +343,9 @@
 
 /* Class = "NSTextFieldCell"; title = "System Product Name"; ObjectID = "baG-Ud-vWe"; */
 "baG-Ud-vWe.title" = "System Product Name";
+
+/* Class = "NSButtonCell"; title = "MaxBIOSVersion"; ObjectID = "cFo-d3-10A"; */
+"cFo-d3-10A.title" = "MaxBIOSVersion";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) - Version\nDescription: Board version number. Varies, may match SystemProductName or SystemProductVersion."; ObjectID = "cWR-8m-2Jn"; */
 "cWR-8m-2Jn.ibShadowedToolTip" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 版本\n说明:电路板版本号。变化，可能与SystemProductName或SystemProductVersion匹配。";
