@@ -333,7 +333,7 @@
 "agr-Am-FjN.ibShadowedToolTip" = "默认值:未安装\n说明:在gEfiMiscSubClassGuid中设置SystemSerialNumber。在Mac上找到的值等于Unicode中的SMBIOS SystemSerialNumber。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Sets BIOSVersion to 9999.999.999.999.999, recommended for legacy Macs when using Automatic PlatformInfo to avoid BIOS updates in unofficially supported macOS versions."; ObjectID = "bKX-Jd-g28"; */
-"bKX-Jd-g28.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Sets BIOSVersion to 9999.999.999.999.999, recommended for legacy Macs when using Automatic PlatformInfo to avoid BIOS updates in unofficially supported macOS versions.";
+"bKX-Jd-g28.ibShadowedToolTip" = "设置BIOSVersion为9999.999.999.999.999, 在使用自动平台信息以避免在非官方支持的macOS版本中进行BIOS更新时，建议用于旧版Mac.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nDefault value: Not installed\nDescription: Sets RBr in gEfiMiscSubClassGuid. Custom property read by VirtualSMC or FakeSMC to generate SMC RBr key."; ObjectID = "bTa-i4-4eq"; */
 "bTa-i4-4eq.ibShadowedToolTip" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置RBr。 VirtualSMC或FakeSMC读取的自定义属性，用于生成SMC RBr密钥。";
