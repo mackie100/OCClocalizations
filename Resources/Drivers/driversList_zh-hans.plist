@@ -80,13 +80,13 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>具有bless支持的HFS文件系统驱动程序。该驱动程序可以替代Apple固件中常见的封闭源HFSPlus驱动程序。虽然功能完善，但速度大约慢了3倍，尚需进行安全审核。</string>
+			<string>具有bless支持的HFS文件系统驱动程序。该驱动程序可以替代Apple固件中常见的封闭源HFSPlus驱动程序。现已替代了VboxHfs.efi。</string>
 			<key>name</key>
-			<string>VBoxHfs</string>
+			<string>OpenHfsPlus</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Apple固件中常见的具有祝福支持的专有HFS文件系统驱动程序。对于Sandy Bridge和更早的CPU，由于缺少RDRAND指令支持，因此应使用HfsPlusLegacy驱动程序。</string>
+			<string>Apple固件中常见的具有bless支持的专有HFS文件系统驱动程序。对于Sandy Bridge和更早的CPU，由于缺少RDRAND指令支持，因此应使用HfsPlusLegacy驱动程序。</string>
 			<key>name</key>
 			<string>HfsPlus</string>
 		</dict>
