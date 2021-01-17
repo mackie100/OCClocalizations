@@ -86,7 +86,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Apple固件中常见的具有祝福支持的专有HFS文件系统驱动程序。对于Sandy Bridge和更早的CPU，由于缺少RDRAND指令支持，因此应使用HfsPlusLegacy驱动程序。</string>
+			<string>Apple固件中常见的具有bless支持的专有HFS文件系统驱动程序。对于Sandy Bridge和更早的CPU，由于缺少RDRAND指令支持，因此应使用HfsPlusLegacy驱动程序。</string>
 			<key>name</key>
 			<string>HfsPlus</string>
 		</dict>
