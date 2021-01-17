@@ -80,7 +80,7 @@ Note: OpenCanopy is currently considered experimental and is not recommended for
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>HFS file system driver with bless support. This driver is an alternative to a closed source HFSPlus driver commonly found in Apple firmwares. While it is feature complete, it is approximately 3 times slower and is yet to undergo a security audit.</string>
+			<string>HFS file system driver with bless support. This driver is an alternative to a closed source HFSPlus driver commonly found in Apple firmwares.  It replaces the previous VboxHfs.efi.</string>
 			<key>name</key>
 			<string>VBoxHfs</string>
 		</dict>
