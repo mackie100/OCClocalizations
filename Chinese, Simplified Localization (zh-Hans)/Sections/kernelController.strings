@@ -74,6 +74,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4 - 10.6\nDescription: Replaces the default 64-bit commpage bcopy implementation with one that does not require SSSE3, useful for legacy platforms. This prevents a commpage no match for last panic due to no available 64-bit bcopy functions that do not require SSSE3."; ObjectID = "Bdo-0T-kr8"; */
 "Bdo-0T-kr8.ibShadowedToolTip" = "将默认的64位Combpage bcopy实现替换为不需要SSSE3的实现, 对旧平台有用. 由于没有可用的不需要SSSE3的64位bcopy函数，这可以防止没有最后一次紧急情况的commpage。.";
 
+/* Class = "NSTextFieldCell"; title = "SetApfsTrimTimeout"; ObjectID = "BeM-Py-QT3"; */
+"BeM-Py-QT3.title" = "SetApfsTrimTimeout";
+
 /* Class = "NSTabViewItem"; label = "Force"; ObjectID = "Dip-Qx-lAB"; */
 "Dip-Qx-lAB.label" = "强制加载";
 
@@ -127,6 +130,9 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "Oe6-LD-h7w"; */
 "Oe6-LD-h7w.headerCell.title" = "捆绑路径 *";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: -1\nRequirement: 10.14 (not required for older)\nDescription: Set trim timeout in microseconds for APFS filesystems on SSDs.\nDepending on the SSD controller trim procedure may take considerable amount of time, causing noticeable boot slowdown as this is when the APFS driver executes the trim operation. If the SSD supports over-provisioning or there exists a dedicated unused partition that can be used to reserve blocks, trim operation may not be necessary. On the other side if the SSD is slow, the default timeout (equals to 9.999999 seconds) may not be enough.\n\nSet this value to 4294967295 for the maximum timeout to guarantee trim success or to 999 to essentially disable trim."; ObjectID = "Ot6-tN-JLe"; */
+"Ot6-tN-JLe.ibShadowedToolTip" = "Type: plist integer\nFailsafe: -1\nRequirement: 10.14 (not required for older)\nDescription: Set trim timeout in microseconds for APFS filesystems on SSDs.\nDepending on the SSD controller trim procedure may take considerable amount of time, causing noticeable boot slowdown as this is when the APFS driver executes the trim operation. If the SSD supports over-provisioning or there exists a dedicated unused partition that can be used to reserve blocks, trim operation may not be necessary. On the other side if the SSD is slow, the default timeout (equals to 9.999999 seconds) may not be enough.\n\nSet this value to 4294967295 for the maximum timeout to guarantee trim success or to 999 to essentially disable trim.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "PdE-OW-Faw"; */
 "PdE-OW-Faw.headerCell.title" = "启用";
