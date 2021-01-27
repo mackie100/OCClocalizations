@@ -228,7 +228,7 @@
 "Xjp-N3-zFD.title" = "AppleRtcRam";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Disable platform security policy.\n\nNote: This setting disables various security features of the firmware, defeating the purpose of any kind of Secure Boot. Do NOT enable if you use UEFI Secure Boot."; ObjectID = "Y1W-Rp-1xj"; */
-"Y1W-Rp-1xj.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Disable platform security policy.\n\nNote: This setting disables various security features of the firmware, defeating the purpose of any kind of Secure Boot. Do NOT enable if you use UEFI Secure Boot.";
+"Y1W-Rp-1xj.ibShadowedToolTip" = "禁用平台安全策略.\n\n注意：此设置禁用固件的各种安全功能, 以达到任何类型的安全启动的目的.如果您使用UEFI安全启动，请不要启用它.";
 
 /* Class = "NSButtonCell"; title = "UnblockFsConnect"; ObjectID = "YFj-X6-x1j"; */
 "YFj-X6-x1j.title" = "UnblockFsConnect";
