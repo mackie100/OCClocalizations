@@ -29,7 +29,7 @@
 	<key>BoardVersion</key>
 	<string>MacBookAir8,2</string>
 	<key>BoardRevision</key>
-	<string>0x3</string>
+	<string>0x4</string>
 	<key>BoardAssetTag</key>
 	<string>Base Board Asset Tag</string>
 	<key>BoardType</key>
@@ -47,18 +47,18 @@
 	<key>PlatformFeature</key>
 	<string>0x3A</string>
 	<key>FirmwareFeatures</key>
-	<string>0xFD8FF42E</string>
+	<string>0xFFAFF06E</string>
 	<key>FirmwareFeaturesMask</key>
-	<string>0xFF9FFF3F</string>
+	<string>0xFFFFFF7F</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000000FD8FF42E</string>
+	<string>0x00000000FFAFF06E</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
-	<string>0x00000000FF9FFF3F</string>
+	<string>0x00000000FFFFFF7F</string>
 	<key>MemoryFormFactor</key>
 	<string>0xD</string>
 	<key>ProcessorType</key>
 	<array>
-		<string>0x0601</string>
+		<string>0x070B</string>
 	</array>
 	<key>ProcessorBusSpeed</key>
 	<array>
