@@ -698,3 +698,6 @@
 
 /* ocValidator */
 "Failed to checking resources!" = "Failed to checking resources!";
+
+/* platformInfoController */
+"No Network Access. You may not get latest SMBIOS data." = "No Network Access. You may not get latest SMBIOS data.";

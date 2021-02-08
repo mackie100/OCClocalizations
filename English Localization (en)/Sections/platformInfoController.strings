@@ -323,6 +323,9 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 32-bit\nFailsafe: 0xFFFFFFFF\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE133 - PlatformFeature\nDescription: Platform features bitmask. Use 0xFFFFFFFF value to not provide this table."; ObjectID = "Yog-wn-LaZ"; */
 "Yog-wn-LaZ.ibShadowedToolTip" = "Type: plist integer, 32-bit\nFailsafe: 0xFFFFFFFF\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE133 - PlatformFeature\nDescription: Platform features bitmask. Use 0xFFFFFFFF value to not provide this table.";
 
+/* Class = "NSButtonCell"; title = "Your SMBIOS needs to be updated"; ObjectID = "YyS-LF-pEM"; */
+"YyS-LF-pEM.title" = "Your SMBIOS needs to be updated";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Sets SMBIOS vendor fields to Acidanthera.\nIt is dangerous to use Apple in SMBIOS vendor fields for reasons given in SystemManufacturer description. However, certain firmware may not provide valid values otherwise, which could break some software."; ObjectID = "Z8Z-8r-mnL"; */
 "Z8Z-8r-mnL.ibShadowedToolTip" = "Type: plist boolean\nDefault value: false\nDescription: Sets SMBIOS vendor fields to Acidanthera.\nIt is dangerous to use Apple in SMBIOS vendor fields for reasons given in SystemManufacturer description. However, certain firmware may not provide valid values otherwise, which could break some software.";
 
@@ -382,6 +385,9 @@
 
 /* Class = "NSSegmentedCell"; eez-pY-d3O.ibShadowedLabels[1] = "Hack"; ObjectID = "eez-pY-d3O"; */
 "eez-pY-d3O.ibShadowedLabels[1]" = "Hack";
+
+/* Class = "NSButtonCell"; title = "Update Firmware Only"; ObjectID = "fU3-BB-2dv"; */
+"fU3-BB-2dv.title" = "Update Firmware Only";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "fWq-dP-cDy"; */
 "fWq-dP-cDy.title" = "Add this section in config.plist";
