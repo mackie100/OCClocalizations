@@ -324,7 +324,7 @@
 "Yog-wn-LaZ.ibShadowedToolTip" = "默认值:0\nSMBIOS:APPLE_SMBIOS_TABLE_TYPE133  -  PlatformFeature\n说明:平台功能位掩码。有关更多详细信息，请参阅AppleFeatures.h。";
 
 /* Class = "NSButtonCell"; title = "Your SMBIOS needs to be updated"; ObjectID = "YyS-LF-pEM"; */
-"YyS-LF-pEM.title" = "Your SMBIOS needs to be updated";
+"YyS-LF-pEM.title" = "您的SMBIOS需要更新";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nDefault value: false\nDescription: Sets SMBIOS vendor fields to Acidanthera.\nIt is dangerous to use Apple in SMBIOS vendor fields for reasons given in SystemManufacturer description. However, certain firmware may not provide valid values otherwise, which could break some software."; ObjectID = "Z8Z-8r-mnL"; */
 "Z8Z-8r-mnL.ibShadowedToolTip" = "选YES (仿冒制造商为 Acidanthera 来避免出现冲突)。";
@@ -387,7 +387,7 @@
 "eez-pY-d3O.ibShadowedLabels[1]" = "Hack";
 
 /* Class = "NSButtonCell"; title = "Update Firmware Only"; ObjectID = "fU3-BB-2dv"; */
-"fU3-BB-2dv.title" = "Update Firmware Only";
+"fU3-BB-2dv.title" = "仅更新固件";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "fWq-dP-cDy"; */
 "fWq-dP-cDy.title" = "在config.plist里添加此部分内容";

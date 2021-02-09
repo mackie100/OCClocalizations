@@ -700,4 +700,4 @@
 "Failed to checking resources!" = "无法检查资源!";
 
 /* platformInfoController */
-"No Network Access. You may not get latest SMBIOS data." = "No Network Access. You may not get latest SMBIOS data.";
+"No Network Access. You may not get latest SMBIOS data." = "没有网络访问。您可能无法获取最新的SMBIOS数据.";
