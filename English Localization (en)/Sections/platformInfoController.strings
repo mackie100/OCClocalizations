@@ -449,8 +449,8 @@
 /* Class = "NSTextFieldCell"; title = "Product"; ObjectID = "j1k-Mi-kEe"; */
 "j1k-Mi-kEe.title" = "Product";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string, GUID\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemUUID."; ObjectID = "jaL-um-8Nb"; */
-"jaL-um-8Nb.ibShadowedToolTip" = "Type: plist string, GUID\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemUUID.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string, GUID\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemUUID.\n\nSpecify OEM value to extract current value from SMBIOS and use it throughout the sections. Since not all firmwares have valid (and unique) values, this feature is not applicable to some setups, and may provide unexpected results. It is highly recommended to specify the UUID explicitly. Refer to UseRawUuidEncoding to determine how SMBIOS value is parsed."; ObjectID = "jaL-um-8Nb"; */
+"jaL-um-8Nb.ibShadowedToolTip" = "Type: plist string, GUID\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemUUID.\n\nSpecify OEM value to extract current value from SMBIOS and use it throughout the sections. Since not all firmwares have valid (and unique) values, this feature is not applicable to some setups, and may provide unexpected results. It is highly recommended to specify the UUID explicitly. Refer to UseRawUuidEncoding to determine how SMBIOS value is parsed.";
 
 /* Class = "NSTextFieldCell"; title = "SmcBranch"; ObjectID = "jm3-qG-kzP"; */
 "jm3-qG-kzP.title" = "SmcBranch";
@@ -473,8 +473,8 @@
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty (OEM specified)\nSMBIOS: Baseboard (or Module) Information (Type 2) - Manufacturer Description: Board manufacturer. All rules of SystemManufacturer do apply."; ObjectID = "mON-cg-FYL"; */
 "mON-cg-FYL.ibShadowedToolTip" = "Type: plist string\nDefault value: Empty (OEM specified)\nSMBIOS: Baseboard (or Module) Information (Type 2) - Manufacturer Description: Board manufacturer. All rules of SystemManufacturer do apply.";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemSerialNumber."; ObjectID = "mPV-Tv-466"; */
-"mPV-Tv-466.ibShadowedToolTip" = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemSerialNumber.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemSerialNumber.\n\nSpecify OEM value to extract current value from SMBIOS and use it throughout the sections. This feature can only be used on Mac-compatible firmwares."; ObjectID = "mPV-Tv-466"; */
+"mPV-Tv-466.ibShadowedToolTip" = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS SystemSerialNumber.\n\nSpecify OEM value to extract current value from SMBIOS and use it throughout the sections. This feature can only be used on Mac-compatible firmwares.";
 
 /* Class = "NSTextFieldCell"; title = "BID"; ObjectID = "mqi-pJ-IwL"; */
 "mqi-pJ-IwL.title" = "BID";
@@ -515,8 +515,8 @@
 /* Class = "NSTextFieldCell"; title = "Asset Tag"; ObjectID = "rL4-uJ-e4c"; */
 "rL4-uJ-e4c.title" = "Asset Tag";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS BoardSerialNumber."; ObjectID = "rLa-T9-n6A"; */
-"rLa-T9-n6A.ibShadowedToolTip" = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS BoardSerialNumber.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS BoardSerialNumber.\n\nSpecify OEM value to extract current value from SMBIOS and use it throughout the sections. This feature can only be used on Mac-compatible firmwares."; ObjectID = "rLa-T9-n6A"; */
+"rLa-T9-n6A.ibShadowedToolTip" = "Type: plist string\nDefault value: Empty (OEM specified or not installed)\nDescription: Refer to SMBIOS BoardSerialNumber.\n\nSpecify OEM value to extract current value from SMBIOS and use it throughout the sections. This feature can only be used on Mac-compatible firmwares.";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "rjU-uH-nCF"; */
 "rjU-uH-nCF.title" = "Box";
