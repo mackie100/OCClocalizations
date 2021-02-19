@@ -60,6 +60,12 @@
 		</dict>
 		<dict>
 			<key>description</key>
+			<string>Creates a stub so VoodooI2C can connect, for those having troubles getting VoodooI2C working can try SSDT-XOSI instead. Note that Intel NUCs do not need this.</string>
+			<key>name</key>
+			<string>SSDT-GPI0</string>
+		</dict>
+		<dict>
+			<key>description</key>
 			<string>仅当DSDT中没有IMEI设备（具有任何名称）并且需要通过DeviceProperty（某些Sandy Bridge或Ivy Bridge配置）设置自定义设备ID时才需要。</string>
 			<key>name</key>
 			<string>SSDT-IMEI-S</string>
@@ -99,6 +105,18 @@
 			<string>在400系列主板上，某些OEM破坏了ACPI规范，这导致启动进入macOS时出现问题。要解决此问题，我们将要关闭RHUB设备，并强制macOS手动重建端口。</string>
 			<key>name</key>
 			<string>SSDT-RHUB</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Required for all Big Sur users to ensure their RTC device is compatible. Note this is only to be used with X99 and X299, X79 only support 1 bank of RTC memory and so this SSDT can actually break a system.</string>
+			<key>name</key>
+			<string>SSDT-RTC0-RANGE-HEDT</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Ensures unsed uncore bridges are disabled, otherwise X79 and X99 will kernel panic in Big Sur with IOPCIFamily. Required for all Big Sur users to ensure their RTC device is compatible.</string>
+			<key>name</key>
+			<string>SSDT-UNC</string>
 		</dict>
 		<dict>
 			<key>description</key>
