@@ -54,7 +54,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>USB兼容性表。禁用EHC1和EHC2-在您的BIOS中将选项&quot;XHCI模式&quot;设置为&quot;启用&quot;。如果&quot;XHCI模式&quot;选项在您的BIOS中不可用或无法正常工作，请使用此ACPI表。最好尽可能通过BIOS禁用。警告：对于7系列，您需要使用&quot;EH1D = 1&quot;或&quot;EH2D = One&quot;但不能同时使用！这是因为macOS仅使用一种设备（EHC1或EHC2）。检查IOReg。</string>
+			<string>USB兼容性表。禁用EHC1和EHC2-在您的BIOS中将选项"XHCI模式"设置为"启用"。如果"XHCI模式"选项在您的BIOS中不可用或无法正常工作，请使用此ACPI表。最好尽可能通过BIOS禁用。警告：对于7系列，您需要使用"EH1D = 1"或"EH2D = One"但不能同时使用！这是因为macOS仅使用一种设备（EHC1或EHC2）。检查IOReg。</string>
 			<key>name</key>
 			<string>SSDT-EHCx_OFF</string>
 		</dict>
@@ -108,13 +108,13 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Required for all Big Sur users to ensure their RTC device is compatible. Note this is only to be used with X99 and X299, X79 only support 1 bank of RTC memory and so this SSDT can actually break a system.</string>
+			<string>所有Big Sur用户都需要确保其RTC设备兼容。注意:这个补丁仅与X99和X299一起使用，X79仅支持1组RTC内存，因此该SSDT实际上可以破坏系统。</string>
 			<key>name</key>
 			<string>SSDT-RTC0-RANGE-HEDT</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Ensures unsed uncore bridges are disabled, otherwise X79 and X99 will kernel panic in Big Sur with IOPCIFamily. Required for all Big Sur users to ensure their RTC device is compatible.</string>
+			<string>确保禁用未加载的非核心桥接器，否则X79和X99将在IOPCIFamily的Big Sur中引起内核恐慌。所有Big Sur用户都需要确保其RTC设备兼容。</string>
 			<key>name</key>
 			<string>SSDT-UNC</string>
 		</dict>
