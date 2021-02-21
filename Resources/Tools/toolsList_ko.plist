@@ -30,12 +30,6 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Parse and dump High Definition Audio codec information (requires AudioDxe).</string>
-			<key>name</key>
-			<string>HdaCodecDump</string>
-		</dict>
-		<dict>
-			<key>description</key>
 			<string>Test keyboard input in SimpleText mode.</string>
 			<key>name</key>
 			<string>KeyTester</string>

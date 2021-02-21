@@ -30,12 +30,6 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>解析和转储高清晰度音频编解码器信息（需要AudioDxe）。</string>
-			<key>name</key>
-			<string>HdaCodecDump</string>
-		</dict>
-		<dict>
-			<key>description</key>
 			<string>在SimpleText模式下测试键盘输入。</string>
 			<key>name</key>
 			<string>KeyTester</string>
