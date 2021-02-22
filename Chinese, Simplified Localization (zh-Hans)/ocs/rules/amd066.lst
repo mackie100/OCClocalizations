@@ -93,6 +93,7 @@ Kernel
  count>19 " -->AMD内核补丁"
  [MatchOS]~=.+ "!-->您使用了Clover补丁，而不是OpenCore的"
  [Replace]~=\xbb\xbc\x4f\xea\x78\xe9\x5d\x00\x00\x00\x90 " -->找到Catalina 10.15.4 CPUFAMILY_INTEL_PENRYN补丁":"--->Catalina 10.15.4 CPUFAMILY_INTEL_PENRYN补丁丢失或不正确"
+ [Replace]~=\xb3\x01\xba\xbc\x4f\xea\x78\xe9\x5d\x00\x00\x00\x00\x90 " -->找到Big Sur 11.3 CPUFAMILY_INTEL_PENRYN补丁":"--->Big Sur 11.3 CPUFAMILY_INTEL_PENRYN补丁丢失或不正确"
 
 :Emulate
  DummyPowerManagement=yes " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> 这里需要启用"
