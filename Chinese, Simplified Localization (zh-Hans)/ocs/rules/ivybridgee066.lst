@@ -18,7 +18,6 @@ ACPI
  [Path]==SSDT-1.aml "-<b>{$Path}</b> -->这只是SSDT的一个例子。如果你真的是自己做的, 称它为更具描述性的东西"
  [Path]~=".dsl$" "!<b>{$Path}</b> -->在此处只能是.aml文件。 dsl文件需要编译为.aml"
  [Enabled]==no "-<b>{$Path}</b> -->状态是<b>已禁用</b>. 启用或删除它可以去除此警告"
- [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> 缺失. 请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-brdige-e#acpi>[ACPI Docs]</a>"
  [Path]==SSDT-EC-USBX-DESKTOP.aml&SSDT-EC.aml "---><b>{$Path}</b> 不要同时使用 <b>SSDT-EC-USBX-DESKTOP</b> 和 <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%-->您可能需要类似SSDT-EC.aml或SSDT-EC-USBX-DESKTOP.aml的文件.请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#acpi>[Acpi Docs]</a>"
  [Path]==* " <b>{$Path}</b> -->确保此文件在您的<b>OC/ACPI</b>目录中"
