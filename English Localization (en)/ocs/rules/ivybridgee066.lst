@@ -19,7 +19,6 @@ ACPI
  [Path]==SSDT-1.aml "-<b>{$Path}</b> This is just an example SSDT. If you really made this yourself, call it something more descriptive"
  [Path]~=".dsl$" "!<b>{$Path}</b> Only include .aml files here. dsl files need to be compiled to .aml"
  [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. Either enable it or remove it to get rid of this warning"
- [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e#acpi>[ACPI Docs]</a>"
  [Path]==SSDT-EC-DESKTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-DESKTOP</b> and <b>SSDT-EC</b>"
  [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-DESKTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/ivy-bridge-e#acpi>[ACPI Docs]</a>"
  [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
@@ -32,7 +31,7 @@ ACPI
  NormalizeHeaders=no
  RebaseRegions=no
  ResetHwSig=no
- ResetLogoStatus=no
+ ResetLogoStatus~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 Booter
 
@@ -80,9 +79,9 @@ Kernel
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable if you don't plan to boot 10.10 or older":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios and you need to boot 10.10 or older"
- AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios"
- AppleXcpmExtraMsrs=yes
+ AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios."
+ AppleXcpmCfgLock=no
+ AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
  CustomSMBIOSGuid=no " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have a Dell or VIAO motherboard"
  DisableIoMapper=yes
@@ -196,8 +195,8 @@ PlatformInfo
 
 UEFI
  ConnectDrivers=yes
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "$hfs={$value}; <b>{$value}</b>":"!Need either <b>VBoxHfs.efi</b> or <b>HFSPlus.efi</b> here"
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "!<b>{$value}</b> you already have <b>{$hfs}</b>"
+ Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi|OpenHfsPlus.efi "$hfs={$value}; <b>{$value}</b>":"!Need either <b>VBoxHfs.efi</b>, <b>OpenHfsPlus.efi</b>  or <b>HFSPlus.efi</b> here"
+ Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi|OpenHfsPlus.efi "!<b>{$value}</b> you already have <b>{$hfs}</b>"
  Drivers==OpenRuntime.efi " <b>{$value}</b>":"!<b>OpenRuntime.efi</b> is missing"
  Drivers==FwRuntimeServices.efi "!<b>{$value}</b> has been replaced by OpenRuntime.efi as of OpenCore v0.5.7"
  Drivers==ApfsDriverLoader.efi "!<b>ApfsDriverLoader.efi</b> was merged into OpenCore under the UEFI/APFS section as of OpenCore v0.5.8"

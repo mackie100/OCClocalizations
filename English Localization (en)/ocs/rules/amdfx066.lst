@@ -35,7 +35,7 @@ ACPI
  NormalizeHeaders=no
  RebaseRegions=no
  ResetHwSig=no
- ResetLogoStatus=no
+ ResetLogoStatus~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 :Patch
  count>15 "!You may have added the kernel patches in the wrong section. They should be in the Kernel section. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/AMD/fx.html#kernel>[Kernel Docs]</a>"
@@ -94,6 +94,7 @@ Kernel
  count>19 " AMD kernel patches"
  [MatchOS]~=.+ "!You have used Clover patches, not OpenCore"
  [Replace]~=\xbb\xbc\x4f\xea\x78\xe9\x5d\x00\x00\x00\x90 " Catalina 10.15.4 CPUFAMILY_INTEL_PENRYN patch found":"-Catalina 10.15.4 CPUFAMILY_INTEL_PENRYN patch is missing or incorrect"
+ [Replace]~=\xb3\x01\xba\xbc\x4f\xea\x78\xe9\x5d\x00\x00\x00\x00\x90 " Big Sur 11.3 CPUFAMILY_INTEL_PENRYN patch found":"-Big Sur 11.3 CPUFAMILY_INTEL_PENRYN patch is missing or incorrect"
 
 :Emulate
  DummyPowerManagement=yes " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> this needs to be enabled"
@@ -215,8 +216,8 @@ PlatformInfo
 
 UEFI
  ConnectDrivers=yes
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "$hfs={$value}; <b>{$value}</b>":"!Need either <b>VBoxHfs.efi</b> or <b>HFSPlus.efi</b> here"
- Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "!<b>{$value}</b> you already have <b>{$hfs}</b>"
+ Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi|OpenHfsPlus.efi "$hfs={$value}; <b>{$value}</b>":"!Need either <b>VBoxHfs.efi</b>, <b>OpenHfsPlus.efi</b>  or <b>HFSPlus.efi</b> here"
+ Drivers==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi|OpenHfsPlus.efi "!<b>{$value}</b> you already have <b>{$hfs}</b>"
  Drivers==OpenRuntime.efi " <b>{$value}</b>":"!<b>OpenRuntime.efi</b> is missing"
  Drivers==FwRuntimeServices.efi "!<b>{$value}</b> has been replaced by OpenRuntime.efi as of OpenCore v0.5.7"
  Drivers==ApfsDriverLoader.efi "!<b>ApfsDriverLoader.efi</b> was merged into OpenCore under the UEFI/APFS section as of OpenCore v0.5.8"
