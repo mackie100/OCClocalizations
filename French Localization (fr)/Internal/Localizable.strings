@@ -701,3 +701,90 @@
 
 /* platformInfoController */
 "No Network Access. You may not get latest SMBIOS data." = "No Network Access. You may not get latest SMBIOS data.";
+
+/* installDriversController */
+"Download: %@ removed from queue because is not compatible with 32-bit version." = "Download: %@ removed from queue because is not compatible with 32-bit version.";
+
+/* efiMaker */
+"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "Based on OpenCore Bootloader %@ settings by Dortania's help guide";
+
+/* efiMaker */
+"For more information about different settings, click on each CPU Family option" = "For more information about different settings, click on each CPU Family option";
+
+/* efiMaker */
+"Downloading latest Opencore Bootloader" = "Downloading latest Opencore Bootloader";
+
+/* efiMaker */
+"Error while downloading Opencore Bootloader. Unable to continue." = "Error while downloading Opencore Bootloader. Unable to continue.";
+
+/* efiMaker */
+"Downloading %@ configuration" = "Downloading %@ configuration";
+
+/* efiMaker */
+"Populating SMBIOS data for %@ configuration" = "Populating SMBIOS data for %@ configuration";
+
+/* efiMaker */
+"Error while downloading the configuration. Unable to continue." = "Error while downloading the configuration. Unable to continue.";
+
+/* efiMaker */
+"Error while populating %@ key" = "Error while populating %@ key";
+
+/* efiMaker */
+"Some keys have not been updated. Please update them manually." = "Some keys have not been updated. Please update them manually.";
+
+/* efiMaker */
+"Done! Opening folder at %@" = "Done! Opening folder at %@";
+
+/* efiMaker */
+"Download SSDT" = "Download SSDT";
+
+/* efiMaker */
+"successfully downloaded" = "successfully downloaded";
+
+/* efiMaker */
+"Download SSDT Error" = "Download SSDT Error";
+
+/* efiMaker */
+"Downloading latest" = "Downloading latest";
+
+/* efiMaker */
+"Download essential Kext" = "Download essential Kext";
+
+/* efiMaker */
+"Download Kext Error" = "Download Kext Error";
+
+/* efiMaker */
+"Download Drivers" = "Download Drivers";
+
+/* efiMaker */
+"Download Drivers Error" = "Download Drivers Error";
+
+/* efiMaker */
+"Error during processing" = "Error during processing";
+
+/* efiMaker */
+"For more information about %@ settings, click here" = "For more information about %@ settings, click here";
+
+/* efiMaker */
+"For more information about %@ settings" = "For more information about %@ settings";
+
+/* efiMaker */
+"click here" = "click here";
+
+/* efiMaker */
+"Summary Information" = "Summary Information";
+
+/* efiMaker */
+"CPU Family selected" = "CPU Family selected";
+
+/* efiMaker */
+"SMBIOS selected" = "SMBIOS selected";
+
+/* efiMaker */
+"Configuration type selected" = "Configuration type selected";
+
+/* efiMaker */
+"Architecture type selected" = "Architecture type selected";
+
+/* efiMaker */
+"Download related files" = "Download related files";
