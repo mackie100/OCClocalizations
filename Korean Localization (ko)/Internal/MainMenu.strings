@@ -515,6 +515,9 @@
 /* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
 "vmV-6d-7jI.title" = "Make Upper Case";
 
+/* Class = "NSMenuItem"; title = "EFI Maker"; ObjectID = "vnI-1Z-o5O"; */
+"vnI-1Z-o5O.title" = "EFI Maker";
+
 /* Class = "NSMenu"; title = "Ligatures"; ObjectID = "w0m-vy-SC9"; */
 "w0m-vy-SC9.title" = "Ligatures";
 
