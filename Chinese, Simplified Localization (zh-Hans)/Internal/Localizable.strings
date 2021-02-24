@@ -703,88 +703,88 @@
 "No Network Access. You may not get latest SMBIOS data." = "没有网络访问。您可能无法获取最新的SMBIOS数据.";
 
 /* installDriversController */
-"Download: %@ removed from queue because is not compatible with 32-bit version." = "Download: %@ removed from queue because is not compatible with 32-bit version.";
+"Download: %@ removed from queue because is not compatible with 32-bit version." = "下载: 由于与32位版本不兼容，已从队列中删除%@.";
 
 /* efiMaker */
-"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "Based on OpenCore Bootloader %@ settings by Dortania's help guide";
+"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "基于Dortania帮助指南中的OpenCore Bootloader%@设置";
 
 /* efiMaker */
-"For more information about different settings, click on each CPU Family option" = "For more information about different settings, click on each CPU Family option";
+"For more information about different settings, click on each CPU Family option" = "有关不同设置的更多信息，请单击每个CPU系列选项";
 
 /* efiMaker */
-"Downloading latest Opencore Bootloader" = "Downloading latest Opencore Bootloader";
+"Downloading latest Opencore Bootloader" = "下载最新的Opencore引导器";
 
 /* efiMaker */
-"Error while downloading Opencore Bootloader. Unable to continue." = "Error while downloading Opencore Bootloader. Unable to continue.";
+"Error while downloading Opencore Bootloader. Unable to continue." = "下载Opencore引导器时出错。无法继续.";
 
 /* efiMaker */
-"Downloading %@ configuration" = "Downloading %@ configuration";
+"Downloading %@ configuration" = "正在下载%@配置";
 
 /* efiMaker */
-"Populating SMBIOS data for %@ configuration" = "Populating SMBIOS data for %@ configuration";
+"Populating SMBIOS data for %@ configuration" = "为%@配置填充SMBIOS数据";
 
 /* efiMaker */
-"Error while downloading the configuration. Unable to continue." = "Error while downloading the configuration. Unable to continue.";
+"Error while downloading the configuration. Unable to continue." = "下载配置时出错. 无法继续.";
 
 /* efiMaker */
-"Error while populating %@ key" = "Error while populating %@ key";
+"Error while populating %@ key" = "填充%@键值时出错";
 
 /* efiMaker */
-"Some keys have not been updated. Please update them manually." = "Some keys have not been updated. Please update them manually.";
+"Some keys have not been updated. Please update them manually." = "某些键值尚未更新. 请手动更新.";
 
 /* efiMaker */
-"Done! Opening folder at %@" = "Done! Opening folder at %@";
+"Done! Opening folder at %@" = "完成! 正在打开文件夹%@";
 
 /* efiMaker */
-"Download SSDT" = "Download SSDT";
+"Download SSDT" = "下载SSDT";
 
 /* efiMaker */
-"successfully downloaded" = "successfully downloaded";
+"successfully downloaded" = "成功下载";
 
 /* efiMaker */
-"Download SSDT Error" = "Download SSDT Error";
+"Download SSDT Error" = "下载SSDT错误";
 
 /* efiMaker */
-"Downloading latest" = "Downloading latest";
+"Downloading latest" = "正在下载最新文件";
 
 /* efiMaker */
-"Download essential Kext" = "Download essential Kext";
+"Download essential Kext" = "下载基本Kext文件";
 
 /* efiMaker */
-"Download Kext Error" = "Download Kext Error";
+"Download Kext Error" = "下载Kext文件错误";
 
 /* efiMaker */
-"Download Drivers" = "Download Drivers";
+"Download Drivers" = "下载驱动程序文件";
 
 /* efiMaker */
-"Download Drivers Error" = "Download Drivers Error";
+"Download Drivers Error" = "下载驱动程序错误";
 
 /* efiMaker */
-"Error during processing" = "Error during processing";
+"Error during processing" = "处理期间发生错误";
 
 /* efiMaker */
-"For more information about %@ settings, click here" = "For more information about %@ settings, click here";
+"For more information about %@ settings, click here" = "有关%@设置的更多信息, 点击这里";
 
 /* efiMaker */
-"For more information about %@ settings" = "For more information about %@ settings";
+"For more information about %@ settings" = "有关%@设置的更多信息";
 
 /* efiMaker */
-"click here" = "click here";
+"click here" = "点击这里";
 
 /* efiMaker */
-"Summary Information" = "Summary Information";
+"Summary Information" = "摘要信息";
 
 /* efiMaker */
-"CPU Family selected" = "CPU Family selected";
+"CPU Family selected" = "已选择的CPU系列";
 
 /* efiMaker */
-"SMBIOS selected" = "SMBIOS selected";
+"SMBIOS selected" = "已选择的SMBIOS机型";
 
 /* efiMaker */
-"Configuration type selected" = "Configuration type selected";
+"Configuration type selected" = "已选择的配置类型";
 
 /* efiMaker */
-"Architecture type selected" = "Architecture type selected";
+"Architecture type selected" = "已选择的体系类型";
 
 /* efiMaker */
-"Download related files" = "Download related files";
+"Download related files" = "下载相关文件";

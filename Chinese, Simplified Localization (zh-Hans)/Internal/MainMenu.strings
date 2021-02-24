@@ -516,7 +516,7 @@
 "vmV-6d-7jI.title" = "变大写";
 
 /* Class = "NSMenuItem"; title = "EFI Maker"; ObjectID = "vnI-1Z-o5O"; */
-"vnI-1Z-o5O.title" = "EFI Maker";
+"vnI-1Z-o5O.title" = "生成EFI";
 
 /* Class = "NSMenu"; title = "Ligatures"; ObjectID = "w0m-vy-SC9"; */
 "w0m-vy-SC9.title" = "连字";
