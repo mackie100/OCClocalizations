@@ -1,6 +1,6 @@
 
 /* Class = "NSTextFieldCell"; title = "System"; ObjectID = "0hy-qF-InW"; */
-"0hy-qF-InW.title" = "系统";
+"0hy-qF-InW.title" = "系统平台";
 
 /* Class = "NSButtonCell"; title = "Broadwell"; ObjectID = "1X8-Cg-iEw"; */
 "1X8-Cg-iEw.title" = "Broadwell";
@@ -21,7 +21,7 @@
 "5TB-vq-xrP.title" = "生成";
 
 /* Class = "NSTextFieldCell"; title = "Product Name Label"; ObjectID = "5nJ-S4-CEv"; */
-"5nJ-S4-CEv.title" = "机型型号";
+"5nJ-S4-CEv.title" = "型号标识符";
 
 /* Class = "NSBox"; title = "Options"; ObjectID = "5th-MW-cis"; */
 "5th-MW-cis.title" = "选项";
@@ -42,7 +42,7 @@
 "9sZ-2G-qSx.title" = "Sandy Bridge";
 
 /* Class = "NSTextFieldCell"; title = "Laptop"; ObjectID = "9xb-Es-DFu"; */
-"9xb-Es-DFu.title" = "Laptop";
+"9xb-Es-DFu.title" = "笔记本平台";
 
 /* Class = "NSButtonCell"; title = "Ice Lake"; ObjectID = "AWv-6G-k3I"; */
 "AWv-6G-k3I.title" = "Ice Lake";
@@ -78,7 +78,7 @@
 "QvC-M9-y7g.title" = "生成EFI";
 
 /* Class = "NSTextFieldCell"; title = "AMD"; ObjectID = "RNN-MH-PKc"; */
-"RNN-MH-PKc.title" = "AMD";
+"RNN-MH-PKc.title" = "AMD平台";
 
 /* Class = "NSButtonCell"; title = "Skylake-X/W / Cascade Lake-X/W"; ObjectID = "SXz-2h-HgY"; */
 "SXz-2h-HgY.title" = "Skylake-X/W / Cascade Lake-X/W";
@@ -87,7 +87,7 @@
 "TdK-LN-kw6.title" = "Nehalem / Westmere";
 
 /* Class = "NSTextFieldCell"; title = "Desktop"; ObjectID = "UHA-g6-Fql"; */
-"UHA-g6-Fql.title" = "台式机";
+"UHA-g6-Fql.title" = "一般台式机平台";
 
 /* Class = "NSButtonCell"; title = "Show all SMBIOS data"; ObjectID = "VDU-ek-zH9"; */
 "VDU-ek-zH9.title" = "显示所有SMBIOS机型数据";
@@ -111,10 +111,10 @@
 "g35-5B-Oaf.title" = "Kaby Lake";
 
 /* Class = "NSTextFieldCell"; title = "High-End Desktop"; ObjectID = "iI2-1V-zMu"; */
-"iI2-1V-zMu.title" = "高端台式机";
+"iI2-1V-zMu.title" = "高端台式机平台";
 
 /* Class = "NSButtonCell"; title = "Download related files, if needed (SSDT, Kext, Driver)"; ObjectID = "io4-qw-79S"; */
-"io4-qw-79S.title" = "下载相关文件,如果需要(SSDT, Kext, Driver)";
+"io4-qw-79S.title" = "如果需要,下载相关文件(比如SSDT, Kext, Drivers等)";
 
 /* Class = "NSButtonCell"; title = "Ryzen / Threadripper"; ObjectID = "kFi-xg-eT8"; */
 "kFi-xg-eT8.title" = "Ryzen / Threadripper";
@@ -138,13 +138,13 @@
 "rSE-jg-gto.label" = "SMBIOS机型";
 
 /* Class = "NSButtonCell"; title = "Show compatible SMBIOS data"; ObjectID = "rvT-wj-fXh"; */
-"rvT-wj-fXh.title" = "显示兼容的SMBIOS机型数据";
+"rvT-wj-fXh.title" = "仅显示和当前选择平台兼容的SMBIOS机型数据";
 
 /* Class = "NSButtonCell"; title = "Coffee Lake"; ObjectID = "wwQ-5u-aDh"; */
 "wwQ-5u-aDh.title" = "Coffee Lake";
 
 /* Class = "NSTextFieldCell"; title = "Board"; ObjectID = "yUq-BJ-IZl"; */
-"yUq-BJ-IZl.title" = "Board";
+"yUq-BJ-IZl.title" = "主板";
 
 /* Class = "NSButtonCell"; title = "Sandy Bridge-E / Ivy Bridge-E"; ObjectID = "zGs-0S-JGY"; */
 "zGs-0S-JGY.title" = "Sandy Bridge-E / Ivy Bridge-E";
