@@ -47,6 +47,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal keyboard input translation to AppleKeyMapAggregator protocol.\nThis option activates the internal keyboard interceptor driver, based on AppleGenericInput aka AptioIntput), to fill AppleKeyMapAggregator database for input functioning. In case a separate driver is used, such as OpenUsbKbDxe, this option should never be enabled."; ObjectID = "4fK-xq-9AN"; */
 "4fK-xq-9AN.ibShadowedToolTip" = "Activez la prise en charge du clavier intégré d'OC. Certains ordinateurs portables ne peuvent pas utiliser le clavier dans l'interface du menu de démarrage. Veuillez le sélectionner! \n Si vous utilisez AppleUsbKbdxe.efi, veuillez définir NON";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Set HDA Traffic Class Select Register to TC0.\n\nAppleHDA kext will function correctly only if TCSEL register is configured to use TC0 traffic class. Refer to Intel I/O Controller Hub 9 (ICH9) Family Datasheet (or any other ICH datasheet) for more details about this register.\n\nNote: This option is independent from AudioSupport. If AppleALC is used it is preferred to use AppleALC alctsel property instead."; ObjectID = "4mo-Ut-bYl"; */
+"4mo-Ut-bYl.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Set HDA Traffic Class Select Register to TC0.\n\nAppleHDA kext will function correctly only if TCSEL register is configured to use TC0 traffic class. Refer to Intel I/O Controller Hub 9 (ICH9) Family Datasheet (or any other ICH datasheet) for more details about this register.\n\nNote: This option is independent from AudioSupport. If AppleALC is used it is preferred to use AppleALC alctsel property instead.";
+
 /* Class = "NSTabViewItem"; label = "Audio"; ObjectID = "5Gm-fv-IpR"; */
 "5Gm-fv-IpR.label" = "Audio";
 
@@ -262,6 +265,9 @@
 
 /* Class = "NSMenuItem"; title = "RuntimeData — EfiRuntimeServicesData"; ObjectID = "c5S-aW-uXu"; Note = "Do not localize"; */
 "c5S-aW-uXu.title" = "RuntimeData — EfiRuntimeServicesData";
+
+/* Class = "NSButtonCell"; title = "ResetTrafficClass"; ObjectID = "cgf-ad-vIe"; */
+"cgf-ad-vIe.title" = "ResetTrafficClass";
 
 /* Class = "NSButtonCell"; title = "KeySupport"; ObjectID = "cia-MM-Epa"; */
 "cia-MM-Epa.title" = "KeySupport";
