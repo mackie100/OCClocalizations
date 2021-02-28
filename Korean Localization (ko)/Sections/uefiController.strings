@@ -29,8 +29,8 @@
 /* Class = "NSButtonCell"; title = "HashServices"; ObjectID = "33a-jy-EES"; */
 "33a-jy-EES.title" = "HashServices";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\n\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi. The quirk lets default boot entry preservation at times when the firmware deletes incompatible boot entries. In summary, this quirk is required to reliably use the Startup Disk preference pane in firmware that is not compatible with macOS boot entries by design."; ObjectID = "3Q0-sm-ooL"; */
-"3Q0-sm-ooL.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\n\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi. The quirk lets default boot entry preservation at times when the firmware deletes incompatible boot entries. In summary, this quirk is required to reliably use the Startup Disk preference pane in firmware that is not compatible with macOS boot entries by design.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\n\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi. The quirk lets default boot entry preservation at times when the firmware deletes incompatible boot entries. In summary, this quirk is required to reliably use the Startup Disk preference pane in firmware that is not compatible with macOS boot entries by design.\n\nBy redirecting Boot prefixed variables to a separate GUID namespace with the help of RequestBootVarRouting quirk we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation wakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or corrupted in any way."; ObjectID = "3Q0-sm-ooL"; */
+"3Q0-sm-ooL.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Request redirect of all Boot prefixed variables from EFI_GLOBAL_VARIABLE_GUID to OC_VENDOR_VARIABLE_GUID.\n\nThis quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi. The quirk lets default boot entry preservation at times when the firmware deletes incompatible boot entries. In summary, this quirk is required to reliably use the Startup Disk preference pane in firmware that is not compatible with macOS boot entries by design.\n\nBy redirecting Boot prefixed variables to a separate GUID namespace with the help of RequestBootVarRouting quirk we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation wakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or corrupted in any way.";
 
 /* Class = "NSTextFieldCell"; title = "TimerResolution"; ObjectID = "3Ql-TM-Oiv"; */
 "3Ql-TM-Oiv.title" = "TimerResolution";
@@ -97,6 +97,9 @@
 
 /* Class = "NSButtonCell"; title = "IgnoreInvalidFlexRatio"; ObjectID = "CWI-LU-4dW"; */
 "CWI-LU-4dW.title" = "IgnoreInvalidFlexRatio";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it."; ObjectID = "CnN-YN-AWu"; */
+"CnN-YN-AWu.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it.";
 
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
@@ -262,6 +265,9 @@
 
 /* Class = "NSButtonCell"; title = "ProvideConsoleGop"; ObjectID = "bdr-Pu-Crr"; */
 "bdr-Pu-Crr.title" = "ProvideConsoleGop";
+
+/* Class = "NSButtonCell"; title = "ActivateHpetSupport"; ObjectID = "c2Y-XK-b7N"; */
+"c2Y-XK-b7N.title" = "ActivateHpetSupport";
 
 /* Class = "NSMenuItem"; title = "RuntimeData — EfiRuntimeServicesData"; ObjectID = "c5S-aW-uXu"; Note = "Do not localize"; */
 "c5S-aW-uXu.title" = "RuntimeData — EfiRuntimeServicesData";

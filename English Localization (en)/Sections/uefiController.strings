@@ -98,6 +98,9 @@
 /* Class = "NSButtonCell"; title = "IgnoreInvalidFlexRatio"; ObjectID = "CWI-LU-4dW"; */
 "CWI-LU-4dW.title" = "IgnoreInvalidFlexRatio";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it."; ObjectID = "CnN-YN-AWu"; */
+"CnN-YN-AWu.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it.";
+
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
 
@@ -262,6 +265,9 @@
 
 /* Class = "NSButtonCell"; title = "ProvideConsoleGop"; ObjectID = "bdr-Pu-Crr"; */
 "bdr-Pu-Crr.title" = "ProvideConsoleGop";
+
+/* Class = "NSButtonCell"; title = "ActivateHpetSupport"; ObjectID = "c2Y-XK-b7N"; */
+"c2Y-XK-b7N.title" = "ActivateHpetSupport";
 
 /* Class = "NSMenuItem"; title = "RuntimeData — EfiRuntimeServicesData"; ObjectID = "c5S-aW-uXu"; Note = "Do not localize"; */
 "c5S-aW-uXu.title" = "RuntimeData — EfiRuntimeServicesData";
