@@ -99,7 +99,7 @@
 "CWI-LU-4dW.title" = "IgnoreInvalidFlexRatio";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it."; ObjectID = "CnN-YN-AWu"; */
-"CnN-YN-AWu.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it.";
+"CnN-YN-AWu.ibShadowedToolTip" = "激活HPET支持.\n\n诸如ICH6之类的旧板可能并不总是在固件首选项中具有HPET设置，此选项尝试强制启用它.";
 
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
