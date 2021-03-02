@@ -152,8 +152,8 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).\n\nNote: This option exists due to some operating systems, namely macOS Big Sur, being incapable of disabling firmware updates with the NVRAM variable (run-efi-updater)."; ObjectID = "Nph-Bb-8b6"; */
 "Nph-Bb-8b6.ibShadowedToolTip" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统（即macOS Big Sur）无法使用NVRAM变量（run-efi-updater）禁用固件更新，因此存在此选项.";
 
-/* Class = "NSTextFieldCell"; title = "BootProtect"; ObjectID = "OeD-Mz-a2a"; */
-"OeD-Mz-a2a.title" = "BootProtect";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in the OpenCore picker.\n\nFor the macOS bootloader, screen reader preference is set in the preferences.efires archive in the isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support, this option is an independent equivalent. Toggling screen reader support in both the OpenCore picker and the macOS bootloader FileVault 2 login window can also be done by using the Command + F5 key combination.\n\nNote: The screen reader requires working audio support. Refer to the UEFI Audio Properties section for more details."; ObjectID = "PDS-bo-Qx8"; */
+"PDS-bo-Qx8.ibShadowedToolTip" = "在启动选择器中启用屏幕语音助理功能。\n也可以使用Command + F5组合键在OpenCore引导选择器和macOS引导加载器FileVault 2登录窗口中切换屏幕语音助理功能。\ n注意：屏幕语音辅助功能需要加载AudioDxe.ef音频驱动。";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "PDr-JO-EKf"; */
 "PDr-JO-EKf.title" = "取消全选";
