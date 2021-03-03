@@ -48,7 +48,7 @@
 "4fK-xq-9AN.ibShadowedToolTip" = "开启 OC 的内置键盘支持,部分笔记本电脑在启动菜单界面无法使用键盘，请选择它！\n如果使用 AppleUsbKbdxe.efi 请设置为 NO";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Set HDA Traffic Class Select Register to TC0.\n\nAppleHDA kext will function correctly only if TCSEL register is configured to use TC0 traffic class. Refer to Intel I/O Controller Hub 9 (ICH9) Family Datasheet (or any other ICH datasheet) for more details about this register.\n\nNote: This option is independent from AudioSupport. If AppleALC is used it is preferred to use AppleALC alctsel property instead."; ObjectID = "4mo-Ut-bYl"; */
-"4mo-Ut-bYl.ibShadowedToolTip" = "将HDA流量等级选择寄存器设置为TC0.\n\n仅当TCSEL寄存器配置为使用TC0流量等级时，AppleHDA kext才能正常运行. 有关此寄存器的更多详细信息，请参阅英特尔I/O控制器9(ICH9)数据表(或任何其他ICH数据表).\n\n注意:此选项独立于AudioSupport。 如果使用AppleALC，则最好改用AppleALC alctsel属性。";
+"4mo-Ut-bYl.ibShadowedToolTip" = "将HDA流量等级选择寄存器设置为TC0.\n\n仅当TCSEL寄存器配置为使用TC0流量等级时，AppleHDA kext才能正常运行. 有关此寄存器的更多详细信息，请参阅英特尔I/O控制器9(ICH9)数据表(或任何其他ICH数据表).\n\n注意:此选项独立于AudioSupport。 如果使用AppleALC，则最好改用AppleALC alctsel属性.";
 
 /* Class = "NSTabViewItem"; label = "Audio"; ObjectID = "5Gm-fv-IpR"; */
 "5Gm-fv-IpR.label" = "开机音频";
