@@ -1,6 +1,6 @@
-=<span class="title">Desktop: (0th Gen) Yonah, Conroe and Penryn 0.6.6</span><br/>
+=<span class="title">Desktop: (0th Gen) Yonah, Conroe and Penryn 0.6.7</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel Yonah, Conroe and Penryn Desktop Sanity Check
+# OpenCore v0.6.7 Intel Yonah, Conroe and Penryn Desktop Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/penryn.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/penryn.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

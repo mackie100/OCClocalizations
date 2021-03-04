@@ -1,6 +1,6 @@
-=<span class="title">Laptop: (1st Gen) Clarksfield and Arrandale OpenCore 0.6.6</span><br/>
+=<span class="title">Laptop: (1st Gen) Clarksfield and Arrandale OpenCore 0.6.7</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel Clarksfield and Arrandale Laptop Sanity Check
+# OpenCore v0.6.7 Intel Clarksfield and Arrandale Laptop Sanity Check
 =<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/arrandale.html>https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/arrandale.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

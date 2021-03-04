@@ -1,6 +1,6 @@
-=<span class="title">Laptop: (4th Gen) Haswell OpenCore 0.6.6</span><br/>
+=<span class="title">Laptop: (4th Gen) Haswell OpenCore 0.6.7</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel Haswell Laptop Sanity Check
+# OpenCore v0.6.7 Intel Haswell Laptop Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/haswell.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

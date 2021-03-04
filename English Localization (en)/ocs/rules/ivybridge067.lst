@@ -1,6 +1,6 @@
-=<span class="title">Desktop: (3rd Gen) Ivy Bridge OpenCore 0.6.6</span><br/>
+=<span class="title">Desktop: (3rd Gen) Ivy Bridge OpenCore 0.6.7</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel Ivy Bridge Desktop Sanity Check
+# OpenCore v0.6.7 Intel Ivy Bridge Desktop Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

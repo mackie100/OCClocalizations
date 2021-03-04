@@ -1,6 +1,6 @@
-=<span class="title">HEDT: (6th Gen) Broadwell-E OpenCore 0.6.6</span><br/>
+=<span class="title">HEDT: (6th Gen) Broadwell-E OpenCore 0.6.7</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel Broadwell-E Sanity Check
+# OpenCore v0.6.7 Intel Broadwell-E Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/broadwell-e.html">https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/broadwell-e.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

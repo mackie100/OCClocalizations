@@ -1,6 +1,6 @@
-=<span class="title">Desktop: (6th Gen) SkyLake OpenCore 0.6.6</span><br/>
+=<span class="title">Desktop: (6th Gen) SkyLake OpenCore 0.6.7</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel SkyLake Sanity Check
+# OpenCore v0.6.7 Intel SkyLake Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html
