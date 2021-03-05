@@ -248,11 +248,12 @@ UEFI
  PlayChime~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  VolumeAmplifier~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SetupDelay~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ ResetTrafficClass~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold=2
+ KeyMergeThreshold=~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.7
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
@@ -303,6 +304,7 @@ UEFI
  AvoidHighAlloc~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
  DeduplicateBootOrder~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.5"
  DisableSecurityPolicy=no " <b>{$setting}</b> = <b>{$value}</b> If you have a Microsoft Surface device, please enable this"
+ ActivateHpetSupport=no
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=no
  ReconnectOnResChange~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
