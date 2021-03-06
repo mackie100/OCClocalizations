@@ -257,7 +257,7 @@ UEFI
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold=~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.7
+ KeyMergeThreshold~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.7
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
