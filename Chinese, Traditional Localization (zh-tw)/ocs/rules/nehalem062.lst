@@ -50,7 +50,7 @@ Booter
  ProtectUefiServices=no
  ProvideCustomSlide=yes " <b>{$setting}</b> = <b>{$value}</b> 如果您的主機板不支持UEFI，請停用此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您支持UEFI時才需要"
  ProvideMaxSlide=0
- RebuildAppleMemoryMap=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算引导OS X 10.6或更早版本，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划引导OS X 10.6或更早版本時才需要"
+ RebuildAppleMemoryMap=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算引導OS X 10.6或更早版本，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划引導OS X 10.6或更早版本時才需要"
  SetupVirtualMap=yes " <b>{$setting}</b> = <b>{$value}</b> 如果您的主機板不支持UEFI，請停用此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您支持UEFI時才需要"
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.7開始已棄用 - 請參考<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
