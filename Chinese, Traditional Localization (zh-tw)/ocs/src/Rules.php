@@ -313,7 +313,7 @@ class SettingRule extends Rule {
                         $ret[$key] = empty($msgtrue) ? "\n<b>$key</b> = <b>".Rule::valStr($val, $node->{$key})."</b>" : Rule::setVars($msgtrue);
                     } else {
                         if(empty($msgfalse)) {
-                            $ret[$key] = "-<b>$key</b> = <b>".Rule::valStr($val, $node->{$key})."</b>-->但通常设置为 <b>".Rule::valStr($right, $node->{$key})."</b>";
+                            $ret[$key] = "-<b>$key</b> = <b>".Rule::valStr($val, $node->{$key})."</b>-->但通常設定為 <b>".Rule::valStr($right, $node->{$key})."</b>";
                         } else {
                             $ret[$key] = Rule::setVars($msgfalse);
                         }
@@ -321,7 +321,7 @@ class SettingRule extends Rule {
                 }
             } else if($this->left === $key) {
                 if(!is_array($val)) {
-                    return ["!<font color=red><b>$key</b></font> -->内容缺失"];
+                    return ["!<font color=red><b>$key</b></font> -->缺少內容"];
                 }
                 //
                 // Special case, regex across all remaining attributes
@@ -401,7 +401,7 @@ class SettingRule extends Rule {
 
             $vars = $this->vars + [ '{$setting}' => $this->left, '{$value}' => $right ];
             // Overriding user-supplied msgfalse in this missing setting case
-            $msgfalse = "-<font color=red><b>{$this->left}</b></font> -->缺失内容. 通常设置为 <b>{$right}</b>";
+            $msgfalse = "-<font color=red><b>{$this->left}</b></font> --缺少內容. 通常設定為 <b>{$right}</b>";
             $ret = [$msgfalse];
         }
         return $ret;

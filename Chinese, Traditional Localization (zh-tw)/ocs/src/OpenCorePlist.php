@@ -12,7 +12,7 @@ class OpenCorePlist extends CFPropertyList\CFPropertyList {
         $seen_title = [];
         // Check for missing groups
         foreach(array_keys(array_diff_key($rules->rule, $this->toArray())) as $missing_group) {
-            $this->print_msg("-<span class=\"warning\">$missing_group</span> -->缺失此组内容");
+            $this->print_msg("-<span class=\"warning\">$missing_group</span> -->缺少此組內容");
         }
         // Check for missing sections
         $confArray = $this->toArray();
@@ -20,13 +20,13 @@ class OpenCorePlist extends CFPropertyList\CFPropertyList {
             foreach($block as $k=>$v) {
                 if($k == 'top' || $k[1]==':') continue;
                 if(!array_key_exists(trim($k,':'), $confArray[$group])) {
-                    $this->print_msg("!<b>$group</b> - <b>".trim($k,':')."</b> -->缺失此部分");
+                    $this->print_msg("!<b>$group</b> - <b>".trim($k,':')."</b> -->缺少此部分");
                 }
             }
         }
         foreach($this->toArray() as $group=>$d) {
             if (!array_key_exists($group, $rules->rule)) {
-                $this->print_msg("-<span class=\"warning\">$group</span> -->这些内容不需要");
+                $this->print_msg("-<span class=\"warning\">$group</span> -->這些內容都不需要");
                 continue;
             }
             echo "\n<br/><div class=\"group\" style=\"text-align:center\">$group</div><br/>\n";
@@ -112,7 +112,7 @@ class OpenCorePlist extends CFPropertyList\CFPropertyList {
             default: $sev = 'good'; $icon = 'check-circle'; break;
         }
         if(preg_match('/{\$([^}]+)}/', $msg, $match)) {
-            echo "<span class=\"err\"> -->这里缺失了<b>{$match[1]}</b></span><br/>\n";
+            echo "<span class=\"err\"> -->這裡缺少了<b>{$match[1]}</b></span><br/>\n";
         } else {
             echo "<span class=\"{$sev}\">$msg</span><br/>\n";  // Markdown-extra to add the severity class - see main.css
         }
