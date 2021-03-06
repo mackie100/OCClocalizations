@@ -84,9 +84,9 @@ Kernel
  [BundlePath]==VoodooHDA.kext " <b>{$BundlePath}</b> -->請注意:<b>AppleALC.kext</b> 往往具有更好的音频质量"
  [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 請查看<a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts 文件]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 這是AMD專用的kext，請勿在Intel上使用"
- [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
- [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在台式机上不起作用"
- [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在台式机上不起作用"
+ [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 雖然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
+ [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在桌機上不起作用"
+ [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在桌機上不起作用"
  [BundlePath]==XHCI-unsupported.kext  "<b>{$BundlePath}</b> -->你可能不需要這個"
  [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的偽造設備ID的方法"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的偽造設備ID的方法"
@@ -110,7 +110,7 @@ Kernel
  ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceSecureBootScheme=no
  IncreasePciBarSize=no
- LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您拥有HP筆記型電腦時才需要"
+ LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您拥有HP筆記型電腦時才需要"
  PanicNoKextDump=yes
  PowerTimeoutKernelPanic=yes
  ThirdPartyDrives=no
@@ -202,7 +202,7 @@ PlatformInfo
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SystemMemoryStatus=Auto
  SupportsCsm~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.5開始被<b>AdviseWindows</b>取代"
- SystemProductName~="(iMac13,1|iMac13,2|MacPro6,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对於Bridge台式机系统，這不是建議的SMBIOS. 請參考 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo 文件]</a>"
+ SystemProductName~="(iMac13,1|iMac13,2|MacPro6,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对於Bridge桌機系统，這不是建議的SMBIOS. 請參考 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo 文件]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->應該設定為您生成的板卡序號. 請參考 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo 文件]</a>":" <b>{$setting}</b> -->已設定"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您應該將此設定為您的NIC MAC地址. 請參考 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo 文件]</a>":" <b>{$setting}</b> -->已設定"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->應該設定為您生成的系统序號. 請參考 <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/ivy-bridge.html#platforminfo>[PlatformInfo 文件]</a>":" <b>{$setting}</b> -->已設定"
@@ -275,8 +275,8 @@ UEFI
  AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
- FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault時才需要"
- HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault時才需要"
+ FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
+ HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
  OSInfo=no
  UnicodeCollation=no
  ConsoleControl~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"

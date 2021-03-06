@@ -1,6 +1,6 @@
-=<span class="title">Laptop:五代Broadwell筆記型電腦 OpenCore 0.6.6 完整性檢查結果</span><br/>
+=<span class="title">Laptop:五代Broadwell筆記型電腦 OpenCore 0.6.7 完整性檢查結果</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel Broadwell Laptop Sanity Check
+# OpenCore v0.6.7 Intel Broadwell Laptop Sanity Check
 =參考文章<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell#kernel
@@ -80,7 +80,7 @@ Kernel
  [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要增加 <b>alcid=</b>N 因為您使用的是AppleALC.kext';":"$alcbootarg=;"
  [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 請查看<a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts 文件]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 這是AMD專用的kext，請勿在Intel上使用"
- [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
+ [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 雖然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
  [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->請確保您的筆記型電腦裝有光線傳感器，否則可能會導致問題"
  [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->請確保您的電池已正確修補成8位，否則可能會導致問題"
  [BundlePath]==XHCI-unsupported.kext  "<b>{$BundlePath}</b> -->你可能不需要這個"
@@ -92,7 +92,7 @@ Kernel
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算启动10.10或更早版本，则應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
+ AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算启动10.10或更早版本，則應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您應該在BIOS中停用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
@@ -106,7 +106,7 @@ Kernel
  ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceSecureBootScheme=no
  IncreasePciBarSize=no
- LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您拥有HP筆記型電腦時才需要"
+ LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您拥有HP筆記型電腦時才需要"
  PanicNoKextDump=yes
  PowerTimeoutKernelPanic=yes
  SetApfsTrimTimeout=-1
@@ -246,12 +246,12 @@ UEFI
  PlayChime~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  VolumeAmplifier~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SetupDelay~=.* " <b>{$setting}</b> = <b>{$value}</b>"
-
+ ResetTrafficClass~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold=2
+ KeyMergeThreshold~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.7中已棄用"
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
@@ -287,6 +287,7 @@ UEFI
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceResolution=no
+ GopPassThrough=no
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
@@ -302,6 +303,7 @@ UEFI
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.6開始已棄用"
  DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.6中已棄用"
  DisableSecurityPolicy=no
+ ActivateHpetSupport=no
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=yes
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.6開始已棄用 - 請參考 Output/${setting}"

@@ -1,6 +1,6 @@
-=<div style="text-align:center;font-size:30px;">SkyLake Desktop OpenCore 0.6.6 完整性檢查結果</div><br/>
+=<div style="text-align:center;font-size:30px;">SkyLake Desktop OpenCore 0.6.7 完整性檢查結果</div><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel SkyLake Sanity Check
+# OpenCore v0.6.7 Intel SkyLake Sanity Check
 =參考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake#kernel
@@ -77,9 +77,9 @@ Kernel
  [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要增加 <b>alcid=</b>N 因為您使用的是AppleALC.kext';":"$alcbootarg=;"
  [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 請查看<a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts 文件]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 這是AMD專用的kext，請勿在Intel上使用"
- [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
- [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在台式机上不起作用"
- [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在台式机上不起作用"
+ [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 雖然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
+ [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在桌機上不起作用"
+ [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在桌機上不起作用"
  [BundlePath]==XHCI-unsupported.kext  "<b>{$BundlePath}</b> -->你可能不需要這個"
  [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的偽造設備ID的方法"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的偽造設備ID的方法"
@@ -102,7 +102,7 @@ Kernel
  ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceSecureBootScheme=no
  IncreasePciBarSize=no
- LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您拥有HP筆記型電腦時才需要"
+ LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您拥有HP筆記型電腦時才需要"
  PanicNoKextDump=yes
  PowerTimeoutKernelPanic=yes
  SetApfsTrimTimeout=-1
@@ -198,7 +198,7 @@ PlatformInfo
  SystemMemoryStatus=Auto
  MaxBIOSVersion=no
  SupportsCsm~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.5開始被<b>AdviseWindows</b>取代"
- SystemProductName~="(iMac17,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对於Skylake台式机系统，這不是建議的SMBIOS. 請參考<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlatformInfo 文件]</a>"
+ SystemProductName~="(iMac17,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对於Skylake桌機系统，這不是建議的SMBIOS. 請參考<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlatformInfo 文件]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->應該設定為您生成的板卡序號. 請參考<a href=https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake#platforminfo>[PlatformInfo 文件]</a>:" <b>{$setting}</b> -->已設定"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您應該將此設定為您的NIC MAC地址. 請參考<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlatformInfo 文件]</a>":" <b>{$setting}</b> -->已設定"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->應該設定為您生成的系统序號. 請參考<a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/skylake.html#platforminfo>[PlaformInfo 文件]</a>":" <b>{$setting}<b> -->已設定"
@@ -242,12 +242,12 @@ UEFI
  PlayChime~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  VolumeAmplifier~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SetupDelay~=.* " <b>{$setting}</b> = <b>{$value}</b>"
-
+ ResetTrafficClass~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold=2
+ KeyMergeThreshold~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.7中已棄用"
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
@@ -271,8 +271,8 @@ UEFI
  AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
- FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault時才需要"
- HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault時才需要"
+ FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
+ HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
  OSInfo=no
  UnicodeCollation=no
  ConsoleControl~=.* "!<b>{$setting}</b> 在OpenCore v0.5.6中已棄用-請參考 UEFI/TextRenderer"
@@ -283,6 +283,7 @@ UEFI
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceResolution=no
+ GopPassThrough=no
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
@@ -298,6 +299,7 @@ UEFI
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.6開始已棄用"
  DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.6中已棄用"
  DisableSecurityPolicy=no
+ ActivateHpetSupport=no
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=no
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.6開始已棄用 - 請參考 Output/${setting}"

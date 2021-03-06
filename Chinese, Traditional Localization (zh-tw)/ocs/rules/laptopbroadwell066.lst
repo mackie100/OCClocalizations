@@ -80,7 +80,7 @@ Kernel
  [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要增加 <b>alcid=</b>N 因為您使用的是AppleALC.kext';":"$alcbootarg=;"
  [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 請查看<a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts 文件]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 這是AMD專用的kext，請勿在Intel上使用"
- [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
+ [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 雖然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
  [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->請確保您的筆記型電腦裝有光線傳感器，否則可能會導致問題"
  [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->請確保您的電池已正確修補成8位，否則可能會導致問題"
  [BundlePath]==XHCI-unsupported.kext  "<b>{$BundlePath}</b> -->你可能不需要這個"
@@ -92,7 +92,7 @@ Kernel
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算启动10.10或更早版本，则應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
+ AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算启动10.10或更早版本，則應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您應該在BIOS中停用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
@@ -106,7 +106,7 @@ Kernel
  ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceSecureBootScheme=no
  IncreasePciBarSize=no
- LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您拥有HP筆記型電腦時才需要"
+ LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> 如果您有惠普筆記型電腦，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您拥有HP筆記型電腦時才需要"
  PanicNoKextDump=yes
  PowerTimeoutKernelPanic=yes
  SetApfsTrimTimeout=-1

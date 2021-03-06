@@ -78,9 +78,9 @@ Kernel
  [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要增加 <b>alcid=</b>N 因為您使用的是AppleALC.kext';":"$alcbootarg=;"
  [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 請查看<a href=https://desktop.dortania.ml/ktext.html#kexts>[Kexts 文件]</a>"
  [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 這是AMD專用的kext，請勿在Intel上使用"
- [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
- [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在台式机上不起作用"
- [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在台式机上不起作用"
+ [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 雖然這可能有效, 但<b>SmallTreeIntel82576.kext</b> 被認為更可靠"
+ [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在桌機上不起作用"
+ [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->這個VirtualSMC筆記型電腦插件在桌機上不起作用"
  [BundlePath]==XHCI-unsupported.kext  "<b>{$BundlePath}</b> -->你可能不需要這個"
  [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的偽造設備ID的方法"
  [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的偽造設備ID的方法"
@@ -187,7 +187,7 @@ PlatformInfo
  SpoofVendor=yes
  AdviseWindows=no
  SupportsCsm~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.5開始被<b>AdviseWindows</b>取代"
- SystemProductName~="(iMac19,1|iMac18,3)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对於Coffee Lake台式机系统，這不是建議的SMBIOS. 請參考 <a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#platforminfo>[PlatformInfo 文件]</a>"
+ SystemProductName~="(iMac19,1|iMac18,3)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对於Coffee Lake桌機系统，這不是建議的SMBIOS. 請參考 <a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#platforminfo>[PlatformInfo 文件]</a>"
  MLB=M000000000001 "!<b>{$setting}</b> -->應該設定為您生成的板卡序號. 請參考 <a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#platforminfo>[PlatformInfo 文件]</a>":" <b>{$setting}</b> -->已設定"
  ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您應該將此設定為您的NIC MAC地址. 請參考 <a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#platforminfo>[PlatformInfo 文件]</a>":" <b>{$setting}</b> -->已設定"
  SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->應該設定為您生成的系统序號. 請參考<a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#platforminfo>[PlatformInfo 文件]</a>":" <b>{$setting}</b> -->已設定"
