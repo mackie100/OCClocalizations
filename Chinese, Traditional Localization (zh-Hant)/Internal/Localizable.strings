@@ -1,0 +1,790 @@
+/* mountefiController */
+"%@ APFS Container [%@]" = "%1$@ APFS容器 [%2$@]";
+
+/* mountefiController */
+"%lu partitions" = "%lu 个分区";
+
+/* sidebarMenu */
+"ACPI" = "ACPI-ACPI设置";
+
+/* No comment provided by engineer. */
+"B/s" = "B/s";
+
+/* startScreen */
+"Backup Configurations" = "备份配置";
+
+/* sectionSourceListHexConverterPopover */
+"base64 string" = "base64字符";
+
+/* sidebarMenu */
+"Booter" = "Booter-启动设置";
+
+/* opencoreDownloaderController reading_savingOperation */
+"Cancel" = "取消";
+
+/* mountefiController */
+"Capacity In Use:" = "使用容量:";
+
+/* kextsInstallerController */
+"Check" = "检测中...";
+
+/* mountefiController */
+"Check Partition" = "检测分区";
+
+/* startScreen */
+"Configurations Acquired" = "获取到的配置";
+
+/* pasteBoardController */
+"Copy" = "复制";
+
+/* AFNetworking */
+"Could not decode string: %@" = "不能解码字符: %@";
+
+/* pasteBoardController */
+"Cut" = "剪切";
+
+/* AFNetworking */
+"Data failed decoding as a UTF-8 string" = "数据无法解码为UTF-8字符串";
+
+/* No comment provided by engineer. */
+"Day" = "天";
+
+/* No comment provided by engineer. */
+"Days" = "天";
+
+/* sectionSourceListHexConverterPopover */
+"decimal string" = "10进制字符";
+
+/* kextsInstallerController */
+"Delete: %@ successfully removed" = "删除: %@ 已成功删除";
+
+/* installDriversController */
+"Delete: %@.efi successfully removed" = "删除: %@.efi 已成功删除";
+
+/* mountefiController */
+"Device BSD Name:" = "设备BSD名称:";
+
+/* mountefiController */
+"Device BSD Name: %@" = "设备BSD名称: %@";
+
+/* mountefiController */
+"Device BSD Name: N/A" = "设备BSD名称:N/A";
+
+/* mountefiController */
+"Device Identifier: %@ - APFS Physical Store Disk: %@ - UUID: %@ - Size: %@" = "设备标识符: %1$@ - APFS物理存储磁盘: %2$@ - UUID: %3$@ - 容量: %4$@";
+
+/* mountefiController */
+"Device Identifier: %@ - Partition Scheme: %@ - Size: %@" = "设备标识符: %1$@ - 分区方案: %2$@ - 容量: %3$@";
+
+/* sidebarMenu */
+"DeviceProperties" = "DeviceProperties-设备属性设置";
+
+/* mountefiController */
+"Devices / Media Name:" = "设备 / 介质名:";
+
+/* mountefiController */
+"Devices / Media Name: %@" = "设备 / 介质名: %@";
+
+/* mountefiController */
+"Disk Identifier:" = "磁盘标识符:";
+
+/* mountefiController */
+"Disk Identifier: %@ Status: [Current Boot Disk]" = "磁盘标识符: %@ 状态: [当前引导磁盘]";
+
+/* mountefiController */
+"Disk Type:" = "磁盘类型:";
+
+/* mountefiController */
+"Disk Type: %@" = "磁盘类型: %@";
+
+/* mountefiController */
+"Disk Type: APFS Container" = "磁盘类型:APFS容器";
+
+/* mountefiController */
+"Disk Type: APFS Volume" = "磁盘类型:: APFS卷";
+
+/* mountefiController */
+"Disk Type: Apple HFS+" = "磁盘类型:: Apple HFS+";
+
+/* mountefiController */
+"Disk Type: N/A" = "磁盘类型:: N/A";
+
+/* mountefiController */
+"Disk Type: SoftRAID Cache" = "磁盘类型:: SoftRAID Cache";
+
+/* mountefiController */
+"Disk Type: SoftRAID Scratch" = "磁盘类型: SoftRAID Scratch";
+
+/* mountefiController */
+"Disk Type: SoftRAID Status" = "磁盘类型:SoftRAID Status";
+
+/* mountefiController */
+"Disk Type: SoftRAID Volume" = "磁盘类型: SoftRAID Volume";
+
+/* mountefiController */
+"Disk UUID:" = "磁盘UUID:";
+
+/* mountefiController */
+"Disk UUID: %@" = "磁盘UUID:%@";
+
+/* mountefiController */
+"Disk UUID: N/A" = "磁盘UUID:N/A";
+
+/* installDriversController
+   kextsInstallerController
+   opencoreDownloaderController */
+"Download" = "下载";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: %@ has been successfully copied to %@" = "下载: %1$@ 已成功复制到 %2$@";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: %@ has been successfully updated to %@" = "下载: %1$@ 已成功更新至%2$@";
+
+/* kextsInstallerController */
+"Download: %@ successfully backed up to %@" = "下载: %1$@ 成功备份到 %2$@";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: %@ successfully downloaded...." = "下载: %@成功下载....";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: Error: %@" = "下载: 错误: %@";
+
+/* kextsInstallerController */
+"Download: ERROR: %@" = "下载: 错误: %@";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: ERROR: You don't have permission to write here!" = "下载: 错误: 你没有在这里写的权限!";
+
+/* installDriversController
+   kextsInstallerController */
+"Download: Path doesn't exist!" = "下载:路径不存在!";
+
+/* installDriversController */
+"Download: Please select a driver name!" = "下载：请选择一个驱动程序名称！";
+
+/* installToolsController */
+"Download: Please select a tool name!" = "下载: 请选择一个工具名称!";
+
+/* kextsInstallerController */
+"Download: Please select a kext name!" = "下载：请选择一个kext名称！";
+
+/* opencoreDownloaderController */
+"Downloading %@" = "下载中 %@";
+
+/* reading_savingOperation */
+"Error" = "错误";
+
+/* opencoreDownloaderController */
+"Error during unzipping file!" = "解压缩文件时出错！";
+
+/* opencoreDownloaderController */
+"Error: %@" = "错误: %@";
+
+/* kextsInstallerController */
+"FakeSMC detected... Choose an add on to install..." = "检测到FakeSMC ...选择要添加的安装......";
+
+/* No comment provided by engineer. */
+"GB/s" = "GB/s";
+
+/* sectionSourceListHexConverterPopover */
+"HEX converter" = "16进制转换器";
+
+/* sectionSourceListHexConverterPopover */
+"HEX string" = "16进制字符";
+
+/* No comment provided by engineer. */
+"Hour" = "小时";
+
+/* No comment provided by engineer. */
+"Hours" = "小时";
+
+/* openPanelConfigConverterTool */
+"Import a Clover config file for conversion" = "导入Clover配置文件以进行转换";
+
+/* installDriversController
+   kextsInstallerController
+   opencoreDownloaderController */
+"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "初始化：无法读取数据库。找不到服务器或没有互联网连接。";
+
+/* bdmesgController */
+"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "现在这里什么都看不到！ 试试在Misc其他设置->Debug调试部分配置\"Target\"键值，具体内容参考OC官方PDF手册";
+
+/* sectionSourceListHexConverterPopover */
+"Invalid base64 data" = "无效base64数据";
+
+/* sectionSourceListHexConverterPopover */
+"Invalid data" = "无效数据";
+
+/* sectionSourceListHexConverterPopover */
+"Invalid HEX data" = "无效的十六进制数据";
+
+/* No comment provided by engineer. */
+"KB/s" = "KB/s";
+
+/* sidebarMenu */
+"Kernel" = "Kernel-内核设置";
+
+/* left_toolbar */
+"Load Configuration" = "加载配置";
+
+/* kextsInstallerController */
+"Manual Installation: %@ has been successfully copied to %@" = "手动安装 %1$@ 已成功复制到%2$@";
+
+/* kextsInstallerController */
+"Manual Installation: %@ has been successfully updated to %@" = "手动安装: %1$@ 已成功更新至 %2$@";
+
+/* kextsInstallerController */
+"Manual Installation: %@ successfully backed up to %@" = "手动安装: %1$@已成功备份至 %2$@";
+
+/* kextsInstallerController */
+"Manual Installation: ERROR: %@" = "手动安装 :错误: %@";
+
+/* kextsInstallerController */
+"Manual Installation: ERROR: You don't have permission to write here!" = "手动安装: 错误: 你没有在这里写的权限！";
+
+/* kextsInstallerController */
+"Manual Installation: Kext file required!" = "手动安装：需要Kext文件！";
+
+/* kextsInstallerController */
+"Manual Installation: Path doesn't exist!" = "手动安装：路径不存在！";
+
+/* No comment provided by engineer. */
+"MB/s" = "MB/s";
+
+/* No comment provided by engineer. */
+"Minute" = "分钟";
+
+/* No comment provided by engineer. */
+"Minutes" = "分钟";
+
+/* sidebarMenu */
+"Misc" = "Misc-其它设置";
+
+/* mountefiController */
+"Mount Point:" = "挂载点:";
+
+/* mountefiController */
+"Mount Point: %@" = "挂载点: %@";
+
+/* mountefiController */
+"Mount Point: N/A" = "挂载点: N/A";
+
+/* opencoreDownloaderController */
+"No EFI folder found. Creating one...." = "找不到已挂载的EFI分区。创建一个....";
+
+/* sidebarMenu */
+"NVRAM" = "NVRAM-随机访问存储器设置";
+
+/* opencoreDownloaderController */
+"Old file has been renamed to BOOTx64_%@.efi.bak" = "旧文件已重命名为BOOTx64_%@.efi.bak";
+
+/* opencoreDownloaderController */
+"Old file has been renamed to OpenCore_%@.efi.bak" = "旧文件已重命名为OpenCoree_%@.efi.bak";
+
+/* reading_savingOperation */
+"OpenCore Configurator could not be synchronized because an error occurred: %@" = "由于发生错误，OpenCore Configurator无法同步: %@";
+
+/* pasteBoardController */
+"Paste" = "粘贴";
+
+/* left_toolbar */
+"Paypal - Free Donation" = "Paypal - 免费捐赠";
+
+/* sidebarMenu */
+"PlatformInfo" = "PlatformInfo-机型平台设置";
+
+/* reading_savingOperation */
+"Repair" = "修复";
+
+/* mainMenu */
+"Restart" = "重启";
+
+/* left_toolbar */
+"Save" = "保存";
+
+/* left_toolbar */
+"Save As..." = "另存为...";
+
+/* left_toolbar */
+"Save, Save As Configuration" = "保存, 另存为配置";
+
+/* No comment provided by engineer. */
+"Second" = "秒";
+
+/* No comment provided by engineer. */
+"Seconds" = "秒";
+
+/* left_toolbar */
+"Share" = "分享";
+
+/* kextsInstallerController */
+"Show Location: Path doesn't exist!" = "显示位置：路径不存在！";
+
+/* mountefiController */
+"Size:" = "容量:";
+
+/* kextsInstallerController */
+"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "信息: %1$@.kext =>Identifier: %2$@ | 版本: %3$@%4$@";
+
+/* rtvariablesController */
+"Sorry to generate a valid ROM, you need unique UUID in SystemParameters->Custom UUID (copy from system or generate one) or go in SMBIOS->Smuuid and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "抱歉生成有效的ROM，您需要SystemParameters-> Custom UUID中的唯一UUID（从系统复制或生成一个）或进入SMBIOS-> Smuuid并添加以下格式的有效uuid：XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX 。";
+
+/* mountefiController */
+"Status:" = "状态:";
+
+/* reading_savingOperation */
+"Synchronized" = "同步";
+
+/* sectionSourceListHexConverterPopover */
+"text string" = "文本字符";
+
+/* mainMenu */
+"To apply this change, you must restart the app" = "要应用此更改，您必须重新启动应用程序";
+
+/* mainMenu */
+"Do you also want to change fork type?" = "您还想更改分支类型吗？";
+
+/* mainMenu */
+"Do you also want to change configuration properties type?" = "您是否还想更改版本属性类型？";
+
+/* sidebarMenu */
+"UEFI" = "UEFI-UEFI设置";
+
+/* installDriversController
+   opencoreDownloaderController */
+"Unable to read database." = "无法读取数据库。";
+
+/* mountefiController */
+"Untitled" = "无标题";
+
+/* opencoreDownloaderController */
+"Unzip process was aborted because I can't create a backup" = "解压缩过程中止，因为我无法创建备份";
+
+/* kextsInstallerController */
+"Unzip: Error during unzipping file!" = "解压缩：解压缩文件时出错!";
+
+/* opencoreDownloaderController */
+"Unzipped..." = "解压缩...";
+
+/* kextsInstallerController */
+"Update available for %@.kext => Local version: %@ | Remote version: %@" = "更新可用于 %1$@.kext =>本地版本: %2$@ | 远程版本: %3$@";
+
+/* kextsInstallerController */
+"VirtualSMC detected... Choose an add on to install..." = "检测到VirtualSMC ...选择要添加的安装...";
+
+/* mountefiController */
+"Volume Identifier:" = "卷标识符:";
+
+/* mountefiController */
+"Volume Identifier: %@" = "卷标识符: %@";
+
+/* mountefiController */
+"Volume Identifier: %@ Status: [Current Boot Disk]" = "卷标识符: %@ 状态: [当前启动磁盘]";
+
+/* mountefiController */
+"Volume Name:" = "卷名:";
+
+/* mountefiController */
+"Volume Name: %@" = "卷名: %@";
+
+/* mountefiController */
+"Volume UUID:" = "卷UUID:";
+
+/* mountefiController */
+"Volume UUID: %@" = "卷UUID: %@";
+
+/* mountefiController */
+"Volume UUID: N/A" = "卷UUID: N/A";
+
+/* opencoreDownloaderController */
+"You don't have permission to write here!" = "您无权限在这里写入！";
+
+/* dockMenu */
+"New Configuration..." = "新建配置...";
+
+/* dockMenu */
+"Open Configuration..." = "打开配置...";
+
+/* dockMenu */
+"Leave A Message" = "留言";
+
+/* installDriversController opencoreDownloaderController */
+"No EFI folder found.....\n" = "未找到已挂载的EFI分区！\n";
+
+/* preferencesPanel */
+"Release Version" = "正式版";
+
+/* preferencesPanel */
+"Development Version" = "开发版";
+
+/* deviceProperties_table_properties_menu */
+"Audio Device Properties" = "音频设备属性";
+
+/* deviceProperties_table_properties_menu */
+"Video Device Properties" = "视频设备属性";
+
+/* deviceProperties_table_properties_menu */
+"Advanced Properties" = "高级属性";
+
+/* deviceProperties_table_properties_menu */
+"display number" = "等显示器编号";
+
+/* deviceProperties_table_properties_menu */
+"Connections" = "接口";
+
+/* deviceProperties_table_properties_menu */
+"connector index" = "等接口索引号";
+
+/* deviceProperties_table_properties_menu */
+"Other" = "其它";
+
+/* deviceProperties_table_properties_menu */
+"Presets" = "预设值";
+
+/* deviceProperties_table_properties_menu */
+"High Sierra" = "High Sierra";
+
+/* deviceProperties_table_properties_menu */
+"Mojave and above" = "Mojave或更高版本";
+
+/* deviceProperties_table_properties_menu */
+"Device Properties" = "设备属性";
+
+/* deviceProperties_table_properties_menu */
+"Help" = "帮助";
+
+/* deviceProperties_table_properties_menu */
+"Select '%@' device before adding '%@' key" = "在添加'%2$@'键之前选择'%1$@'设备";
+
+/* deviceProperties_table_properties_menu */
+"Select a '%@' device before adding a preset" = "在添加预设之前选择一个'%1$@'设备";
+
+/* deviceProperties_table_properties_menu */
+"Select a Platform ID before adding a preset" = "在添加预设之前选择平台ID";
+
+/* deviceProperties_table_properties_menu */
+"Select a valid device path" = "选择一个有效的设备路径";
+
+/* deviceProperties_table_properties_menu */
+"Product Name" = "产品名称";
+
+/* deviceProperties_table_properties_menu */
+"CPU Codename" = "CPU架构";
+
+/* deviceProperties_table_properties_menu */
+"Platform ID" = "平台ID";
+
+/* deviceProperties_table_properties_menu */
+"Device ID" = "设备ID";
+
+/* deviceProperties_table_properties_menu */
+"Device Name" = "设备名称";
+
+/* deviceProperties_table_properties_menu */
+"Available Device IDs" = "可用设备ID";
+
+/* deviceProperties_table_properties_menu */
+"Available Models" = "可用型号";
+
+/* nvram_add_properties_table */
+"Select a valid UUID" = "选择一个有效的UUID";
+
+/* compatibilityWarningScreen */
+"You seem to have an old version of OpenCore bootloader." = "您似乎加载了一个旧版本的OpenCore引导程序。";
+
+/* compatibilityWarningScreen */
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "引导加载程序看起来好像没有安装，或者您的NVRAM不是本机的。";
+
+/* compatibilityWarningScreen */
+"2nd_message" = "此应用为%1$@或更高版本创建配置文件.";
+
+/* compatibilityWarningScreen */
+"Use at your own risk" = "使用后果自负!";
+
+/* compatibilityWarningScreen */
+"(select 'Backup File Before Saving' in Preferences Pane)" = "(在'首选项'窗格中选择'保存前备份文件'')";
+
+/* advancedUser */
+"The key “%@” already exists in containing item." = "包含项目的键“%@”已存在。";
+
+/* advancedUser */
+"(%lu items)" = "(%lu个项目)";
+
+/* advancedUser */
+"Item %lu" = "项目 %lu";
+
+/* outlineMode */
+"Cut" = "剪切";
+
+/* outlineMode */
+"Copy" = "拷贝";
+
+/* outlineMode */
+"Paste" = "粘贴";
+
+/* outlineMode */
+"Delete" = "删除";
+
+/* outlineMode */
+"Value Type" = "值类型";
+
+/* outlineMode */
+"Array" = "数组";
+
+/* outlineMode */
+"Dictionary" = "词典";
+
+/* outlineMode */
+"Boolean" = "布尔";
+
+/* outlineMode */
+"Data" = "数据";
+
+/* outlineMode */
+"Date" = "日期";
+
+/* outlineMode */
+"Number" = "数字";
+
+/* outlineMode */
+"String" = "字符";
+
+/* outlineMode */
+"Add Item" = "添加";
+
+/* miscController */
+"Please make sure to select a file from a boot efi path." = "请确保从引导efi路径中选择一个文件。";
+
+/* miscController */
+"No efi boot path found." = "找不到efi引导路径。";
+
+/* quicktoolsController */
+"%@ on Disk Identifier: %@" = "磁盘标识符上的%1$@: %2$@";
+
+/* quicktoolsController */
+"Status: [%@]" = "状态: [%@]";
+
+/* quicktoolsController */
+"OpenCore Boot Partition" = "OpenCore引导分区";
+
+/* preferencesPanel */
+"Official" = "官方原版";
+
+/* preferencesPanel */
+"MOD" = "MOD分支版";
+
+/* preferencesPanel */
+"App Settings" = "应用设定";
+
+/* preferencesPanel */
+"OpenCore Settings" = "OpenCore设置";
+
+/* titleBar */
+"Release Configuration" = "%1$@ 正式版配置";
+
+/* titleBar */
+"Development Configuration" = "%1$@ 开发版配置";
+
+/* titleBar */
+"for Official OpenCore" = "官方原版OpenCore";
+
+/* titleBar */
+"for MOD OpenCore" = "MOD修改版OpenCore";
+
+/* reading_savingOperation */
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "此配置包含一个或多个官方OpenCore通常不使用的属性。是否要以MOD修改本模式打开此配置？";
+
+/* reading_savingOperation */
+"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "此配置检测为官方版本，但是您正在MOD版OC模式下工作。您要切换到官方版本模式吗？";
+
+/* reading_savingOperation */
+"For changes to take effect, this app will be relaunched" = "为了使更改生效，此应用将重新启动";
+
+/* outlinemodeController */
+"If you continue, all unknown keys will be lost" = "如果切换回GUI模式，所有手工添加的未知键值将丢失！";
+
+/* textmodeController */
+"Syncronize" = "同步";
+
+/* textmodeController */
+"Syncronize Outline Mode" = "同步树形编辑器模式";
+
+/* importPatchesController */
+"Import set of patches" = "导入补丁集合";
+
+/* importPatchesController */
+"Import set of kexts" = "导入Kext集合";
+
+/* importPatchesController */
+"Export selected patches" = "导出所选为补丁集";
+
+/* importPatchesController */
+"Export selected kexts" = "导出所选kexts集合";
+
+/* importPatchesController */
+"Add set of patches from database" = "导入在线预设补丁集合";
+
+/* importPatchesController */
+"Add set of kexts from database" = "导入在线预设KEXT集合";
+
+/* importPatchesController */
+"Battery Patches" = "电池更名补丁";
+
+/* importPatchesController */
+"Rename Patches" = "常规更名补丁";
+
+/* configCheckerController */
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置完善性 (如果管理多个窗口，请选择要检查的窗口). 继续检查配置前保存你的配置文件.";
+
+/* configCheckerController */
+"Import configuration from local selecting \"Choose...\"" = "从\"选择...\"选择本地文件导入 ";
+
+/* configCheckerController */
+"Drag your configuration here" = "将您的配置文件拖拽到此处";
+
+/* configCheckerController */
+"No Network Access" = "无网络访问";
+
+/* configCheckerController */
+"Uploading..." = "上传...";
+
+/* configCheckerController */
+"Downloading Resources..." = "下载资源文件...";
+
+/* configCheckerController */
+"Downloaded %.2f MB of %.2f MB (%@)" = "已下载 %1$.2f MB/%2$.2f MB (%3$@)";
+
+/* configCheckerController */
+"Resources Extraction..." = "提取资源文件...";
+
+/* configCheckerController */
+"Ready!" = "完成!";
+
+/* configCheckerController */
+"Error extracting resources files!" = "提取资源文件时出错!";
+
+/* configCheckerController */
+"Failed to download resources!" = "下载资源文件失败!";
+
+/* configCheckerController */
+"Updating Resources..." = "更新资源文件...";
+
+/* configCheckerController */
+"Checking For Resources..." = "检查资源文件...";
+
+/* configCheckerController */
+"Desktop" = "普通台式机";
+
+/* configCheckerController */
+"High-End Desktop" = "高性能台式机";
+
+/* configCheckerController */
+"Laptop" = "笔记本电脑";
+
+/* opencoreDownloaderController */
+"Successfully backed up to %@" = "成功备份到 %@";
+
+/* opencoreDownloaderController */
+"Error during creating EFI backup folder!" = "创建EFI备份文件夹时出错!";
+
+/* ocValidator */
+"Connection Established" = "连接已建立";
+
+/* ocValidator */
+"Failed to checking resources!" = "无法检查资源!";
+
+/* platformInfoController */
+"No Network Access. You may not get latest SMBIOS data." = "没有网络访问。您可能无法获取最新的SMBIOS数据.";
+
+/* installDriversController */
+"Download: %@ removed from queue because is not compatible with 32-bit version." = "下载: 由于与32位版本不兼容，已从队列中删除%@.";
+
+/* efiMaker */
+"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "基于Dortania帮助指南中的OpenCore Bootloader%@设置";
+
+/* efiMaker */
+"For more information about different settings, click on each CPU Family option" = "有关不同设置的更多信息，请单击每个CPU系列选项";
+
+/* efiMaker */
+"Downloading latest Opencore Bootloader" = "下载最新的Opencore引导器";
+
+/* efiMaker */
+"Error while downloading Opencore Bootloader. Unable to continue." = "下载Opencore引导器时出错。无法继续.";
+
+/* efiMaker */
+"Downloading %@ configuration" = "正在下载%@配置";
+
+/* efiMaker */
+"Populating SMBIOS data for %@ configuration" = "为%@配置填充SMBIOS数据";
+
+/* efiMaker */
+"Error while downloading the configuration. Unable to continue." = "下载配置时出错. 无法继续.";
+
+/* efiMaker */
+"Error while populating %@ key" = "填充%@键值时出错";
+
+/* efiMaker */
+"Some keys have not been updated. Please update them manually." = "某些键值尚未更新. 请手动更新.";
+
+/* efiMaker */
+"Done! Opening folder at %@" = "完成! 正在打开文件夹%@";
+
+/* efiMaker */
+"Download SSDT" = "下载SSDT";
+
+/* efiMaker */
+"successfully downloaded" = "成功下载";
+
+/* efiMaker */
+"Download SSDT Error" = "下载SSDT错误";
+
+/* efiMaker */
+"Downloading latest" = "正在下载最新文件";
+
+/* efiMaker */
+"Download essential Kext" = "下载基本Kext文件";
+
+/* efiMaker */
+"Download Kext Error" = "下载Kext文件错误";
+
+/* efiMaker */
+"Download Drivers" = "下载驱动程序文件";
+
+/* efiMaker */
+"Download Drivers Error" = "下载驱动程序错误";
+
+/* efiMaker */
+"Error during processing" = "处理期间发生错误";
+
+/* efiMaker */
+"For more information about %@ settings, click here" = "有关%@设置的更多信息, 点击这里";
+
+/* efiMaker */
+"For more information about %@ settings" = "有关%@设置的更多信息";
+
+/* efiMaker */
+"click here" = "点击这里";
+
+/* efiMaker */
+"Summary Information" = "摘要信息";
+
+/* efiMaker */
+"CPU Family selected" = "已选择的CPU系列";
+
+/* efiMaker */
+"SMBIOS selected" = "已选择的SMBIOS机型";
+
+/* efiMaker */
+"Configuration type selected" = "已选择的配置类型";
+
+/* efiMaker */
+"Architecture type selected" = "已选择的体系类型";
+
+/* efiMaker */
+"Download related files" = "下载相关文件";
