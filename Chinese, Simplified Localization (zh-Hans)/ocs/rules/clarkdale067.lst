@@ -1,6 +1,6 @@
-=<div style="text-align:center;font-size:30px;">台式机:(第一代)Lynnfield和Clarkdale OpenCore 0.6.6 健全性检查结果</div><br/>
+=<div style="text-align:center;font-size:30px;">台式机:(第一代)Lynnfield和Clarkdale OpenCore 0.6.7 健全性检查结果</div><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.6 Intel Lynnfield and Clarkdale Desktop Sanity Check
+# OpenCore v0.6.7 Intel Lynnfield and Clarkdale Desktop Sanity Check
 =参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/clarkdale.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/clarkdale.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/clarkdale.html#kernel
@@ -236,12 +236,13 @@ UEFI
  PlayChime~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  VolumeAmplifier~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SetupDelay~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ ResetTrafficClass~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold=2
+ KeyMergeThreshold~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.7中已弃用"
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
@@ -277,6 +278,7 @@ UEFI
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceResolution=no
+ GopPassThrough=no
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
@@ -292,6 +294,7 @@ UEFI
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
  DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.6中已弃用"
  DisableSecurityPolicy=no
+ ActivateHpetSupport=no
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=yes
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
