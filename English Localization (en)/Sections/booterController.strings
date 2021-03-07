@@ -149,6 +149,9 @@
 /* Class = "NSButtonCell"; title = "ProtectSecureBoot"; ObjectID = "rWG-6j-Mxs"; */
 "rWG-6j-Mxs.title" = "ProtectSecureBoot";
 
+/* Class = "NSButtonCell"; title = "ForceBooterSignature"; ObjectID = "sHw-qr-Pag"; */
+"sHw-qr-Pag.title" = "ForceBooterSignature";
+
 /* Class = "NSButtonCell"; title = "SetupVirtualMap"; ObjectID = "sNx-S4-Yhl"; */
 "sNx-S4-Yhl.title" = "SetupVirtualMap";
 
@@ -157,6 +160,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Provide custom KASLR slide on low memory.\n\nThis option performs memory map analysis of the firmware and checks whether all slides (from 1 to 255) can be used. As boot.efi generates this value randomly with rdrand or pseudo randomly rdtsc, there is a chance of boot failure when it chooses a conflicting slide. In cases where potential conflicts exist, this option forces macOS to select a pseudo random value from the available values. This also ensures that the slide= argument is never passed to the operating system (for security reasons).\n\nNote: The need for this quirk is determined by the OCABC: Only N/256 slide values are usable! message in the debug log."; ObjectID = "wGH-hP-xhD"; */
 "wGH-hP-xhD.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Provide custom KASLR slide on low memory.\n\nThis option performs memory map analysis of the firmware and checks whether all slides (from 1 to 255) can be used. As boot.efi generates this value randomly with rdrand or pseudo randomly rdtsc, there is a chance of boot failure when it chooses a conflicting slide. In cases where potential conflicts exist, this option forces macOS to select a pseudo random value from the available values. This also ensures that the slide= argument is never passed to the operating system (for security reasons).\n\nNote: The need for this quirk is determined by the OCABC: Only N/256 slide values are usable! message in the debug log.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Set macOS boot-signature to OpenCore launcher.\n\nBooter signature, essentially a SHA-1 hash of the loaded image, is used by Mac EFI to verify the authenticity of the bootloader when waking from hibernation. This option forces macOS to use OpenCore launcher SHA-1 hash as a booter signature to let OpenCore shim hibernation wake on Mac EFI firmware.\n\nNote: OpenCore launcher path is determined from LauncherPath property."; ObjectID = "woE-nK-MFN"; */
+"woE-nK-MFN.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Set macOS boot-signature to OpenCore launcher.\n\nBooter signature, essentially a SHA-1 hash of the loaded image, is used by Mac EFI to verify the authenticity of the bootloader when waking from hibernation. This option forces macOS to use OpenCore launcher SHA-1 hash as a booter signature to let OpenCore shim hibernation wake on Mac EFI firmware.\n\nNote: OpenCore launcher path is determined from LauncherPath property.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "xEr-hF-nBr"; */
 "xEr-hF-nBr.headerCell.title" = "Limit";
