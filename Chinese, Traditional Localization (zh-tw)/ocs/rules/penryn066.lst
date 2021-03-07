@@ -51,7 +51,7 @@ Booter
  ProtectUefiServices=no
  ProvideCustomSlide=yes " <b>{$setting}</b> = <b>{$value}</b> 如果您的主機板不支持UEFI，請停用此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您支持UEFI時才需要"
  ProvideMaxSlide=0
- RebuildAppleMemoryMap=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算引導OS X 10.6或更早版本，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划引導OS X 10.6或更早版本時才需要"
+ RebuildAppleMemoryMap=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算引導OS X 10.6或更早版本，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您計劃引導OS X 10.6或更早版本時才需要"
  SetupVirtualMap=yes " <b>{$setting}</b> = <b>{$value}</b> 如果您的主機板不支持UEFI，請停用此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您支持UEFI時才需要"
  ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.7開始已棄用 - 請參考<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
@@ -266,8 +266,8 @@ UEFI
  AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
- FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
- HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
+ FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您計劃使用FileVault時才需要"
+ HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您計劃使用FileVault時才需要"
  OSInfo=no
  UnicodeCollation=no
  ConsoleControl~=.* "!<b>{$setting}</b> 在OpenCore v0.5.6中已棄用-請參考 UEFI/TextRenderer"

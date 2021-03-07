@@ -90,7 +90,7 @@ Kernel
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算启动10.10或更早版本，則應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
+ AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算啟動10.10或更早版本，則應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您應該在BIOS中停用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no

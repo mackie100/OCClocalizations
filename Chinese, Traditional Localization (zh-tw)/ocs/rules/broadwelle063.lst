@@ -37,7 +37,7 @@ Booter
 
 :Quirks
  AvoidRuntimeDefrag=yes
- DevirtualiseMmio=no " <b>{$setting}</b> = <b>{$value}</b> -->請注意，停用此功能可能會在启动時出现分配問題":" <b>{$setting}</b> = <b>{$value}</b> -->請注意，開啟此功能可能會導致早期的内核恐慌"
+ DevirtualiseMmio=no " <b>{$setting}</b> = <b>{$value}</b> -->請注意，停用此功能可能會在啟動時出现分配問題":" <b>{$setting}</b> = <b>{$value}</b> -->請注意，開啟此功能可能會導致早期的内核恐慌"
  DisableSingleUser=no
  DisableVariableWrite=no
  DiscardHibernateMap=no
@@ -83,7 +83,7 @@ Kernel
  DummyPowerManagement=no
 
 :Quirks
- AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算启动10.10或更早版本，則應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
+ AppleCpuPmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->如果您不打算啟動10.10或更早版本，則應停用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您應該在BIOS中停用CFG-Lock，而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->確保在您的BIOS中停用了CFG-Lock"
  AppleXcpmExtraMsrs=yes
  AppleXcpmForceBoost=no
@@ -258,8 +258,8 @@ UEFI
  AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
- FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
- HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
+ FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您計劃使用FileVault時才需要"
+ HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您計劃使用FileVault時才需要"
  OSInfo=no
  UnicodeCollation=no
  ConsoleControl~=.* "!<b>{$setting}</b> 在OpenCore v0.5.6中已棄用-請參考 UEFI/TextRenderer"

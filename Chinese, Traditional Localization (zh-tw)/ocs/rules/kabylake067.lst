@@ -271,8 +271,8 @@ UEFI
  AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
- FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
- HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您计划使用FileVault時才需要"
+ FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您計劃使用FileVault時才需要"
+ HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2，請開啟此功能":" <b>{$setting}</b> = <b>{$value}</b> 僅當您計劃使用FileVault時才需要"
  OSInfo=no
  UnicodeCollation=no
  ConsoleControl~=.* "!<b>{$setting}</b> -->從OpenCore v0.5.6開始已棄用 - 請參考 UEFI/TextRenderer"
