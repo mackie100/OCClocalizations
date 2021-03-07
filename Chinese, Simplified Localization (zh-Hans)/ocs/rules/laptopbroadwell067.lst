@@ -1,6 +1,6 @@
-=<span class="title">Laptop:五代Broadwell笔记本 OpenCore 0.6.7 健全性检查结果</span><br/>
+=<span class="title">Laptop:五代Broadwell笔记本 OpenCore 0.6.6 健全性检查结果</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.6.7 Intel Broadwell Laptop Sanity Check
+# OpenCore v0.6.6 Intel Broadwell Laptop Sanity Check
 =参考文章<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html</a>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell#kernel
@@ -246,13 +246,12 @@ UEFI
  PlayChime~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  VolumeAmplifier~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SetupDelay~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- ResetTrafficClass~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.7中已弃用"
+ KeyMergeThreshold=2
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
@@ -288,7 +287,6 @@ UEFI
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceResolution=no
- GopPassThrough=no
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
@@ -304,7 +302,6 @@ UEFI
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
  DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.6中已弃用"
  DisableSecurityPolicy=no
- ActivateHpetSupport=no
  ExitBootServicesDelay=0
  IgnoreInvalidFlexRatio=yes
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
