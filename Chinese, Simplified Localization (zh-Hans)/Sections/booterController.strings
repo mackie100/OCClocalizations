@@ -162,7 +162,7 @@
 "wGH-hP-xhD.ibShadowedToolTip" = "是否使用slide值。一般选择连续性注入内存并配合slide，所以选择YES。\nBat.bat解释:\n如果 Slide 值存在冲突, 此选项将强制 macOS 执行以下操作:\n使用一个伪随机值。 只有在遇到 Only N/256 slide values are usable! 时需要。";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Set macOS boot-signature to OpenCore launcher.\n\nBooter signature, essentially a SHA-1 hash of the loaded image, is used by Mac EFI to verify the authenticity of the bootloader when waking from hibernation. This option forces macOS to use OpenCore launcher SHA-1 hash as a booter signature to let OpenCore shim hibernation wake on Mac EFI firmware.\n\nNote: OpenCore launcher path is determined from LauncherPath property."; ObjectID = "woE-nK-MFN"; */
-"woE-nK-MFN.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Set macOS boot-signature to OpenCore launcher.\n\nBooter signature, essentially a SHA-1 hash of the loaded image, is used by Mac EFI to verify the authenticity of the bootloader when waking from hibernation. This option forces macOS to use OpenCore launcher SHA-1 hash as a booter signature to let OpenCore shim hibernation wake on Mac EFI firmware.\n\nNote: OpenCore launcher path is determined from LauncherPath property.";
+"woE-nK-MFN.ibShadowedToolTip" = "为OpenCore启动器设置macOS引导签名.\n\n引导器签名, 本质上是加载映像的SHA-1哈希值, 从休眠状态唤醒时，由Mac EFI使用它来验证引导加载程序的真实性. 此选项强制macOS使用OpenCore启动器SHA-1哈希作为启动器签名，以使OpenCore休眠在Mac EFI固件上唤醒.\n\n注意：OpenCore启动器路径由LauncherPath属性确定.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "xEr-hF-nBr"; */
 "xEr-hF-nBr.headerCell.title" = "限制";
