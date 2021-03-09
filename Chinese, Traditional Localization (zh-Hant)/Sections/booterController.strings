@@ -149,6 +149,9 @@
 /* Class = "NSButtonCell"; title = "ProtectSecureBoot"; ObjectID = "rWG-6j-Mxs"; */
 "rWG-6j-Mxs.title" = "ProtectSecureBoot";
 
+/* Class = "NSButtonCell"; title = "ForceBooterSignature"; ObjectID = "sHw-qr-Pag"; */
+"sHw-qr-Pag.title" = "ForceBooterSignature";
+
 /* Class = "NSButtonCell"; title = "SetupVirtualMap"; ObjectID = "sNx-S4-Yhl"; */
 "sNx-S4-Yhl.title" = "SetupVirtualMap";
 
@@ -157,6 +160,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Provide custom KASLR slide on low memory.\nThis option performs memory map analysis of the firmware and checks whether all slides (from 1 to 255) can be used. As boot.efi generates this value randomly with rdrand or pseudo randomly rdtsc, there is a chance of boot failure when it chooses a conflicting slide. In case potential conflicts exist, this option forces macOS to use a pseudo random value among the available ones. This also ensures that slide= argument is never passed to the operating system for security reasons.\nNote: The necessity of this quirk is determined by OCABC: Only N/256 slide values are usable! message in the debug log. If the message is present, this option is to be enabled."; ObjectID = "wGH-hP-xhD"; */
 "wGH-hP-xhD.ibShadowedToolTip" = "是否使用slide值。一般選擇連續性注入記憶體並配合slide，所以選擇YES。\nBat.bat解释:\n如果 Slide 值存在衝突, 此選項將強制 macOS 執行以下操作:\n使用一個偽随機值。 只有在遇到 Only N/256 slide values are usable! 時需要。";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Set macOS boot-signature to OpenCore launcher.\n\nBooter signature, essentially a SHA-1 hash of the loaded image, is used by Mac EFI to verify the authenticity of the bootloader when waking from hibernation. This option forces macOS to use OpenCore launcher SHA-1 hash as a booter signature to let OpenCore shim hibernation wake on Mac EFI firmware.\n\nNote: OpenCore launcher path is determined from LauncherPath property."; ObjectID = "woE-nK-MFN"; */
+"woE-nK-MFN.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Set macOS boot-signature to OpenCore launcher.\n\nBooter signature, essentially a SHA-1 hash of the loaded image, is used by Mac EFI to verify the authenticity of the bootloader when waking from hibernation. This option forces macOS to use OpenCore launcher SHA-1 hash as a booter signature to let OpenCore shim hibernation wake on Mac EFI firmware.\n\nNote: OpenCore launcher path is determined from LauncherPath property.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "xEr-hF-nBr"; */
 "xEr-hF-nBr.headerCell.title" = "限制";
