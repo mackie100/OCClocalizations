@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TOOLS</key>
+	<array>
+		<dict>
+			<key>description</key>
+			<string>进入Apple BootPicker菜单（不包括具有兼容GPU的Mac）。</string>
+			<key>name</key>
+			<string>BootKicker</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>测试BeepGen协议并生成不同样式和长度的音频信号。</string>
+			<key>name</key>
+			<string>ChipTune</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>重置捆绑为独立工具的NVRAM替代品。</string>
+			<key>name</key>
+			<string>CleanNvram</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>用一个简单的场景测试GraphicsOutput协议。</string>
+			<key>name</key>
+			<string>GopStop</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>在SimpleText模式下测试键盘输入。</string>
+			<key>name</key>
+			<string>KeyTester</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>很少用</string>
+			<key>name</key>
+			<string>MmapDump</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>从其他设备解锁和锁定NVRAM保护，以便在从OpenCore启动时能够获得完整的NVRAM访问权限。</string>
+			<key>name</key>
+			<string>OpenControl</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>配置了OpenCore的UEFI Shell，可兼容各种固件。</string>
+			<key>name</key>
+			<string>OpenShell</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>用于执行系统重置的实用程序。将重置类型作为参数：ColdReset，WarmReset，Shutdown。默认为ColdReset。</string>
+			<key>name</key>
+			<string>ResetSystem</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>读取和写入RTC（CMOS）内存的实用程序。</string>
+			<key>name</key>
+			<string>RtcRw</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>检查所有内核之间的CFG锁（MSR 0xE2写保护）一致性。</string>
+			<key>name</key>
+			<string>VerifyMsrE2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

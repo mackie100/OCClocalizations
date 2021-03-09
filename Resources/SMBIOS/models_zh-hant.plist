@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB11.plist</string>
+		<key>title</key>
+		<string>MacBook1,1 - MacBook (13英寸，2006年) | Intel Core Duo T2400 @ 1.83 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB21.plist</string>
+		<key>title</key>
+		<string>MacBook2,1 - MacBook (13英寸，2006年末) | Intel Core 2 Duo T7200 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB31.plist</string>
+		<key>title</key>
+		<string>MacBook3,1 - MacBook (13英寸，2007年末) | Intel Core 2 Duo T7500 @ 2.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB41.plist</string>
+		<key>title</key>
+		<string>MacBook4,1 - MacBook (13英寸，2008年初) | Intel Core 2 Duo T8100 @ 2.10 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB51.plist</string>
+		<key>title</key>
+		<string>MacBook5,1 - MacBook (13英寸，铝制，2008年末) | Intel Core 2 Duo P7350 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB52.plist</string>
+		<key>title</key>
+		<string>MacBook5,2 - MacBook (13英寸，2009年初) | Intel Core 2 Duo P7350 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB61.plist</string>
+		<key>title</key>
+		<string>MacBook6,1 - MacBook (13英寸，聚碳酸酯一体式机身，2009年末) |Intel Core 2 Duo P7550 @ 2.26 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB71.plist</string>
+		<key>title</key>
+		<string>MacBook7,1 - MacBook (13英寸,聚碳酸酯一体式机身，2010年中) | Intel Core 2 Duo P8600 @ 2.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB81.plist</string>
+		<key>title</key>
+		<string>MacBook8,1 - MacBook (12英寸, 2015年初) | Intel Core M-5Y31 @ 1.10 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB91.plist</string>
+		<key>title</key>
+		<string>MacBook9,1 - MacBook (12英寸，2016年初) | Intel Core m5-6Y54 @ 1.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBook/MB101.plist</string>
+		<key>title</key>
+		<string>MacBook10,1 - MacBook (12英寸，2017年初) | Intel Core i5-7Y54 @ 1.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP11.plist</string>
+		<key>title</key>
+		<string>MacBookPro1,1 - MacBook Pro (15英寸光面，2006年) | Intel Core Duo T2600 @ 2.16 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP12.plist</string>
+		<key>title</key>
+		<string>MacBookPro1,2 - MacBook Pro (17英寸，2006年) | Intel Core Duo T2600 @ 2.16 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP21.plist</string>
+		<key>title</key>
+		<string>MacBookPro2,1 - MacBook Pro (17英寸，2006年末) | Intel Core 2 Duo T7600 @ 2.33 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP22.plist</string>
+		<key>title</key>
+		<string>MacBookPro2,2 - MacBook Pro (15英寸，2006年末) | Intel Core 2 Duo T7600 @ 2.33 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP31.plist</string>
+		<key>title</key>
+		<string>MacBookPro3,1 - MacBook Pro (15英寸，2007年中下旬) | Intel Core 2 Duo T7500 @ 2.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP41.plist</string>
+		<key>title</key>
+		<string>MacBookPro4,1 - MacBook Pro (17英寸，2008年初/末) | Intel Core 2 Duo T9500 @ 2.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP51.plist</string>
+		<key>title</key>
+		<string>MacBookPro5,1 - MacBook Pro (15英寸，2008年末) | Intel Core 2 Duo P8600 @ 2.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP52.plist</string>
+		<key>title</key>
+		<string>MacBookPro5,2 - MacBook Pro (17英寸，2009年初) | Intel Core 2 Duo T9550 @ 2.66 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP53.plist</string>
+		<key>title</key>
+		<string>MacBookPro5,3 - MacBook Pro (15英寸，2009年中) | Intel Core 2 Duo T9900 @ 3.06 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP54.plist</string>
+		<key>title</key>
+		<string>MacBookPro5,4 - MacBook Pro (15英寸，2009年中) | Intel Core 2 Duo P8700 @ 2.53 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP55.plist</string>
+		<key>title</key>
+		<string>MacBookPro5,5 - MacBook Pro (13英寸，2009年中) | Intel Core 2 Duo P7550 @ 2.26 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP61.plist</string>
+		<key>title</key>
+		<string>MacBookPro6,1 - MacBook Pro (17英寸，2010年中) | Intel Core i5-540M @ 2.53 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP62.plist</string>
+		<key>title</key>
+		<string>MacBookPro6,2 - MacBook Pro (15英寸，2010年中) | Intel Core i7-620M @ 2.66 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP71.plist</string>
+		<key>title</key>
+		<string>MacBookPro7,1 - MacBook Pro (13英寸，2010年中) | Intel Core 2 Duo P8600 @ 2.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP81.plist</string>
+		<key>title</key>
+		<string>MacBookPro8,1 - MacBook Pro (13英寸，2011年初) | Intel Core i5-2415M @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP82.plist</string>
+		<key>title</key>
+		<string>MacBookPro8,2 - MacBook Pro (15英寸，2011年初) | Intel Core i7-2720QM @ 2.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP83.plist</string>
+		<key>title</key>
+		<string>MacBookPro8,3 - MacBook Pro (17英寸，2011年初) | Intel Core i7-2820QM @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP91.plist</string>
+		<key>title</key>
+		<string>MacBookPro9,1 - MacBook Pro (15英寸，2012年中) | Intel Core i7-3720QM @ 2.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP92.plist</string>
+		<key>title</key>
+		<string>MacBookPro9,2 - MacBook Pro (13英寸，2012年中) | Intel Core i5-3210M @ 2.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP101.plist</string>
+		<key>title</key>
+		<string>MacBookPro10,1 - MacBook Pro (15英寸，视网膜，2012年中) | Intel Core i7-3615QM @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP102.plist</string>
+		<key>title</key>
+		<string>MacBookPro10,2 - MacBook Pro (13英寸，视网膜，2013年初) | Intel Core i5-3230 @ 2.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP111.plist</string>
+		<key>title</key>
+		<string>MacBookPro11,1 - MacBook Pro (13英寸，视网膜，2013年末) | Intel Core i7-4258U @ 2.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP112.plist</string>
+		<key>title</key>
+		<string>MacBookPro11,2 - MacBook Pro (15英寸, 视网膜, 2014年中) | Intel Core i7-4770HQ @ 2.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP113.plist</string>
+		<key>title</key>
+		<string>MacBookPro11,3 - MacBook Pro (15英寸, 视网膜, 2014年中) | Intel Core i7-4980HQ @ 2.80 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP114.plist</string>
+		<key>title</key>
+		<string>MacBookPro11,4 - MacBook Pro (15英寸, 视网膜, 2015年中) | Intel Core i7-4770HQ @ 2.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP115.plist</string>
+		<key>title</key>
+		<string>MacBookPro11,5 - MacBook Pro (15英寸, 视网膜, 2015年中) | Intel Core i7-4870HQ @ 2.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP121.plist</string>
+		<key>title</key>
+		<string>MacBookPro12,1 - MacBook Pro (13英寸, 视网膜, 2015年初) | Intel Core i5-5257U @ 2.70 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP131.plist</string>
+		<key>title</key>
+		<string>MacBookPro13,1 - MacBook Pro (13英寸, 视网膜, 2016年末) | Intel Core i5-6360U @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP132.plist</string>
+		<key>title</key>
+		<string>MacBookPro13,2 - MacBook Pro (13英寸, 触控条 - 两个雷电口, 2016年末) | Intel Core i5-6287U @ 3.10 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP133.plist</string>
+		<key>title</key>
+		<string>MacBookPro13,3 - MacBook Pro (15英寸, 触控条 - 四个雷电口, 2016年末) | Intel Core i7-6920HQ @ 2.90 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP141.plist</string>
+		<key>title</key>
+		<string>MacBookPro14,1 - MacBook Pro (13英寸, 触控条 - 两个雷电口, 2017年中) | Intel Core i5-7360U @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP142.plist</string>
+		<key>title</key>
+		<string>MacBookPro14,2 - MacBook Pro (13英寸, 触控条 - 四个雷电口, 2017年中) | Intel Core i5-7287U @ 3.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP143.plist</string>
+		<key>title</key>
+		<string>MacBookPro14,3 - MacBook Pro (15英寸, 触控条 - 四个雷电口, 2017年中) | Intel Core i7-7700HQ @ 2.80 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP151.plist</string>
+		<key>title</key>
+		<string>MacBookPro15,1 - MacBook Pro (15英寸, 触控条 - 四个雷电口, 2018年中) | Intel Core i9-8950HK @ 2.90 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP152.plist</string>
+		<key>title</key>
+		<string>MacBookPro15,2 - MacBook Pro (13英寸, 触控条 - 四个雷电口, 2018年中) | Intel Core i5-8259U @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP153.plist</string>
+		<key>title</key>
+		<string>MacBookPro15,3 - MacBook Pro (15英寸, 触控条 - 四个雷电口, 2018年中) | Intel Core i7-8850H @ 2.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP154.plist</string>
+		<key>title</key>
+		<string>MacBookPro15,4 - MacBook Pro (13英寸, 触控条 - 两个雷电口, 2019) | Intel Core i5-8257U @ 1.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP161.plist</string>
+		<key>title</key>
+		<string>MacBookPro16,1 - MacBook Pro (16英寸, 剪刀式键盘, 2019) | Intel Core i9-9980HK @ 2.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP162.plist</string>
+		<key>title</key>
+		<string>MacBookPro16,2 - MacBook Pro (13英寸, 剪刀式键盘, 2020) | Intel Core i7-1068NG7 @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP163.plist</string>
+		<key>title</key>
+		<string>MacBookPro16,3 - MacBook Pro (13英寸, 剪刀式键盘, 2020) | Intel Core i7-8557U @ 1.70 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookPro/MBP164.plist</string>
+		<key>title</key>
+		<string>MacBookPro16,4 - MacBook Pro (16英寸, 剪刀式键盘, 2019) | Intel Core i7-9750H @ 2.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA11.plist</string>
+		<key>title</key>
+		<string>MacBookAir1,1 - MacBook Air (13英寸, 原始版) | Intel Core 2 Duo P7700 @ 1.80 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA21.plist</string>
+		<key>title</key>
+		<string>MacBookAir2,1 - MacBook Air (13英寸, 2009年中) | Intel Core 2 Duo SL9600 @ 2.13 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA31.plist</string>
+		<key>title</key>
+		<string>MacBookAir3,1 - MacBook Air (11英寸, 2010年末) | Intel Core 2 Duo SU9400 @ 1.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA32.plist</string>
+		<key>title</key>
+		<string>MacBookAir3,2 - MacBook Air (13英寸, 2010年末) | Intel Core 2 Duo SL9400 @ 1.86 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA41.plist</string>
+		<key>title</key>
+		<string>MacBookAir4,1 - MacBook Air (11英寸, 2011年中) | Intel Core i5-2467M @ 1.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA42.plist</string>
+		<key>title</key>
+		<string>MacBookAir4,2 - MacBook Air (13英寸, 2011年中) | Intel Core i5-2557M @ 1.70 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA51.plist</string>
+		<key>title</key>
+		<string>MacBookAir5,1 - MacBook Air (11英寸, 2012年中) | Intel Core i5-3317U @ 1.70 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA52.plist</string>
+		<key>title</key>
+		<string>MacBookAir5,2 - MacBook Air (13英寸, 2012年中) | Intel Core i5-3427U @ 1.80 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA61.plist</string>
+		<key>title</key>
+		<string>MacBookAir6,1 - MacBook Air (11英寸, 2013年中) | Intel Core i7-4650U @ 1.70 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA62.plist</string>
+		<key>title</key>
+		<string>MacBookAir6,2 - MacBook Air (13英寸, 2013年中) | Intel Core i5-4250U @ 1.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA71.plist</string>
+		<key>title</key>
+		<string>MacBookAir7,1 - MacBook Air (11英寸, 2015年初) | Intel Core i5-5250U @ 1.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA72.plist</string>
+		<key>title</key>
+		<string>MacBookAir7,2 - MacBook Air (13英寸, 2015年初) | Intel Core i5-5250U @ 1.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA81.plist</string>
+		<key>title</key>
+		<string>MacBookAir8,1 - MacBook Air (13英寸, 视网膜, 2018年末) | Intel Core i5-8210Y @ 1.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA82.plist</string>
+		<key>title</key>
+		<string>MacBookAir8,2 - MacBook Air (13英寸, True Tone 视网膜, 2019) | Intel Core i5-8210Y @ 1.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacBookAir/MBA91.plist</string>
+		<key>title</key>
+		<string>MacBookAir9,1 - MacBook Air (13英寸, 视网膜, 剪刀式键盘, 2020) | Intel Core i5-1030NG7 @ 1.10 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM11.plist</string>
+		<key>title</key>
+		<string>Macmini1,1 - Mac mini (2006年初) | Intel Core Solo T1200 @ 1.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM21.plist</string>
+		<key>title</key>
+		<string>Macmini2,1 - Mac mini (2007年中) | Intel Core 2 Duo T7200 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM31.plist</string>
+		<key>title</key>
+		<string>Macmini3,1 - Mac mini (2009年末) | Intel Core 2 Duo P8700 @ 2.53 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM41.plist</string>
+		<key>title</key>
+		<string>Macmini4,1 - Mac mini (2010年中) | Intel Core 2 Duo P8600 @ 2.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM51.plist</string>
+		<key>title</key>
+		<string>Macmini5,1 - Mac mini (2011年中) | Intel Core i5-2415M @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM52.plist</string>
+		<key>title</key>
+		<string>Macmini5,2 - Mac mini (2011年中) | Intel Core i5-2520M @ 2.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM53.plist</string>
+		<key>title</key>
+		<string>Macmini5,3 - Mac mini (Server, 2011年中) | Intel Core i7-2635QM @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM61.plist</string>
+		<key>title</key>
+		<string>Macmini6,1 - Mac mini (2012年末) | Intel Core i5-3210M @ 2.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM62.plist</string>
+		<key>title</key>
+		<string>Macmini6,2 - Mac mini (Server, 2012年末) | Intel Core i7-3615QM @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM71.plist</string>
+		<key>title</key>
+		<string>Macmini7,1 - Mac mini (2014年末) | Intel Core i5-4278U @ 2.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Macmini/MM81.plist</string>
+		<key>title</key>
+		<string>Macmini8,1 - Mac mini (2018年末) | Intel Core i7-8700B @ 3.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM41.plist</string>
+		<key>title</key>
+		<string>iMac4,1 - iMac (20英寸, 2006年初) | Intel Core 2 Duo T2500 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM42.plist</string>
+		<key>title</key>
+		<string>iMac4,2 - iMac (17英寸, 2006年中) | Intel Core 2 Duo T2400 @ 1.83 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM51.plist</string>
+		<key>title</key>
+		<string>iMac5,1 - iMac (17英寸, 2006年末) | Intel Core 2 Duo T7200 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM52.plist</string>
+		<key>title</key>
+		<string>iMac5,2 - iMac (17英寸, 2006年末) | Intel Core 2 Duo T5600 @ 1.83 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM61.plist</string>
+		<key>title</key>
+		<string>iMac6,1 - iMac (24英寸, 2006年末) | Intel Core 2 Duo T7400 @ 2.16 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM71.plist</string>
+		<key>title</key>
+		<string>iMac7,1 - iMac (20英寸, 铝制, 2007年中) | Intel Core 2 Duo T7300 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM81.plist</string>
+		<key>title</key>
+		<string>iMac8,1 - iMac (20英寸, 铝制, 2008年初) | Intel Core 2 Duo E8135 @ 2.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM91.plist</string>
+		<key>title</key>
+		<string>iMac9,1 - iMac (20英寸, 铝制, 2009年中) | Intel Core 2 Duo P7350 @ 2.00 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM101.plist</string>
+		<key>title</key>
+		<string>iMac10,1 - iMac (27英寸, 铝制, 2009年末) | Intel Core 2 Duo E7600 @ 3.06 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM111.plist</string>
+		<key>title</key>
+		<string>iMac11,1 - iMac (27英寸, 铝制, 2009年末) | Intel Core i5-750 @ 2.66 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM112.plist</string>
+		<key>title</key>
+		<string>iMac11,2 - iMac (21.5英寸, 铝制, 2010年中) | Intel Core i3-550 @ 3.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM113.plist</string>
+		<key>title</key>
+		<string>iMac11,3 - iMac (27英寸, 铝制, 2010年中) | Intel Core i7-870 @ 2.93 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM121.plist</string>
+		<key>title</key>
+		<string>iMac12,1 - iMac (21.5英寸, 铝制, 2011年中) | Intel Core i5-2400S @ 2.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM122.plist</string>
+		<key>title</key>
+		<string>iMac12,2 - iMac (27英寸, 铝制, 2011年中) | Intel Core i5-2400 @ 3.10 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM131.plist</string>
+		<key>title</key>
+		<string>iMac13,1 - iMac (21.5英寸, 铝制, 2012年末) | Intel Core i5-3470S @ 2.90 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM132.plist</string>
+		<key>title</key>
+		<string>iMac13,2 - iMac (27英寸, 铝制, 2012年末) | Intel Core i5-3470 @ 3.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM133.plist</string>
+		<key>title</key>
+		<string>iMac13,3 - iMac (21.5英寸, 铝制, 2013年初) | Intel Core i3-3225 @ 3.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM141.plist</string>
+		<key>title</key>
+		<string>iMac14,1 - iMac (21.5英寸, 铝制, 2013年末) | Intel Core i5-4570R @ 2.70 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM142.plist</string>
+		<key>title</key>
+		<string>iMac14,2 - iMac (27英寸, 铝制, 2013年末) | Intel Core i7-4771 @ 3.50 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM143.plist</string>
+		<key>title</key>
+		<string>iMac14,3 - iMac (21.5英寸, 铝制, 2013年末) | Intel Core i5-4570S @ 2.90 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM144.plist</string>
+		<key>title</key>
+		<string>iMac14,4 - iMac (21.5英寸, 铝制, 2014年中) | Intel Core i5-4260U @ 1.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM151.plist</string>
+		<key>title</key>
+		<string>iMac15,1 - iMac (27英寸, 视网膜 5K, 2015年中) | Intel Core i5-4590 @ 3.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM161.plist</string>
+		<key>title</key>
+		<string>iMac16,1 - iMac (21.5英寸, 铝制, 2015年末) | Intel Core i5-5250U @ 1.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM162.plist</string>
+		<key>title</key>
+		<string>iMac16,2 - iMac (21.5英寸, 视网膜 4K, 2015年末) | Intel Core i5-5675R @ 3.10 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM171.plist</string>
+		<key>title</key>
+		<string>iMac17,1 - iMac (27英寸, 视网膜 5K, 2015年末) | Intel Core i5-6600 @ 3.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM181.plist</string>
+		<key>title</key>
+		<string>iMac18,1 - iMac (21.5英寸, 铝制, 2017年中) | Intel Core i5-7360U @ 2.30 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM182.plist</string>
+		<key>title</key>
+		<string>iMac18,2 - iMac (21.5英寸, 视网膜 4K, 2017年中) | Intel Core i5-7500 @ 3.40 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM183.plist</string>
+		<key>title</key>
+		<string>iMac18,3 - iMac (27英寸, 视网膜 5K, 2017年中) | Intel Core i7-7700K @ 4.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM191.plist</string>
+		<key>title</key>
+		<string>iMac19,1 - iMac (27英寸, 视网膜 5K, 2019年) | Intel Core i9-9900K @ 3.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM192.plist</string>
+		<key>title</key>
+		<string>iMac19,2 - iMac (21.5英寸, 视网膜 4K, 2019年) | Intel Core i7-8700 @ 3.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM201.plist</string>
+		<key>title</key>
+		<string>iMac20,1 - iMac (27英寸, 视网膜 5K, 2020年) | Intel Core i5-10500 @ 3.10 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMac/IM202.plist</string>
+		<key>title</key>
+		<string>iMac20,2 - iMac (27英寸, 视网膜 5K, 2020年) | Intel Core i9-10910 @ 3.60 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/iMacPro/IMP11.plist</string>
+		<key>title</key>
+		<string>iMacPro1,1 - iMac Pro (27英寸, 视网膜 5K, 8核, 2017年中) | Intel Xeon W-2140B CPU @ 3.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacPro/MP11.plist</string>
+		<key>title</key>
+		<string>MacPro1,1 - Mac Pro (2006年中) | Intel Xeon X5160 @ 3.00 GHz x2</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacPro/MP21.plist</string>
+		<key>title</key>
+		<string>MacPro2,1 - Mac Pro (2007年初) | Intel Xeon X5365 @ 3.00 GHz x2</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacPro/MP31.plist</string>
+		<key>title</key>
+		<string>MacPro3,1 - Mac Pro (2008年初) | Intel Xeon E5462 @ 2.80 GHz x2</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacPro/MP41.plist</string>
+		<key>title</key>
+		<string>MacPro4,1 - Mac Pro (2009年初) | Intel Xeon W3540 @ 2.93 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacPro/MP51.plist</string>
+		<key>title</key>
+		<string>MacPro5,1 - Mac Pro (2012年中) | Intel Xeon X5675 @ 3.06 GHz x2</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacPro/MP61.plist</string>
+		<key>title</key>
+		<string>MacPro6,1 - Mac Pro (2013年末) | Intel Xeon E5-1620v2 @ 3.70 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/MacPro/MP71.plist</string>
+		<key>title</key>
+		<string>MacPro7,1 - Mac Pro (16核, 2019年) | Intel Xeon W-3245M CPU @ 3.20 GHz</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Xserve/XS11.plist</string>
+		<key>title</key>
+		<string>Xserve1,1 - Xserve (2006年末) | Intel Xeon 5150 @ 2.66 GHz x2</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Xserve/XS21.plist</string>
+		<key>title</key>
+		<string>Xserve2,1 - Xserve (2008年初) | Intel Xeon E5472 @ 3.00 GHz x2</string>
+	</dict>
+	<dict>
+		<key>path</key>
+		<string>master/Resources/SMBIOS/Xserve/XS31.plist</string>
+		<key>title</key>
+		<string>Xserve3,1 - Xserve (2009年初) | Intel Xeon E5520 @ 2.26 GHz</string>
+	</dict>
+</array>
+</plist>
