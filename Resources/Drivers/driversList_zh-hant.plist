@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>UEFI固件中的HDA音频支持驱动程序，适用于大多数英特尔和其他一些模拟音频控制器。</string>
+			<string> UEFI 韌體中的 HDA 音訊支援驅動程式，適用於大多數 Intel 和其他一些模擬音訊控制器。</string>
 			<key>name</key>
 			<string>AudioDxe</string>
 			<key>arch</key>
@@ -17,7 +17,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>用于Bootcamp支持的专有ExFAT文件系统驱动程序，通常在Apple固件中找到。对于Sandy Bridge和更早的CPU，由于缺少RDRAND指令支持，因此应使用ExFatDxeLegacy驱动程序。</string>
+			<string>用於Bootcamp支援的專有ExFAT文件系统驅動程式，通常在Apple韌體中找到。對於Sandy Bridge和更早的CPU，由於缺少RDRAND指令支援，因此應使用ExFatDxeLegacy驅動程式。</string>
 			<key>name</key>
 			<string>ExFatDxe</string>
 			<key>arch</key>
@@ -37,7 +37,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>HII服务支持MdeModulePkg的驱动程序。从Ivy Bridge生成的大多数固件中都包含此驱动程序。某些带有GUI的应用程序（例如UEFI Shell）可能需要此驱动程序才能正常工作。</string>
+			<string>HII服務支援MdeModulePkg的驅動程式。從Ivy Bridge生成的大多數韌體中都包含此驅動程式。某些带有GUI的應用程式（例如UEFI Shell）可能需要此驅動程式才能正常工作。</string>
 			<key>name</key>
 			<string>HiiDatabase</string>
 			<key>arch</key>
@@ -48,7 +48,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>OpenRuntime是OpenCore必不可少插件。该协议实现了OpenCore所需的多个功能，必须！！</string>
+			<string>OpenRuntime是OpenCore必不可少外掛程式。該外掛程式實現了OpenCore所需的多個功能，務必啟用！！</string>
 			<key>name</key>
 			<string>OpenRuntime</string>
 			<key>arch</key>
@@ -59,8 +59,8 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>OpenCanopy是一个图形化OpenCore用户界面，它在外部PickerMode中运行，并依赖于OpenCorePkg OcBootManagementLib，类似于内置文本界面。
-OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在OcBinaryData存储库中找到示例资源（字体和图像）。
+			<string>OpenCanopy是一個GUI化的OpenCore使用者介面，它在外部PickerMode中執行，並依賴OpenCorePkg OcBootManagementLib，類似於內建文本界面。
+OpenCanopy需要在Resources目錄中的圖型資源才能運作。可以在OcBinaryData資料庫中找到範例资源（字體和圖片）。
 </string>
 			<key>name</key>
 			<string>OpenCanopy</string>
@@ -72,7 +72,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>来自MdeModulePkg的NVMe支持驱动程序。从Broadwell一代开始的大多数固件中都包含此驱动程序。对于Haswell及更早版本，如果安装了NVMe SSD驱动器，则将其嵌入固件中可能会更有利。</string>
+			<string>来自MdeModulePkg的NVMe支援驅動程式。從Broadwell一代開始的大多数韌體中都包含此驅動程式。對於Haswell及更早版本，如果安裝了NVMe SSD，則將其加入韌體中可能會更有效。</string>
 			<key>name</key>
 			<string>NvmExpressDxe</string>
 			<key>arch</key>
@@ -83,7 +83,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>USB键盘驱动程序在自定义USB键盘驱动程序实现的基础上添加了对AppleKeyMapAggregator协议的支持。这是内置KeySupport的替代方法，根据固件的不同，它可能会更好或更坏。</string>
+			<string>USB鍵盤驅動程式在自定義USB键盘驅動程式實現的基礎上添加了對AppleKeyMapAggregator的支援。這是內建KeySupport的取代方法，根據韌體的不同，它可能會正常運作。</string>
 			<key>name</key>
 			<string>OpenUsbKbDxe</string>
 			<key>arch</key>
@@ -94,7 +94,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>MdeModulePkg的PS/2键盘驱动程序。 OpenDuetPkg和某些固件可能不包括此驱动程序，但是PS / 2键盘必须工作。请注意，与OpenUsbKbDxe不同，该驱动程序没有AppleKeyMapAggregator支持，因此需要启用KeySupport。</string>
+			<string>MdeModulePkg的PS/2鍵盤驅動程式。 OpenDuetPkg和某些韌體可能不包括此驅動程式，但是PS / 2鍵盤必须工作。請注意，與OpenUsbKbDxe不同，該驅動程式没有AppleKeyMapAggregator支援，因此需要啟用KeySupport。</string>
 			<key>name</key>
 			<string>Ps2KeyboardDxe</string>
 			<key>arch</key>
@@ -105,7 +105,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>MdeModulePkg的PS/2鼠标驱动程序。某些非常古老的笔记本电脑固件可能不包括此驱动程序，但触摸板必须在UEFI图形界面（如OpenCanopy）中工作。</string>
+			<string>MdeModulePkg的PS/2滑鼠驅動程式。某些非常古老的筆記本電腦韌體可能不包括此驅動程式，但觸控板必须在UEFI GUI（如OpenCanopy）中工作。</string>
 			<key>name</key>
 			<string>Ps2MouseDxe</string>
 			<key>arch</key>
@@ -116,7 +116,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>MdeModulePkg的USB鼠标驱动程序。某些虚拟机固件（例如OVMF）可能不包含此驱动程序，但鼠标必须在UEFI图形界面（如OpenCanopy）中工作。</string>
+			<string>MdeModulePkg的USB滑鼠驅動程式。某些虛擬機韌體（例如OVMF）可能不包含此驅動程式，但滑鼠必须在UEFI GUI（如OpenCanopy）中工作。</string>
 			<key>name</key>
 			<string>UsbMouseDxe</string>
 			<key>arch</key>
@@ -127,7 +127,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>从Sandy Bridge代开始的大多数固件中都包含此驱动程序。对于较早的固件或旧系统，它可以用于支持外部USB 3.0 PCI卡。</string>
+			<string>從Sandy Bridge代開始的大多數韌體中都包含此驅動程式。對於較早的韌體或舊系统，它可以支援外部USB 3.0 PCI卡。</string>
 			<key>name</key>
 			<string>XhciDxe</string>
 			<key>arch</key>
@@ -138,7 +138,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>具有bless支持的HFS文件系统驱动程序。该驱动程序可以替代Apple固件中常见的封闭源HFSPlus驱动程序。现已替代了VboxHfs.efi。</string>
+			<string>具有bless支援的HFS文件系统驅動程式。該驅動程式可以取代Apple韌體中常見的封閉源HFSPlus驅動程式。現已取代了VboxHfs.efi。</string>
 			<key>name</key>
 			<string>OpenHfsPlus</string>
 			<key>arch</key>
@@ -149,7 +149,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Apple固件中常见的具有bless支持的专有HFS文件系统驱动程序。对于Sandy Bridge和更早的CPU，由于缺少RDRAND指令支持，因此应使用HfsPlusLegacy驱动程序。</string>
+			<string>Apple韌體中常見的具有bless支援的專有HFS文件系统驅動程式。對於Sandy Bridge和更早的CPU，由於缺少RDRAND指令支援，因此應使用HfsPlusLegacy驅動程式。</string>
 			<key>name</key>
 			<string>HfsPlus</string>
 			<key>arch</key>
@@ -160,7 +160,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>传统引导模式下HFS分区格式支持</string>
+			<string>Legacy 引導模式下HFS分區格式支援</string>
 			<key>name</key>
 			<string>HfsPlusLegacy</string>
 			<key>arch</key>
@@ -170,7 +170,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>NTFS文件系统驱动程序。很少用到</string>
+			<string>NTFS文件系统驅動程式</string>
 			<key>name</key>
 			<string>NTFS</string>
 			<key>arch</key>
@@ -180,7 +180,7 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>OpenCore引导界面用于截图的工具，快捷键为F10</string>
+			<string>OpenCore引導界面用於截圖的工具，快速鍵為F10</string>
 			<key>name</key>
 			<string>CrScreenshotDxe</string>
 			<key>arch</key>

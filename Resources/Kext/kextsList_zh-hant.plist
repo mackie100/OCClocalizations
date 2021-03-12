@@ -8,9 +8,9 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>开源内核扩展为macOS的整个系统提供了一个平台，用于任意kext，库和程序修补。</string>
+			<string>開源 Kernel 擴充功能為macOS的整個系统提供了一個平台，用於任意kext，資料庫和修補程式。</string>
 			<key>name</key>
 			<string>Lilu</string>
 			<key>remoteFolder</key>
@@ -22,9 +22,9 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>内核中的高级Apple SMC模拟器。需要Lilu 1.2.7才能正常运行。</string>
+			<string>Kernel 中的高级Apple SMC模擬器。需要Lilu 1.2.7才能正常執行。</string>
 			<key>name</key>
 			<string>VirtualSMC</string>
 			<key>remoteFolder</key>
@@ -36,9 +36,9 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>Lilu插件提供了用于在macOS上选择GPU的补丁​​。需要Lilu 1.2.5或更高版本。</string>
+			<string>Lilu外掛程式提供了用於在macOS上選擇GPU的修補文件​​。需要Lilu 1.2.5或更高版本。</string>
 			<key>name</key>
 			<string>WhateverGreen</string>
 			<key>remoteFolder</key>
@@ -50,9 +50,9 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>一个开放源代码内核扩展，无需更改任何文件系统，即可为未经官方支持的编解码器提供本机macOS HD音频。需要Lilu 1.2.5及更高版本，默认情况下已在10.14上启用。</string>
+			<string>一個開放源代碼 Kernel 擴充功能，無需更改任何文件系统，即可為未經官方支援的編解碼器提供本機macOS HD音訊。需要Lilu 1.2.5及更高版本，預設情況下已在10.14上開啟。</string>
 			<key>name</key>
 			<string>AppleALC</string>
 			<key>remoteFolder</key>
@@ -64,9 +64,9 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>一个开放源代码内核扩展，提供了非本机Airport Broadcom Wi-Fi卡所需的一组补丁。需要Lilu 1.1.6及更高版本。</string>
+			<string>一個開放源代碼 Kernel 擴充功能，提供了非本機Airport Broadcom Wi-Fi卡所需的一組修補文件。需要Lilu 1.1.6及更高版本。</string>
 			<key>name</key>
 			<string>AirportBrcmFixup</string>
 			<key>remoteFolder</key>
@@ -78,9 +78,9 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>一个开源内核扩展，可在RTC变量和NVRAM之间提供同步。需要Lilu v1.2.4或更高版本。</string>
+			<string>一個開源 Kernel 擴充功能，可在RTC變量和NVRAM之間提供同步。需要Lilu v1.2.4或更高版本。</string>
 			<key>name</key>
 			<string>HibernationFixup</string>
 			<key>remoteFolder</key>
@@ -92,9 +92,9 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>该工具进行了必要的更改，以在兼容的硬件上启用OS X 10.10和10.11 Continuity功能。此补丁激活的连续性功能包括切换，即时热点和新空投。 OS X 10.11（El Capitan）加密狗支持尚不稳定！</string>
+			<string>該工具進行了必要的更改，以在相容的硬體上開啟OS X 10.10和10.11 Continuity功能。此修補文件啟用的連續性功能包括切換，無線基地台和AirDrop。 OS X 10.11（El Capitan）加密狗支援尚不穩定！</string>
 			<key>name</key>
 			<string>BT4LEContinuityFixup</string>
 			<key>remoteFolder</key>
@@ -106,9 +106,9 @@
 			<key>author</key>
 			<string>PMheart</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>用于动态电源管理数据注入的Lilu插件。</string>
+			<string>用於動態電源管理數據注入的Lilu外掛程式。</string>
 			<key>name</key>
 			<string>CPUFriend</string>
 			<key>remoteFolder</key>
@@ -120,9 +120,9 @@
 			<key>author</key>
 			<string>lvs1974</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>开源内核扩展，提供了一种仿真CMOS（RTC）内存中偏移的方法。它可以帮助您避免osx AppleRTC和PC的固件/ BIOS之间的某些冲突。</string>
+			<string>開源 Kernel 擴充功能，提供了一種仿真CMOS（RTC）内存中偏移的方法。它可以幫助您避免osx AppleRTC和PC的韌體/ BIOS之間的某些衝突。</string>
 			<key>name</key>
 			<string>RTCMemoryFixup</string>
 			<key>remoteFolder</key>
@@ -134,9 +134,9 @@
 			<key>author</key>
 			<string>acidanthera</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>NVMeFix是Apple NVMe存储驱动程序IONVMeFamily的一组修补程序。其目标是改善与非Apple SSD的兼容性。它可以在Apple和非Apple计算机上使用。</string>
+			<string>NVMeFix是Apple NVMe儲存驅動程式IONVMeFamily的一組修補程式。其目標是改善與非Apple SSD的相容性。它可以在Apple和非Apple電腦上使用。</string>
 			<key>name</key>
 			<string>NVMeFix</string>
 			<key>remoteFolder</key>
@@ -148,9 +148,9 @@
 			<key>author</key>
 			<string>David Elliot RehabMan</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>新的VoodooPS2Trackpad使用VoodooInput的Magic Trackpad II仿真，以便使用macOS本机驱动程序而不是自己处理所有手势。这样就可以使用Apple定义的从一到四个手指手势中的任何一个。</string>
+			<string>新的VoodooPS2Trackpad使用VoodooInput的Magic Trackpad II仿真，以便使用macOS本機驅動程式而不是自己處理所有手勢。这樣就可以使用Apple定義的從一到四個手指手勢中的任何一個。</string>
 			<key>name</key>
 			<string>VoodooPS2Controller</string>
 			<key>remoteFolder</key>
@@ -162,9 +162,9 @@
 			<key>author</key>
 			<string>TimeWalker</string>
 			<key>category</key>
-			<string>内核扩展</string>
+			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>用于更新HDA（高保真音频）编解码器上的EAPD（外部放大器）状态，该编解码器使用扬声器或耳机节点上的给定放大器（在某些情况下甚至是额外的放大器）。</string>
+			<string>用於更新HDA（高傳真音效）編解碼器上的EAPD（外部放大器）狀態，該編解碼器使用揚聲器或耳機節點上的给定放大器（在某些情況下甚至是額外的放大器）。</string>
 			<key>name</key>
 			<string>CodecCommander</string>
 			<key>remoteFolder</key>
@@ -176,9 +176,9 @@
 			<key>author</key>
 			<string>RehabMan</string>
 			<key>category</key>
-			<string>注入类</string>
+			<string>注入類</string>
 			<key>description</key>
-			<string>此kext尝试为每个控制器以及集线器注入所有端口。您可以（临时）使用此kext启用所有端口，以便确定哪些端口确实需要在最终进样器中。</string>
+			<string>此kext嘗試為每個控制器以及集線器注入所有端口。您可以（臨時）使用此kext開啟所有端口，以便確定哪些端口確實需要在最終進樣器中。</string>
 			<key>host</key>
 			<string>bitbucket</string>
 			<key>name</key>
@@ -198,9 +198,9 @@
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
-			<string>网卡驱动</string>
+			<string>網路卡驅動</string>
 			<key>description</key>
-			<string>Qualcomm Atheros Killer E2200驱动程序。用于OSX。支持Qualcomm Atheros AR816x，AR817x，Killer E220x，Killer E2400和Killer E2500。</string>
+			<string>Qualcomm Atheros Killer E2200驅動程式。用於OSX。支援Qualcomm Atheros AR816x，AR817x，Killer E220x，Killer E2400和Killer E2500。</string>
 			<key>name</key>
 			<string>AtherosE2200Ethernet</string>
 			<key>remoteFolder</key>
@@ -212,9 +212,9 @@
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
-			<string>网卡驱动</string>
+			<string>網路卡驅動</string>
 			<key>description</key>
-			<string>适用于macOS的Intel板载LAN驱动程序。</string>
+			<string>適用於macOS的Intel板載LAN驅動程式。</string>
 			<key>name</key>
 			<string>IntelMausi</string>
 			<key>remoteFolder</key>
@@ -226,9 +226,9 @@
 			<key>author</key>
 			<string>SergeySlice</string>
 			<key>category</key>
-			<string>网卡驱动</string>
+			<string>網路卡驅動</string>
 			<key>description</key>
-			<string>用于macOS的LAN驱动程序，支持Realtek芯片8111B，C，D，E，EP，F，G，GU，8411B</string>
+			<string>用於macOS的LAN驅動程式，支援Realtek芯片8111B，C，D，E，EP，F，G，GU，8411B</string>
 			<key>name</key>
 			<string>RealtekR1000SL</string>
 			<key>remoteFolder</key>
@@ -240,9 +240,9 @@
 			<key>author</key>
 			<string>Mieze</string>
 			<key>category</key>
-			<string>网卡驱动</string>
+			<string>網路卡驅動</string>
 			<key>description</key>
-			<string>Realtek RTL8111/8168系列的OS X开源驱动程序</string>
+			<string>Realtek RTL8111/8168系列的OS X開源驅動程式</string>
 			<key>name</key>
 			<string>RealtekRTL8111</string>
 			<key>remoteFolder</key>
@@ -254,9 +254,9 @@
 			<key>author</key>
 			<string>vit9696</string>
 			<key>category</key>
-			<string>亮度快捷键驱动</string>
+			<string>亮度快速鍵驅動</string>
 			<key>description</key>
-			<string>自动处理没有DSDT补丁的亮度键</string>
+			<string>自動處理没有DSDT修補文件的亮度键</string>
 			<key>name</key>
 			<string>BrightnessKeys</string>
 			<key>remoteFolder</key>

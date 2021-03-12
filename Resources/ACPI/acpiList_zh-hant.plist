@@ -6,55 +6,55 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>从macOS 10.15开始，需要使用环境光传感器才能实现背光功能。在这里，我们创建了一个环境光传感器ACPI设备，SMCLightSensor kext可以使用它来通过SMC接口报告虚拟（没有设备的情况下）或有效值。</string>
+			<string>從macOS 10.15開始，需要使用環境光感測器才能實現背光功能。在這裡，我们建立了一個環境光感測器ACPI裝置，SMCLightSensor kext可以使用它來模擬SMC連接埠（沒有裝置的情况下）或有效值。</string>
 			<key>name</key>
 			<string>SSDT-ALS0</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>修复在较新的硬件上找到的系统时钟。</string>
+			<string>修復在較新的硬體上找到的系统時鐘。</string>
 			<key>name</key>
 			<string>SSDT-ARTC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>仅适用于300系列。如果无法强制在BIOS GUI中启用旧版RTC,而macOS尚不支持AWAC，因此我们必须强制启用RTC。不要使用RTC ACPI补丁。时间和警报设备提供了实时时钟（RTC）的替代方法，RTC被定义为固定功能硬件设备。唤醒计时器允许系统在经过一段时间后从S3（或可选的S4 / S5）状态转换为S0状态。与实时时钟（RTC）警报相比，时间和警报设备在唤醒定时器的操作方面具有更大的灵活性，并允许从OSPM中提取时间源的实现。</string>
+			<string>僅適用於300系列。如果無法強制在BIOS GUI中啟用舊版RTC,而macOS尚不支援AWAC，因此我們必須強制啟用RTC。不要使用RTC ACPI修補文件。時間和警報裝置提供了即時時鐘（RTC）的替代方法，RTC被定義為固定功能硬體。喚醒計時器允許系統在經過一段時間後從S3（或可選的S4 / S5）狀態轉換為S0狀態。與實時時鐘（RTC）警報相比，時間和警報設備在喚醒定時器的操作方面具有更大的靈活性，並允許從OSPM中提取時間源的實現。</string>
 			<key>name</key>
 			<string>SSDT-AWAC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>能源管理。对于AMD B550和A520用户，必须包括此SSDT才能启动。请注意，X570和较旧的主板不需要此SSDT。</string>
+			<string>電源管理。對於AMD B550和A520使用者，必須包括此SSDT才能開啟。請注意，X570和較舊的主機板不需要此SSDT。</string>
 			<key>name</key>
 			<string>SSDT-CPUR</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>修复嵌入式控制器。适用于Broadwell台式机和更老的台式机。</string>
+			<string>修復嵌入式控制器。適用於Broadwell桌上型電腦和更舊的桌上型電腦。</string>
 			<key>name</key>
 			<string>SSDT-EC-DESKTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>修复嵌入式控制器。适用于Broadwell或更旧的笔记本电脑。</string>
+			<string>修復嵌入式控制器。適用於Broadwell或更舊的筆記型電腦。</string>
 			<key>name</key>
 			<string>SSDT-EC-LAPTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>修复嵌入式控制器。适用于Skylake台式机和更新的基于AMD CPU的系统。</string>
+			<string>修復嵌入式控制器。適用於Skylake桌上型電腦和更新的基於AMD CPU的系统。</string>
 			<key>name</key>
 			<string>SSDT-EC-USBX-DESKTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>修复嵌入式控制器。适用于Skylake笔记本电脑和更高版本。</string>
+			<string>修復嵌入式控制器。適用於Skylake筆記型電腦和更高版本。</string>
 			<key>name</key>
 			<string>SSDT-EC-USBX-LAPTOP</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>USB兼容性表。禁用EHC1和EHC2-在您的BIOS中将选项"XHCI模式"设置为"启用"。如果"XHCI模式"选项在您的BIOS中不可用或无法正常工作，请使用此ACPI表。最好尽可能通过BIOS禁用。警告：对于7系列，您需要使用"EH1D = 1"或"EH2D = One"但不能同时使用！这是因为macOS仅使用一种设备（EHC1或EHC2）。检查IOReg。</string>
+			<string>USB相容性表。停用EHC1和EHC2-在您的BIOS中將選項"XHCI模式"設定為"開啟"。如果"XHCI模式"選項在您的BIOS中不能使用或無法正常工作，請使用此ACPI表。最好盡可能通過BIOS停用。警告：對於7系列，您需要使用"EH1D = 1"或"EH2D = One"但不能同時使用！這是因為macOS僅使用一種裝置（EHC1或EHC2）。檢查IOReg。</string>
 			<key>name</key>
 			<string>SSDT-EHCx_OFF</string>
 		</dict>
@@ -66,61 +66,61 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>仅当DSDT中没有IMEI设备（具有任何名称）并且需要通过DeviceProperty（某些Sandy Bridge或Ivy Bridge配置）设置自定义设备ID时才需要。</string>
+			<string>僅當DSDT中没有IMEI裝置（具有任何名稱）並且需要通過DeviceProperty（某些Sandy Bridge或Ivy Bridge配置）設定自定義裝置ID時才需要。</string>
 			<key>name</key>
 			<string>SSDT-IMEI-S</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>仅当DSDT中没有IMEI设备（具有任何名称）并且需要通过DeviceProperty（某些Sandy Bridge或Ivy Bridge配置）设置自定义设备ID时才需要。</string>
+			<string>僅當DSDT中没有IMEI裝置（具有任何名稱）並且需要通過DeviceProperty（某些Sandy Bridge或Ivy Bridge配置）設定自定義裝置ID時才需要。</string>
 			<key>name</key>
 			<string>SSDT-IMEI</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>能源管理。用于Haswell和更高的CPU</string>
+			<string>電源管理。用於Haswell和更高的CPU</string>
 			<key>name</key>
 			<string>SSDT-PLUG-DRTNIA</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>300系列主板原生NVRAM补丁</string>
+			<string>300系列主機板原生NVRAM修補文件</string>
 			<key>name</key>
 			<string>SSDT-PMC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Coffee Lake和更新的平台背光修复补丁</string>
+			<string>Coffee Lake和更新的平台背光修復修補文件</string>
 			<key>name</key>
 			<string>SSDT-PNLF-CFL</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>大多主板的背光补丁</string>
+			<string>大多主機板的背光修補文件</string>
 			<key>name</key>
 			<string>SSDT-PNLF</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>在400系列主板上，某些OEM破坏了ACPI规范，这导致启动进入macOS时出现问题。要解决此问题，我们将要关闭RHUB设备，并强制macOS手动重建端口。</string>
+			<string>在400系列主機板上，某些OEM破壞了ACPI規範，這導致啟動進入macOS時出現問題。要解决此問題，我们將要關閉RHUB裝置，並強制macOS手動重新建立端口。</string>
 			<key>name</key>
 			<string>SSDT-RHUB</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>所有Big Sur用户都需要确保其RTC设备兼容。注意:这个补丁仅与X99和X299一起使用，X79仅支持1组RTC内存，因此该SSDT实际上可以破坏系统。</string>
+			<string>所有Big Sur使用者都需要確保其RTC裝置相容。注意:這個修補文件僅與X99和X299一起使用，X79僅支援1組RTC内存，因此該SSDT實際上可以破壞系统。</string>
 			<key>name</key>
 			<string>SSDT-RTC0-RANGE-HEDT</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>确保禁用未加载的非核心桥接器，否则X79和X99将在IOPCIFamily的Big Sur中引起内核恐慌。所有Big Sur用户都需要确保其RTC设备兼容。</string>
+			<string>確保停用未載入的非核心橋接器，否則X79和X99將在IOPCIFamily的Big Sur中引起 Kernel 恐慌。所有Big Sur使用者都需要確保其RTC裝置相容。</string>
 			<key>name</key>
 			<string>SSDT-UNC</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>可以使用此SSDT代替OS Check Fix补丁来模拟Windows版本的Darwin。</string>
+			<string>可以使用此SSDT代替OS Check Fix修補文件来模擬Windows版本的Darwin。</string>
 			<key>name</key>
 			<string>SSDT-XOSI</string>
 		</dict>

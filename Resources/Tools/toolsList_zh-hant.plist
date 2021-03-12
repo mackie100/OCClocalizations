@@ -6,31 +6,31 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>进入Apple BootPicker菜单（不包括具有兼容GPU的Mac）。</string>
+			<string>進入Apple BootPicker選單（不包括具有相容GPU的Mac）。</string>
 			<key>name</key>
 			<string>BootKicker</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>测试BeepGen协议并生成不同样式和长度的音频信号。</string>
+			<string>測試BeepGen協議並生成不同樣式和長度的音訊訊號。</string>
 			<key>name</key>
 			<string>ChipTune</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>重置捆绑为独立工具的NVRAM替代品。</string>
+			<string>重置捆绑為獨立工具的NVRAM取代品。</string>
 			<key>name</key>
 			<string>CleanNvram</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>用一个简单的场景测试GraphicsOutput协议。</string>
+			<string>用一個簡單的場景測試GraphicsOutput協議。</string>
 			<key>name</key>
 			<string>GopStop</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>在SimpleText模式下测试键盘输入。</string>
+			<string>在SimpleText模式下測試鍵盤输入。</string>
 			<key>name</key>
 			<string>KeyTester</string>
 		</dict>
@@ -42,31 +42,31 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>从其他设备解锁和锁定NVRAM保护，以便在从OpenCore启动时能够获得完整的NVRAM访问权限。</string>
+			<string>從其他設備解鎖和鎖定NVRAM保護，以便在從OpenCore啟動時能夠獲得完整的NVRAM瀏覽權限。</string>
 			<key>name</key>
 			<string>OpenControl</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>配置了OpenCore的UEFI Shell，可兼容各种固件。</string>
+			<string>配置了OpenCore的UEFI Shell，可相容各種韌體。</string>
 			<key>name</key>
 			<string>OpenShell</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>用于执行系统重置的实用程序。将重置类型作为参数：ColdReset，WarmReset，Shutdown。默认为ColdReset。</string>
+			<string>用於執行系统重置的實用程式。將重置類型作為参数：ColdReset，WarmReset，Shutdown。預設為ColdReset。</string>
 			<key>name</key>
 			<string>ResetSystem</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>读取和写入RTC（CMOS）内存的实用程序。</string>
+			<string>讀取和寫入RTC（CMOS）記憶體的實用程式。</string>
 			<key>name</key>
 			<string>RtcRw</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>检查所有内核之间的CFG锁（MSR 0xE2写保护）一致性。</string>
+			<string>檢查所有 Kernel 之間的CFG鎖（MSR 0xE2寫保護）一致性。</string>
 			<key>name</key>
 			<string>VerifyMsrE2</string>
 		</dict>
