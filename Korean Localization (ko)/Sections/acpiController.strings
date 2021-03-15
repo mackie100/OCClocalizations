@@ -38,6 +38,9 @@
 /* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "HdU-pu-zKX"; */
 "HdU-pu-zKX.title" = "모두 활성화";
 
+/* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "Ite-rF-5H2"; */
+"Ite-rF-5H2.headerCell.title" = "카운트";
+
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "JFF-S2-t99"; */
 "JFF-S2-t99.headerCell.title" = "ReplaceMask";
 
@@ -86,8 +89,11 @@
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "ger-9o-NnS"; */
 "ger-9o-NnS.headerCell.title" = "리밋";
 
-/* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "hIr-Vr-rVp"; */
-"hIr-Vr-rVp.headerCell.title" = "카운트";
+/* Class = "NSTableColumn"; headerCell.title = "Base"; ObjectID = "h4B-GA-PeX"; */
+"h4B-GA-PeX.headerCell.title" = "Base";
+
+/* Class = "NSTableColumn"; headerCell.title = "BaseSkip"; ObjectID = "hIr-Vr-rVp"; */
+"hIr-Vr-rVp.headerCell.title" = "BaseSkip";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Attempt to heuristically relocate ACPI memory regions. Not recommended.\n\nACPI tables are often generated dynamically by underlying firmware implementation. Among the position- independent code, ACPI tables may contain physical addresses of MMIO areas used for device configuration, usually grouped in regions (e.g. OperationRegion). Changing firmware settings or hardware configuration, upgrading or patching the firmware inevitably leads to changes in dynamically generated ACPI code, which sometimes lead to the shift of the addresses in aforementioned OperationRegion constructions.\nFor this reason it is very dangerous to apply any kind of modifications to ACPI tables. The most reasonable approach is to make as few as possible changes to ACPI and try to not replace any tables, especially DSDT. When this is not possible, then at least attempt to ensure that custom DSDT is based on the most recent DSDT or remove writes and reads for the affected areas.\nWhen nothing else helps this option could be tried to avoid stalls at PCI Configuration Begin phase of macOS booting by attempting to fix the ACPI addresses. It does not do magic, and only works with most common cases. Do not use unless absolutely required."; ObjectID = "iWF-dk-0VK"; */
 "iWF-dk-0VK.ibShadowedToolTip" = "데이터 타입: plist boolean\nFailsafe: false\nDescription: Attempt to heuristically relocate ACPI memory regions. Not recommended.\n\nACPI tables are often generated dynamically by underlying firmware implementation. Among the position- independent code, ACPI tables may contain physical addresses of MMIO areas used for device configuration, usually grouped in regions (e.g. OperationRegion). Changing firmware settings or hardware configuration, upgrading or patching the firmware inevitably leads to changes in dynamically generated ACPI code, which sometimes lead to the shift of the addresses in aforementioned OperationRegion constructions.\nFor this reason it is very dangerous to apply any kind of modifications to ACPI tables. The most reasonable approach is to make as few as possible changes to ACPI and try to not replace any tables, especially DSDT. When this is not possible, then at least attempt to ensure that custom DSDT is based on the most recent DSDT or remove writes and reads for the affected areas.\nWhen nothing else helps this option could be tried to avoid stalls at PCI Configuration Begin phase of macOS booting by attempting to fix the ACPI addresses. It does not do magic, and only works with most common cases. Do not use unless absolutely required.";
