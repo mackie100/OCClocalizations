@@ -41,6 +41,9 @@
 /* Class = "NSTabViewItem"; label = "Security"; ObjectID = "3fm-Nz-fHj"; */
 "3fm-Nz-fHj.label" = "Sécurité";
 
+/* Class = "NSTextFieldCell"; title = "PickerVariant"; ObjectID = "4Mc-Dm-vYw"; */
+"4Mc-Dm-vYw.title" = "PickerVariant";
+
 /* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Builtin\nDescription: Choose boot picker used for boot management.\nPicker describes underlying boot management with an optional user interface responsible for handling boot\noptions. The following values are supported:\n• Builtin — boot management is handled by OpenCore, a simple text only user interface is used.\n• External — an external boot management protocol is used if available. Otherwise Builtin mode is used.\n• Apple — Apple boot management is used if available. Otherwise Builtin mode is used.\n\nUpon success External mode will entirely disable all boot management in OpenCore except policy enforcement. See OpenCanopy plugin for an example of a custom user interface.\nOpenCore built-in boot picker contains a set of actions chosen during the boot process. The list of supported actions is similar to Apple BDS and in general can be accessed by holding action hotkeys during boot process. Currently the following actions are considered:\n• Default — this is the default option, and it lets OpenCore built-in boot picker to loads the default boot option as specified in Startup Disk preference pane.\n• ShowPicker — this option forces picker to show. Normally it can be achieved by holding OPT key during boot. Setting ShowPicker to true will make ShowPicker the default option.\n• ResetNvram — this option performs select UEFI variable erase and is normally achieved by holding CMD+OPT+P+R key combination during boot. Another way to erase UEFI variables is to choose Reset NVRAM in the picker. This option requires AllowNvramReset to be set to true.\n• BootApple — this options performs booting to the first found Apple operating system unless the default chosen operating system is already made by Apple. Hold X key to choose this option.\n• BootAppleRecovery — this option performs booting to Apple operating system recovery. Either the one related to the default chosen operating system, or first found in case default chosen operating system is not made by Apple or has no recovery. Hold CMD+R key combination to choose this option.\n\nNote 1: Activated KeySupport, OpenUsbKbDxe, or similar driver is required for key handling to work. On several types of firmware, it is not possible to get all the key functions.\n\nNote 2: In addition to OPT OpenCore supports Escape key to display picker when ShowPicker is disabled. This key exists for Apple picker mode and for firmware with PS/2 keyboards that fail to report held OPT keys and requiring continual presses of the Escape key to access the boot menu.\n\nNote 3: On Macs with problematic GOP, it may be difficult to access the Apple BootPicker. The BootKicker utility can be blessed to workaround this problem even without loading OpenCore. On some Macs however, the BootKicker utility cannot be run from OpenCore."; ObjectID = "5Or-M0-hZS"; */
 "5Or-M0-hZS.ibShadowedToolTip" = "Sélectionnez un sélecteur de démarrage pour la gestion du démarrage \nSupporte les valeurs suivantes: \nBuiltin (par défaut) - La gestion du démarrage est gérée par OpenCore, à l'aide d'une interface utilisateur en texte brut. \n • Protocole de gestion de démarrage externe à usage externe (si disponible), sinon, le mode intégré sera utilisé. \n • Apple-Use Apple Boot Management (si disponible), sinon, le mode intégré sera utilisé.";
 
@@ -116,6 +119,9 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_PCI"; ObjectID = "I0K-dq-ofU"; */
 "I0K-dq-ofU.title" = "OC_SCAN_ALLOW_DEVICE_PCI";
 
+/* Class = "NSPopUpButton"; ibShadowedToolTip = "Type: plist string\nFailsafe: Disabled\nDescription: Register the launcher option in the firmware preferences for persistence.\n\nValid values:\n• Disabled — do nothing.\n• Full — create or update the top priority boot option in UEFI variable storage at bootloader startup.\n\t– For this option to work, RequestBootVarRouting is required to be enabled.\n• Short — create a short boot option instead of a complete one.\n\t– This variant is useful for some older types of firmware, typically from Insyde, that are unable to manage full device paths.\n• System — create no boot option but assume specified custom option is blessed.\n\t– This variant is useful when relying on ForceBooterSignature quirk and OpenCore launcher path management happens through bless utilities without involving OpenCore.\n\nThis option allows integration with third-party operating system installation and upgrades (which may overwrite the \\EFI\\BOOT\\BOOTx64.efi file). The BOOTx64.efi file is no longer used for bootstrapping OpenCore if a custom option is created. The custom path used for bootstrapping can be specified by using the LauncherPath option.\n\nNote 1: Some types of firmware may have NVRAM implementation flaws, no boot option support, or other incompatibilities. While unlikely, the use of this option may result in boot failures and should only be used exclusively on the boards known to be compatible. Refer to acidanthera/bugtracker#1222 for some known issues affecting Haswell and other boards.\n\nNote 2: While NVRAM resets executed from OpenCore would not typically erase the boot option created in Bootstrap, executing NVRAM resets prior to loading OpenCore will erase the boot option. Therefore, for significant implementation updates, such as was the case with OpenCore 0.6.4, an NVRAM reset should be executed with Bootstrap disabled after which it can be re-enabled."; ObjectID = "IqM-FZ-Tdv"; */
+"IqM-FZ-Tdv.ibShadowedToolTip" = "Type: plist string\nFailsafe: Disabled\nDescription: Register the launcher option in the firmware preferences for persistence.\n\nValid values:\n• Disabled — do nothing.\n• Full — create or update the top priority boot option in UEFI variable storage at bootloader startup.\n\t– For this option to work, RequestBootVarRouting is required to be enabled.\n• Short — create a short boot option instead of a complete one.\n\t– This variant is useful for some older types of firmware, typically from Insyde, that are unable to manage full device paths.\n• System — create no boot option but assume specified custom option is blessed.\n\t– This variant is useful when relying on ForceBooterSignature quirk and OpenCore launcher path management happens through bless utilities without involving OpenCore.\n\nThis option allows integration with third-party operating system installation and upgrades (which may overwrite the \\EFI\\BOOT\\BOOTx64.efi file). The BOOTx64.efi file is no longer used for bootstrapping OpenCore if a custom option is created. The custom path used for bootstrapping can be specified by using the LauncherPath option.\n\nNote 1: Some types of firmware may have NVRAM implementation flaws, no boot option support, or other incompatibilities. While unlikely, the use of this option may result in boot failures and should only be used exclusively on the boards known to be compatible. Refer to acidanthera/bugtracker#1222 for some known issues affecting Haswell and other boards.\n\nNote 2: While NVRAM resets executed from OpenCore would not typically erase the boot option created in Bootstrap, executing NVRAM resets prior to loading OpenCore will erase the boot option. Therefore, for significant implementation updates, such as was the case with OpenCore 0.6.4, an NVRAM reset should be executed with Bootstrap disabled after which it can be re-enabled.";
+
 /* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
 "Jpe-QB-x2r.title" = "AllowNvramReset";
 
@@ -131,6 +137,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware may not succeed in booting the operating system quickly, especially in debug mode, which results the watchdog timer aborting the process. This option turns off the watchdog timer."; ObjectID = "LCd-qL-7KC"; */
 "LCd-qL-7KC.ibShadowedToolTip" = "Si macOS se bloque à certains endroits au démarrage, il peut être nécessaire de le régler sur OUI, ce qui est généralement utilisé pour éliminer l'erreur";
 
+/* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string\nFailsafe: Auto\nDescription: Choose specific icon set to be used for boot management.\n\nThe following values are supported:\n• Auto — Automatically select one set of icons based on the DefaultBackground colour.\n• Default — Normal icon set (without prefix).\n• Old — Vintage icon set (Old filename prefix).\n• Modern — Nouveau icon set (Modern filename prefix).\n• Other value — Custom icon set if supported by installed resources."; ObjectID = "M7r-QM-SNm"; */
+"M7r-QM-SNm.ibShadowedToolTip" = "Type: plist string\nFailsafe: Auto\nDescription: Choose specific icon set to be used for boot management.\n\nThe following values are supported:\n• Auto — Automatically select one set of icons based on the DefaultBackground colour.\n• Default — Normal icon set (without prefix).\n• Old — Vintage icon set (Old filename prefix).\n• Modern — Nouveau icon set (Modern filename prefix).\n• Other value — Custom icon set if supported by installed resources.";
+
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data 64 bytes\nFailsafe: all zero\nDescription: Password hash used when EnabledPassword is set."; ObjectID = "NCW-lH-X8S"; */
 "NCW-lH-X8S.ibShadowedToolTip" = "Type: plist data 64 bytes\nFailsafe: all zero\nDescription: Password hash used when EnabledPassword is set.";
 
@@ -142,9 +151,6 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).\n\nNote: This option exists due to some operating systems, namely macOS Big Sur, being incapable of disabling firmware updates with the NVRAM variable (run-efi-updater)."; ObjectID = "Nph-Bb-8b6"; */
 "Nph-Bb-8b6.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).\n\nNote: This option exists due to some operating systems, namely macOS Big Sur, being incapable of disabling firmware updates with the NVRAM variable (run-efi-updater).";
-
-/* Class = "NSTextFieldCell"; title = "BootProtect"; ObjectID = "OeD-Mz-a2a"; */
-"OeD-Mz-a2a.title" = "BootProtect";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable screen reader by default in boot picker.\nFor macOS bootloader screen reader preference is set in preferences.efires archive in isVOEnabled.int32 file and is controlled by the operating system. For OpenCore screen reader support this option is an independent equivalent. Toggling screen reader support in both OpenCore boot picker and macOS bootloader FileVault 2 login window can also be done with Command + F5 key combination.\nNote: screen reader requires working audio support, see UEFI Audio Properties section for more details."; ObjectID = "PDS-bo-Qx8"; */
 "PDS-bo-Qx8.ibShadowedToolTip" = "Activez la fonction d'écran assistant vocal dans le sélecteur de démarrage. \nVous pouvez également utiliser la combinaison de touches Commande + F5 pour changer la fonction d’assistant vocal de l’écran dans le sélecteur de démarrage OpenCore et la fenêtre de connexion FileVault 2 du chargeur de démarrage macOS. \nRemarque: le pilote audio AudioDxe.ef doit être chargé pour la fonction d'assistance vocale à l'écran.";
@@ -193,6 +199,9 @@
 
 /* Class = "NSTextFieldCell"; title = "Hibernate Mode"; ObjectID = "TmR-t7-bmq"; */
 "TmR-t7-bmq.title" = "Hibernate Mode\n mode veille";
+
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Default\nDescription: Launch path for the LauncherOption property.\n\nDefault points to OpenCore.efi. User specified paths, e.g. \\EFI\\SomeLauncher.efi, can be used to provide custom loaders, which are supposed to load OpenCore.efi themselves."; ObjectID = "Uqn-Ww-mAH"; */
+"Uqn-Ww-mAH.ibShadowedToolTip" = "Type: plist string\nFailsafe: Default\nDescription: Launch path for the LauncherOption property.\n\nDefault points to OpenCore.efi. User specified paths, e.g. \\EFI\\SomeLauncher.efi, can be used to provide custom loaders, which are supposed to load OpenCore.efi themselves.";
 
 /* Class = "NSButtonCell"; title = "Enable logging to file"; ObjectID = "Uz7-yL-WDQ"; */
 "Uz7-yL-WDQ.title" = "Activer la journalisation dans un fichier";
@@ -296,6 +305,9 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "i2m-65-2vq"; */
 "i2m-65-2vq.title" = "OC_SCAN_ALLOW_DEVICE_ATAPI";
 
+/* Class = "NSTextFieldCell"; title = "LauncherOption"; ObjectID = "i5B-oK-z1D"; */
+"i5B-oK-z1D.title" = "LauncherOption";
+
 /* Class = "NSButtonCell"; title = "Download/Update tools"; ObjectID = "i6P-Lb-eX2"; */
 "i6P-Lb-eX2.title" = "Download/Update tools";
 
@@ -346,6 +358,9 @@
 
 /* Class = "NSButtonCell"; title = "AllowSetDefault"; ObjectID = "qpq-Le-cti"; */
 "qpq-Le-cti.title" = "AllowSetDefault";
+
+/* Class = "NSButtonCell"; title = "Enable pointer control in the picker when available"; ObjectID = "r8W-nu-W4X"; */
+"r8W-nu-W4X.title" = "Enable pointer control in the picker when available";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker."; ObjectID = "rQF-20-vFl"; */
 "rQF-20-vFl.ibShadowedToolTip" = "Autorisez CTRL + Entrée ou CTRL + Index (numéro d'élément du menu de démarrage) pour définir l'option de démarrage par défaut suivante dans le menu de démarrage.";
@@ -400,6 +415,9 @@
 
 /* Class = "NSButtonCell"; title = "ApplePanic"; ObjectID = "yaU-Lw-vco"; */
 "yaU-Lw-vco.title" = "ApplePanic";
+
+/* Class = "NSTextFieldCell"; title = "LauncherPath"; ObjectID = "ykx-r5-I09"; */
+"ykx-r5-I09.title" = "LauncherPath";
 
 /* Class = "NSButtonCell"; title = "Expose printable booter path as an UEFI variable."; ObjectID = "z6D-gM-UDa"; */
 "z6D-gM-UDa.title" = "Exposez le chemin de démarrage imprimable en tant que variable UEFI.";
