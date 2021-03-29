@@ -104,6 +104,9 @@
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Suppress initial delay before key repeat in OpenCore implementation of Apple Event protocol.\n\nWhen combining OpenCore KeySupport with the Apple Event protocol, key repeat behaviour may show one additional slow key repeat before normal key repeat starts. Enabling this option works around this problem by suppressing the initial repeat delay in the OpenCore Apple Event implementation. This option is recommended to be set when using KeySupport mode, in most cases, and is not recommended to be set on any systems which are not using KeySupport mode."; ObjectID = "Dz8-ew-orw"; */
+"Dz8-ew-orw.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Suppress initial delay before key repeat in OpenCore implementation of Apple Event protocol.\n\nWhen combining OpenCore KeySupport with the Apple Event protocol, key repeat behaviour may show one additional slow key repeat before normal key repeat starts. Enabling this option works around this problem by suppressing the initial repeat delay in the OpenCore Apple Event implementation. This option is recommended to be set when using KeySupport mode, in most cases, and is not recommended to be set on any systems which are not using KeySupport mode.";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key."; ObjectID = "EIc-ff-Thn"; */
 "EIc-ff-Thn.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key.";
 
@@ -274,6 +277,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace incompatible implementations of GOP on the console handle, as may be the case on the MacPro5,1 when using modern GPUs."; ObjectID = "eGd-xS-rQf"; */
 "eGd-xS-rQf.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace incompatible implementations of GOP on the console handle, as may be the case on the MacPro5,1 when using modern GPUs.";
+
+/* Class = "NSButtonCell"; title = "KeySkipFirstDelay"; ObjectID = "eKj-mi-o4K"; */
+"eKj-mi-o4K.title" = "KeySkipFirstDelay";
 
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";

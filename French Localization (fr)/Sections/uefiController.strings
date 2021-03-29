@@ -104,8 +104,8 @@
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
 
-/* Class = "NSMenuItem"; title = "UnusableMemory — EfiUnusableMemory"; ObjectID = "DwL-VG-qNh"; Note = "Do not localize"; */
-"DwL-VG-qNh.title" = "UnusableMemory — EfiUnusableMemory";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Suppress initial delay before key repeat in OpenCore implementation of Apple Event protocol.\n\nWhen combining OpenCore KeySupport with the Apple Event protocol, key repeat behaviour may show one additional slow key repeat before normal key repeat starts. Enabling this option works around this problem by suppressing the initial repeat delay in the OpenCore Apple Event implementation. This option is recommended to be set when using KeySupport mode, in most cases, and is not recommended to be set on any systems which are not using KeySupport mode."; ObjectID = "Dz8-ew-orw"; */
+"Dz8-ew-orw.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Suppress initial delay before key repeat in OpenCore implementation of Apple Event protocol.\n\nWhen combining OpenCore KeySupport with the Apple Event protocol, key repeat behaviour may show one additional slow key repeat before normal key repeat starts. Enabling this option works around this problem by suppressing the initial repeat delay in the OpenCore Apple Event implementation. This option is recommended to be set when using KeySupport mode, in most cases, and is not recommended to be set on any systems which are not using KeySupport mode.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key."; ObjectID = "EIc-ff-Thn"; */
 "EIc-ff-Thn.ibShadowedToolTip" = "Commutez les touches Commande et Option, sélectionnez généralement NON";
@@ -155,9 +155,6 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Data Hub protocol with a builtin version. This will delete all previous properties if the protocol was already installed."; ObjectID = "KN0-dq-pSV"; */
 "KN0-dq-pSV.ibShadowedToolTip" = "Reconstruisez le datahub, sélectionnez NON ici.";
 
-/* Class = "NSMenuItem"; title = "ACPIReclaimMemory — EfiACPIReclaimMemory"; ObjectID = "KsW-za-ip4"; Note = "Do not localize"; */
-"KsW-za-ip4.title" = "ACPIReclaimMemory — EfiACPIReclaimMemory";
-
 /* Class = "NSTextFieldCell"; title = "AudioCodec"; ObjectID = "L2f-gE-rBP"; */
 "L2f-gE-rBP.title" = "AudioCodec";
 
@@ -188,9 +185,6 @@
 /* Class = "NSButtonCell"; title = "AppleAudio"; ObjectID = "POq-ge-Ugg"; */
 "POq-ge-Ugg.title" = "AppleAudio";
 
-/* Class = "NSMenuItem"; title = "LoaderData — EfiLoaderData"; ObjectID = "PUI-Gl-EfE"; Note = "Do not localize"; */
-"PUI-Gl-EfE.title" = "LoaderData — EfiLoaderData";
-
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "PVa-Cc-beC"; */
 "PVa-Cc-beC.title" = "Quirks";
 
@@ -215,23 +209,17 @@
 /* Class = "NSButtonCell"; title = "ReleaseUsbOwnership"; ObjectID = "UMT-DK-9B5"; */
 "UMT-DK-9B5.title" = "ReleaseUsbOwnership";
 
-/* Class = "NSMenuItem"; title = "BootServiceCode — EfiBootServicesCode"; ObjectID = "UNS-wv-SeD"; Note = "Do not localize"; */
-"UNS-wv-SeD.title" = "BootServiceCode — EfiBootServicesCode";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls device property protocol with a builtin version. This will delete all previous properties if it was already installed. This may be used to ensure full compatibility on VMs or legacy Macs."; ObjectID = "Ueb-hn-jBT"; */
 "Ueb-hn-jBT.ibShadowedToolTip" = "Sélectionnez généralement NO \n  pour garantir une compatibilité totale sur la machine virtuelle ou la vieille pomme blanche.";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Index of the output port of the specified codec starting from 0.\nNormally this contains the index of the green out of the builtin analog audio controller (HDEF). The number of output nodes (N) in the debug log (marked in bold):\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs) \n\nThe quickest way to find the right port is to bruteforce the values from 0 to N - 1."; ObjectID = "UrW-oc-0Oc"; */
-"UrW-oc-0Oc.ibShadowedToolTip" = "Spécifiez l'index du port de sortie du codec, généralement à partir de 0. \n  \n Le moyen le plus rapide pour trouver le port correct est de forcer la valeur de 0 à N-1. N est le nombre d'index de port de sortie affichés dans le journal, tels que Il y a 3 sorties dans le journal, vous pouvez les essayer de 0 à 2.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Index of the output port of the specified codec starting from 0.\n\nThis typically contains the index of the green out of the builtin analog audio controller (HDEF). The number of output nodes (N) in the debug log (marked in bold):\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs) \n\nThe quickest way to find the right port is to bruteforce the values from 0 to N - 1."; ObjectID = "UrW-oc-0Oc"; */
+"UrW-oc-0Oc.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Index of the output port of the specified codec starting from 0.\n\nThis typically contains the index of the green out of the builtin analog audio controller (HDEF). The number of output nodes (N) in the debug log (marked in bold):\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs) \n\nThe quickest way to find the right port is to bruteforce the values from 0 to N - 1.";
 
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "Pilote UEFI";
 
-/* Class = "NSMenuItem"; title = "MemoryMappedIO — EfiMemoryMappedIO"; ObjectID = "XBh-jM-PDL"; Note = "Do not localize"; */
-"XBh-jM-PDL.title" = "MemoryMappedIO — EfiMemoryMappedIO";
-
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot."; ObjectID = "XQL-ML-llQ"; */
-"XQL-ML-llQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Reinstalls Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot."; ObjectID = "XQL-ML-llQ"; */
+"XQL-ML-llQ.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot.";
 
 /* Class = "NSButtonCell"; title = "AppleRtcRam"; ObjectID = "Xjp-N3-zFD"; */
 "Xjp-N3-zFD.title" = "AppleRtcRam";
@@ -260,17 +248,11 @@
 /* Class = "NSTextFieldCell"; title = "PointerSupportMode"; ObjectID = "anR-lZ-CjV"; */
 "anR-lZ-CjV.title" = "PointerSupportMode";
 
-/* Class = "NSMenuItem"; title = "LoaderCode — EfiLoaderCode"; ObjectID = "b7Y-CD-r7l"; Note = "Do not localize"; */
-"b7Y-CD-r7l.title" = "LoaderCode — EfiLoaderCode";
-
 /* Class = "NSButtonCell"; title = "ProvideConsoleGop"; ObjectID = "bdr-Pu-Crr"; */
 "bdr-Pu-Crr.title" = "ProvideConsoleGop";
 
 /* Class = "NSButtonCell"; title = "ActivateHpetSupport"; ObjectID = "c2Y-XK-b7N"; */
 "c2Y-XK-b7N.title" = "ActivateHpetSupport";
-
-/* Class = "NSMenuItem"; title = "RuntimeData — EfiRuntimeServicesData"; ObjectID = "c5S-aW-uXu"; Note = "Do not localize"; */
-"c5S-aW-uXu.title" = "RuntimeData — EfiRuntimeServicesData";
 
 /* Class = "NSButtonCell"; title = "ResetTrafficClass"; ObjectID = "cgf-ad-vIe"; */
 "cgf-ad-vIe.title" = "ResetTrafficClass";
@@ -290,23 +272,14 @@
 /* Class = "NSButtonCell"; title = "AppleKeyMap"; ObjectID = "dpz-CS-4eq"; */
 "dpz-CS-4eq.title" = "AppleKeyMap";
 
-/* Class = "NSTextFieldCell"; title = "KeyMergeThreshold"; ObjectID = "du6-Wl-DOI"; */
-"du6-Wl-DOI.title" = "KeyMergeThreshold";
-
-/* Class = "NSMenuItem"; title = "PalCode — EfiPalCode"; ObjectID = "dzI-am-EZX"; Note = "Do not localize"; */
-"dzI-am-EZX.title" = "PalCode — EfiPalCode";
-
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is broken."; ObjectID = "dzp-p6-AHb"; */
 "dzp-p6-AHb.ibShadowedToolTip" = "Si vous êtes un ASUS z87 ou z97, vous devez activer l'option PointerSupport.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace broken GOP protocol on console handle, which may be the case on MacPro5,1 with newer GPUs."; ObjectID = "eGd-xS-rQf"; */
 "eGd-xS-rQf.ibShadowedToolTip" = "Avant de sélectionner l'écran système, vous pouvez voir des informations sur votre erreur de configuration de configuration. Vous pouvez ajuster votre configuration en fonction de ces informations, ou vous pouvez choisir OUI pour ignorer. Il est recommandé de choisir OUI.";
 
-/* Class = "NSMenuItem"; title = "Persistent — EfiPersistentMemory"; ObjectID = "eMM-3b-cBd"; Note = "Do not localize"; */
-"eMM-3b-cBd.title" = "Persistent — EfiPersistentMemory";
-
-/* Class = "NSMenuItem"; title = "MemoryMappedIOPortSpace — EfiMemoryMappedIOPortSpace"; ObjectID = "eQX-uX-ZBd"; Note = "Do not localize"; */
-"eQX-uX-ZBd.title" = "MemoryMappedIOPortSpace — EfiMemoryMappedIOPortSpace";
+/* Class = "NSButtonCell"; title = "KeySkipFirstDelay"; ObjectID = "eKj-mi-o4K"; */
+"eKj-mi-o4K.title" = "KeySkipFirstDelay";
 
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";
@@ -314,14 +287,14 @@
 /* Class = "NSTextFieldCell"; title = "MinimumVolume"; ObjectID = "ehu-K3-gbY"; */
 "ehu-K3-gbY.title" = "MinimumVolume";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Provide UGA protocol instances on top of GOP protocol.\n\nSome types of firmware do not implement the legacy UGA protocol but this may be required for screen output by older EFI applications such as EfiBoot from 10.4."; ObjectID = "ejz-UL-xuF"; */
-"ejz-UL-xuF.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Provide UGA protocol instances on top of GOP protocol.\n\nSome types of firmware do not implement the legacy UGA protocol but this may be required for screen output by older EFI applications such as EfiBoot from 10.4.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Provide UGA protocol instances on top of GOP protocol instances.\n\nSome types of firmware do not implement the legacy UGA protocol but this may be required for screen output by older EFI applications such as EfiBoot from 10.4."; ObjectID = "ejz-UL-xuF"; */
+"ejz-UL-xuF.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Provide UGA protocol instances on top of GOP protocol instances.\n\nSome types of firmware do not implement the legacy UGA protocol but this may be required for screen output by older EFI applications such as EfiBoot from 10.4.";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Remove duplicate entries BootOrder variable in EFI_GLOBAL_VARIABLE_GUID.\n\nThis quirk requires RequestBootVarRouting to be enabled and therefore OC_FIRMWARE_RUNTIME protocol imple- mented in OpenRuntime.efi.\nBy redirecting Boot prefixed variables to a separate GUID namespace with the help of RequestBootVarRouting quirk we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation\nwakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or anyhow corrupted.\n\nHowever, some types of firmware do their own boot option scanning on startup by checking for file presence on the available disks. This scanning often includes non-standard locations such as Windows Bootloader paths. This is typically not an issue but some firmware, such as ASUS firmware on the APTIO V, have bugs. On such, scanning is implemented improperly and firmware preferences may get accidentally corrupted due to BootOrder entry duplication (each option will be added twice) making it impossible to boot without resetting NVRAM.\n\nTo trigger the bug one, some valid boot options (e.g. OpenCore) are required. Then install Windows with RequestBootVarRouting enabled. As the Windows bootloader option will not be created by the Windows installer, the firmware will attempt to create this itself, leading to a corruption of its boot option list.\n\nThis quirk removes all duplicates in BootOrder variable attempting to resolve the consequences of the bugs upon OpenCore loading. It is recommended to use this key along with BootProtect option."; ObjectID = "esT-oy-xWe"; */
-"esT-oy-xWe.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Remove duplicate entries BootOrder variable in EFI_GLOBAL_VARIABLE_GUID.\n\nThis quirk requires RequestBootVarRouting to be enabled and therefore OC_FIRMWARE_RUNTIME protocol imple- mented in OpenRuntime.efi.\nBy redirecting Boot prefixed variables to a separate GUID namespace with the help of RequestBootVarRouting quirk we achieve multiple goals:\n• Operating systems are jailed and only controlled by OpenCore boot environment to enhance security.\n• Operating systems do not mess with OpenCore boot priority, and guarantee fluent updates and hibernation\nwakes for cases that require reboots with OpenCore in the middle.\n• Potentially incompatible boot entries, such as macOS entries, are not deleted or anyhow corrupted.\n\nHowever, some types of firmware do their own boot option scanning on startup by checking for file presence on the available disks. This scanning often includes non-standard locations such as Windows Bootloader paths. This is typically not an issue but some firmware, such as ASUS firmware on the APTIO V, have bugs. On such, scanning is implemented improperly and firmware preferences may get accidentally corrupted due to BootOrder entry duplication (each option will be added twice) making it impossible to boot without resetting NVRAM.\n\nTo trigger the bug one, some valid boot options (e.g. OpenCore) are required. Then install Windows with RequestBootVarRouting enabled. As the Windows bootloader option will not be created by the Windows installer, the firmware will attempt to create this itself, leading to a corruption of its boot option list.\n\nThis quirk removes all duplicates in BootOrder variable attempting to resolve the consequences of the bugs upon OpenCore loading. It is recommended to use this key along with BootProtect option.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware reset screen resolutions to a failsafe value (such as 1024x768) on the attempts to clear screen contents when large display (e.g. 2K or 4K) is used. This option attempts to apply a workaround.\n\nNote: This option only applies to the System renderer. On all known affected systems, ConsoleMode must be set to an empty string for this option to work."; ObjectID = "f0k-6s-W9I"; */
+"f0k-6s-W9I.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware reset screen resolutions to a failsafe value (such as 1024x768) on the attempts to clear screen contents when large display (e.g. 2K or 4K) is used. This option attempts to apply a workaround.\n\nNote: This option only applies to the System renderer. On all known affected systems, ConsoleMode must be set to an empty string for this option to work.";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\nThis option allows to update firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value generally improves performance and responsiveness of the interface and input handling.\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. In case of issues, this option can be left as 0."; ObjectID = "fda-QM-Vl4"; */
-"fda-QM-Vl4.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\nThis option allows to update firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value generally improves performance and responsiveness of the interface and input handling.\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. In case of issues, this option can be left as 0.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\n\nThis option allows updating the firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value typically improves performance and responsiveness of the interface and input handling.\n\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. In case of issues, this option can be left as 0."; ObjectID = "fda-QM-Vl4"; */
+"fda-QM-Vl4.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\n\nThis option allows updating the firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value typically improves performance and responsiveness of the interface and input handling.\n\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. In case of issues, this option can be left as 0.";
 
 /* Class = "NSButtonCell"; title = "GopPassThrough"; ObjectID = "g7Z-iK-sN1"; */
 "g7Z-iK-sN1.title" = "GopPassThrough";
@@ -350,8 +323,8 @@
 /* Class = "NSButtonCell"; title = "AppleFramebufferInfo"; ObjectID = "ixW-rs-w20"; */
 "ixW-rs-w20.title" = "AppleFramebufferInfo";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. In general the necessary delay may be as long as 0.5 seconds."; ObjectID = "jGE-sP-Rtr"; */
-"jGE-sP-Rtr.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. In general the necessary delay may be as long as 0.5 seconds.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. A typical delay can be up to 0.5 seconds."; ObjectID = "jGE-sP-Rtr"; */
+"jGE-sP-Rtr.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Audio codec reconfiguration delay in microseconds.\n\nSome codecs require a vendor-specific delay after the reconfiguration (e.g. volume setting). This option makes it configurable. A typical delay can be up to 0.5 seconds.";
 
 /* Class = "NSView"; ibShadowedToolTip = "Type: plist array \nDescription: Designed to be filled with plist dict values, describing memory areas exquisite to particular firmware and hardware functioning, which should not be used by the operating system. An example of such\nmemory region could be second 256 MB corrupted by Intel HD 3000 or an area with faulty RAM. See Reserved-Memory Properties section below."; ObjectID = "k2W-U9-Ysu"; */
 "k2W-U9-Ysu.ibShadowedToolTip" = "Type: tableau plist \nDescription: Conçu pour être rempli avec des valeurs dict plist, décrivant les zones de mémoire exquises pour un fonctionnement particulier du firmware et du matériel, qui ne doivent pas être utilisées par le système d'exploitation. Un exemple d'une telle région \nmemory pourrait être un second 256 Mo corrompu par Intel HD 3000 ou une zone avec une RAM défectueuse. Voir la section Propriétés de la mémoire réservée ci-dessous.";
@@ -365,14 +338,11 @@
 /* Class = "NSButtonCell"; title = "Connect Drivers"; ObjectID = "kBk-75-acl"; */
 "kBk-75-acl.title" = "Pilote de connexion";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Assume simultaneous combination for keys submitted within this timeout in milliseconds.\nSimilarly to KeyForgetThreshold, this option works around the sequential nature of key submission. To be able to recognise simultaneously pressed keys in the situation when all keys arrive sequentially, we are required to set a timeout within which we assume the keys were pressed together.\nHolding multiple keys results in reports every 2 and 1 milliseconds for VMware and APTIO V respectively. Pressing keys one after the other results in delays of at least 6 and 10 milliseconds for the same platforms. The recommended value for this option is 2 milliseconds, but it may be decreased for faster platforms and increased for slower."; ObjectID = "kKb-0m-i9e"; */
-"kKb-0m-i9e.ibShadowedToolTip" = "Intervalle de temps (unité: millisecondes) auquel la clé est réinitialisée en appuyant sur la touche. Similaire à KeyForgetThreshold, cette option s'applique à la nature séquentielle de la soumission de la clé. Afin de pouvoir reconnaître les touches enfoncées simultanément lorsque toutes les touches arrivent dans l'ordre, nous devons définir un délai d'expiration pendant lequel nous supposons que les touches sont enfoncées simultanément. \n Le maintien de plusieurs clés signalera respectivement VMware et APTIOV toutes les 2 ms et 1 ms. Pour la même plateforme, le fait d'appuyer les touches l'une après l'autre provoque un retard d'au moins 6 à 10 millisecondes. La valeur recommandée pour cette option est de 2 millisecondes, mais elle peut diminuer pour les plates-formes plus rapides et augmenter pour les plates-formes plus lentes.";
-
 /* Class = "NSTextFieldCell"; title = "AudioOut"; ObjectID = "kM6-tO-pns"; */
 "kM6-tO-pns.title" = "AudioOut";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Load APFS drivers for newly connected devices.\nPerforms APFS driver loading not only at OpenCore startup but also during boot picker. This permits APFS USB hot plug. Disable if not required."; ObjectID = "kSG-eA-B2o"; */
-"kSG-eA-B2o.ibShadowedToolTip" = "Type: plist boolean\n Failsafe: false\nDescription: Load APFS drivers for newly connected devices.\nPerforms APFS driver loading not only at OpenCore startup but also during boot picker. This permits APFS USB hot plug. Disable if not required.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Load APFS drivers for newly connected devices.\n\nPermits APFS USB hot plug which enables loading APFS drivers, both at OpenCore startup and during OpenCore picker dusplay. Disable if not required."; ObjectID = "kSG-eA-B2o"; */
+"kSG-eA-B2o.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Load APFS drivers for newly connected devices.\n\nPermits APFS USB hot plug which enables loading APFS drivers, both at OpenCore startup and during OpenCore picker dusplay. Disable if not required.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly reinstalls OS Info protocol with builtin versions. This protocol is generally used to receive notifications from macOS bootloader, by the firmware or by other applications."; ObjectID = "l9b-pk-oii"; */
 "l9b-pk-oii.ibShadowedToolTip" = "Forcer la réinstallation du protocole OS Info à l'aide de la version intégrée. Ce protocole est généralement utilisé pour recevoir des notifications du chargeur de démarrage macOS, du micrologiciel ou d'autres applications \n Temporairement inutile, sélectionnez NON.";
@@ -398,17 +368,11 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Forcibly wraps Firmware Volume protocols or installs new to support custom cursor images for File Vault 2. Should be set to true to ensure File Vault 2 compatibility on everything but VMs and legacy Macs.\n\nNote: Several virtual machines including VMware may have corrupted cursor image in HiDPI mode and thus may also require this setting to be enabled."; ObjectID = "nvr-JF-3ne"; */
 "nvr-JF-3ne.ibShadowedToolTip" = "Sélectionnez généralement NON. \n Fixer les problèmes d'interface utilisateur avec Filevault, défini sur OUI pour une meilleure compatibilité avec FileVault";
 
-/* Class = "NSMenuItem"; title = "Available — EfiConventionalMemory"; ObjectID = "nyc-OA-Vfg"; Note = "Do not localize"; */
-"nyc-OA-Vfg.title" = "Available — EfiConventionalMemory";
-
 /* Class = "NSButtonCell"; title = "DeviceProperties"; ObjectID = "oMi-yN-r8X"; */
 "oMi-yN-r8X.title" = "DeviceProperties";
 
 /* Class = "NSButtonCell"; title = "AudioSupport"; ObjectID = "oT1-Q2-rhc"; */
 "oT1-Q2-rhc.title" = "AudioSupport";
-
-/* Class = "NSMenuItem"; title = "BootServiceData — EfiBootServicesData"; ObjectID = "q2q-z0-cAo"; Note = "Do not localize"; */
-"q2q-z0-cAo.title" = "BootServiceData — EfiBootServicesData";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware only clear part of the screen when switching from graphics to text mode, leaving a fragment of previously drawn images visible. This option fills the entire graphics screen with black colour before switching to text mode.\n\nNote: This option only applies to System renderer."; ObjectID = "qMh-AF-g0P"; */
 "qMh-AF-g0P.ibShadowedToolTip" = "Lorsque le mode graphique passe en mode texte, certains micrologiciels n'effacent qu'une partie de l'écran, rendant visibles les fragments d'image précédemment dessinés. Cette option remplit tout l'écran graphique de noir avant de passer en mode texte. \n Remarque: cette option fonctionne uniquement avec le rendu système.";
@@ -452,23 +416,14 @@
 /* Class = "NSButtonCell"; title = "UgaPassThrough"; ObjectID = "vav-dM-ieV"; */
 "vav-dM-ieV.title" = "UgaPassThrough";
 
-/* Class = "NSMenuItem"; title = "ACPIMemoryNVS — EfiACPIMemoryNVS"; ObjectID = "wdW-0Y-LKj"; Note = "Do not localize"; */
-"wdW-0Y-LKj.title" = "ACPIMemoryNVS — EfiACPIMemoryNVS";
-
 /* Class = "NSTextFieldCell"; title = "ExitBootServicesDelay"; ObjectID = "wxD-TC-lrQ"; */
 "wxD-TC-lrQ.title" = "ExitBootServicesDelay";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Remove key unless it was submitted during this timeout in milliseconds.\nAppleKeyMapAggregator protocol is supposed to contain a fixed length buffer of currently pressed keys. However, the majority of the drivers only report key presses as interrupts and pressing and holding the key on the keyboard results in subsequent submissions of this key with some defined time interval. As a result we use a timeout to remove once pressed keys from the buffer once the timeout expires and no new submission of this key happened.\nThis option allows to set this timeout based on the platform. The recommended value that works on the majority of the platforms is 5 milliseconds. For reference, holding one key on VMware will repeat it roughly every 2 milliseconds and the same value for APTIO V is 3-4 milliseconds. Thus it is possible to set a slightly lower value on faster platforms and slightly higher value on slower platforms for more responsive input.\n\nNote: Some platforms may require different values, higher or lower. For example, when detecting key misses in OpenCanopy try increasing this value (e.g. to 10), and when detecting key stall, try decreasing this value. Since every platform is different it may be reasonable to check every value from 1 to 25."; ObjectID = "xNH-9V-3kd"; */
 "xNH-9V-3kd.ibShadowedToolTip" = "Intervalle de temps entre chaque touche après l'avoir appuyée (unité: millisecondes) \n Cette option permet de définir ce délai en fonction de votre plateforme. Une valeur recommandée de 5 ms est disponible sur la plupart des plateformes. Pour référence, la détention d'une clé sur VMware se répète toutes les 2 millisecondes environ, tandis que la même valeur pour APTIO V est de 3 à 4 millisecondes. Par conséquent, vous pouvez définir une valeur légèrement inférieure sur une plateforme plus rapide et une valeur légèrement supérieure sur une plateforme plus lente pour améliorer la vitesse de réponse.";
 
-/* Class = "NSMenuItem"; title = "RuntimeCode — EfiRuntimeServicesCode"; ObjectID = "xWU-hM-Ed8"; Note = "Do not localize"; */
-"xWU-hM-Ed8.title" = "RuntimeCode — EfiRuntimeServicesCode";
-
-/* Class = "NSMenuItem"; title = "Reserved — EfiReservedMemoryType"; ObjectID = "xhv-Jg-JKE"; Note = "Do not localize"; */
-"xhv-Jg-JKE.title" = "Reserved — EfiReservedMemoryType";
-
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\n\nThis is a very rough workaround to circumvent the Still waiting for root device message on some APTIO IV firmware (ASUS Z87-Pro) particularly when using FileVault 2. It appears that for some reason, they execute code in parallel to EXIT_BOOT_SERVICES, which results in the SATA controller being inaccessible from macOS. A better approach should be found in some future. Expect 3 to 5 seconds to be adequate when this quirk is needed."; ObjectID = "yXm-Kd-A6O"; */
-"yXm-Kd-A6O.ibShadowedToolTip" = "Vous pouvez contourner le message \n Toujours en attente du périphérique racine\n qui apparaît sur le micrologiciel APTIO IV sélectionné, c'est-à-dire ASUS Z87-Pro, en particulier lorsque vous utilisez FileVault 2. Pour une raison quelconque, le contrôleur SATA n'est pas accessible à partir de macOS. Une meilleure approche devrait être trouvée à l'avenir. Si vous l'utilisez, vous devez le régler pendant 3 à 5 secondes. \n Généralement, conservez la valeur par défaut de 0, ne la modifiez pas par hasard!";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\n\nThis is a very rough workaround to circumvent the Still waiting for root device message on some APTIO IV firmware (ASUS Z87-Pro) particularly when using FileVault 2. It appears that for some reason, they execute code in parallel to EXIT_BOOT_SERVICES, which results in the SATA controller being inaccessible from macOS. A better approach is required and Acidanthera is open to suggestions. Expect 3 to 5 seconds to be adequate when this quirk is needed."; ObjectID = "yXm-Kd-A6O"; */
+"yXm-Kd-A6O.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\n\nThis is a very rough workaround to circumvent the Still waiting for root device message on some APTIO IV firmware (ASUS Z87-Pro) particularly when using FileVault 2. It appears that for some reason, they execute code in parallel to EXIT_BOOT_SERVICES, which results in the SATA controller being inaccessible from macOS. A better approach is required and Acidanthera is open to suggestions. Expect 3 to 5 seconds to be adequate when this quirk is needed.";
 
 /* Class = "NSButtonCell"; title = "IgnoreTextInGraphics"; ObjectID = "ygR-oy-xAC"; */
 "ygR-oy-xAC.title" = "IgnoreTextInGraphics";
