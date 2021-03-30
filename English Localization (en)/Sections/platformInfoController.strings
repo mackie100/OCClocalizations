@@ -23,8 +23,8 @@
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "4bx-F9-aab"; */
 "4bx-F9-aab.title" = "Generate";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeatures and ExtendedFirmwareFeatures Description: 64-bit firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeatures. Upper 64 bits match ExtendedFirmwareFeatures."; ObjectID = "4l3-Do-kcw"; */
-"4l3-Do-kcw.ibShadowedToolTip" = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeatures and ExtendedFirmwareFeatures Description: 64-bit firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeatures. Upper 64 bits match ExtendedFirmwareFeatures.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeatures and ExtendedFirmwareFeatures Description: 64-bit firmware features bitmask. Refer to AppleFeatures.h for details. Lower 32 bits match FirmwareFeatures. Upper 64 bits match ExtendedFirmwareFeatures."; ObjectID = "4l3-Do-kcw"; */
+"4l3-Do-kcw.ibShadowedToolTip" = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeatures and ExtendedFirmwareFeatures Description: 64-bit firmware features bitmask. Refer to AppleFeatures.h for details. Lower 32 bits match FirmwareFeatures. Upper 64 bits match ExtendedFirmwareFeatures.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Speed"; ObjectID = "4m4-WW-5Mc"; */
 "4m4-WW-5Mc.headerCell.title" = "Speed";
@@ -317,8 +317,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "Size"; ObjectID = "YeX-yd-sEF"; */
 "YeX-yd-sEF.headerCell.title" = "Size";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details."; ObjectID = "YgB-Sp-EZ5"; */
-"YgB-Sp-EZ5.ibShadowedToolTip" = "Type: plist integer\nFailsafe: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module), refer to Table 15 – Baseboard: Board Type for more details.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module). Refer to Table 15 – Baseboard: Board Type for details."; ObjectID = "YgB-Sp-EZ5"; */
+"YgB-Sp-EZ5.ibShadowedToolTip" = "Type: plist integer\nFailsafe: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module). Refer to Table 15 – Baseboard: Board Type for details.";
 
 /* Class = "NSButtonCell"; title = "Automatic"; ObjectID = "Yle-7s-0Gt"; */
 "Yle-7s-0Gt.title" = "Automatic";
@@ -398,8 +398,8 @@
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "fWq-dP-cDy"; */
 "fWq-dP-cDy.title" = "Add this section in config.plist";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0 (OEM specified)\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type, refer to Table 17 — System Enclosure or Chassis Types for more details."; ObjectID = "frw-3J-2Cg"; */
-"frw-3J-2Cg.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0 (OEM specified)\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type, refer to Table 17 — System Enclosure or Chassis Types for more details.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0 (OEM specified)\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type. Refer to Table 17 — System Enclosure or Chassis Types for details."; ObjectID = "frw-3J-2Cg"; */
+"frw-3J-2Cg.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0 (OEM specified)\nSMBIOS: System Enclosure or Chassis (Type 3) — Type\nDescription: Chassis type. Refer to Table 17 — System Enclosure or Chassis Types for details.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string, GUID\nFailsafe: Empty (OEM specified)\nSMBIOS: System Information (Type 1) — UUID\nDescription: A UUID is an identifier that is designed to be unique across both time and space. It requires no central registration process."; ObjectID = "fux-7e-g2r"; */
 "fux-7e-g2r.ibShadowedToolTip" = "Type: plist string, GUID\nFailsafe: Empty (OEM specified)\nSMBIOS: System Information (Type 1) — UUID\nDescription: A UUID is an identifier that is designed to be unique across both time and space. It requires no central registration process.";
@@ -446,8 +446,8 @@
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "iJ4-50-puj"; */
 "iJ4-50-puj.title" = "Generate";
 
-/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeaturesMask and ExtendedFirmwareFeaturesMask Description: Supported bits of extended firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeaturesMask. Upper 64 bits match ExtendedFirmwareFeaturesMask."; ObjectID = "ih3-wv-2Kc"; */
-"ih3-wv-2Kc.ibShadowedToolTip" = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeaturesMask and ExtendedFirmwareFeaturesMask Description: Supported bits of extended firmware features bitmask. Refer to AppleFeatures.h for more details. Lower 32 bits match FirmwareFeaturesMask. Upper 64 bits match ExtendedFirmwareFeaturesMask.";
+/* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeaturesMask and ExtendedFirmwareFeaturesMask Description: Supported bits of extended firmware features bitmask. Refer to AppleFeatures.h for details. Lower 32 bits match FirmwareFeaturesMask. Upper 64 bits match ExtendedFirmwareFeaturesMask."; ObjectID = "ih3-wv-2Kc"; */
+"ih3-wv-2Kc.ibShadowedToolTip" = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeaturesMask and ExtendedFirmwareFeaturesMask Description: Supported bits of extended firmware features bitmask. Refer to AppleFeatures.h for details. Lower 32 bits match FirmwareFeaturesMask. Upper 64 bits match ExtendedFirmwareFeaturesMask.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string, GUID\nFailsafe: Empty (Not installed)\nDescription: Sets system-id in gEfiMiscSubClassGuid. The value found on Macs is equal to SMBIOS SystemUUID."; ObjectID = "iip-zN-Jsb"; */
 "iip-zN-Jsb.ibShadowedToolTip" = "Type: plist string, GUID\nFailsafe: Empty (Not installed)\nDescription: Sets system-id in gEfiMiscSubClassGuid. The value found on Macs is equal to SMBIOS SystemUUID.";
