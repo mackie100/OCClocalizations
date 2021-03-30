@@ -402,7 +402,7 @@
 "wPi-6s-R0s.ibShadowedToolTip" = "检测休眠模式。我们的机器一般都不支持休眠，选none。如果你的主板支持原生nvram、并想测试休眠，可以考虑填auto。\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭！";
 
 /* Class = "NSButtonCell"; title = "Enable display of additional timing and debug information, in Builtin picker in DEBUG and NOOPT builds only."; ObjectID = "xjK-fm-3ud"; */
-"xjK-fm-3ud.title" = "Enable display of additional timing and debug information, in Builtin picker in DEBUG and NOOPT builds only.";
+"xjK-fm-3ud.title" = "启用显示其他时间和调试信息的功能，仅在DEBUG和NOOPT构建的内置选取器中有用.";
 
 /* Class = "NSTextFieldCell"; title = "TakeoffDelay"; ObjectID = "yDl-hK-Eml"; */
 "yDl-hK-Eml.title" = "TakeoffDelay\n激活快捷键延迟";
