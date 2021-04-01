@@ -107,6 +107,12 @@
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
 
+<<<<<<< HEAD
+=======
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Suppress initial delay before key repeat in OpenCore implementation of Apple Event protocol.\n\nWhen combining OpenCore KeySupport with the Apple Event protocol, key repeat behaviour may show one additional slow key repeat before normal key repeat starts. Enabling this option works around this problem by suppressing the initial repeat delay in the OpenCore Apple Event implementation. This option is recommended to be set when using KeySupport mode, in most cases, and is not recommended to be set on any systems which are not using KeySupport mode."; ObjectID = "Dz8-ew-orw"; */
+"Dz8-ew-orw.ibShadowedToolTip" = "抑制在Apple Event協議的OpenCore實施中重複按键之前的初始延遲.\n\n將OpenCore KeySupport與Apple Event協議結合使用時, 重複按鍵的行為可能會顯示在正常重複按鍵開始之前的另一次慢速重複按鍵.啟用此選項可以通過抑制OpenCore Apple Event實現中的初始重複延遲來解決此問題. 在大多數情況下，建議在使用KeySupport模式時設定此選項, 不建議在未使用KeySupport模式的任何系统上進行設定.";
+
+>>>>>>> cefaa85... Translate KeySkipFirstDelay key and description, updated some descriptions
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key."; ObjectID = "EIc-ff-Thn"; */
 "EIc-ff-Thn.ibShadowedToolTip" = "交換 Command 和 Option 鍵,一般選 NO";
 
