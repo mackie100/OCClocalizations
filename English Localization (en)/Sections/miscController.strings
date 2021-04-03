@@ -362,8 +362,8 @@
 /* Class = "NSButtonCell"; title = "Enable pointer control in the picker when available"; ObjectID = "r8W-nu-W4X"; */
 "r8W-nu-W4X.title" = "Enable pointer control in the picker when available";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker; may be used in combination with Shift+Enter or Shift+Index when PollAppleHotKeys is enabled."; ObjectID = "rQF-20-vFl"; */
-"rQF-20-vFl.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker; may be used in combination with Shift+Enter or Shift+Index when PollAppleHotKeys is enabled.";
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker;\n\nNote 1: May be used in combination with Shift+Enter or Shift+Index when PollAppleHotKeys is enabled.\n\nNote 2: In order to support systems with unresponsive modifiers during preboot (which includes V1 and V2 KeySupport mode on some firmware) OpenCore also allows holding the =/+ key in order to trigger ‘set default’ mode."; ObjectID = "rQF-20-vFl"; */
+"rQF-20-vFl.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CTRL+Enter and CTRL+Index handling to set the default boot option in boot picker;\n\nNote 1: May be used in combination with Shift+Enter or Shift+Index when PollAppleHotKeys is enabled.\n\nNote 2: In order to support systems with unresponsive modifiers during preboot (which includes V1 and V2 KeySupport mode on some firmware) OpenCore also allows holding the =/+ key in order to trigger ‘set default’ mode.";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SDCARD"; ObjectID = "sti-pn-v4l"; */
 "sti-pn-v4l.title" = "OC_SCAN_ALLOW_DEVICE_SDCARD";
