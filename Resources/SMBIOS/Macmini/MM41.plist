@@ -19,7 +19,7 @@
 	<key>SystemSerialNumber</key>
 	<string>C02FHBBEDD6H</string>
 	<key>SystemSKUNumber</key>
-	<string>System SKU#</string>
+	<string></string>
 	<key>SystemFamily</key>
 	<string>Mac mini</string>
 	<key>BoardManufacturer</key>
@@ -31,7 +31,7 @@
 	<key>BoardRevision</key>
 	<string></string>
 	<key>BoardAssetTag</key>
-	<string>Base Board Asset Tag</string>
+	<string></string>
 	<key>BoardType</key>
 	<string>0xA</string>
 	<key>BoardLocationInChassis</key>
@@ -43,15 +43,15 @@
 	<key>ChassisVersion</key>
 	<string>Mac-F2208EC8</string>
 	<key>ChassisAssetTag</key>
-	<string>Asset Tag#</string>
+	<string></string>
 	<key>PlatformFeature</key>
 	<string></string>
 	<key>FirmwareFeatures</key>
-	<string>0xD00DE137</string>
+	<string>0xC00C9423</string>
 	<key>FirmwareFeaturesMask</key>
 	<string>0xFF1FFF3F</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000000D00DE137</string>
+	<string>0x00000000C00C9423</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
 	<string>0x00000000FF1FFF3F</string>
 	<key>MemoryFormFactor</key>

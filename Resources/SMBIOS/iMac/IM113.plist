@@ -19,7 +19,7 @@
 	<key>SystemSerialNumber</key>
 	<string>QP0312PBDNR</string>
 	<key>SystemSKUNumber</key>
-	<string>System SKU#</string>
+	<string></string>
 	<key>SystemFamily</key>
 	<string>iMac</string>
 	<key>BoardManufacturer</key>
@@ -29,7 +29,7 @@
 	<key>BoardVersion</key>
 	<string>iMac11,3</string>
 	<key>BoardAssetTag</key>
-	<string>Base Board Asset Tag</string>
+	<string></string>
 	<key>BoardType</key>
 	<string>0xA</string>
 	<key>BoardLocationInChassis</key>
@@ -41,7 +41,7 @@
 	<key>ChassisVersion</key>
 	<string>Mac-F2238BAE</string>
 	<key>ChassisAssetTag</key>
-	<string>Asset Tag#</string>
+	<string></string>
 	<key>FirmwareFeatures</key>
 	<string>0xE00DE137</string>
 	<key>FirmwareFeaturesMask</key>

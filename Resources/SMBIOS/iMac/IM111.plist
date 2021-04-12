@@ -19,7 +19,7 @@
 	<key>SystemSerialNumber</key>
 	<string>G8942B1V5PJ</string>
 	<key>SystemSKUNumber</key>
-	<string>System SKU#</string>
+	<string></string>
 	<key>SystemFamily</key>
 	<string>iMac</string>
 	<key>BoardManufacturer</key>
@@ -41,7 +41,7 @@
 	<key>ChassisVersion</key>
 	<string>Mac-F2268DAE</string>
 	<key>ChassisAssetTag</key>
-	<string>Asset Tag#</string>
+	<string></string>
 	<key>FirmwareFeatures</key>
 	<string>0xE00DE137</string>
 	<key>FirmwareFeaturesMask</key>
