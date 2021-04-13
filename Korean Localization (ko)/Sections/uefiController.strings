@@ -110,6 +110,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it."; ObjectID = "CnN-YN-AWu"; */
 "CnN-YN-AWu.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it.";
 
+/* Class = "NSButtonCell"; title = "ForgeUefiSupport"; ObjectID = "D5d-rU-CDJ"; */
+"D5d-rU-CDJ.title" = "ForgeUefiSupport";
+
 /* Class = "NSButtonCell"; title = "AppleSmcIo"; ObjectID = "Ddl-D0-484"; */
 "Ddl-D0-484.title" = "AppleSmcIo";
 
@@ -299,6 +302,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\n\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is defective."; ObjectID = "dzp-p6-AHb"; */
 "dzp-p6-AHb.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\n\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is defective.";
 
+/* Class = "NSButtonCell"; title = "ReloadOptionRoms"; ObjectID = "eDn-1a-lDg"; */
+"eDn-1a-lDg.title" = "ReloadOptionRoms";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace incompatible implementations of GOP on the console handle, as may be the case on the MacPro5,1 when using modern GPUs."; ObjectID = "eGd-xS-rQf"; */
 "eGd-xS-rQf.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Ensure GOP (Graphics Output Protocol) on console handle.\nmacOS bootloader requires GOP or UGA (for 10.4 EfiBoot) to be present on console handle, yet the exact location of  the graphics protocol is not covered by the UEFI specification. This option will ensure GOP and UGA, if present, are available on the console handle.\n\nNote: This option will also replace incompatible implementations of GOP on the console handle, as may be the case on the MacPro5,1 when using modern GPUs.";
 
@@ -313,6 +319,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware reset screen resolutions to a failsafe value (such as 1024x768) on the attempts to clear screen contents when large display (e.g. 2K or 4K) is used. This option attempts to apply a workaround.\n\nNote: This option only applies to the System renderer. On all known affected systems, ConsoleMode must be set to an empty string for this option to work."; ObjectID = "f0k-6s-W9I"; */
 "f0k-6s-W9I.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware reset screen resolutions to a failsafe value (such as 1024x768) on the attempts to clear screen contents when large display (e.g. 2K or 4K) is used. This option attempts to apply a workaround.\n\nNote: This option only applies to the System renderer. On all known affected systems, ConsoleMode must be set to an empty string for this option to work.";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Query PCI devices and reload their Option ROMs if available.\n\nFor example, this option allows reloading NVIDIA GOP Option ROM on older Macs after the firmware version is upgraded via ForgeUefiSupport."; ObjectID = "fDO-pY-c74"; */
+"fDO-pY-c74.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Query PCI devices and reload their Option ROMs if available.\n\nFor example, this option allows reloading NVIDIA GOP Option ROM on older Macs after the firmware version is upgraded via ForgeUefiSupport.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\n\nThis option allows updating the firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value typically improves performance and responsiveness of the interface and input handling.\n\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. In case of issues, this option can be left as 0."; ObjectID = "fda-QM-Vl4"; */
 "fda-QM-Vl4.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\n\nThis option allows updating the firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value typically improves performance and responsiveness of the interface and input handling.\n\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. In case of issues, this option can be left as 0.";
@@ -415,6 +424,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable keyboard input sanity checking.\nApparently some boards such as the GA Z77P-D3 may return uninitialised data in EFI_INPUT_KEY with all input protocols. This option discards keys that are neither ASCII, nor are defined in the UEFI specification (see tables 107 and 108 in version 2.8)."; ObjectID = "rxJ-TB-rJc"; */
 "rxJ-TB-rJc.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable keyboard input sanity checking.\nApparently some boards such as the GA Z77P-D3 may return uninitialised data in EFI_INPUT_KEY with all input protocols. This option discards keys that are neither ASCII, nor are defined in the UEFI specification (see tables 107 and 108 in version 2.8).";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Implement partial UEFI 2.x support on EFI 1.x firmware.\n\nThis setting allows running some software written for UEFI 2.x firmware like NVIDIA GOP Option ROMs on hardware with older EFI 1.x firmware like MacPro5,1."; ObjectID = "sEw-e9-VYk"; */
+"sEw-e9-VYk.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Implement partial UEFI 2.x support on EFI 1.x firmware.\n\nThis setting allows running some software written for UEFI 2.x firmware like NVIDIA GOP Option ROMs on hardware with older EFI 1.x firmware like MacPro5,1.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple Key Map protocols with builtin versions."; ObjectID = "tY1-cE-XtN"; */
 "tY1-cE-XtN.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple Key Map protocols with builtin versions.";
