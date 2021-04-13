@@ -294,7 +294,7 @@ UEFI
  UnicodeCollation=no
 
 :Output
- count==12 :"!-->在OpenCore 0.6.6里，您应该在<b>UEFI/OUTPUT</b>部分中设置12个设置"
+ count==13 :"!-->在OpenCore 0.6.8里，您应该在<b>UEFI/OUTPUT</b>部分中设置13个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
