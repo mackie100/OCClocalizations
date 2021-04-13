@@ -278,7 +278,7 @@ UEFI
  ConsoleControl~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"
 
 :Output
- count==12 :"!You should have exactly 12 settings in the UEFI/Output section"
+ count==13 :"!You should have exactly 13 settings in the UEFI/Output section"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
