@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Opencore Configurator (OpenCore Builder)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: mackie100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Opencore Builder"
+msgstr "Opencore Building"
+
+msgid "install ${BIN} with administrator privileges dialog"
+msgstr "To install ${BIN}, first you need to enter your administrator account password below to continue:"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+msgid "Continue"
+msgstr "Continue"
+
+msgid "User aborted"
+msgstr "Operation aborted by user"
+
+msgid "Building ${util}..."
+msgstr "Building ${util}..."
+
+msgid "Building ${util} for Windows..."
+msgstr "Building ${util} for Windows..."
+
+msgid "Missing package directory"
+msgstr "Missing package directory"
+
+msgid "Invalid version"
+msgstr "Invalid version"
+
+msgid "Copying OpenDuetPkg boot file from ${booter}..."
+msgstr "Copying OpenDuetPkg boot file from ${booter}..."
+
+msgid "Failed to find OpenDuetPkg at ${booter}!"
+msgstr "Failed to find OpenDuetPkg at ${booter}!"
+
+msgid "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
+msgstr "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
+
+msgid "Downloading AUDK"
+msgstr "Downloading AUDK repository..."
+
+msgid "Downloading OpenCorePkg"
+msgstr "Downloading OpenCorePkg repository..."
+
+msgid "Downloading OcBinaryData"
+msgstr "Downloading OcBinaryData repository..."
+
+msgid "Generating EFI"
+msgstr "Generating EFI Structure folder"
+
+msgid "Building complete"
+msgstr "Building process is completed"
+
+msgid "Copying Binary Data"
+msgstr "Copying Binary Data"
+
+msgid "install NASM"
+msgstr "Before starting to build OpenCorePkg, I need to install NASM"
+
+msgid "install MTOC"
+msgstr "Before starting to build OpenCorePkg, I need to install MTOC"
+
+msgid "Applied patch"
+msgstr "Applied patch"
+
+msgid "Compiling OpenCorePkg"
+msgstr "Compiling the latest commited version of OpenCorePkg..."
