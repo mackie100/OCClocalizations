@@ -13,67 +13,67 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Opencore Builder"
-msgstr "Opencore Building"
+msgstr "Opencore正在编译"
 
 msgid "install ${BIN} with administrator privileges dialog"
-msgstr "To install ${BIN}, first you need to enter your administrator account password below to continue:"
+msgstr "要安装 ${BIN}, 首先,您需要在下面输入管理员帐户密码才能继续:"
 
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "取消"
 
 msgid "Continue"
-msgstr "Continue"
+msgstr "继续"
 
 msgid "User aborted"
-msgstr "Operation aborted by user"
+msgstr "用户中止操作"
 
 msgid "Building ${util}..."
-msgstr "Building ${util}..."
+msgstr "正在构建 ${util}..."
 
 msgid "Building ${util} for Windows..."
-msgstr "Building ${util} for Windows..."
+msgstr "为Windows构建${util}…"
 
 msgid "Missing package directory"
-msgstr "Missing package directory"
+msgstr "缺少包目录"
 
 msgid "Invalid version"
-msgstr "Invalid version"
+msgstr "版本无效"
 
 msgid "Copying OpenDuetPkg boot file from ${booter}..."
-msgstr "Copying OpenDuetPkg boot file from ${booter}..."
+msgstr "从 ${booter}复制OpenDuetPkg启动文件…"
 
 msgid "Failed to find OpenDuetPkg at ${booter}!"
-msgstr "Failed to find OpenDuetPkg at ${booter}!"
+msgstr "在${booter}找不到OpenDuetPkg!"
 
 msgid "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
-msgstr "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
+msgstr "名为${DEVELOPER_KIT}的存储库${URL}包含CRLF行尾"
 
 msgid "Downloading AUDK"
-msgstr "Downloading AUDK repository..."
+msgstr "下载AUDK资料库…"
 
 msgid "Downloading OpenCorePkg"
-msgstr "Downloading OpenCorePkg repository..."
+msgstr "下载OpenCorePkg存储库…"
 
 msgid "Downloading OcBinaryData"
-msgstr "Downloading OcBinaryData repository..."
+msgstr "下载OcBinaryData存储库…"
 
 msgid "Generating EFI"
-msgstr "Generating EFI Structure folder"
+msgstr "生成EFI文件夹结构"
 
 msgid "Building complete"
-msgstr "Building process is completed"
+msgstr "构建过程完成"
 
 msgid "Copying Binary Data"
-msgstr "Copying Binary Data"
+msgstr "复制二进制数据"
 
 msgid "install NASM"
-msgstr "Before starting to build OpenCorePkg, I need to install NASM"
+msgstr "在开始构建OpenCorePkg之前,需要安装NASM"
 
 msgid "install MTOC"
-msgstr "Before starting to build OpenCorePkg, I need to install MTOC"
+msgstr "在开始构建OpenCorePkg之前,需要安装MTOC"
 
 msgid "Applied patch"
-msgstr "Applied patch"
+msgstr "应用补丁"
 
 msgid "Compiling OpenCorePkg"
-msgstr "Compiling the latest commited version of OpenCorePkg..."
+msgstr "编译最新提交的OpenCorePkg版本…"
