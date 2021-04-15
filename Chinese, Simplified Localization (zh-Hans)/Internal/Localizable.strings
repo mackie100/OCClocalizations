@@ -788,3 +788,33 @@
 
 /* efiMaker */
 "Download related files" = "下载相关文件";
+
+/* opencoreDownloaderController */
+"Starting compiling gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Starting compiling gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
+
+/* opencoreDownloaderController */
+"GETTEXT is missing!, downloading..." = "GETTEXT is missing!, downloading...";
+
+/* opencoreDownloaderController */
+"Building GETTEXT..." = "Building GETTEXT...";
+
+/* opencoreDownloaderController */
+"Error while compiling resources for localization" = "Error while compiling resources for localization";
+
+/* opencoreDownloaderController */
+"Xcode Application needed." = "Xcode Application needed.";
+
+/* opencoreDownloaderController */
+"Download XCode" = "Download XCode";
+
+/* opencoreDownloaderController */
+"In order to use this section, please install Xcode application." = "In order to use this section, please install Xcode application.";
+
+/* opencoreDownloaderController */
+"Start Building...." = "Start Building....";
+
+/* opencoreDownloaderController */
+"Error occurred during building OpenCorePkg" = "Error occurred during building OpenCorePkg";
+
+/* opencoreDownloaderController */
+"Operation aborted by user" = "Operation aborted by user";
