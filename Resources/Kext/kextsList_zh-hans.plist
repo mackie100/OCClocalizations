@@ -94,7 +94,7 @@
 			<key>category</key>
 			<string>内核扩展</string>
 			<key>description</key>
-			<string>该工具进行了必要的更改，以在兼容的硬件上启用OS X 10.10和10.11 Continuity功能。此补丁激活的连续性功能包括切换，即时热点和新空投。 OS X 10.11（El Capitan）加密狗支持尚不稳定！</string>
+			<string>该工具进行了必要的更改，以在兼容的硬件上启用OS X 10.10和10.11 Continuity功能。此补丁激活的连续性功能包括切换，即时热点和新空投。 OS X 10.11（El Capitan）加密狗支持尚不稳定!</string>
 			<key>name</key>
 			<string>BT4LEContinuityFixup</string>
 			<key>remoteFolder</key>

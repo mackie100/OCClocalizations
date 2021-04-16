@@ -48,7 +48,7 @@
 "4bg-ao-G40.ibShadowedToolTip" = "一般選 NO。\n一些較舊的韌體破壞了 Unicode 排序規則, 設定為 YES 可以修復這些系統上 UEFI Shell 的相容性 (通常為用於 IvyBridge 或更舊的裝置)";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal keyboard input translation to AppleKeyMapAggregator protocol.\n\nThis option activates the internal keyboard interceptor driver, based on AppleGenericInput, also known as AptioInputFix, to fill the AppleKeyMapAggregator database for input functioning. In cases where a separate driver such as OpenUsbKbDxe is used, this option should never be enabled. Additionally, this option is not required and should not be enabled with Apple firmware."; ObjectID = "4fK-xq-9AN"; */
-"4fK-xq-9AN.ibShadowedToolTip" = "開啟 OC 的內建鍵盤支援,部分筆記型電腦在開機選單界面無法使用鍵盤，請選擇它！\n如果使用 AppleUsbKbdxe.efi 請設定為 NO";
+"4fK-xq-9AN.ibShadowedToolTip" = "開啟 OC 的內建鍵盤支援,部分筆記型電腦在開機選單界面無法使用鍵盤，請選擇它!\n如果使用 AppleUsbKbdxe.efi 請設定為 NO";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Set HDA Traffic Class Select Register to TC0.\n\nAppleHDA kext will function correctly only if TCSEL register is configured to use TC0 traffic class. Refer to Intel I/O Controller Hub 9 (ICH9) Family Datasheet (or any other ICH datasheet) for more details about this register.\n\nNote: This option is independent from AudioSupport. If AppleALC is used it is preferred to use AppleALC alctsel property instead."; ObjectID = "4mo-Ut-bYl"; */
 "4mo-Ut-bYl.ibShadowedToolTip" = "將HDA流量等級選擇寄存器設定為TC0.\n\n僅當TCSEL寄存器配置為使用TC0流量等級時，AppleHDA kext才能正常執行. 有關此寄存器的更多詳細資訊，請參考 Intel I/O控制器9(ICH9)數據表(或任何其他ICH數據表).\n\n注意:此選項獨立於AudioSupport。 如果使用AppleALC，則最好改用AppleALC alctsel屬性.";
@@ -75,7 +75,7 @@
 "7Ns-yB-e5j.title" = "MinVersion";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Load embedded APFS drivers from APFS containers.\n\nAn APFS EFI driver is bundled in all bootable APFS containers. This option performs the loading of signed APFS drivers (consistent with the ScanPolicy). Refer to the “EFI Jumpstart” section of the Apple File System Reference for details."; ObjectID = "8Sc-F2-ONI"; */
-"8Sc-F2-ONI.ibShadowedToolTip" = "載入嵌入式APFS驅動程式.\n此選項替代之前使用的ApfsDriverLoader.efi驅動文件，變為OC嵌入式驅動！";
+"8Sc-F2-ONI.ibShadowedToolTip" = "載入嵌入式APFS驅動程式.\n此選項替代之前使用的ApfsDriverLoader.efi驅動文件，變為OC嵌入式驅動!";
 
 /* Class = "NSTabViewItem"; label = "ReservedMemory"; ObjectID = "8vC-O7-rpe"; */
 "8vC-O7-rpe.label" = "ReservedMemory";
@@ -384,7 +384,7 @@
 "ldi-uY-9wO.headerCell.title" = "地址";
 
 /* Class = "NSComboBox"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty (Maintain current console mode)\nDescription: Sets console output mode as specified with the WxH (e.g. 80x24) formatted string.\n\nSet to Max to attempt using the largest available console mode. This option is currently ignored as the Builtin text renderer only supports one console mode.\n\nNote: This field is best left empty on most types of firmware."; ObjectID = "lye-vu-fi3"; Note = "Do Not Translate"; */
-"lye-vu-fi3.ibShadowedToolTip" = "設定為空字串不更改控制台模式.設定為Max以嘗試使用最大可用控制台模式.\n大多數情況下都選擇留空！";
+"lye-vu-fi3.ibShadowedToolTip" = "設定為空字串不更改控制台模式.設定為Max以嘗試使用最大可用控制台模式.\n大多數情況下都選擇留空!";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 1\nDescription: Configure pointer speed divisor in OpenCore implementation of Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nConfigures the divisor for pointer movements. The Apple OEM default value is 1. 0 is an invalid value for this option.\n\nNote: The recommended value for this option is 1. This value may optionally be modified in combination with PointerSpeedMul, according to user preference, to achieve customised mouse movement scaling."; ObjectID = "maU-fq-8kE"; */
 "maU-fq-8kE.ibShadowedToolTip" = "Type: plist integer\nFailsafe: 1\nDescription: Configure pointer speed divisor in OpenCore implementation of Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nConfigures the divisor for pointer movements. The Apple OEM default value is 1. 0 is an invalid value for this option.\n\nNote: The recommended value for this option is 1. This value may optionally be modified in combination with PointerSpeedMul, according to user preference, to achieve customised mouse movement scaling.";
@@ -468,7 +468,7 @@
 "xpZ-sA-YNw.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable custom key repeat delays when using the OpenCore implementation of the Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\n• true — The values of KeyInitialDelay and KeySubsequentDelay are used.\n• false — Apple default values of 500ms (50) and 50ms (5) are used.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Adds delay in microseconds after EXIT_BOOT_SERVICES event.\n\nThis is a very rough workaround to circumvent the Still waiting for root device message on some APTIO IV firmware (ASUS Z87-Pro) particularly when using FileVault 2. It appears that for some reason, they execute code in parallel to EXIT_BOOT_SERVICES, which results in the SATA controller being inaccessible from macOS. A better approach is required and Acidanthera is open to suggestions. Expect 3 to 5 seconds to be adequate when this quirk is needed."; ObjectID = "yXm-Kd-A6O"; */
-"yXm-Kd-A6O.ibShadowedToolTip" = "可以繞過選定的APTIO IV韌體，即ASUS Z87-Pro上出現的\"Still waiting for root device\" 的提示資訊，特别是在使用FileVault 2時。由於某種原因，導致無法從macOS存取SATA控制器。應該在將來找到更好的方法。如果使用此，則需要設定3-5秒才可以。\n一般保持預設值 0，不要随便更改！";
+"yXm-Kd-A6O.ibShadowedToolTip" = "可以繞過選定的APTIO IV韌體，即ASUS Z87-Pro上出現的\"Still waiting for root device\" 的提示資訊，特别是在使用FileVault 2時。由於某種原因，導致無法從macOS存取SATA控制器。應該在將來找到更好的方法。如果使用此，則需要設定3-5秒才可以。\n一般保持預設值 0，不要随便更改!";
 
 /* Class = "NSButtonCell"; title = "IgnoreTextInGraphics"; ObjectID = "ygR-oy-xAC"; */
 "ygR-oy-xAC.title" = "IgnoreTextInGraphics";

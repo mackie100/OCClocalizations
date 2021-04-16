@@ -6,7 +6,7 @@
 "3Ee-Qq-8wZ.headerCell.title" = "Mask";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean \nFailsafe: false\nDescription: Protect UEFI services from being overridden by the firmware.\n\nSome modernfirmware, including on virtual machines such as VMware, may update pointers to UEFI services during driver loading and related actions. Consequentially this directly breaks other quirks that affect memory management, such as DevirtualiseMmio, ProtectMemoryRegions, or RebuildAppleMemoryMap, and may also break other quirks depending on the effects of these.\n\nNote: On VMware the need for this quirk may be diagnosed by “Your Mac OS guest might run unreliably with more than one virtual core.” message."; ObjectID = "3fG-t6-MF7"; */
-"3fG-t6-MF7.ibShadowedToolTip" = "保護UEFI服務不被韌體覆蓋。\n包括硬體和虛擬機(例如VMware)在内的某些現代韌體可能會在驅動程式載入和相關操作期間更新指向UEFI服務的指針。因此，這直接破壞了影響記憶體管理的其他怪癖，例如DevirtualiseMmio，並且還可能破壞其他怪癖，具體取决於這些怪癖的影響。\n\n注意：在VMware上，可以通過“您的Mac OS來賓系统可能不可靠地在多個虛擬 Kernel 上執行(Your Mac OS guest might run unreliably with more than one virtual core.)”資訊來診斷此問題。\n\nZ390晶片組建議使用！";
+"3fG-t6-MF7.ibShadowedToolTip" = "保護UEFI服務不被韌體覆蓋。\n包括硬體和虛擬機(例如VMware)在内的某些現代韌體可能會在驅動程式載入和相關操作期間更新指向UEFI服務的指針。因此，這直接破壞了影響記憶體管理的其他怪癖，例如DevirtualiseMmio，並且還可能破壞其他怪癖，具體取决於這些怪癖的影響。\n\n注意：在VMware上，可以通過“您的Mac OS來賓系统可能不可靠地在多個虛擬 Kernel 上執行(Your Mac OS guest might run unreliably with more than one virtual core.)”資訊來診斷此問題。\n\nZ390晶片組建議使用!";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Protect memory regions from incorrect access.\n\nSome types of firmware incorrectly map select memory regions:\n• CSM region can be marked as boot services code or data, which leaves it as free memory for XNU kernel. \n• MMIO regions can be marked as reserved memory and stay unmapped, but may be required to be accessible at runtime for NVRAM support.\n\nThis quirk attempts to fix types of these regions, e.g. ACPI NVS for CSM or MMIO for MMIO.\n\nNote: The necessity of this quirk is determined by artifacts, sleep wake issues, and boot failures. Only very old firmware typically need this quirk."; ObjectID = "5Km-5w-nkl"; */
 "5Km-5w-nkl.ibShadowedToolTip" = "保護記憶體區域免受錯誤存取。\n一些韌體錯誤地映射了選定的儲存區域:\n• 可以將CSM區域標記為引導服務代碼或數據，從而將其留作XNU Kernel 的可用記憶體。 \n• MMIO區域可以標記為保留記憶體並保持未映射狀態，但是可能需要在執行時對其進行存取以支援NVRAM。\n\n注意:有睡眠喚醒問題或引導失敗問題可嘗試開啟。只有非常老的韌體才需要此怪癖。一般選NO";
@@ -48,7 +48,7 @@
 "JMF-hg-GgC.ibShadowedToolTip" = "建立與macOS相容的記憶體映射。Dell 5490如有啟動故障，可啟用此項!\n\n注意：此怪癖的必要性取决於早期啟動故障。該怪癖在大多數平台上替代了EnableWriteUnprotector.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Protect from macOS NVRAM write access.\nThis is a security option allowing one to restrict NVRAM access in macOS. This quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi.\nNote: This quirk can also be used as an ugly workaround to buggy UEFI runtime services implementations that fail to write variables to NVRAM and break the rest of the operating system."; ObjectID = "KE8-rd-Ty5"; */
-"KE8-rd-Ty5.ibShadowedToolTip" = "非原生NVRAM主機板需要模擬nvram.plist進而寫入variable值，因此我們要禁止此項來防止其他程式對nvram進行寫入，我們這裡選YES。需要注意一點，如果你的主機板支援原生nvram(Z370/X299/C422)，請選擇NO！\n在 Z390/HM370 等沒有原生 macOS 支援 NVRAM 的主機板上需要開啟。";
+"KE8-rd-Ty5.ibShadowedToolTip" = "非原生NVRAM主機板需要模擬nvram.plist進而寫入variable值，因此我們要禁止此項來防止其他程式對nvram進行寫入，我們這裡選YES。需要注意一點，如果你的主機板支援原生nvram(Z370/X299/C422)，請選擇NO!\n在 Z390/HM370 等沒有原生 macOS 支援 NVRAM 的主機板上需要開啟。";
 
 /* Class = "NSTabViewItem"; label = "Patch"; ObjectID = "N9f-29-rB5"; */
 "N9f-29-rB5.label" = "修補文件";

@@ -264,7 +264,7 @@
 "RB4-Sm-HuC.title" = "\t右到左";
 
 /* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "RT7-FS-H5T"; */
-"RT7-FS-H5T.title" = "*要应用此更改，您必须重新启动应用程序";
+"RT7-FS-H5T.title" = "*要应用此更改,您必须重新启动应用程序";
 
 /* Class = "NSMenuItem"; title = "Superscript"; ObjectID = "Rqc-34-cIF"; */
 "Rqc-34-cIF.title" = "上标";
@@ -375,7 +375,7 @@
 "gVA-U4-sdL.title" = "粘贴";
 
 /* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "hOZ-ZL-z15"; */
-"hOZ-ZL-z15.title" = "*要应用此更改，您必须重新启动应用程序";
+"hOZ-ZL-z15.title" = "*要应用此更改,您必须重新启动应用程序";
 
 /* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
 "hQb-2v-fYv.title" = "智能引号";
