@@ -793,28 +793,28 @@
 "Starting compiling gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Starting compiling gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
 
 /* opencoreDownloaderController */
-"GETTEXT is missing!, downloading..." = "GETTEXT is missing!, downloading...";
+"GETTEXT is missing!, downloading..." = "缺少GETTEXT!,正在下载...";
 
 /* opencoreDownloaderController */
-"Building GETTEXT..." = "Building GETTEXT...";
+"Building GETTEXT..." = "构建 GETTEXT...";
 
 /* opencoreDownloaderController */
-"Error while compiling resources for localization" = "Error while compiling resources for localization";
+"Error while compiling resources for localization" = "编译资源进行本地化时出错";
 
 /* opencoreDownloaderController */
-"Xcode Application needed." = "Xcode Application needed.";
+"Xcode Application needed." = "需要Xcode应用程序.";
 
 /* opencoreDownloaderController */
-"Download XCode" = "Download XCode";
+"Download XCode" = "下载 XCode";
 
 /* opencoreDownloaderController */
-"In order to use this section, please install Xcode application." = "In order to use this section, please install Xcode application.";
+"In order to use this section, please install Xcode application." = "为了使用本节，请安装Xcode应用程序.";
 
 /* opencoreDownloaderController */
-"Start Building...." = "Start Building....";
+"Start Building...." = "开始构建....";
 
 /* opencoreDownloaderController */
-"Error occurred during building OpenCorePkg" = "Error occurred during building OpenCorePkg";
+"Error occurred during building OpenCorePkg" = "构建OpenCorePkg时发生错误";
 
 /* opencoreDownloaderController */
-"Operation aborted by user" = "Operation aborted by user";
+"Operation aborted by user" = "用户中止操作";
