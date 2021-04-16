@@ -252,7 +252,7 @@
 "Manual Installation: Kext file required!" = "Installation manuelle：fichier kext requis!";
 
 /* kextsInstallerController */
-"Manual Installation: Path doesn't exist!" = "Installation manuelle：Le chemin n'existe pas！";
+"Manual Installation: Path doesn't exist!" = "Installation manuelle：Le chemin n'existe pas!";
 
 /* No comment provided by engineer. */
 "MB/s" = "MB/s";

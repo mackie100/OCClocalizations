@@ -492,7 +492,7 @@
 "o9h-XT-hbD.ibShadowedToolTip" = "Valeur par défaut: non installé \n Description: définissez le modèle dans gEfiMiscSubClassGuid. La valeur trouvée sur le Mac est égale à SMBIOS SystemProductName en Unicode.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE134 - Version\nDescription: ASCII string containing SMC version in upper case. Missing on T2 based Macs. Ignored when zero."; ObjectID = "oMm-l1-RDC"; */
-"oMm-l1-RDC.ibShadowedToolTip" = "Allez sur le site officiel d'Apple pour voir quels sont vos trois mètres, mais nous sommes des pommes noires, hé, vous savez！";
+"oMm-l1-RDC.ibShadowedToolTip" = "Allez sur le site officiel d'Apple pour voir quels sont vos trois mètres, mais nous sommes des pommes noires, hé, vous savez!";
 
 /* Class = "NSButtonCell"; title = "CustomMemory"; ObjectID = "olD-tN-2HW"; */
 "olD-tN-2HW.title" = "CustomMemory";

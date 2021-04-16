@@ -166,13 +166,13 @@
 "Download: Path doesn't exist!" = "下载:路径不存在!";
 
 /* installDriversController */
-"Download: Please select a driver name!" = "下载：请选择一个驱动程序名称！";
+"Download: Please select a driver name!" = "下载：请选择一个驱动程序名称!";
 
 /* installToolsController */
 "Download: Please select a tool name!" = "下载: 请选择一个工具名称!";
 
 /* kextsInstallerController */
-"Download: Please select a kext name!" = "下载：请选择一个kext名称！";
+"Download: Please select a kext name!" = "下载：请选择一个kext名称!";
 
 /* opencoreDownloaderController */
 "Downloading %@" = "下载中 %@";
@@ -181,7 +181,7 @@
 "Error" = "错误";
 
 /* opencoreDownloaderController */
-"Error during unzipping file!" = "解压缩文件时出错！";
+"Error during unzipping file!" = "解压缩文件时出错!";
 
 /* opencoreDownloaderController */
 "Error: %@" = "错误: %@";
@@ -210,10 +210,10 @@
 /* installDriversController
    kextsInstallerController
    opencoreDownloaderController */
-"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "初始化：无法读取数据库。找不到服务器或没有互联网连接。";
+"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "初始化：无法读取数据库.找不到服务器或没有互联网连接.";
 
 /* bdmesgController */
-"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "现在这里什么都看不到！ 试试在Misc其他设置->Debug调试部分配置\"Target\"键值，具体内容参考OC官方PDF手册";
+"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "现在这里什么都看不到! 试试在Misc其他设置->Debug调试部分配置\"Target\"键值,具体内容参考OC官方PDF手册";
 
 /* sectionSourceListHexConverterPopover */
 "Invalid base64 data" = "无效base64数据";
@@ -246,13 +246,13 @@
 "Manual Installation: ERROR: %@" = "手动安装 :错误: %@";
 
 /* kextsInstallerController */
-"Manual Installation: ERROR: You don't have permission to write here!" = "手动安装: 错误: 你没有在这里写的权限！";
+"Manual Installation: ERROR: You don't have permission to write here!" = "手动安装: 错误: 你没有在这里写的权限!";
 
 /* kextsInstallerController */
-"Manual Installation: Kext file required!" = "手动安装：需要Kext文件！";
+"Manual Installation: Kext file required!" = "手动安装：需要Kext文件!";
 
 /* kextsInstallerController */
-"Manual Installation: Path doesn't exist!" = "手动安装：路径不存在！";
+"Manual Installation: Path doesn't exist!" = "手动安装：路径不存在!";
 
 /* No comment provided by engineer. */
 "MB/s" = "MB/s";
@@ -276,7 +276,7 @@
 "Mount Point: N/A" = "挂载点: N/A";
 
 /* opencoreDownloaderController */
-"No EFI folder found. Creating one...." = "找不到已挂载的EFI分区。创建一个....";
+"No EFI folder found. Creating one...." = "找不到已挂载的EFI分区.创建一个....";
 
 /* sidebarMenu */
 "NVRAM" = "NVRAM-随机访问存储器设置";
@@ -288,7 +288,7 @@
 "Old file has been renamed to OpenCore_%@.efi.bak" = "旧文件已重命名为OpenCoree_%@.efi.bak";
 
 /* reading_savingOperation */
-"OpenCore Configurator could not be synchronized because an error occurred: %@" = "由于发生错误，OpenCore Configurator无法同步: %@";
+"OpenCore Configurator could not be synchronized because an error occurred: %@" = "由于发生错误,OpenCore Configurator无法同步: %@";
 
 /* pasteBoardController */
 "Paste" = "粘贴";
@@ -324,7 +324,7 @@
 "Share" = "分享";
 
 /* kextsInstallerController */
-"Show Location: Path doesn't exist!" = "显示位置：路径不存在！";
+"Show Location: Path doesn't exist!" = "显示位置：路径不存在!";
 
 /* mountefiController */
 "Size:" = "容量:";
@@ -333,7 +333,7 @@
 "Some info for %@.kext => Identifier: %@ | Version: %@%@" = "信息: %1$@.kext =>Identifier: %2$@ | 版本: %3$@%4$@";
 
 /* rtvariablesController */
-"Sorry to generate a valid ROM, you need unique UUID in SystemParameters->Custom UUID (copy from system or generate one) or go in SMBIOS->Smuuid and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "抱歉生成有效的ROM，您需要SystemParameters-> Custom UUID中的唯一UUID（从系统复制或生成一个）或进入SMBIOS-> Smuuid并添加以下格式的有效uuid：XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX 。";
+"Sorry to generate a valid ROM, you need unique UUID in SystemParameters->Custom UUID (copy from system or generate one) or go in SMBIOS->Smuuid and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "抱歉生成有效的ROM,您需要SystemParameters-> Custom UUID中的唯一UUID（从系统复制或生成一个）或进入SMBIOS-> Smuuid并添加以下格式的有效uuid：XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX .";
 
 /* mountefiController */
 "Status:" = "状态:";
@@ -345,7 +345,7 @@
 "text string" = "文本字符";
 
 /* mainMenu */
-"To apply this change, you must restart the app" = "要应用此更改，您必须重新启动应用程序";
+"To apply this change, you must restart the app" = "要应用此更改,您必须重新启动应用程序";
 
 /* mainMenu */
 "Do you also want to change fork type?" = "您还想更改分支类型吗？";
@@ -358,13 +358,13 @@
 
 /* installDriversController
    opencoreDownloaderController */
-"Unable to read database." = "无法读取数据库。";
+"Unable to read database." = "无法读取数据库.";
 
 /* mountefiController */
 "Untitled" = "无标题";
 
 /* opencoreDownloaderController */
-"Unzip process was aborted because I can't create a backup" = "解压缩过程中止，因为我无法创建备份";
+"Unzip process was aborted because I can't create a backup" = "解压缩过程中止,因为我无法创建备份";
 
 /* kextsInstallerController */
 "Unzip: Error during unzipping file!" = "解压缩：解压缩文件时出错!";
@@ -403,7 +403,7 @@
 "Volume UUID: N/A" = "卷UUID: N/A";
 
 /* opencoreDownloaderController */
-"You don't have permission to write here!" = "您无权限在这里写入！";
+"You don't have permission to write here!" = "您无权限在这里写入!";
 
 /* dockMenu */
 "New Configuration..." = "新建配置...";
@@ -415,7 +415,7 @@
 "Leave A Message" = "留言";
 
 /* installDriversController opencoreDownloaderController */
-"No EFI folder found.....\n" = "未找到已挂载的EFI分区！\n";
+"No EFI folder found.....\n" = "未找到已挂载的EFI分区!\n";
 
 /* preferencesPanel */
 "Release Version" = "正式版";
@@ -496,10 +496,10 @@
 "Select a valid UUID" = "选择一个有效的UUID";
 
 /* compatibilityWarningScreen */
-"You seem to have an old version of OpenCore bootloader." = "您似乎加载了一个旧版本的OpenCore引导程序。";
+"You seem to have an old version of OpenCore bootloader." = "您似乎加载了一个旧版本的OpenCore引导程序.";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed or your NVRAM isn't native." = "引导加载程序看起来好像没有安装，或者您的NVRAM不是本机的。";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "引导加载程序看起来好像没有安装,或者您的NVRAM不是本机的.";
 
 /* compatibilityWarningScreen */
 "2nd_message" = "此应用为%1$@或更高版本创建配置文件.";
@@ -511,7 +511,7 @@
 "(select 'Backup File Before Saving' in Preferences Pane)" = "(在'首选项'窗格中选择'保存前备份文件'')";
 
 /* advancedUser */
-"The key “%@” already exists in containing item." = "包含项目的键“%@”已存在。";
+"The key “%@” already exists in containing item." = "包含项目的键“%@”已存在.";
 
 /* advancedUser */
 "(%lu items)" = "(%lu个项目)";
@@ -559,10 +559,10 @@
 "Add Item" = "添加";
 
 /* miscController */
-"Please make sure to select a file from a boot efi path." = "请确保从引导efi路径中选择一个文件。";
+"Please make sure to select a file from a boot efi path." = "请确保从引导efi路径中选择一个文件.";
 
 /* miscController */
-"No efi boot path found." = "找不到efi引导路径。";
+"No efi boot path found." = "找不到efi引导路径.";
 
 /* quicktoolsController */
 "%@ on Disk Identifier: %@" = "磁盘标识符上的%1$@: %2$@";
@@ -598,16 +598,16 @@
 "for MOD OpenCore" = "MOD修改版OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "此配置包含一个或多个官方OpenCore通常不使用的属性。是否要以MOD修改本模式打开此配置？";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "此配置包含一个或多个官方OpenCore通常不使用的属性.是否要以MOD修改本模式打开此配置？";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "此配置检测为官方版本，但是您正在MOD版OC模式下工作。您要切换到官方版本模式吗？";
+"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "此配置检测为官方版本,但是您正在MOD版OC模式下工作.您要切换到官方版本模式吗？";
 
 /* reading_savingOperation */
-"For changes to take effect, this app will be relaunched" = "为了使更改生效，此应用将重新启动";
+"For changes to take effect, this app will be relaunched" = "为了使更改生效,此应用将重新启动";
 
 /* outlinemodeController */
-"If you continue, all unknown keys will be lost" = "如果切换回GUI模式，所有手工添加的未知键值将丢失！";
+"If you continue, all unknown keys will be lost" = "如果切换回GUI模式,所有手工添加的未知键值将丢失!";
 
 /* textmodeController */
 "Syncronize" = "同步";
@@ -640,7 +640,7 @@
 "Rename Patches" = "常规更名补丁";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置完善性 (如果管理多个窗口，请选择要检查的窗口). 继续检查配置前保存你的配置文件.";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "检查当前配置完善性 (如果管理多个窗口,请选择要检查的窗口). 继续检查配置前保存你的配置文件.";
 
 /* configCheckerController */
 "Import configuration from local selecting \"Choose...\"" = "从\"选择...\"选择本地文件导入 ";
@@ -700,22 +700,22 @@
 "Failed to checking resources!" = "无法检查资源!";
 
 /* platformInfoController */
-"No Network Access. You may not get latest SMBIOS data." = "没有网络访问。您可能无法获取最新的SMBIOS数据.";
+"No Network Access. You may not get latest SMBIOS data." = "没有网络访问.您可能无法获取最新的SMBIOS数据.";
 
 /* installDriversController */
-"Download: %@ removed from queue because is not compatible with 32-bit version." = "下载: 由于与32位版本不兼容，已从队列中删除%@.";
+"Download: %@ removed from queue because is not compatible with 32-bit version." = "下载: 由于与32位版本不兼容,已从队列中删除%@.";
 
 /* efiMaker */
 "Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "基于Dortania帮助指南中的OpenCore Bootloader%@设置";
 
 /* efiMaker */
-"For more information about different settings, click on each CPU Family option" = "有关不同设置的更多信息，请单击每个CPU系列选项";
+"For more information about different settings, click on each CPU Family option" = "有关不同设置的更多信息,请单击每个CPU系列选项";
 
 /* efiMaker */
 "Downloading latest Opencore Bootloader" = "下载最新的Opencore引导器";
 
 /* efiMaker */
-"Error while downloading Opencore Bootloader. Unable to continue." = "下载Opencore引导器时出错。无法继续.";
+"Error while downloading Opencore Bootloader. Unable to continue." = "下载Opencore引导器时出错.无法继续.";
 
 /* efiMaker */
 "Downloading %@ configuration" = "正在下载%@配置";
@@ -790,7 +790,7 @@
 "Download related files" = "下载相关文件";
 
 /* opencoreDownloaderController */
-"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
+"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "构建gettext工具.在某些机器上,此过程可能需要一段时间,因此请耐心等待. 如果此过程要求安装Java SDK,请跳过该消息.";
 
 /* opencoreDownloaderController */
 "GETTEXT is missing!, downloading..." = "缺少GETTEXT!,正在下载...";
@@ -808,7 +808,7 @@
 "Download XCode" = "下载 XCode";
 
 /* opencoreDownloaderController */
-"In order to use this section, please install Xcode application." = "为了使用本节，请安装Xcode应用程序.";
+"In order to use this section, please install Xcode application." = "为了使用本节,请安装Xcode应用程序.";
 
 /* opencoreDownloaderController */
 "Start Building...." = "开始构建....";

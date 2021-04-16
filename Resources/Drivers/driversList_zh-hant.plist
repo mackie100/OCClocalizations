@@ -48,7 +48,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>OpenRuntime是OpenCore必不可少外掛程式。該外掛程式實現了OpenCore所需的多個功能，務必啟用！！</string>
+			<string>OpenRuntime是OpenCore必不可少外掛程式。該外掛程式實現了OpenCore所需的多個功能，務必啟用!!</string>
 			<key>name</key>
 			<string>OpenRuntime</string>
 			<key>arch</key>

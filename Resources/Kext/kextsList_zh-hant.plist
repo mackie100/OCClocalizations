@@ -94,7 +94,7 @@
 			<key>category</key>
 			<string>Kernel 擴充功能</string>
 			<key>description</key>
-			<string>該工具進行了必要的更改，以在相容的硬體上開啟OS X 10.10和10.11 Continuity功能。此修補文件啟用的連續性功能包括切換，無線基地台和AirDrop。 OS X 10.11（El Capitan）加密狗支援尚不穩定！</string>
+			<string>該工具進行了必要的更改，以在相容的硬體上開啟OS X 10.10和10.11 Continuity功能。此修補文件啟用的連續性功能包括切換，無線基地台和AirDrop。 OS X 10.11（El Capitan）加密狗支援尚不穩定!</string>
 			<key>name</key>
 			<string>BT4LEContinuityFixup</string>
 			<key>remoteFolder</key>

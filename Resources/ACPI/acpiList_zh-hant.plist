@@ -54,7 +54,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>USB相容性表。停用EHC1和EHC2-在您的BIOS中將選項"XHCI模式"設定為"開啟"。如果"XHCI模式"選項在您的BIOS中不能使用或無法正常工作，請使用此ACPI表。最好盡可能通過BIOS停用。警告：對於7系列，您需要使用"EH1D = 1"或"EH2D = One"但不能同時使用！這是因為macOS僅使用一種裝置（EHC1或EHC2）。檢查IOReg。</string>
+			<string>USB相容性表。停用EHC1和EHC2-在您的BIOS中將選項"XHCI模式"設定為"開啟"。如果"XHCI模式"選項在您的BIOS中不能使用或無法正常工作，請使用此ACPI表。最好盡可能通過BIOS停用。警告：對於7系列，您需要使用"EH1D = 1"或"EH2D = One"但不能同時使用!這是因為macOS僅使用一種裝置（EHC1或EHC2）。檢查IOReg。</string>
 			<key>name</key>
 			<string>SSDT-EHCx_OFF</string>
 		</dict>

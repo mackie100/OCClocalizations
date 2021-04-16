@@ -48,7 +48,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>OpenRuntime是OpenCore必不可少插件。该协议实现了OpenCore所需的多个功能，必须！！</string>
+			<string>OpenRuntime是OpenCore必不可少插件。该协议实现了OpenCore所需的多个功能，必须!!</string>
 			<key>name</key>
 			<string>OpenRuntime</string>
 			<key>arch</key>

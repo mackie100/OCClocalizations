@@ -261,7 +261,7 @@
 "TTj-aB-3ch.ibShadowedToolTip" = "<0x############> 可以是任意 6 Byte MAC 地址, 如 0x112233000000";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Update SMBIOS fields. These fields are read from Generic or SMBIOS sections depending on Automatic value."; ObjectID = "U5f-5A-ryt"; */
-"U5f-5A-ryt.ibShadowedToolTip" = "必須選YES, 無論\"自動\"選項是否選擇！";
+"U5f-5A-ryt.ibShadowedToolTip" = "必須選YES, 無論\"自動\"選項是否選擇!";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Add or remove this section from plist\nFailsafe: Add"; ObjectID = "U5s-uE-f0J"; */
 "U5s-uE-f0J.ibShadowedToolTip" = "從plist\n預設值增加或删除此部分:增加";
@@ -303,7 +303,7 @@
 "XDd-C5-ehh.title" = "MLB";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Update DataHub fields. These fields are read from Generic or DataHub sections depending on Automatic value.\n\nNote: The implementation of the Data Hub protocol in EFI firmware on essentially all systems, including Apple hardware, means that existing Data Hub entries cannot be overridden, while new entries are added to the end with macOS ignoring them. You can work around this by reinstalling the Data Hub protocol using the ProtocolOverrides section. Refer to the DataHub protocol override description for details."; ObjectID = "XRB-18-dHU"; */
-"XRB-18-dHU.ibShadowedToolTip" = "必須選YES, 無論\"自動\"選項是否選擇！";
+"XRB-18-dHU.ibShadowedToolTip" = "必須選YES, 無論\"自動\"選項是否選擇!";
 
 /* Class = "NSTextFieldCell"; title = "SystemMemoryStatus"; ObjectID = "Xed-CT-3f5"; */
 "Xed-CT-3f5.title" = "系统記憶體狀態";
@@ -492,7 +492,7 @@
 "o9h-XT-hbD.ibShadowedToolTip" = "預設值:未安裝\n描述:在gEfiMiscSubClassGuid中設定模型。在Mac上找到的值等於Unicode中的SMBIOS SystemProductName。";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist data, 16 bytes\nFailsafe: All zero\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE134 - Version\nDescription: ASCII string containing SMC version in upper case. Missing on T2 based Macs. Ignored when zero."; ObjectID = "oMm-l1-RDC"; */
-"oMm-l1-RDC.ibShadowedToolTip" = "去蘋果官網看看你的三碼是什麼狀態，但我們是黑蘋果，嘿嘿，你懂得！";
+"oMm-l1-RDC.ibShadowedToolTip" = "去蘋果官網看看你的三碼是什麼狀態，但我們是黑蘋果，嘿嘿，你懂得!";
 
 /* Class = "NSButtonCell"; title = "CustomMemory"; ObjectID = "olD-tN-2HW"; */
 "olD-tN-2HW.title" = "自定義記憶體";
@@ -579,7 +579,7 @@
 "z92-Rg-GSY.title" = "Firmware Features";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Update NVRAM fields related to platform information.\nThese fields are read from Generic or PlatformNVRAM sections depending on Automatic value. All the other fields are to be specified with NVRAM section.\nIf UpdateNVRAM is set to false the aforementioned variables can be updated with NVRAM section. If UpdateNVRAM is set to true the behaviour is undefined when any of the fields are present in NVRAM section."; ObjectID = "zXC-sw-kEf"; */
-"zXC-sw-kEf.ibShadowedToolTip" = "必須選YES, 無論\"自動\"選項是否選擇！";
+"zXC-sw-kEf.ibShadowedToolTip" = "必須選YES, 無論\"自動\"選項是否選擇!";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer, 16-bit\nFailsafe: 0xFFFF (unknown)\nSMBIOS: Memory Device (Type 17) — Data Width\nDescription: Specifies the data width, in bits, of the memory. A DataWidth of 0 and a TotalWidth of 8 indicates that the device is being used solely to provide 8 error-correction bits."; ObjectID = "zev-9o-4NS"; */
 "zev-9o-4NS.ibShadowedToolTip" = "Data Width\n指定儲存器的數據寬度(以bits為單位). DataWidth為0且TotalWidth為8表示該裝置僅用於提供8個纠錯位.";
