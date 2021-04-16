@@ -790,7 +790,7 @@
 "Download related files" = "Download related files";
 
 /* opencoreDownloaderController */
-"Starting compiling gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Starting compiling gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
+"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
 
 /* opencoreDownloaderController */
 "GETTEXT is missing!, downloading..." = "GETTEXT is missing!, downloading...";
