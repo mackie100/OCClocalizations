@@ -84,7 +84,7 @@
 "BJm-4X-red.ibShadowedToolTip" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置名称.在Mac上找到的值是ASCII平台.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist string\nFailsafe: Empty (Not installed)\nDescription: Specifies the values of NVRAM variables 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_SSN and 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:SSN."; ObjectID = "Bwi-9B-eFc"; */
-"Bwi-9B-eFc.ibShadowedToolTip" = "Type: plist string\nFailsafe: Empty (Not installed)\nDescription: Specifies the values of NVRAM variables 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_SSN and 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:SSN.";
+"Bwi-9B-eFc.ibShadowedToolTip" = "指定NVRAM变量的值4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_SSN 和 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:SSN.";
 
 /* Class = "NSTextFieldCell"; title = "Board"; ObjectID = "CDl-Mt-vej"; */
 "CDl-Mt-vej.title" = "Board";
