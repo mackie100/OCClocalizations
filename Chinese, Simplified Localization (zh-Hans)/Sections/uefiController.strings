@@ -321,7 +321,7 @@
 "f0k-6s-W9I.ibShadowedToolTip" = "当使用大显示（例如2K或4K）时,某些固件会将屏幕分辨率重置为故障安全值（如1024x768）,以清除屏幕内容.此选项尝试应用变通方法.\n注意:需要将TextRenderer设置为系统渲染模式才能使其生效.在所有已知的受影响系统上,必须将ConsoleMode设置为空字符串才能使其生效.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Query PCI devices and reload their Option ROMs if available.\n\nFor example, this option allows reloading NVIDIA GOP Option ROM on older Macs after the firmware version is upgraded via ForgeUefiSupport."; ObjectID = "fDO-pY-c74"; */
-"fDO-pY-c74.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Query PCI devices and reload their Option ROMs if available.\n\nFor example, this option allows reloading NVIDIA GOP Option ROM on older Macs after the firmware version is upgraded via ForgeUefiSupport.";
+"fDO-pY-c74.ibShadowedToolTip" = "查询PCI设备并重新加载其Option ROM(如果有).\n\n例如,通过ForgeUefiSupport升级固件版本后,此选项允许在较旧的Mac上重新加载NVIDIA GOP Option ROM.";
 
 /* Class = "NSTextField"; ibShadowedToolTip = "Type: plist integer\nFailsafe: 0\nDescription: Set architecture timer resolution.\n\nThis option allows updating the firmware architecture timer period with the specified value in 100 nanosecond units. Setting a lower value typically improves performance and responsiveness of the interface and input handling.\n\nThe recommended value is 50000 (5 milliseconds) or slightly higher. Select ASUS Z87 boards use 60000 for the interface. Apple boards use 100000. In case of issues, this option can be left as 0."; ObjectID = "fda-QM-Vl4"; */
 "fda-QM-Vl4.ibShadowedToolTip" = "固件时钟刷新的频率 (单位: 100纳秒)\n华硕主板为自己的界面使用 60000\n苹果使用 100000";
