@@ -23,6 +23,9 @@
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Reconnect console controllers after changing screen resolution.\n\nOn certain firmware, the controllers that produce the console protocols (simple text out) must be reconnected when the screen resolution is changed via GOP. Otherwise, they will not produce text based on the new resolution.\n\nNote: On several boards this logic may result in black screen when launching OpenCore from Shell and thus it is optional. In versions prior to 0.5.2 this option was mandatory and not configurable. Please do not use this unless required."; ObjectID = "1QT-lu-i79"; */
 "1QT-lu-i79.ibShadowedToolTip" = "Certains micrologiciels nécessitent de reconnecter le contrôleur pour afficher le texte après la modification de la résolution GOP. L'activation de cette option entraînera la disparition de l'écran lors du démarrage d'OpenCore à partir du shell UEFI. \n Si vous rencontrez un écran noir jusqu'à l'écran de connexion, veuillez essayer de sélectionner OUI.";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable AVX vector acceleration of SHA-512 and SHA-384 hashing algorithms."; ObjectID = "2Bt-b4-cNE"; */
+"2Bt-b4-cNE.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable AVX vector acceleration of SHA-512 and SHA-384 hashing algorithms.";
+
 /* Class = "NSButtonCell"; title = "ForceResolution"; ObjectID = "2kV-J6-o4B"; */
 "2kV-J6-o4B.title" = "ForceResolution";
 
@@ -58,6 +61,9 @@
 
 /* Class = "NSTextFieldCell"; title = "CustomDelays"; ObjectID = "5zT-C9-V64"; */
 "5zT-C9-V64.title" = "CustomDelays";
+
+/* Class = "NSButtonCell"; title = "EnableVectorAcceleration"; ObjectID = "63M-Ew-u4v"; */
+"63M-Ew-u4v.title" = "EnableVectorAcceleration";
 
 /* Class = "NSButtonCell"; title = "JumpstartHotPlug"; ObjectID = "6B4-NA-lHR"; */
 "6B4-NA-lHR.title" = "JumpstartHotPlug";
