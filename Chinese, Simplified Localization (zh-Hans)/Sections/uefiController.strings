@@ -24,7 +24,7 @@
 "1QT-lu-i79.ibShadowedToolTip" = "有些固件在 GOP 分辨率改变后要求重新连接控制器才能输出文本, 开启这个选项会导致从 UEFI Shell 中启动 OpenCore 时直接黑屏, 尽量避免开启.\n如果你遇到开机直到登录界面之前一直是黑屏,请试试选择 YES.";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Enable AVX vector acceleration of SHA-512 and SHA-384 hashing algorithms."; ObjectID = "2Bt-b4-cNE"; */
-"2Bt-b4-cNE.ibShadowedToolTip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable AVX vector acceleration of SHA-512 and SHA-384 hashing algorithms.";
+"2Bt-b4-cNE.ibShadowedToolTip" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.";
 
 /* Class = "NSButtonCell"; title = "ForceResolution"; ObjectID = "2kV-J6-o4B"; */
 "2kV-J6-o4B.title" = "ForceResolution";
