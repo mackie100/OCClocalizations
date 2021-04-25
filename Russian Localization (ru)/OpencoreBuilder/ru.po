@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Opencore Configurator (OpenCore Builder)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: eugene-grb\n"
+"Language-Team: mackie100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Opencore Builder"
+msgstr "Сборка Opencore"
+
+msgid "install ${BIN} with administrator privileges dialog"
+msgstr "Чтобы установить ${BIN}, сначала вам нужно ввести пароль учетной записи администратора, чтобы продолжить:"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Continue"
+msgstr "Продолжить"
+
+msgid "User aborted"
+msgstr "Операция отменена пользователем"
+
+msgid "Building ${util}..."
+msgstr "Сборка ${util}..."
+
+msgid "Building ${util} for Windows..."
+msgstr "Сборка ${util} для Windows..."
+
+msgid "Missing package directory"
+msgstr "Отсутствует каталог пакетов"
+
+msgid "Invalid version"
+msgstr "Неверная версия"
+
+msgid "Copying OpenDuetPkg boot file from ${booter}..."
+msgstr "Копирование загрузочного файла OpenDuetPkg из ${booter}..."
+
+msgid "Failed to find OpenDuetPkg at ${booter}!"
+msgstr "Не удалось найти OpenDuetPkg по адресу ${booter}!"
+
+msgid "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
+msgstr "Репозиторий ${URL} с именем ${DEVELOPER_KIT} содержит окончания строк CRLF"
+
+msgid "Downloading AUDK"
+msgstr "Загрузка репозитория AUDK..."
+
+msgid "Downloading OpenCorePkg"
+msgstr "Загрузка репозитория Open Core Pkg..."
+
+msgid "Downloading OcBinaryData"
+msgstr "Загрузка репозитория OcBinaryData..."
+
+msgid "Generating EFI"
+msgstr "Создание папки со структурой EFI"
+
+msgid "Building complete"
+msgstr "Процесс сборки завершен"
+
+msgid "Copying Binary Data"
+msgstr "Копирование Binary Data"
+
+msgid "install NASM"
+msgstr "Прежде чем приступить к сборке OpenCore Pkg, мне нужно установить NASM"
+
+msgid "install MTOC"
+msgstr Прежде чем приступить к сборке OpenCore Pkg, мне нужно установить MTOC"
+
+msgid "Applied patch"
+msgstr "Примененный патч"
+
+msgid "Compiling OpenCorePkg"
+msgstr "Компиляция последней известной версии OpenCore Pkg..."
