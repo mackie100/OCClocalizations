@@ -3,16 +3,16 @@
 "QvC-M9-y7g.title" = "Boot.log";
 
 /* Class = "NSButtonCell"; title = "Copy to Clipboard"; ObjectID = "Tq6-rl-9sc"; */
-"Tq6-rl-9sc.title" = "Copy to Clipboard";
+"Tq6-rl-9sc.title" = "Копировать в буфер";
 
 /* Class = "NSTextFieldCell"; title = "Search (⌘F)"; ObjectID = "jAZ-Ir-LHD"; */
-"jAZ-Ir-LHD.title" = "Search (⌘F)";
+"jAZ-Ir-LHD.title" = "Поиск (⌘F)";
 
 /* Class = "NSBox"; title = "Bdmesg"; ObjectID = "mBA-VI-TPQ"; */
 "mBA-VI-TPQ.title" = "Bdmesg";
 
 /* Class = "NSButtonCell"; title = "Save boot.log to desktop"; ObjectID = "wSe-to-GTI"; */
-"wSe-to-GTI.title" = "Save boot.log to desktop";
+"wSe-to-GTI.title" = "Сохранить boot.log на рабочий стол";
 
 /* Class = "NSButtonCell"; title = "Generate log"; ObjectID = "wxt-kM-Dys"; */
-"wxt-kM-Dys.title" = "Generate log";
+"wxt-kM-Dys.title" = "Сгенерировать log";

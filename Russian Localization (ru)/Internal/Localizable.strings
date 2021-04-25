@@ -1,8 +1,8 @@
 /* mountefiController */
-"%@ APFS Container [%@]" = "%1$@ APFS Container [%2$@]";
+"%@ APFS Container [%@]" = "%1$@ APFS Контейнер [%2$@]";
 
 /* mountefiController */
-"%lu partitions" = "%lu partitions";
+"%lu partitions" = "%lu разделы";
 
 /* sidebarMenu */
 "ACPI" = "ACPI";
@@ -11,471 +11,471 @@
 "B/s" = "B/s";
 
 /* startScreen */
-"Backup Configurations" = "Backup Configurations";
+"Backup Configurations" = "Параметры резервной копии";
 
 /* sectionSourceListHexConverterPopover */
-"base64 string" = "base64 string";
+"base64 string" = "строки base64";
 
 /* sidebarMenu */
-"Booter" = "Booter";
+"Booter" = "Загрузчик";
 
 /* opencoreDownloaderController outlinemodeController */
-"Cancel" = "Cancel";
+"Cancel" = "Отмена";
 
 /* mountefiController */
-"Capacity In Use:" = "Capacity In Use:";
+"Capacity In Use:" = "Пространсва занято:";
 
 /* kextsInstallerController */
-"Check" = "Check";
+"Check" = "Проверить";
 
 /* mountefiController */
-"Check Partition" = "Check Partition";
+"Check Partition" = "Проверить раздел";
 
 /* startScreen */
-"Configurations Acquired" = "Configurations Acquired";
+"Configurations Acquired" = "Приобретенные конфигурации";
 
 /* pasteBoardController */
-"Copy" = "Copy";
+"Copy" = "Копировать";
 
 /* AFNetworking */
-"Could not decode string: %@" = "Could not decode string: %@";
+"Could not decode string: %@" = "Не удалось декодировать строку: %@";
 
 /* pasteBoardController */
-"Cut" = "Cut";
+"Cut" = "Вырезать";
 
 /* AFNetworking */
-"Data failed decoding as a UTF-8 string" = "Data failed decoding as a UTF-8 string";
+"Data failed decoding as a UTF-8 string" = "Данные не удалось декодировать в виде строки UTF-8";
 
 /* No comment provided by engineer. */
-"Day" = "Day";
+"Day" = "День";
 
 /* No comment provided by engineer. */
-"Days" = "Days";
+"Days" = "Дней";
 
 /* sectionSourceListHexConverterPopover */
-"decimal string" = "decimal string";
+"decimal string" = "десятичная строка";
 
 /* kextsInstallerController */
-"Delete: %@ successfully removed" = "Delete: %@ successfully removed";
+"Delete: %@ successfully removed" = "Удалить: %@ успешно удалено";
 
 /* installDriversController */
-"Delete: %@.efi successfully removed" = "Delete: %@.efi successfully removed";
+"Delete: %@.efi successfully removed" = "Удалить: %@.efi успешно удалено";
 
 /* mountefiController */
-"Device BSD Name:" = "Device BSD Name:";
+"Device BSD Name:" = "Имя устройства BSD:";
 
 /* mountefiController */
-"Device BSD Name: %@" = "Device BSD Name: %@";
+"Device BSD Name: %@" = "Имя устройства BSD:: %@";
 
 /* mountefiController */
-"Device BSD Name: N/A" = "Device BSD Name: N/A";
+"Device BSD Name: N/A" = "Имя устройства BSD:: N/A";
 
 /* mountefiController */
-"Device Identifier: %@ - APFS Physical Store Disk: %@ - UUID: %@ - Size: %@" = "Device Identifier: %1$@ - APFS Physical Store Disk: %2$@ - UUID: %3$@ - Size: %4$@";
+"Device Identifier: %@ - APFS Physical Store Disk: %@ - UUID: %@ - Size: %@" = "Идентификатор устройства: %1$@ - Диск физического хранилища APFS: %2$@ - UUID: %3$@ - Рамер: %4$@";
 
 /* mountefiController */
-"Device Identifier: %@ - Partition Scheme: %@ - Size: %@" = "Device Identifier: %1$@ - Partition Scheme: %2$@ - Size: %3$@";
+"Device Identifier: %@ - Partition Scheme: %@ - Size: %@" = "Идентификатор устройства: %1$@ - Схема разделов: %2$@ - Раздел: %3$@";
 
 /* sidebarMenu */
-"DeviceProperties" = "DeviceProperties";
+"DeviceProperties" = "Свойства устройства";
 
 /* mountefiController */
-"Devices / Media Name:" = "Devices / Media Name:";
+"Devices / Media Name:" = "Имя устройства / носителя:";
 
 /* mountefiController */
-"Devices / Media Name: %@" = "Devices / Media Name: %@";
+"Devices / Media Name: %@" = "Имя устройства / носителя: %@";
 
 /* mountefiController */
-"Disk Identifier:" = "Disk Identifier:";
+"Disk Identifier:" = "Идентификатор диска:";
 
 /* mountefiController */
-"Disk Identifier: %@ Status: [Current Boot Disk]" = "Disk Identifier: %@ Status: [Current Boot Disk]";
+"Disk Identifier: %@ Status: [Current Boot Disk]" = "Идентификатор диска: %@ Статус: [Текущий загрузочный диск]";
 
 /* mountefiController */
-"Disk Type:" = "Disk Type:";
+"Disk Type:" = "Тип диска:";
 
 /* mountefiController */
-"Disk Type: %@" = "Disk Type: %@";
+"Disk Type: %@" = "Тип диска: %@";
 
 /* mountefiController */
-"Disk Type: APFS Container" = "Disk Type: APFS Container";
+"Disk Type: APFS Container" = "Тип диска: APFS Контейнер";
 
 /* mountefiController */
-"Disk Type: APFS Volume" = "Disk Type: APFS Volume";
+"Disk Type: APFS Volume" = "Тип диска: APFS Раздел";
 
 /* mountefiController */
-"Disk Type: Apple HFS+" = "Disk Type: Apple HFS+";
+"Disk Type: Apple HFS+" = "Тип диска: Apple HFS+";
 
 /* mountefiController */
-"Disk Type: N/A" = "Disk Type: N/A";
+"Disk Type: N/A" = "Тип диска: N/A";
 
 /* mountefiController */
-"Disk Type: SoftRAID Cache" = "Disk Type: SoftRAID Cache";
+"Disk Type: SoftRAID Cache" = "Тип диска: SoftRAID Кеш";
 
 /* mountefiController */
-"Disk Type: SoftRAID Scratch" = "Disk Type: SoftRAID Scratch";
+"Disk Type: SoftRAID Scratch" = "Тип диска: SoftRAID Scratch";
 
 /* mountefiController */
-"Disk Type: SoftRAID Status" = "Disk Type: SoftRAID Status";
+"Disk Type: SoftRAID Status" = "Тип диска: SoftRAID Status";
 
 /* mountefiController */
-"Disk Type: SoftRAID Volume" = "Disk Type: SoftRAID Volume";
+"Disk Type: SoftRAID Volume" = "Тип диска: SoftRAID Volume";
 
 /* mountefiController */
-"Disk UUID:" = "Disk UUID:";
+"Disk UUID:" = "UUID диска:";
 
 /* mountefiController */
-"Disk UUID: %@" = "Disk UUID: %@";
+"Disk UUID: %@" = "UUID диска: %@";
 
 /* mountefiController */
-"Disk UUID: N/A" = "Disk UUID: N/A";
+"Disk UUID: N/A" = "UUID диска: N/A";
 
 /* installDriversController
    kextsInstallerController
    opencoreDownloaderController */
-"Download" = "Download";
+"Download" = "Загрузить";
 
 /* installDriversController
    kextsInstallerController */
-"Download: %@ has been successfully copied to %@" = "Download: %1$@ has been successfully copied to %2$@";
+"Download: %@ has been successfully copied to %@" = "Загрузка: %1$@ был успешно скопирован в %2$@";
 
 /* installDriversController
    kextsInstallerController */
-"Download: %@ has been successfully updated to %@" = "Download: %1$@ has been successfully updated to %2$@";
+"Download: %@ has been successfully updated to %@" = "Загрузка: %1$@ был успешно обновлен до %2$@";
 
 /* kextsInstallerController */
-"Download: %@ successfully backed up to %@" = "Download: %1$@ successfully backed up to %2$@";
+"Download: %@ successfully backed up to %@" = "Загрузка: %1$@ успешно выполнено резервное копирование на %2$@";
 
 /* installDriversController
    kextsInstallerController */
-"Download: %@ successfully downloaded...." = "Download: %@ successfully downloaded....";
+"Download: %@ successfully downloaded...." = "Загрузка: %@ успешно загружено....";
 
 /* installDriversController
    kextsInstallerController */
-"Download: Error: %@" = "Download: Error: %@";
+"Download: Error: %@" = "Загрузка: Ошибка: %@";
 
 /* kextsInstallerController */
-"Download: ERROR: %@" = "Download: ERROR: %@";
+"Download: ERROR: %@" = "Загрузка: ОШИБКА: %@";
 
 /* installDriversController
    kextsInstallerController */
-"Download: ERROR: You don't have permission to write here!" = "Download: ERROR: You don't have permission to write here!";
+"Download: ERROR: You don't have permission to write here!" = "Загрузка: ОШИБКА: У вас нет разрешения писать здесь!";
 
 /* installDriversController
    kextsInstallerController */
-"Download: Path doesn't exist!" = "Download: Path doesn't exist!";
+"Download: Path doesn't exist!" = "Загрузка: Путь не существует!";
 
 /* installDriversController */
-"Download: Please select a driver name!" = "Download: Please select a driver name!";
+"Download: Please select a driver name!" = "Загрузка: Пожалуйста, выберите имя драйвера!";
 
 /* installToolsController */
-"Download: Please select a tool name!" = "Download: Please select a tool name!";
+"Download: Please select a tool name!" = "Загрузка: Пожалуйста, выберите название утилиты!";
 
 /* kextsInstallerController */
-"Download: Please select a kext name!" = "Download: Please select a kext name!";
+"Download: Please select a kext name!" = "Загрузка: Пожалуйста, выберите имя кекста!";
 
 /* opencoreDownloaderController */
-"Downloading %@" = "Downloading %@";
+"Downloading %@" = "Загрузка %@";
 
 /* reading_savingOperation */
-"Error" = "Error";
+"Error" = "Ошибка";
 
 /* opencoreDownloaderController */
-"Error during unzipping file!" = "Error during unzipping file!";
+"Error during unzipping file!" = "Ошибка при распаковке файла!";
 
 /* opencoreDownloaderController */
-"Error: %@" = "Error: %@";
+"Error: %@" = "Ошибка: %@";
 
 /* kextsInstallerController */
-"FakeSMC detected... Choose an add on to install..." = "FakeSMC detected... Choose an add on to install...";
+"FakeSMC detected... Choose an add on to install..." = "FakeSMC обнаружен... Выберите надстройку для установки...";
 
 /* No comment provided by engineer. */
 "GB/s" = "GB/s";
 
 /* sectionSourceListHexConverterPopover */
-"HEX Converter" = "HEX Converter";
+"HEX Converter" = "HEX Конвертер";
 
 /* sectionSourceListHexConverterPopover */
-"HEX string" = "HEX string";
+"HEX string" = "HEX строка";
 
 /* No comment provided by engineer. */
-"Hour" = "Hour";
+"Hour" = "Час";
 
 /* No comment provided by engineer. */
-"Hours" = "Hours";
+"Hours" = "Часов";
 
 /* openPanelConfigConverterTool */
-"Import a Clover config file for conversion" = "Import a Clover config file for conversion";
+"Import a Clover config file for conversion" = "Импорт конфигурационного файла Clover для преобразования";
 
 /* installDriversController
    kextsInstallerController
    opencoreDownloaderController */
-"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "Initialization: Unable to read database. Cannot find server or there's no internet connection.";
+"Initialization: Unable to read database. Cannot find server or there's no internet connection." = "Инициализация: Невозможно прочитать базу данных. Не удается найти сервер или нет подключения к Интернету.";
 
 /* bdmesgController */
-"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "Nothing to read here! Try to configure \"Target\" key in Misc->Debug section";
+"Nothing to read here! Try to configure \"Target\" key in Misc->Debug section" = "Здесь нечего читать! Попробуйте настроить ключ \"Target\" в разделе Разное->Отладка";
 
 /* sectionSourceListHexConverterPopover */
-"Invalid base64 data" = "Invalid base64 data";
+"Invalid base64 data" = "Недопустимые данные base64";
 
 /* sectionSourceListHexConverterPopover */
-"Invalid data" = "Invalid data";
+"Invalid data" = "Недопустимые данные";
 
 /* sectionSourceListHexConverterPopover */
-"Invalid HEX data" = "Invalid HEX data";
+"Invalid HEX data" = "Недопустимые данные HEX";
 
 /* No comment provided by engineer. */
 "KB/s" = "KB/s";
 
 /* sidebarMenu */
-"Kernel" = "Kernel";
+"Kernel" = "Ядро";
 
 /* left_toolbar */
-"Load Configuration" = "Load Configuration";
+"Load Configuration" = "Конфигурация нагрузки";
 
 /* kextsInstallerController */
-"Manual Installation: %@ has been successfully copied to %@" = "Manual Installation: %1$@ has been successfully copied to %2$@";
+"Manual Installation: %@ has been successfully copied to %@" = "Ручная установка: %1$@ успешно скопирован в %2$@";
 
 /* kextsInstallerController */
-"Manual Installation: %@ has been successfully updated to %@" = "Manual Installation: %1$@ has been successfully updated to %2$@";
+"Manual Installation: %@ has been successfully updated to %@" = "Ручная установка: %1$@ успешно обновлен до %2$@";
 
 /* kextsInstallerController */
-"Manual Installation: %@ successfully backed up to %@" = "Manual Installation: %1$@ successfully backed up to %2$@";
+"Manual Installation: %@ successfully backed up to %@" = "Ручная установка: %1$@ успешно выполнено резервное копирование в %2$@";
 
 /* kextsInstallerController */
-"Manual Installation: ERROR: %@" = "Manual Installation: ERROR: %@";
+"Manual Installation: ERROR: %@" = "Ручная установка: ОШИБКА: %@";
 
 /* kextsInstallerController */
-"Manual Installation: ERROR: You don't have permission to write here!" = "Manual Installation: ERROR: You don't have permission to write here!";
+"Manual Installation: ERROR: You don't have permission to write here!" = "Ручная установка: ОШИБКА: У вас нет разрешения для записи!";
 
 /* kextsInstallerController */
-"Manual Installation: Kext file required!" = "Manual Installation: Kext file required!";
+"Manual Installation: Kext file required!" = "Ручная установка: требуется файл Kext!";
 
 /* kextsInstallerController */
-"Manual Installation: Path doesn't exist!" = "Manual Installation: Path doesn't exist!";
+"Manual Installation: Path doesn't exist!" = "Ручная установка: Путь не существует!";
 
 /* No comment provided by engineer. */
 "MB/s" = "MB/s";
 
 /* No comment provided by engineer. */
-"Minute" = "Minute";
+"Minute" = "Минута";
 
 /* No comment provided by engineer. */
-"Minutes" = "Minutes";
+"Minutes" = "Минут";
 
 /* sidebarMenu */
-"Misc" = "Misc";
+"Misc" = "Разное";
 
 /* mountefiController */
-"Mount Point:" = "Mount Point:";
+"Mount Point:" = "Точка монтирования:";
 
 /* mountefiController */
-"Mount Point: %@" = "Mount Point: %@";
+"Mount Point: %@" = "Точка монтирования: %@";
 
 /* mountefiController */
-"Mount Point: N/A" = "Mount Point: N/A";
+"Mount Point: N/A" = "Точка монтирования: N/A";
 
 /* opencoreDownloaderController */
-"No EFI folder found. Creating one...." = "No EFI folder found. Creating one....";
+"No EFI folder found. Creating one...." = "Папка EFI не найдена. Создание....";
 
 /* sidebarMenu */
 "NVRAM" = "NVRAM";
 
 /* opencoreDownloaderController */
-"Old file has been renamed to BOOTx64_%@.efi.bak" = "Old file has been renamed to BOOTx64_%@.efi.bak";
+"Old file has been renamed to BOOTx64_%@.efi.bak" = "Старый файл был переименован в BOOTx64_%@.efi.bak";
 
 /* opencoreDownloaderController */
-"Old file has been renamed to OpenCore_%@.efi.bak" = "Old file has been renamed to OpenCore_%@.efi.bak";
+"Old file has been renamed to OpenCore_%@.efi.bak" = "Старый файл был переименован в OpenCore_%@.efi.bak";
 
 /* reading_savingOperation */
-"OpenCore Configurator could not be synchronized because an error occurred: %@" = "OpenCore Configurator could not be synchronized because an error occurred: %@";
+"OpenCore Configurator could not be synchronized because an error occurred: %@" = "Конфигуратор OpenCore не был синхронизирован из-за ошибки: %@";
 
 /* pasteBoardController */
-"Paste" = "Paste";
+"Paste" = "Вставить";
 
 /* left_toolbar */
-"Paypal - Free Donation" = "Paypal - Free Donation";
+"Paypal - Free Donation" = "Paypal - Бесплатное пожертвование";
 
 /* sidebarMenu */
 "PlatformInfo" = "PlatformInfo";
 
 /* reading_savingOperation */
-"Repair" = "Repair";
+"Repair" = "Заменить";
 
 /* mainMenu */
-"Restart" = "Restart";
+"Restart" = "Перезапустить";
 
 /* left_toolbar */
-"Save" = "Save";
+"Save" = "Сохранить";
 
 /* left_toolbar */
-"Save As..." = "Save As...";
+"Save As..." = "Сохранить как...";
 
 /* left_toolbar */
-"Save, Save As Configuration" = "Save, Save As Configuration";
+"Save, Save As Configuration" = "Сохранить, Сохранить как конфигурацию";
 
 /* No comment provided by engineer. */
-"Second" = "Second";
+"Second" = "Секунда";
 
 /* No comment provided by engineer. */
-"Seconds" = "Seconds";
+"Seconds" = "Секунд";
 
 /* left_toolbar */
-"Share" = "Share";
+"Share" = "Поделиться";
 
 /* kextsInstallerController */
-"Show Location: Path doesn't exist!" = "Show Location: Path doesn't exist!";
+"Show Location: Path doesn't exist!" = "Показать местоположение: Путь не существует!";
 
 /* mountefiController */
-"Size:" = "Size:";
+"Size:" = "Размер:";
 
 /* kextsInstallerController */
-"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "Some info for %1$@.kext =>Identifier: %2$@ | Version: %3$@%4$@";
+"Some info for %@.kext => Identifier: %@ | Version: %@%@" = "Некоторая информация для %1$@.kext =>Идентификатор: %2$@ | Версия: %3$@%4$@";
 
 /* rtvariablesController */
-"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
+"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "Извините, чтобы сгенерировать действительный ROM, вам нужен уникальный UUID в System UUID (скопировать из System или сгенерировать его) или зайти в System UUID и добавить действительный uuid в формате: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
 
 /* mountefiController */
-"Status:" = "Status:";
+"Status:" = "Статус:";
 
 /* reading_savingOperation */
-"Synchronized" = "Synchronized";
+"Synchronized" = "Синхронизированно";
 
 /* sectionSourceListHexConverterPopover */
-"text string" = "text string";
+"text string" = "текстровая строка";
 
 /* mainMenu */
-"To apply this change, you must restart the app" = "To apply this change, you must restart the app";
+"To apply this change, you must restart the app" = "Чтобы применить это изменение, необходимо перезапустить приложение";
 
 /* mainMenu */
-"Do you also want to change fork type?" = "Do you also want to change fork type?";
+"Do you also want to change fork type?" = "Вы также хотите изменить тип форка?";
 
 /* mainMenu */
-"Do you also want to change configuration properties type?" = "Do you also want to change configuration properties type?";
+"Do you also want to change configuration properties type?" = "Вы также хотите изменить тип свойств конфигурации?";
 
 /* sidebarMenu */
 "UEFI" = "UEFI";
 
 /* installDriversController
    opencoreDownloaderController */
-"Unable to read database." = "Unable to read database.";
+"Unable to read database." = "Невозможно прочитать базу данных.";
 
 /* mountefiController */
-"Untitled" = "Untitled";
+"Untitled" = "Без названия";
 
 /* opencoreDownloaderController */
-"Unzip process was aborted because I can't create a backup" = "Unzip process was aborted because I can't create a backup";
+"Unzip process was aborted because I can't create a backup" = "Процесс распаковки был прерван, потому что я не могу создать резервную копию";
 
 /* kextsInstallerController */
-"Unzip: Error during unzipping file!" = "Unzip: Error during unzipping file!";
+"Unzip: Error during unzipping file!" = "Распаковка: Ошибка при распаковке файла!";
 
 /* opencoreDownloaderController */
-"Unzipped..." = "Unzipped...";
+"Unzipped..." = "Распакованно...";
 
 /* kextsInstallerController */
-"Update available for %@.kext => Local version: %@ | Remote version: %@" = "Update available for %1$@.kext =>Local version: %2$@ | Remote version: %3$@";
+"Update available for %@.kext => Local version: %@ | Remote version: %@" = "Обновление доступно для %1$@.kext =>Локальная версия: %2$@ | Удаленная версия: %3$@";
 
 /* kextsInstallerController */
-"VirtualSMC detected... Choose an add on to install..." = "VirtualSMC detected... Choose an add on to install...";
+"VirtualSMC detected... Choose an add on to install..." = "VirtualSMC обнаружен... Выберите надстройку для установки...";
 
 /* mountefiController */
-"Volume Identifier:" = "Volume Identifier:";
+"Volume Identifier:" = "Идентификатор тома:";
 
 /* mountefiController */
-"Volume Identifier: %@" = "Volume Identifier: %@";
+"Volume Identifier: %@" = "Идентификатор тома: %@";
 
 /* mountefiController */
-"Volume Identifier: %@ Status: [Current Boot Disk]" = "Volume Identifier: %@ Status: [Current Boot Disk]";
+"Volume Identifier: %@ Status: [Current Boot Disk]" = "Идентификатор тома: %@ Статус: [Текущий загрузочный диск]";
 
 /* mountefiController */
-"Volume Name:" = "Volume Name:";
+"Volume Name:" = "Имя тома:";
 
 /* mountefiController */
-"Volume Name: %@" = "Volume Name: %@";
+"Volume Name: %@" = "Имя тома: %@";
 
 /* mountefiController */
-"Volume UUID:" = "Volume UUID:";
+"Volume UUID:" = "UUID тома:";
 
 /* mountefiController */
-"Volume UUID: %@" = "Volume UUID: %@";
+"Volume UUID: %@" = "Обьем UUID: %@";
 
 /* mountefiController */
-"Volume UUID: N/A" = "Volume UUID: N/A";
+"Volume UUID: N/A" = "Обьем UUID: N/A";
 
 /* opencoreDownloaderController */
-"You don't have permission to write here!" = "You don't have permission to write here!";
+"You don't have permission to write here!" = "У вас нет разрешения для записи!";
 
 /* dockMenu */
-"New Configuration..." = "New Configuration...";
+"New Configuration..." = "Новая конфигурация...";
 
 /* dockMenu */
-"Open Configuration..." = "Open Configuration...";
+"Open Configuration..." = "Открыть конфигурацию...";
 
 /* dockMenu */
-"Leave A Message" = "Leave A Message";
+"Leave A Message" = "Оставить сообщение";
 
 /* installDriversController opencoreDownloaderController */
-"No EFI folder found.....\n" = "No EFI folder found.....\n";
+"No EFI folder found.....\n" = "Папка EFI не найдена.....\n";
 
 /* preferencesPanel */
-"Release Version" = "Release Version";
+"Release Version" = "Версия выпуска";
 
 /* preferencesPanel */
-"Development Version" = "Development Version";
+"Development Version" = "Версия разработки";
 
 /* deviceProperties_table_properties_menu */
-"Audio Device Properties" = "Audio Device Properties";
+"Audio Device Properties" = "Свойства аудиоустройства";
 
 /* deviceProperties_table_properties_menu */
-"Video Device Properties" = "Video Device Properties";
+"Video Device Properties" = "Свойства видеоустройства";
 
 /* deviceProperties_table_properties_menu */
-"Advanced Properties" = "Advanced Properties";
+"Advanced Properties" = "Расширенные свойства";
 
 /* deviceProperties_table_properties_menu */
-"display number" = "display number";
+"display number" = "номер дисплея";
 
 /* deviceProperties_table_properties_menu */
-"Connections" = "Connections";
+"Connections" = "Соединения";
 
 /* deviceProperties_table_properties_menu */
-"connector index" = "connector index";
+"connector index" = "индекс соединителя";
 
 /* deviceProperties_table_properties_menu */
-"Other" = "Other";
+"Other" = "Прочее";
 
 /* deviceProperties_table_properties_menu */
-"Presets" = "Presets";
+"Presets" = "Пресеты";
 
 /* deviceProperties_table_properties_menu */
 "High Sierra" = "High Sierra";
 
 /* deviceProperties_table_properties_menu */
-"Mojave and above" = "Mojave and above";
+"Mojave and above" = "Mojave и выше";
 
 /* deviceProperties_table_properties_menu */
-"Device Properties" = "Device Properties";
+"Device Properties" = "Свойства устройства";
 
 /* deviceProperties_table_properties_menu */
-"Help" = "Help";
+"Help" = "Помощь";
 
 /* deviceProperties_table_properties_menu */
-"Select '%@' device before adding '%@' key" = "Select '%1$@' device before adding '%2$@' key";
+"Select '%@' device before adding '%@' key" = "Выберите устройство " %1$@" перед добавлением ключа " %2$@"";
 
 /* deviceProperties_table_properties_menu */
-"Select a '%@' device before adding a preset" = "Select a '%1$@' device before adding a preset";
+"Select a '%@' device before adding a preset" = "Выберите устройство " %1$@" перед добавлением пресета";
 
 /* deviceProperties_table_properties_menu */
-"Select a Platform ID before adding a preset" = "Select a Platform ID before adding a preset";
+"Select a Platform ID before adding a preset" = "Выберите Platform ID перед добавлением пресета";
 
 /* deviceProperties_table_properties_menu */
-"Select a valid device path" = "Select a valid device path";
+"Select a valid device path" = "Выберите допустимый путь к устройству";
 
 /* deviceProperties_table_properties_menu */
-"Product Name" = "Product Name";
+"Product Name" = "Название продукта";
 
 /* deviceProperties_table_properties_menu */
-"CPU Codename" = "CPU Codename";
+"CPU Codename" = "Кодовое имя процессора";
 
 /* deviceProperties_table_properties_menu */
 "Platform ID" = "Platform ID";
@@ -484,337 +484,337 @@
 "Device ID" = "Device ID";
 
 /* deviceProperties_table_properties_menu */
-"Device Name" = "Device Name";
+"Device Name" = "Имя устройства";
 
 /* deviceProperties_table_properties_menu */
-"Available Device IDs" = "Available Device IDs";
+"Available Device IDs" = "Доступные Device ID";
 
 /* deviceProperties_table_properties_menu */
-"Available Models" = "Available Models";
+"Available Models" = "Доступные модели";
 
 /* nvram_add_properties_table */
-"Select a valid UUID" = "Select a valid UUID";
+"Select a valid UUID" = "Выберите допустимый UUID";
 
 /* compatibilityWarningScreen */
-"You seem to have an old version of OpenCore bootloader." = "You seem to have an old version of OpenCore bootloader.";
+"You seem to have an old version of OpenCore bootloader." = "Похоже, у вас старая версия загрузчика OpenCore.";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed or your NVRAM isn't native." = "The bootloader looks like it is not installed or your NVRAM isn't native.";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "Загрузчик выглядит так, как будто он не установлен или ваша NVRAM не является родной.";
 
 /* compatibilityWarningScreen */
-"2nd_message" = "This app creates a configuration file for %1$@ and higher versions.";
+"2nd_message" = "Это приложение создает файл конфигурации для %1$@ и для более высоких версий.";
 
 /* compatibilityWarningScreen */
-"Use at your own risk" = "Use at your own risk";
+"Use at your own risk" = "Используйте на свой страх и риск";
 
 /* compatibilityWarningScreen */
-"(select 'Backup File Before Saving' in Preferences Pane)" = "(select 'Backup File Before Saving' in Preferences Pane)";
+"(select 'Backup File Before Saving' in Preferences Pane)" = "(выберите "Резервная копия файла перед сохранением" на панели настроек)";
 
 /* advancedUser */
-"The key “%@” already exists in containing item." = "The key “%@” already exists in containing item.";
+"The key “%@” already exists in containing item." = "Ключ “%@” уже существует в содержащем элементе.";
 
 /* advancedUser */
-"(%lu items)" = "(%lu items)";
+"(%lu items)" = "(%lu элементов)";
 
 /* advancedUser */
-"Item %lu" = "Item %lu";
+"Item %lu" = "Элемент %lu";
 
 /* outlineMode */
-"Cut" = "Cut";
+"Cut" = "Вырезать";
 
 /* outlineMode */
-"Copy" = "Copy";
+"Copy" = "Копировать";
 
 /* outlineMode */
-"Paste" = "Paste";
+"Paste" = "Вставить";
 
 /* outlineMode */
-"Delete" = "Delete";
+"Delete" = "Удалить";
 
 /* outlineMode */
-"Value Type" = "Value Type";
+"Value Type" = "Тип значения";
 
 /* outlineMode */
-"Array" = "Array";
+"Array" = "Массив";
 
 /* outlineMode */
-"Dictionary" = "Dictionary";
+"Dictionary" = "Словарь";
 
 /* outlineMode */
-"Boolean" = "Boolean";
+"Boolean" = "Булево значение";
 
 /* outlineMode */
-"Data" = "Data";
+"Data" = "Данные";
 
 /* outlineMode */
-"Date" = "Date";
+"Date" = "Дата";
 
 /* outlineMode */
-"Number" = "Number";
+"Number" = "Число";
 
 /* outlineMode */
-"String" = "String";
+"String" = "Строка";
 
 /* outlineMode */
-"Add Item" = "Add Item";
+"Add Item" = "Добавить элемент";
 
 /* miscController */
-"Please make sure to select a file from a boot efi path." = "Please make sure to select a file from a boot efi path.";
+"Please make sure to select a file from a boot efi path." = "Пожалуйста, не забудьте выбрать файл из загрузочного пути efi.";
 
 /* miscController */
-"No efi boot path found." = "No efi boot path found.";
+"No efi boot path found." = "Загрузочный путь efi не найден.";
 
 /* quicktoolsController */
-"%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";
+"%@ on Disk Identifier: %@" = "%1$@ идентификатор на диске: %2$@";
 
 /* quicktoolsController */
-"Status: [%@]" = "Status: [%@]";
+"Status: [%@]" = "Статус: [%@]";
 
 /* quicktoolsController */
-"OpenCore Boot Partition" = "OpenCore Boot Partition";
+"OpenCore Boot Partition" = "Загрузочный раздел OpenCore";
 
 /* preferencesPanel */
-"Official" = "Official";
+"Official" = "Официальный";
 
 /* preferencesPanel */
 "MOD" = "MOD";
 
 /* preferencesPanel */
-"App Settings" = "App Settings";
+"App Settings" = "Настройки приложения";
 
 /* preferencesPanel */
-"OpenCore Settings" = "OpenCore Settings";
+"OpenCore Settings" = "Настройки OpenCore";
 
 /* titleBar */
-"Release Configuration" = "%1$@ Release Configuration";
+"Release Configuration" = "%1$@ Конфигурация релиза";
 
 /* titleBar */
-"Development Configuration" = "%1$@ Development Configuration";
+"Development Configuration" = "%1$@ Конфигурация разработки";
 
 /* titleBar */
-"for Official OpenCore" = "for Official OpenCore";
+"for Official OpenCore" = "для официального OpenCore";
 
 /* titleBar */
-"for MOD OpenCore" = "for MOD OpenCore";
+"for MOD OpenCore" = "для MOD OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "Эта конфигурация содержит одно или несколько свойств, которые официальный OpenCore обычно не использует. Вы хотите открыть эту конфигурацию в режиме MOD?";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?";
+"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "Эта конфигурация содержит стандартные свойства, но вы работаете в режиме MOD. Вы хотите перейти в официальный режим?";
 
 /* reading_savingOperation */
-"For changes to take effect, this app will be relaunched" = "For changes to take effect, this app will be relaunched";
+"For changes to take effect, this app will be relaunched" = "Чтобы изменения вступили в силу, это приложение будет перезапущено";
 
 /* outlinemodeController */
-"If you continue, all unknown keys will be lost" = "If you continue, all unknown keys will be lost";
+"If you continue, all unknown keys will be lost" = "Если вы продолжите, все неизвестные ключи будут потеряны";
 
 /* textmodeController */
-"Syncronize" = "Syncronize";
+"Syncronize" = "Синхронизировать";
 
 /* textmodeController */
-"Syncronize Outline Mode" = "Syncronize Outline Mode";
+"Syncronize Outline Mode" = "Синхронизировать в режиме общих черт";
 
 /* importPatchesController */
-"Import set of patches" = "Import set of patches";
+"Import set of patches" = "Импорт набора патчей";
 
 /* importPatchesController */
-"Import set of kexts" = "Import set of kexts";
+"Import set of kexts" = "Импорт набора kexts";
 
 /* importPatchesController */
-"Export selected patches" = "Export selected patches";
+"Export selected patches" = "Экспорт выбранных патчей";
 
 /* importPatchesController */
-"Export selected kexts" = "Export selected kexts";
+"Export selected kexts" = "Экспорт выбранных kexts";
 
 /* importPatchesController */
-"Add set of patches from database" = "Add set of patches from database";
+"Add set of patches from database" = "Добавить набор патчей из базы данных";
 
 /* importPatchesController */
-"Add set of kexts from database" = "Add set of kexts from database";
+"Add set of kexts from database" = "Добавить набор kexts из базы данных";
 
 /* importPatchesController */
-"Battery Patches" = "Battery Patches";
+"Battery Patches" = "Патчи батареи";
 
 /* importPatchesController */
-"Rename Patches" = "Rename Patches";
+"Rename Patches" = "Патчи переименования";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check.";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Проверьте текущие конфигурации (если вы управляете несколькими окнами, выберите окно, которое вы хотите проверить). Сохраните свою конфигурацию, прежде чем продолжить проверку.";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
+"Import configuration from local selecting \"Choose...\"" = "Импорт конфигурации из локального выбора \"Выбрать...\"";
 
 /* configCheckerController */
-"Drag your configuration here" = "Drag your configuration here";
+"Drag your configuration here" = "Перетащите свою конфигурацию сюда";
 
 /* configCheckerController */
-"No Network Access" = "No Network Access";
+"No Network Access" = "Нет доступа к сети";
 
 /* configCheckerController */
-"Uploading..." = "Uploading...";
+"Uploading..." = "Загрузка...";
 
 /* configCheckerController */
-"Downloading Resources..." = "Downloading Resources...";
+"Downloading Resources..." = "Загрузка ресурсов...";
 
 /* configCheckerController */
-"Downloaded %.2f MB of %.2f MB (%@)" = "Downloaded %1$.2f MB of %2$.2f MB (%3$@)";
+"Downloaded %.2f MB of %.2f MB (%@)" = "Загружено %1$.2f MB из %2$.2f MB (%3$@)";
 
 /* configCheckerController */
-"Resources Extraction..." = "Resources Extraction...";
+"Resources Extraction..." = "Извлечение ресурсов...";
 
 /* configCheckerController */
-"Ready!" = "Ready!";
+"Ready!" = "Готово!";
 
 /* configCheckerController */
-"Error extracting resources files!" = "Error extracting resources files!";
+"Error extracting resources files!" = "Ошибка извлечения файлов ресурсов!";
 
 /* configCheckerController */
-"Failed to download resources!" = "Failed to download resources!";
+"Failed to download resources!" = "Не удалось загрузить ресурсы!";
 
 /* configCheckerController */
-"Updating Resources..." = "Updating Resources...";
+"Updating Resources..." = "Обновление Ресурсов...";
 
 /* configCheckerController */
-"Checking For Resources..." = "Checking For Resources...";
+"Checking For Resources..." = "Проверка наличия ресурсов...";
 
 /* configCheckerController */
-"Desktop" = "Desktop";
+"Desktop" = "Настольный компьютер";
 
 /* configCheckerController */
-"High-End Desktop" = "High-End Desktop";
+"High-End Desktop" = "High-End настольный компьютер";
 
 /* configCheckerController */
-"Laptop" = "Laptop";
+"Laptop" = "Ноутбук";
 
 /* opencoreDownloaderController */
-"Successfully backed up to %@" = "Successfully backed up to %@";
+"Successfully backed up to %@" = "Успешно выполнено резервное копирование на %@";
 
 /* opencoreDownloaderController */
-"Error during creating EFI backup folder!" = "Error during creating EFI backup folder!";
+"Error during creating EFI backup folder!" = "Ошибка при создании резервной папки EFI!";
 
 /* ocValidator */
-"Connection Established" = "Connection Established";
+"Connection Established" = "Соединение установлено";
 
 /* ocValidator */
-"Failed to checking resources!" = "Failed to checking resources!";
+"Failed to checking resources!" = "Не удалось проверить ресурсы!";
 
 /* platformInfoController */
-"No Network Access. You may not get latest SMBIOS data." = "No Network Access. You may not get latest SMBIOS data.";
+"No Network Access. You may not get latest SMBIOS data." = "Нет доступа к сети. Вы можете не получить последние данные SMBIOS.";
 
 /* installDriversController */
-"Download: %@ removed from queue because is not compatible with 32-bit version." = "Download: %@ removed from queue because is not compatible with 32-bit version.";
+"Download: %@ removed from queue because is not compatible with 32-bit version." = "Скачать: %@ удален из очереди, так как не совместим с 32-битной версией.";
 
 /* efiMaker */
-"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "Based on OpenCore Bootloader %@ settings by Dortania's help guide";
+"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "На основе OpenCore Bootloader %@ настройки by Dortania help guide";
 
 /* efiMaker */
-"For more information about different settings, click on each CPU Family option" = "For more information about different settings, click on each CPU Family option";
+"For more information about different settings, click on each CPU Family option" = "Для получения дополнительной информации о различных настройках нажмите на каждый параметр семейства процессоров";
 
 /* efiMaker */
-"Downloading latest Opencore Bootloader" = "Downloading latest Opencore Bootloader";
+"Downloading latest Opencore Bootloader" = "Загрузка последнего загрузчика OpenСore";
 
 /* efiMaker */
-"Error while downloading Opencore Bootloader. Unable to continue." = "Error while downloading Opencore Bootloader. Unable to continue.";
+"Error while downloading Opencore Bootloader. Unable to continue." = "Ошибка при загрузке загрузчика Opencore. Невозможно продолжить.";
 
 /* efiMaker */
-"Downloading %@ configuration" = "Downloading %@ configuration";
+"Downloading %@ configuration" = "Загрузка конфигурации %@";
 
 /* efiMaker */
-"Populating SMBIOS data for %@ configuration" = "Populating SMBIOS data for %@ configuration";
+"Populating SMBIOS data for %@ configuration" = "Заполнение данных SMBIOS для конфигурации %@";
 
 /* efiMaker */
-"Error while downloading the configuration. Unable to continue." = "Error while downloading the configuration. Unable to continue.";
+"Error while downloading the configuration. Unable to continue." = "Ошибка при загрузке конфигурации. Невозможно продолжить.";
 
 /* efiMaker */
-"Error while populating %@ key" = "Error while populating %@ key";
+"Error while populating %@ key" = "Ошибка при заполнении ключа %@";
 
 /* efiMaker */
-"Some keys have not been updated. Please update them manually." = "Some keys have not been updated. Please update them manually.";
+"Some keys have not been updated. Please update them manually." = "Некоторые ключи не были обновлены. Пожалуйста, обновите их вручную.";
 
 /* efiMaker */
-"Done! Opening folder at %@" = "Done! Opening folder at %@";
+"Done! Opening folder at %@" = "Готово! Открытие папки по адресу %@";
 
 /* efiMaker */
-"Download SSDT" = "Download SSDT";
+"Download SSDT" = "Загрузка SSDT";
 
 /* efiMaker */
-"successfully downloaded" = "successfully downloaded";
+"successfully downloaded" = "успешно загружено";
 
 /* efiMaker */
-"Download SSDT Error" = "Download SSDT Error";
+"Download SSDT Error" = "Ошибка загрузки SSDT";
 
 /* efiMaker */
-"Downloading latest" = "Downloading latest";
+"Downloading latest" = "Загрузка последней версии";
 
 /* efiMaker */
-"Download essential Kext" = "Download essential Kext";
+"Download essential Kext" = "Загрузка необходимых Kext";
 
 /* efiMaker */
-"Download Kext Error" = "Download Kext Error";
+"Download Kext Error" = "Ошибка загрузки Kext";
 
 /* efiMaker */
-"Download Drivers" = "Download Drivers";
+"Download Drivers" = "Загрузка драйверов";
 
 /* efiMaker */
-"Download Drivers Error" = "Download Drivers Error";
+"Download Drivers Error" = "Ошибка загрузки драйверов";
 
 /* efiMaker */
-"Error during processing" = "Error during processing";
+"Error during processing" = "Ошибка при обработке";
 
 /* efiMaker */
-"For more information about %@ settings, click here" = "For more information about %@ settings, click here";
+"For more information about %@ settings, click here" = "Для получения дополнительной информации о настройках %@ нажмите здесь";
 
 /* efiMaker */
-"For more information about %@ settings" = "For more information about %@ settings";
+"For more information about %@ settings" = "Для получения дополнительной информации о настройках %@ ";
 
 /* efiMaker */
-"click here" = "click here";
+"click here" = "нажмите здесь";
 
 /* efiMaker */
-"Summary Information" = "Summary Information";
+"Summary Information" = "Сводная информация";
 
 /* efiMaker */
-"CPU Family selected" = "CPU Family selected";
+"CPU Family selected" = "Выбранное семейство процессоров";
 
 /* efiMaker */
-"SMBIOS selected" = "SMBIOS selected";
+"SMBIOS selected" = "Выбранный SMBIOS";
 
 /* efiMaker */
-"Configuration type selected" = "Configuration type selected";
+"Configuration type selected" = "Выбранный тип конфигурации";
 
 /* efiMaker */
-"Architecture type selected" = "Architecture type selected";
+"Architecture type selected" = "Выбранный тип архитектуры";
 
 /* efiMaker */
-"Download related files" = "Download related files";
+"Download related files" = "Скачать связанные файлы";
 
 /* opencoreDownloaderController */
-"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
+"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Создание инструментов gettext. На некоторых машинах этот процесс может занять некоторое время, поэтому, пожалуйста, наберитесь терпения. Если этот процесс просит установить Java SDK, пожалуйста, просто пропустите это сообщение.";
 
 /* opencoreDownloaderController */
-"GETTEXT is missing!, downloading..." = "GETTEXT is missing!, downloading...";
+"GETTEXT is missing!, downloading..." = "GETTEXT отсутствует!, загрузка...";
 
 /* opencoreDownloaderController */
-"Building GETTEXT..." = "Building GETTEXT...";
+"Building GETTEXT..." = "Сборка GETTEXT...";
 
 /* opencoreDownloaderController */
-"Error while compiling resources for localization" = "Error while compiling resources for localization";
+"Error while compiling resources for localization" = "Ошибка при компиляции ресурсов для локализации";
 
 /* opencoreDownloaderController */
-"Xcode Application needed." = "Xcode Application needed.";
+"Xcode Application needed." = "Требуется приложение Xcode.";
 
 /* opencoreDownloaderController */
-"Download XCode" = "Download XCode";
+"Download XCode" = "Скачать XCode";
 
 /* opencoreDownloaderController */
-"In order to use this section, please install Xcode application." = "In order to use this section, please install Xcode application.";
+"In order to use this section, please install Xcode application." = "Для того чтобы использовать этот раздел, пожалуйста, установите приложение Xcode.";
 
 /* opencoreDownloaderController */
-"Start Building...." = "Start Building....";
+"Start Building...." = "Старт сборки....";
 
 /* opencoreDownloaderController */
-"Error occurred during building OpenCorePkg" = "Error occurred during building OpenCorePkg";
+"Error occurred during building OpenCorePkg" = "Произошла ошибка при сборке OpenCorePkg";
 
 /* opencoreDownloaderController */
-"Operation aborted by user" = "Operation aborted by user";
+"Operation aborted by user" = "Операция прервана пользователем";
