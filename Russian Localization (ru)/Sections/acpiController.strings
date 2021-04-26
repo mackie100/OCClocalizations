@@ -9,7 +9,7 @@
 "4j9-uJ-Gbu.headerCell.title" = "Маска";
 
 /* Class = "NSButtonCell"; title = "NormalizeHeaders"; ObjectID = "6NS-cZ-NZu"; */
-"6NS-cZ-NZu.title" = "Нормализовать заголовки";
+"6NS-cZ-NZu.title" = "NormalizeHeaders";
 
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "7g0-XW-xjy"; */
 "7g0-XW-xjy.title" = "Загрузка ресурсов";
@@ -30,13 +30,13 @@
 "CbM-86-go4.headerCell.title" = "Путь*";
 
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "DxA-Lh-I4Q"; */
-"DxA-Lh-I4Q.title" = "Странность";
+"DxA-Lh-I4Q.title" = "Quirks";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "FLp-3q-DSv"; */
 "FLp-3q-DSv.headerCell.title" = "Включено";
 
 /* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "HdU-pu-zKX"; */
-"HdU-pu-zKX.title" = "Включено для всех";
+"HdU-pu-zKX.title" = "EnableForAll";
 
 /* Class = "NSTableColumn"; headerCell.title = "Count"; ObjectID = "Ite-rF-5H2"; */
 "Ite-rF-5H2.headerCell.title" = "Счетчик";
@@ -66,10 +66,10 @@
 "Nxc-pO-D4k.headerCell.title" = "OemTableId";
 
 /* Class = "NSButtonCell"; title = "RebaseRegions"; ObjectID = "OG6-fc-Q9m"; */
-"OG6-fc-Q9m.title" = "Перебазировать регион";
+"OG6-fc-Q9m.title" = "RebaseRegions";
 
 /* Class = "NSButtonCell"; title = "ResetHwSig"; ObjectID = "Z6k-wb-4yC"; */
-"Z6k-wb-4yC.title" = "Сброс HwSig";
+"Z6k-wb-4yC.title" = "ResetHwSig";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "c8a-dM-DNw"; */
 "c8a-dM-DNw.headerCell.title" = "Включено";
@@ -81,7 +81,7 @@
 "eza-Xg-dPF.ibShadowedToolTip" = "Тип: plist boolean\nОтказоустойчивость: false\nОписание: Очистка полей заголовка ACPI для устранения недостатков реализации ACPI в Mac OS, которые приводят к сбоям загрузки. Ссылка: Отладка AppleACPIPlatform на 10.13 Алексом Джеймсом (также известным как theracermaster). Проблема была исправлена в macOS Mojave (10.14).";
 
 /* Class = "NSButtonCell"; title = "ResetLogoStatus"; ObjectID = "fCv-Py-taQ"; */
-"fCv-Py-taQ.title" = "Сброс статуса лого";
+"fCv-Py-taQ.title" = "ResetLogoStatus";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "gIS-d5-pG5"; */
 "gIS-d5-pG5.headerCell.title" = "Комментарий";
