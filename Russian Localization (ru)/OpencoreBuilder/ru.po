@@ -70,7 +70,7 @@ msgid "install NASM"
 msgstr "Прежде чем приступить к сборке OpenCore Pkg, мне нужно установить NASM"
 
 msgid "install MTOC"
-msgstr Прежде чем приступить к сборке OpenCore Pkg, мне нужно установить MTOC"
+msgstr "Прежде чем приступить к сборке OpenCore Pkg, мне нужно установить MTOC"
 
 msgid "Applied patch"
 msgstr "Примененный патч"
