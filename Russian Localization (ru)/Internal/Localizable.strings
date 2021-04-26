@@ -460,10 +460,10 @@
 "Help" = "Помощь";
 
 /* deviceProperties_table_properties_menu */
-"Select '%@' device before adding '%@' key" = "Выберите устройство " %1$@" перед добавлением ключа " %2$@"";
+"Select '%@' device before adding '%@' key" = "Выберите устройство '%1$@' перед добавлением ключа '%2$@'";
 
 /* deviceProperties_table_properties_menu */
-"Select a '%@' device before adding a preset" = "Выберите устройство " %1$@" перед добавлением пресета";
+"Select a '%@' device before adding a preset" = "Выберите устройство '%1$@' перед добавлением пресета";
 
 /* deviceProperties_table_properties_menu */
 "Select a Platform ID before adding a preset" = "Выберите Platform ID перед добавлением пресета";
@@ -508,7 +508,7 @@
 "Use at your own risk" = "Используйте на свой страх и риск";
 
 /* compatibilityWarningScreen */
-"(select 'Backup File Before Saving' in Preferences Pane)" = "(выберите "Резервная копия файла перед сохранением" на панели настроек)";
+"(select 'Backup File Before Saving' in Preferences Pane)" = "(выберите 'Резервная копия файла перед сохранением' на панели настроек)";
 
 /* advancedUser */
 "The key “%@” already exists in containing item." = "Ключ “%@” уже существует в содержащем элементе.";
