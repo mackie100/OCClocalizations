@@ -818,3 +818,790 @@
 
 /* opencoreDownloaderController */
 "Operation aborted by user" = "用户中止操作";
+
+//---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
+
+/* acpiController */
+/* Add */
+/* 9ZU-zR-Tmy */
+"TT_acpi_addTable" = "这部分主要填写我们使用的ACPI补丁,以及DSDT文件,如果没有请把0-8的ssdt全部删除.如果你有修改的SSDT或者DSDT文件,请先将文件放入EFI/OC/ACPI下.\nACPI补丁是黑苹果的灵魂,针对OC的ACPI补丁请参阅宪武大神的OC-litte,https://github.com/daliansky/OC-little";
+
+/* Delete */
+/* 8sm-zn-vNl */
+"TT_acpi_deleteTable" = "禁用某个 ACPI 表, 比如常用于禁用 DAMR 来关闭 VT-d.";
+
+/* Patch */
+/* 2tM-Ig-MFJ */
+"TT_acpi_patchTable" = "这里我们需要填写一下ACPI的更名和修复补丁.\n在10.15中,一些资料指出我们需要把EC控制器(EC0)改名为EC来确保能进入10.15系统(当然也可以用EC仿冒补丁)\n华擎、华硕、微星主板可能会遇到RTC问题而无法进入系统,这同样需要添加补丁来修复\n具体补丁包可以查看宪武大神做的OC-Little补丁包https://github.com/daliansky/OC-little\n\n1. Base\n通过获取到所提供路径的偏移量来选择ACPI路径库以进行补丁查找（或立即替换）.\n\n仅支持完全限定的绝对路径（例如\\_SB_.PCI0.GFX0）.当前支持的对象类型是: Device, Field, Method.\n\n注意：请谨慎使用,并非所有OEM表都可以被解析.使用ACPIe实用程序进行调试.使用DEBUG=1 make命令编译的ACPIe会产生有用的ACPI查找跟踪. \n\n2. BaseSkip\n 设置为0:(不要跳过任何事件)\n在应用发现和替换之前要跳过的已发现基本事件的数量.\n\n3. Comment\n任意ASCII字符串,用于为条目提供可读的参考. 是否使用此值由实现定义.\n\n4. Count\n设置为0 (将补丁应用于发现的所有事件)\n要修补的出现次数.\n\n5. Enabled\n设置为true以应用此ACPI补丁.\n\n6. Find\n数据查找.如果设置,则必须等于替换大小.\n\n注意：如果指定了Base,则可以为空, 在这种情况下,发生基本查询后立即替换.\n\n7. Limit\n设置为0 (搜索整个ACPI表)\n搜索的最大字节数.\n\n8. Mask\n设置为空 (被忽略)\n查找比较期间使用的数据按位掩码. 通过忽略未屏蔽（设置为零）位来进行模糊搜索. 如果设置,则必须等于替换大小.\n\n9. OemTableId\n全为零 (匹配任何表的OEM ID)\n匹配表OEM ID等于此值.\n\n10. Replace\n一个或多个字节的替换数据.\n\n11. ReplaceMask\n替换期间使用的数据按位掩码. 通过更新屏蔽（设置为非零）位来允许模糊替换.如果设置,则必须等于替换大小.\n\n12. Skip\n设置为0 (不要跳过任何事件)\n应用替换之前要跳过的发现事件数.\n\n13. TableLength\n设置为0 (匹配任何表大小)\n匹配表大小等于此值.\n\n14. TableSignature\n(匹配任何表签名)\n匹配表签名等于该值";
+
+/* Quirks */
+/* xYB-OX-ce7 */
+"TT_FadtEnableReset" = "一些旧的主板需要对FADT进行标记来激活电脑的开机和关机功能,这里我们不许要启动它";
+
+/* eza-Xg-dPF */
+"TT_NormalizeHeaders" = "清理ACPI头,一些主板的ACPI表需要打开这个修复启动.只有 macOS 10.13 需要";
+
+/* iWF-dk-0VK */
+"TT_RebaseRegions" = "换硬件、升级BIOS等对硬件的操作会对ACPI表产生影响,一般不需要打开,使用自定义 DSDT 则必须开启";
+
+/* u3f-B9-p1e */
+"TT_ResetHwSig" = "存在重新启动后因无法维持硬件签名而导致从休眠中唤醒的问题的硬件需要开启.一般选择NO\n注意：此选项将来可能会被删除.";
+
+/* 0zY-cF-e9r */
+"TT_ResetLogoStatus" = "无法在有 BGRT 表的系统上显示 OEM Windows 标志的硬件需要开启.";
+
+/* booterController */
+/* MmioWhitelist */
+/* RWw-Gp-0A4 */
+"TT_booter_mmioWhitelistTable" = "默认的第一项是为Haswell芯片提供的内存寻址修复,如果此类芯片碰到内存相关问题,请开启它(enable选择yes).\n默认第二项是开机卡PCI Configuration这里.ACPI、PCI device同时释放到内存时发生0x1000内存地址被占用而卡在PCI Configration.如果碰到此类问题,请开启它.";
+
+/* oWj-qp-bH5 */
+"TT_booter_patchTable" = "1. Arch\n引导程序补丁架构 (Any, i386, x86_64).\n2. Comment\n用于为条目提供可读参考的任意ASCII字符串.\n3. Count\n要应用的补丁出现次数. 设置为0将补丁应用于发现的所有事件.\n4. Enabled\n除非设置为true,否则将不使用此启动程序补丁.\n5. Find\n数据查找.长度必须等于替换.\n6. Identifier\nApple for macOS引导程序（通常为boot.efi）; 或带有特定后缀的后缀名称（例如bootmgfw.efi）;或任何/空字符串（故障安全）以匹配任何引导程序.\n7. Limit\n搜索的最大字节数. 可以设置为 0 以查看整个引导程序.\n8. Mask\n查找比较期间使用的数据按位掩码.通过忽略未屏蔽（设置为零）位来允许模糊搜索.可以设置为空数据以忽略.否则长度必须等于查找.\n9. Replace\n一个或多个字节的替换数据.\n10. ReplaceMask\n替换期间使用的数据按位掩码.通过更新屏蔽（设置为非零）位来允许模糊替换. 可以设置为空数据忽略. 否则必须等于替换长度.\n11. Skip\n完成替换之前要跳过的发现事件次数.";
+
+/* Quirks */
+/* bib-aL-YwI */
+"TT_AllowRelocationBlock" = "允许通过重定位块引导macOS.\n\n重定位块是分配给较低的4 GB的暂存缓冲区,用于由EfiBoot在固件上加载内核和相关结构,在该固件上,较低的内存被(假设是)非运行时数据占用.\n在内核启动之前,重定位块被复制回较低的地址.同样,所有其他指向重定位块的地址也进行了仔细调整. 在以下情况下可以使用重定位块:\n•没有更好的幻灯片存在（已使用所有内存）\n• slide = 0被强制(通过参数或安全模式)\n• 不支持KASLR(slide)(这是macOS 10.7或更旧的版本)\n\n此怪癖需要同时启用ProvideCustomSlide,并且通常需要避免RuntimeDefrag才能正常工作. 使用重定位块引导时不支持休眠(但是启用了怪癖时,并不总是使用重定位块).\n\n注意:虽然需要在具有较低内存的平台上运行旧版macOS,但需要执行该操作,但它与某些硬件和macOS 11不兼容. 在这种情况下,您可以尝试改用EnableSafeModeSlide.";
+
+/* ubm-2i-zPE */
+"TT_AvoidRuntimeDefrag" = "大部分UEFI都会写入时间、电源管理等信息,这个所有黑苹果主板都应该选择YES.";
+
+/* NUB-EN-5ql */
+"TT_DevirtualiseMmio" = "内存注入方式包括KASLR方式(分布式注射到各个内存地址中）以及连续性方式.在使用KASLR时,PCIE加载到内存,可能会占据所有所有avaliable值而导致OC的内核以及内核缓存无法注入,导致启动失败.使用KASLR方式很容易出错,我们更适合使用连续性的内存注入方式,并在boot args中添加slide=1.因为我们之后会添加这个slide=1去使用连续性的内存注入方式,所以这个选项一般选择NO.";
+
+/* Ssn-0z-qIb */
+"TT_DisableSingleUser" = "这里关乎主机是否能开启单用户模式.开启后会禁止 Cmd + S 和 -s 的使用,使设备更加接近于 T2 白苹果,如果你觉得有用就开启它,一般选NO.";
+
+/* KE8-rd-Ty5 */
+"TT_DisableVariableWrite" = "非原生NVRAM主板需要模拟nvram.plist进而写入variable值,因此我们要禁止此项来防止其他程序对nvram进行写入,我们这里选YES.需要注意一点,如果你的主板支持原生nvram(z370/x299/c422),请选择NO!\n在 Z390/HM370 等没有原生 macOS 支持 NVRAM 的主板上需要开启.";
+
+/* ELB-6s-GBW */
+"TT_DiscardHibernateMap" = "当电脑从休眠(hibernation)中唤醒时,硬盘里的资料会恢复到内存中去,但这个时候OC的内核以及内核缓存等也会写入,这样可能导致冲突,这个选项是帮助我们解决这个问题的.而目前来看,除了z370/x299/c422都无法进行休眠（注意睡眠sleep和休眠hibernation是两个概念）,台式机的话就更不需要休眠功能了,一般选择NO.\n开启后会重用原始休眠内存映射,仅某些旧硬件需要.";
+
+/* qyH-8f-uTZ */
+"TT_EnableSafeModeSlide" = "开启后会允许在安全模式下使用 Slide 值.这个不是那么重要,你不会每天进安全模式的.像z390这样本来也不用分布式注入内存方式的（KASLR）,选择YES,与正常情况下保持一致.";
+
+/* xH6-La-kRg */
+"TT_EnableWriteUnprotector" = "允许对UEFI运行时服务代码的写访问\n保证nvram能正常写入而不受到UEFI内的一些服务的影响,无论什么主板都要选择YES.";
+
+/* woE-nK-MFN */
+"TT_ForceBooterSignature" = "为OpenCore启动器设置macOS引导签名.\n\n引导器签名, 本质上是加载映像的SHA-1哈希值, 从休眠状态唤醒时,由Mac EFI使用它来验证引导加载程序的真实性. 此选项强制macOS使用OpenCore启动器SHA-1哈希作为启动器签名,以使OpenCore休眠在Mac EFI固件上唤醒.\n\n注意：OpenCore启动器路径由LauncherPath属性确定.";
+
+/* cTN-CD-c3M */
+"TT_ForceExitBootServices" = "这个选项是让那些非常老旧的主板也能使用内存寻址,正常情况下选NO.";
+
+/* 5Km-5w-nkl */
+"TT_ProtectMemoryRegions" = "保护内存区域免受错误访问.\n一些固件错误地映射了选定的存储区域:\n• 可以将CSM区域标记为引导服务代码或数据,从而将其留作XNU内核的可用内存. \n• MMIO区域可以标记为保留内存并保持未映射状态,但是可能需要在运行时对其进行访问以支持NVRAM.\n\n注意:有睡眠唤醒问题或引导失败问题可尝试开启.只有非常老的固件才需要此怪癖.一般选NO";
+
+/* VnZ-XI-LOq */
+"TT_ProtectSecureBoot" = "保护UEFI安全启动变量不被写入.\n报告尝试从操作系统写入db,dbx,PK和KEK变量期间发生的安全冲突.\n\n注意：此怪癖主要尝试避免碎片整理问题对NVRAM实施的影响,例如选择Insyde或MacPro5,1.";
+
+/* 3fG-t6-MF7 */
+"TT_ProtectUefiServices" = "保护UEFI服务不被固件覆盖.\n包括硬件和虚拟机(例如VMware)在内的某些现代固件可能会在驱动程序加载和相关操作期间更新指向UEFI服务的指针.因此,这直接破坏了影响内存管理的其他怪癖,例如DevirtualiseMmio,并且还可能破坏其他怪癖,具体取决于这些怪癖的影响.\n\n注意：在VMware上,可以通过“您的Mac OS来宾系统可能不可靠地在多个虚拟内核上运行(Your Mac OS guest might run unreliably with more than one virtual core.)”信息来诊断此问题.\n\nZ390芯片建议使用!";
+
+/* wGH-hP-xhD */
+"TT_ProvideCustomSlide" = "是否使用slide值.一般选择连续性注入内存并配合slide,所以选择YES.\nBat.bat解释:\n如果 Slide 值存在冲突, 此选项将强制 macOS 执行以下操作:\n使用一个伪随机值. 只有在遇到 Only N/256 slide values are usable! 时需要.";
+
+/* gi2-WY-dKJ */
+"TT_ProvideMaxSlide" = "当没有更高KASLR slide时,提供最大的KASLR slide.\n启用ProvideCustomSlide时,此选项会覆盖最大slide,而不是TOTAL_SLIDE_NUM（256）.可以相信,现代固件从上到下分配池内存,有效地导致了slide扫描时的空闲内存,后来被用作内核加载期间的临时内存.如果这些内存不可用,此选项可以停止评估更高的幻灯片.\n\n注意：此问题的必要性由启用ProvideCustomSlide且随机slide落入不可用范围时的随机引导失败确定. 启用AppleDebug时,通常调试日志中可能包含诸如AAPL之类的消息: [EB|‘LD:LKC] } Err(0x9). 要找到最佳值,请手动将slide = X附加到boot-args并记录不会导致启动失败的最大参数.";
+
+/* JMF-hg-GgC */
+"TT_RebuildAppleMemoryMap" = "生成与macOS兼容的内存映射.Dell 5490如有启动故障,可启用此项!\n\n注意：此怪癖的必要性取决于早期启动故障.该怪癖在大多数平台上替代了EnableWriteUnprotector.";
+
+/* l3S-mh-5k0 */
+"TT_SetupVirtualMap" = "是否建立虚拟内存并对物理内存进行映射.我们在开机时,OC的程序需要一块连续性的内存进行存放内核等东西,而实际的物理内存一般都是分散的.因此,我们通过虚拟内存建立连续性内存供OC使用,并映射到分散的物理内存中.一般我们选择YES.";
+
+/* Ryj-m2-2MI */
+"TT_SignalAppleOS" = "报告通过OS Info加载的任何OS的macOS. \nMac OS固件在不同的OS上具有不同的行为,因此该功能非常有用.例如,应该在某些双GPU MacBook型号中在Windows和Linux中启用Intel GPU.\一般用不到,选NO";
+
+/* ymv-yt-Lvn */
+"TT_SyncRuntimePermissions" = "更新内存权限以使OpenRuntime起作用. \n\n某些固件可能会错误地将OpenRuntime标记为不可执行,此选项会更新内存映射和内存属性表以更正此错误.\n\n注意：此怪癖的必要性取决于macOS或Linux/Windows中的早期启动故障. 一般而言,仅2018年或之后发布的固件会受到影响.";
+
+/* devicesPropertiesController*/
+/* Add */
+/* ogK-XX-Zb9 */
+"TT_devicesProperties_addTables" = "此项是用来注入你的设备的,主要是显卡和声卡两部分.同样你也可以定制一些设备到你的关于本机–系统报告–PCI列表中,尽管没有多大的意义.";
+
+/* Delete */
+/* 1eh-jH-TX2 */
+"TT_devicesProperties_deleteTables" = "从设备路径映射（plist dict）到plist字符串格式的变量名数组（plist数组）中删除设备属性.这里的设置等同于 Clover 里的 ACPI 重命名 _DSM → XDSM + TgtBridge";
+
+/* kernelController*/
+/* Add */
+/* pIA-W6-XA0 */
+"TT_kernel_addTable" = "1. Arch\n Kext体系架构 (Any, i386, x86_64). \n2. BundlePath(捆绑路径)\n Kext捆绑路径 (例如 System\\Library \\Extensions \\IONetworkingFamily.kext).\n3. Comment(注释)\n安全值: 空字符\n描述: 任意ASCII字符串,用于为条目提供可读的参考.\n4. Enabled(启用)\n除非设置为true,否则不会添加此内核驱动程序.\n5. ExecutablePath(可执行路径)\n Kext相对于包的可执行路径 (例如: Contents/MacOS/IONetworkingFamily).\n6. Identifier(标识符)\n Kext标识符在添加之前执行状态检查 (例如 com.apple.iokit.IONetworkingFamily).\n仅添加在高速缓存中找不到标识符的驱动程序.\n7. MaxKernel(最大内核)\n 在指定的macOS版本或更早版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n8. MinKernel(最小内核)\n 在指定的macOS版本或更高版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n9. PlistPath(plist路径)\n 相对于包的Kext Info.plist路径 (例如: Contents/Info.plist).";
+
+/* Block */
+/* 8UL-f2-RSc */
+"TT_kernel_blockTable" = "1. Arch(架构)\n Kext阻止架构 (Any, i386, x86_64).\n2. Comment(注释)\n 用于为条目提供可读参考的任意ASCII字符串.是否使用此值由实现定义.\n3. Enabled(启用)\n 除非设置为true,否则不会阻止此内核驱动程序.\n4. Identifier(标识符)\n Kext捆绑包标识符（例如com.apple.driver.AppleTyMCEDriver）.\n5. MaxKernel(最大内核)\n 在指定的macOS版本或更早版本上阻止内核驱动程序.\n6. MinKernel(最小内核)\n 在指定的macOS版本或更高版本上阻止内核驱动程序.";
+
+/* Force */
+/* p2g-8y-f45 */
+"TT_kernel_forceTable" = "1. Arch\n Kext体系架构 (Any, i386, x86_64). \n2. BundlePath(捆绑路径)\n Kext捆绑路径 (例如 System\\Library \\Extensions \\IONetworkingFamily.kext).\n3. Comment(注释)\n安全值: 空字符\n描述: 任意ASCII字符串,用于为条目提供可读的参考.\n4. Enabled(启用)\n除非设置为true,否则不会添加此内核驱动程序.\n5. ExecutablePath(可执行路径)\n Kext相对于包的可执行路径 (例如: Contents/MacOS/IONetworkingFamily).\n6. Identifier(标识符)\n Kext标识符在添加之前执行状态检查 (例如 com.apple.iokit.IONetworkingFamily).\n仅添加在高速缓存中找不到标识符的驱动程序.\n7. MaxKernel(最大内核)\n 在指定的macOS版本或更早版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n8. MinKernel(最小内核)\n 在指定的macOS版本或更高版本上添加内核驱动程序.\n注意: 请参阅添加添加MaxKernel描述以获取匹配逻辑.\n9. PlistPath(plist路径)\n 相对于包的Kext Info.plist路径 (例如: Contents/Info.plist).";
+
+/* Patch */
+/* 9hf-l6-OjL */
+"TT_kernel_patchTable" = "这里是为一些kext打补丁用的.\n我们可以看到样本里面有四个补丁,都是关闭着的,其中有两个是关于APPLE RTC的,这对于华硕主板来说相对比较重要,这里我们需要对appleRTC相关的两个补丁一一测试,打开—–Enabled—YES其中一个,即可.如果不行,关闭一个打开另一个.这样能解决华硕主板重启丢失BIOS设置以及需要按F1跳过安全模式,当然RTC仍然需要进一步的设置.\n等同于 Clover 的 KextToPatch 和 KernelToPatch";
+
+/* Emulate */
+/* 7Jq-Yr-TQY */
+"TT_Cpuid1Data" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的,所有选项按默认即可.";
+
+/* WQz-t0-GJT */
+"TT_Cpuid1Mask" = "此选项帮助Ivy Bridge 和一些不受支持的CPU加载电源管理的,所有选项按默认即可.";
+
+/* Wjh-w3-4g8 */
+"TT_MinKernel" = "模拟CPUID并在指定的macOS版本或更高版本上应用DummyPowerManagement.\n\n注意：有关匹配逻辑,请参阅添加MaxKernel描述.";
+
+/* SZI-EW-Tfa */
+"TT_MaxKernel" = "模拟CPUID并在指定的macOS版本或更早版本上应用DummyPowerManagement.\n\n注意：有关匹配逻辑,请参阅添加MaxKernel(最大内核)描述.";
+
+/* vK8-Z1-ZOI */
+"TT_DummyPowerManagement" = "禁用AppleIntelCpuPowerManagement.\n\n注意 1: 对于在macOS中没有本机电源管理驱动程序的CPU,此选项是NullCpuPowerManagement.kext的首选替代方案.\n\n注意 2: 虽然通常需要此选项来在不受支持的平台上禁用AppleIntelCpuPowerManagement,但在其他情况下,也可以使用它来禁用此kext (例如对于Cpuid1Data留为空白).";
+
+/* Scheme */
+/* wLJ-kT-oLE */
+"TT_FuzzyMatch" = "在可用时将内核缓存与不同的校验和一起使用.\n在macOS 10.6和更早版本上,kernelcache文件名具有校验和,本质上是SMBIOS产品名称和EfiBoot设备路径中的adler32.在某些固件上,由于ACPI或硬件方面的不同,EFIBoot设备路径在UEFI和macOS之间有所不同,从而使内核缓存校验和始终保持不变.\n此设置允许在没有后缀的内核缓存不可用时,将最新的内核缓存与合适的体系结构进行匹配,从而提高了macOS 10.6在几个平台上的启动性能.";
+
+/* zDQ-MU-J9A */
+"TT_kernelArch" = "如果可用,最好使用指定的内核体系结构(Auto, i386, x86_64). \n在macOS 10.7和更早版本上,XNU内核可能无法使用通常的x86_64体系结构进行引导,确切的选择取决于许多因素,包括引导参数,SMBIOS和操作系统类型.当macOS和配置支持时,此设置将使用指定的体系结构来引导macOS.以下是确定内核架构的算法.\ n(a)映像参数（例如,通过UEFI Shell启动时）或boot-args变量中的arch参数会覆盖所有兼容性检查并强制指定架构.\n(b) 确定的EfiBoot版本限制架构选择:\n• 10.4-10.5 — i386\n• 10.6-10.7 — i386 或 x86_64\n• 10.8 或更新的 — x86_64\n(c) 根据下表,SMBIOS模型信息和EfiBoot版本限制客户端和服务器操作系统的体系结构选择和定义体系结构首选项.\n(d) 如果支持体系结构并且KernelArch不是Auto,则KernelArch设置会更新客户端和服务器操作系统的体系结构首选项.\n(e) EfiBoot决定服务器启动时选择服务器或客户端首选项.\n\n注意 1: 与10.7及更高版本不同, 在10.6上,许多型号支持64位内核加载,但默认情况下将其禁用. 在Apple支持网站上有关10.6 64位Mac型号兼容性的信息不正确,并且与实际的EfiBoot行为不符.\n\n注意 2: 由于EfiBoot中的错误,较旧的10.6服务器版本将以客户端模式启动. 考虑使用此首选项解决此问题.";
+
+/* ZjB-iQ-yjq */
+"TT_kernelCache" = "如果可用,首选指定的内核缓存类型(Auto, Cacheless, Mkext, Prelinked).\n\nmacOS的不同变量支持旨在提高启动性能的不同内核缓存变量.\n如果出于调试和稳定性的原因而可以使用较慢的变量,则此设置将阻止使用较快的内核缓存变量. 比如通过指定Mkext,预链接将被禁用,比如只用于10.6,但不适用于10.7.";
+
+/* Quirks*/
+/* FUx-RJ-QTK */
+"TT_AppleCpuPmCfgLock" = "请确保你的BIOS中已经关闭了CFG Lock.如果你不会解这个锁,你就选择YES,这个适用于四代以前的机型.\n选择这项一般就不要选后面的XcpmCfgLock选项,解锁的情况下选择NO.";
+
+/* 677-hy-Blh */
+"TT_AppleXcpmCfgLock" = "请确保你的BIOS中已经关闭了CFG Lock.如果你不会解这个锁,你就选择YES,这个适用于四代以后的机型.\n选择这项一般就不要选前面面的CpupmCfgLock选项,解锁的情况下选择NO.";
+
+/* v6y-N9-uHT */
+"TT_AppleXcpmExtraMsrs" = "主要在没有原生电源管理的CPU上启用,一般是Haswell-E, Broadwell-E, Skylake-X这三种CPU需要填写YES.除此之外的CPU选择NO.";
+
+/* cKa-I9-gvM */
+"TT_AppleXcpmForceBoost" = "强制在XCPM模式下将电脑的cpu频率锁定为最高频率,不建议开启.\n此补丁将0xFF00写入MSR_IA32_PERF_CONTROL（0x199）,一般而言,只有某些Xeon型号才能从该补丁中受益.";
+
+/* alh-j7-rix */
+"TT_CustomSMBIOSGuid" = "对 UpdateSMBIOSMode 自定义模式执行 GUID 修补, 用于戴尔笔记本电脑 (等同于 Clover 的 DellSMBIOSPatch).";
+
+/* 6Aa-HL-hah */
+"TT_DisableIoMapper" = "对 UpdateSMBIOSMode 自定义模式执行 GUID 修补, 用于戴尔笔记本电脑 (等同于 Clover 的 DellSMBIOSPatch).";
+
+/* koV-S4-Tkn */
+"TT_DisableLinkeditJettison" = "禁用__LINKEDIT抛弃代码.\n\n此选项使Lilu.kext和可能的其他功能在macOS Big Sur中以最佳性能运行而不适用keepsyms = 1启动参数.";
+
+/* RA3-U5-VwM */
+"TT_DisableRtcChecksum" = "在AppleRTC中禁止写入主校验和.\n\n注意 1: 此选项不会保护其他区域不被覆盖,如果需要,请参见RTCMemoryFixup内核扩展.\n\n注意 2: 此选项不能保护区域在固件阶段不被覆盖 (例如 macOS bootloader), 如果需要,请参见RTC（FIXME）部分.";
+
+/* XZ1-7z-v2l */
+"TT_ExtendBTFeatureFlags" = "将FeatureFlags设置为0x0F,以获取蓝牙的全部功能,包括Continuity.\n\n注意：此选项代替了由于后期修补进度而无法正常运行的BT4LEContinuityFixup.kext.";
+
+/* SGM-P1-Mz5 */
+"TT_ExternalDiskIcons" = "AHCI控制器相关,现在的主板都对AHCI支持的很好,一般选择NO.";
+
+/* Y9I-V0-r5N */
+"TT_ForceSecureBootScheme" = "用于IMG4验证的强制x86方案.\n\n注意：当使用与x86legacy不同的SecureBootModel时,此选项在虚拟机上是必需的.";
+
+/* 8Db-Hu-t2R */
+"TT_IncreasePciBarSize" = "解决卡PCI configuration,如果碰到请选择yes, 一般选择no.\n注意,一般卡pci configuration都是因为自己错误的设置或硬件问题.\n在 BIOS 中启用 Above4GDecoding 是一种更加干净和安全的方法.某些 X99 板可能需要开启, 这些主板通常会在 IOPCIFamily 上遇到内核崩溃";
+
+/* nsg-T6-DJT */
+"TT_LapicKernelPanic" = "禁用由 AP 核心 lapic 中断造成的内核崩溃, 通常用于「惠普电脑」 (等同于 Clover 的 Kernel LAPIC),无此问题选择NO.";
+
+/* Bdo-0T-kr8 */
+"TT_LegacyCommpage" = "将默认的64位Combpage bcopy实现替换为不需要SSSE3的实现, 对旧平台有用. 由于没有可用的不需要SSSE3的64位bcopy函数,这可以防止没有最后一次紧急情况的commpage..";
+
+/* axF-O3-KF9 */
+"TT_PanicNoKextDump" = "一般选择NO\n在发生内核崩溃时阻止输出 Kext 列表, 提供可供排错参考的崩溃日志, 排错时请务必开启.";
+
+/* 6Mq-wE-cHt */
+"TT_PowerTimeoutKernelPanic" = "修复 macOS Catalina 中由于设备电源状态变化超时而导致的内核崩溃.\n当你遇到睡眠不能唤醒,只有重启后才能睡眠唤醒,请试试选择YES.";
+
+/* yhV-cY-frg */
+"TT_ThirdPartyDrives" = "为 SSD 启用 TRIM 指令, NVMe SSD 会自动被 macOS 加载因此不需要, SATA SSD 可以在终端执行 sudo trimforce enable 开启.\n同时修复 macOS 10.15 下非苹果原厂 SSD 无法使用硬盘休眠 (hibernatemode 25).";
+
+/* QzX-0b-2d3 */
+"TT_XhciPortLimit" = "解除15个端口限制,如果USB端口已经定制,请选择NO.";
+
+/* Ot6-tN-JLe */
+"TT_SetApfsTrimTimeout" = "要求：10.14(较早版本不需要)\n\n为SSD上的APFS文件系统设置微调(以微秒为单位).\n根据SSD控制器的调整程序可能会花费大量时间, 导致启动速度明显下降,因为这是APFS驱动程序执行调整操作时. 如果SSD支持超额配置,或者存在专用的未使用分区可用于保留块, 修剪操作可能不是必需的.另一方面,如果SSD速度慢, 默认超时(等于9.999999秒)可能还不够.\n\n将此值设置为4294967295以获取最大超时以确保修剪成功,或将该值设置为999以实质上禁用修剪.";
+
+/* miscController */
+/* Boot */
+/* 5Or-M0-hZS */
+"TT_pickermode" = "选择用于启动管理的启动选择器\n支持以下值:\n•Builtin(默认值)-引导管理由OpenCore处理,使用纯文本用户界面.\n•External-使用外部引导管理协议（如果可用),否则,将使用Builtin模式.\n•Apple-使用Apple引导管理(如果可用),否则,将使用Builtin模式.";
+
+/* hdQ-rL-KAo */
+"TT_pickerattributes" = "设置启动菜单(GUI界面)的属性.\n可以配置自定义的GUI界面风格,设置值包括:\n• 0x0001 —提供引导项的自定义图标:\n\t– APFS分区的预引导根目录下的.VolumeIcon.icns文件. \n\t– 其他文件系统的卷根目录下的.VolumeIcon.icns文件.\n\t– <TOOL_NAME>.icns的工具图标文件.￼ \n可以在Finder中设置卷图标. \n• 0x0002 — 提供引导条目的自定义渲染标题:  \t– 引导器相关的.disk_label（.disk_label_2x）文件,用于所有文件系统. \t– 工具相关的<TOOL_NAME.lbl和<TOOL_NAME.l2x文件. 可以通过disklabel实用程序或bless命令生成预渲染的标签.禁用或缺少文本标签时 (.contentDetails 或 .disk_label.contentDetails) 将被使用.\n• 0x0004 — 提供引导条目的预定义标签图像,而无需自定义条目. 可能会缺少实际启动项的详细信息. \n• 0x0008 — OC_ATTR_HIDE_THEMED_ICONS, 设置某些图标类别的内置图标以匹配主题样式. 这可能会强制显示内置的Time Machine图标. 需要OC_ATTR_USE_VOLUME_ICON.\n• 0x0010 — 在选择器中启用指针控制(如果可用).这可以利用鼠标或触控板来控制UI元素. \n• 0x0020 — OC_ATTR_DEBUG_DISPLAY, 启用显示其他时序和调试信息, 在DEBUG和NOOPT中的文本菜单中.\n• 0x0040 — OC_ATTR_USE_MINIMAL_UI, 使用最少的UI显示, 没有关机或重启按钮, 图形化启动菜单和文本启动菜单都有效.";
+
+/* gD0-Iz-n35 */
+"TT_ConsoleAttributes" = "设置启动菜单的颜色属性.\n支持根据UEFI规范将颜色参数的前景色和背景色之和计算并转为十进制填入.\n颜色名称列表：\n•0x00-EFI_BLACK\n•0x01-EFI_BLUE\n•0x02-EFI_GREEN\n•0x03-EFI_CYAN\n•0x04-EFI_RED\n•0x05-EFI_MAGENTA\n•0x06-EFI_BROWN\n•0x07-EFI_LIGHTGRAY\n•0x08-EFI_DARKGRAY\n•0x09-EFI_LIGHTBLUE\n•0x0A-EFI_LIGHTGREEN\n•0x0B-EFI_LIGHTCYAN\n•0x0C-EFI_LIGHTRED\n•0x0D-EFI_LIGHTMAGENTA\n•0x0E-EFI_BACKGROUND_LIGHTGRAY\n•0x0F-EFI_WHITE\n•0x00-EFI_BACKGROUND_BLACK\n•0x10-EFI_BACKGROUND_BLUE\n•0x20-EFI_BACKGROUND_GREEN\n•0x30-EFI_BACKGROUND_CYAN\n•0x40-EFI_BACK_ROG_RO_ROUND_RED\n•0x50-EFI_BACKGROUND_MAGENTA\n•0x60-EFI_BACKGROUND_BROWN\n•0x70-EFI_BACKGROUND_LIGHTGRAY\n注意：此选项可能不适用于系统文本渲染器.设置与黑色不同的背景可以帮助测试正确的GOP功能.";
+
+/* Zxi-ww-dWk */
+"TT_Timeout" = "倒计时进入指定可启动系统,这里我们按需求填写,我填写5,代表5秒钟进入指定系统.";
+
+/* QGG-If-K71 */
+"TT_TakeoffDelay" = "在使用启动菜单和使用键盘快捷键之前执行的延迟（以微秒为单位）. \n使用这个选项可能会能更好的激活模拟苹果快捷键的功能,例如引导至恢复模式或其他.在某些平台上,由于键盘驱动程序的特性,可能完全需要将此选项设置为至少5000-10000微秒才能访问操作热键.";
+
+/* wPi-6s-R0s */
+"TT_hibernatemode" = "检测休眠模式.我们的机器一般都不支持休眠,选none.如果你的主板支持原生nvram、并想测试休眠,可以考虑填auto.\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭!";
+
+/* M7r-QM-SNm */
+"TT_PickerVariant" = "选择用于OC引导菜单的指定图标主题.\n\n支持以下值:\n• Auto — 根据默认背景颜色自动选择一组图标.\n• Default — (默认主题（所有图标文件无前缀名称,比如Apple.icns、Background.icns).\n• Old — Old主题(此为官方样板主题,所有图标文件名前缀为Old,比如OldApple.icns、OldBackground.icns).\n• Modern — Modern主题(所有图标文件名前缀为Modern,比如ModernApple.icns、ModernBackground.icns).\n• 其他值 — 可以自定义自己的主题风格,所有图标文件名加自己的前缀,比如MyApple.icns、MyBackground.icns,那么自定义的主题值就填写My.\n\n注意事项:\n选择任意一个主题,包括自定义主题的图标文件路径必须在EFI/OC/Resources/Image下有对应格式的文件名图标,对于0.6.6以上版本,必须有包含Left.icns和Right.icns的图标文件名,否则会变为文本模式菜单";
+
+/* PDS-bo-Qx8 */
+"TT_PickerAudioAssist" = "在启动选择器中启用屏幕语音助理功能.\n也可以使用Command + F5组合键在OpenCore引导选择器和macOS引导加载器FileVault 2登录窗口中切换屏幕语音助理功能.\ n注意：屏幕语音辅助功能需要加载AudioDxe.ef音频驱动.";
+
+/* Yyf-Yd-yrP */
+"TT_ShowPicker" = "显示 OpenCore 的 UI, 用于查看可用引导项\n设置为 NO 可以跳过倒计时, 和 PollAppleHotKeys=Yes 配合快捷键可以大幅提升体验\n一般选择YES.";
+
+/* zgV-bT-EgH */
+"TT_HideAuxiliary" = "隐藏选择器菜单中的辅助条目,如果启用隐藏默认条目,选为YES.\n至少满足以下条件之一时,该条目被认为是辅助条目:\n•条目是macOS Recovery.\n•条目被明确标记为辅助.\n•条目是一个efi程序(例如Clean NVRAM)\n\n通过按空格键,重新加载所有条目选择器菜单.";
+
+/* vvg-w7-KxC */
+"TT_PollAppleHotKeys" = "是否开启一些热键功能,包括Cmd+K;Cmd+S.\n设置为YES后允许在引导过程中使用苹果原生快捷键, 需要与Quirk选项中KeySupport=Yes或UsbKbDxe.efi结合使用, 具体体验取决于主板固件.常用快捷键组合:\nCmd + V: 启用 -v 跑码啰嗦模式\nCmd + Opt + P + R: 重置 NVRAM\nCmd + R: 启动恢复分区\nCmd + S: 启动至单用户模式\nOption/ALT: 在ShowPicker设置成NO时显示引导菜单, ALT键不可用时可用ESC键代替(狂按ESC键).\n如果你开机发现键盘无法选择,请选NO,并且删除OC/Drivers下的UsbKbDxe.efi.";
+
+/* IqM-FZ-Tdv */
+"TT_launcherOption" = "在固件首选项中注册启动器选项以实现持久性.\n可用值:\n• Disabled — 啥也不做.\n• Full — 在引导加载程序启动时,在UEFI变量存储中创建或更新最高优先级引导选项.为了使此选项起作用,需要启用RequestBootVarRouting.\n• Short — 创建一个短启动选项,而不是完整的启动选项.此选项对某些较旧的固件(尤其是Insyde)很有用,但可能对无法处理完整设备路径的其他固件无效.\n\n此选项在覆盖\\EFI\\BOOT\\BOOTx64.efi文件时提供与第三方操作系统安装和升级的集成.. 通过在此文件路径中创建自定义选项,该路径不再用于引导OpenCore. 用于启动的路径在LauncherPath选项中指定.\n\n注意 1: 某些类型的固件可能具有错误的NVRAM,不支持启动选项或其他不兼容性.虽然不太可能,但使用此选项甚至可能导致引导失败.该选项应在没有任何保证的情况下专门用于已知兼容的板上.\n\n注意 2: 请注意,从OpenCore执行NVRAM重置时,不应擦除在Bootstrap中创建的引导选项, 在加载OpenCore之前执行NVRAM重置将删除它. 对于重大的实施更新（例如,在OpenCore 0.6.4中）,请确保在重新启用前禁用Bootstrap来执行NVRAM重置.";
+
+/* Uqn-Ww-mAH */
+"TT_LauncherPath" = "LauncherOption的启动路径.\n\n对于启动OpenCore.efi的其他任何路径(例如,\\EFI\\Launcher.efi, 可用于提供定制启动器, 应该自己加载OpenCore.efi.";
+
+/* DEBUG */
+/* PwU-cB-LIO */
+"TT_DisplayDelay" = "在屏幕上可见的每条打印行(即控制台)之后执行的延迟(以微秒为单位).默认忽略!";
+
+/* omf-bH-d4v */
+"TT_displaylevel" = "2147483714 在屏幕上显示所有 Debug 信息\n0 隐藏所有 Debug 信息!";
+
+/* 2Vb-s2-Ejp */
+"TT_target" = "0: 关闭日志记录\n3: 允许屏幕输出日志\n19: 允许屏幕输出 UEFI 变量日志\n67: 在 ESP 分区根目录生成日志文件 opencore-YYYY-MM-DD-HHMMSS.txt, 但屏幕上不显示日志!此功能需要用DEBUG版OC引导.";
+
+/* LCd-qL-7KC */
+"TT_DisableWatchDog" = "如果macOS在启动时卡在某些地方, 可能需要设置为YES, 通常用于排除错误干扰";
+
+/* fcn-ha-taM */
+"TT_AppleDebug" = "启用boot.efi调试日志保存到OpenCore日志.\n\n注意：此选项仅适用于10.15.4及更高版本.";
+
+/* 2lk-2r-hIW */
+"TT_ApplePanic" = "将macOS内核紧急情况保存到OpenCore根分区.\n该文件保存为panic-YYYY-MM-DD-HHMMSS.txt格式. 强烈建议使用keepsyms = 1引导参数来查看紧急日志中的调试符号. 如果不存在,则可以使用kpdescribe.sh实用程序（与OpenCore捆绑在一起）部分恢复堆栈跟踪.\n开发和调试内核会产生更多有用的内核恐慌. 考虑下载并安装\n调试时,请使用来自developer.apple.com的KernelDebugKit. 要激活开发内核,您将需要添加kcsuffix = development引导参数. 使用uname -a命令来确保当前加载的内核是开发（或调试）内核.\n如果未使用OpenCore内核应急保存机制,则可在/Library/Logs/Diagnostic目录中找到内核应急. 从macOS开始,Catalina内核紧急事件以JSON格式存储,因此在传递给kpdescribe.sh之前需要对其进行预处理： \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'";
+
+/* eFH-QH-phT */
+"TT_SysReport" = "在EFI分区上生成系统报告.\n此选项将在ESP分区上创建SysReport目录, 该目录将包含ACPI和SMBIOS以及音频codec转储.音频编解码器转储需要加载音频后端驱动程序.\n\n注意：出于安全原因,RELEASE版本中不提供SysReport功能.如果需要此选项,请使用DEBUG版本.";
+
+/* fmg-zD-rrJ */
+"TT_SerialInit" = "执行串行端口初始化.\n此选项将在启用调试日志记录之前在OpenCore中执行串行端口初始化.默认值如下:\n• PcdSerialBaudRate — Baud rate: 115200.\n• PcdSerialLineControl — Line control: no parity, 8 data bits, 1 stop bit.\n\n在“调试”部分中查看更多详细信息.";
+
+/* SECURITY */
+/* QbL-ID-H0a */
+"TT_HaltLevel" = "参考OC手册!";
+
+/* tmf-fU-Pjy */
+"TT_exposesensitivedata" = "3 - 将 OpenCore 的启动路径和版本储存进 NVRAM\n11 - 在 3 的基础上添加主板 OEM 信息, HWMonitorSMC2 和 NVMeFix 需要主板 OEM 信息才能正常工作\n6 - 如果要在引导菜单显示OC版本号,填6\n15 - 暴露所有NVRAM信息.";
+
+/* VQF-Ne-GWu */
+"TT_scanpolicy" = "0: 允许扫描所有可用的硬盘\n其它值请参考官方文档, 对给出的选项做 16 进制加法运算";
+
+/* 0yA-ct-dgi */
+"TT_ApECID" = "Apple Enclave标识符.\n将此值设置为任何非零的64位整数将允许使用个性化的Apple Secure Boot标识符.设置此值且SecureBootModel有效且未禁用的情况等效于实现Apple Secure Boot的完全安全性.如果要使用此设置,请确保使用加密安全的随机数生成器生成随机的64位数字. 设置此值且SecureBootModel有效且未禁用,可以实现Apple Secure Boot的完全安全性.\n\n注意 1: 您必须重新安装操作系统或使用macOS DMG恢复来祝福–将此值设置为非零后,个性化安装.只有通过macOS恢复或使用asr创建的个性化构建,才能安装ApECID值设置为非零的操作系统..\n\n注意 2: 当前,此选项的使用不可靠（显然是macOS安装程序中的错误）,因此不建议使用此选项.";
+
+/* QZk-2b-TCx */
+"TT_vault" = "在OpenCore中启用安全保险柜机制.\n•Optional-不启用任何安全机制,一般我们选这个.\n•Basic-要求OC目录中存在vault.plist文件.这提供了基本的文件系统完整性验证,并可以防止意外的文件系统损坏.\n•Secure-要求OC目录中vault.plist的vault.sig签名文件.";
+
+/* KUQ-Na-LT4 */
+"TT_dmgloading" = "尝试提供引导加载程序的持久性.\n\n有效值s:\n• Disabled — 加载DMG映像将失败.\n• Signed — 仅Apple签署的DMG映像会加载.\n• Any — 任何DMG映像都将作为普通文件系统挂载.";
+
+/* l6D-xS-M37 */
+"TT_secureBootModel" = "Apple安全启动硬件模型.\n定义Apple安全启动硬件模型和策略. 指定此值将定义可引导的操作系统. 在指定型号发布之前出厂的操作系统将无法启动.有效值:\n\n• Default — 最近可用的模型,当前设置为j137.\n• Disabled — 没有型号,安全启动将被禁用.\n• j137 — iMacPro1,1 (2017年12月),最低macOS 10.13.2（17C2111）\n• j680 — MacBookPro15,1 (2018年七月),最低macOS 10.13.6（17C2112）\n• j132 — MacBookPro15,2 (2018年七月),最低macOS 10.13.6（17C2112）\n• j174 — Macmini8,1 (2018年十月) 最低macOS 10.14（18A2063）\n• j140k — MacBookAir8,1 (2018年十月) 最低macOS 10.14.1 (18B2084)\n• j780 — MacBookPro15,3 (2019年五月) 最低macOS 10.14.5 (18F132)\n• j213 — MacBookPro15,4 (2019年七月) 最低macOS 10.14.5 (18F2058)\n• j140a — MacBookAir8,2 (2019年七月) 最低macOS 10.14.5 (18F2058)\n• j152f — MacBookPro16,1 (2019年十一月) 最低macOS 10.15.1 (19B2093)\n• j160 — MacPro7,1 (2019年十二月) 最低macOS 10.15.1 (19B88)\n• j230k — MacBookAir9,1 (2020年3月) 最低macOS 10.15.3 (19D2064)\n• j214k — MacBookPro16,2 (2020年5月) 最低macOS 10.15.4 (19E2269)\n• j223 — MacBookPro16,3 (2020年5月) 最低macOS 10.15.4 (19E2265)\n• j215 — MacBookPro16,4 (2020年6月) 最低macOS 10.15.5 (19F96)\n• j185 — iMac20,1 (2020年8月) 最低macOS 10.15.6 (19G2005)\n• j185f — iMac20,2 (2020年8月) 最低macOS 10.15.6 (19G2005)\n\nPlatformInfo和SecureBootModel是独立的,从而可以通过任何SMBIOS启用Apple Secure Boot.\n将SecureBootModel设置为任何有效值但Disabled等效于Apple Secure Boot的\"中级安全性\". 要获得完全安全性,还需要指定ApECID值.\n\n注意: 默认值会随着时间的增加而增加,以支持最新的主发行版操作系统. 不建议同时使用ApECID和默认值.";
+
+/* NCW-lH-X8S */
+"TT_PasswordHash" = "设置启用密码保护时使用密码哈希算法.";
+
+/* pYq-Ve-K08 */
+"TT_PasswordSalt" = "设置启用密码保护时使用密码加盐算法.";
+
+/* pTC-aG-QK1 */
+"TT_AllowNvramReset" = "允许CMD + OPT + P + R或在启动菜单中显示ResetNVRAM重置菜单.\n\n提示:尽量不使用此项功能,用cleanNVRAM.efi工具替代,因为一些主板适用此功能后会导致启动黑屏而且无法进入BIOS界面的'硬件损坏'!";
+
+/* 0sy-D3-AKk */
+"TT_AuthRestart" = "允许重启 FileVault2 分区时不用再次输密码, 有安全风险.\n与磁盘加密启动相关,一般选NO";
+
+/* rQF-20-vFl */
+"TT_AllowSetDefault" = "允许用CTRL+Enter或CTRL+Index(启动菜单项目编号)来设置启动菜单中的下次默认启动选项.";
+
+/* PbU-if-N7O */
+"TT_EnablePassword" = "启用密码保护以允许敏感操作.\n\n密码保护可确保敏感操作,例如引导非默认操作系统 (例如: macOS recovery或工具), 重置NVRAM存储,尝试引导到非默认模式 (例如: verbose(啰嗦)模式或safe(安全)模式) 如果没有通过自定义密码进行明确的用户身份验证,则不允许. 当前,密码和密码加盐值(一种对密码加密的算法)已通过SHA-512的5000000次迭代进行哈希处理.\n\n注意: 此功能当前正在开发中,尚不能用于日常使用.";
+
+/* Nph-Bb-8b6 */
+"TT_BlacklistAppleUpdate" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统（即macOS Big Sur）无法使用NVRAM变量（run-efi-updater）禁用固件更新,因此存在此选项.";
+
+/* BLESSOVERRIDE */
+/* E7L-MW-EuK */
+"TT_misc_blessoverrideTable" = "用于添加自定义efi文件的引导绝对路径,比如添加Windows的bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用,除非你有这种情况,不然我们不需要填写任何东西.\n比如启动WINDOWS路径:\\EFI\\Microsoft\\Boot\\bootmgfw.efi\n这允许引导选择器自动发现异常的引导路径,也可用于其他操作系统的引导路劲";
+
+/* ENTRIES */
+/* 8Gl-6A-OsL */
+"TT_misc_EntriesTable" = "用于指定OpenCore无法自动找到的无规律引导路径.\n名称:OpenCore启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助条目,可在启动菜单中隐藏\n路径:\n引导磁盘的PCI路径,一般可以通过替换启动文件为DEBUG版本,然后勾选Disable WatchDog选项,Target选项填入67,启动一次后,在EFI分区里产生的日志文件里查找如: PciRoot(0x0)/Pci(0x1D,0x4)/Pci(0x0,0x0)/NVMe(0x1,09-63-E3-44-8B-44-1B-00)/HD(1,GPT,11F42760-7AB1-4DB5-924B-D12C52895FA9,0x28,0x64000)/\EFI\Microsoft\Boot\bootmgfw.efi这样的信息.\n可以提前在MACOS里使用diskutil info disk0s2 |grep \"UUID\"这样的命令提前获取到你想要启动的分区UUID,然后在日志文件里搜索UUID的值,可以快速获取到完整PCI路径!\n对于MOD的fork(MOD)版本,可在启动界面按F9保存所有启动设备路径到文件并保存在EFI分区\nTextMode(文本模式):是否以文本模式而不是图形模式运行条目";
+
+/* TOOLS */
+/* eH6-nm-MdQ */
+"TT_misc_toolsTable" = "用于运行一些UEFI工具, 例如验证CFG Lock(VerifyMsrE2.efi),CleanNvram.efi\n名称:OpenCore 启动项中显示的名称\n启用:启用或禁用\n辅助:设置条目为辅助属性\n路径:Tools文件夹下的文件名\n如: VerifyMsrE2.efi,Shell.efi等\n\nRealPath(真实路径):启动时将完整路径传递给工具.\n传递工具目录对于不小心尝试访问文件而不检查其完整性的工具可能是不安全的,因此通常应将其禁用. 启用此属性的原因可能包括在没有外部文件的情况下工具无法工作或可能需要它们以实现更好的功能的情况 (例如memtest86用于日志记录和配置,或Shell用于自动脚本执行).\n注意：此属性仅对工具有效. 对于条目,无法指定此属性,并且始终为true.\n\nTextMode(文本模式): 是否以文本模式而不是图形模式运行条目.\n对于某些需要文本输出的较旧的工具,此设置可能是有益的.默认情况下,所有工具均以图形模式启动.在下面的“输出属性”部分中阅读有关文本模式的更多信息.";
+
+/* nvramController */
+/* Add */
+/* s0e-p0-A6y */
+"TT_nvram_addTables" = "4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14\nUIScale: OpenCore UI 和引导第一阶段缩放\n01: 正常大小\n02: HIDPI (使 FileVault 和 苹果标志 在原生 HIDPI 显示器上以正常大小显示)\nDefaultBackgroundColor:设置MACOS启动时第一阶段的背景颜色,设置值为标准颜色的16进制值,比如一个颜色的标准值是123456,那么这里填入56341200,注意顺序颠倒!\n7C436110-AB2A-4BBB-A880-FE41995C9F82\nboot-args: -v debug=0x100 (引导标识符)\ncsr-active-config: <00000000> (SIP 设置)\n00000000 - SIP 完全开启\n30000000 - 允许未签名的 Kext 加载并允许写入受保护的文件系统路径\nE7030000 - SIP 完全关闭\n67000000 - 不再推荐使用\nnvda_drv: <>\n设为 31 时启用 NVIDIA WebDrivers\n没有 N 卡可以删除此项\nprev-lang:kbd: <0x7a682d48616e733a323532> (将默认语言设置为简体中文, 留空为英文)";
+
+/* tq7-BQ-JU5 */
+"TT_nvramProperties_add_table" = "以下变量可能对某些配置或故障排除很有用\n• 7C436110-AB2A-4BBB-A880-FE41995C9F82\n1、boot-args\n内核参数,用于将配置传递给Apple内核和驱动程序.有很多参数,一些已知的引导参数包括：\n–acpi_layer=0xFFFFFFFF\n–acpi_level=0xFFFF5F（表示ACPI_ALL_COMPONENTS）\n–batman = 值（AppleSmartBatteryManager调试掩码）\n–batman-nosmc=1（禁用AppleSmartBatteryManager SMC接口）\n–cpus=值（使用的最大CPU数量）\n–debug=值（调试掩码）\n–io=值（IOKit调试掩码）\n–keepsyms=1（显示紧急日志调试符号）\n–kextlog=值（内核扩展加载调试掩码）\n–nv_disable=1（禁用NVIDIA GPU加速）\n–nvda_drv=1（启用NVIDIA Web驱动程序的旧方法,已在10.12中删除）\n–npci=0x2000（旧方法,禁用kIOPCIConfiguratorPFM64）\n–lapic_dont_panic=1\n–slide=值（手动设置KASLR slide）\n–smcdebug=值（AppleSMC调试掩码）\n-amd_no_dgpu_accel（替代WhateverGreen的-radvesa用于新GPU）\n-nehalem_error_disable\n-no_compat_check（禁用机型检查）\n-s（单用户模式）\n-v（啰嗦模式）\n-x（安全模式）\n2、bootercfg\n引导程序参数,类似于boot-args,但包含boot.efi.接受一组参数,这些参数是带有或不带有0x前缀的十六进制64位值,主要用于日志记录控制：\nlog=值\n一般在启动时不输出任何日志,使用logo=0\ndebug=值\n一般在启动时不输出任何日志,使用debug=0\nlevel=值\n一般不使用任何日志,使用level=0.\n3、bootercfg-once\n首次启动后,引导程序参数将被覆盖.否则等效于bootercfg.\n4、fmm-computer-name\n当前保存的计算机名.\n5、nvda_drv\n启用NVIDIA Web Driver,只在10.13.x里使用.";
+
+/* Delete*/
+/* ph9-2g-adH */
+"TT_nvram_deleteTables" = "强制重写 NVRAM 变量, 由于 Add 不会覆盖 NVRAM 中已经存在的值, boot-args 需要利用此项来刷新";
+
+/* LegacySchema */
+/* cVF-o8-z0z */
+"TT_nvram_legacySchemaTables" = "用于分配 NVRAM 变量, 与 LegacyEnable 配合使用\n您可以使用*值来接受所有用于选择GUID的变量.\n警告：由于nvram.plist未被存储,因此请非常谨慎地选择变量. 例如,请勿放入boot-args或csr-active-config,因为这会绕过SIP.\n要从macOS读取NVRAM变量值,可以使用nvram,方法是将变量GUID和名称以：符号分隔. 例如,nvram 7C436110-AB2A-4BBB-A880-FE41995C9F82：boot-args.\n可以在相应的文档：NVRAM变量中找到连续更新的变量列表.\n警告：由于nvram.plist未被存储,因此请非常谨慎地选择变量. 例如,不要放入boot-args或csr-active-config,因为它可以绕过SIP.";
+
+/* 2KJ-kg-wip */
+"TT_LegacyEnable" = "允许从EFI卷根目录加载名为nvram.plist的NVRAM变量文件.\n没有原生NVRAM的设备设置为YES\nmacOS下硬件NVRAM工作不正常的设备设置为YES\nmacOS 下硬件 NVRAM 工作正常的设备设置为 NO\n变量加载发生在“block”（和“add”）阶段之前,并且不会覆盖任何现有变量. 必须在LegacySchema中指定允许设置的变量. 第三方脚本可用于创建nvram.plist文件. 此类脚本的示例可以在“实用工具”中找到. 使用第三方脚本可能需要将ExposeSensitiveData设置为0x3才能为OpenCore EFI分区UUID提供引导路径变量.\n警告：此功能非常危险,因为它将不受保护的数据传递到固件可变服务. 仅当固件未提供硬件NVRAM实现或与固件不兼容时才使用它.";
+
+/* Bqu-cW-189 */
+"TT_LegacyOverwrite" = "对模拟nvram用户来说,将nvram.plist写入固件.\n注意：只是覆盖可从操作系统访问的变量,一般不建议开启.";
+
+/* 0qd-Qe-41F */
+"TT_WriteFlash" = "允许为所有添加的变量写入闪存.\n建议在大多数固件上启用此值,如果你的主板bios因为nvram导入垃圾内容,可关闭它.";
+
+/* platformInfoController */
+/* RfW-jb-UfW */
+"TT_Automatic" = "选中此项时,OC不会应用DataHub ,PlatformNVRAM ,SMBIOS中的所有内容,\"自动\"选项要求必须配合Generic部分,详细内容OpenCore.efi会根据Generic中的SystemProductName 匹配完成所有自动填充.\n所以选择自动时,应该去掉这三个部分的\"在config.plist里添加此部分内容\"选择框,已防止这三部分内容在config文件里写入";
+
+/* XRB-18-dHU */
+"TT_UpdateDataHub" = "必须选YES, 无论\"自动\"选项是否选择!";
+
+/* zXC-sw-kEf */
+"TT_UpdateNVRAM" = "必须选YES, 无论\"自动\"选项是否选择!";
+
+/* U5f-5A-ryt */
+"TT_UpdateSMBIOS" = "必须选YES, 无论\"自动\"选项是否选择!";
+
+/* 9o2-8y-dq6 */
+"TT_updatesmbiosmode" = "AUTO--通常使用Auto(自动)或Create(创建即可--(推荐Auto)\nCustom--Dell机器应选择Custom(自定义)\nOverWrite(覆盖)--覆盖现有的SmbiosTableGUID数据(不推荐)-如果当SmbiosTableGUID覆盖过程中无法匹配新的大小则操作会被终止而导致SMBIOS数据注入失败,引导时无法绕过兼容性检查出现开机禁行--报错 ：This Version of MacOS X is not Supported on this Platform";
+
+/* GZV-Yr-hPJ */
+"TT_CustomMemory" = "使用自定义内存配置. 这将完全替换SMBIOS中的任何现有内存配置, 并且仅在UpdateSMBIOS设置为true时有效.";
+
+/* 1BR-wt-792 */
+"TT_UseRawUuidEncoding" = "对SMBIOS UUID使用原始编码.\n\n每个UUID AABBCCDD-EEFF-GGHH-IIJJ-KKLLMMNNOOPP本质上是一个十六进制的16字节数字. 它可以通过两种方式进行编码:\n• Big Endian — 通过不写任何顺序就写所有字节({AA BB CC DD EE FF GG HH II JJ KK LL MM NN OO PP}). 此方法也称为RFC 4122编码或Raw编码.\n• Little Endian — 通过将字节解释为数字并使用Little Endian字节表示形式 ({DD CC BB AA FF EE HH GG II JJ KK LL MM NN OO PP}).\nSMBIOS规范未明确指定直到SMBIOS 2.6的UUID的编码格式,该规范指出应使用Little Endian编码. 由于不同的供应商在此之前使用了不同的编码,这导致了固件实现和系统软件的混乱..\n• 苹果在任何地方都使用Big Endian格式,但它忽略了macOS中的SMBIOS UUID.\n• dmidecode对SMBIOS 2.5.x或更低版本使用Big Endian格式,对2.6及更高版本使用Little Endian格式..\nAcidanthera dmidecode可打印所有这三个.\n• Windows在所有地方都使用Little Endian格式,但是它只会影响值的视觉表示.\n\n在生成修改后的DMI表时,OpenCore始终设置最新的SMBIOS版本(当前为3.2).如果启用了UseRawUuidEncoding,则将使用Big Endian格式存储SystemUUID数据.否则使用Little Endian.\n\n注意：由于DataHub和NVRAM中使用的UUID未标准化,因此由Apple添加, 这种偏好不会影响他们. 与SMBIOS不同,它们始终以Big Endian格式存储.";
+
+/* DataHub */
+/* U5s-uE-f0J */
+"TT_datahubCheckbox_add" = "从plist\n默认值添加或删除此部分:添加";
+
+/* o9h-XT-hbD */
+"TT_platformInfo_datahub_SystemProductName" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置模型.在Mac上找到的值等于Unicode中的SMBIOS SystemProductName.";
+
+/* agr-Am-FjN */
+"TT_platformInfo_datahub_SystemSerialNumber" = "默认值:未安装\n说明:在gEfiMiscSubClassGuid中设置SystemSerialNumber.在Mac上找到的值等于Unicode中的SMBIOS SystemSerialNumber.";
+
+/* iip-zN-Jsb */
+"TT_platformInfo_datahub_SystemUUID" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置system-id.在Mac上找到的值等于SMBIOS SystemUUID.";
+
+/* qOV-63-yas */
+"TT_ARTFrequency" = "默认值:未安装\n描述:在gEfiProcessorSubClassGuid中设置ARTFrequency.设置CPU ART频率,Skylake和更新.";
+
+/* h7z-Be-rOD */
+"TT_platformInfo_datahub_BoardProduct" = "默认值:未安装\n说明:在gEfiMiscSubClassGuid中设置board-id.在Mac上找到的值等于ASCII中的SMBIOS BoardProduct.";
+
+/* vrV-lt-VAU */
+"TT_BoardRevision" = "默认值:0\n描述:在gEfiMiscSubClassGuid中设置board-rev.在Mac上找到的值似乎对应于内部板修订（例如01).";
+
+/* yKq-oF-Y1T */
+"TT_DevicePathsSupported" = "默认值:未安装\n说明:在gEfiMiscSubClassGuid中设置DevicePathsSupported.对于AppleACPIPlat- form.kext,必须设置为01才能将SATA设备路径附加到Boot ####和efi-boot-device-data变量.在所有现代Mac上设置为01.";
+
+/* W2E-oe-9Uq */
+"TT_FSBFrequency" = "默认值:自动\n描述:在gEfiProcessorSubClassGuid中设置FSBFrequency.设置CPU FSB频率.";
+
+/* 2Oj-go-m5S */
+"TT_InitialTSC" = "默认值:0\n描述:在gEfiProcessorSubClassGuid中设置InitialTSC.设置初始TSC值,通常为0.";
+
+/* BJm-4X-red */
+"TT_PlatformName" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置名称.在Mac上找到的值是ASCII平台.";
+
+/* bTa-i4-4eq */
+"TT_SmcBranch" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置RBr. VirtualSMC或FakeSMC读取的自定义属性,用于生成SMC RBr密钥.";
+
+/* JBr-Jy-s8V */
+"TT_SmcPlatform" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置RPlt. VirtualSMC或FakeSMC读取的自定义属性,用于生成SMC RPlt密钥.";
+
+/* X7k-fY-cFM */
+"TT_SmcRevision" = "默认值:未安装\n描述:在gEfiMiscSubClassGuid中设置REV.由VirtualSMC或FakeSMC读取的自定义属性,用于生成SMC REV密钥.";
+
+/* CdO-kb-3WH */
+"TT_StartupPowerEvents" = "默认值:0\n描述:在gEfiMiscSubClassGuid中设置StartupPowerEvents.在Mac上找到的值是电源管理状态位掩码,通常为0. X86PlatformPlugin.kext读取的已知位:\n•0x00000001  - 关闭原因是PWROK事件（与GEN_PMCON_2位0相同）\n•0x00000002  - 关闭原因是SYS_PWROK事件（与GEN_PMCON_2位1相同）\n•0x00000004  - 关闭原因是THRMTRIP＃事件（与GEN_PMCON_2位3相同）\n•0x00000008  - 由于SYS_RESET＃事件而重新启动（与GEN_PMCON_2位4相同）\n•0x00000010  - 电源故障（与GEN_PMCON_3位1 PWR_FLR相同）\n•0x00000020  -  RTC电源损耗（与GEN_PMCON_3位2 RTC_PWR_STS相同）\n•0x00000040  - 通用复位状态（与GEN_PMCON_3位9 GEN_RST_STS相同）\n•0xffffff80  -  SUS功率损耗良好（与GEN_PMCON_3位14相同）\n•0x00010000  - 唤醒原因是ME唤醒事件（与PRSTS位0相同,ME_WAKE_STS）\n•0x00020000  - 冷重启是ME诱发事件（与PRSTS位1 ME_HRST_COLD_STS相同） •0x00040000  - 热重启是ME诱发事件（与PRSTS位2 ME相同_HRST_WARM_STS）•0x00080000  - 关闭是ME诱发事件（与PRSTS位3 ME_HOST_PWRDN相同）\n•0x00100000  - 全局复位ME Wachdog定时器事件（与PRSTS位6相同）\n•0x00200000  - 全局复位PowerManagment Wachdog定时器事件（与PRSTS第15位）";
+
+/* Generic */
+/* 38m-qA-it7 */
+"TT_genericCheckbox_add" = "从plist\n默认值添加或删除此部分:添加";
+
+/* 8g1-Si-2Vs */
+"TT_platformInfo_generic_SystemProductName" = "默认值:MacPro6,1\n说明:请参阅SMBIOS SystemProductName.";
+
+/* mPV-Tv-466 */
+"TT_platformInfo_generic_SystemSerialNumber" = "默认值:OPENCORE_SN1\n说明:请参阅SMBIOS SystemSerialNumber.";
+
+/* jaL-um-8Nb */
+"TT_platformInfo_generic_SystemUUID" = "默认值:OEM指定\n说明:请参阅SMBIOS SystemUUID.";
+
+/* rLa-T9-n6A */
+"TT_platformInfo_generic_MLB" = "默认值:OPENCORE_MLB_SN11\n说明:请参阅SMBIOS BoardSerialNumber.";
+
+/* TTj-aB-3ch */
+"TT_platformInfo_generic_ROM" = "<0x############> 可以是任意 6 Byte MAC 地址, 如 0x112233000000";
+
+/* YN8-NU-Zgm */
+"TT_generic_ProcessorType" = "填写十进制整数值\n\n自动值生成会尝试为当前安装的CPU提供最准确的值.有关完整列表可用值及其限制(该值仅在CPU核心数量匹配时适用)是指Apple SMBIOS,可以在https://github.com/acidanthera/OpenCorePkg/blob/master/Include/Apple/IndustryStandard/AppleSmBios.h查看定义标头\n另请参阅此处以获取Mac型号上使用的CPU列表:https://docs.google.com/spreadsheets/d/1x09b5-DGh8ozNwN5ZjAi7TMnOp4TDm6DbmrKu86i_bQ\n\n例如:我的CPU是I5-6400,属于I5系列,四核心,通过查表获知CPU型号为0x0605,转换为十进制数为1541,如果想显示为I7处理器,对应的CPU型号为0x0705,转为十进制整数为1797,这里填1797,重启后就显示为I7处理器";
+
+/* PPQ-0x-9Ub */
+"TT_systemMemoryStatus" = "指示系统内存是否可以在PlatformFeature中升级,控制“关于本机”中“内存”选项卡的可见性.\n\n有效值:\n• Auto — 根据机型选择自动设置对应的机型内存状态(默认).\n• Upgradable — 设内存状态为可更换模式(关于本机里显示内存标签).\n• Soldered — 设置内存状态为不可更换模式(关于本机里不显示内存标签)\n\n注意: 在某些Mac型号上（即MacBookPro10,x和任何MacBookAir）, SPMemoryReporter.spreporter将忽略PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY,并假定系统内存不可升级.";
+
+/* 9sY-PL-wkx */
+"TT_AdviseWindows" = "如果WINDOWS的EFI分区不是磁盘上的第一个分区启用它,不然有可能无法引导WINDOWS.";
+
+/* Z8Z-8r-mnL */
+"TT_SpoofVendor" = "选YES (仿冒制造商为 Acidanthera 来避免出现冲突).";
+
+/* bKX-Jd-g28 */
+"TT_MaxBIOSVersion" = "设置BIOSVersion为9999.999.999.999.999, 在使用自动平台信息以避免在非官方支持的macOS版本中进行BIOS更新时,建议用于旧版Mac.";
+
+/* PlatformNVRAM */
+/* IJO-Va-YDO */
+"TT_platformnvramCheckbox_add" = "从plist添加或删除此部分:\n默认值:添加";
+
+/* MpC-g9-pKJ */
+"TT_BID" = "指定NVRAM变量4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_BID的值.";
+
+/* L5e-wR-9li */
+"TT_platformInfo_platformnvram_MLB" = "默认值:未安装\n说明:指定NVRAM变量的值4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_MLB和4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:MLB";
+
+/* yhE-PH-xkY */
+"TT_platformInfo_platformnvram_ROM" = "默认值:未安装\n说明:指定NVRAM变量的值4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_ROM和4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:ROM";
+
+/* L5k-Nq-H9Z */
+"TT_FirmwareFeatures" = "默认值:未安装\n描述:此变量与FirmwareFeaturesMask配对.指定NVRAM变量的值:\n•4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:FirmwareFeatures\n•4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:ExtendedFirmwareFeatures";
+
+/* 6Kd-rJ-POa */
+"TT_FirmwareFeaturesMask" = "默认值:未安装\n描述:此变量与FirmwareFeatures配对.指定NVRAM变量的值:\n•4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:FirmwareFeaturesMask\n•4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:ExtendedFirmwareFeaturesMask";
+
+/* Nq6-s5-69T */
+"TT_platformInfo_platformnvram_SystemUUID" = "指定仅用于引导服务的NVRAM变量4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:system-id的值. 在Mac上找到的值等于SMBIOS SystemUUID.";
+
+/* Bwi-9B-eFc */
+"TT_platformInfo_platformnvram_SystemSerialNumber" = "指定NVRAM变量的值4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:HW_SSN 和 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:SSN.";
+
+/* Memory */
+/* zev-9o-4NS */
+"TT_DataWidth" = "Data Width\n指定存储器的数据宽度(以bits为单位). DataWidth为0且TotalWidth为8表示该设备仅用于提供8个纠错位.";
+
+/* hF3-5Q-b46 */
+"TT_errorcorrection" = "Memory Error Correction\n指定内存支持的主要硬件错误纠正或检测方法.\n• 0x01 — 其他\n• 0x02 — 未知\n• 0x03 — 无\n• 0x04 — 奇偶性\n• 0x05 — 单ECC\n• 0x06 — 多位ECC\n• 0x07 — CRC";
+
+/* haT-n9-1ut */
+"TT_formfactor" = "Form Factor\n指定内存的形式. 在Mac上,通常应为DIMM或SODIMM.\n下面列出了常用的外形形式.\n如果CustomMemory为false,则根据Mac产品名称自动设置此值.\n• 0x01 — 其他\n• 0x02 — 未知\n• 0x09 — DIMM\n• 0x0D — SODIMM\n• 0x0F — FB-DIMM";
+
+/* Y4W-6h-1G9 */
+"TT_MaxCapacity" = "Maximum Capacity\n指定系统支持的最大内存量（以字节为单位）.";
+
+/* 73U-MV-8lJ */
+"TT_TotalWidth" = "Total Width\n指定内存的总宽度(以bits为单位),包括所有检查或纠错位. 如果没有纠错位,则此值应等于DataWidth.";
+
+/* w6I-Xj-IPK */
+"TT_type" = "Memory Type\n指定内存类型.常用类型如下.\n• 0x01 — 其他\n• 0x02 — 未知\n• 0x0F — SDRAM\n• 0x12 — DDR\n• 0x13 — DDR2\n• 0x14 — DDR2 FB-DIMM\n• 0x18 — DDR3\n• 0x1A — DDR4\n• 0x1B — LPDDR\n• 0x1C — LPDDR2\n• 0x1D — LPDDR3\n• 0x1E — LPDDR4";
+
+/* kmI-CT-lAM */
+"TT_typedetail" = "Type Detail\n指定其他内存类型信息.\n• Bit 0 — 保留, 设为0\n• Bit 1 — 其他\n• Bit 2 — 未知\n• Bit 7 — 同步\n• Bit 13 — 已注册 (已缓存)\n• Bit 14 — 无缓存 (未注册)";
+
+/* Devices */
+/* GR6-98-yvG */
+"TT_Devices_Table" = "1. Asset Tag\n指定此内存设备的资产标签.\n2. BankLocator\n指定内存设备所在的带有物理插槽,例如BANK 0,BANK 1.\n3.Device Locator\n指定物理插槽或内存所在的板卡位置,例如ChannelA-DIMM0,ChannelB-DIMM0.\n4.Manufacturer\n指定此内存设备的制造商.\n5.Part Number\n指定此内存设备的部件号,例如M00001-4GB.\n6.Serial Number\n指定此内存设备的序列号.\n7.Size\n指定存储设备的大小(以MB为单位),例如2048,4096. 0表示此插槽未填充.\n8.Speed\n指定设备的最大速度,以每秒兆传输(MT/s)为单位,例如:2400,2666,3200. 0表示未知速度.";
+
+/* SMBIOS */
+/* PHO-4O-OIP */
+"TT_smbiosCheckbox_add" = "从plist添加或删除此部分\n默认值:添加";
+
+/* p9S-yK-fiz */
+"TT_smbios_ProductName" = "默认值:OEM指定\nSMBIOS:系统信息（类型1）,产品名称\n说明:用于将设备标记为操作系统支持的首选Mac模型.必须通过任何配置指定此值,以便以后自动生成此SMBIOS表和其他SMBIOS表及相关配置参数中的相关值.如果SystemProductName与目标操作系统不兼容,则-no_compat_check引导参数可用作覆盖.\n注意:如果SystemProductName未知,并且未指定相关字段,则应假定默认值设置为MacPro6,1数据.可以在MacInfoPkg中找到已知产品列表.";
+
+/* Rag-wy-fpE */
+"TT_Family" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） - 系列描述:系列名称.可能看起来像iMac Pro.";
+
+/* gqH-S3-VMd */
+"TT_systemManufacturer" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） - 制造商\n说明:特定电路板的OEM制造商.除非严格要求,否则不得指定.不应包含Apple Inc.,因为这会混淆操作系统中存在的大量服务,例如固件更新,eficheck,以及Acidanthera中开发的内核扩展,例如Lilu及其插件.";
+
+/* J9G-p3-A50 */
+"TT_SKUNumber" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） -  SKU编号\n说明:Mac Board ID（board-id）.在旧型号中可能看起来像Mac-7BA5B2D9E42DDD94或Mac-F221BEC8.有时它可能只是空的.";
+
+/* a03-aA-XtL */
+"TT_smbios_SystemSerialNumber" = "类型:plist字符串\n默认值:OEM指定\nSMBIOS:系统信息（类型1） - 序列号\n描述:定义格式的产品序列号.已知格式以macserial描述.";
+
+/* Hjz-kh-KPV */
+"TT_smbios_SystemVersion" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） - 版本\n描述:产品迭代版本号.可能看起来像1.1";
+
+/* fux-7e-g2r */
+"TT_smbios_SystemUUID" = "默认值:OEM指定\nSMBIOS:系统信息（类型1） -  UUID\n描述:UUID是一个标识符,设计为在时间和空间上都是唯一的.它不需要中央注册过程.";
+
+/* SO7-47-4Z3 */
+"TT_smbios_BiosVendor" = "默认值:OEM指定\nSMBIOS:BIOS信息（类型0） - 供应商\n说明:BIOS供应商. SystemManufacturer的所有规则都适用.";
+
+/* h4J-NQ-LcH */
+"TT_smbios_BiosVersion" = "默认值:OEM指定\nSMBIOS:BIOS信息（类型0） -  BIOS版本\n说明:固件版本.此值将更新并参与更新传递配置和macOS版本兼容性.在较旧的固件中,此值可能类似于MM71.88Z.0234.B00.1809171422,并在BiosId.h中进行了描述.在较新的固件中,它应该看起来像236.0.0.0.0或220.230.16.0.0（iBridge:16.16.2542.0.0,0）.从BridgeOSVersion变量读取iBridge版本,并且仅在具有T2的mac上显示.";
+
+/* 6gn-IY-sd7 */
+"TT_ReleaseDate" = "默认值:OEM指定\nSMBIOS:BIOS信息（类型0） -  BIOS发布日期\n说明:固件发布日期.与BIOSVersion相似.可能看起来像12/08/2017.";
+
+/* YnG-4B-0S3 */
+"TT_ChassisManufacturer" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 制造商说明:电路板制造商. SystemManufacturer的所有规则都适用.";
+
+/* frw-3J-2Cg */
+"TT_ChassisType" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 键入\n说明:机箱类型,有关详细信息,请参阅表17  - 系统机箱或机箱类型.";
+
+/* eGy-sp-yaM */
+"TT_ChassisVersion" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 版本描述:应匹配BoardProduct.";
+
+/* gTB-8E-Nin */
+"TT_Chassis_SerialNumber" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 版本描述:应与SystemSerialNumber匹配.";
+
+/* D26-kV-2wQ */
+"TT_ChassisAssetTag" = "默认值:OEM指定\nSMBIOS:系统机箱或机箱（类型3） - 资产标签号说明:机箱类型名称.各种各样,可能是空的或MacBook-Aluminium.";
+
+/* mON-cg-FYL */
+"TT_BoardManufacturer" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 制造商描述:电路板制造商. SystemManufacturer的所有规则都适用.";
+
+/* X9U-bM-MRj */
+"TT_BoardProduct" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 产品\n说明:Mac Board ID（board-id）.在旧型号中可能看起来像Mac-7BA5B2D9E42DDD94或Mac-F221BEC8.";
+
+/* cWR-8m-2Jn */
+"TT_BoardVersion" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 版本\n说明:电路板版本号.变化,可能与SystemProductName或SystemProductVersion匹配.";
+
+/* xDD-P3-Saq */
+"TT_BoardSerialNumber" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 序列号\n说明:已定义格式的板序列号.已知格式以macserial描述.";
+
+/* GJj-A4-bd9 */
+"TT_BoardAssetTag" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 资产标签\n说明:资产标签号.变化,可能是空的或Type2  - 董事会资产标签.";
+
+/* YgB-Sp-EZ5 */
+"TT_BoardType" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 板类型\n描述:0xA（主板（包括处理器,内存和I / O）或0xB（处理器/内存）模块）,请参阅表15  - 底板:电路板类型以获取更多详细信息.";
+
+/* aXB-A5-lJa */
+"TT_LocationInChassis" = "默认值:OEM指定\nSMBIOS:底板（或模块）信息（类型2） - 机箱中的位置说明:变化,可能为空或零件组件.";
+
+/* 4l3-Do-kcw */
+"TT_Features" = "默认值:0\nSMBIOS:APPLE_SMBIOS_TABLE_TYPE128  -  FirmwareFeatures和ExtendedFirmwareFeatures说明:64位固件具有位掩码.有关更多详细信息,请参阅AppleFeatures.h.低32位与FirmwareFeatures匹配.高64位与ExtendedFirmwareFeatures匹配.";
+
+/* ih3-wv-2Kc */
+"TT_FeaturesMask" = "默认值:0\nSMBIOS:APPLE_SMBIOS_TABLE_TYPE128  -  FirmwareFeaturesMask和ExtendedFirmwareFeaturesMask描述:支持的扩展固件功能位掩码位.有关更多详细信息,请参阅AppleFeatures.h.低32位与FirmwareFeaturesMask匹配.高64位与ExtendedFirmwareFeaturesMask匹配.";
+
+/* Yog-wn-LaZ */
+"TT_PlatformFeature" = "默认值:0\nSMBIOS:APPLE_SMBIOS_TABLE_TYPE133  -  PlatformFeature\n说明:平台功能位掩码.有关更多详细信息,请参阅AppleFeatures.h.";
+
+/* oMm-l1-RDC */
+"TT_SmcVersion" = "去苹果官网看看你的三码是什么状态,但我们是黑苹果,嘿嘿,你懂得!";
+
+/* RLW-Hz-QKb */
+"TT_smbios_ProcessorType" = "默认值:自动\nSMBIOS:APPLE_SMBIOS_TABLE_TYPE131  -  ProcessorType描述:处理器主要和次要类型的组合.";
+
+/* uefiController */
+/* APFS */
+/* 8Sc-F2-ONI */
+"TT_EnableJumpstart" = "加载嵌入式APFS驱动程序.\n此选项替代之前使用的ApfsDriverLoader.efi驱动文件,变为OC嵌入式驱动!";
+
+/* H5Y-DY-WOe */
+"TT_GlobalConnect" = "在APFS加载期间执行完整的设备连接.\n代替通常用于APFS驱动程序加载的分区句柄连接,每个句柄都是递归连接的.\n这可能比平时花费更多的时间,但可能是访问某些固件（如旧版HP笔记本电脑上的固件）上的APFS分区的唯一方法.";
+
+/* HdB-KO-x50 */
+"TT_HideVerbose" = "隐藏APFS驱动程序加载时的详细输出.\nAPFS详细输出可用于调试.";
+
+/* kSG-eA-B2o */
+"TT_JumpstartHotPlug" = "为新连接的设备加载APFS驱动程序.\n不仅在OpenCore启动时而且在启动选择器(启动菜单)期间加载APFS驱动程序. 这允许APFS文件系统的USB磁盘热插拔.如果不需要则禁用.";
+
+/* L9i-6i-Mis */
+"TT_MinDate" = "允许的最小APFS驱动程序日期.\n较早版本的APFS驱动程序可能包含未修补的漏洞,可用来对您的计算机造成伤害. 此选项允许将APFS驱动程序限制为仅最新版本.\n• 0 — 需要OpenCore中APFS的默认受支持发布日期. 默认发布日期会随着时间增加,因此建议使用此设置. 当前设置为2020/01/01.\n• -1 — 允许加载任何发布日期（强烈建议）.\n• Other — 使用自定义的最低APFS发布日期,例如2020/04/01写成20200401. APFS发行日期可以在OpenCore引导日志和OcApfsLib中找到.";
+
+/* TYZ-jG-lfr */
+"TT_MinVersion" = "允许的最低APFS驱动程序版本.\nAPFS驱动程序版本将APFS驱动程序与macOS版本连接. 较早的macOS版本的APFS驱动程序将不再受支持,因此可能包含未修补的漏洞,这些漏洞可用于对您的计算机造成损害. 此选项允许将APFS驱动程序限制为仅现代macOS版本.\n• 0 — 需要OpenCore中默认支持的APFS版本. 默认版本会随着时间增加,因此建议使用此设置. 当前设置为High Sierra的最新版本.\n• -1 — 允许加载任何版本(强烈建议不要这样做).\n• Other — 使用自定义的最低APFS版本, 例如来自macOS Catalina 10.15.4的1412101001000000. 可以在OpenCore引导日志和OcApfsLib中找到APFS版本.";
+
+/* AppleInput */
+/* frr-qu-WDh */
+"TT_appleEvent" = "确定是否使用OC内置或OEM Apple Event协议.\n\n此选项确定是否使用Apple的OEM Apple事件协议(如果有),或者是否使用了OpenCore的反向工程和更新的重新实现. 通常,应该首选OpenCore的重新实现, 因为它包含更新,例如明显改善了鼠标光标的精细移动和可配置的按键重复延迟.\n• Auto — 自动选择实现. 由于用于实现快速启动时间的优化, 实际上,这意味着将找到并使用OpenCore重新实现,除非从Apple的启动选择器(如果有)中明确选择并启动了OpenCore(不仅仅是自动启动).\n• Builtin — 使用OpenCore更新的Apple Event协议重新实现(推荐).\n• OEM — 假设在驱动程序连接时可以使用Apple的协议. 这样一来,Apple的实施就可以在Apple系统上可靠地使用. 否则将不支持键盘或鼠标.";
+
+/* xpZ-sA-YNw */
+"TT_CustomDelays_checkbox" = "使用Apple Event协议的OpenCore实施时启用自定义按键重复延迟. 使用OEM Apple实施时无效 (请参阅AppleEvent设置).\n\n• true — 使用KeyInitialDelay和KeySubsequentDelay的值.\n• false — 苹果使用(50)500ms和(5)50ms的默认值.";
+
+/* Kmw-jC-ANj */
+"TT_customDelays" = "启用自定义按键重复延迟.\n• 如果在KeySupport为true时将Auto视为Enabled,否则将Disabled禁用.\n• 如果启用,则使用值KeyInitialDelay和KeySubsequentDelay.\n• 如果已禁用Apple使用500ms(50)和50ms(5)的默认值.";
+
+/* LPe-Zp-8MC */
+"TT_KeyInitialDelay" = "0 (无初始延迟,立即重复)\n在Apple Event协议的OpenCore实施中配置初始键盘重复延迟, 以10ms为单位.\n\n不使用KeySupport时,此选项将按预期配置在按键重复之前的初始延迟. Apple OEM默认值是50(500ms).\n\n使用KeySupport时, 您可能会发现在正常速度键重复开始之前,您又得到了一个慢速键重复. 如果是这样,则您的初始按键重复延迟是由您的BIOS固件驱动的,并且无法被OC覆盖. 为了避免这种轻微的不良影响, 将KeyInitialDelay设置为0. 如果这样做, 避免对单个按键的多次响应, 您应该将KeySubsequentDelay至少设置为KeyForgetThreshold设置的值.";
+
+/* Op9-Rz-IAN */
+"TT_KeySubsequentDelay" = "在Apple Event协议的OpenCore实施中配置后续键盘重复延迟, 以10ms为单位.\n\n配置按键重复之间的间隔. Apple OEM默认值为5(50毫秒). 0是此选项的无效值.\n\n使用KeySupport时, 您可能会发现在正常速度键重复开始之前,您又得到了一个慢速键重复.如果是这样,请将KeyInitialDelay设置为0,然后将此选项至少设置为KeyForgetThreshold设置的值. (万一仍然经常或偶尔出现, 完成此操作后,双键响应, 继续将此值设置为比KeyForgetThreshold大一或两个 -使用有效的最低值.)";
+
+/* maU-fq-8kE */
+"TT_PointerSpeedDiv" = "在Apple Event协议的OpenCore实施中配置指针速度除数.\n\n配置除数以进行指针移动. Apple OEM默认值是1.0是该选项的无效值.";
+
+/* TSX-3o-2jP */
+"TT_PointerSpeedMul" = "在Apple Event协议的OpenCore实现中配置指针速度倍增器. \n\n配置加倍以进行指针移动. Apple OEM默认值为1.";
+
+/* Audio */
+/* YTE-Ba-80O */
+"TT_AudioDevice" = "用于音频功能支持的指定音频控制器的设备路径.\n通常,它包含内置的模拟音频控制器（HDEF）设备路径, 比如:PciRoot(0x0)/Pci(0x1b,0x0).\n可以在调试日志中找到音频控制器的列表:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n也可以在macOS中使用gfxutil -f HDEF命令获取或者用Hackintool工具查看音频设备地址.指定空的设备路径将导致使用第一个可用的音频控制器.";
+
+/* AZW-9D-hq6 */
+"TT_AudioCodec" = "用于音频支持的指定音频控制器上的编解码器地址.通常,它包含内置模拟音频控制器（HDEF）上的第一个音频编解码器地址.音频编解码器地址,例如2,可以在调试日志中找到：\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs) \nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n或者,可以从I/O注册表软件中的IOHDACodecDevice类获取此值,该类包含在IOHDACodecAddress字段中.";
+
+/* UrW-oc-0Oc */
+"TT_AudioOut" = "指定编解码器输出端口的索引,一般从0开始.\n\n找到正确端口的最快方法是将值从0暴力尝试到N-1,N是在日志里显示的输出端口索引数,比如日志里显示有3个输出,可以从0-2挨个试.";
+
+/* PF5-bc-9Z2 */
+"TT_MinimumVolume" = "最小音量从0到100.\n\n当计算出的音量级别小于MinimumVolume时,屏幕阅读器将使用此音量级别.如果计算出的音量小于MinimumVolume,则不会发出开机提示音.";
+
+/* rNr-97-fnH */
+"TT_VolumeAmplifier" = "系统音量到原始音量线性转换的倍数,范围是0到1000.\n\n\n注意：macOS中使用的转换不是线性的,但是非常接近,因此细微差别被忽略了.";
+
+/* jGE-sP-Rtr */
+"TT_SetupDelay" = "音频编解码器重新配置延迟(以微秒为单位).\n\n某些编解码器在重新配置后需要特定于供应商的延迟(例如,音量设置). 此选项使其可配置.通常,必要的延迟可能长达0.5秒.";
+
+/* 77y-Lm-hgl */
+"TT_playchime" = "在启动时播放提示音Duang.\n\n启用此设置可通过内置音频支持播放启动铃声.音量级别由MinimumVolume和VolumeAmplifier设置以及SystemAudioVolume NVRAM变量确定.设置值包括:\n• Auto — 当StartupMute NVRAM变量不存在或设置为00时启用提示音.\n• Enabled — 无条件启用铃声.\n• Disabled — 无条件禁用提示音.\n\n注意：Enabled可以与StartupMute NVRAM变量分开使用,以避免和BIOS播放启动铃声时发生冲突.";
+
+/* 2zI-kW-5dk */
+"TT_AudioSupport" = "通过连接到后端驱动程序来激活音频支持(需要添加AudioDxe.efi驱动程序).\n\n启用此设置会将音频播放从内置协议路由到位于音频控制器（AudioDevice）上的指定编解码器（AudioCodec）的专用音频端口（AudioOut).";
+
+/* 4mo-Ut-bYl */
+"TT_ResetTrafficClass" = "将HDA流量等级选择寄存器设置为TC0.\n\n仅当TCSEL寄存器配置为使用TC0流量等级时,AppleHDA kext才能正常运行. 有关此寄存器的更多详细信息,请参阅英特尔I/O控制器9(ICH9)数据表(或任何其他ICH数据表).\n\n注意:此选项独立于AudioSupport. 如果使用AppleALC,则最好改用AppleALC alctsel属性.";
+
+/* Drivers */
+/* 6zo-Jl-Ryl */
+"TT_uefi_driversTable" = "从OC/Drivers目录加载选定的驱动程序.\n注意一下填入的顺序\n根据硬件不同,可能需要不同的驱动程序.加载不兼容的驱动程序可能导致系统进入无法启动状态,甚至导致永久性固件损坏.一些已知的驱动程序包括:\n•ApfsDriverLoader-APFS文件系统引导驱动程序,在UEFI固件的可启动APFS容器中添加了对嵌入式APFS驱动程序的支持(OC现在已经内置).\n•FwRuntimeServices-可提高OpenCore和Lilu的安全性通过支持只读和只读NVRAM变量(现已改名Openruntime).有些怪癖（例如RequestBootVarRouting）需要此驱动程序才能正常运行.由于是runtime实时驱动程序的性质,即与目标操作系统并行运行,因此无法在OpenCore本身中实现,而是与OpenCore发行版捆绑在一起.\n•EnhancedFatDxe-FatPkg中的FAT文件系统驱动程序.此驱动程序已嵌入所有UEFI固件中,并且无法从OpenCore使用.众所周知,多种固件的FAT支持实现中都有错误,这会导致在尝试写操作时损坏文件系统.如果在引导过程中需要写入EFI分区,则可能需要将此驱动程序嵌入固件中.\n•NvmExpressDxe-来自MdeModulePkg的NVMe支持驱动程序.从Broadwell一代开始的大多数固件中都包含此驱动程序.对于Haswell及更早版本,如果安装了NVMe SSD驱动器,则将其更好地嵌入到固件中.\n•UsbKbDxe-USB键盘驱动程序在自定义USB键盘驱动程序实现的基础上增加了对AppleKeyMapAggregator协议的支持.这是内置KeySupport的替代方法.\n•VBoxHfs-具有支持HFS文件系统的驱动程序.此驱动程序可以替代Apple固件中常见的封闭源HFSPlus驱动程序.虽然功能齐全,但是大约速度慢3倍,并且尚未接受安全审核.\n•XhciDxe-MdeModulePkg中的XHCI USB控制器支持驱动程序.从Sandy Bridge代开始的大多数固件中都包含此驱动程序.对于较早的固件或旧系统,它可以用于支持外部USB 3.0 PCI卡\n•NdkBootPicker-标准OC第三方图形界面模块";
+
+/* 9f0-xd-rhT */
+"TT_ConnectDrivers" = "驱动程序加载后执行UEFI控制器连接.此选项对于加载文件系统驱动程序很有用,该文件系统驱动程序通常遵循UEFI驱动程序模型,并且可能无法自行启动.虽然有效,但此选项对于执行自动连接的驱动程序可能不是必需的,并且可能会稍微减慢启动速度.";
+
+/* Input */
+/* xNH-9V-3kd */
+"TT_KeyForgetThreshold" = "按住按键后每个键之间的时间间隔 (单位: 毫秒)\n此选项允许根据您的平台设置此超时. 在大多数平台上均可使用的建议值为5毫秒. 作为参考,在VMware上按住一个键大约每2毫秒重复一次,而APTIO V的相同值是3-4毫秒. 因此,可以在较快的平台上设置稍低的值,而在较慢的平台上设置稍高的值,以提高响应速度.";
+
+/* TTL-Rn-Avg */
+"TT_KeySupportMode" = "Auto:键值转换协议模式\nV1: UEFI 旧版输入协议\nV2: UEFI 新输入协议\nAMI: APTIO 输入协议";
+
+/* 3mi-sh-qNa */
+"TT_PointerSupportMode" = "一般留空\n它使用了某些Z87和Z97 ASUS板上可用的专用协议.";
+
+/* fda-QM-Vl4 */
+"TT_TimerResolution" = "固件时钟刷新的频率 (单位: 100纳秒)\n华硕主板为自己的界面使用 60000\n苹果使用 100000";
+
+/* rxJ-TB-rJc */
+"TT_KeyFiltering" = "启用键盘输入的健全性检查.";
+
+/* 4fK-xq-9AN */
+"TT_KeySupport" = "开启 OC 的内置键盘支持,部分笔记本电脑在启动菜单界面无法使用键盘,请选择它!\n如果使用 AppleUsbKbdxe.efi 请设置为 NO";
+
+/* EIc-ff-Thn */
+"TT_KeySwap" = "交换 Command 和 Option 键,一般选 NO";
+
+/* dzp-p6-AHb */
+"TT_PointerSupport" = "如果你是华硕的z87或者z97,你需要打开PointerSupport这个选项.";
+
+/* Output */
+/* lye-vu-fi3 */
+"TT_ConsoleMode" = "设置为空字符串不更改控制台模式.设置为Max以尝试使用最大可用控制台模式.\n大多数情况下都选择留空!";
+
+/* mlh-hW-OqT */
+"TT_textrender" = "为通过标准控制台输出的文本选择渲染器.\n目前支持两个渲染器: Builtin 和 System. System渲染器使用主板固件自带文字渲染进行文本渲染. Builtin则绕过固件服务,使用 OpenCore 内置文字渲染执行文本渲染. 不同的渲染器支持不同的选项集.建议使用内置渲染器,因为它支持HiDPI模式并使用全屏分辨率.\n选项内容是文本渲染器和渲染模式的组合:\n• BuiltinGraphics — 使用 OpenCore 内置文字渲染的图形模式, 并同时启用 OpenCore 自带的控制台管理, 支持 HIDPI 和全屏范围显示, 通常效果胜于下面的选项.\n• SystemGraphics — 使用主板固件自带文字渲染的图形模式, 并同时启用 OpenCore 自带的控制台管理.\n• SystemText — 使用主板固件自带文字渲染的文字模式, 并同时启用 OpenCore 自带的控制台管理.\n• SystemGeneric — 使用主板固件自带文字渲染的文字模式和自带的控制台管理.\nBuiltinGraphics的使用通常很简单.对于大多数平台,必须启用ProvideConsoleGop,将分辨率选项设置为Max,并选择配置Scale.\n系统协议的使用更加复杂.通常,首选设置是SystemGraphics或SystemText.启用ProvideConsoleGop,将“分辨率”设置为“最大”,启用“ReplaceTabWithSpace”在几乎所有平台上都很有用. SanitiseClearScreen,IgnoreTextInGraphics和ClearScreenOnModeSwitch更具体,它们的使用取决于固件.\n\n注意:某些Mac机型,比如MacPro5,1,可能在较新的GPU上的控制台输出已损坏,因此只有BuiltinGraphics可以为它们工作.";
+
+/* hVw-xH-z40 */
+"TT_Resolution" = "设置控制台输出屏幕分辨率.\n•设置为空不更改屏幕分辨率.\n•设置为Max以尝试使用最大的可用屏幕分辨率.\n注意:如果控制台句柄没有GOP协议,这将失败,可以将ProvideConsoleGop设置为true进行添加.";
+
+"TT_ClearScreenOnModeSwitch" = "图形模式切换到文本模式时,某些固件仅清除屏幕的一部分,使先前绘制的图像片段可见. 此选项在切换到文本模式之前用黑色填充整个图形屏幕.\n注意:此选项仅适用于系统渲染器才能起作用.";
+
+"TT_DirectGopRendering" = "使用内置的图形输出协议渲染器作为控制台.\n在某些固件上,这可能会提供更好的性能,甚至修复渲染问题,但是通常建议除非有明显的好处,否则不要使用此选项.";
+
+"TT_IgnoreTextInGraphics" = "修复不用 -v 开机时在苹果标志上覆盖有输出日志的问题.";
+
+"TT_ProvideConsoleGop" = "macOS 引导加载程序要求 GOP (图形输出协议) 存在于控制台句柄上\n大部分的笔记本都不提供 GOP, 台式机的独立显卡可以单独刷入 GOP\n如果选择了啰嗦模式启动之后不出现Verbose详细信息,请启用此项\n开启此选项能最大可能保证 OpenCore UI 和 苹果标志 以正确分辨率显示";
+
+"TT_ReconnectOnResChange" = "有些固件在 GOP 分辨率改变后要求重新连接控制器才能输出文本, 开启这个选项会导致从 UEFI Shell 中启动 OpenCore 时直接黑屏, 尽量避免开启.\n如果你遇到开机直到登录界面之前一直是黑屏,请试试选择 YES.";
+
+"TT_ReplaceTabWithSpace" = "某些固件无法打印制表符,甚至不能打印制表符之后的所有内容,从而导致困难或无法使用UEFI Shell内置的文本编辑器来编辑属性列表和其他文档. 此选项使控制台输出空间代替制表符.\n注意:此选项仅适用于系统渲染器才能起作用.";
+
+"TT_SanitiseClearScreen" = "当使用大显示（例如2K或4K）时,某些固件会将屏幕分辨率重置为故障安全值（如1024x768）,以清除屏幕内容.此选项尝试应用变通方法.\n注意:需要将TextRenderer设置为系统渲染模式才能使其生效.在所有已知的受影响系统上,必须将ConsoleMode设置为空字符串才能使其生效.";
+
+"TT_UgaPassThrough" = "在GOP协议的基础上提供UGA协议实例.\n\n某些固件未实现旧版UGA协议,但较早的EFI应用程序（如10.4版以上的EfiBoot）可能需要屏幕输出.";
+
+"TT_ForceResolution" = "在默认情况下无法使用所需分辨率的情况下,强制设置分辨率\n如旧版Intel GMA和第一代Intel HD Graphics(Ironlake/Arrandale).将分辨率设置为 Max会尝试从连接的显示器的EDID中获取最大的可用分辨率.";
+
+"TT_GopPassThrough" = "驱动程序加载后执行UEFI控制器连接.此选项对于加载文件系统驱动程序很有用,该文件系统驱动程序通常遵循UEFI驱动程序模型,并且可能无法自行启动.虽然有效,但此选项对于执行自动连接的驱动程序可能不是必需的,并且可能会稍微减慢启动速度.";
+
+/* ProtocolOverrides */
+"TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra（10.13）之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
+
+"TT_AppleBootPolicy" = "用于确保虚拟机或旧白苹果上兼容 APFS,一般选择NO.";
+
+"TT_AppleDebugLog" = "重新安装具有内置版本的Apple Debug Log协议.";
+
+"TT_AppleFramebufferInfo" = "重新安装具有内置版本的Apple Framebuffer Info协议. 这可用于覆盖VM或旧版Mac上的帧缓冲区信息,以提高与旧版EfiBoot的兼容性,例如macOS 10.4中的版本.";
+
+"TT_AppleImageConversion" = "重建apple图标,一般选择NO.";
+
+"TT_AppleImg4Verification" = "重新安装具有内置版本的Apple IMG4 Verification协议. 此协议用于验证Apple Secure Boot使用的im4m清单文件.";
+
+"TT_AppleKeyMap" = "重建苹果功能键,选择NO.";
+
+"TT_AppleRtcRam" = "重新安装具有内置版本的Apple RTC RAM协议.\n\n注意：Apple RTC RAM协议的内置版本可能会过滤掉选择RTC内存地址的I/O尝试. \n地址列表可以在4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102：rtc-blacklist变量中指定为数据数组.";
+
+"TT_AppleSecureBoot" = "重新安装具有内置版本的Apple Secure Boot协议.";
+
+"TT_AppleSmcIo" = "最新版本已经内置VirtualSmc.efi协议.\n使用此选项可以删除drivers目录下的VirtualSmc.efi文件.\n但是,如果使用FakeSMC内核扩展,则可能需要手动添加NVRAM密钥变量.";
+
+"TT_AppleUserInterfaceTheme" = "使用内置版本重新安装Apple用户界面主题协议.";
+
+"TT_DataHub" = "重建datahub,这里选NO.";
+
+"TT_DeviceProperties" = "一般选NO\n确保在 VM 或旧白苹果上完全兼容.";
+
+"TT_FirmwareVolume" = "一般选NO.\n修复 Filevault 的 UI 问题, 设置为 YES 可以获得更好地兼容 FileVault";
+
+"TT_HashServices" = "一般选NO.\n修复运行FileVault时鼠标光标大小不正确的问题, 设置为 YES 可以更好地兼容FileVault";
+
+"TT_OSInfo" = "强制使用内置版本重新安装OS Info协议.该协议通常用于从macOS引导程序,固件或其他应用程序接收通知\n暂时没什么用,选择NO.";
+
+"TT_UnicodeCollation" = "一般选 NO.\n一些较旧的固件破坏了 Unicode 排序规则, 设置为 YES 可以修复这些系统上 UEFI Shell 的兼容性 (通常为用于 IvyBridge 或更旧的设备)";
+
+/* ReservedMemory */
+/* hs4-gm-1Ct */
+"TT_uefi_reservedMemoryTable" = "1. 地址\n保留内存区域的起始地址,应将其分配为保留地址,以有效地标记操作系统无法访问的这种类型的内存.\n此处写入的地址必须是内存映射的一部分,具有EfiConventionalMemory类型,并且是页面对齐的(4 KBs).\n2. 注释\n用于为条目提供参考的任意ASCII字符串.\n3. 大小\n保留内存区域的大小必须是页面对齐的（4 KB）.\n4. 启用\n除非设置为true,否则不会保留该区域.";
+
+/* Quirks */
+/* yXm-Kd-A6O */
+"TT_ExitBootServicesDelay" = "可以绕过选定的APTIO IV固件,即ASUS Z87-Pro上出现的\"Still waiting for root device\" 的提示信息,特别是在使用FileVault 2时.由于某种原因,导致无法从macOS访问SATA控制器.应该在将来找到更好的方法.如果使用此,则需要设置3-5秒才可以.\n一般保持默认值 0,不要随便更改!";
+
+/* 0un-PF-SFE */
+"TT_TscSyncTimeout" = "尝试执行具有指定超时的TSC同步.\n该怪癖的主要目的是在运行调试XNU内核时在某些服务器和便携式计算机模型上启用早期引导TSC同步. 对于调试内核,在任何kext可能导致所有其他解决方案出现问题之前,TSC必须在内核之间保持同步.超时以微秒为单位指定,并取决于平台上存在的内核数量,建议的起始值为500000.\n这是一个实验性的功能,只能用于上述问题. 在所有其他情况下,可能会使操作系统不稳定,因此不建议这样做.在其他情况下,推荐的解决方案是安装内核驱动程序,如VoodooTSCSync,TSAdjustReset或CpuTscSync.\n\n注意：该问题无法替换内核驱动程序的原因是,它无法在ACPI S3模式（睡眠唤醒）下运行,并且因为UEFI固件提供了非常有限的多核支持,从而阻止了MSR寄存器的精确更新.";
+
+"TT_ActivateHpetSupport" = "激活HPET支持.\n\n诸如ICH6之类的旧板可能并不总是在固件首选项中具有HPET设置,此选项尝试强制启用它.";
+
+"TT_DisableSecurityPolicy" = "禁用平台安全策略.\n\n注意：此设置禁用固件的各种安全功能, 以达到任何类型的安全启动的目的.如果您使用UEFI安全启动,请不要启用它.";
+
+"TT_IgnoreInvalidFlexRatio" = "某些类型的固件（例如APTIO IV）可能在MSR_FLEX_RATIO（0x194）MSR寄存器中包含无效值. 这些值可能会导致Intel平台上的macOS引导失败.\n\n注意：虽然该选件预计不会损害不受影响的固件, 仅在特别需要时才建议使用它.\n如果你没有在bios中解锁CFG,一定要选YES";
+
+"TT_ReleaseUsbOwnership" = "大部分的主板都有自动释放USB所有权的功能,我们选NO.如果你开机键盘鼠标卡死了,或者USB失灵,试试选Yes.";
+
+"TT_RequestBootVarRouting" = "启用此项以便能够在与 macOS 引导项设计上不兼容的固件中可靠地使用[启动磁盘]设置.\n\n提醒:一些主板如果启用此项,在使用resetNVRAM后会导致黑屏无法进入BIOS的硬件损坏,必须禁用此项和设置Misc-->Security-->BootProtect为None!!";
+
+"TT_UnblockFsConnect" = "惠普笔记本在 OpenCore 引导界面没有引导项时设置为 YES";
+
+"TT_ForgeUefiSupport" = "在EFI 1.x固件上实现部分UEFI 2.x支持.\n\n此设置允许在具有较旧EFI 1.x固件（例如MacPro5,1）的硬件上运行某些为UEFI 2.x固件编写的软件（例如NVIDIA GOP Option ROM）..";
+
+"TT_ReloadOptionRoms" = "查询PCI设备并重新加载其Option ROM(如果有).\n\n例如,通过ForgeUefiSupport升级固件版本后,此选项允许在较旧的Mac上重新加载NVIDIA GOP Option ROM.";
+
+"TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.";

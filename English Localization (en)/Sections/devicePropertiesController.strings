@@ -1,7 +1,4 @@
 
-/* Class = "NSView"; ibShadowedToolTip = "2. Delete\nType: plist dict\nDescription: Removes device properties from a map (plist dict) of device paths to an array (plist array) of variable names in plist string format.\n\nNote: Currently, existing properties may only exist on firmware with DeviceProperties drivers (e.g. Apple).\nHence, there is typically no reason to delete variables unless a new driver has been installed."; ObjectID = "1eh-jH-TX2"; */
-"1eh-jH-TX2.ibShadowedToolTip" = "2. Delete\nType: plist dict\nDescription: Removes device properties from a map (plist dict) of device paths to an array (plist array) of variable names in plist string format.\n\nNote: Currently, existing properties may only exist on firmware with DeviceProperties drivers (e.g. Apple).\nHence, there is typically no reason to delete variables unless a new driver has been installed.";
-
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "6on-lJ-yiP"; */
 "6on-lJ-yiP.headerCell.title" = "Value";
 
@@ -58,9 +55,6 @@
 
 /* Class = "NSTabViewItem"; label = "Platform IDs"; ObjectID = "n7N-Fd-plx"; */
 "n7N-Fd-plx.label" = "Platform IDs";
-
-/* Class = "NSView"; ibShadowedToolTip = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of device paths to a map (plist dict) of variable names and their values in plist multidata format. \n\nNote 1: Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)).\n\nNote 2: Existing properties will not be changed unless deleted in the DeviceProperties Delete section."; ObjectID = "ogK-XX-Zb9"; */
-"ogK-XX-Zb9.ibShadowedToolTip" = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of device paths to a map (plist dict) of variable names and their values in plist multidata format. \n\nNote 1: Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)).\n\nNote 2: Existing properties will not be changed unless deleted in the DeviceProperties Delete section.";
 
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "pxh-MR-ISe"; */
 "pxh-MR-ISe.headerCell.title" = "Key";
