@@ -519,6 +519,9 @@
 /* advancedUser */
 "Item %lu" = "아이템 %lu";
 
+/* advancedUser */
+"New item" = "New item";
+
 /* outlineMode */
 "Cut" = "잘라내기";
 

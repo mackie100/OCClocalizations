@@ -519,6 +519,9 @@
 /* advancedUser */
 "Item %lu" = "Элемент %lu";
 
+/* advancedUser */
+"New item" = "New item";
+
 /* outlineMode */
 "Cut" = "Вырезать";
 

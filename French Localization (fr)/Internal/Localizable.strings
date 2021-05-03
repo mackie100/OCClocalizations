@@ -519,6 +519,9 @@
 /* advancedUser */
 "Item %lu" = "Articles %lu";
 
+/* advancedUser */
+"New item" = "New item";
+
 /* outlineMode */
 "Cut" = "Couper";
 

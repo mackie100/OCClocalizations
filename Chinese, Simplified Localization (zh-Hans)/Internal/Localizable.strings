@@ -519,6 +519,9 @@
 /* advancedUser */
 "Item %lu" = "项目 %lu";
 
+/* advancedUser */
+"New item" = "New item";
+
 /* outlineMode */
 "Cut" = "剪切";
 

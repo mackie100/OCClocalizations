@@ -19,7 +19,7 @@
 	<key>SystemSerialNumber</key>
 	<string>C02CL0YYML7H</string>
 	<key>SystemSKUNumber</key>
-	<string>System SKU#</string>
+	<string></string>
 	<key>SystemFamily</key>
 	<string>MacBook Pro</string>
 	<key>BoardManufacturer</key>
@@ -29,9 +29,9 @@
 	<key>BoardVersion</key>
 	<string>MacBookPro16,2</string>
 	<key>BoardRevision</key>
-	<string>0x3</string>
+	<string>0x6</string>
 	<key>BoardAssetTag</key>
-	<string>Base Board Asset Tag</string>
+	<string></string>
 	<key>BoardType</key>
 	<string>0xA</string>
 	<key>BoardLocationInChassis</key>
@@ -43,22 +43,22 @@
 	<key>ChassisVersion</key>
 	<string>Mac-5F9802EFE386AA28</string>
 	<key>ChassisAssetTag</key>
-	<string>Asset Tag#</string>
+	<string></string>
 	<key>PlatformFeature</key>
-	<string>0x32</string>
+	<string>0x3A</string>
 	<key>FirmwareFeatures</key>
-	<string>0xFDAFF066</string>
+	<string>0xFFAFF06E</string>
 	<key>FirmwareFeaturesMask</key>
 	<string>0xFFFFFF7F</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000000FDAFF066</string>
+	<string>0x00000000FFAFF06E</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
 	<string>0x00000000FFFFFF7F</string>
 	<key>MemoryFormFactor</key>
 	<string>0xD</string>
 	<key>ProcessorType</key>
 	<array>
-		<string>0x0701</string>
+		<string>0x060B</string>
 	</array>
 	<key>ProcessorBusSpeed</key>
 	<array>
@@ -89,7 +89,7 @@
 	</array>
 	<key>AppleBoardCode</key>
 	<array>
-		<string>0000</string>
+		<string>P8PG</string>
 	</array>
 	<key>AppleModelYear</key>
 	<array>
