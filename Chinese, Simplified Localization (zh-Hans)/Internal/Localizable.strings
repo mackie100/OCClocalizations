@@ -1438,10 +1438,7 @@
 "TT_appleEvent" = "确定是否使用OC内置或OEM Apple Event协议.\n\n此选项确定是否使用Apple的OEM Apple事件协议(如果有),或者是否使用了OpenCore的反向工程和更新的重新实现. 通常,应该首选OpenCore的重新实现, 因为它包含更新,例如明显改善了鼠标光标的精细移动和可配置的按键重复延迟.\n• Auto — 自动选择实现. 由于用于实现快速启动时间的优化, 实际上,这意味着将找到并使用OpenCore重新实现,除非从Apple的启动选择器(如果有)中明确选择并启动了OpenCore(不仅仅是自动启动).\n• Builtin — 使用OpenCore更新的Apple Event协议重新实现(推荐).\n• OEM — 假设在驱动程序连接时可以使用Apple的协议. 这样一来,Apple的实施就可以在Apple系统上可靠地使用. 否则将不支持键盘或鼠标.";
 
 /* xpZ-sA-YNw */
-"TT_CustomDelays_checkbox" = "使用Apple Event协议的OpenCore实施时启用自定义按键重复延迟. 使用OEM Apple实施时无效 (请参阅AppleEvent设置).\n\n• true — 使用KeyInitialDelay和KeySubsequentDelay的值.\n• false — 苹果使用(50)500ms和(5)50ms的默认值.";
-
-/* Kmw-jC-ANj */
-"TT_customDelays" = "启用自定义按键重复延迟.\n• 如果在KeySupport为true时将Auto视为Enabled,否则将Disabled禁用.\n• 如果启用,则使用值KeyInitialDelay和KeySubsequentDelay.\n• 如果已禁用Apple使用500ms(50)和50ms(5)的默认值.";
+"TT_CustomDelays" = "使用Apple Event协议的OpenCore实施时启用自定义按键重复延迟. 使用OEM Apple实施时无效 (请参阅AppleEvent设置).\n\n• true — 使用KeyInitialDelay和KeySubsequentDelay的值.\n• false — 苹果使用(50)500ms和(5)50ms的默认值.";
 
 /* LPe-Zp-8MC */
 "TT_KeyInitialDelay" = "0 (无初始延迟,立即重复)\n在Apple Event协议的OpenCore实施中配置初始键盘重复延迟, 以10ms为单位.\n\n不使用KeySupport时,此选项将按预期配置在按键重复之前的初始延迟. Apple OEM默认值是50(500ms).\n\n使用KeySupport时, 您可能会发现在正常速度键重复开始之前,您又得到了一个慢速键重复. 如果是这样,则您的初始按键重复延迟是由您的BIOS固件驱动的,并且无法被OC覆盖. 为了避免这种轻微的不良影响, 将KeyInitialDelay设置为0. 如果这样做, 避免对单个按键的多次响应, 您应该将KeySubsequentDelay至少设置为KeyForgetThreshold设置的值.";
