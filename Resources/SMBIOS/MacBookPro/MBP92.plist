@@ -47,13 +47,13 @@
 	<key>PlatformFeature</key>
 	<string></string>
 	<key>FirmwareFeatures</key>
-	<string>0xC00DE137</string>
+	<string>0xC10DF577</string>
 	<key>FirmwareFeaturesMask</key>
-	<string>0xFF1FFF3F</string>
+	<string>0xFF1FFF7F</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000000C00DE137</string>
+	<string>0x00000000C10DF577</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
-	<string>0x00000000FF1FFF3F</string>
+	<string>0x00000000FF1FFF7F</string>
 	<key>MemoryFormFactor</key>
 	<string>0xD</string>
 	<key>ProcessorType</key>
