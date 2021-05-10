@@ -561,6 +561,9 @@
 /* outlineMode */
 "Add Item" = "添加";
 
+/* outlineMode */
+"Replace" = "Replace";
+
 /* miscController */
 "Please make sure to select a file from a boot efi path." = "请确保从引导efi路径中选择一个文件.";
 
@@ -1548,6 +1551,8 @@
 "TT_AppleBootPolicy" = "用于确保虚拟机或旧白苹果上兼容 APFS,一般选择NO.";
 
 "TT_AppleDebugLog" = "重新安装具有内置版本的Apple Debug Log协议.";
+
+"TT_AppleEg2Info" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple EFI Graphics 2 protocol with a builtin version.\n\nNote: This protocol allows newer EfiBoot versions (at least 10.15) to expose screen rotation to macOS. Refer to forceDisplayRotationInEFI variable description on how to set screen rotation angle.";
 
 "TT_AppleFramebufferInfo" = "重新安装具有内置版本的Apple Framebuffer Info协议. 这可用于覆盖VM或旧版Mac上的帧缓冲区信息,以提高与旧版EfiBoot的兼容性,例如macOS 10.4中的版本.";
 
