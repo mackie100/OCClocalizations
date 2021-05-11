@@ -564,6 +564,15 @@
 /* outlineMode */
 "Replace" = "替换";
 
+/* outlineMode */
+"Key" = "键";
+
+/* outlineMode */
+"Type" = "数据类型";
+
+/* outlineMode */
+"Value" = "值";
+
 /* miscController */
 "Please make sure to select a file from a boot efi path." = "请确保从引导efi路径中选择一个文件.";
 

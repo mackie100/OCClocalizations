@@ -564,6 +564,15 @@
 /* outlineMode */
 "Replace" = "Replace";
 
+/* outlineMode */
+"Key" = "Clé";
+
+/* outlineMode */
+"Type" = "Type";
+
+/* outlineMode */
+"Value" = "Valeur";
+
 /* miscController */
 "Please make sure to select a file from a boot efi path." = "Veuillez vous assurer de sélectionner un fichier à partir d'un chemin efi de démarrage.";
 

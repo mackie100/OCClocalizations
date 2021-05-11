@@ -564,6 +564,15 @@
 /* outlineMode */
 "Replace" = "Replace";
 
+/* outlineMode */
+"Key" = "키";
+
+/* outlineMode */
+"Type" = "타입";
+
+/* outlineMode */
+"Value" = "값";
+
 /* miscController */
 "Please make sure to select a file from a boot efi path." = "boot efi 경로해서 파일을 선택해주세요.";
 
