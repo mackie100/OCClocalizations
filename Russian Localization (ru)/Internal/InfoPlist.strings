@@ -1,7 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-/* Bundle name */
-"CFBundleName" = "OpenCore Configurator";
-
-/* Copyright (human-readable) */
-"NSHumanReadableCopyright" = "Copyright © 2019 mackie100. All rights reserved.";
