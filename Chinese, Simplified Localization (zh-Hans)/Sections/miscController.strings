@@ -309,7 +309,7 @@
 "i2m-65-2vq.title" = "允许扫描CD/DVD设备";
 
 /* Class = "NSTextFieldCell"; title = "LauncherOption"; ObjectID = "i5B-oK-z1D"; */
-"i5B-oK-z1D.title" = "LauncherOption";
+"i5B-oK-z1D.title" = "LauncherOption(启动器选项)";
 
 /* Class = "NSButtonCell"; title = "Download/Update tools"; ObjectID = "i6P-Lb-eX2"; */
 "i6P-Lb-eX2.title" = "下载/更新 EFI工具";
@@ -420,7 +420,7 @@
 "yaU-Lw-vco.title" = "ApplePanic";
 
 /* Class = "NSTextFieldCell"; title = "LauncherPath"; ObjectID = "ykx-r5-I09"; */
-"ykx-r5-I09.title" = "LauncherPath";
+"ykx-r5-I09.title" = "LauncherPath(启动器路径)";
 
 /* Class = "NSButtonCell"; title = "Expose printable booter path as an UEFI variable."; ObjectID = "z6D-gM-UDa"; */
 "z6D-gM-UDa.title" = "将可打印的引导程序路径公开为UEFI变量.";
