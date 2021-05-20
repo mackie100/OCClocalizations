@@ -1032,6 +1032,8 @@
 /* 6Mq-wE-cHt */
 "TT_PowerTimeoutKernelPanic" = "修复 macOS Catalina 中由于设备电源状态变化超时而导致的内核崩溃.\n当你遇到睡眠不能唤醒,只有重启后才能睡眠唤醒,请试试选择YES.";
 
+"TT_ProvideCurrentCpuInfo" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8\nDescription: Provides current CPU info to the kernel.\n\nThis quirk currently provides the correct TSC and FSB values to the kernel, as well as disables CPU topology validation.\n\nNote: These patches currently target Microsoft Hyper-V and may need to be extended for other purposes.";
+
 /* yhV-cY-frg */
 "TT_ThirdPartyDrives" = "为 SSD 启用 TRIM 指令, NVMe SSD 会自动被 macOS 加载因此不需要, SATA SSD 可以在终端执行 sudo trimforce enable 开启.\n同时修复 macOS 10.15 下非苹果原厂 SSD 无法使用硬盘休眠 (hibernatemode 25).";
 

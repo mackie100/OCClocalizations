@@ -17,6 +17,9 @@
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "2dj-hB-QBF"; */
 "2dj-hB-QBF.title" = "Unselect All";
 
+/* Class = "NSTableColumn"; headerCell.title = "Flavour"; ObjectID = "390-oq-BkL"; */
+"390-oq-BkL.headerCell.title" = "Flavour";
+
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "3K9-EU-jse"; */
 "3K9-EU-jse.title" = "Select All";
 
@@ -142,6 +145,9 @@
 
 /* Class = "NSTextFieldCell"; title = "Hibernate Mode"; ObjectID = "TmR-t7-bmq"; */
 "TmR-t7-bmq.title" = "Hibernate Mode";
+
+/* Class = "NSButtonCell"; title = "Provides flexible boot entry content description"; ObjectID = "Uy3-8a-yvD"; */
+"Uy3-8a-yvD.title" = "Provides flexible boot entry content description";
 
 /* Class = "NSButtonCell"; title = "Enable logging to file"; ObjectID = "Uz7-yL-WDQ"; */
 "Uz7-yL-WDQ.title" = "Enable logging to file";
@@ -316,6 +322,9 @@
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_HFS"; ObjectID = "zCH-tB-ca6"; */
 "zCH-tB-ca6.title" = "OC_SCAN_ALLOW_FS_HFS";
+
+/* Class = "NSTableColumn"; headerCell.title = "Flavour"; ObjectID = "zSZ-kM-AsF"; */
+"zSZ-kM-AsF.headerCell.title" = "Flavour";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SASEX"; ObjectID = "zj4-Hs-Xjk"; */
 "zj4-Hs-Xjk.title" = "OC_SCAN_ALLOW_DEVICE_SASEX";
