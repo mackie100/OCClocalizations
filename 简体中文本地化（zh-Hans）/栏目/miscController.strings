@@ -18,7 +18,7 @@
 "2dj-hB-QBF.title" = "取消全选";
 
 /* Class = "NSTableColumn"; headerCell.title = "Flavour"; ObjectID = "390-oq-BkL"; */
-"390-oq-BkL.headerCell.title" = "Flavour";
+"390-oq-BkL.headerCell.title" = "Flavour(风格)";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "3K9-EU-jse"; */
 "3K9-EU-jse.title" = "全选";
