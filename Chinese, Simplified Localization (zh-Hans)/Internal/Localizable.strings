@@ -1032,7 +1032,7 @@
 /* 6Mq-wE-cHt */
 "TT_PowerTimeoutKernelPanic" = "修复 macOS Catalina 中由于设备电源状态变化超时而导致的内核崩溃.\n当你遇到睡眠不能唤醒,只有重启后才能睡眠唤醒,请试试选择YES.";
 
-"TT_ProvideCurrentCpuInfo" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8\nDescription: Provides current CPU info to the kernel.\n\nThis quirk currently provides the correct TSC and FSB values to the kernel, as well as disables CPU topology validation.\n\nNote: These patches currently target Microsoft Hyper-V and may need to be extended for other purposes.";
+"TT_ProvideCurrentCpuInfo" = "要求: 10.8\n向内核提供当前的CPU信息.\n\n目前，该问题为内核提供了正确的TSC和FSB值, 以及禁用CPU拓扑验证.\n\n注意：这些修补程序当前针对Microsoft Hyper-V，可能需要扩展以用于其他目的。.";
 
 /* yhV-cY-frg */
 "TT_ThirdPartyDrives" = "为 SSD 启用 TRIM 指令, NVMe SSD 会自动被 macOS 加载因此不需要, SATA SSD 可以在终端执行 sudo trimforce enable 开启.\n同时修复 macOS 10.15 下非苹果原厂 SSD 无法使用硬盘休眠 (hibernatemode 25).";
@@ -1064,7 +1064,7 @@
 "TT_hibernatemode" = "检测休眠模式.我们的机器一般都不支持休眠,选none.如果你的主板支持原生nvram、并想测试休眠,可以考虑填auto.\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭!";
 
 /* M7r-QM-SNm */
-"TT_PickerVariant" = "For Release configuration (Opencore up to 0.6.9 version)\n选择用于OC引导菜单的指定图标主题.\n\n支持以下值:\n• Auto — 根据默认背景颜色自动选择一组图标.\n• Default — (默认主题（所有图标文件无前缀名称,比如Apple.icns、Background.icns).\n• Old — Old主题(此为官方样板主题,所有图标文件名前缀为Old,比如OldApple.icns、OldBackground.icns).\n• Modern — Modern主题(所有图标文件名前缀为Modern,比如ModernApple.icns、ModernBackground.icns).\n• 其他值 — 可以自定义自己的主题风格,所有图标文件名加自己的前缀,比如MyApple.icns、MyBackground.icns,那么自定义的主题值就填写My.\n\n注意事项:\n选择任意一个主题,包括自定义主题的图标文件路径必须在EFI/OC/Resources/Image下有对应格式的文件名图标,对于0.6.6以上版本,必须有包含Left.icns和Right.icns的图标文件名,否则会变为文本模式菜单";
+"TT_PickerVariant" = "对于发行版配置(Opencore最高为0.6.9版本)\n选择用于OC引导菜单的指定图标主题.\n\n支持以下值:\n• Auto — 根据默认背景颜色自动选择一组图标.\n• Default — (默认主题（所有图标文件无前缀名称,比如Apple.icns、Background.icns).\n• Old — Old主题(此为官方样板主题,所有图标文件名前缀为Old,比如OldApple.icns、OldBackground.icns).\n• Modern — Modern主题(所有图标文件名前缀为Modern,比如ModernApple.icns、ModernBackground.icns).\n• 其他值 — 可以自定义自己的主题风格,所有图标文件名加自己的前缀,比如MyApple.icns、MyBackground.icns,那么自定义的主题值就填写My.\n\n注意事项:\n选择任意一个主题,包括自定义主题的图标文件路径必须在EFI/OC/Resources/Image下有对应格式的文件名图标,对于0.6.6以上版本,必须有包含Left.icns和Right.icns的图标文件名,否则会变为文本模式菜单";
 
 /* PDS-bo-Qx8 */
 "TT_PickerAudioAssist" = "在启动选择器中启用屏幕语音助理功能.\n也可以使用Command + F5组合键在OpenCore引导选择器和macOS引导加载器FileVault 2登录窗口中切换屏幕语音助理功能.\ n注意：屏幕语音辅助功能需要加载AudioDxe.ef音频驱动.";
