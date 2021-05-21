@@ -147,7 +147,7 @@
 "TmR-t7-bmq.title" = "Hibernate Mode\n休眠模式";
 
 /* Class = "NSButtonCell"; title = "Provides flexible boot entry content description"; ObjectID = "Uy3-8a-yvD"; */
-"Uy3-8a-yvD.title" = "Provides flexible boot entry content description";
+"Uy3-8a-yvD.title" = "提供灵活的启动项内容描述";
 
 /* Class = "NSButtonCell"; title = "Enable logging to file"; ObjectID = "Uz7-yL-WDQ"; */
 "Uz7-yL-WDQ.title" = "启用记录到文件";
@@ -324,7 +324,7 @@
 "zCH-tB-ca6.title" = "允许扫描HFS文件系统";
 
 /* Class = "NSTableColumn"; headerCell.title = "Flavour"; ObjectID = "zSZ-kM-AsF"; */
-"zSZ-kM-AsF.headerCell.title" = "Flavour";
+"zSZ-kM-AsF.headerCell.title" = "Flavour(风格)";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SASEX"; ObjectID = "zj4-Hs-Xjk"; */
 "zj4-Hs-Xjk.title" = "允许扫描SAS和Mac NVMe设备";
