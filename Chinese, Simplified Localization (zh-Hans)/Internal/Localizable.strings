@@ -1064,7 +1064,7 @@
 "TT_hibernatemode" = "检测休眠模式.我们的机器一般都不支持休眠,选none.如果你的主板支持原生nvram、并想测试休眠,可以考虑填auto.\n与系统内的休眠模式配合, 引导进系统会还原休眠前的状态, 这个可能功能会影响SSD寿命, 建议关闭!";
 
 /* M7r-QM-SNm */
-"TT_PickerVariant" = "对于发行版配置(Opencore最高为0.6.9版本)\n选择用于OC引导菜单的指定图标主题.\n\n支持以下值:\n• Auto — 根据默认背景颜色自动选择一组图标.\n• Default — (默认主题（所有图标文件无前缀名称,比如Apple.icns、Background.icns).\n• Old — Old主题(此为官方样板主题,所有图标文件名前缀为Old,比如OldApple.icns、OldBackground.icns).\n• Modern — Modern主题(所有图标文件名前缀为Modern,比如ModernApple.icns、ModernBackground.icns).\n• 其他值 — 可以自定义自己的主题风格,所有图标文件名加自己的前缀,比如MyApple.icns、MyBackground.icns,那么自定义的主题值就填写My.\n\n注意事项:\n选择任意一个主题,包括自定义主题的图标文件路径必须在EFI/OC/Resources/Image下有对应格式的文件名图标,对于0.6.6以上版本,必须有包含Left.icns和Right.icns的图标文件名,否则会变为文本模式菜单";
+"TT_PickerVariant" = "对于发行版配置(Opencore最高为0.6.9版本)\n选择用于OC引导菜单的指定图标主题.\n\n图标集是相对于Resources/Image的目录路径,建议使用Vendor\\Set格式提供他们,比如:Acidanthera\\GoldenGate\n\n支持以下值:\n• Auto — 根据默认背景颜色自动选择一组图标.比如使用Acidanthera\\Chardonnay用于浅灰色.\n• Default — (默认主题-默认使用Acidanthera\\GoldenGate目录下的图标主题文件).\n• 作为OcBinaryData存储库的一部分提供的示例资源提供了以下图标集:\n   •Acidanthera\\GoldenGate-macOS 11样式的图标集。\n   •Acidanthera\\Syrah-macOS 10.10样式的图标集。\n   •Acidanthera\\Chardonnay-macOS 10.4样式的图标集。\n• 其他值 — 可以自定义自己的主题风格,比如自己的主题图标文件路径为Resources/Image/Mytheme/xxx,那么自定义主题的内容就填写为Mytheme\\xxx.\n\n注意事项:\n主题的图标文件路径必须在EFI/OC/Resources/Image/XXXX/xxxx文件夹下有对应格式的文件名图标,对于0.6.6以上版本,必须有包含Left.icns和Right.icns的图标文件名,否则会变为文本模式菜单";
 
 /* PDS-bo-Qx8 */
 "TT_PickerAudioAssist" = "在启动选择器中启用屏幕语音助理功能.\n也可以使用Command + F5组合键在OpenCore引导选择器和macOS引导加载器FileVault 2登录窗口中切换屏幕语音助理功能.\ n注意：屏幕语音辅助功能需要加载AudioDxe.ef音频驱动.";
