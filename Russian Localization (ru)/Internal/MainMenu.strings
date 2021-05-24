@@ -254,6 +254,9 @@
 /* Class = "NSMenuItem"; title = "SampleCustom.plist"; ObjectID = "QT1-6J-6cg"; */
 "QT1-6J-6cg.title" = "SampleCustom.plist";
 
+/* Class = "NSTextFieldCell"; title = "Set background color"; ObjectID = "Qix-AP-RAT"; */
+"Qix-AP-RAT.title" = "Set background color";
+
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Увеличить";
 

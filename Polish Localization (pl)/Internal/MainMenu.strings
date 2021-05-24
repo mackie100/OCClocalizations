@@ -1,20 +1,20 @@
 
+/* Class = "NSMenuItem"; title = "OpenCore Validator"; ObjectID = "05d-N1-WMO"; */
+"05d-N1-WMO.title" = "OpenCore Validator";
+
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
 "11s-5L-eLA.label" = "Ustawienia Bootloadera";
 
 /* Class = "NSToolbarItem"; paletteLabel = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
 "11s-5L-eLA.paletteLabel" = "Ustawienia Bootloadera;
 
-/* Class = "NSMenuItem"; title = "Boot.log"; ObjectID = "1OT-QB-Wyo";*/
-
+/* Class = "NSMenuItem"; title = "Boot.log"; ObjectID = "1OT-QB-Wyo"; */
 "1OT-QB-Wyo.title" = "Boot.log";
 
 /* Class = "NSMenuItem"; title = "Customize Toolbar…"; ObjectID = "1UK-8n-QPP"; */
-
 "1UK-8n-QPP.title" = "Dostosuj pasek narzędzi…";
 
-/* Class = "NSMenuItem"; title = "OpenCore Configurator"; ObjectID ="1Xt-HY-uBw";*/
-
+/* Class = "NSMenuItem"; title = "OpenCore Configurator"; ObjectID = "1Xt-HY-uBw"; */
 "1Xt-HY-uBw.title" = "OpenCore Configurator";
 
 /* Class = "NSMenu"; title = "Find"; ObjectID = "1b7-l0-nxx"; */
@@ -77,6 +77,9 @@
 /* Class = "NSMenuItem"; title = "Correct Spelling Automatically"; ObjectID = "78Y-hA-62v"; */
 "78Y-hA-62v.title" = "Poprawiaj pisownię automatycznie";
 
+/* Class = "NSTextFieldCell"; title = "Network Resources"; ObjectID = "7jI-RZ-eJQ"; */
+"7jI-RZ-eJQ.title" = "Network Resources";
+
 /* Class = "NSMenu"; title = "Advanced User"; ObjectID = "8k6-J4-O8u"; */
 "8k6-J4-O8u.title" = "Użytkownik zaawansowany!";
 
@@ -103,6 +106,9 @@
 
 /* Class = "NSMenuItem"; title = "Templates"; ObjectID = "BtA-nJ-hmS"; */
 "BtA-nJ-hmS.title" = "Szablony";
+
+/* Class = "NSMenuItem"; title = "Config Checker"; ObjectID = "C9y-Q3-nK5"; */
+"C9y-Q3-nK5.title" = "Config Checker";
 
 /* Class = "NSMenuItem"; title = "Differences"; ObjectID = "D1d-8G-YO3"; */
 "D1d-8G-YO3.title" = "Różnice";
@@ -248,6 +254,9 @@
 /* Class = "NSMenuItem"; title = "SampleFull.plist"; ObjectID = "QT1-6J-6cg"; */
 "QT1-6J-6cg.title" = "SampleFull.plist";
 
+/* Class = "NSTextFieldCell"; title = "Set background color"; ObjectID = "Qix-AP-RAT"; */
+"Qix-AP-RAT.title" = "Set background color";
+
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Zoom";
 
@@ -295,9 +304,6 @@
 
 /* Class = "NSMenuItem"; title = "Paste and Match Style"; ObjectID = "WeT-3V-zwk"; */
 "WeT-3V-zwk.title" = "Wklej i dopasuj styl";
-
-/* Class = "NSMenuItem"; title = "Install Tools"; ObjectID = "XaO-go-3SF"; */
-"XaO-go-3SF.title" = "Zainstaluj narzędzia";
 
 /* Class = "NSMenuItem"; title = "Find…"; ObjectID = "Xz5-n4-O0W"; */
 "Xz5-n4-O0W.title" = "Znajdź…";
@@ -371,6 +377,9 @@
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "Wklej";
 
+/* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "hOZ-ZL-z15"; */
+"hOZ-ZL-z15.title" = "*To apply this change, you must restart the app";
+
 /* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
 "hQb-2v-fYv.title" = "Inteligentne nawiasy";
 
@@ -443,14 +452,11 @@
 /* Class = "NSTextFieldCell"; title = "Updates"; ObjectID = "ovh-My-wBx"; */
 "ovh-My-wBx.title" = "Aktualizacje";
 
-/* Class = "NSMenuItem"; title = "Install Drivers"; ObjectID = "pOF-pa-P5Z"; */
-"pOF-pa-P5Z.title" = "Instaluj sterowniki";
-
 /* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
 "pa3-QI-u2k.title" = "Usuń";
 
-/* Class = "NSMenuItem"; title = "SampleFull.plist"; ObjectID = "paC-6u-bhk"; */
-"paC-6u-bhk.title" = "SampleFull.plist";
+/* Class = "NSMenuItem"; title = "SampleCustom.plist"; ObjectID = "paC-6u-bhk"; */
+"paC-6u-bhk.title" = "SampleCustom.plist";
 
 /* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "q09-fT-Sye"; */
 "q09-fT-Sye.title" = "Znajdź następne";
@@ -482,9 +488,6 @@
 /* Class = "NSMenu"; title = "Resources"; ObjectID = "szL-gC-fh3"; */
 "szL-gC-fh3.title" = "Zasoby";
 
-/* Class = "NSMenuItem"; title = "Kexts Installer"; ObjectID = "tMo-jU-Ud8"; */
-"tMo-jU-Ud8.title" = "Kexts Instalator";
-
 /* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
 "tRr-pd-1PS.title" = "Detektor plików";
 
@@ -515,8 +518,14 @@
 /* Class = "NSMenuItem"; title = "Make Upper Case"; ObjectID = "vmV-6d-7jI"; */
 "vmV-6d-7jI.title" = "Zrób wielką literę";
 
+/* Class = "NSMenuItem"; title = "EFI Maker"; ObjectID = "vnI-1Z-o5O"; */
+"vnI-1Z-o5O.title" = "EFI Maker";
+
 /* Class = "NSMenu"; title = "Ligatures"; ObjectID = "w0m-vy-SC9"; */
 "w0m-vy-SC9.title" = "Ligatury";
+
+/* Class = "NSTextFieldCell"; title = "Visual Mode"; ObjectID = "w4M-OZ-zq9"; */
+"w4M-OZ-zq9.title" = "Visual Mode";
 
 /* Class = "NSMenuItem"; title = "Align Right"; ObjectID = "wb2-vD-lq4"; */
 "wb2-vD-lq4.title" = "Dopasuj do prawej";
@@ -526,6 +535,9 @@
 
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
 "x3v-GG-iWU.title" = "Kopiuj";
+
+/* Class = "NSButtonCell"; title = "Load at startup as a normal plist editor"; ObjectID = "x59-kK-iWF"; */
+"x59-kK-iWF.title" = "Load at startup as a normal plist editor";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "xPa-T4-3mJ"; */
 "xPa-T4-3mJ.title" = "Zapisz";
