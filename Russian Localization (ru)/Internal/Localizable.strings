@@ -1556,6 +1556,8 @@
 
 "TT_GopPassThrough" = "Type: plist boolean\nFailsafe: false\nDescription: Provide GOP protocol instances on top of UGA protocol instances.\n\nThis option provides the GOP protocol via a UGA-based proxy for firmware that do not implement the protocol.\n\nNote: This option requires ProvideConsoleGop to be enabled.";
 
+"TT_GopPassThrough_0_7_0" = "Type: plist string\nFailsafe: Disabled\nDescription: Provide GOP protocol instances on top of UGA protocol instances.\n\nThe supported values for the option are as follows:\n• Enabled — provide GOP for all UGA protocols.\n• Apple — provide GOP for AppleFramebufferInfo-enabled protocols.\n• Disabled — do not provide GOP.\n\nThis option provides the GOP protocol via a UGA-based proxy for firmware that do not implement the protocol.\n\nNote: This option requires ProvideConsoleGop to be enabled.";
+
 /* ProtocolOverrides */
 "TT_AppleAudio" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces Apple audio protocols with builtin versions.\n\nApple audio protocols allow OpenCore and the macOS bootloader to play sounds and signals for screen reading or audible error reporting. Supported protocols are beep generation and VoiceOver. The VoiceOver protocol is specific to Gibraltar machines (T2) and is not supported before macOS High Sierra (10.13). Older macOS versions use the AppleHDA protocol (which is not currently implemented) instead.\n\nOnly one set of audio protocols can be available at a time, so this setting should be enabled in order to enable audio playback in the OpenCore user interface on Mac systems implementing some of these protocols.\n\nNote: The backend audio driver needs to be configured in UEFI Audio section for these protocols to be able to stream audio.";
 

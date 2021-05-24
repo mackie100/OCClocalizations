@@ -14,9 +14,6 @@
 /* Class = "NSTabViewItem"; label = "Audio"; ObjectID = "5Gm-fv-IpR"; */
 "5Gm-fv-IpR.label" = "Audio";
 
-/* Class = "NSTextFieldCell"; title = "CustomDelays"; ObjectID = "5zT-C9-V64"; */
-"5zT-C9-V64.title" = "CustomDelays";
-
 /* Class = "NSButtonCell"; title = "JumpstartHotPlug"; ObjectID = "6B4-NA-lHR"; */
 "6B4-NA-lHR.title" = "JumpstartHotPlug";
 
@@ -91,6 +88,9 @@
 
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "Drivers";
+
+/* Class = "NSTextFieldCell"; title = "GopPassThrough"; ObjectID = "VKM-hk-vmW"; */
+"VKM-hk-vmW.title" = "GopPassThrough";
 
 /* Class = "NSTabViewItem"; label = "AppleInput"; ObjectID = "XuU-Ep-ZXb"; */
 "XuU-Ep-ZXb.label" = "AppleInput";
