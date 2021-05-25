@@ -264,6 +264,34 @@
 			<key>url</key>
 			<string>https://github.com/acidanthera/BrightnessKeys/releases/download/VERSION/BrightnessKeys-VERSION-RELEASE.zip</string>
 		</dict>
+		<dict>
+			<key>author</key>
+			<string>1Revenger1</string>
+			<key>category</key>
+			<string>EC控制器支持</string>
+			<key>description</key>
+			<string>允许读取长度超过1个字节的嵌入式控制器字段，从而大大减少了工作电池状态所需的ACPI修改量（如果有）。</string>
+			<key>name</key>
+			<string>ECEnabler</string>
+			<key>remoteFolder</key>
+			<string>ECEnabler</string>
+			<key>url</key>
+			<string>https://github.com/1Revenger1/ECEnabler/releases/download/1.0.1/ECEnabler-1.0.1-RELEASE.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>khronokernel</string>
+			<key>category</key>
+			<string>Sidecar支持</string>
+			<key>description</key>
+			<string>Lilu Kernel扩展，用于在SMBIOS上启用Sidecar支持</string>
+			<key>name</key>
+			<string>SidecarFixup</string>
+			<key>remoteFolder</key>
+			<string>SidecarFixup</string>
+			<key>url</key>
+			<string>https://github.com/acidanthera/SidecarFixup/releases/download/1.0.0/SidecarFixup-1.0.0-RELEASE.zip</string>
+		</dict>
 	</array>
 </dict>
 </plist>
