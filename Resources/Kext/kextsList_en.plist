@@ -264,6 +264,34 @@
 			<key>url</key>
 			<string>https://github.com/acidanthera/BrightnessKeys/releases/download/VERSION/BrightnessKeys-VERSION-RELEASE.zip</string>
 		</dict>
+		<dict>
+			<key>author</key>
+			<string>1Revenger1</string>
+			<key>category</key>
+			<string>Embedded Controller Support</string>
+			<key>description</key>
+			<string>Allows reading Embedded Controller fields over 1 byte long, vastly reducing the amount of ACPI modification needed (if any) for working battery status.</string>
+			<key>name</key>
+			<string>ECEnabler</string>
+			<key>remoteFolder</key>
+			<string>ECEnabler</string>
+			<key>url</key>
+			<string>https://github.com/1Revenger1/ECEnabler/releases/download/1.0.1/ECEnabler-1.0.1-RELEASE.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>khronokernel</string>
+			<key>category</key>
+			<string>Sidecar Support</string>
+			<key>description</key>
+			<string>Lilu Kernel extension for enabling Sidecar support on the SMBIOS</string>
+			<key>name</key>
+			<string>SidecarFixup</string>
+			<key>remoteFolder</key>
+			<string>SidecarFixup</string>
+			<key>url</key>
+			<string>https://github.com/acidanthera/SidecarFixup/releases/download/1.0.0/SidecarFixup-1.0.0-RELEASE.zip</string>
+		</dict>
 	</array>
 </dict>
 </plist>
