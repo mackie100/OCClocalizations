@@ -276,7 +276,7 @@
 			<key>remoteFolder</key>
 			<string>ECEnabler</string>
 			<key>url</key>
-			<string>https://github.com/1Revenger1/ECEnabler/releases/download/1.0.1/ECEnabler-1.0.1-RELEASE.zip</string>
+			<string>https://github.com/1Revenger1/ECEnabler/releases/download/VERSION/ECEnabler-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -290,7 +290,7 @@
 			<key>remoteFolder</key>
 			<string>SidecarFixup</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/SidecarFixup/releases/download/1.0.0/SidecarFixup-1.0.0-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/SidecarFixup/releases/download/VERSION/SidecarFixup-VERSION-RELEASE.zip</string>
 		</dict>
 	</array>
 </dict>
