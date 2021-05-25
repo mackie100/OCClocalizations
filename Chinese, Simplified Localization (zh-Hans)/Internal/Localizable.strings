@@ -1554,7 +1554,9 @@
 
 "TT_ForceResolution" = "在默认情况下无法使用所需分辨率的情况下,强制设置分辨率\n如旧版Intel GMA和第一代Intel HD Graphics(Ironlake/Arrandale).将分辨率设置为 Max会尝试从连接的显示器的EDID中获取最大的可用分辨率.";
 
-"TT_GopPassThrough" = "驱动程序加载后执行UEFI控制器连接.此选项对于加载文件系统驱动程序很有用,该文件系统驱动程序通常遵循UEFI驱动程序模型,并且可能无法自行启动.虽然有效,但此选项对于执行自动连接的驱动程序可能不是必需的,并且可能会稍微减慢启动速度.";
+"TT_GopPassThrough" = "对于发行版配置(Opencore最高为0.6.9版本):\n驱动程序加载后执行UEFI控制器连接.此选项对于加载文件系统驱动程序很有用,该文件系统驱动程序通常遵循UEFI驱动程序模型,并且可能无法自行启动.虽然有效,但此选项对于执行自动连接的驱动程序可能不是必需的,并且可能会稍微减慢启动速度.";
+
+"TT_GopPassThrough_0_7_0" = "在UGA协议实例之上提供GOP协议实例.\n\n该选项支持的值如下:\n• Enabled — 为所有UGA协议提供GOP.\n• Apple — 为启用了AppleFramebufferInfo的协议提供GOP.\n• Disabled — 不提供GOP.\n\n此选项通过基于UGA的代理为未实现协议的固件提供GOP协议.\n\n注意：此选项要求启用ProvideConsoleGop.";
 
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra（10.13）之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
