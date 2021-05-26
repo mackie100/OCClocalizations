@@ -268,9 +268,9 @@
 			<key>author</key>
 			<string>1Revenger1</string>
 			<key>category</key>
-			<string>Embedded Controller Support</string>
+			<string>EC 控制器支援</string>
 			<key>description</key>
-			<string>Allows reading Embedded Controller fields over 1 byte long, vastly reducing the amount of ACPI modification needed (if any) for working battery status.</string>
+			<string>允許讀取長度超過1個位元組的嵌入式控制器欄位，從而大大減少了工作電池狀態所需的ACPI修改量（如果有）。</string>
 			<key>name</key>
 			<string>ECEnabler</string>
 			<key>remoteFolder</key>
@@ -282,9 +282,9 @@
 			<key>author</key>
 			<string>khronokernel</string>
 			<key>category</key>
-			<string>Sidecar Support</string>
+			<string>Sidecar 支援</string>
 			<key>description</key>
-			<string>Lilu Kernel extension for enabling Sidecar support on the SMBIOS</string>
+			<string>Lilu Kernel 擴展，用於在 SMBIOS 上啟用 Sidecar 支援</string>
 			<key>name</key>
 			<string>SidecarFixup</string>
 			<key>remoteFolder</key>
