@@ -834,6 +834,9 @@
 /* opencoreDownloaderController */
 "Operation aborted by user" = "Operation aborted by user";
 
+/* themesDownloader*/
+"successfully downloaded and installed" = "successfully downloaded and installed";
+
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 
 /* acpiController */
