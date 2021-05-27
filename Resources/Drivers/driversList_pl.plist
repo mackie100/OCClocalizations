@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DriversUEFI</key>
+	<array>
+		<dict>
+			<key>description</key>
+			<string>HDA audio support driver in UEFI firmwares for most Intel and some other analog audio controllers.</string>
+			<key>name</key>
+			<string>AudioDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Proprietary ExFAT file system driver for Bootcamp support commonly found in Apple firmwares. For Sandy Bridge and earlier CPUs ExFatDxeLegacy driver should be used due to the lack of RDRAND instruction support.</string>
+			<key>name</key>
+			<string>ExFatDxe</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>ExFatDxeLegacy</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>HII services support driver from MdeModulePkg. This driver is included in most firmwares starting with Ivy Bridge generation. Some applications with the GUI like UEFI Shell may need this driver to work properly.</string>
+			<key>name</key>
+			<string>HiiDatabase</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>OpenRuntime is an OpenCore plugin implementing OC_FIRMWARE_RUNTIME protocol. This protocol implements multiple features required for OpenCore that are otherwise not possible to implement in OpenCore itself as they are needed to work in runtime, i.e. during operating system functioning.</string>
+			<key>name</key>
+			<string>OpenRuntime</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>OpenCanopy is a graphical OpenCore user interface that runs in External PickerMode and relies on OpenCorePkg OcBootManagementLib similar to the builtin text interface.
+OpenCanopy requires graphical resources located in Resources directory to run. Sample resources (fonts and images) can be found in OcBinaryData repository.
+Note: OpenCanopy is currently considered experimental and is not recommended for everyday use.</string>
+			<key>name</key>
+			<string>OpenCanopy</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>NVMe support driver from MdeModulePkg. This driver is included in most firmwares starting with Broadwell generation. For Haswell and earlier embedding it within the firmware may be more favourable in case a NVMe SSD drive is installed.</string>
+			<key>name</key>
+			<string>NvmExpressDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>USB keyboard driver adding the support of AppleKeyMapAggregator protocols on top of a custom USB keyboard driver implementation. This is an alternative to builtin KeySupport, which may work better or worse depending on the firmware.</string>
+			<key>name</key>
+			<string>OpenUsbKbDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>PS/2 keyboard driver from MdeModulePkg. OpenDuetPkg and some firmwares may not include this driver, but it is necessary for PS/2 keyboard to work. Note, unlike OpenUsbKbDxe this driver has no AppleKeyMapAggregator support and thus requires KeySupport to be enabled.</string>
+			<key>name</key>
+			<string>Ps2KeyboardDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>PS/2 mouse driver from MdeModulePkg. Some very old laptop firmwares may not include this driver, but it is necessary for touchpad to work in UEFI graphical interfaces, such as OpenCanopy.</string>
+			<key>name</key>
+			<string>Ps2MouseDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>USB mouse driver from MdeModulePkg. Some virtual machine firmwares like OVMF may not include this driver, but it is necessary for mouse to work in UEFI graphical interfaces, such as OpenCanopy.</string>
+			<key>name</key>
+			<string>UsbMouseDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>This driver is included in most firmwares starting with Sandy Bridge generation. For earlier firmwares or legacy systems it may be used to support external USB 3.0 PCI cards.</string>
+			<key>name</key>
+			<string>XhciDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>HFS file system driver with bless support. This driver is an alternative to a closed source HFSPlus driver commonly found in Apple firmwares.  It replaces the previous VboxHfs.efi.</string>
+			<key>name</key>
+			<string>OpenHfsPlus</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Proprietary HFS file system driver with bless support commonly found in Apple firmwares. For Sandy Bridge and earlier CPUs HfsPlusLegacy driver should be used due to the lack of RDRAND instruction support.</string>
+			<key>name</key>
+			<string>HfsPlus</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string></string>
+			<key>name</key>
+			<string>HfsPlusLegacy</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>NTFS filesystem driver.</string>
+			<key>name</key>
+			<string>NTFS</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>The tool for taking screenshots on the OpenCanopy boot interface, the shortcut key is F10</string>
+			<key>name</key>
+			<string>CrScreenshotDxe</string>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
