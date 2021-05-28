@@ -116,8 +116,8 @@
 /* Class = "NSTabViewItem"; label = "Output"; ObjectID = "gJG-UT-7D3"; */
 "gJG-UT-7D3.label" = "顯示輸出";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple User Interface Theme protocol with a builtin version."; ObjectID = "iFT-xW-ZaT"; */
-"iFT-xW-ZaT.ibShadowedToolTip" = "使用內建版本重新安裝Apple使用者界面主題協議。";
+/* Class = "NSButtonCell"; title = "KeySwap"; ObjectID = "h6b-rN-daY"; */
+"h6b-rN-daY.title" = "KeySwap";
 
 /* Class = "NSTextFieldCell"; title = "TscSyncTimeout"; ObjectID = "ifT-4Q-EvN"; */
 "ifT-4Q-EvN.title" = "TscSyncTimeout";
