@@ -1155,6 +1155,8 @@
 /* Nph-Bb-8b6 */
 "TT_BlacklistAppleUpdate" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统（即macOS Big Sur）无法使用NVRAM变量（run-efi-updater）禁用固件更新,因此存在此选项.";
 
+"TT_AllowToggleSip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable entry for disabling and enabling System Integrity Protection in OpenCore picker.\n\nThis will toggle Apple NVRAM variable csr-active-config between 0 for SIP Enabled and the current macOS default for SIP Disabled (currently 0x6F for Big Sur).\n\nNote1: Using the SIP Disabled value from a newer version of macOS on an older version (e.g. Catalina and below) will report an unknown setting if queried using csrutil status, but will still run correctly and be secure, because new bits are added but old bits are not removed between versions of macOS. (It is possible to configure CsrUtil.efi as a TextMode Tools entry to configure a different value, e.g. use toggle 0x67 in Arguments to toggle the default SIP Disabled value for macOS Catalina.)\n\nNote2: It is strongly recommended not to make a habit of running macOS with SIP disabled. Use of this boot option may make it easier to quickly disable SIP protection when genuinely needed - it should be re-enabled again afterwards.";
+
 /* BLESSOVERRIDE */
 /* E7L-MW-EuK */
 "TT_misc_blessoverrideTable" = "用于添加自定义efi文件的引导绝对路径,比如添加Windows的bootmgfw.efi的位置以便识别Windows引导项,一般在OpenCore和Windows的引导文件在同一硬盘的同一ESP分区下使用,除非你有这种情况,不然我们不需要填写任何东西.\n比如启动WINDOWS路径:\\EFI\\Microsoft\\Boot\\bootmgfw.efi\n这允许引导选择器自动发现异常的引导路径,也可用于其他操作系统的引导路劲";

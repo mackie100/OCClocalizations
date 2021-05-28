@@ -251,6 +251,9 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_FIREWIRE"; ObjectID = "nmh-33-tbM"; */
 "nmh-33-tbM.title" = "OC_SCAN_ALLOW_DEVICE_FIREWIRE";
 
+/* Class = "NSButtonCell"; title = "AllowToggleSip"; ObjectID = "nsS-VU-gur"; */
+"nsS-VU-gur.title" = "AllowToggleSip";
+
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
 "oFg-pn-DgG.label" = "Tools";
 
