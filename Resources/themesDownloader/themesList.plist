@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0</string>
+		<key>name</key>
+		<string>3Ddesign</string>
+		<key>screenshot</key>
+		<string>https://raw.githubusercontent.com/chris1111/My-Simple-OC-Themes/master/View%20Boot%200.7/3Ddesign.png</string>
+		<key>url</key>
+		<string>https://raw.githubusercontent.com/chris1111/My-Simple-OC-Themes/master/Resources-0.7.0/3Ddesign.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0</string>
+		<key>name</key>
+		<string>Action</string>
+		<key>screenshot</key>
+		<string>https://raw.githubusercontent.com/chris1111/My-Simple-OC-Themes/master/View%20Boot%200.7/Action.png</string>
+		<key>url</key>
+		<string>https://raw.githubusercontent.com/chris1111/My-Simple-OC-Themes/master/Resources-0.7.0/Action.zip</string>
+	</dict>
+</array>
+</plist>
