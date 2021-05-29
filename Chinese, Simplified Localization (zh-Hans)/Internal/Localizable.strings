@@ -1155,7 +1155,7 @@
 /* Nph-Bb-8b6 */
 "TT_BlacklistAppleUpdate" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统（即macOS Big Sur）无法使用NVRAM变量（run-efi-updater）禁用固件更新,因此存在此选项.";
 
-"TT_AllowToggleSip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable entry for disabling and enabling System Integrity Protection in OpenCore picker.\n\nThis will toggle Apple NVRAM variable csr-active-config between 0 for SIP Enabled and the current macOS default for SIP Disabled (currently 0x6F for Big Sur).\n\nNote1: Using the SIP Disabled value from a newer version of macOS on an older version (e.g. Catalina and below) will report an unknown setting if queried using csrutil status, but will still run correctly and be secure, because new bits are added but old bits are not removed between versions of macOS. (It is possible to configure CsrUtil.efi as a TextMode Tools entry to configure a different value, e.g. use toggle 0x67 in Arguments to toggle the default SIP Disabled value for macOS Catalina.)\n\nNote2: It is strongly recommended not to make a habit of running macOS with SIP disabled. Use of this boot option may make it easier to quickly disable SIP protection when genuinely needed - it should be re-enabled again afterwards.";
+"TT_AllowToggleSip" = "在 OpenCore 选择器中启用用于禁用和启用系统完整性保护的条目.\n\n这会将 Apple NVRAM 变量 csr-active-config 在SIP启用和SIP禁用之间切换,当前 macOS 默认值（Big Sur当前是0x6F）.\n\n注意 1：如果使用 csrutil status 查询，在旧版本（例如 Catalina 及以下）上使用新版本 macOS 中的 SIP Disabled 将报告未知设置, 但仍会正确运行并且是安全的，因为在 macOS 版本之间添加了新位但不会删除旧位. (可以将 CsrUtil.efi 在Misc-tools中配置为文本模式条目在加以配置不同的值, 例如使用参数中的0x67 来切换 macOS Catalina 的默认SIP的值为禁用.)\n\n注2：强烈建议不要养成在禁用SIP的情况下运行macOS的习惯. 使用此启动选项可以更轻松地在真正需要时快速禁用 SIP 保护 - 完成需要的工作之后应重新启用它.";
 
 /* BLESSOVERRIDE */
 /* E7L-MW-EuK */
