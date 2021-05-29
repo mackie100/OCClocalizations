@@ -29,8 +29,8 @@
 /* Class = "NSTableColumn"; headerCell.title = "Preview"; ObjectID = "sHS-9P-uFS"; */
 "sHS-9P-uFS.headerCell.title" = "Preview";
 
-/* Class = "NSTableColumn"; headerCell.title = "Version"; ObjectID = "tRK-3m-DuH"; */
-"tRK-3m-DuH.headerCell.title" = "Version";
+/* Class = "NSTableColumn"; headerCell.title = "Compatibility"; ObjectID = "tRK-3m-DuH"; */
+"tRK-3m-DuH.headerCell.title" = "Compatibility";
 
 /* Class = "NSButtonCell"; title = "Set as default"; ObjectID = "trK-Ji-Qid"; */
 "trK-Ji-Qid.title" = "Set as default";
