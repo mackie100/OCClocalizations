@@ -837,6 +837,12 @@
 /* themesDownloader*/
 "successfully downloaded and installed" = "成功下载并安装";
 
+/* themesDownloader */
+"Download: Please select a theme name!" = "Download: Please select a theme name!";
+
+/* themesDownloader */
+"Update available for %@ theme" = "Update available for %@ theme";
+
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 
 /* acpiController */
