@@ -838,10 +838,10 @@
 "successfully downloaded and installed" = "成功下载并安装";
 
 /* themesDownloader */
-"Download: Please select a theme name!" = "Download: Please select a theme name!";
+"Download: Please select a theme name!" = "下载:请选择一个主题名称!";
 
 /* themesDownloader */
-"Update available for %@ theme" = "Update available for %@ theme";
+"Update available for %@ theme" = "%@ 主题更新可用";
 
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 
