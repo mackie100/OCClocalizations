@@ -131,6 +131,9 @@
 /* Class = "NSTextFieldCell"; title = "Features"; ObjectID = "Ntb-g0-8oU"; */
 "Ntb-g0-8oU.title" = "Features";
 
+/* Class = "NSButtonCell"; title = "AdviseFeatures"; ObjectID = "O78-Bj-Rgn"; */
+"O78-Bj-Rgn.title" = "AdviseFeatures";
+
 /* Class = "NSTextFieldCell"; title = "FormFactor"; ObjectID = "OTt-Ne-MaI"; */
 "OTt-Ne-MaI.title" = "FormFactor";
 
