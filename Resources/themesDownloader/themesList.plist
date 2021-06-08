@@ -6,7 +6,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>3Ddesign</string>
 		<key>screenshot</key>
@@ -18,7 +18,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Action</string>
 		<key>screenshot</key>
@@ -30,7 +30,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>AloySteel</string>
 		<key>screenshot</key>
@@ -42,7 +42,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BS-Exposure</string>
 		<key>screenshot</key>
@@ -54,7 +54,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BeautyAngle</string>
 		<key>screenshot</key>
@@ -66,7 +66,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BeautySteel</string>
 		<key>screenshot</key>
@@ -78,7 +78,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BlackBeauty</string>
 		<key>screenshot</key>
@@ -90,7 +90,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BlackLight</string>
 		<key>screenshot</key>
@@ -102,7 +102,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BlueGrey</string>
 		<key>screenshot</key>
@@ -114,7 +114,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BlueGreyMac</string>
 		<key>screenshot</key>
@@ -126,7 +126,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>BlueShadow</string>
 		<key>screenshot</key>
@@ -138,7 +138,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>CollorBeauty</string>
 		<key>screenshot</key>
@@ -150,7 +150,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Coloryst</string>
 		<key>screenshot</key>
@@ -162,7 +162,19 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>Cyborg</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Cyborg.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Cyborg.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>DarkGreen</string>
 		<key>screenshot</key>
@@ -174,7 +186,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>DarkPurpleMetal</string>
 		<key>screenshot</key>
@@ -186,7 +198,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>DarkSpace</string>
 		<key>screenshot</key>
@@ -198,7 +210,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Darker</string>
 		<key>screenshot</key>
@@ -210,7 +222,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>ElectricalOC-V2</string>
 		<key>screenshot</key>
@@ -222,7 +234,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>ElectricalOC</string>
 		<key>screenshot</key>
@@ -234,7 +246,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>ElectricalOCPurple</string>
 		<key>screenshot</key>
@@ -246,7 +258,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Exact</string>
 		<key>screenshot</key>
@@ -258,7 +270,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Exagcore</string>
 		<key>screenshot</key>
@@ -270,7 +282,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>ForeignSpecies</string>
 		<key>screenshot</key>
@@ -282,7 +294,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>FullScreen</string>
 		<key>screenshot</key>
@@ -294,7 +306,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>FullStage</string>
 		<key>screenshot</key>
@@ -306,7 +318,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>FusionCore</string>
 		<key>screenshot</key>
@@ -318,7 +330,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>GeoMetCube</string>
 		<key>screenshot</key>
@@ -330,7 +342,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Glasses</string>
 		<key>screenshot</key>
@@ -342,7 +354,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>GlowBlue</string>
 		<key>screenshot</key>
@@ -354,7 +366,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>GreyLight</string>
 		<key>screenshot</key>
@@ -366,7 +378,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>HardWood</string>
 		<key>screenshot</key>
@@ -378,7 +390,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Incrusted</string>
 		<key>screenshot</key>
@@ -390,7 +402,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Lamp-2</string>
 		<key>screenshot</key>
@@ -402,7 +414,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Lamp</string>
 		<key>screenshot</key>
@@ -414,7 +426,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>LightBox</string>
 		<key>screenshot</key>
@@ -426,7 +438,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>LightCube-2</string>
 		<key>screenshot</key>
@@ -438,7 +450,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>LightCube</string>
 		<key>screenshot</key>
@@ -450,7 +462,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>LightFlake</string>
 		<key>screenshot</key>
@@ -462,7 +474,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Lights-On</string>
 		<key>screenshot</key>
@@ -474,7 +486,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>LosangeCollor</string>
 		<key>screenshot</key>
@@ -486,7 +498,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Luminary</string>
 		<key>screenshot</key>
@@ -498,7 +510,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>MacSteel</string>
 		<key>screenshot</key>
@@ -510,7 +522,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>MetalBlack</string>
 		<key>screenshot</key>
@@ -522,7 +534,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>MotherShip</string>
 		<key>screenshot</key>
@@ -534,7 +546,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Multi</string>
 		<key>screenshot</key>
@@ -546,7 +558,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>NiceBlue</string>
 		<key>screenshot</key>
@@ -558,7 +570,19 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>NightBlue</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/NightBlue.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/NightBlue.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>NightGlowCity</string>
 		<key>screenshot</key>
@@ -570,7 +594,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>OCBeauty</string>
 		<key>screenshot</key>
@@ -582,7 +606,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>OCCloud</string>
 		<key>screenshot</key>
@@ -594,7 +618,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>OnLight</string>
 		<key>screenshot</key>
@@ -606,7 +630,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>OnStage</string>
 		<key>screenshot</key>
@@ -618,7 +642,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Origin</string>
 		<key>screenshot</key>
@@ -630,7 +654,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Pixels</string>
 		<key>screenshot</key>
@@ -642,7 +666,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Quintessence</string>
 		<key>screenshot</key>
@@ -654,7 +678,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>RealSteel</string>
 		<key>screenshot</key>
@@ -666,7 +690,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Rock&amp;Steel</string>
 		<key>screenshot</key>
@@ -678,7 +702,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Shelter</string>
 		<key>screenshot</key>
@@ -690,7 +714,19 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>SilentNight</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/SilentNight.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/SilentNight.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>StarWars</string>
 		<key>screenshot</key>
@@ -702,7 +738,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Teleport</string>
 		<key>screenshot</key>
@@ -714,7 +750,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Transporter</string>
 		<key>screenshot</key>
@@ -726,7 +762,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Tribute</string>
 		<key>screenshot</key>
@@ -738,7 +774,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>TwoTone</string>
 		<key>screenshot</key>
@@ -750,7 +786,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>Wall</string>
 		<key>screenshot</key>
@@ -762,7 +798,7 @@
 		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
-		<string>0.7.0</string>
+		<string>0.7.0/0.7.1</string>
 		<key>name</key>
 		<string>WhyNot</string>
 		<key>screenshot</key>
