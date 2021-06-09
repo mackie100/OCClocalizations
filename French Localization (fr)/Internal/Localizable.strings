@@ -874,6 +874,8 @@
 /* 0zY-cF-e9r */
 "TT_ResetLogoStatus" = "Type: plist boolean\nFailsafe: false\nDescription: Reset BGRT table Displayed status field to false.\nThis works around firmware that provide a BGRT table but fail to handle screen updates afterwards.";
 
+"TT_SyncTableIds" = "Type: plist boolean\nFailsafe: false\nDescription: Sync table identifiers with the SLIC table.\n\nThis works around patched tables becoming incompatible with the SLIC table causing licensing issues in older Windows operating systems.";
+
 /* booterController */
 /* MmioWhitelist */
 /* RWw-Gp-0A4 */
