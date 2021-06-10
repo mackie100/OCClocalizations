@@ -874,7 +874,7 @@
 /* 0zY-cF-e9r */
 "TT_ResetLogoStatus" = "无法在有 BGRT 表的系统上显示 OEM Windows 标志的硬件需要开启.";
 
-"TT_SyncTableIds" = "Type: plist boolean\nFailsafe: false\nDescription: Sync table identifiers with the SLIC table.\n\nThis works around patched tables becoming incompatible with the SLIC table causing licensing issues in older Windows operating systems.";
+"TT_SyncTableIds" = "将表标识符与 SLIC 表同步.\n\n这可以解决修补表与 SLIC 表不兼容的问题，从而导致旧版 Windows 操作系统中出现许可问题.";
 
 /* booterController */
 /* MmioWhitelist */
