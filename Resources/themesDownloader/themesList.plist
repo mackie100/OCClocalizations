@@ -4,18 +4,6 @@
 <array>
 	<dict>
 		<key>author</key>
-		<string>btwise</string>
-		<key>compatibility</key>
-		<string>0.7.0/0.7.1</string>
-		<key>name</key>
-		<string>ASUS-ROG</string>
-		<key>screenshot</key>
-		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/View%20Background/ASUS-ROG.png</string>
-		<key>url</key>
-		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/Resources-0.7.0/ASUS-ROG.zip</string>
-	</dict>
-	<dict>
-		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
@@ -49,6 +37,18 @@
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/AloySteel.png</string>
 		<key>url</key>
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/AloySteel.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>btwise</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>ASUS-ROG</string>
+		<key>screenshot</key>
+		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/View%20Background/ASUS-ROG.png</string>
+		<key>url</key>
+		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/Resources-0.7.0/ASUS-ROG.zip</string>
 	</dict>
 	<dict>
 		<key>author</key>
@@ -541,6 +541,18 @@
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/MetalBlack.png</string>
 		<key>url</key>
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/MetalBlack.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>Monterey</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Monterey.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Monterey.zip</string>
 	</dict>
 	<dict>
 		<key>author</key>
