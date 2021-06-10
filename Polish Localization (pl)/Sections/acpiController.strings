@@ -8,6 +8,9 @@
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "7g0-XW-xjy"; */
 "7g0-XW-xjy.title" = "Loading Resources";
 
+/* Class = "NSButtonCell"; title = "SyncTableIds"; ObjectID = "7nt-3d-eth"; */
+"7nt-3d-eth.title" = "SyncTableIds";
+
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "A4Q-If-0AG"; */
 "A4Q-If-0AG.headerCell.title" = "Skip";
 

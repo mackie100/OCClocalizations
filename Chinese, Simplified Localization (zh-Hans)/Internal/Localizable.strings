@@ -874,6 +874,8 @@
 /* 0zY-cF-e9r */
 "TT_ResetLogoStatus" = "无法在有 BGRT 表的系统上显示 OEM Windows 标志的硬件需要开启.";
 
+"TT_SyncTableIds" = "Type: plist boolean\nFailsafe: false\nDescription: Sync table identifiers with the SLIC table.\n\nThis works around patched tables becoming incompatible with the SLIC table causing licensing issues in older Windows operating systems.";
+
 /* booterController */
 /* MmioWhitelist */
 /* RWw-Gp-0A4 */
@@ -1293,9 +1295,6 @@
 /* PPQ-0x-9Ub */
 "TT_systemMemoryStatus" = "指示系统内存是否可以在PlatformFeature中升级,控制“关于本机”中“内存”选项卡的可见性.\n\n有效值:\n• Auto — 根据机型选择自动设置对应的机型内存状态(默认).\n• Upgradable — 设内存状态为可更换模式(关于本机里显示内存标签).\n• Soldered — 设置内存状态为不可更换模式(关于本机里不显示内存标签)\n\n注意: 在某些Mac型号上（即MacBookPro10,x和任何MacBookAir）, SPMemoryReporter.spreporter将忽略PT_FEATURE_HAS_SOLDERED_SYSTEM_MEMORY,并假定系统内存不可升级.";
 
-/* 9sY-PL-wkx */
-"TT_AdviseWindows" = "如果WINDOWS的EFI分区不是磁盘上的第一个分区启用它,不然有可能无法引导WINDOWS.";
-
 "TT_AdviseFeatures" = "使用支持的位更新固件功能.\n\n向 FirmwareFeatures 添加位:\n• FW_FEATURE_SUPPORTS_CSM_LEGACY_MODE (0x1) - 没有这个bit,无法重新启动到安装在 EFI 分区不是磁盘第一个分区的驱动器上的 Windows.\n• FW_FEATURE_SUPPORTS_UEFI_WINDOWS_BOOT (0x20000000) - 没有这个bit, 无法重新启动到安装在具有 EFI 分区的驱动器上的 Windows，该驱动器是磁盘上的第一个分区.\n• FW_FEATURE_SUPPORTS_APFS (0x00080000) - 没有这个bit, 无法在 APFS 磁盘上安装 macOS.\n\n注意：在大多数较新的固件上，这些bit已经设置, 在\"升级\"具有新功能的固件时可能需要该选项.";
 
 /* Z8Z-8r-mnL */
@@ -1566,8 +1565,6 @@
 "TT_UgaPassThrough" = "在GOP协议的基础上提供UGA协议实例.\n\n某些固件未实现旧版UGA协议,但较早的EFI应用程序（如10.4版以上的EfiBoot）可能需要屏幕输出.";
 
 "TT_ForceResolution" = "在默认情况下无法使用所需分辨率的情况下,强制设置分辨率\n如旧版Intel GMA和第一代Intel HD Graphics(Ironlake/Arrandale).将分辨率设置为 Max会尝试从连接的显示器的EDID中获取最大的可用分辨率.";
-
-"TT_GopPassThrough" = "对于发行版配置(Opencore最高为0.6.9版本):\n驱动程序加载后执行UEFI控制器连接.此选项对于加载文件系统驱动程序很有用,该文件系统驱动程序通常遵循UEFI驱动程序模型,并且可能无法自行启动.虽然有效,但此选项对于执行自动连接的驱动程序可能不是必需的,并且可能会稍微减慢启动速度.";
 
 "TT_GopPassThrough_0_7_0" = "在UGA协议实例之上提供GOP协议实例.\n\n该选项支持的值如下:\n• Enabled — 为所有UGA协议提供GOP.\n• Apple — 为启用了AppleFramebufferInfo的协议提供GOP.\n• Disabled — 不提供GOP.\n\n此选项通过基于UGA的代理为未实现协议的固件提供GOP协议.\n\n注意：此选项要求启用ProvideConsoleGop.";
 
