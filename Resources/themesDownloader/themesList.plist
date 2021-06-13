@@ -20,6 +20,30 @@
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
 		<key>name</key>
+		<string>5KMac</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/5KMac.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/5KMac.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>5KMacBadge</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/5KMacBadge.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/5KMacBadge.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
 		<string>Action</string>
 		<key>screenshot</key>
 		<string>https://raw.githubusercontent.com/chris1111/My-Simple-OC-Themes/master/View%20Boot%200.7/Action.png</string>
@@ -548,6 +572,18 @@
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
 		<key>name</key>
+		<string>Minimal</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Minimal.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Minimal.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
 		<string>Monterey</string>
 		<key>screenshot</key>
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Monterey.png</string>
@@ -728,6 +764,18 @@
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
 		<key>name</key>
+		<string>SSDMinimal</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/SSDMinimal.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/SSDMinimal.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
 		<string>Shelter</string>
 		<key>screenshot</key>
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Shelter1.png</string>
@@ -793,6 +841,18 @@
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Tribute.png</string>
 		<key>url</key>
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Tribute.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>Tribute-2</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Tribute-2.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Tribute-2.zip</string>
 	</dict>
 	<dict>
 		<key>author</key>
