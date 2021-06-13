@@ -52,7 +52,7 @@
 	</dict>
 	<dict>
 		<key>author</key>
-		<string>btwise</string>
+		<string>github</string>
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
 		<key>name</key>
