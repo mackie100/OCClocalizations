@@ -52,6 +52,18 @@
 	</dict>
 	<dict>
 		<key>author</key>
+		<string>btwise</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>MINIMAL</string>
+		<key>screenshot</key>
+		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/View%20Background/MINIMAL.png</string>
+		<key>url</key>
+		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/Resources-0.7.0/MINIMAL.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
