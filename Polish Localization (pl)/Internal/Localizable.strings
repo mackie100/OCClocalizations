@@ -1011,7 +1011,7 @@
 "TT_CustomSMBIOSGuid" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Performs GUID patching for UpdateSMBIOSMode Custom mode. Usually relevant for Dell laptops.";
 
 /* 6Aa-HL-hah */
-"TT_DisableIoMapper" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8 (not required for older)\nDescription: Disables IOMapper support in XNU (VT-d), which may conflict with the firmware implementation.\n\nNote: This option is a preferred alternative to dropping DMAR ACPI table and disabling VT-d in firmware preferences, which does not obstruct VT-d support in other systems in case they need this.";
+"TT_DisableIoMapper" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8 (not required for older)\nDescription: Disables IOMapper support in XNU (VT-d), which may conflict with the firmware implementation.\n\nNote 1: This option is a preferred alternative to dropping DMAR ACPI table and disabling VT-d in firmware preferences, which does not obstruct VT-d support in other systems in case they need this.\n\nNote 2: Misconfigured IOMMU in the firmware may result in broken devices such as ethernet or Wi-Fi adapters. For instance, an ethernet adapter may cycle in link-up link-down state infinitely and a Wi-Fi adapter may fail to discover networks. Gigabyte is one of the most common OEMs with these issues.";
 
 /* koV-S4-Tkn */
 "TT_DisableLinkeditJettison" = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Disables __LINKEDIT jettison code.\n\nThis option lets Lilu.kext and possibly some other kexts, function in macOS Big Sur at their best performance levels without requiring the keepsyms=1 boot argument.";
