@@ -4,18 +4,6 @@
 <array>
 	<dict>
 		<key>author</key>
-		<string>RockJesus.cn</string>
-		<key>compatibility</key>
-		<string>0.7.0/0.7.1</string>
-		<key>name</key>
-		<string>Alienware</string>
-		<key>screenshot</key>
-		<string>https://user-images.githubusercontent.com/23656651/115138425-a5904e80-a05e-11eb-90fe-90d0082d7dbd.png</string>
-		<key>url</key>
-		<string>https://github.com/RockJesus/Alienware-Opencore-Theme/releases/download/v3/RockJeus-OC070-themeV3.zip</string>
-	</dict>
-	<dict>
-		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
@@ -64,6 +52,18 @@
 	</dict>
 	<dict>
 		<key>author</key>
+		<string>RockJesus.cn</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>Alienware</string>
+		<key>screenshot</key>
+		<string>https://user-images.githubusercontent.com/23656651/115138425-a5904e80-a05e-11eb-90fe-90d0082d7dbd.png</string>
+		<key>url</key>
+		<string>https://github.com/RockJesus/Alienware-Opencore-Theme/releases/download/v3/RockJeus-OC070-themeV3.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
 		<string>chris1111</string>
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
@@ -85,18 +85,6 @@
 		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/View%20Background/ASUS-ROG.png</string>
 		<key>url</key>
 		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/Resources-0.7.0/ASUS-ROG.zip</string>
-	</dict>
-	<dict>
-		<key>author</key>
-		<string>github</string>
-		<key>compatibility</key>
-		<string>0.7.0/0.7.1</string>
-		<key>name</key>
-		<string>MINIMAL</string>
-		<key>screenshot</key>
-		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/View%20Background/MINIMAL.png</string>
-		<key>url</key>
-		<string>https://codechina.csdn.net/btwise/OC-Themes/-/raw/master/Resources-0.7.0/MINIMAL.zip</string>
 	</dict>
 	<dict>
 		<key>author</key>
