@@ -76,6 +76,18 @@
 	</dict>
 	<dict>
 		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>ApplePark-2</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/ApplePark-2.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/ApplePark-2.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
 		<string>btwise</string>
 		<key>compatibility</key>
 		<string>0.7.0/0.7.1</string>
@@ -649,6 +661,18 @@
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Multi.png</string>
 		<key>url</key>
 		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Multi.zip</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>chris1111</string>
+		<key>compatibility</key>
+		<string>0.7.0/0.7.1</string>
+		<key>name</key>
+		<string>MyCity</string>
+		<key>screenshot</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/MyCity.png</string>
+		<key>url</key>
+		<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/MyCity.zip</string>
 	</dict>
 	<dict>
 		<key>author</key>
