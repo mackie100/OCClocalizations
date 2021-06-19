@@ -1020,7 +1020,7 @@
 "TT_DisableRtcChecksum" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Disables primary checksum (0x58-0x59) writing in AppleRTC.\n\nNote 1: This option will not protect other areas from being overwritten, see RTCMemoryFixup kernel extension if this is desired.\n\nNote 2: This option will not protect areas from being overwritten at firmware stage (e.g. macOS bootloader), see AppleRtcRam protocol description if this is desired.";
 
 /* XZ1-7z-v2l */
-"TT_ExtendBTFeatureFlags" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8\nDescription: Set FeatureFlags to 0x0F for full functionality of Bluetooth, including Continuity.\n\nNote: This option is a substitution for BT4LEContinuityFixup.kext, which does not function properly due to late patching progress.";
+"TT_ExtendBTFeatureFlags" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.8-11\nDescription: Set FeatureFlags to 0x0F for full functionality of Bluetooth, including Continuity.\n\nNote: This option is a substitution for BT4LEContinuityFixup.kext, which does not function properly due to late patching progress.";
 
 /* SGM-P1-Mz5 */
 "TT_ExternalDiskIcons" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\n\nNote: This option should be avoided whenever possible. Modern firmware typically have compatible AHCI controllers.";
