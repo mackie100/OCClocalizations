@@ -60,7 +60,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Creates a stub so VoodooI2C can connect, for those having troubles getting VoodooI2C working can try SSDT-XOSI instead. Note that Intel NUCs do not need this.</string>
+			<string>创建一个存根以便 VoodooI2C 可以连接，对于那些在让 VoodooI2C 工作有问题的人可以尝试使用 SSDT-XOSI。请注意，英特尔 NUC 不需要这个。</string>
 			<key>name</key>
 			<string>SSDT-GPI0</string>
 		</dict>
