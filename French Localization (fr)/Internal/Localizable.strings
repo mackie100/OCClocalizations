@@ -843,6 +843,36 @@
 /* themesDownloader */
 "Update available for %@ theme" = "Update available for %@ theme";
 
+/* themesDownloader */
+"doesn't contain" = "doesn't contain";
+
+/* themesDownloader */
+"this file is required." = "this file is required.";
+
+/* themesDownloader */
+"Label folder doesn't contain" = "Label folder doesn't contain";
+
+/* themesDownloader */
+"Font folder doesn't contain" = "Font folder doesn't contain";
+
+/* themesDownloader */
+"OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?";
+
+/* themesDownloader */
+"Downloading OCBinaryData..." = "Downloading OCBinaryData...";
+
+/* themesDownloader */
+"All resources have been successfully copied." = "All resources have been successfully copied.";
+
+/* themesDownloader */
+"Fonts have been successfully copied." = "Fonts have been successfully copied.";
+
+/* themesDownloader */
+"Labels have been successfully copied." = "Labels have been successfully copied.";
+
+/* themesDownloader */
+"Images have been successfully copied." = "Images have been successfully copied.";
+
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 
 /* acpiController */
