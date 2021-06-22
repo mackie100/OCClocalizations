@@ -74,6 +74,9 @@
 /* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "Bpe-6y-ybA"; */
 "Bpe-6y-ybA.title" = "快照添加";
 
+/* Class = "NSTextFieldCell"; title = "Select partition"; ObjectID = "C1H-1O-f9T"; */
+"C1H-1O-f9T.title" = "Select partition";
+
 /* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
 "DAS-KM-gwG.title" = "Expose Sensitive Data";
 
@@ -146,7 +149,7 @@
 /* Class = "NSTextFieldCell"; title = "Hibernate Mode"; ObjectID = "TmR-t7-bmq"; */
 "TmR-t7-bmq.title" = "Hibernate Mode\n休眠模式";
 
-/* Class = "NSButtonCell"; title = "Provides flexible boot entry content description"; ObjectID = "Uy3-8a-yvD"; */
+/* Class = "NSButtonCell"; title = "Flavour icon, suitable for picking the best media across different content sets"; ObjectID = "Uy3-8a-yvD"; */
 "Uy3-8a-yvD.title" = "提供灵活的启动项内容描述";
 
 /* Class = "NSButtonCell"; title = "Enable logging to file"; ObjectID = "Uz7-yL-WDQ"; */
