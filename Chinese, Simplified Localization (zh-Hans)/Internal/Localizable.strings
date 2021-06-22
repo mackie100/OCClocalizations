@@ -985,6 +985,8 @@
 "TT_DummyPowerManagement" = "禁用AppleIntelCpuPowerManagement.\n\n注意 1: 对于在macOS中没有本机电源管理驱动程序的CPU,此选项是NullCpuPowerManagement.kext的首选替代方案.\n\n注意 2: 虽然通常需要此选项来在不受支持的平台上禁用AppleIntelCpuPowerManagement,但在其他情况下,也可以使用它来禁用此kext (例如对于Cpuid1Data留为空白).";
 
 /* Scheme */
+"TT_CustomKernel" = "Type: plist boolean\nFailsafe: false\nDescription: Use customised kernel cache from the Kernels directory located at the root of the ESP partition.\n\nUnsupported platforms including Atom and AMD require modified versions of XNU kernel in order to boot. This option provides the possibility to using a customised kernel cache which contains such modifications from ESP partition.";
+
 /* wLJ-kT-oLE */
 "TT_FuzzyMatch" = "在可用时将内核缓存与不同的校验和一起使用.\n在macOS 10.6和更早版本上,kernelcache文件名具有校验和,本质上是SMBIOS产品名称和EfiBoot设备路径中的adler32.在某些固件上,由于ACPI或硬件方面的不同,EFIBoot设备路径在UEFI和macOS之间有所不同,从而使内核缓存校验和始终保持不变.\n此设置允许在没有后缀的内核缓存不可用时,将最新的内核缓存与合适的体系结构进行匹配,从而提高了macOS 10.6在几个平台上的启动性能.";
 

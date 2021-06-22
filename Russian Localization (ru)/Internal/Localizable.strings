@@ -985,6 +985,8 @@
 "TT_DummyPowerManagement" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Disables AppleIntelCpuPowerManagement.\n\nNote 1: This option is a preferred alternative to NullCpuPowerManagement.kext for CPUs without native power management driver in macOS.\n\nNote 2: While this option is typically needed to disable AppleIntelCpuPowerManagement on unsupported platforms, it can also be used to disable this kext in other situations (e.g. with Cpuid1Data left blank).";
 
 /* Scheme */
+"TT_CustomKernel" = "Type: plist boolean\nFailsafe: false\nDescription: Use customised kernel cache from the Kernels directory located at the root of the ESP partition.\n\nUnsupported platforms including Atom and AMD require modified versions of XNU kernel in order to boot. This option provides the possibility to using a customised kernel cache which contains such modifications from ESP partition.";
+
 /* wLJ-kT-oLE */
 "TT_FuzzyMatch" = "Type: plist boolean \nFailsafe: false \nDescription: Use kernelcache with different checksums when available.\n\nOn macOS 10.6 and earlier, kernelcache filename has a checksum, which essentially is adler32 from SMBIOS product name and EfiBoot device path. On certain firmware, the EfiBoot device path differs between UEFI and macOS due to ACPI or hardware specifics, rendering kernelcache checksum as always different.\n\nThis setting allows matching the latest kernelcache with a suitable architecture when the kernelcache without suffix is unavailable, improving macOS 10.6 boot performance on several platforms.";
 

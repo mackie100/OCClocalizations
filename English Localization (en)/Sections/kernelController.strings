@@ -128,6 +128,9 @@
 /* Class = "NSTextFieldCell"; title = "KernelCache"; ObjectID = "g1H-e8-UUH"; */
 "g1H-e8-UUH.title" = "KernelCache";
 
+/* Class = "NSButtonCell"; title = "CustomKernel"; ObjectID = "g3S-OO-4Pp"; */
+"g3S-OO-4Pp.title" = "CustomKernel";
+
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "gFl-jZ-XPd"; */
 "gFl-jZ-XPd.headerCell.title" = "MaxKernel";
 
