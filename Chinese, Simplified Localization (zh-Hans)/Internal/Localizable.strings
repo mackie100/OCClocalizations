@@ -844,34 +844,34 @@
 "Update available for %@ theme" = "%@ 主题更新可用";
 
 /* themesDownloader */
-"doesn't contain" = "doesn't contain";
+"doesn't contain" = "不包含";
 
 /* themesDownloader */
-"this file is required." = "this file is required.";
+"this file is required." = "这个文件是必需的.";
 
 /* themesDownloader */
-"Label folder doesn't contain" = "Label folder doesn't contain";
+"Label folder doesn't contain" = "Label文件夹不包含";
 
 /* themesDownloader */
-"Font folder doesn't contain" = "Font folder doesn't contain";
+"Font folder doesn't contain" = "Font文件夹不包含";
 
 /* themesDownloader */
-"OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?";
+"OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy 需要位于 Resources 目录中的图形资源才能运行.好像缺少文件. 示例资源 (fonts, label 和 images)可以在 OcBinaryData 存储库中找到, 你要下载吗？";
 
 /* themesDownloader */
-"Downloading OCBinaryData..." = "Downloading OCBinaryData...";
+"Downloading OCBinaryData..." = "正在下载 OCBinaryData...";
 
 /* themesDownloader */
-"All resources have been successfully copied." = "All resources have been successfully copied.";
+"All resources have been successfully copied." = "已成功复制所有资源.";
 
 /* themesDownloader */
-"Fonts have been successfully copied." = "Fonts have been successfully copied.";
+"Fonts have been successfully copied." = "Fonts已成功复制.";
 
 /* themesDownloader */
-"Labels have been successfully copied." = "Labels have been successfully copied.";
+"Labels have been successfully copied." = "Labels已成功复制.";
 
 /* themesDownloader */
-"Images have been successfully copied." = "Images have been successfully copied.";
+"Images have been successfully copied." = "Images已成功复制.";
 
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 
@@ -1015,7 +1015,7 @@
 "TT_DummyPowerManagement" = "禁用AppleIntelCpuPowerManagement.\n\n注意 1: 对于在macOS中没有本机电源管理驱动程序的CPU,此选项是NullCpuPowerManagement.kext的首选替代方案.\n\n注意 2: 虽然通常需要此选项来在不受支持的平台上禁用AppleIntelCpuPowerManagement,但在其他情况下,也可以使用它来禁用此kext (例如对于Cpuid1Data留为空白).";
 
 /* Scheme */
-"TT_CustomKernel" = "Type: plist boolean\nFailsafe: false\nDescription: Use customised kernel cache from the Kernels directory located at the root of the ESP partition.\n\nUnsupported platforms including Atom and AMD require modified versions of XNU kernel in order to boot. This option provides the possibility to using a customised kernel cache which contains such modifications from ESP partition.";
+"TT_CustomKernel" = "使用位于 ESP 分区根目录的 Kernels 目录中的自定义内核缓存.\n\n包括 Atom 和 AMD 在内的不受支持的平台需要修改版本的 XNU 内核才能启动. 此选项提供了使用自定义内核缓存的可能性，其中包含来自 ESP 分区的此类修改.";
 
 /* wLJ-kT-oLE */
 "TT_FuzzyMatch" = "在可用时将内核缓存与不同的校验和一起使用.\n在macOS 10.6和更早版本上,kernelcache文件名具有校验和,本质上是SMBIOS产品名称和EfiBoot设备路径中的adler32.在某些固件上,由于ACPI或硬件方面的不同,EFIBoot设备路径在UEFI和macOS之间有所不同,从而使内核缓存校验和始终保持不变.\n此设置允许在没有后缀的内核缓存不可用时,将最新的内核缓存与合适的体系结构进行匹配,从而提高了macOS 10.6在几个平台上的启动性能.";
