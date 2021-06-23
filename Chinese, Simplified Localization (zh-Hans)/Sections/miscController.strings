@@ -75,7 +75,7 @@
 "Bpe-6y-ybA.title" = "快照添加";
 
 /* Class = "NSTextFieldCell"; title = "Select partition"; ObjectID = "C1H-1O-f9T"; */
-"C1H-1O-f9T.title" = "Select partition";
+"C1H-1O-f9T.title" = "选择分区";
 
 /* Class = "NSTextFieldCell"; title = "Expose Sensitive Data"; ObjectID = "DAS-KM-gwG"; */
 "DAS-KM-gwG.title" = "Expose Sensitive Data";
