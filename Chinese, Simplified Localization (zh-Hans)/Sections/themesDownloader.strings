@@ -8,6 +8,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Author"; ObjectID = "8nv-uX-5Ip"; */
 "8nv-uX-5Ip.headerCell.title" = "作者";
 
+/* Class = "NSButtonCell"; title = "Add Audio Files"; ObjectID = "H8Q-4s-TCV"; */
+"H8Q-4s-TCV.title" = "Add Audio Files";
+
 /* Class = "NSButton"; ibShadowedToolTip = "Reload Data"; ObjectID = "MWO-1d-HAf"; */
 "MWO-1d-HAf.ibShadowedToolTip" = "重新载入数据";
 
