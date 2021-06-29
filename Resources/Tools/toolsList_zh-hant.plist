@@ -24,6 +24,12 @@
 		</dict>
 		<dict>
 			<key>description</key>
+			<string>Simple implementation of SIP-related features of Apple csrutil.</string>
+			<key>name</key>
+			<string>CsrUtil</string>
+		</dict>
+		<dict>
+			<key>description</key>
 			<string>用一個簡單的場景測試GraphicsOutput協議。</string>
 			<key>name</key>
 			<string>GopStop</string>
@@ -68,7 +74,13 @@
 			<key>description</key>
 			<string>檢查所有 Kernel 之間的CFG鎖（MSR 0xE2寫保護）一致性。</string>
 			<key>name</key>
-			<string>VerifyMsrE2</string>
+			<string>ControlMsrE2</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Check Intel PTT (Platform Trust Technology) capability on the platform, which allows using fTPM 2.0 if enabled. The tool does not check whether fTPM 2.0 is actually enabled.</string>
+			<key>name</key>
+			<string>TpmInfo</string>
 		</dict>
 	</array>
 </dict>

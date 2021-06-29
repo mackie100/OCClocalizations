@@ -24,6 +24,12 @@
 		</dict>
 		<dict>
 			<key>description</key>
+			<string>Simple implementation of SIP-related features of Apple csrutil.</string>
+			<key>name</key>
+			<string>CsrUtil</string>
+		</dict>
+		<dict>
+			<key>description</key>
 			<string>Test GraphicsOutput protocol with a simple scenario.</string>
 			<key>name</key>
 			<string>GopStop</string>
@@ -68,7 +74,13 @@
 			<key>description</key>
 			<string>Check CFG Lock (MSR 0xE2 write protection) consistency across all cores.</string>
 			<key>name</key>
-			<string>VerifyMsrE2</string>
+			<string>ControlMsrE2</string>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Check Intel PTT (Platform Trust Technology) capability on the platform, which allows using fTPM 2.0 if enabled. The tool does not check whether fTPM 2.0 is actually enabled.</string>
+			<key>name</key>
+			<string>TpmInfo</string>
 		</dict>
 	</array>
 </dict>
