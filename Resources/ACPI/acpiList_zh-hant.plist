@@ -54,13 +54,13 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>USB相容性表。停用EHC1和EHC2-在您的BIOS中將選項"XHCI模式"設定為"開啟"。如果"XHCI模式"選項在您的BIOS中不能使用或無法正常工作，請使用此ACPI表。最好盡可能通過BIOS停用。警告：對於7系列，您需要使用"EH1D = 1"或"EH2D = One"但不能同時使用!這是因為macOS僅使用一種裝置（EHC1或EHC2）。檢查IOReg。</string>
+			<string>USB相容性表。停用EHC1和EHC2-在您的BIOS中將選項&quot;XHCI模式&quot;設定為&quot;開啟&quot;。如果&quot;XHCI模式&quot;選項在您的BIOS中不能使用或無法正常工作，請使用此ACPI表。最好盡可能通過BIOS停用。警告：對於7系列，您需要使用&quot;EH1D = 1&quot;或&quot;EH2D = One&quot;但不能同時使用!這是因為macOS僅使用一種裝置（EHC1或EHC2）。檢查IOReg。</string>
 			<key>name</key>
 			<string>SSDT-EHCx_OFF</string>
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Creates a stub so VoodooI2C can connect, for those having troubles getting VoodooI2C working can try SSDT-XOSI instead. Note that Intel NUCs do not need this.</string>
+			<string>This SSDT is used to force enable our GPI0 for VoodooI2C to connect onto. With most modern laptop DSDTs, there&apos;s a variable called GPEN or GPHD which are used for setting the status of the GPI0 device. For us, we want to enable the device.</string>
 			<key>name</key>
 			<string>SSDT-GPI0</string>
 		</dict>

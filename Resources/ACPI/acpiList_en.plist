@@ -60,7 +60,8 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Creates a stub so VoodooI2C can connect, for those having troubles getting VoodooI2C working can try SSDT-XOSI instead. Note that Intel NUCs do not need this.</string>
+			<string>This SSDT is used to force enable our GPI0 for VoodooI2C to connect onto. With most modern laptop DSDTs, there&apos;s a variable called GPEN or GPHD which are used for setting the status of the GPI0 device. For us, we want to enable the device.
+</string>
 			<key>name</key>
 			<string>SSDT-GPI0</string>
 		</dict>
