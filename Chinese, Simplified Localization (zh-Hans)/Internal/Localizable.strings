@@ -856,7 +856,7 @@
 "Font folder doesn't contain" = "Font文件夹不包含";
 
 /* themesDownloader */
-"OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy 需要位于 Resources 目录中的图形资源才能运行.好像缺少文件. 示例资源 (fonts, label 和 images)可以在 OcBinaryData 存储库中找到, 你要下载吗？";
+"OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, labels and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy 需要位于 Resources 目录中的图形资源才能运行.好像缺少文件. 示例资源 (fonts, label 和 images)可以在 OcBinaryData 存储库中找到, 你要下载吗？";
 
 /* themesDownloader */
 "Downloading OCBinaryData..." = "正在下载 OCBinaryData...";
@@ -872,6 +872,24 @@
 
 /* themesDownloader */
 "Images have been successfully copied." = "Images已成功复制.";
+
+/* themesValidator */
+"Starting validation for OC Resources folder" = "Starting validation for OC Resources folder";
+
+/* themesValidator */
+"Reason:" = "Reason:";
+
+/* themesValidator */
+"Label folder:" = "Label folder:";
+
+/* themesValidator */
+"Passed" = "Passed";
+
+/* themesValidator */
+"Not Passed" = "Not Passed";
+
+/* themesValidator */
+"Font folder:" = "Font folder:";
 
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 

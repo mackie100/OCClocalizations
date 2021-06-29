@@ -245,6 +245,9 @@
 /* Class = "NSMenuItem"; title = "Stop Speaking"; ObjectID = "Oyz-dy-DGm"; */
 "Oyz-dy-DGm.title" = "Arrêter la lecture";
 
+/* Class = "NSMenuItem"; title = "Themes Validator"; ObjectID = "Pd1-qG-fZC"; */
+"Pd1-qG-fZC.title" = "Themes Validator";
+
 /* Class = "NSMenuItem"; title = "Bigger"; ObjectID = "Ptp-SP-VEL"; */
 "Ptp-SP-VEL.title" = "Plus grand";
 
