@@ -852,6 +852,9 @@
 /* themesDownloader */
 "Do you want open Themes Validator?" = "Do you want to open it?";
 
+/* themesDownloader */
+"Open Themes Validator" = "Open Themes Validator";
+
 /* themesValidator */
 "doesn't contain" = "doesn't contain";
 
