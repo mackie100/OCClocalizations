@@ -874,22 +874,22 @@
 "Images have been successfully copied." = "Images已成功复制.";
 
 /* themesValidator */
-"Starting validation for OC Resources folder" = "Starting validation for OC Resources folder";
+"Starting validation for OC Resources folder" = "开始验证 OC Resources 文件夹";
 
 /* themesValidator */
-"Reason:" = "Reason:";
+"Reason:" = "原因:";
 
 /* themesValidator */
-"Label folder:" = "Label folder:";
+"Label folder:" = "Label文件夹:";
 
 /* themesValidator */
-"Passed" = "Passed";
+"Passed" = "通过";
 
 /* themesValidator */
-"Not Passed" = "Not Passed";
+"Not Passed" = "未通过";
 
 /* themesValidator */
-"Font folder:" = "Font folder:";
+"Font folder:" = "Font文件夹:";
 
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 

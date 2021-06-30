@@ -24,7 +24,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Simple implementation of SIP-related features of Apple csrutil.</string>
+			<string>苹果csrutil的SIP相关功能的简单实现。</string>
 			<key>name</key>
 			<string>CsrUtil</string>
 		</dict>
@@ -78,7 +78,7 @@
 		</dict>
 		<dict>
 			<key>description</key>
-			<string>Check Intel PTT (Platform Trust Technology) capability on the platform, which allows using fTPM 2.0 if enabled. The tool does not check whether fTPM 2.0 is actually enabled.</string>
+			<string>检查平台上的英特尔 PTT（平台信任技术）功能，如果启用，则允许使用 fTPM 2.0。该工具不会检查是否实际启用了 fTPM 2.0。</string>
 			<key>name</key>
 			<string>TpmInfo</string>
 		</dict>
