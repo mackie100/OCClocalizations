@@ -844,33 +844,42 @@
 "Update available for %@ theme" = "Update available for %@ theme";
 
 /* themesDownloader */
+"didn't pass the requirements check. For more information you need to open Themes Validator." = "didn't pass the requirements check. For more information you need to open Themes Validator.";
+
+/* themesDownloader */
+"Resources folder" = "Resources folder";
+
+/* themesDownloader */
+"Do you want open Themes Validator?" = "Do you want to open it?";
+
+/* themesValidator */
 "doesn't contain" = "doesn't contain";
 
-/* themesDownloader */
+/* themesValidator */
 "this file is required." = "this file is required.";
 
-/* themesDownloader */
+/* themesValidator */
 "Label folder doesn't contain" = "Label folder doesn't contain";
 
-/* themesDownloader */
+/* themesValidator */
 "Font folder doesn't contain" = "Font folder doesn't contain";
 
-/* themesDownloader */
+/* themesValidator */
 "OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, labels and images) can be found in OcBinaryData repository, do you want to download it?";
 
-/* themesDownloader */
+/* themesValidator */
 "Downloading OCBinaryData..." = "Downloading OCBinaryData...";
 
-/* themesDownloader */
+/* themesValidator */
 "All resources have been successfully copied." = "All resources have been successfully copied.";
 
-/* themesDownloader */
+/* themesValidator */
 "Fonts have been successfully copied." = "Fonts have been successfully copied.";
 
-/* themesDownloader */
+/* themesValidator */
 "Labels have been successfully copied." = "Labels have been successfully copied.";
 
-/* themesDownloader */
+/* themesValidator */
 "Images have been successfully copied." = "Images have been successfully copied.";
 
 /* themesValidator */
