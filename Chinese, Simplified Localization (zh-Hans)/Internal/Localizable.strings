@@ -844,16 +844,16 @@
 "Update available for %@ theme" = "%@ 主题更新可用";
 
 /* themesDownloader */
-"didn't pass the requirements check. For more information you need to open Themes Validator." = "didn't pass the requirements check. For more information you need to open Themes Validator.";
+"didn't pass the requirements check. For more information you need to open Themes Validator." = "没有通过要求检查。有关更多信息，您需要打开主题验证器查看.";
 
 /* themesDownloader */
-"Resources folder" = "Resources folder";
+"Resources folder" = "Resources文件夹";
 
 /* themesDownloader */
-"Do you want open Themes Validator?" = "Do you want to open it?";
+"Do you want open Themes Validator?" = "你想打开它吗?";
 
 /* themesDownloader */
-"Open Themes Validator" = "Open Themes Validator";
+"Open Themes Validator" = "打开主题验证器";
 
 /* themesValidator */
 "doesn't contain" = "不包含";
