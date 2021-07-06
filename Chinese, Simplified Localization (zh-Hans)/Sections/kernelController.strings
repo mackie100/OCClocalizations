@@ -129,7 +129,7 @@
 "g1H-e8-UUH.title" = "内核缓存";
 
 /* Class = "NSButtonCell"; title = "CustomKernel"; ObjectID = "g3S-OO-4Pp"; */
-"g3S-OO-4Pp.title" = "CustomKernel";
+"g3S-OO-4Pp.title" = "自定义内核";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "gFl-jZ-XPd"; */
 "gFl-jZ-XPd.headerCell.title" = "最大内核";
