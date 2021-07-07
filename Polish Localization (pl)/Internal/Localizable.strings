@@ -855,6 +855,9 @@
 /* themesDownloader */
 "Open Themes Validator" = "Open Themes Validator";
 
+/* themesDownloader */
+"Set as default" = "Set as default";
+
 /* themesValidator */
 "doesn't contain" = "doesn't contain";
 
