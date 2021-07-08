@@ -855,6 +855,9 @@
 /* themesDownloader */
 "Open Themes Validator" = "打开主题验证器";
 
+/* themesDownloader */
+"Set as default" = "设为默认";
+
 /* themesValidator */
 "doesn't contain" = "不包含";
 
