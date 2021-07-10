@@ -248,7 +248,7 @@
 			<key>remoteFolder</key>
 			<string>RTL8111_driver_for_OS_X</string>
 			<key>url</key>
-			<string>https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/VVERSION/RealtekRTL8111-VVERSION.zip</string>
+			<string>https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/VERSION/RealtekRTL8111-VVERSION.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
