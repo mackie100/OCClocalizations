@@ -150,7 +150,7 @@
 			<key>category</key>
 			<string>Kernel extension</string>
 			<key>description</key>
-			<string>New VoodooPS2Trackpad uses VoodooInput's Magic Trackpad II emulation in order to use macOS native driver instead of handling all gestures itself. This enables the use of any from one to four finger gestures defined by Apple.</string>
+			<string>New VoodooPS2Trackpad uses VoodooInput&apos;s Magic Trackpad II emulation in order to use macOS native driver instead of handling all gestures itself. This enables the use of any from one to four finger gestures defined by Apple.</string>
 			<key>name</key>
 			<string>VoodooPS2Controller</string>
 			<key>remoteFolder</key>
@@ -170,7 +170,7 @@
 			<key>remoteFolder</key>
 			<string>EAPD-Codec-Commander</string>
 			<key>url</key>
-			<string>https://github.com/Sniki/EAPD-Codec-Commander/releases/download/VERSION/CodecCommander-VERSION-RELEASE.zip</string>
+			<string>https://github.com/Sniki/EAPD-Codec-Commander/releases/download/vVERSION/CodecCommander-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
