@@ -174,6 +174,20 @@
 		</dict>
 		<dict>
 			<key>author</key>
+			<string>khronokernel</string>
+			<key>category</key>
+			<string>Kernel extension</string>
+			<key>description</key>
+			<string>Lilu Kernel extension for enabling Sidecar, NightShift, AirPlay to Mac and Universal Control support on some SMBIOS</string>
+			<key>name</key>
+			<string>FeatureUnlock</string>
+			<key>remoteFolder</key>
+			<string>FeatureUnlock</string>
+			<key>url</key>
+			<string>https://github.com/acidanthera/FeatureUnlock/releases/download/VERSION/SidecarFixup-VERSION-RELEASE.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
 			<string>RehabMan</string>
 			<key>category</key>
 			<string>Injector</string>
@@ -277,20 +291,6 @@
 			<string>ECEnabler</string>
 			<key>url</key>
 			<string>https://github.com/1Revenger1/ECEnabler/releases/download/VERSION/ECEnabler-VERSION-RELEASE.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>khronokernel</string>
-			<key>category</key>
-			<string>FeatureUnlock</string>
-			<key>description</key>
-			<string>Lilu Kernel extension for enabling Sidecar, NightShift, AirPlay to Mac and Universal Control support on some SMBIOS</string>
-			<key>name</key>
-			<string>FeatureUnlock</string>
-			<key>remoteFolder</key>
-			<string>FeatureUnlock</string>
-			<key>url</key>
-			<string>https://github.com/acidanthera/FeatureUnlock/releases/download/VERSION/FeatureUnlock-VERSION-RELEASE.zip</string>
 		</dict>
 	</array>
 </dict>
