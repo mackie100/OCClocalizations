@@ -282,15 +282,15 @@
 			<key>author</key>
 			<string>khronokernel</string>
 			<key>category</key>
-			<string>Sidecar 支援</string>
+			<string>FeatureUnlock支援</string>
 			<key>description</key>
-			<string>Lilu Kernel 擴展，用於在 SMBIOS 上啟用 Sidecar 支援</string>
+			<string>Lilu Kernel 擴展，用於在 SMBIOS 上啟用Sidecar、NightShift、AirPlay 到 Mac和Universal Control 支援</string>
 			<key>name</key>
-			<string>SidecarFixup</string>
+			<string>FeatureUnlock</string>
 			<key>remoteFolder</key>
-			<string>SidecarFixup</string>
+			<string>FeatureUnlock</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/SidecarFixup/releases/download/VERSION/SidecarFixup-VERSION-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/FeatureUnlock/releases/download/1.0.2/SidecarFixup-1.0.2-RELEASE.zip</string>
 		</dict>
 	</array>
 </dict>
