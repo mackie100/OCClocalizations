@@ -170,7 +170,21 @@
 			<key>remoteFolder</key>
 			<string>EAPD-Codec-Commander</string>
 			<key>url</key>
-			<string>https://github.com/Sniki/EAPD-Codec-Commander/releases/download/VERSION/CodecCommander-VERSION-RELEASE.zip</string>
+			<string>https://github.com/Sniki/EAPD-Codec-Commander/releases/download/vVERSION/CodecCommander-VERSION-RELEASE.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>khronokernel</string>
+			<key>category</key>
+			<string>Kernel 擴充功能</string>
+			<key>description</key>
+			<string>Lilu Kernel 擴展，用於在 SMBIOS 上啟用Sidecar、NightShift、AirPlay 到 Mac和Universal Control 支援</string>
+			<key>name</key>
+			<string>FeatureUnlock</string>
+			<key>remoteFolder</key>
+			<string>FeatureUnlock</string>
+			<key>url</key>
+			<string>https://github.com/acidanthera/FeatureUnlock/releases/download/VERSION/SidecarFixup-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -277,20 +291,6 @@
 			<string>ECEnabler</string>
 			<key>url</key>
 			<string>https://github.com/1Revenger1/ECEnabler/releases/download/VERSION/ECEnabler-VERSION-RELEASE.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>khronokernel</string>
-			<key>category</key>
-			<string>FeatureUnlock支援</string>
-			<key>description</key>
-			<string>Lilu Kernel 擴展，用於在 SMBIOS 上啟用Sidecar、NightShift、AirPlay 到 Mac和Universal Control 支援</string>
-			<key>name</key>
-			<string>FeatureUnlock</string>
-			<key>remoteFolder</key>
-			<string>FeatureUnlock</string>
-			<key>url</key>
-			<string>https://github.com/acidanthera/FeatureUnlock/releases/download/VERSION/FeatureUnlock-VERSION-RELEASE.zip</string>
 		</dict>
 	</array>
 </dict>
