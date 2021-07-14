@@ -107,6 +107,9 @@
 /* Class = "NSButtonCell"; title = "KeySupport"; ObjectID = "cia-MM-Epa"; */
 "cia-MM-Epa.title" = "KeySupport";
 
+/* Class = "NSButtonCell"; title = "GraphicsInputMirroring"; ObjectID = "eIT-Av-sL1"; */
+"eIT-Av-sL1.title" = "GraphicsInputMirroring";
+
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";
 

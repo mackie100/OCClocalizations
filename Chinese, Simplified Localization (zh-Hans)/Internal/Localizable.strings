@@ -1531,6 +1531,8 @@
 /* xpZ-sA-YNw */
 "TT_CustomDelays" = "使用Apple Event协议的OpenCore实施时启用自定义按键重复延迟. 使用OEM Apple实施时无效 (请参阅AppleEvent设置).\n\n• true — 使用KeyInitialDelay和KeySubsequentDelay的值.\n• false — 苹果使用(50)500ms和(5)50ms的默认值.";
 
+"TT_GraphicsInputMirroring" = "Type: plist boolean\nFailsafe: false\nDescription: Apple’s own implementation of AppleEvent prevents keyboard input during graphics applications from appearing on the basic console input stream.\n\nWith the default setting of false, OC's builtin implementation of AppleEvent replicates this behaviour.\n\nOn non-Apple hardware this can stop keyboard input working in graphics-based applications such as Windows BitLocker which use non-Apple key input methods.\n\nThe recommended setting on all hardware is true.\n\nNote: AppleEvent's default behaviour is intended to prevent unwanted queued keystrokes from appearing after exiting graphics-based UEFI applications; this issue is already handled separately within OpenCore.\n\n• True --- Allow keyboard input to reach graphics mode apps which are not using Apple input protocols.\n• False --- Prevent key input mirroring to non-Apple protocols when in graphics mode.";
+
 /* LPe-Zp-8MC */
 "TT_KeyInitialDelay" = "0 (无初始延迟,立即重复)\n在Apple Event协议的OpenCore实施中配置初始键盘重复延迟, 以10ms为单位.\n\n不使用KeySupport时,此选项将按预期配置在按键重复之前的初始延迟. Apple OEM默认值是50(500ms).\n\n使用KeySupport时, 您可能会发现在正常速度键重复开始之前,您又得到了一个慢速键重复. 如果是这样,则您的初始按键重复延迟是由您的BIOS固件驱动的,并且无法被OC覆盖. 为了避免这种轻微的不良影响, 将KeyInitialDelay设置为0. 如果这样做, 避免对单个按键的多次响应, 您应该将KeySubsequentDelay至少设置为KeyForgetThreshold设置的值.";
 
@@ -1631,7 +1633,7 @@
 
 "TT_ForceResolution" = "在默认情况下无法使用所需分辨率的情况下,强制设置分辨率\n如旧版Intel GMA和第一代Intel HD Graphics(Ironlake/Arrandale).将分辨率设置为 Max会尝试从连接的显示器的EDID中获取最大的可用分辨率.";
 
-"TT_GopPassThrough_0_7_0" = "在UGA协议实例之上提供GOP协议实例.\n\n该选项支持的值如下:\n• Enabled — 为所有UGA协议提供GOP.\n• Apple — 为启用了AppleFramebufferInfo的协议提供GOP.\n• Disabled — 不提供GOP.\n\n此选项通过基于UGA的代理为未实现协议的固件提供GOP协议.\n\n注意：此选项要求启用ProvideConsoleGop.";
+"TT_GopPassThrough" = "在UGA协议实例之上提供GOP协议实例.\n\n该选项支持的值如下:\n• Enabled — 为所有UGA协议提供GOP.\n• Apple — 为启用了AppleFramebufferInfo的协议提供GOP.\n• Disabled — 不提供GOP.\n\n此选项通过基于UGA的代理为未实现协议的固件提供GOP协议.\n\n注意：此选项要求启用ProvideConsoleGop.";
 
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra（10.13）之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
