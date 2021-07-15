@@ -89,6 +89,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "aAH-qz-ikl"; */
 "aAH-qz-ikl.headerCell.title" = "무시";
 
+/* Class = "NSButtonCell"; title = "Check Kexts"; ObjectID = "aCc-4w-GcM"; */
+"aCc-4w-GcM.title" = "Check Kexts";
+
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "aHq-mU-IMD"; */
 "aHq-mU-IMD.headerCell.title" = "MaxKernel";
 
