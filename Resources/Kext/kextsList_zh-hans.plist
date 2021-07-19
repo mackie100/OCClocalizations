@@ -296,9 +296,9 @@
 			<key>author</key>
 			<string>FireWolf</string>
 			<key>category</key>
-			<string>Card Reader Driver</string>
+			<string>读卡器驱动程序</string>
 			<key>description</key>
-			<string>An unofficial macOS kernel extension for Realtek PCIe/USB-based SD card readers. It uses the Linux driver as a reference implementation but is written from scratch and carefully designed for macOS to deliver the best performance.</string>
+			<string>Realtek 基于 PCIe/USB 的 SD 卡读卡器的非官方 macOS 内核扩展。它使用 Linux 驱动程序作为参考实现，但从头开始编写并为 macOS 精心设计以提供最佳性能。</string>
 			<key>name</key>
 			<string>RealtekCardReader</string>
 			<key>remoteFolder</key>
