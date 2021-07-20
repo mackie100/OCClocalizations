@@ -583,18 +583,6 @@
 			<key>compatibility</key>
 			<string>0.7.0/0.7.1</string>
 			<key>name</key>
-			<string>CollorBeauty</string>
-			<key>screenshot</key>
-			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/CollorBeauty.png</string>
-			<key>url</key>
-			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/CollorBeauty.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>chris1111</string>
-			<key>compatibility</key>
-			<string>0.7.0/0.7.1</string>
-			<key>name</key>
 			<string>Coloryst</string>
 			<key>screenshot</key>
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Coloryst.png</string>
