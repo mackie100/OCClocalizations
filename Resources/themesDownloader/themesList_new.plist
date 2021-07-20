@@ -487,6 +487,18 @@
 			<key>compatibility</key>
 			<string>0.7.0/0.7.1</string>
 			<key>name</key>
+			<string>BellaColore</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/BellaColore.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/BellaColore.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.1</string>
+			<key>name</key>
 			<string>BlackBeauty</string>
 			<key>screenshot</key>
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/BlackBeauty.png</string>
@@ -547,6 +559,30 @@
 			<key>compatibility</key>
 			<string>0.7.0/0.7.1</string>
 			<key>name</key>
+			<string>BlueSky</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/BlueSky.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/BlueSky.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.1</string>
+			<key>name</key>
+			<string>CollorBeauty</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/CollorBeauty.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/CollorBeauty.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.1</string>
+			<key>name</key>
 			<string>CollorBeauty</string>
 			<key>screenshot</key>
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/CollorBeauty.png</string>
@@ -564,6 +600,18 @@
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Coloryst.png</string>
 			<key>url</key>
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Coloryst.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.1</string>
+			<key>name</key>
+			<string>CoolBoot</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/CoolBoot.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/CoolBoot.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -847,6 +895,18 @@
 			<key>compatibility</key>
 			<string>0.7.0/0.7.1</string>
 			<key>name</key>
+			<string>Landscape</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Landscape.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Landscape.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.1</string>
+			<key>name</key>
 			<string>LightBox</string>
 			<key>screenshot</key>
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/LightBox.png</string>
@@ -1020,6 +1080,18 @@
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Natural.png</string>
 			<key>url</key>
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Natural.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.1</string>
+			<key>name</key>
+			<string>NatureBlue</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/NatureBlue.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/NatureBlue.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
