@@ -54,7 +54,7 @@
 "F1Q-I5-6w7.label" = "嵌入式APFS";
 
 /* Class = "NSMenuItem"; title = "BIG SUR"; ObjectID = "HqP-Ib-Lhy"; */
-"HqP-Ib-Lhy.title" = "BIG SUR";
+"HqP-Ib-Lhy.title" = "BIG SUR 11.x";
 
 /* Class = "NSTabViewItem"; label = "ProtocolOverrides"; ObjectID = "Ife-ug-MJ5"; */
 "Ife-ug-MJ5.label" = "协议覆盖";
@@ -69,7 +69,7 @@
 "McE-CL-fQD.headerCell.title" = "类型";
 
 /* Class = "NSMenuItem"; title = "CATALINA"; ObjectID = "Mpd-UJ-Jb6"; */
-"Mpd-UJ-Jb6.title" = "CATALINA";
+"Mpd-UJ-Jb6.title" = "CATALINA 10.15.X";
 
 /* Class = "NSTextFieldCell"; title = "SetupDelay"; ObjectID = "N4u-Hw-eXM"; */
 "N4u-Hw-eXM.title" = "SetupDelay";
@@ -96,7 +96,7 @@
 "SDU-Ok-pEv.title" = "GlobalConnect";
 
 /* Class = "NSMenuItem"; title = "MOJAVE"; ObjectID = "UXS-3y-OTk"; */
-"UXS-3y-OTk.title" = "MOJAVE";
+"UXS-3y-OTk.title" = "MOJAVE 10.14.X";
 
 /* Class = "NSTabViewItem"; label = "Drivers"; ObjectID = "V9Z-z9-Ejd"; */
 "V9Z-z9-Ejd.label" = "UEFI驱动";
@@ -120,7 +120,7 @@
 "cia-MM-Epa.title" = "KeySupport";
 
 /* Class = "NSMenuItem"; title = "HIGH SIERRA"; ObjectID = "ckI-Ly-WbZ"; */
-"ckI-Ly-WbZ.title" = "HIGH SIERRA";
+"ckI-Ly-WbZ.title" = "HIGH SIERRA 10.13.X";
 
 /* Class = "NSButtonCell"; title = "GraphicsInputMirroring"; ObjectID = "eIT-Av-sL1"; */
 "eIT-Av-sL1.title" = "GraphicsInputMirroring";
@@ -132,7 +132,7 @@
 "ehu-K3-gbY.title" = "MinimumVolume";
 
 /* Class = "NSMenuItem"; title = "DEFAULT"; ObjectID = "fZq-zJ-tYW"; */
-"fZq-zJ-tYW.title" = "DEFAULT";
+"fZq-zJ-tYW.title" = "默认";
 
 /* Class = "NSTabViewItem"; label = "Output"; ObjectID = "gJG-UT-7D3"; */
 "gJG-UT-7D3.label" = "显示输出";
@@ -177,4 +177,4 @@
 "xPB-Sk-c8h.title" = "CustomDelays";
 
 /* Class = "NSMenuItem"; title = "ANY"; ObjectID = "y2o-nE-s3F"; */
-"y2o-nE-s3F.title" = "ANY";
+"y2o-nE-s3F.title" = "任意";
