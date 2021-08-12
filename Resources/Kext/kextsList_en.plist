@@ -384,7 +384,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Monterey</string>
 			<key>name</key>
-			<string>AirportItlwm</string>
+			<string>AirportItlwm_Monterey</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
