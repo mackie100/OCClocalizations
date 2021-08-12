@@ -262,7 +262,7 @@
 			<key>remoteFolder</key>
 			<string>RTL8111_driver_for_OS_X</string>
 			<key>url</key>
-			<string>https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/VVERSION/RealtekRTL8111-VVERSION.zip</string>
+			<string>https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/VERSION/RealtekRTL8111-VVERSION.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -305,6 +305,90 @@
 			<string>RealtekCardReader</string>
 			<key>url</key>
 			<string>https://github.com/0xFireWolf/RealtekCardReader/releases/download/vVERSION/RealtekCardReader_VERSION_RELEASE.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Kernel Extension for macOS, based on the OpenBSD Project</string>
+			<key>name</key>
+			<string>itlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/itlwm_vVERSION_stable.kext.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-BigSur</string>
+			<key>name</key>
+			<string>itlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_BigSur.kext.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Catalina</string>
+			<key>name</key>
+			<string>itlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_Catalina.kext.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Mojave</string>
+			<key>name</key>
+			<string>itlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_Mojave.kext.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-HighSierra</string>
+			<key>name</key>
+			<string>itlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_HighSierra.kext.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Monterey</string>
+			<key>name</key>
+			<string>itlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_Monterey.kext.zip</string>
 		</dict>
 	</array>
 </dict>
