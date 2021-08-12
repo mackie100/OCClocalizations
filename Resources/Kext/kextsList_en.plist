@@ -314,7 +314,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Kernel Extension for macOS, based on the OpenBSD Project</string>
 			<key>name</key>
-			<string>AirportItlwm</string>
+			<string>itlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
@@ -326,69 +326,32 @@
 			<key>category</key>
 			<string>Wi-Fi Adapter Kernel Extension</string>
 			<key>description</key>
-			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-HighSierra</string>
+			<string>An Intel Wi-Fi Adapter Kernel Extension for macOS, based on the OpenBSD Project</string>
 			<key>name</key>
-			<string>AirportItlwm_HighSierra</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
 			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_HighSierra.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>Wi-Fi Adapter Kernel Extension</string>
-			<key>description</key>
-			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Mojave</string>
-			<key>name</key>
-			<string>AirportItlwm_Mojave</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Mojave.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>Wi-Fi Adapter Kernel Extension</string>
-			<key>description</key>
-			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Catalina</string>
-			<key>name</key>
-			<string>AirportItlwm_Catalina</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Catalina.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>Wi-Fi Adapter Kernel Extension</string>
-			<key>description</key>
-			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-BigSur</string>
-			<key>name</key>
-			<string>AirportItlwm_BigSur</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_BigSur.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>Wi-Fi Adapter Kernel Extension</string>
-			<key>description</key>
-			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Monterey</string>
-			<key>name</key>
-			<string>AirportItlwm_Monterey</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Monterey.kext.zip</string>
+			<key>versions</key>
+			<array>
+				<dict>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Mojave.kext.zip</string>
+				</dict>
+				<dict>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Catalina.kext.zip</string>
+				</dict>
+				<dict>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_BigSur.kext.zip</string>
+				</dict>
+				<dict>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Monterey.kext.zip</string>
+				</dict>
+			</array>
 		</dict>
 	</array>
 </dict>
