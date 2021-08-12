@@ -150,7 +150,7 @@
 			<key>category</key>
 			<string>Kernel extension</string>
 			<key>description</key>
-			<string>New VoodooPS2Trackpad uses VoodooInput&apos;s Magic Trackpad II emulation in order to use macOS native driver instead of handling all gestures itself. This enables the use of any from one to four finger gestures defined by Apple.</string>
+			<string>New VoodooPS2Trackpad uses VoodooInput's Magic Trackpad II emulation in order to use macOS native driver instead of handling all gestures itself. This enables the use of any from one to four finger gestures defined by Apple.</string>
 			<key>name</key>
 			<string>VoodooPS2Controller</string>
 			<key>remoteFolder</key>
@@ -318,7 +318,7 @@
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/itlwm_vVERSION_stable.kext.zip</string>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/itlwm_v2.0.0_stable.kext.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -332,7 +332,7 @@
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_BigSur.kext.zip</string>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_BigSur.kext.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -346,7 +346,7 @@
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_Catalina.kext.zip</string>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Catalina.kext.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -360,7 +360,7 @@
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_Mojave.kext.zip</string>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Mojave.kext.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -374,7 +374,7 @@
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_HighSierra.kext.zip</string>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_HighSierra.kext.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -388,7 +388,7 @@
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/vVERSION/AirportItlwm_vVERSION_stable_Monterey.kext.zip</string>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Monterey.kext.zip</string>
 		</dict>
 	</array>
 </dict>
