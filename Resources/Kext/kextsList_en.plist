@@ -150,7 +150,7 @@
 			<key>category</key>
 			<string>Kernel extension</string>
 			<key>description</key>
-			<string>New VoodooPS2Trackpad uses VoodooInput's Magic Trackpad II emulation in order to use macOS native driver instead of handling all gestures itself. This enables the use of any from one to four finger gestures defined by Apple.</string>
+			<string>New VoodooPS2Trackpad uses VoodooInput&apos;s Magic Trackpad II emulation in order to use macOS native driver instead of handling all gestures itself. This enables the use of any from one to four finger gestures defined by Apple.</string>
 			<key>name</key>
 			<string>VoodooPS2Controller</string>
 			<key>remoteFolder</key>
@@ -314,7 +314,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Kernel Extension for macOS, based on the OpenBSD Project</string>
 			<key>name</key>
-			<string>itlwm</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
@@ -328,7 +328,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-BigSur</string>
 			<key>name</key>
-			<string>itlwm</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
@@ -342,7 +342,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Catalina</string>
 			<key>name</key>
-			<string>itlwm</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
@@ -356,7 +356,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Mojave</string>
 			<key>name</key>
-			<string>itlwm</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
@@ -370,7 +370,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-HighSierra</string>
 			<key>name</key>
-			<string>itlwm</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
@@ -384,7 +384,7 @@
 			<key>description</key>
 			<string>An Intel Wi-Fi Adapter Airport Kernel Extension for macOS-Monterey</string>
 			<key>name</key>
-			<string>itlwm</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
