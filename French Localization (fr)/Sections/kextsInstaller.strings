@@ -5,14 +5,23 @@
 /* Class = "NSButtonCell"; title = "Backup kext"; ObjectID = "39o-Ir-A0m"; */
 "39o-Ir-A0m.title" = "Sauvegarde kext";
 
+/* Class = "NSButtonCell"; title = "AirportItlwm for Catalina"; ObjectID = "3lJ-l4-KlP"; */
+"3lJ-l4-KlP.title" = "AirportItlwm for Catalina";
+
 /* Class = "NSTableColumn"; headerCell.title = "Category"; ObjectID = "47C-Wy-wbp"; */
 "47C-Wy-wbp.headerCell.title" = "Catégorie";
 
 /* Class = "NSTableColumn"; headerCell.title = "Author"; ObjectID = "6OG-eK-0wo"; */
 "6OG-eK-0wo.headerCell.title" = "Auteur";
 
+/* Class = "NSButtonCell"; title = "AirportItlwm for Mojave"; ObjectID = "92p-Im-Jc8"; */
+"92p-Im-Jc8.title" = "AirportItlwm for Mojave";
+
 /* Class = "NSTextFieldCell"; title = "[*]drag and drop to table for manual installation"; ObjectID = "9WO-06-2fp"; */
 "9WO-06-2fp.title" = "[*]Glissez et déposez sur le tableau pour une installation manuelle";
+
+/* Class = "NSButtonCell"; title = "Install"; ObjectID = "9xo-8M-eT4"; */
+"9xo-8M-eT4.title" = "Install";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "Cu7-TT-odD"; */
 "Cu7-TT-odD.title" = "Selectionner";
@@ -26,17 +35,26 @@
 /* Class = "NSButtonCell"; title = "HWMonitor"; ObjectID = "Gc8-yC-f8T"; */
 "Gc8-yC-f8T.title" = "HWMonitor";
 
+/* Class = "NSWindow"; title = "Intel Wi-Fi Detected"; ObjectID = "Kmy-Be-n8o"; */
+"Kmy-Be-n8o.title" = "Intel Wi-Fi Detected";
+
 /* Class = "NSButtonCell"; title = "SMCSuperIO"; ObjectID = "Oqq-A2-PX5"; */
 "Oqq-A2-PX5.title" = "SMCSuperIO";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Reload Data"; ObjectID = "Pss-ZT-2YR"; */
 "Pss-ZT-2YR.ibShadowedToolTip" = "Recharger les données";
 
+/* Class = "NSButtonCell"; title = "AirportItlwm for BigSur"; ObjectID = "QHt-mk-P9w"; */
+"QHt-mk-P9w.title" = "AirportItlwm for BigSur";
+
 /* Class = "NSWindow"; title = "Kexts Installer"; ObjectID = "QvC-M9-y7g"; */
 "QvC-M9-y7g.title" = "Installateur Kexts";
 
 /* Class = "NSWindow"; title = "NoVPAJpeg Selection"; ObjectID = "T0X-Ss-Wv0"; */
 "T0X-Ss-Wv0.title" = "Sélection NoVPAJpeg";
+
+/* Class = "NSButtonCell"; title = "AirportItlwm for Monterey"; ObjectID = "Tde-8F-xjy"; */
+"Tde-8F-xjy.title" = "AirportItlwm for Monterey";
 
 /* Class = "NSButtonCell"; title = "GPUSensors"; ObjectID = "Z6y-49-dIn"; */
 "Z6y-49-dIn.title" = "GPUSensors";
@@ -46,6 +64,9 @@
 
 /* Class = "NSWindow"; title = "VirtualSMC Detected"; ObjectID = "c22-Ac-LFY"; */
 "c22-Ac-LFY.title" = "VirtualSMC détecté";
+
+/* Class = "NSButtonCell"; title = "SMCDellSensors"; ObjectID = "dcN-Jh-fs2"; */
+"dcN-Jh-fs2.title" = "SMCDellSensors";
 
 /* Class = "NSButtonCell"; title = "Download"; ObjectID = "eiG-ge-aFx"; */
 "eiG-ge-aFx.title" = "Télécharger";
@@ -67,6 +88,9 @@
 
 /* Class = "NSButton"; ibShadowedToolTip = "Open Folder"; ObjectID = "o31-92-wcY"; */
 "o31-92-wcY.ibShadowedToolTip" = "Ouvrir le dossier";
+
+/* Class = "NSButtonCell"; title = "AirportItlwm for High Sierra "; ObjectID = "ptP-W8-Rro"; */
+"ptP-W8-Rro.title" = "AirportItlwm for High Sierra ";
 
 /* Class = "NSBox"; title = "Status"; ObjectID = "rk5-54-iPh"; */
 "rk5-54-iPh.title" = "Status";

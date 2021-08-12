@@ -378,6 +378,9 @@
 /* kextsInstallerController */
 "VirtualSMC detected... Choose an add on to install..." = "VirtualSMC 발견됨... 설치해주세요.";
 
+/* kextsInstallerController */
+"Intel Wi-Fi detected... Choose an add on to install..." = "Intel Wi-Fi detected... Choose an add on to install...";
+
 /* mountefiController */
 "Volume Identifier:" = "Volume Identifier:";
 

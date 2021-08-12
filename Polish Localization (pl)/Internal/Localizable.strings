@@ -378,6 +378,9 @@
 /* kextsInstallerController */
 "VirtualSMC detected... Choose an add on to install..." = "Wykryto VirtualSMC... wybierz rozszerzenie do instalacjii...";
 
+/* kextsInstallerController */
+"Intel Wi-Fi detected... Choose an add on to install..." = "Intel Wi-Fi detected... Choose an add on to install...";
+
 /* mountefiController */
 "Volume Identifier:" = "Indentyfikator Woluminu:";
 

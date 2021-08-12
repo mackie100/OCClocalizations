@@ -306,6 +306,61 @@
 			<key>url</key>
 			<string>https://github.com/0xFireWolf/RealtekCardReader/releases/download/vVERSION/RealtekCardReader_VERSION_RELEASE.zip</string>
 		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Kernel Extension for macOS, based on the OpenBSD Project</string>
+			<key>name</key>
+			<string>itlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/itlwm_v2.0.0_stable.kext.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>itlwm</string>
+			<key>category</key>
+			<string>Wi-Fi Adapter Kernel Extension</string>
+			<key>description</key>
+			<string>An Intel Wi-Fi Adapter Kernel Extension for macOS, based on the OpenBSD Project</string>
+			<key>name</key>
+			<string>AirportItlwm</string>
+			<key>remoteFolder</key>
+			<string>itlwm</string>
+			<key>url</key>
+			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_HighSierra.kext.zip</string>
+			<key>versions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_Mojave</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Mojave.kext.zip</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_Catalina</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Catalina.kext.zip</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_BigSur</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_BigSur.kext.zip</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_Monterey</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Monterey.kext.zip</string>
+				</dict>
+			</array>
+		</dict>
 	</array>
 </dict>
 </plist>

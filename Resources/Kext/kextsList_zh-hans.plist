@@ -326,69 +326,40 @@
 			<key>category</key>
 			<string>无线网卡驱动程序</string>
 			<key>description</key>
-			<string>适用于 macOS 的英特尔 Wi-Fi 适配器Airport内核扩展-BigSur</string>
-			<key>name</key>
-			<string>itlwm</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_BigSur.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>无线网卡驱动程序</string>
-			<key>description</key>
-			<string>适用于 macOS 的英特尔 Wi-Fi 适配器Airport内核扩展-Catalina</string>
-			<key>name</key>
-			<string>itlwm</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Catalina.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>无线网卡驱动程序</string>
-			<key>description</key>
-			<string>适用于 macOS 的英特尔 Wi-Fi 适配器Airport内核扩展-Mojave</string>
-			<key>name</key>
-			<string>itlwm</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Mojave.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>无线网卡驱动程序</string>
-			<key>description</key>
-			<string>适用于 macOS 的英特尔 Wi-Fi 适配器Airport内核扩展-HighSierra</string>
+			<string>适用于 macOS 的英特尔 Wi-Fi 适配器内核扩展，基于 OpenBSD 项目</string>
 			<key>name</key>
 			<string>itlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
 			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_HighSierra.kext.zip</string>
-		</dict>
-		<dict>
-			<key>author</key>
-			<string>itlwm</string>
-			<key>category</key>
-			<string>无线网卡驱动程序</string>
-			<key>description</key>
-			<string>适用于 macOS 的英特尔 Wi-Fi 适配器Airport内核扩展-Monterey</string>
-			<key>name</key>
-			<string>itlwm</string>
-			<key>remoteFolder</key>
-			<string>itlwm</string>
-			<key>url</key>
-			<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Monterey.kext.zip</string>
+			<key>versions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_Mojave</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Mojave.kext.zip</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_Catalina</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Catalina.kext.zip</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_BigSur</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_BigSur.kext.zip</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>AirportItlwm_Monterey</string>
+					<key>url</key>
+					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.0.0/AirportItlwm_v2.0.0_stable_Monterey.kext.zip</string>
+				</dict>
+			</array>
 		</dict>
 	</array>
 </dict>
