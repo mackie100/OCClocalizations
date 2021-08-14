@@ -312,7 +312,7 @@
 			<key>category</key>
 			<string>无线网卡驱动程序</string>
 			<key>description</key>
-			<string>适用于 macOS 的英特尔 Wi-Fi 适配器内核扩展，基于 OpenBSD 项目</string>
+			<string>适用于MacOS的英特尔Wi-Fi适配器内核扩展</string>
 			<key>name</key>
 			<string>itlwm</string>
 			<key>remoteFolder</key>
@@ -326,7 +326,7 @@
 			<key>category</key>
 			<string>无线网卡驱动程序</string>
 			<key>description</key>
-			<string>适用于 macOS 的英特尔 Wi-Fi 适配器内核扩展，基于 OpenBSD 项目</string>
+			<string>适用于MacOS的英特尔Wi-Fi 适配器Airport扩展</string>
 			<key>name</key>
 			<string>itlwm</string>
 			<key>remoteFolder</key>
