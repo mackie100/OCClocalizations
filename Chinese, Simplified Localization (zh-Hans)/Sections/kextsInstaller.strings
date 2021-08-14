@@ -6,7 +6,7 @@
 "39o-Ir-A0m.title" = "备份kext";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for Catalina"; ObjectID = "3lJ-l4-KlP"; */
-"3lJ-l4-KlP.title" = "AirportItlwm for Catalina";
+"3lJ-l4-KlP.title" = "用于Catalina的Intel WIFI Airport";
 
 /* Class = "NSTableColumn"; headerCell.title = "Category"; ObjectID = "47C-Wy-wbp"; */
 "47C-Wy-wbp.headerCell.title" = "类别";
@@ -15,13 +15,13 @@
 "6OG-eK-0wo.headerCell.title" = "作者";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for Mojave"; ObjectID = "92p-Im-Jc8"; */
-"92p-Im-Jc8.title" = "AirportItlwm for Mojave";
+"92p-Im-Jc8.title" = "用于Mojave的Intel WIFI Airport";
 
 /* Class = "NSTextFieldCell"; title = "[*]drag and drop to table for manual installation"; ObjectID = "9WO-06-2fp"; */
 "9WO-06-2fp.title" = "[*]拖放到表格以进行手动安装";
 
 /* Class = "NSButtonCell"; title = "Install"; ObjectID = "9xo-8M-eT4"; */
-"9xo-8M-eT4.title" = "Install";
+"9xo-8M-eT4.title" = "安装";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "Cu7-TT-odD"; */
 "Cu7-TT-odD.title" = "选择";
@@ -36,7 +36,7 @@
 "Gc8-yC-f8T.title" = "HWMonitor";
 
 /* Class = "NSWindow"; title = "Intel Wi-Fi Detected"; ObjectID = "Kmy-Be-n8o"; */
-"Kmy-Be-n8o.title" = "Intel Wi-Fi Detected";
+"Kmy-Be-n8o.title" = "检测到英特尔WiFi无线网卡";
 
 /* Class = "NSButtonCell"; title = "SMCSuperIO"; ObjectID = "Oqq-A2-PX5"; */
 "Oqq-A2-PX5.title" = "SMCSuperIO";
@@ -45,7 +45,7 @@
 "Pss-ZT-2YR.ibShadowedToolTip" = "重新加载数据";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for BigSur"; ObjectID = "QHt-mk-P9w"; */
-"QHt-mk-P9w.title" = "AirportItlwm for BigSur";
+"QHt-mk-P9w.title" = "用于BigSur的Intel WIFI Airport";
 
 /* Class = "NSWindow"; title = "Kexts Installer"; ObjectID = "QvC-M9-y7g"; */
 "QvC-M9-y7g.title" = "Kexts安装程序";
@@ -54,7 +54,7 @@
 "T0X-Ss-Wv0.title" = "NoVPAJpeg选择";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for Monterey"; ObjectID = "Tde-8F-xjy"; */
-"Tde-8F-xjy.title" = "AirportItlwm for Monterey";
+"Tde-8F-xjy.title" = "用于Monterey的Intel WIFI Airport";
 
 /* Class = "NSButtonCell"; title = "GPUSensors"; ObjectID = "Z6y-49-dIn"; */
 "Z6y-49-dIn.title" = "GPUSensors";
@@ -90,7 +90,7 @@
 "o31-92-wcY.ibShadowedToolTip" = "打开文件夹";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for High Sierra "; ObjectID = "ptP-W8-Rro"; */
-"ptP-W8-Rro.title" = "AirportItlwm for High Sierra ";
+"ptP-W8-Rro.title" = "用于High Sierra的Intel WIFI Airport ";
 
 /* Class = "NSBox"; title = "Status"; ObjectID = "rk5-54-iPh"; */
 "rk5-54-iPh.title" = "状态";

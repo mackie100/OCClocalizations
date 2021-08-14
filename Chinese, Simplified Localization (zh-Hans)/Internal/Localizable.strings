@@ -379,7 +379,7 @@
 "VirtualSMC detected... Choose an add on to install..." = "检测到VirtualSMC ...选择要添加的安装...";
 
 /* kextsInstallerController */
-"Intel Wi-Fi detected... Choose an add on to install..." = "Intel Wi-Fi detected... Choose an add on to install...";
+"Intel Wi-Fi detected... Choose an add on to install..." = "检测到英特尔WIFI网卡... 选择要安装的附加组件...";
 
 /* mountefiController */
 "Volume Identifier:" = "卷标识符:";
