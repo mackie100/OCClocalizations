@@ -328,7 +328,7 @@
 			<key>description</key>
 			<string>适用于MacOS的英特尔Wi-Fi 适配器Airport扩展</string>
 			<key>name</key>
-			<string>itlwm</string>
+			<string>AirportItlwm</string>
 			<key>remoteFolder</key>
 			<string>itlwm</string>
 			<key>url</key>
