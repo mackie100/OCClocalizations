@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Opencore Configurator (OpenCore Builder)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: eugene-grb\n"
+"Language-Team: Coool\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"X-Generator: Coool Manual\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Opencore Builder"
+msgstr "Opencore veidotājs"
+
+msgid "install ${BIN} with administrator privileges dialog"
+msgstr "Lai uzstādītu ${BIN}, vispirms ir jāievada administratora konta parole, lai turpinātu:"
+
+msgid "Cancel"
+msgstr "Atcelt"
+
+msgid "Continue"
+msgstr "Turpināt"
+
+msgid "User aborted"
+msgstr "Lietotājs pārtrauca darbību"
+
+msgid "Building ${util}..."
+msgstr "Veido ${util}..."
+
+msgid "Building ${util} for Windows..."
+msgstr "Veido ${util} priekš Windows..."
+
+msgid "Missing package directory"
+msgstr "Trūkst pakotnes direktorija"
+
+msgid "Invalid version"
+msgstr "Nederīga versija"
+
+msgid "Copying OpenDuetPkg boot file from ${booter}..."
+msgstr "OpenDuetPkg boot (sāknēšanas) faila kopēšan no ${booter}..."
+
+msgid "Failed to find OpenDuetPkg at ${booter}!"
+msgstr "Nevarēja atrast OpenDuetPkg ${booter} adresē!"
+
+msgid "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
+msgstr "${URL} repozitorijs ar nosaukumu ${DEVELOPER_KIT} satur CRLF rindas beigas"
+
+msgid "Downloading AUDK"
+msgstr "Notiek AUDK repozitorija lejupielāde..."
+
+msgid "Downloading OpenCorePkg"
+msgstr "Notiek OpenCore Pkg repozitorija lejupielāde..."
+
+msgid "Downloading OcBinaryData"
+msgstr "Notiek OcBinaryData repozitorija lejupielāde..."
+
+msgid "Generating EFI"
+msgstr "Izveido EFI mapi"
+
+msgid "Building complete"
+msgstr "Būvēšanas process pabeigts"
+
+msgid "Copying Binary Data"
+msgstr "Kopē Bināros datus"
+
+msgid "install NASM"
+msgstr "Pirms sākt veidot OpenCore Pkg, man jāuzstāda NASM"
+
+msgid "install MTOC"
+msgstr "Pirms sākt veidot OpenCore Pkg, man jāuzstāda MTOC"
+
+msgid "Applied patch"
+msgstr "Ielāps piemērots"
+
+msgid "Compiling OpenCorePkg"
+msgstr "Kompilē OpenCore Pkg pēdējo zināmo versiju..."
