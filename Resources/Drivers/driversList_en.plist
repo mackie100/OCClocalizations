@@ -17,9 +17,29 @@
 		</dict>
 		<dict>
 			<key>description</key>
+			<string>Open source BTRFS file system driver, required for booting with OpenLinuxBoot from a file system which is now quite commonly used with Linux.</string>
+			<key>name</key>
+			<string>btrfs_x64</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
 			<string>Proprietary ExFAT file system driver for Bootcamp support commonly found in Apple firmwares. For Sandy Bridge and earlier CPUs ExFatDxeLegacy driver should be used due to the lack of RDRAND instruction support.</string>
 			<key>name</key>
 			<string>ExFatDxe</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Open source EXT4 file system driver, required for booting with OpenLinuxBoot from the file system most commonly used with Linux.</string>
+			<key>name</key>
+			<string>ext4_x64</string>
 			<key>arch</key>
 			<array>
 				<string>64</string>

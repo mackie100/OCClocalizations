@@ -17,9 +17,29 @@
 		</dict>
 		<dict>
 			<key>description</key>
+			<string>Open source BTRFS file system driver, required for booting with OpenLinuxBoot from a file system which is now quite commonly used with Linux.</string>
+			<key>name</key>
+			<string>btrfs_x64</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
 			<string>用于Bootcamp支持的专有ExFAT文件系统驱动程序，通常在Apple固件中找到。对于Sandy Bridge和更早的CPU，由于缺少RDRAND指令支持，因此应使用ExFatDxeLegacy驱动程序。</string>
 			<key>name</key>
 			<string>ExFatDxe</string>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Open source EXT4 file system driver, required for booting with OpenLinuxBoot from the file system most commonly used with Linux.</string>
+			<key>name</key>
+			<string>ext4_x64</string>
 			<key>arch</key>
 			<array>
 				<string>64</string>
