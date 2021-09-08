@@ -9,7 +9,7 @@
 "133-jD-qYy.title" = "EnableJumpstart";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "2Hl-aN-yVu"; */
-"2Hl-aN-yVu.headerCell.title" = "Enabled";
+"2Hl-aN-yVu.headerCell.title" = "启用";
 
 /* Class = "NSTextFieldCell"; title = "TimerResolution"; ObjectID = "3Ql-TM-Oiv"; */
 "3Ql-TM-Oiv.title" = "TimerResolution";
@@ -66,7 +66,7 @@
 "JWy-Kv-Tq6.title" = "KeySubsequentDelay";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "Kuw-7J-hNc"; */
-"Kuw-7J-hNc.headerCell.title" = "Arguments";
+"Kuw-7J-hNc.headerCell.title" = "参数";
 
 /* Class = "NSTextFieldCell"; title = "AudioCodec"; ObjectID = "L2f-gE-rBP"; */
 "L2f-gE-rBP.title" = "AudioCodec";
@@ -129,7 +129,7 @@
 "ckI-Ly-WbZ.title" = "HighSierra 10.13.x";
 
 /* Class = "NSTableColumn"; headerCell.title = "Path"; ObjectID = "dim-bs-Whu"; */
-"dim-bs-Whu.headerCell.title" = "Path";
+"dim-bs-Whu.headerCell.title" = "路径";
 
 /* Class = "NSButtonCell"; title = "GraphicsInputMirroring"; ObjectID = "eIT-Av-sL1"; */
 "eIT-Av-sL1.title" = "GraphicsInputMirroring";
