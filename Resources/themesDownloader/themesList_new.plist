@@ -262,7 +262,7 @@
 			<key>commits_url</key>
 			<string>https://github.com/blackosx/BsxRedOldApple/commits/main</string>
 			<key>compatibility</key>
-			<string>0.7.0/0.7.3</string>
+			<string>0.7.0</string>
 			<key>name</key>
 			<string>BsxRedOldApple</string>
 			<key>screenshot</key>
@@ -290,7 +290,7 @@
 			<key>commits_url</key>
 			<string>https://github.com/blackosx/BsxDarkSpace1/commits/main</string>
 			<key>compatibility</key>
-			<string>0.7.0/0.7.3</string>
+			<string>0.7.0</string>
 			<key>name</key>
 			<string>BsxDarkSpace1</string>
 			<key>screenshot</key>
