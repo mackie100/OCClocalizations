@@ -51,9 +51,9 @@
 	<key>FirmwareFeaturesMask</key>
 	<string>0xFF1FFF3F</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000000FC0FE137</string>
+	<string>0x00000008FC0FE137</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
-	<string>0x00000000FF1FFF3F</string>
+	<string>0x00000008FF1FFF3F</string>
 	<key>MemoryFormFactor</key>
 	<string>0xD</string>
 	<key>ProcessorType</key>
@@ -73,7 +73,7 @@
 		<string>0x0f</string>
 		<string>0x00</string>
 		<string>0x01</string>
-		<string>0x01</string>
+		<string>0x02</string>
 	</array>
 	<key>SmcBranch</key>
 	<array>
