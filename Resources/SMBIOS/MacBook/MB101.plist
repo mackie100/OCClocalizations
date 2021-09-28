@@ -51,9 +51,9 @@
 	<key>FirmwareFeaturesMask</key>
 	<string>0xFF1FFF3F</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000000FC0FE13F</string>
+	<string>0x00000008FC0FE13F</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
-	<string>0x00000000FF1FFF3F</string>
+	<string>0x00000008FF1FFF3F</string>
 	<key>MemoryFormFactor</key>
 	<string>0xD</string>
 	<key>ProcessorType</key>

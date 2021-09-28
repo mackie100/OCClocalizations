@@ -5,189 +5,220 @@
 	<key>DriversUEFI</key>
 	<array>
 		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
 			<key>description</key>
 			<string> UEFI 韌體中的 HDA 音訊支援驅動程式，適用於大多數 Intel 和其他一些模擬音訊控制器。</string>
 			<key>name</key>
 			<string>AudioDxe</string>
-			<key>arch</key>
-			<array>
-				<string>32</string>
-				<string>64</string>
-			</array>
 		</dict>
 		<dict>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>Open source BTRFS file system driver, required for booting with OpenLinuxBoot from a file system which is now quite commonly used with Linux.</string>
+			<key>name</key>
+			<string>btrfs_x64</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
 			<key>description</key>
 			<string>用於Bootcamp支援的專有ExFAT文件系统驅動程式，通常在Apple韌體中找到。對於Sandy Bridge和更早的CPU，由於缺少RDRAND指令支援，因此應使用ExFatDxeLegacy驅動程式。</string>
 			<key>name</key>
 			<string>ExFatDxe</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>64</string>
 			</array>
+			<key>description</key>
+			<string>Open source EXT4 file system driver, required for booting with OpenLinuxBoot from the file system most commonly used with Linux.</string>
+			<key>name</key>
+			<string>ext4_x64</string>
 		</dict>
 		<dict>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
 			<key>description</key>
 			<string></string>
 			<key>name</key>
 			<string>ExFatDxeLegacy</string>
-			<key>arch</key>
-			<array>
-				<string>64</string>
-			</array>
 		</dict>
 		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
 			<key>description</key>
 			<string>HII服務支援MdeModulePkg的驅動程式。從Ivy Bridge生成的大多數韌體中都包含此驅動程式。某些带有GUI的應用程式（例如UEFI Shell）可能需要此驅動程式才能正常工作。</string>
 			<key>name</key>
 			<string>HiiDatabase</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>OpenRuntime是OpenCore必不可少外掛程式。該外掛程式實現了OpenCore所需的多個功能，務必啟用!!</string>
 			<key>name</key>
 			<string>OpenRuntime</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>OpenCanopy是一個GUI化的OpenCore使用者介面，它在外部PickerMode中執行，並依賴OpenCorePkg OcBootManagementLib，類似於內建文本界面。
 OpenCanopy需要在Resources目錄中的圖型資源才能運作。可以在OcBinaryData資料庫中找到範例资源（字體和圖片）。
 </string>
 			<key>name</key>
 			<string>OpenCanopy</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>来自MdeModulePkg的NVMe支援驅動程式。從Broadwell一代開始的大多数韌體中都包含此驅動程式。對於Haswell及更早版本，如果安裝了NVMe SSD，則將其加入韌體中可能會更有效。</string>
 			<key>name</key>
 			<string>NvmExpressDxe</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>USB鍵盤驅動程式在自定義USB键盘驅動程式實現的基礎上添加了對AppleKeyMapAggregator的支援。這是內建KeySupport的取代方法，根據韌體的不同，它可能會正常運作。</string>
 			<key>name</key>
 			<string>OpenUsbKbDxe</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>MdeModulePkg的PS/2鍵盤驅動程式。 OpenDuetPkg和某些韌體可能不包括此驅動程式，但是PS / 2鍵盤必须工作。請注意，與OpenUsbKbDxe不同，該驅動程式没有AppleKeyMapAggregator支援，因此需要啟用KeySupport。</string>
 			<key>name</key>
 			<string>Ps2KeyboardDxe</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>MdeModulePkg的PS/2滑鼠驅動程式。某些非常古老的筆記本電腦韌體可能不包括此驅動程式，但觸控板必须在UEFI GUI（如OpenCanopy）中工作。</string>
 			<key>name</key>
 			<string>Ps2MouseDxe</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>MdeModulePkg的USB滑鼠驅動程式。某些虛擬機韌體（例如OVMF）可能不包含此驅動程式，但滑鼠必须在UEFI GUI（如OpenCanopy）中工作。</string>
 			<key>name</key>
 			<string>UsbMouseDxe</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>從Sandy Bridge代開始的大多數韌體中都包含此驅動程式。對於較早的韌體或舊系统，它可以支援外部USB 3.0 PCI卡。</string>
 			<key>name</key>
 			<string>XhciDxe</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>具有bless支援的HFS文件系统驅動程式。該驅動程式可以取代Apple韌體中常見的封閉源HFSPlus驅動程式。現已取代了VboxHfs.efi。</string>
 			<key>name</key>
 			<string>OpenHfsPlus</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>Apple韌體中常見的具有bless支援的專有HFS文件系统驅動程式。對於Sandy Bridge和更早的CPU，由於缺少RDRAND指令支援，因此應使用HfsPlusLegacy驅動程式。</string>
 			<key>name</key>
 			<string>HfsPlus</string>
-			<key>arch</key>
-			<array>
-				<string>32</string>
-				<string>64</string>
-			</array>
 		</dict>
 		<dict>
+			<key>arch</key>
+			<array>
+				<string>64</string>
+			</array>
 			<key>description</key>
 			<string>Legacy 引導模式下HFS分區格式支援</string>
 			<key>name</key>
 			<string>HfsPlusLegacy</string>
+		</dict>
+		<dict>
 			<key>arch</key>
 			<array>
 				<string>64</string>
 			</array>
-		</dict>
-		<dict>
 			<key>description</key>
 			<string>NTFS文件系统驅動程式</string>
 			<key>name</key>
 			<string>NTFS</string>
-			<key>arch</key>
-			<array>
-				<string>64</string>
-			</array>
 		</dict>
 		<dict>
-			<key>description</key>
-			<string>OpenCore引導界面用於截圖的工具，快速鍵為F10</string>
-			<key>name</key>
-			<string>CrScreenshotDxe</string>
 			<key>arch</key>
 			<array>
 				<string>32</string>
 				<string>64</string>
 			</array>
+			<key>description</key>
+			<string>OpenCore引導界面用於截圖的工具，快速鍵為F10</string>
+			<key>name</key>
+			<string>CrScreenshotDxe</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>使用OpenCore來引導Linux發行版，而無需使用Grub引導</string>
+			<key>name</key>
+			<string>OpenLinuxBoot</string>
 		</dict>
 	</array>
 </dict>

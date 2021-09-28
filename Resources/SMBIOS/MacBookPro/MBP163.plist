@@ -5,11 +5,11 @@
 	<key>BIOSVendor</key>
 	<string>Apple Inc.</string>
 	<key>BIOSVersion</key>
-	<string>1715.0.57.0.0</string>
+	<string>1715.40.12.0.0</string>
 	<key>BIOSLegacyVersion</key>
-	<string>MBP163.88Z.F000.B00.2107050231</string>
+	<string>MBP163.88Z.F000.B00.2109052211</string>
 	<key>BIOSReleaseDate</key>
-	<string>07/05/2021</string>
+	<string>09/05/2021</string>
 	<key>SystemManufacturer</key>
 	<string>Apple Inc.</string>
 	<key>SystemProductName</key>
@@ -51,9 +51,9 @@
 	<key>FirmwareFeaturesMask</key>
 	<string>0xFFFFFF7F</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000000FDAFF066</string>
+	<string>0x00000008FDAFF066</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
-	<string>0x00000000FFFFFF7F</string>
+	<string>0x00000008FFFFFF7F</string>
 	<key>MemoryFormFactor</key>
 	<string>0xD</string>
 	<key>ProcessorType</key>

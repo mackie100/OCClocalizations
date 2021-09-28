@@ -1578,7 +1578,7 @@
 
 /* Drivers */
 /* 6zo-Jl-Ryl */
-"TT_uefi_driversTable" = "从OC/Drivers目录加载选定的驱动程序.\n注意一下填入的顺序\n根据硬件不同,可能需要不同的驱动程序.加载不兼容的驱动程序可能导致系统进入无法启动状态,甚至导致永久性固件损坏.一些已知的驱动程序包括:\n•ApfsDriverLoader-APFS文件系统引导驱动程序,在UEFI固件的可启动APFS容器中添加了对嵌入式APFS驱动程序的支持(OC现在已经内置).\n•FwRuntimeServices-可提高OpenCore和Lilu的安全性通过支持只读和只读NVRAM变量(现已改名Openruntime).有些怪癖（例如RequestBootVarRouting）需要此驱动程序才能正常运行.由于是runtime实时驱动程序的性质,即与目标操作系统并行运行,因此无法在OpenCore本身中实现,而是与OpenCore发行版捆绑在一起.\n•EnhancedFatDxe-FatPkg中的FAT文件系统驱动程序.此驱动程序已嵌入所有UEFI固件中,并且无法从OpenCore使用.众所周知,多种固件的FAT支持实现中都有错误,这会导致在尝试写操作时损坏文件系统.如果在引导过程中需要写入EFI分区,则可能需要将此驱动程序嵌入固件中.\n•NvmExpressDxe-来自MdeModulePkg的NVMe支持驱动程序.从Broadwell一代开始的大多数固件中都包含此驱动程序.对于Haswell及更早版本,如果安装了NVMe SSD驱动器,则将其更好地嵌入到固件中.\n•UsbKbDxe-USB键盘驱动程序在自定义USB键盘驱动程序实现的基础上增加了对AppleKeyMapAggregator协议的支持.这是内置KeySupport的替代方法.\n•VBoxHfs-具有支持HFS文件系统的驱动程序.此驱动程序可以替代Apple固件中常见的封闭源HFSPlus驱动程序.虽然功能齐全,但是大约速度慢3倍,并且尚未接受安全审核.\n•XhciDxe-MdeModulePkg中的XHCI USB控制器支持驱动程序.从Sandy Bridge代开始的大多数固件中都包含此驱动程序.对于较早的固件或旧系统,它可以用于支持外部USB 3.0 PCI卡\n•NdkBootPicker-标准OC第三方图形界面模块";
+"TT_uefi_driversTable" = "1.Path\n从 OC/Drivers 目录作为 UEFI 驱动程序加载的文件路径.\n2. Enabled\n如果为 false，此驱动程序条目将被忽略.\n3. Arguments\n一些 OC 插件接受可选的附加参数，可以在此处指定为字符串.";
 
 /* 9f0-xd-rhT */
 "TT_ConnectDrivers" = "驱动程序加载后执行UEFI控制器连接.此选项对于加载文件系统驱动程序很有用,该文件系统驱动程序通常遵循UEFI驱动程序模型,并且可能无法自行启动.虽然有效,但此选项对于执行自动连接的驱动程序可能不是必需的,并且可能会稍微减慢启动速度.";
@@ -1703,3 +1703,5 @@
 "TT_ReloadOptionRoms" = "查询PCI设备并重新加载其Option ROM(如果有).\n\n例如,通过ForgeUefiSupport升级固件版本后,此选项允许在较旧的Mac上重新加载NVIDIA GOP Option ROM.";
 
 "TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.";
+
+"TT_ForceOcWriteFlash" = "允许为所有 OpenCore 系统变量写入闪存.\n\n注意: 大多数类型的固件都应禁用此值，但仍可配置以解决可能存在易失性变量存储溢出或类似问题的固件. 可以观察到跨多个操作系统的启动问题，例如没有这个怪癖的联想 Thinkpad T430 和 T530. 出于安全原因，与安全启动和休眠相关的 Apple 变量不受此限制. 此外，一些 OpenCore 变量因不同原因被豁免, 例如由于可用的用户选项而导致的引导日志, 以及由于时序问题导致的 TSC 频率。切换此选项时, 可能需要重置 NVRAM 以确保完整功能.";
