@@ -1,8 +1,9 @@
 =<div style="text-align:center;font-size:30px;">Coffee Lake Desktop OpenCore 0.7.3 健全性检查结果</div><br/>
+=<div style="text-align:center;font-size:20px;">规则更新:草原企鹅</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.7.3 Intel Coffee Lake Sanity Check
-=参考文章:<a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html>https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html</a>
 =<hr noshade=\"noshade\" />
+=<div style="text-align:center;font-size:20px;">参考文章:<a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html>https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html</a></div>
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake#acpi
 # [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts

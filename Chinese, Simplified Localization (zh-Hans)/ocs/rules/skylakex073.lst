@@ -1,7 +1,8 @@
 =<div style="text-align:center;font-size:30px;">SkyLake-X OpenCore 0.7.3 健全性检查结果</div><br/>
+=<div style="text-align:center;font-size:20px;">规则更新:草原企鹅</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.7.3 Intel SkyLake-X Sanity Check
-=参考文章<a href="https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html">https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html</a>
+=<div style="text-align:center;font-size:20px;">参考文章<a href="https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html">https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x.html</a></div>
 =<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/skylake-x#acpi
