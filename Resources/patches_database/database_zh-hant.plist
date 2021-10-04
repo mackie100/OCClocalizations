@@ -144,15 +144,21 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string>AMD AM4和FX系列 Kernel 修補文件</string>
+			<key>url</key>
+			<string>https://gitee.com/btwise/OCClocalizations/raw/master/Resources/patches_database/patches/Kernel/AMD_AM4_and_FX_series_Kernel_patches.plist</string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>AMD Ryzen系列 Kernel 修補文件</string>
 			<key>url</key>
 			<string>https://gitee.com/btwise/OCClocalizations/raw/master/Resources/patches_database/patches/Kernel/AMD_Ryzen_series_Kernel_patches.plist</string>
 		</dict>
 		<dict>
 			<key>title</key>
-			<string>AMD AM4和FX系列 Kernel 修補文件</string>
+			<string>OC官方示例Kernel 修補文件</string>
 			<key>url</key>
-			<string>https://gitee.com/btwise/OCClocalizations/raw/master/Resources/patches_database/patches/Kernel/AMD_AM4_and_FX_series_Kernel_patches.plist</string>
+			<string>https://gitee.com/btwise/OCClocalizations/raw/master/Resources/patches_database/patches/Kernel/KernelPatches.plist</string>
 		</dict>
 	</array>
 </dict>
