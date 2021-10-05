@@ -105,7 +105,7 @@ Kernel
  CustomSMBIOSGuid=no" <b>{$setting}</b> = <b>{$value}</b> -->如果您有Dell或VIAO主板,请启用此功能"
  DisableIoMapper=yes
  DisableRtcChecksum~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- DummyPowerManagement~=.* "!<b>{$setting}</b> -->已在OpenCore v0.6.6中移动 - 参看<a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#kernel>Kernel -> Emulate</a>"
+ DummyPowerManagement~=.* "!<b>{$setting}</b> -->已从OpenCore v0.6.6开始移动 - 参看<a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#kernel>Kernel -> Emulate</a>"
  ExtendBTFeatureFlags~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  LegacyCommpage=no
  ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -161,11 +161,11 @@ Misc
  ApECID=0
  AuthRestart=no
  BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用,可以使用NVRAM参数里添加"
- BootProtect~=.* "!<b>{$setting}</b> 在OpenCore v0.6.6中已弃用 - 请查阅 <b>LauncherOption</b>"
+ BootProtect~=.* "!<b>{$setting}</b> 从OpenCore v0.6.6开始已弃用 - 请查阅 <b>LauncherOption</b>"
  DmgLoading=Signed
  EnablePassword=no
- RequireSignature~=.* "!<b>{$setting}</b> 在OpenCore v0.5.6中已弃用-请参见 <b>Vault</b>"
- RequireVault~=.* "!<b>{$setting}</b> 在OpenCore v0.5.6中已弃用-请参见 <b>Vault</b>"
+ RequireSignature~=.* "!<b>{$setting}</b> 从OpenCore v0.5.6开始已弃用-请参见 <b>Vault</b>"
+ RequireVault~=.* "!<b>{$setting}</b> 从OpenCore v0.5.6开始已弃用-请参见 <b>Vault</b>"
  Vault=Optional
  SecureBootModel~="Default|Disabled|j137|j680|j132|j174|j140k|j780|j213|j140a|j152f|j160|j230k|j214k|j223|j215|j185|j185f|x86legacy" " <b>{$setting}</b> = <b>{$value}</b> SecureBootModel设置正确":"!<b>{$setting}</b> = <b>{$value}</b> - 这是SecureBootModel的无效选项!"
  HaltLevel=2147483648
@@ -271,23 +271,23 @@ UEFI
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.9中已弃用"
+ KeyMergeThreshold~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已弃用"
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
  PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
- KeyInitalDelay~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.9中已移动到AppleInput中"
- KeySubsequentDelay~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.9中已移动到AppleInput中"
+ KeyInitalDelay~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已移动到AppleInput中"
+ KeySubsequentDelay~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已移动到AppleInput中"
  
 :ProtocolOverrides
- count==18 :"!-->在OpenCore 0.6.9里,您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
+ count==18 :"!-->在这里,您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEg2Info=no
- AppleEvent~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.9中已移动到AppleInput中"
+ AppleEvent~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已移动到AppleInput中"
  AppleFramebufferInfo=no
  AppleImageConversion=no
  AppleImg4Verification=no
@@ -302,10 +302,10 @@ UEFI
  HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2,请启用此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault时才需要"
  OSInfo=no
  UnicodeCollation=no
- ConsoleControl~=.* "!<b>{$setting}</b> 在OpenCore v0.5.6中已弃用-请参见 UEFI/TextRenderer"
+ ConsoleControl~=.* "!<b>{$setting}</b> 从OpenCore v0.5.6开始已弃用-请参见 UEFI/TextRenderer"
 
 :Output
- count==13 :"!-->在OpenCore 0.6.9里,您应该在<b>UEFI/OUTPUT</b>部分中设置13个设置"
+ count==13 :"!-->在这里,您应该在<b>UEFI/OUTPUT</b>部分中设置13个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -324,7 +324,7 @@ UEFI
 
 :Quirks
  AvoidHighAlloc~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
- DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 在OpenCore v0.6.6中已弃用"
+ DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.6开始已弃用"
  DisableSecurityPolicy=no
  ActivateHpetSupport=no
  ExitBootServicesDelay=0
