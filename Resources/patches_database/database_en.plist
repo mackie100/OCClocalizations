@@ -158,7 +158,7 @@
 			<key>title</key>
 			<string>Official Sample Kernel patches</string>
 			<key>url</key>
-			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/Resources/patches_database/patches/KernelPatches.plist</string>
+			<string>https://raw.githubusercontent.com/mackie100/OCClocalizations/master/Resources/patches_database/patches/Kernel/KernelPatches.plist</string>
 		</dict>
 	</array>
 </dict>
