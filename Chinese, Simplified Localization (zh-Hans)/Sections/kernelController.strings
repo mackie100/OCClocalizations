@@ -90,7 +90,7 @@
 "aAH-qz-ikl.headerCell.title" = "跳过\nSkip";
 
 /* Class = "NSButtonCell"; title = "Check Kexts"; ObjectID = "aCc-4w-GcM"; */
-"aCc-4w-GcM.title" = "检查 Kexts";
+"aCc-4w-GcM.title" = "自动调整 Kexts 顺序";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "aHq-mU-IMD"; */
 "aHq-mU-IMD.headerCell.title" = "最大内核\nMaxKernel";
