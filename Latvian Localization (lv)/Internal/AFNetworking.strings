@@ -1,0 +1,23 @@
+﻿/* No comment provided by engineer. */
+"Expected URL to be a file URL" = "Sagaidāmais URL jābūt URL failam";
+
+/* No comment provided by engineer. */
+"File URL not reachable." = "URL fails nav sasniedzams.";
+
+/* No comment provided by engineer. */
+"Not Reachable" = "Nav sasniedzams";
+
+/* No comment provided by engineer. */
+"Reachable via WiFi" = "Sasniedzams, izmantojot WiFi";
+
+/* No comment provided by engineer. */
+"Reachable via WWAN" = "Sasniedzams, izmantojot WWAN";
+
+/* No comment provided by engineer. */
+"Request failed: %1$@ (%2$lu)" = "Pieprasījums neizdevās: %1$@ (%2$lu)";
+
+/* No comment provided by engineer. */
+"Request failed: unacceptable content-type: %@" = "Pieprasījuma kļūda: nepieņemams satura tips: %@";
+
+/* No comment provided by engineer. */
+"Unknown" = "Nezināms";
