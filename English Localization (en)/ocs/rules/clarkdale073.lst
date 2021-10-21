@@ -48,7 +48,7 @@ Booter
  EnableSafeModeSlide=yes " <b>{$setting}</b> = <b>{$value}</b> If you board does not support UEFI, please disable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if your supports UEFI"
  EnableWriteUnprotector=yes " <b>{$setting}</b> = <b>{$value}</b> If you board does not support UEFI, please disable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if your supports UEFI"
  ForceExitBootServices=no
- ProtectCsmRegion~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.7 - See <b>ProtectMemoryRegions</b> instead"
+ ProtectCsmRegion~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.7 - See <b>ProtectMemoryRegions</b> instead"
  ProtectMemoryRegions=no
  ProtectSecureBoot=no
  ProtectUefiServices=no
@@ -56,7 +56,7 @@ Booter
  ProvideMaxSlide=0
  RebuildAppleMemoryMap=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to boot OS X 10.6 or older, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to boot OS X 10.6 or older"
  SetupVirtualMap=yes " <b>{$setting}</b> = <b>{$value}</b> If you board does not support UEFI, please disable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if your supports UEFI"
- ShrinkMemoryMap~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.7 - See <b>RebuildAppleMemoryMap</b> instead"
+ ShrinkMemoryMap~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.7 - See <b>RebuildAppleMemoryMap</b> instead"
  SignalAppleOS=no
  SyncRuntimePermissions=no
  ForceBooterSignature=no
@@ -110,16 +110,16 @@ Kernel
 
 Misc
 :Boot
- BuiltinTextRenderer~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"
- ConsoleBehaviourOs~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
- ConsoleBehaviourUi~="" "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
+ BuiltinTextRenderer~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See UEFI/TextRenderer"
+ ConsoleBehaviourOs~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
+ ConsoleBehaviourUi~="" "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
  ConsoleMode~=.* "!<b>{$setting}</b> has been moved to UEFI/Output section as of OpenCore v0.5.6"
  Resolution~=.* "!<b>{$setting}</b> has been moved to UEFI/Output section as of OpenCore v0.5.6"
  ConsoleAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- HideSelf~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
+ HideSelf~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.9"
  PollAppleHotKeys=no
  ShowPicker=yes
- UsePicker~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
+ UsePicker~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
  TakeoffDelay=0
  HibernateMode=None
  LauncherOption~="Disabled|Full|Short" " <b>{$setting}</b> = <b>{$value}</b> LauncherOption set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - Invalid LauncherOption. Please read the <a href=https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html>[Misc -> Boot Docs]</a>"
@@ -149,11 +149,11 @@ Misc
  ApECID=0
  AuthRestart=no
  BlacklistAppleUpdate=yes
- BootProtect~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.6 - See <b>LauncherOption</b>"
+ BootProtect~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.6.6 - See <b>LauncherOption</b>"
  DmgLoading=Signed
  EnablePassword=no
- RequireSignature~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
- RequireVault~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See <b>Vault</b>"
+ RequireSignature~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See <b>Vault</b>"
+ RequireVault~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See <b>Vault</b>"
  Vault=Optional
  SecureBootModel~="Default|Disabled|j137|j680|j132|j174|j140k|j780|j213|j140a|j152f|j160|j230k|j214k|j223|j215|j185|j185f|x86legacy" " <b>{$setting}</b> = <b>{$value}</b> SecureBootModel set correctly":"!<b>{$setting}</b> = <b>{$value}</b> - This is an invalid option for SecureBootModel!"
  HaltLevel=2147483648
@@ -255,7 +255,7 @@ UEFI
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.9
+ KeyMergeThreshold~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.6.9
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
@@ -286,7 +286,7 @@ UEFI
  HashServices=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
  OSInfo=no
  UnicodeCollation=no
- ConsoleControl~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See UEFI/TextRenderer"
+ ConsoleControl~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See UEFI/TextRenderer"
 
 :Output
  count==13 :"!You should have exactly 13 settings in the UEFI/Output section"
@@ -298,7 +298,7 @@ UEFI
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
  DirectGopRendering=no
- DirectGopCacheMode~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
+ DirectGopCacheMode~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.9"
  ReconnectOnResChange=no
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -306,25 +306,25 @@ UEFI
  Scale~=.* "!<b>{$setting}</b> shouldn't be here"
 
 :Quirks
- AvoidHighAlloc~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6"
- DeduplicateBootOrder~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.6.5"
+ AvoidHighAlloc~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
+ DeduplicateBootOrder~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.6.5"
  DisableSecurityPolicy=no " <b>{$setting}</b> = <b>{$value}</b> If you have a Microsoft Surface device, please enable this"
  ActivateHpetSupport=no
  ExitBootServicesDelay=0
  ForgeUefiSupport=no
  ForceOcWriteFlash=no
  IgnoreInvalidFlexRatio=yes
- ReconnectOnResChange~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- IgnoreTextInGraphics~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- ProvideConsoleGop~=yes "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ ReconnectOnResChange~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
+ IgnoreTextInGraphics~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
+ ProvideConsoleGop~=yes "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
  ReleaseUsbOwnership=no
  ReloadOptionRoms=no
- RequestBootVarFallback~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
+ RequestBootVarFallback~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.9"
  RequestBootVarRouting=yes
  TscSyncTimeout=0
- ReplaceTabWithSpace~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- SanitiseClearScreen~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
- ClearScreenOnModeSwitch~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.6 - See Output/${setting}"
+ ReplaceTabWithSpace~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
+ SanitiseClearScreen~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
+ ClearScreenOnModeSwitch~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
  UnblockFsConnect=no " <b>{$setting}</b> = <b>{$value}</b> If you have an HP system, please enable this"
 
 :ReservedMemory
