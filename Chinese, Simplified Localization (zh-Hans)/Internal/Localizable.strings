@@ -1640,7 +1640,7 @@
 
 "TT_GopPassThrough" = "在UGA协议实例之上提供GOP协议实例.\n\n该选项支持的值如下:\n• Enabled — 为所有UGA协议提供GOP.\n• Apple — 为启用了AppleFramebufferInfo的协议提供GOP.\n• Disabled — 不提供GOP.\n\n此选项通过基于UGA的代理为未实现协议的固件提供GOP协议.\n\n注意：此选项要求启用ProvideConsoleGop.";
 
-"TT_UIScale" = "Type: plist integer, 8 bit\nFailsafe: -1\nDescription: User interface scaling factor.\n\nCorresponds to 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale variable.\n• 1 — 1x scaling, corresponds to normal displays.\n• 2 — 2x scaling, corresponds to HiDPI displays.\n• -1 — leaves the current variable unchanged.\n• 0 — automatically chooses scaling based on the current resolution.";
+"TT_UIScale" = "Type: plist integer, 8 bit\nFailsafe: -1\nDescription: User interface scaling factor.\n\nCorresponds to 4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale variable.\n• 1 — 1x scaling, corresponds to normal displays.\n• 2 — 2x scaling, corresponds to HiDPI displays.\n• -1 — leaves the current variable unchanged.\n• 0 — automatically chooses scaling based on the current resolution.\n\nNote 1: Automatic scale factor detection works on the basis of total pixel area and may fail on small HiDPI displays, in which case the value may be manually managed using the NVRAM section.\n\nNote 2: When switching from manually specified NVRAM variable to this preference an NVRAM reset may be needed.";
 
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra(10.13)之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
