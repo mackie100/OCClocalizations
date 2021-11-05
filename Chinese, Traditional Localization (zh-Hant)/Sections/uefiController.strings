@@ -59,6 +59,9 @@
 /* Class = "NSTabViewItem"; label = "APFS"; ObjectID = "F1Q-I5-6w7"; */
 "F1Q-I5-6w7.label" = "嵌入式APFS";
 
+/* Class = "NSTextFieldCell"; title = "UIScale"; ObjectID = "GlL-l6-Vr1"; */
+"GlL-l6-Vr1.title" = "UIScale";
+
 /* Class = "NSMenuItem"; title = "BIG SUR"; ObjectID = "HqP-Ib-Lhy"; */
 "HqP-Ib-Lhy.title" = "BIG SUR";
 
