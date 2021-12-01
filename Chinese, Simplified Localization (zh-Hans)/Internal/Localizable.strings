@@ -1710,7 +1710,7 @@
 
 "TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.";
 
-"TT_EnableVmx" = "Type: plist boolean\nFailsafe: false\nDescription: Enable Intel virtual machine extensions.\n\nNote: Required to allow virtualization in Windows on some Mac hardware. VMX is enabled or disabled and locked by BIOS before OpenCore starts on most firmware. Use BIOS to enable virtualization where possible.";
+"TT_EnableVmx" = "启用 Intel 虚拟机扩展.\n\n注意:需要在某些 Mac 硬件上允许 Windows 中的虚拟化. 在大多数固件上启动 OpenCore 之前，由 BIOS 启用或禁用并锁定 VMX. 尽可能使用 BIOS 启用虚拟化.";
 
 "TT_ForceOcWriteFlash" = "允许为所有 OpenCore 系统变量写入闪存.\n\n注意: 大多数类型的固件都应禁用此值,但仍可配置以解决可能存在易失性变量存储溢出或类似问题的固件. 可以观察到跨多个操作系统的启动问题,例如没有这个怪癖的联想 Thinkpad T430 和 T530. 出于安全原因,与安全启动和休眠相关的 Apple 变量不受此限制. 此外,一些 OpenCore 变量因不同原因被豁免, 例如由于可用的用户选项而导致的引导日志, 以及由于时序问题导致的 TSC 频率.切换此选项时, 可能需要重置 NVRAM 以确保完整功能.";
 
