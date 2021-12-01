@@ -266,7 +266,7 @@
 			<key>name</key>
 			<string>BsxDebossBluePlain</string>
 			<key>screenshot</key>
-			<string>https://github.com/blackosx/BsxDebossBluePlain/blob/main/preview_ui.jpg</string>
+			<string>https://github.com/blackosx/BsxDebossBluePlain/raw/main/preview_ui.jpg</string>
 			<key>url</key>
 			<string>https://github.com/blackosx/BsxDebossBluePlain/archive/refs/heads/main.zip</string>
 		</dict>
@@ -280,7 +280,7 @@
 			<key>name</key>
 			<string>BsxDebossBlueSkyWater</string>
 			<key>screenshot</key>
-			<string>https://github.com/blackosx/BsxDebossBlueSkyWater/blob/main/preview_ui.jpg</string>
+			<string>https://github.com/blackosx/BsxDebossBlueSkyWater/raw/main/preview_ui.jpg</string>
 			<key>url</key>
 			<string>https://github.com/blackosx/BsxDebossBlueSkyWater/archive/refs/heads/main.zip</string>
 		</dict>
