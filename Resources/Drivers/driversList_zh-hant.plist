@@ -28,6 +28,28 @@
 		<dict>
 			<key>arch</key>
 			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>CSM video driver implementing graphics output protocol based on VESA and legacy BIOS interfaces. Used for UEFI firmware with fragile GOP support (e.g. low resolution). Requires ReconnectGraphicsOnConnect. Included in OpenDuet out of the box.</string>
+			<key>name</key>
+			<string>BiosVideo</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>OpenCore引導界面用於截圖的工具，快速鍵為F10</string>
+			<key>name</key>
+			<string>CrScreenshotDxe</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
 				<string>64</string>
 			</array>
 			<key>description</key>
@@ -197,17 +219,6 @@ OpenCanopy需要在Resources目錄中的圖型資源才能運作。可以在OcBi
 			<string>NTFS文件系统驅動程式</string>
 			<key>name</key>
 			<string>NTFS</string>
-		</dict>
-		<dict>
-			<key>arch</key>
-			<array>
-				<string>32</string>
-				<string>64</string>
-			</array>
-			<key>description</key>
-			<string>OpenCore引導界面用於截圖的工具，快速鍵為F10</string>
-			<key>name</key>
-			<string>CrScreenshotDxe</string>
 		</dict>
 		<dict>
 			<key>arch</key>

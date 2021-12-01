@@ -11,17 +11,6 @@
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>OpenCore引导界面用于截图的工具，快捷键为F10</string>
-			<key>name</key>
-			<string>CrScreenshotDxe</string>
-		</dict>
-		<dict>
-			<key>arch</key>
-			<array>
-				<string>32</string>
-				<string>64</string>
-			</array>
-			<key>description</key>
 			<string>UEFI固件中的HDA音频支持驱动程序，适用于大多数英特尔和其他一些模拟音频控制器。</string>
 			<key>name</key>
 			<string>AudioDxe</string>
@@ -35,6 +24,28 @@
 			<string>开源 BTRFS 文件系统驱动程序，需要使用 OpenLinuxBoot 从文件系统启动，该文件系统现在在 Linux 中非常常用。</string>
 			<key>name</key>
 			<string>btrfs_x64</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>CSM video driver implementing graphics output protocol based on VESA and legacy BIOS interfaces. Used for UEFI firmware with fragile GOP support (e.g. low resolution). Requires ReconnectGraphicsOnConnect. Included in OpenDuet out of the box.</string>
+			<key>name</key>
+			<string>BiosVideo</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>OpenCore引导界面用于截图的工具，快捷键为F10</string>
+			<key>name</key>
+			<string>CrScreenshotDxe</string>
 		</dict>
 		<dict>
 			<key>arch</key>

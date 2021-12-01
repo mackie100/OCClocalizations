@@ -11,17 +11,6 @@
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>The tool for taking screenshots on the OpenCanopy boot interface, the shortcut key is F10</string>
-			<key>name</key>
-			<string>CrScreenshotDxe</string>
-		</dict>
-		<dict>
-			<key>arch</key>
-			<array>
-				<string>32</string>
-				<string>64</string>
-			</array>
-			<key>description</key>
 			<string>HDA audio support driver in UEFI firmwares for most Intel and some other analog audio controllers.</string>
 			<key>name</key>
 			<string>AudioDxe</string>
@@ -35,6 +24,28 @@
 			<string>Open source BTRFS file system driver, required for booting with OpenLinuxBoot from a file system which is now quite commonly used with Linux.</string>
 			<key>name</key>
 			<string>btrfs_x64</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>CSM video driver implementing graphics output protocol based on VESA and legacy BIOS interfaces. Used for UEFI firmware with fragile GOP support (e.g. low resolution). Requires ReconnectGraphicsOnConnect. Included in OpenDuet out of the box.</string>
+			<key>name</key>
+			<string>BiosVideo</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>The tool for taking screenshots on the OpenCanopy boot interface, the shortcut key is F10</string>
+			<key>name</key>
+			<string>CrScreenshotDxe</string>
 		</dict>
 		<dict>
 			<key>arch</key>
