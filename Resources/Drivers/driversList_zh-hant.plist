@@ -21,7 +21,7 @@
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>Open source BTRFS file system driver, required for booting with OpenLinuxBoot from a file system which is now quite commonly used with Linux.</string>
+			<string>開源 BTRFS 文件系統驅動程序，需要使用 OpenLinuxBoot 從文件系統啟動，該文件系統現在在 Linux 中非常常用。</string>
 			<key>name</key>
 			<string>btrfs_x64</string>
 		</dict>
@@ -32,7 +32,7 @@
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>CSM video driver implementing graphics output protocol based on VESA and legacy BIOS interfaces. Used for UEFI firmware with fragile GOP support (e.g. low resolution). Requires ReconnectGraphicsOnConnect. Included in OpenDuet out of the box.</string>
+			<string>CSM 視頻驅動程序實現基於 VESA 和傳統 BIOS 接口的圖形輸出協議。用於具有脆弱 GOP 支持（例如低分辨率）的 UEFI 固件。需要重新連接GraphicsOnConnect。包含在 OpenDuet 中。</string>
 			<key>name</key>
 			<string>BiosVideo</string>
 		</dict>
@@ -63,7 +63,7 @@
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>Open source EXT4 file system driver, required for booting with OpenLinuxBoot from the file system most commonly used with Linux.</string>
+			<string>開源 EXT4 文件系統驅動程序，需要從 Linux 最常用的文件系統使用 OpenLinuxBoot 引導。</string>
 			<key>name</key>
 			<string>ext4_x64</string>
 		</dict>

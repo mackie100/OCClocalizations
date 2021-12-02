@@ -32,7 +32,7 @@
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>CSM video driver implementing graphics output protocol based on VESA and legacy BIOS interfaces. Used for UEFI firmware with fragile GOP support (e.g. low resolution). Requires ReconnectGraphicsOnConnect. Included in OpenDuet out of the box.</string>
+			<string>CSM 视频驱动程序实现基于 VESA 和传统 BIOS 接口的图形输出协议。用于具有脆弱 GOP 支持（例如低分辨率）的 UEFI 固件。需要重新连接GraphicsOnConnect。包含在 OpenDuet 中。</string>
 			<key>name</key>
 			<string>BiosVideo</string>
 		</dict>
