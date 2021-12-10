@@ -316,6 +316,7 @@ UEFI
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
  DirectGopRendering=no
+ ReconnectOnResChange=no
  DirectGopCacheMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  ReconnectOnResChange=no
  ReplaceTabWithSpace=no
@@ -337,7 +338,6 @@ UEFI
  ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  IgnoreTextInGraphics~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  ProvideConsoleGop=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
- ReconnectGraphicsOnConnect=no
  ReleaseUsbOwnership=yes
  ReloadOptionRoms=no
  RequestBootVarFallback~=.* "!<b>{$setting}</b> was deprecated in OpenCore v0.5.9"
