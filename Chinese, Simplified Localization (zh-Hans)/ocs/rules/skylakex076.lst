@@ -294,7 +294,7 @@ UEFI
  ConsoleControl~=.* "!<b>{$setting}</b> 从OpenCore v0.5.6开始已弃用-请参见 UEFI/TextRenderer"
 
 :Output
- count==13 :"!-->在这里，您应该在<b>UEFI/OUTPUT</b>部分中设置13个设置"
+ count==15 :"!-->在这里，您应该在<b>UEFI/OUTPUT</b>部分中设置15个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -304,7 +304,6 @@ UEFI
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
  DirectGopRendering=no
- ReconnectOnResChange=no
  DirectGopCacheMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  ReconnectOnResChange=no
  ReplaceTabWithSpace=no
