@@ -14,6 +14,9 @@
 /* Class = "NSTextFieldCell"; title = "TimerResolution"; ObjectID = "3Ql-TM-Oiv"; */
 "3Ql-TM-Oiv.title" = "TimerResolution";
 
+/* Class = "NSButtonCell"; title = "DisconnectHda"; ObjectID = "3Sg-0T-21K"; */
+"3Sg-0T-21K.title" = "DisconnectHda";
+
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "4ew-tO-Ops"; */
 "4ew-tO-Ops.headerCell.title" = "Comment";
 
@@ -178,6 +181,9 @@
 
 /* Class = "NSButtonCell"; title = "AudioSupport"; ObjectID = "oT1-Q2-rhc"; */
 "oT1-Q2-rhc.title" = "AudioSupport";
+
+/* Class = "NSTextFieldCell"; title = "AudioOutMask"; ObjectID = "r2Q-7P-fO6"; */
+"r2Q-7P-fO6.title" = "AudioOutMask";
 
 /* Class = "NSTabViewItem"; label = "Input"; ObjectID = "tiX-oG-c7h"; */
 "tiX-oG-c7h.label" = "Input";
