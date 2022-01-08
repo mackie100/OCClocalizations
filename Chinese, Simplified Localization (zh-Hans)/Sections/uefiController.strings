@@ -140,6 +140,9 @@
 /* Class = "NSMenuItem"; title = "HIGH SIERRA"; ObjectID = "ckI-Ly-WbZ"; */
 "ckI-Ly-WbZ.title" = "HighSierra 10.13.x";
 
+/* Class = "NSTextFieldCell"; title = "PointerPollMax"; ObjectID = "dh5-Pc-bAh"; */
+"dh5-Pc-bAh.title" = "PointerPollMax";
+
 /* Class = "NSTableColumn"; headerCell.title = "Path"; ObjectID = "dim-bs-Whu"; */
 "dim-bs-Whu.headerCell.title" = "路径\nPath";
 
@@ -181,6 +184,12 @@
 
 /* Class = "NSButtonCell"; title = "AudioSupport"; ObjectID = "oT1-Q2-rhc"; */
 "oT1-Q2-rhc.title" = "AudioSupport";
+
+/* Class = "NSTextFieldCell"; title = "PointerPollMask"; ObjectID = "ps9-16-tfw"; */
+"ps9-16-tfw.title" = "PointerPollMask";
+
+/* Class = "NSTextFieldCell"; title = "PointerPollMin"; ObjectID = "q7Q-3f-fHL"; */
+"q7Q-3f-fHL.title" = "PointerPollMin";
 
 /* Class = "NSTextFieldCell"; title = "AudioOutMask"; ObjectID = "r2Q-7P-fO6"; */
 "r2Q-7P-fO6.title" = "AudioOutMask";
