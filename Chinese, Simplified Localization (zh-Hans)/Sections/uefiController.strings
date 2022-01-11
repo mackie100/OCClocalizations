@@ -42,7 +42,7 @@
 "9fO-yG-VWd.title" = "MinDate";
 
 /* Class = "NSTextFieldCell"; title = "MinimumAudibleGain"; ObjectID = "9gM-JU-65M"; */
-"9gM-JU-65M.title" = "MinimumAudibleGain";
+"9gM-JU-65M.title" = "最小可听增益\nMinimumAudibleGain";
 
 /* Class = "NSTextFieldCell"; title = "KeyInitialDelay"; ObjectID = "Bng-Xc-8Qm"; */
 "Bng-Xc-8Qm.title" = "KeyInitialDelay";
@@ -135,7 +135,7 @@
 "ate-vk-6K8.title" = "ResizeGpuBars";
 
 /* Class = "NSTextFieldCell"; title = "MinimumAssistGain"; ObjectID = "cGr-Vg-96c"; */
-"cGr-Vg-96c.title" = "MinimumAssistGain";
+"cGr-Vg-96c.title" = "最小辅助增益\nMinimumAssistGain";
 
 /* Class = "NSButtonCell"; title = "ResetTrafficClass"; ObjectID = "cgf-ad-vIe"; */
 "cgf-ad-vIe.title" = "ResetTrafficClass";
@@ -165,7 +165,7 @@
 "fZq-zJ-tYW.title" = "默认";
 
 /* Class = "NSTextFieldCell"; title = "MaximumGain"; ObjectID = "g21-Ne-WFK"; */
-"g21-Ne-WFK.title" = "MaximumGain";
+"g21-Ne-WFK.title" = "最大增益\nMaximumGain";
 
 /* Class = "NSTabViewItem"; label = "Output"; ObjectID = "gJG-UT-7D3"; */
 "gJG-UT-7D3.label" = "显示输出";

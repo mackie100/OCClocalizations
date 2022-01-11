@@ -1552,9 +1552,9 @@
 
 "TT_PointerPollMin" = "以毫秒为单位配置最小指针轮询周期.\n\n这是 OpenCore 内置 AppleEvent 驱动程序轮询指针设备(例如鼠标、触控板)以获取运动事件的最短时间. 当前实现默认为 10 毫秒.设置 0 保持此默认值不变.\n\n注意：OEM Apple 实施使用 2 毫秒的轮询速率.";
 
-"TT_PointerPollMax" = "以毫秒为单位配置最大指针轮询周期.\n\n这是 OpenCore 内置 AppleEvent 驱动程序轮询指针设备(例如鼠标、触控板)以获取运动事件的最长时间. 只要设备没有及时响应，周期就会增加到这个值. 当前实现默认为 80 毫秒. 设置 0 保持此默认值不变.\n\n戴尔笔记本电脑中常见的某些触控板驱动程序在没有发生物理移动时响应速度可能非常慢. 这会影响 OpenCanopy 和 FileVault 2 用户界面的响应能力和加载时间. 增加轮询周期可以减少影响.\n\n注意：OEM Apple 实施使用 2 毫秒的轮询速率.";
+"TT_PointerPollMax" = "以毫秒为单位配置最大指针轮询周期.\n\n这是 OpenCore 内置 AppleEvent 驱动程序轮询指针设备(例如鼠标、触控板)以获取运动事件的最长时间. 只要设备没有及时响应,周期就会增加到这个值. 当前实现默认为 80 毫秒. 设置 0 保持此默认值不变.\n\n戴尔笔记本电脑中常见的某些触控板驱动程序在没有发生物理移动时响应速度可能非常慢. 这会影响 OpenCanopy 和 FileVault 2 用户界面的响应能力和加载时间. 增加轮询周期可以减少影响.\n\n注意：OEM Apple 实施使用 2 毫秒的轮询速率.";
 
-"TT_PointerPollMask" = "配置轮询指针的索引.\n\n选择指针设备以轮询 AppleEvent 运动事件. -1 表示所有设备.位总和用于确定特定设备. 例如,要启用设备 0、2、3，该值将为 1+4+8(对应的 2 次方). 共支持 32 个可配置设备.\n\n即使没有相应的物理设备可用，固件中也可能存在某些指针设备. 这些设备通常是占位符、聚合设备, 或代理. 从这些设备收集信息可能会导致用户界面中的运动活动不准确，甚至导致性能问题. 对于存在此类问题的笔记本电脑设置，建议禁用此类指针设备.\n\n系统中可用的指针设备数量可以在日志中找到. 有关详细信息，请参阅找到 N 个指针设备消息.\n\n注意：使用 OEM Apple 实现时无效(请参阅 AppleEvent 设置).";
+"TT_PointerPollMask" = "配置轮询指针的索引.\n\n选择指针设备以轮询 AppleEvent 运动事件. -1 表示所有设备.位总和用于确定特定设备. 例如,要启用设备 0、2、3,该值将为 1+4+8(对应的 2 次方). 共支持 32 个可配置设备.\n\n即使没有相应的物理设备可用,固件中也可能存在某些指针设备. 这些设备通常是占位符、聚合设备, 或代理. 从这些设备收集信息可能会导致用户界面中的运动活动不准确,甚至导致性能问题. 对于存在此类问题的笔记本电脑设置,建议禁用此类指针设备.\n\n系统中可用的指针设备数量可以在日志中找到. 有关详细信息,请参阅找到 N 个指针设备消息.\n\n注意：使用 OEM Apple 实现时无效(请参阅 AppleEvent 设置).";
 
 /* Audio */
 /* YTE-Ba-80O */
@@ -1566,8 +1566,8 @@
 /* UrW-oc-0Oc */
 "TT_AudioOut" = "指定编解码器输出端口的索引,一般从0开始.\n\n找到正确端口的最快方法是将值从0暴力尝试到N-1,N是在日志里显示的输出端口索引数,比如日志里显示有3个输出,可以从0-2挨个试.";
 
-"TT_AudioOutMask" = "指示用于 UEFI 声音的输出通道的位字段.\n\n该选项普通用户一般选成 -1 即可！\n\nAudio mask 是 1 « audio output (相当于 2 ˆ audio output). 例如，对于 audio output0，位掩码为1, 输出3为8，输出0和3为9.\n\n每个HDA编解码器的可用输出节点数(N)显示在调试日志中(用粗体-斜体标记), 可以选择audio output 0 到 N-1:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 个输出)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 个输出)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 个输出)\n\n使用AudioDxe时，将在驱动程序绑定期间记录有关每个输出通道的附加信息, 包括每个输出的位掩码. 应将所需输出的位掩码值相加，以获得AudioOutMask值:\nHDA: | Port widget @ 0x9 是一种输出 (pin defaults 0x2B4020) (bitmask 1)\nHDA: | Port widget @ 0xA 是一种输出 (pin defaults 0x90100112) (bitmask 2)\nHDA: | Port widget @ 0xB 是一种输出 (pin defaults 0x90100110) (bitmask 4)\nHDA: | Port widget @ 0x10 是一种输出 (pin defaults 0x4BE030) (bitmask 8)\n\n可以使用以下命令从Linux编解码器转储中找到有关可用输出通道的更多信息:
-cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音到一个以上的通道(例如，主扬声器加低音扬声器;耳机加扬声器)，只要所有选择的输出支持使用的声音文件格式; 如果没有，那么没有声音将播放和警告将被记录.\n\n当编解码器上所有可用的输出通道都支持可用的声音文件格式时, 然后值为-1将同时向所有通道播放声音. 如果这不起作用, 通常最快的方法是逐个尝试每个可用的输出通道, 以便计算出使用哪个通道.";
+"TT_AudioOutMask" = "指示用于 UEFI 声音的输出通道的位字段.\n\n该选项普通用户一般选成 -1 即可！\n\nAudio mask 是 1 « audio output (相当于 2 ˆ audio output). 例如,对于 audio output0,位掩码为1, 输出3为8,输出0和3为9.\n\n每个HDA编解码器的可用输出节点数(N)显示在调试日志中(用粗体-斜体标记), 可以选择audio output 0 到 N-1:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 个输出)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 个输出)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 个输出)\n\n使用AudioDxe时,将在驱动程序绑定期间记录有关每个输出通道的附加信息, 包括每个输出的位掩码. 应将所需输出的位掩码值相加,以获得AudioOutMask值:\nHDA: | Port widget @ 0x9 是一种输出 (pin defaults 0x2B4020) (bitmask 1)\nHDA: | Port widget @ 0xA 是一种输出 (pin defaults 0x90100112) (bitmask 2)\nHDA: | Port widget @ 0xB 是一种输出 (pin defaults 0x90100110) (bitmask 4)\nHDA: | Port widget @ 0x10 是一种输出 (pin defaults 0x4BE030) (bitmask 8)\n\n可以使用以下命令从Linux编解码器转储中找到有关可用输出通道的更多信息:
+cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音到一个以上的通道(例如,主扬声器加低音扬声器;耳机加扬声器),只要所有选择的输出支持使用的声音文件格式; 如果没有,那么没有声音将播放和警告将被记录.\n\n当编解码器上所有可用的输出通道都支持可用的声音文件格式时, 然后值为-1将同时向所有通道播放声音. 如果这不起作用, 通常最快的方法是逐个尝试每个可用的输出通道, 以便计算出使用哪个通道.";
 
 /* PF5-bc-9Z2 */
 "TT_MinimumVolume" = "最小音量从0到100.\n\n当计算出的音量级别小于MinimumVolume时,屏幕阅读器将使用此音量级别.如果计算出的音量小于MinimumVolume,则不会发出开机提示音.";
@@ -1587,13 +1587,13 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 /* 4mo-Ut-bYl */
 "TT_ResetTrafficClass" = "将HDA流量等级选择寄存器设置为TC0.\n\n仅当TCSEL寄存器配置为使用TC0流量等级时,AppleHDA kext才能正常运行. 有关此寄存器的更多详细信息,请参阅英特尔I/O控制器9(ICH9)数据表(或任何其他ICH数据表).\n\n注意:此选项独立于AudioSupport. 如果使用AppleALC,则最好改用AppleALC alctsel属性.";
 
-"TT_DisconnectHda" = "加载驱动程序前断开HDA控制器.\n\n可能需要在某些系统上(例如苹果硬件，VMware Fusion客户端)允许UEFI声音驱动程序(如AudioDxe)控制音频硬件.";
+"TT_DisconnectHda" = "加载驱动程序前断开HDA控制器.\n\n可能需要在某些系统上(例如苹果硬件,VMware Fusion客户端)允许UEFI声音驱动程序(如AudioDxe)控制音频硬件.";
 
-"TT_MaximumGain" = "Type: plist integer\nFailsafe: -15\nDescription: Maximum gain to use for UEFI audio, specified in decibels (dB) with respect to amplifier reference level of 0 dB (see note 1).\n\nAll UEFI audio will use this gain setting when the system amplifier gain read from the SystemAudioVolumeDB NVRAM variable is higher than this. This is to avoid over-loud UEFI audio when the system volume is set very high, or the SystemAudioVolumeDB NVRAM value has been misconfigured.\n\nNote 1: A typical range of system gain values is from roughly -60 dB to exactly 0 dB, where 0 dB represents the amplifier maximum volume. However these values depend on the hardware and may be different, including gain levels above zero (therefore 0 dB is not the amplifier maximum volume) on non-standard hardware. On any hardware, following the Intel HDA specification, the range will always include 0 dB somewere (at either end or somewhere in between).\n\nNote 2: Values outside −128 dB to +127 dB (which are well beyond physically plausible decibel values) are not allowed.\n\nNote 3: Digital audio output – which does not have a volume slider in-OS – ignores this and all other gain settings, only mute settings are relevant.";
+"TT_MaximumGain" = "UEFI 音频使用的最大增益,以分贝 (dB) 为单位,相对于 0 dB 的放大器参考电平(见注 1).\n\n当从 SystemAudioVolumeDB NVRAM 变量读取的系统放大器增益高于此值时,所有 UEFI 音频都将使用此增益设置. 这是为了避免当系统音量设置得非常高时 UEFI 音频过大, 或 SystemAudioVolumeDB NVRAM 值配置错误.\n\n注 1：系统增益值的典型范围是从大约 -60 dB 到正好 0 dB, 其中 0 dB 代表放大器的最大音量. 然而,这些值取决于硬件并且可能不同, 在非标准硬件上包括高于零的增益水平(因此 0 dB 不是放大器的最大音量).在任何硬件上, 遵循英特尔 HDA 规范,范围将始终包括 0 dB,有些是(在任一端或介于两者之间).\n\n注 2：-128 dB 到 127 dB 以外的值(远远超出物理上合理的分贝值)是不允许的.\n\n注 3：数字音频输出——在操作系统中没有音量滑块——忽略这个和所有其他增益设置,只有静音设置是相关的.";
 
-"TT_MinimumAssistGain" = "Type: plist integer\nFailsafe: -30\nDescription: Minimum gain in decibels (dB) to use for picker audio assist.\n\nThe screen reader will use this amplifier gain if the system amplifier gain read from the SystemAudioVolumeDB NVRAM variable is lower than this.\n\nNote: In addition to this setting, because audio assist must be audible to serve its function, audio assist is not muted even if the OS sound is muted or the StartupMute NVRAM variable is set.";
+"TT_MinimumAssistGain" = "用于拾音器音频辅助的最小增益(以分贝 (dB) 为单位).\n\n如果从 SystemAudioVolumeDB NVRAM 变量读取的系统放大器增益低于此值,则屏幕阅读器将使用此放大器增益.\n\n注意：除此设置外,因为音频辅助必须是可听的才能发挥其功能, 即使操作系统声音已静音或设置了 StartupMute NVRAM 变量,音频辅助也不会静音.";
 
-"TT_MinimumAudibleGain" = "Type: plist integer\nFailsafe: -128\nDescription: Minimum gain in decibels (dB) at which to attempt to play any sound.\n\nThe boot chime will not play if the system amplifier gain level in the SystemAudioVolumeDB NVRAM variable is lower than this.\n\nNote: This setting is designed to save unecessary pauses due to audio setup at inaudible volume levels, when no sound will be heard anyway. Whether there are inaudible volume levels depends on the hardware. On some hardware (including Apple) the audio values are well enough matched to the hardware that the lowest volume levels available are very quiet but audible, whereas on some other hardware combinations, the lowest part of the volume range may not be audible at all.";
+"TT_MinimumAudibleGain" = "尝试播放任何声音的最小增益(以分贝 (dB) 为单位).\n\n如果 SystemAudioVolumeDB NVRAM 变量中的系统放大器增益级别低于此值,则不会播放启动铃声.\n\n注意：此设置旨在节省由于音频设置为听不见的音量而导致的不必要暂停, 当无论如何都听不到声音的时候.是否有听不见的音量取决于硬件. 在某些硬件(包括 Apple)上,音频值与硬件非常匹配,可用的最低音量非常安静但可听, 而在其他一些硬件组合上,音量范围的最低部分可能根本听不到.";
 
 /* Drivers */
 /* 6zo-Jl-Ryl */
@@ -1659,7 +1659,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_GopPassThrough" = "在UGA协议实例之上提供GOP协议实例.\n\n该选项支持的值如下:\n• Enabled — 为所有UGA协议提供GOP.\n• Apple — 为启用了AppleFramebufferInfo的协议提供GOP.\n• Disabled — 不提供GOP.\n\n此选项通过基于UGA的代理为未实现协议的固件提供GOP协议.\n\n注意：此选项要求启用ProvideConsoleGop.";
 
-"TT_UIScale" = "用户界面缩放设置.\n\n对应4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale变量.\n• 1 — 1 倍缩放, 正常显示无缩放.\n• 2 — 2 倍缩放, 适用开启 HiDPI 的显示.\n• -1 — 保持当前变量不变.\n• 0 — 根据当前分辨率自动选择缩放比例.\n\n注 1:自动比例检测基于总像素面积工作，在小型 HiDPI 显示器上可能会失败, 在这种情况下，可以使用 NVRAM 部分手动管理该值.\n\n注 2:当从手动指定的 NVRAM 变量切换到此首选项时，可能需要重置 NVRAM.";
+"TT_UIScale" = "用户界面缩放设置.\n\n对应4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale变量.\n• 1 — 1 倍缩放, 正常显示无缩放.\n• 2 — 2 倍缩放, 适用开启 HiDPI 的显示.\n• -1 — 保持当前变量不变.\n• 0 — 根据当前分辨率自动选择缩放比例.\n\n注 1:自动比例检测基于总像素面积工作,在小型 HiDPI 显示器上可能会失败, 在这种情况下,可以使用 NVRAM 部分手动管理该值.\n\n注 2:当从手动指定的 NVRAM 变量切换到此首选项时,可能需要重置 NVRAM.";
 
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra(10.13)之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
@@ -1727,7 +1727,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.";
 
-"TT_EnableVmx" = "启用 Intel 虚拟机扩展.\n\n注意:需要在某些 Mac 硬件上允许 Windows 中的虚拟化. 在大多数固件上启动 OpenCore 之前，由 BIOS 启用或禁用并锁定 VMX. 尽可能使用 BIOS 启用虚拟化.";
+"TT_EnableVmx" = "启用 Intel 虚拟机扩展.\n\n注意:需要在某些 Mac 硬件上允许 Windows 中的虚拟化. 在大多数固件上启动 OpenCore 之前,由 BIOS 启用或禁用并锁定 VMX. 尽可能使用 BIOS 启用虚拟化.";
 
 "TT_ForceOcWriteFlash" = "允许为所有 OpenCore 系统变量写入闪存.\n\n注意: 大多数类型的固件都应禁用此值,但仍可配置以解决可能存在易失性变量存储溢出或类似问题的固件. 可以观察到跨多个操作系统的启动问题,例如没有这个怪癖的联想 Thinkpad T430 和 T530. 出于安全原因,与安全启动和休眠相关的 Apple 变量不受此限制. 此外,一些 OpenCore 变量因不同原因被豁免, 例如由于可用的用户选项而导致的引导日志, 以及由于时序问题导致的 TSC 频率.切换此选项时, 可能需要重置 NVRAM 以确保完整功能.";
 
