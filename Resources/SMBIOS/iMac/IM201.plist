@@ -29,7 +29,7 @@
 	<key>BoardVersion</key>
 	<string>iMac20,1</string>
 	<key>BoardRevision</key>
-	<string>0x1</string>
+	<string>0x3</string>
 	<key>BoardAssetTag</key>
 	<string>Base Board Asset Tag</string>
 	<key>BoardType</key>
@@ -47,13 +47,13 @@
 	<key>PlatformFeature</key>
 	<string>0x20</string>
 	<key>FirmwareFeatures</key>
-	<string>0xFD8FF576</string>
+	<string>0xFFB3F066</string>
 	<key>FirmwareFeaturesMask</key>
-	<string>0xFFDFFF7F</string>
+	<string>0xFFFFFFFF</string>
 	<key>ExtendedFirmwareFeatures</key>
-	<string>0x00000008FD8FF576</string>
+	<string>0x00000008FFB3F066</string>
 	<key>ExtendedFirmwareFeaturesMask</key>
-	<string>0x00000008FFDFFF7F</string>
+	<string>0x00000008FFFFFFFF</string>
 	<key>MemoryFormFactor</key>
 	<string>0x9</string>
 	<key>ProcessorType</key>
@@ -89,7 +89,7 @@
 	</array>
 	<key>AppleBoardCode</key>
 	<array>
-		<string>PHCD</string>
+		<string>PHC1</string>
 	</array>
 	<key>AppleModelYear</key>
 	<array>
