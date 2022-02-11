@@ -5,6 +5,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Identifier"; ObjectID = "4ac-sL-evA"; */
 "4ac-sL-evA.headerCell.title" = "구분자";
 
+/* Class = "NSTableColumn"; headerCell.title = "Strategy"; ObjectID = "4dj-Wy-oHp"; */
+"4dj-Wy-oHp.headerCell.title" = "Strategy";
+
 /* Class = "NSTableColumn"; headerCell.title = "ExecutablePath"; ObjectID = "5Zf-0g-20b"; */
 "5Zf-0g-20b.headerCell.title" = "적용위치";
 
