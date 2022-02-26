@@ -98,6 +98,9 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_LINUX_ROOT"; ObjectID = "H6a-QA-xQu"; */
 "H6a-QA-xQu.title" = "允许扫描LINUX根目录";
 
+/* Class = "NSTextFieldCell"; title = "LogModules"; ObjectID = "Hda-Yi-c1B"; */
+"Hda-Yi-c1B.title" = "LogModules";
+
 /* Class = "NSButtonCell"; title = "Enable serial port logging"; ObjectID = "HjZ-gH-Q0b"; */
 "HjZ-gH-Q0b.title" = "启用串行端口日志记录";
 
