@@ -1727,7 +1727,7 @@ cat /proc/asound/card{n}/codec#{m}\n\nUsing AudioOutMask, it is possible to play
 
 "TT_ReloadOptionRoms" = "Type: plist boolean\nFailsafe: false\nDescription: Query PCI devices and reload their Option ROMs if available.\n\nFor example, this option allows reloading NVIDIA GOP Option ROM on older Macs after the firmware version is upgraded via ForgeUefiSupport.";
 
-"TT_EnableVectorAcceleration" = "Type: plist boolean\nFailsafe: false\nDescription: Enable AVX vector acceleration of SHA-512 and SHA-384 hashing algorithms.\nNote: This option may cause issues on certain laptop firmwares, including Lenovo.";
+"TT_EnableVectorAcceleration" = "Type: plist boolean\nFailsafe: false\nDescription: Enable AVX vector acceleration of SHA-512 and SHA-384 hashing algorithms.\n\nNote: This option may cause issues on certain laptop firmwares, including Lenovo.";
 
 "TT_EnableVmx" = "Type: plist boolean\nFailsafe: false\nDescription: Enable Intel virtual machine extensions.\n\nNote: Required to allow virtualization in Windows on some Mac hardware. VMX is enabled or disabled and locked by BIOS before OpenCore starts on most firmware. Use BIOS to enable virtualization where possible.";
 
