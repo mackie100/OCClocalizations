@@ -1727,7 +1727,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_ReloadOptionRoms" = "查询PCI设备并重新加载其Option ROM(如果有).\n\n例如,通过ForgeUefiSupport升级固件版本后,此选项允许在较旧的Mac上重新加载NVIDIA GOP Option ROM.";
 
-"TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.";
+"TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.\n注意:这个选项可能会导致某些笔记本电脑固件出现问题，包括联想系列.";
 
 "TT_EnableVmx" = "启用 Intel 虚拟机扩展.\n\n注意:需要在某些 Mac 硬件上允许 Windows 中的虚拟化. 在大多数固件上启动 OpenCore 之前,由 BIOS 启用或禁用并锁定 VMX. 尽可能使用 BIOS 启用虚拟化.";
 
