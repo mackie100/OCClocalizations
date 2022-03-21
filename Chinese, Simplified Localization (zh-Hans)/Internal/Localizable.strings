@@ -1095,6 +1095,8 @@
 /* SGM-P1-Mz5 */
 "TT_ExternalDiskIcons" = "AHCI控制器相关,现在的主板都对AHCI支持的很好,一般选择NO.";
 
+"TT_ForceAquantiaEthernet" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.15.4\nDescription: Enable Aquantia AQtion AQC-107s based 10GbE network cards support.\n\nThis option enables Aquantia AQtion AQC-107s based 10GbE network cards support, which used to work natively before macOS 10.15.4.\n\nNote: When this option is enabled, DisableIoMapper must be disabled and VT-d must be enabled in BIOS. Otherwise, network cards will not function correctly.";
+
 /* Y9I-V0-r5N */
 "TT_ForceSecureBootScheme" = "用于IMG4验证的强制x86方案.\n\n注意：当使用与x86legacy不同的SecureBootModel时,此选项在虚拟机上是必需的.";
 
