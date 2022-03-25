@@ -1095,7 +1095,7 @@
 /* SGM-P1-Mz5 */
 "TT_ExternalDiskIcons" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\n\nNote: This option should be avoided whenever possible. Modern firmware typically have compatible AHCI controllers.";
 
-"TT_ForceAquantiaEthernet" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.15.4\nDescription: Enable Aquantia AQtion AQC-107s based 10GbE network cards support.\n\nThis option enables Aquantia AQtion AQC-107s based 10GbE network cards support, which used to work natively before macOS 10.15.4.\n\nNote: When this option is enabled, DisableIoMapper must be disabled and VT-d must be enabled in BIOS. Otherwise, network cards will not function correctly.";
+"TT_ForceAquantiaEthernet" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.15.4\nDescription: Enable Aquantia AQtion AQC-107s based 10GbE network cards support.\n\nThis option enables Aquantia AQtion AQC-107s based 10GbE network cards support, which used to work natively before macOS 10.15.4.\n\nNote: In order for Aquantia cards to properly function, DisableIoMapper must be disabled, DMAR ACPI table must not be dropped, and VT-d must be enabled in BIOS.";
 
 /* Y9I-V0-r5N */
 "TT_ForceSecureBootScheme" = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Force x86 scheme for IMG4 verification.\n\nNote: This option is required on virtual machines when using SecureBootModel different from x86legacy.";
