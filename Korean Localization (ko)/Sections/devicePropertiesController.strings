@@ -1,7 +1,4 @@
 
-/* Class = "NSView"; ibShadowedToolTip = "2. Delete\nType: plist dict\nDescription: Removes device properties from a map (plist dict) of deivce paths to an array (plist array) of variable names in plist string format."; ObjectID = "1eh-jH-TX2"; */
-"1eh-jH-TX2.ibShadowedToolTip" = "Removes device properties from a map (plist dict) of deivce paths to an array (plist array) of variable names in plist string format.";
-
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "6on-lJ-yiP"; */
 "6on-lJ-yiP.headerCell.title" = "값";
 
@@ -59,11 +56,11 @@
 /* Class = "NSTabViewItem"; label = "Platform IDs"; ObjectID = "n7N-Fd-plx"; */
 "n7N-Fd-plx.label" = "플랫폼 IDs";
 
-/* Class = "NSView"; ibShadowedToolTip = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of deivce paths to a map (plist dict) of variable names and their values in plist metadata format. Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)). Properties will only be set if not present and not deleted.\nNote: Currently properties may only be (formerly) added by the original driver, so unless a separate driver was installed, there is no reason to delete the variables."; ObjectID = "ogK-XX-Zb9"; */
-"ogK-XX-Zb9.ibShadowedToolTip" = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of deivce paths to a map (plist dict) of variable names and their values in plist metadata format. Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)). Properties will only be set if not present and not deleted.\nNote: Currently properties may only be (formerly) added by the original driver, so unless a separate driver was installed, there is no reason to delete the variables.";
-
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "pxh-MR-ISe"; */
 "pxh-MR-ISe.headerCell.title" = "키";
+
+/* Class = "NSMenuItem"; title = "BOOLEAN"; ObjectID = "rEa-BG-aim"; */
+"rEa-BG-aim.title" = "BOOLEAN";
 
 /* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "rqc-Sa-r83"; */
 "rqc-Sa-r83.headerCell.title" = "Devices";

@@ -1,7 +1,4 @@
 
-/* Class = "NSView"; ibShadowedToolTip = "2. Delete\nType: plist dict\nDescription: Removes device properties from a map (plist dict) of device paths to an array (plist array) of variable names in plist string format."; ObjectID = "1eh-jH-TX2"; */
-"1eh-jH-TX2.ibShadowedToolTip" = "從設備路徑投射（plist dict）到plist字串格式的變量名數組（plist數組）中删除設備属性。這裡的設定等同於 Clover 裡的 ACPI 重新命名 _DSM → XDSM + TgtBridge";
-
 /* Class = "NSTableColumn"; headerCell.title = "Value"; ObjectID = "6on-lJ-yiP"; */
 "6on-lJ-yiP.headerCell.title" = "值";
 
@@ -59,11 +56,11 @@
 /* Class = "NSTabViewItem"; label = "Platform IDs"; ObjectID = "n7N-Fd-plx"; */
 "n7N-Fd-plx.label" = "平台ID";
 
-/* Class = "NSView"; ibShadowedToolTip = "1. Add\nType: plist dict\nDescription: Sets device properties from a map (plist dict) of device paths to a map (plist dict) of variable names and their values in plist metadata format. Device paths must be provided in canonic string format (e.g. PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)). Properties will only be set if not present and not deleted.\nNote: Currently properties may only be (formerly) added by the original driver, so unless a separate driver was installed, there is no reason to delete the variables."; ObjectID = "ogK-XX-Zb9"; */
-"ogK-XX-Zb9.ibShadowedToolTip" = "此項是用来注入你的裝置的，主要是顯示卡和音效卡兩部分。同樣你也可以訂製一些裝置到你的關於本機–系统報告–PCI列表中，儘管沒有多大的意義。";
-
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "pxh-MR-ISe"; */
 "pxh-MR-ISe.headerCell.title" = "鍵";
+
+/* Class = "NSMenuItem"; title = "BOOLEAN"; ObjectID = "rEa-BG-aim"; */
+"rEa-BG-aim.title" = "BOOLEAN";
 
 /* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "rqc-Sa-r83"; */
 "rqc-Sa-r83.headerCell.title" = "裝置";

@@ -1077,6 +1077,8 @@
 /* cKa-I9-gvM */
 "TT_AppleXcpmForceBoost" = "强制在XCPM模式下将电脑的cpu频率锁定为最高频率,不建议开启.\n此补丁将0xFF00写入MSR_IA32_PERF_CONTROL(0x199),一般而言,只有某些Xeon型号才能从该补丁中受益.";
 
+"TT_CustomPciSerialDevice" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.7\nDescription: Performs change of PMIO register base address on a customised PCI serial device.\n\nThe patch changes the PMIO register base address that the XNU kernel uses for serial input and output, from that of the default built-in COM1 serial port 0x3F8, to the base address stored in the first IO BAR of a specified PCI device or to a specific base address (e.g. 0x2F8 for COM2).\n\nNote: By default, serial logging is disabled. serial=3 boot argument, which enables serial input and output, should be used for XNU to print logs to the serial port.\n\nNote 2: In addition to this patch, kext Apple16X50PCI0 should be prevented from attaching to have kprintf method working properly. This can be achieved by setting (i.e. Delete, then Add) the class-code property of the PCI serial port device to FFFFFFFF in DeviceProperties section. As an alternative solution, a codeless kext PCIeSerialDisable.kext shown in the spoiler PCIeSerialDisable.kext/Contents/Info.plist may also be used.\n\nNote 3: For this patch to be correctly applied, Override must be enabled with all keys properly set in Custom, under section Misc->Serial.\n\nNote 4: This patch is for PMIO support and is therefore not applied if UseMmio under section Misc->Serial->Custom is false. For MMIO, there are boot arguments pcie_mmio_uart=ADDRESS and mmio_uart=ADDRESS that allow the kernel to use MMIO for serial port access.\n\nNote 5: The serial baud rate must be correctly set in both BaudRate under section Misc->Serial->Custom and via serialbaud=VALUE boot argument, both of which should match against each other. The default baud rate is 115200.";
+
 /* alh-j7-rix */
 "TT_CustomSMBIOSGuid" = "对 UpdateSMBIOSMode 自定义模式执行 GUID 修补, 用于戴尔笔记本电脑 (等同于 Clover 的 DellSMBIOSPatch).";
 
@@ -1186,7 +1188,7 @@
 "TT_AppleDebug" = "启用boot.efi调试日志保存到OpenCore日志.\n\n注意：此选项仅适用于10.15.4及更高版本.";
 
 /* 2lk-2r-hIW */
-"TT_ApplePanic" = "将macOS内核紧急情况保存到OpenCore根分区.\n该文件保存为panic-YYYY-MM-DD-HHMMSS.txt格式. 强烈建议使用keepsyms = 1引导参数来查看紧急日志中的调试符号. 如果不存在,则可以使用kpdescribe.sh实用程序(与OpenCore捆绑在一起)部分恢复堆栈跟踪.\n开发和调试内核会产生更多有用的内核恐慌. 考虑下载并安装\n调试时,请使用来自developer.apple.com的KernelDebugKit. 要激活开发内核,您将需要添加kcsuffix = development引导参数. 使用uname -a命令来确保当前加载的内核是开发(或调试)内核.\n如果未使用OpenCore内核应急保存机制,则可在/Library/Logs/Diagnostic目录中找到内核应急. 从macOS开始,Catalina内核紧急事件以JSON格式存储,因此在传递给kpdescribe.sh之前需要对其进行预处理： \ncat Kernel.panic | grep macOSProcessedStackshotData | python -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'";
+"TT_ApplePanic" = "将macOS内核紧急情况保存到OpenCore根分区.\n该文件保存为panic-YYYY-MM-DD-HHMMSS.txt格式. 强烈建议使用keepsyms = 1引导参数来查看紧急日志中的调试符号. 如果不存在,则可以使用kpdescribe.sh实用程序(与OpenCore捆绑在一起)部分恢复堆栈跟踪.\n开发和调试内核会产生更多有用的内核恐慌. 考虑下载并安装\n调试时,请使用来自developer.apple.com的KernelDebugKit. 要激活开发内核,您将需要添加kcsuffix = development引导参数. 使用uname -a命令来确保当前加载的内核是开发(或调试)内核.\n如果未使用OpenCore内核应急保存机制,则可在/Library/Logs/Diagnostic目录中找到内核应急. 从macOS开始,Catalina内核紧急事件以JSON格式存储,因此在传递给kpdescribe.sh之前需要对其进行预处理： \ncat Kernel.panic | grep macOSProcessedStackshotData | python3 -c 'import json,sys;print(json.load(sys.stdin)[\"macOSPanicString\"])'";
 
 /* eFH-QH-phT */
 "TT_SysReport" = "在EFI分区上生成系统报告.\n此选项将在ESP分区上创建SysReport目录, 该目录将包含ACPI和SMBIOS以及音频codec转储.音频编解码器转储需要加载音频后端驱动程序.\n\n注意：出于安全原因,RELEASE版本中不提供SysReport功能.如果需要此选项,请使用DEBUG版本.";
@@ -1238,6 +1240,36 @@
 "TT_BlacklistAppleUpdate" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统(即macOS Big Sur)无法使用NVRAM变量(run-efi-updater)禁用固件更新,因此存在此选项.";
 
 "TT_AllowToggleSip" = "在 OpenCore 选择器中启用用于禁用和启用系统完整性保护的条目.\n\n这会将 Apple NVRAM 变量 csr-active-config 在SIP启用和SIP禁用之间切换,当前 macOS 默认值(Big Sur当前是0x6F).\n\n注意 1：如果使用 csrutil status 查询,在旧版本(例如 Catalina 及以下)上使用新版本 macOS 中的 SIP Disabled 将报告未知设置, 但仍会正确运行并且是安全的,因为在 macOS 版本之间添加了新位但不会删除旧位. (可以将 CsrUtil.efi 在Misc-tools中配置为文本模式条目在加以配置不同的值, 例如使用参数中的0x67 来切换 macOS Catalina 的默认SIP的值为禁用.)\n\n注2：强烈建议不要养成在禁用SIP的情况下运行macOS的习惯. 使用此启动选项可以更轻松地在真正需要时快速禁用 SIP 保护 - 完成需要的工作之后应重新启用它.";
+
+/* SERIAL */
+"TT_Init" = "Type: plist boolean\nFailsafe: false\nDescription: Perform serial port initialisation.\n\nThis option will perform serial port initialisation within OpenCore prior to enabling (any) debug logging.\n\nRefer to the Debugging section for details.";
+
+"TT_Override" = "Type: plist boolean\nFailsafe: false\nDescription: Override serial port properties. When this option is set to false, no keys from Custom will be overridden.\n\nThis option will override serial port properties listed in the Serial Custom Properties section below.";
+
+/* SERIAL CUSTOM */
+
+"TT_BaudRate" = "Type: plist integer\nFailsafe: 115200\nDescription: Set the baud rate for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialBaudRate defined in MdeModulePkg.dec.";
+
+"TT_ClockRate" = "Type: plist integer\nFailsafe: 1843200\nDescription: Set the clock rate for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate defined in MdeModulePkg.dec.";
+
+"TT_ExtendedTxFifoSize" = "Type: plist integer\nFailsafe: 64\nDescription: Set the extended transmit FIFO size for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialExtendedTxFifoSize defined in MdeModulePkg.dec.";
+
+"TT_FifoControl" = "Type: plist integer\nFailsafe: 0x07\nDescription: Configure serial port FIFO Control settings.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialFifoControl defined in MdeModulePkg.dec.";
+
+"TT_LineControl" = "Type: plist integer\nFailsafe: 0x07\nDescription: Configure serial port Line Control settings.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialLineControl defined in MdeModulePkg.dec.";
+
+"TT_PciDeviceInfo" = "Type: plist data\nFailsafe: 0xFF\nDescription: Set PCI serial device information.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialPciDeviceInfo defined in MdeModulePkg.dec.\n\nNote: The maximum allowed size of this option is 41 bytes. Refer to acidanthera/bugtracker#1954 for more details.\n\nNote 2: This option can be set by running the FindSerialPort tool.";
+
+"TT_RegisterAccessWidth" = "Type: plist integer\nFailsafe: 8\nDescription: Set serial port register access width.\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterAccessWidth defined in MdeModulePkg.dec.";
+
+"TT_RegisterBase" = "Type: plist integer\nFailsafe: 0x03F8\nDescription: Set the base address of serial port registers.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase defined in MdeModulePkg.dec.";
+
+"TT_RegisterStride" = "Type: plist integer\nFailsafe: 1\nDescription: Set the serial port register stride in bytes.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterStride defined in MdeModulePkg.dec.";
+
+"TT_UseHardwareFlowControl" = "Type: plist boolean\nFailsafe: false\nDescription: Enable serial port hardware flow control.\n\n
+This option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl defined in MdeModulePkg.dec.";
+
+"TT_UseMmio" = "Type: plist boolean\nFailsafe: false\nDescription: Indicate whether the serial port registers are in MMIO space.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio defined in MdeModulePkg.dec.";
 
 /* BLESSOVERRIDE */
 /* E7L-MW-EuK */

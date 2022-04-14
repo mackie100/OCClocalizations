@@ -59,6 +59,9 @@
 /* Class = "NSTableColumn"; headerCell.title = "Key"; ObjectID = "pxh-MR-ISe"; */
 "pxh-MR-ISe.headerCell.title" = "Key";
 
+/* Class = "NSMenuItem"; title = "BOOLEAN"; ObjectID = "rEa-BG-aim"; */
+"rEa-BG-aim.title" = "BOOLEAN";
+
 /* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "rqc-Sa-r83"; */
 "rqc-Sa-r83.headerCell.title" = "Devices";
 
