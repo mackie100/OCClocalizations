@@ -921,6 +921,30 @@
 			<key>compatibility</key>
 			<string>0.7.0/0.7.8</string>
 			<key>name</key>
+			<string>Flavours-AppleDisk</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Flavours-AppleDisk.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Flavours-AppleDisk.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.8</string>
+			<key>name</key>
+			<string>Flavours-AppleMonterey</string>
+			<key>screenshot</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Flavours-AppleMonterey.png</string>
+			<key>url</key>
+			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/Resources-0.7.0/Flavours-AppleMonterey.zip</string>
+		</dict>
+		<dict>
+			<key>author</key>
+			<string>chris1111</string>
+			<key>compatibility</key>
+			<string>0.7.0/0.7.8</string>
+			<key>name</key>
 			<string>Flavours-B</string>
 			<key>screenshot</key>
 			<string>https://github.com/chris1111/My-Simple-OC-Themes/raw/master/View%20Boot%200.7/Flavours-B.png</string>
