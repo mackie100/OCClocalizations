@@ -1077,7 +1077,7 @@
 /* cKa-I9-gvM */
 "TT_AppleXcpmForceBoost" = "强制在XCPM模式下将电脑的cpu频率锁定为最高频率,不建议开启.\n此补丁将0xFF00写入MSR_IA32_PERF_CONTROL(0x199),一般而言,只有某些Xeon型号才能从该补丁中受益.";
 
-"TT_CustomPciSerialDevice" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.7\nDescription: Performs change of PMIO register base address on a customised PCI serial device.\n\nThe patch changes the PMIO register base address that the XNU kernel uses for serial input and output, from that of the default built-in COM1 serial port 0x3F8, to the base address stored in the first IO BAR of a specified PCI device or to a specific base address (e.g. 0x2F8 for COM2).\n\nNote: By default, serial logging is disabled. serial=3 boot argument, which enables serial input and output, should be used for XNU to print logs to the serial port.\n\nNote 2: In addition to this patch, kext Apple16X50PCI0 should be prevented from attaching to have kprintf method working properly. This can be achieved by setting (i.e. Delete, then Add) the class-code property of the PCI serial port device to FFFFFFFF in DeviceProperties section. As an alternative solution, a codeless kext PCIeSerialDisable.kext shown in the spoiler PCIeSerialDisable.kext/Contents/Info.plist may also be used.\n\nNote 3: For this patch to be correctly applied, Override must be enabled with all keys properly set in Custom, under section Misc->Serial.\n\nNote 4: This patch is for PMIO support and is therefore not applied if UseMmio under section Misc->Serial->Custom is false. For MMIO, there are boot arguments pcie_mmio_uart=ADDRESS and mmio_uart=ADDRESS that allow the kernel to use MMIO for serial port access.\n\nNote 5: The serial baud rate must be correctly set in both BaudRate under section Misc->Serial->Custom and via serialbaud=VALUE boot argument, both of which should match against each other. The default baud rate is 115200.";
+"TT_CustomPciSerialDevice" = "在定制的 PCI 串行设备上执行 PMIO 寄存器基地址的更改.\n\n该补丁更改了 XNU 内核用于串行输入和输出的 PMIO 寄存器基地址, 从默认的内置 COM1 串口 0x3F8, 到存储在指定 PCI 设备的第一个 IO BAR 中的基地址或到特定基地址 (例如0x2F8 用于 COM2).\n\n注意1:默认情况下, 串行记录被禁用. 引导参数serial=3, 这使串行输入和输出, 应该用于 XNU 将日志打印到串口.\n\n注2:除了这个补丁, 应防止连接 kext Apple16X50PCI0 以使 kprintf 方法正常工作. 这可以通过设置来实现 (i.e. 即删除,然后添加) PCI串口设备的class-code属性为DeviceProperties部分的FFFFFFFF. 作为替代解决方案, 也可以使用 PCIeSerialDisable.kext/Contents/Info.plist 这样的无代码 kext.\n\n注意 3:正确应用此补丁, 必须在自定义中正确设置所有键的情况下启用覆盖, 在 Misc->Serial 部分.\n\n注意 4:此补丁用于 PMIO 支持，因此如果 Misc->Serial->Custom 部分下的 UseMmio 为 false，则不应用此补丁. 对于 MMIO, 有引导参数 pcie_mmio_uart=ADDRESS 和 mmio_uart=ADDRESS 允许内核使用 MMIO 进行串行端口访问.\n\n注 5:串行波特率必须在 Misc->Serial->Custom 部分下的 BaudRate 和通过 serialbaud=VALUE 引导参数正确设置, 两者都应该相互匹配. 默认波特率为 115200.";
 
 /* alh-j7-rix */
 "TT_CustomSMBIOSGuid" = "对 UpdateSMBIOSMode 自定义模式执行 GUID 修补, 用于戴尔笔记本电脑 (等同于 Clover 的 DellSMBIOSPatch).";
@@ -1242,34 +1242,34 @@
 "TT_AllowToggleSip" = "在 OpenCore 选择器中启用用于禁用和启用系统完整性保护的条目.\n\n这会将 Apple NVRAM 变量 csr-active-config 在SIP启用和SIP禁用之间切换,当前 macOS 默认值(Big Sur当前是0x6F).\n\n注意 1：如果使用 csrutil status 查询,在旧版本(例如 Catalina 及以下)上使用新版本 macOS 中的 SIP Disabled 将报告未知设置, 但仍会正确运行并且是安全的,因为在 macOS 版本之间添加了新位但不会删除旧位. (可以将 CsrUtil.efi 在Misc-tools中配置为文本模式条目在加以配置不同的值, 例如使用参数中的0x67 来切换 macOS Catalina 的默认SIP的值为禁用.)\n\n注2：强烈建议不要养成在禁用SIP的情况下运行macOS的习惯. 使用此启动选项可以更轻松地在真正需要时快速禁用 SIP 保护 - 完成需要的工作之后应重新启用它.";
 
 /* SERIAL */
-"TT_Init" = "Type: plist boolean\nFailsafe: false\nDescription: Perform serial port initialisation.\n\nThis option will perform serial port initialisation within OpenCore prior to enabling (any) debug logging.\n\nRefer to the Debugging section for details.";
+"TT_Init" = "执行串口初始化.\n\n此选项将在启用（任意）调试日志之前在 OpenCore 中执行串行端口初始化.\n\n有关详细信息，请参阅调试部分.";
 
-"TT_Override" = "Type: plist boolean\nFailsafe: false\nDescription: Override serial port properties. When this option is set to false, no keys from Custom will be overridden.\n\nThis option will override serial port properties listed in the Serial Custom Properties section below.";
+"TT_Override" = "覆盖串行端口属性. 当此选项设置为 false, 自定义的任何键都不会被覆盖.\n\n此选项将覆盖下面“串行自定义属性”部分中列出的串行端口属性.";
 
 /* SERIAL CUSTOM */
 
-"TT_BaudRate" = "Type: plist integer\nFailsafe: 115200\nDescription: Set the baud rate for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialBaudRate defined in MdeModulePkg.dec.";
+"TT_BaudRate" = "设置串口波特率.\n\n此选项将覆盖 gEfiMdeModulePkgTokenSpaceGuid 的值.MdeModulePkg.dec 中定义的 PcdSerialBaudRate.";
 
-"TT_ClockRate" = "Type: plist integer\nFailsafe: 1843200\nDescription: Set the clock rate for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate defined in MdeModulePkg.dec.";
+"TT_ClockRate" = "设置串口的时钟频率.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate 的值.";
 
-"TT_ExtendedTxFifoSize" = "Type: plist integer\nFailsafe: 64\nDescription: Set the extended transmit FIFO size for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialExtendedTxFifoSize defined in MdeModulePkg.dec.";
+"TT_ExtendedTxFifoSize" = "设置串口的扩展发送 FIFO 大小.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialExtendedTxFifoSize 的值.";
 
-"TT_FifoControl" = "Type: plist integer\nFailsafe: 0x07\nDescription: Configure serial port FIFO Control settings.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialFifoControl defined in MdeModulePkg.dec.";
+"TT_FifoControl" = "配置串行端口 FIFO 控制设置.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialFifoControl 的值.";
 
-"TT_LineControl" = "Type: plist integer\nFailsafe: 0x07\nDescription: Configure serial port Line Control settings.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialLineControl defined in MdeModulePkg.dec.";
+"TT_LineControl" = "配置串行端口线路控制设置.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialLineControl 的值.";
 
-"TT_PciDeviceInfo" = "Type: plist data\nFailsafe: 0xFF\nDescription: Set PCI serial device information.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialPciDeviceInfo defined in MdeModulePkg.dec.\n\nNote: The maximum allowed size of this option is 41 bytes. Refer to acidanthera/bugtracker#1954 for more details.\n\nNote 2: This option can be set by running the FindSerialPort tool.";
+"TT_PciDeviceInfo" = "设置 PCI 串口设备信息.\n\n此选项将覆盖 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialPciDeviceInfo 的值.\n\n注意:此选项的最大允许大小为 41 个字节。有关详细信息，请参阅 acidanthera/bugtracker#1954.\n\n注 2:此选项可以通过运行 FindSerialPort 工具来设置.";
 
-"TT_RegisterAccessWidth" = "Type: plist integer\nFailsafe: 8\nDescription: Set serial port register access width.\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterAccessWidth defined in MdeModulePkg.dec.";
+"TT_RegisterAccessWidth" = "设置串口寄存器访问宽度.\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterAccessWidth 的值.";
 
-"TT_RegisterBase" = "Type: plist integer\nFailsafe: 0x03F8\nDescription: Set the base address of serial port registers.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase defined in MdeModulePkg.dec.";
+"TT_RegisterBase" = "设置串口寄存器的基地址.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterBase 的值.";
 
-"TT_RegisterStride" = "Type: plist integer\nFailsafe: 1\nDescription: Set the serial port register stride in bytes.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterStride defined in MdeModulePkg.dec.";
+"TT_RegisterStride" = "以字节为单位设置串口寄存器步长.\n\n此选项将覆盖 gEfiMdeModulePkgTokenSpaceGuid 的值.MdeModulePkg.dec 中定义的 PcdSerialRegisterStride.";
 
-"TT_UseHardwareFlowControl" = "Type: plist boolean\nFailsafe: false\nDescription: Enable serial port hardware flow control.\n\n
-This option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl defined in MdeModulePkg.dec.";
+"TT_UseHardwareFlowControl" = "开启串口硬件流控.\n\n
+此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl 的值.";
 
-"TT_UseMmio" = "Type: plist boolean\nFailsafe: false\nDescription: Indicate whether the serial port registers are in MMIO space.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio defined in MdeModulePkg.dec.";
+"TT_UseMmio" = "指示串口寄存器是否在MMIO空间.\n\n此选项将覆盖 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio 的值.";
 
 /* BLESSOVERRIDE */
 /* E7L-MW-EuK */

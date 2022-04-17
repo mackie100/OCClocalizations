@@ -60,7 +60,7 @@
 "pxh-MR-ISe.headerCell.title" = "键";
 
 /* Class = "NSMenuItem"; title = "BOOLEAN"; ObjectID = "rEa-BG-aim"; */
-"rEa-BG-aim.title" = "BOOLEAN";
+"rEa-BG-aim.title" = "布尔";
 
 /* Class = "NSTableColumn"; headerCell.title = "Devices"; ObjectID = "rqc-Sa-r83"; */
 "rqc-Sa-r83.headerCell.title" = "设备";
