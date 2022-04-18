@@ -1097,7 +1097,7 @@
 /* SGM-P1-Mz5 */
 "TT_ExternalDiskIcons" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.4\nDescription: Apply icon type patches to IOAHCIPort.kext to force internal disk icons for all AHCI disks.\n\nNote: This option should be avoided whenever possible. Modern firmware typically have compatible AHCI controllers.";
 
-"TT_ForceAquantiaEthernet" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.15.4\nDescription: Enable Aquantia AQtion AQC-107s based 10GbE network cards support.\n\nThis option enables Aquantia AQtion AQC-107s based 10GbE network cards support, which used to work natively before macOS 10.15.4.\n\nNote: In order for Aquantia cards to properly function, DisableIoMapper must be disabled, DMAR ACPI table must not be dropped, and VT-d must be enabled in BIOS.";
+"TT_ForceAquantiaEthernet" = "Type: plist boolean\nFailsafe: false\nRequirement: 10.15.4\nDescription: Enable Aquantia AQtion based 10GbE network cards support.\n\nThis option enables Aquantia AQtion based 10GbE network cards support, which used to work natively before macOS 10.15.4.\n\nNote: In order for Aquantia cards to properly function, DisableIoMapper must be disabled, DMAR ACPI table must not be dropped, and VT-d must be enabled in BIOS.\n\nNote2: While this patch should enable ethernet support for all Aquantia AQtion series, it has only been tested on AQC-107s based 10GbE network cards.";
 
 /* Y9I-V0-r5N */
 "TT_ForceSecureBootScheme" = "Type: plist boolean\nFailsafe: false\nRequirement: 11.0\nDescription: Force x86 scheme for IMG4 verification.\n\nNote: This option is required on virtual machines when using SecureBootModel different from x86legacy.";
@@ -1251,6 +1251,8 @@
 "TT_BaudRate" = "Type: plist integer\nFailsafe: 115200\nDescription: Set the baud rate for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialBaudRate defined in MdeModulePkg.dec.";
 
 "TT_ClockRate" = "Type: plist integer\nFailsafe: 1843200\nDescription: Set the clock rate for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate defined in MdeModulePkg.dec.";
+
+"TT_DetectCable" = "Type: plist boolean\nFailsafe: false\nDescription: Enable serial port cable detection.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialDetectCable defined in MdeModulePkg.dec.";
 
 "TT_ExtendedTxFifoSize" = "Type: plist integer\nFailsafe: 64\nDescription: Set the extended transmit FIFO size for serial port.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialExtendedTxFifoSize defined in MdeModulePkg.dec.";
 

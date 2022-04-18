@@ -236,6 +236,9 @@
 /* Class = "NSButtonCell"; title = "PickerAudioAssist"; ObjectID = "cN2-ao-nCB"; */
 "cN2-ao-nCB.title" = "PickerAudioAssist";
 
+/* Class = "NSButtonCell"; title = "DetectCable"; ObjectID = "cyt-b5-wIV"; */
+"cyt-b5-wIV.title" = "DetectCable";
+
 /* Class = "NSTextFieldCell"; title = "PasswordHash"; ObjectID = "cz1-6R-TEf"; */
 "cz1-6R-TEf.title" = "PasswordHash";
 
