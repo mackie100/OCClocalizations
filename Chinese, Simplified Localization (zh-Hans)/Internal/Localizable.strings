@@ -1252,7 +1252,7 @@
 
 "TT_ClockRate" = "设置串口的时钟频率.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialClockRate 的值.";
 
-"TT_DetectCable" = "Type: plist boolean\nFailsafe: false\nDescription: Enable serial port cable detection.\n\nThis option will override the value of gEfiMdeModulePkgTokenSpaceGuid.PcdSerialDetectCable defined in MdeModulePkg.dec.";
+"TT_DetectCable" = "启用串行端口电缆检测.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialDetectCable 的值.";
 
 "TT_ExtendedTxFifoSize" = "设置串口的扩展发送 FIFO 大小.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialExtendedTxFifoSize 的值.";
 
