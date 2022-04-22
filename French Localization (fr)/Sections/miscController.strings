@@ -272,9 +272,6 @@
 /* Class = "NSTextFieldCell"; title = "Target"; ObjectID = "hAm-Ha-Meb"; */
 "hAm-Ha-Meb.title" = "Target";
 
-/* Class = "NSButtonCell"; title = "SerialInit"; ObjectID = "hRO-hk-wy8"; */
-"hRO-hk-wy8.title" = "SerialInit";
-
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SCSI"; ObjectID = "i2m-65-2vq"; */
 "i2m-65-2vq.title" = "OC_SCAN_ALLOW_DEVICE_SCSI";
 

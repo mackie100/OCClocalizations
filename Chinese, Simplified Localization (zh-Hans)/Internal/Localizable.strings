@@ -1193,9 +1193,6 @@
 /* eFH-QH-phT */
 "TT_SysReport" = "在EFI分区上生成系统报告.\n此选项将在ESP分区上创建SysReport目录, 该目录将包含ACPI和SMBIOS以及音频codec转储.音频编解码器转储需要加载音频后端驱动程序.\n\n注意：出于安全原因,RELEASE版本中不提供SysReport功能.如果需要此选项,请使用DEBUG版本.";
 
-/* fmg-zD-rrJ */
-"TT_SerialInit" = "执行串行端口初始化.\n此选项将在启用调试日志记录之前在OpenCore中执行串行端口初始化.默认值如下:\n• PcdSerialBaudRate — Baud rate: 115200.\n• PcdSerialLineControl — Line control: no parity, 8 data bits, 1 stop bit.\n\n在“调试”部分中查看更多详细信息.";
-
 /* SECURITY */
 /* QbL-ID-H0a */
 "TT_HaltLevel" = "参考OC手册!";

@@ -1193,9 +1193,6 @@
 /* eFH-QH-phT */
 "TT_SysReport" = "Type: plist boolean\nFailsafe: false\nDescription: Produce system report on ESP folder.\n\nThis option will create a SysReport directory in the ESP partition unless already present. The directory will contain ACPI, SMBIOS, and audio codec dumps. Audio codec dumps require an audio backend driver to be loaded.\n\nNote: To maintain system integrity, the SysReport option is not available in RELEASE builds. Use a DEBUG build if this option is required.";
 
-/* fmg-zD-rrJ */
-"TT_SerialInit" = "Type: plist boolean\nFailsafe: false\nDescription: Perform serial port initialisation.\n\nThis option will perform serial port initialisation within OpenCore prior to enabling (any) debug logging. Serial port configuration is defined via PCDs at compile time in gEfiMdeModulePkgTokenSpaceGuid GUID.\n\nDefault values as found in MdeModulePkg.dec are as follows:\n• PcdSerialBaudRate — Baud rate: 115200.\n• PcdSerialLineControl — Line control: no parity, 8 data bits, 1 stop bit.\n\nRefer to the Debugging section for details.";
-
 /* SECURITY */
 /* QbL-ID-H0a */
 "TT_HaltLevel" = "Type: plist integer, 64 bit\nFailsafe: 0x80000000 (DEBUG_ERROR)\nDescription: EDK II debug level bitmask (sum) causing CPU to halt (stop execution) after obtaining a message of HaltLevel. Possible values match DisplayLevel values.";
