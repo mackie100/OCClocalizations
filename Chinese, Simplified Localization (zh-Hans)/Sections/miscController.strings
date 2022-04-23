@@ -18,7 +18,7 @@
 "2dj-hB-QBF.title" = "取消全选";
 
 /* Class = "NSButtonCell"; title = "UseMmio"; ObjectID = "2x2-I1-GDC"; */
-"2x2-I1-GDC.title" = "使用Mmio";
+"2x2-I1-GDC.title" = "UseMmio";
 
 /* Class = "NSTableColumn"; headerCell.title = "Flavour"; ObjectID = "390-oq-BkL"; */
 "390-oq-BkL.headerCell.title" = "风格\nFlavour";
@@ -30,10 +30,10 @@
 "3a7-m4-eNo.headerCell.title" = "文本模式\nTextMode";
 
 /* Class = "NSTabViewItem"; label = "Boot"; ObjectID = "3fm-9G-OpP"; */
-"3fm-9G-OpP.label" = "Boot";
+"3fm-9G-OpP.label" = "Boot-引导";
 
 /* Class = "NSTabViewItem"; label = "Security"; ObjectID = "3fm-Nz-fHj"; */
-"3fm-Nz-fHj.label" = "Security";
+"3fm-Nz-fHj.label" = "Security-安全";
 
 /* Class = "NSTextFieldCell"; title = "PickerVariant"; ObjectID = "4Mc-Dm-vYw"; */
 "4Mc-Dm-vYw.title" = "PickerVariant\n启动界面主题";
@@ -54,10 +54,10 @@
 "7NC-lm-XEM.title" = "在启动菜单标题中显示OpenCore版本.";
 
 /* Class = "NSTextFieldCell"; title = "RegisterAccessWidth"; ObjectID = "8L5-cR-oxT"; */
-"8L5-cR-oxT.title" = "RegisterAccessWidth\n注册访问宽度";
+"8L5-cR-oxT.title" = "RegisterAccessWidth";
 
 /* Class = "NSTextFieldCell"; title = "ClockRate"; ObjectID = "8Th-FQ-O4n"; */
-"8Th-FQ-O4n.title" = "ClockRate\n时钟频率";
+"8Th-FQ-O4n.title" = "ClockRate";
 
 /* Class = "NSTextFieldCell"; title = "PasswordSalt"; ObjectID = "8Xp-t8-QVB"; */
 "8Xp-t8-QVB.title" = "PasswordSalt\n密码加盐";
@@ -72,7 +72,7 @@
 "AEq-Xa-8FR.title" = "DEBUG,NOOPT和DEBUG中的DEBUG警告";
 
 /* Class = "NSTextFieldCell"; title = "LineControl"; ObjectID = "ARZ-Gj-47c"; */
-"ARZ-Gj-47c.title" = "LineControl\n线控";
+"ARZ-Gj-47c.title" = "LineControl";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "Ai7-te-FXf"; */
 "Ai7-te-FXf.title" = "全选";
@@ -135,7 +135,7 @@
 "NXw-uw-Jsu.headerCell.title" = "是否启用\nEnabled";
 
 /* Class = "NSButtonCell"; title = "UseHardwareFlowControl"; ObjectID = "O1Y-Lm-b9f"; */
-"O1Y-Lm-b9f.title" = "UseHardwareFlowControl\n使用硬件流控制";
+"O1Y-Lm-b9f.title" = "UseHardwareFlowControl";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SDCARD"; ObjectID = "Ovd-o6-lEO"; */
 "Ovd-o6-lEO.title" = "允许扫描读卡器设备";
@@ -186,13 +186,13 @@
 "Uz7-yL-WDQ.title" = "启用记录到文件";
 
 /* Class = "NSTextFieldCell"; title = "ExtendedTxFifoSize"; ObjectID = "Vj2-oK-e1w"; */
-"Vj2-oK-e1w.title" = "ExtendedTxFifoSize\n扩展Tx FIFO大小";
+"Vj2-oK-e1w.title" = "ExtendedTxFifoSize";
 
 /* Class = "NSTextFieldCell"; title = "FifoControl"; ObjectID = "Vth-Wg-vL5"; */
-"Vth-Wg-vL5.title" = "FifoControl\n先进先出控制";
+"Vth-Wg-vL5.title" = "FifoControl";
 
 /* Class = "NSTabViewItem"; label = "Serial"; ObjectID = "W1K-v1-hhQ"; */
-"W1K-v1-hhQ.label" = "Serial\n串口";
+"W1K-v1-hhQ.label" = "Serial-串口";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_FILE_SYSTEM_LOCK"; ObjectID = "Wnm-4q-QJ3"; */
 "Wnm-4q-QJ3.title" = "扫描已知文件系统";
@@ -216,7 +216,7 @@
 "YQh-9A-q5Q.title" = "允许扫描SAS和Mac NVMe设备";
 
 /* Class = "NSTabViewItem"; label = "Debug"; ObjectID = "Yod-ne-FH8"; */
-"Yod-ne-FH8.label" = "Debug";
+"Yod-ne-FH8.label" = "Debug-调试";
 
 /* Class = "NSButtonCell"; title = "Enable basic console (onscreen) logging"; ObjectID = "ZZP-5O-C0h"; */
 "ZZP-5O-C0h.title" = "启用基本控制台(屏幕上)日志记录";
@@ -237,7 +237,7 @@
 "cN2-ao-nCB.title" = "PickerAudioAssist\n启用语音辅助";
 
 /* Class = "NSButtonCell"; title = "DetectCable"; ObjectID = "cyt-b5-wIV"; */
-"cyt-b5-wIV.title" = "DetectCable\n检测串行线缆缆";
+"cyt-b5-wIV.title" = "DetectCable";
 
 /* Class = "NSTextFieldCell"; title = "PasswordHash"; ObjectID = "cz1-6R-TEf"; */
 "cz1-6R-TEf.title" = "PasswordHash\n密码哈希";
@@ -264,10 +264,10 @@
 "fVY-aJ-OPc.title" = "DmgLoading";
 
 /* Class = "NSTextFieldCell"; title = "BaudRate"; ObjectID = "gAx-eA-Xlp"; */
-"gAx-eA-Xlp.title" = "BaudRate\n波特率";
+"gAx-eA-Xlp.title" = "BaudRate";
 
 /* Class = "NSButtonCell"; title = "Override"; ObjectID = "h3l-rD-5k5"; */
-"h3l-rD-5k5.title" = "Override\n覆盖";
+"h3l-rD-5k5.title" = "Override";
 
 /* Class = "NSTextFieldCell"; title = "Target"; ObjectID = "hAm-Ha-Meb"; */
 "hAm-Ha-Meb.title" = "Target";
@@ -321,7 +321,7 @@
 "pqr-DX-ZAM.title" = "Halt Level";
 
 /* Class = "NSTextFieldCell"; title = "PciDeviceInfo"; ObjectID = "q6W-hH-Kqw"; */
-"q6W-hH-Kqw.title" = "PciDeviceInfo\nPci 设备信息";
+"q6W-hH-Kqw.title" = "PciDeviceInfo";
 
 /* Class = "NSButtonCell"; title = "AllowSetDefault"; ObjectID = "qpq-Le-cti"; */
 "qpq-Le-cti.title" = "AllowSetDefault\n启用设置默认启动项";
@@ -330,7 +330,7 @@
 "r8W-nu-W4X.title" = "启用启动菜单中的指针控制(如果可用)";
 
 /* Class = "NSTextFieldCell"; title = "RegisterStride"; ObjectID = "sgV-ax-Zk1"; */
-"sgV-ax-Zk1.title" = "RegisterStride\注册步进";
+"sgV-ax-Zk1.title" = "RegisterStride";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_USB"; ObjectID = "sti-pn-v4l"; */
 "sti-pn-v4l.title" = "允许扫描USB设备";
