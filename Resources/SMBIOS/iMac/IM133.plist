@@ -5,11 +5,11 @@
 	<key>BIOSVendor</key>
 	<string>Apple Inc.</string>
 	<key>BIOSVersion</key>
-	<string>426.0.0.0.0</string>
+	<string>429.0.0.0.0</string>
 	<key>BIOSLegacyVersion</key>
-	<string>IM131.88Z.F000.B00.2201181204</string>
+	<string>IM131.88Z.F000.B00.2203181115</string>
 	<key>BIOSReleaseDate</key>
-	<string>01/18/2022</string>
+	<string>03/18/2022</string>
 	<key>SystemManufacturer</key>
 	<string>Apple Inc.</string>
 	<key>SystemProductName</key>
