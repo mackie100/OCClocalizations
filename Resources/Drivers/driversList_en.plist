@@ -231,6 +231,50 @@ Note: OpenCanopy is currently considered experimental and is not recommended for
 			<key>name</key>
 			<string>OpenLinuxBoot</string>
 		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>Partition management driver with Apple Partitioning Scheme support. This driver can be used to support loading older DMG recoveries such as macOS 10.9 using Apple Partitioning Scheme. OpenDuet already includes this driver.</string>
+			<key>name</key>
+			<string>OpenPartitionDxe</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>New Technologies File System (NTFS) read-only driver. NTFS is the primary file system for Microsoft Windows versions that are based on Windows NT.</string>
+			<key>name</key>
+			<string>OpenNtfsDxe</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>OpenCore plugin implementing OC_BOOT_ENTRY_PROTOCOL to add a configurable Reset NVRAM entry to the boot picker menu.</string>
+			<key>name</key>
+			<string>ResetNvramEntry</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>OpenCore plugin implementing OC_BOOT_ENTRY_PROTOCOL to add a configurable Toggle SIP entry to the boot picker menu.</string>
+			<key>name</key>
+			<string>ToggleSipEntry</string>
+		</dict>
 	</array>
 </dict>
 </plist>
