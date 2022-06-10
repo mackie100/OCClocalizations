@@ -119,9 +119,6 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_FIREWIRE"; ObjectID = "I0K-dq-ofU"; */
 "I0K-dq-ofU.title" = "OC_SCAN_ALLOW_DEVICE_FIREWIRE";
 
-/* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
-"Jpe-QB-x2r.title" = "AllowNvramReset";
-
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
 "KRE-fs-cVq.title" = "Unselect All";
 
@@ -298,9 +295,6 @@
 
 /* Class = "NSButtonCell"; title = " OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "nmh-33-tbM"; */
 "nmh-33-tbM.title" = " OC_SCAN_ALLOW_DEVICE_ATAPI";
-
-/* Class = "NSButtonCell"; title = "AllowToggleSip"; ObjectID = "nsS-VU-gur"; */
-"nsS-VU-gur.title" = "AllowToggleSip";
 
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
 "oFg-pn-DgG.label" = "Tools";

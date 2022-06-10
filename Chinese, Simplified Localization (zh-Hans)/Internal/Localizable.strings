@@ -1221,9 +1221,6 @@
 /* pYq-Ve-K08 */
 "TT_PasswordSalt" = "设置启用密码保护时使用密码加盐算法.";
 
-/* pTC-aG-QK1 */
-"TT_AllowNvramReset" = "允许CMD + OPT + P + R或在启动菜单中显示ResetNVRAM重置菜单.\n\n提示:尽量不使用此项功能,用cleanNVRAM.efi工具替代,因为一些主板适用此功能后会导致启动黑屏而且无法进入BIOS界面的'硬件损坏'!";
-
 /* 0sy-D3-AKk */
 "TT_AuthRestart" = "允许重启 FileVault2 分区时不用再次输密码, 有安全风险.\n与磁盘加密启动相关,一般选NO";
 
@@ -1235,8 +1232,6 @@
 
 /* Nph-Bb-8b6 */
 "TT_BlacklistAppleUpdate" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统(即macOS Big Sur)无法使用NVRAM变量(run-efi-updater)禁用固件更新,因此存在此选项.";
-
-"TT_AllowToggleSip" = "在 OpenCore 选择器中启用用于禁用和启用系统完整性保护的条目.\n\n这会将 Apple NVRAM 变量 csr-active-config 在SIP启用和SIP禁用之间切换,当前 macOS 默认值(Big Sur当前是0x6F).\n\n注意 1：如果使用 csrutil status 查询,在旧版本(例如 Catalina 及以下)上使用新版本 macOS 中的 SIP Disabled 将报告未知设置, 但仍会正确运行并且是安全的,因为在 macOS 版本之间添加了新位但不会删除旧位. (可以将 CsrUtil.efi 在Misc-tools中配置为文本模式条目在加以配置不同的值, 例如使用参数中的0x67 来切换 macOS Catalina 的默认SIP的值为禁用.)\n\n注2：强烈建议不要养成在禁用SIP的情况下运行macOS的习惯. 使用此启动选项可以更轻松地在真正需要时快速禁用 SIP 保护 - 完成需要的工作之后应重新启用它.";
 
 /* SERIAL */
 "TT_Init" = "执行串口初始化.\n\n此选项将在启用（任意）调试日志之前在 OpenCore 中执行串行端口初始化.\n\n有关详细信息，请参阅调试部分.";

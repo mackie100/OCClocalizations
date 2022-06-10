@@ -119,9 +119,6 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_FIREWIRE"; ObjectID = "I0K-dq-ofU"; */
 "I0K-dq-ofU.title" = "允许扫描FireWire设备";
 
-/* Class = "NSButtonCell"; title = "AllowNvramReset"; ObjectID = "Jpe-QB-x2r"; */
-"Jpe-QB-x2r.title" = "AllowNvramReset\n启用重置Nvram功能";
-
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "KRE-fs-cVq"; */
 "KRE-fs-cVq.title" = "取消全选";
 
@@ -298,9 +295,6 @@
 
 /* Class = "NSButtonCell"; title = " OC_SCAN_ALLOW_DEVICE_ATAPI"; ObjectID = "nmh-33-tbM"; */
 "nmh-33-tbM.title" = " 允许扫描CD/DVD设备";
-
-/* Class = "NSButtonCell"; title = "AllowToggleSip"; ObjectID = "nsS-VU-gur"; */
-"nsS-VU-gur.title" = "AllowToggleSip\n允许切换SIP状态";
 
 /* Class = "NSTabViewItem"; label = "Tools"; ObjectID = "oFg-pn-DgG"; */
 "oFg-pn-DgG.label" = "Tools-添加附加工具";

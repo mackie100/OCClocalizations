@@ -1221,9 +1221,6 @@
 /* pYq-Ve-K08 */
 "TT_PasswordSalt" = "Type: plist data\nFailsafe: empty\nDescription: Password salt used when EnabledPassword is set.";
 
-/* pTC-aG-QK1 */
-"TT_AllowNvramReset" = "Type: plist boolean\nFailsafe: false\nDescription: Allow CMD+OPT+P+R handling and enable showing NVRAM Reset entry in OpenCore picker.\n\nNote 1: It is known that some Lenovo laptops have a firmware bug, which makes them unbootable after performing NVRAM reset.\n\nNote 2: Resetting NVRAM will also erase any boot options not backed up using the bless command. For example, Linux installations to custom locations not specified in BlessOverride.";
-
 /* 0sy-D3-AKk */
 "TT_AuthRestart" = "Type: plist boolean\nFailsafe: false\nDescription: Enable VirtualSMC-compatible authenticated restart.\n\nAuthenticated restart is a way to reboot FileVault 2 enabled macOS without entering the password. A dedicated terminal command can be used to perform authenticated restarts: sudo fdesetup authrestart. It is also used when installing operating system updates.\n\nVirtualSMC performs authenticated restarts by splitting and saving disk encryption keys between NVRAM and RTC, which despite being removed as soon as OpenCore starts, may be considered a security risk and thus is optional.";
 
@@ -1235,8 +1232,6 @@
 
 /* Nph-Bb-8b6 */
 "TT_BlacklistAppleUpdate" = "Type: plist boolean\nFailsafe: false\nDescription: Ignore boot options trying to update Apple peripheral firmware (e.g. MultiUpdater.efi).\n\nNote: Certain operating systems, such as macOS Big Sur, are incapable of disabling firmware updates by using the run-efi-updater NVRAM variable.";
-
-"TT_AllowToggleSip" = "Type: plist boolean\nFailsafe: false\nDescription: Enable entry for disabling and enabling System Integrity Protection in OpenCore picker.\n\nThis will toggle Apple NVRAM variable csr-active-config between 0 for SIP Enabled and a practical default value for SIP Disabled.\n\nNote1: It is strongly recommended not to make a habit of running macOS with SIP disabled. Use of this boot option may make it easier to quickly disable SIP protection when genuinely needed - it should be re-enabled again afterwards.\n\nNote 2: OpenCore uses 0x27F while csrutil disable on macOS Big Sur and Monterey sets 0x7F.\n\t• CSR_ALLOW_UNAPPROVED_KEXTS (0x200) is generally useful, in the case where you do need to have SIP disabled anyway, as it allows installing unsigned kexts without manual approval in System Preferences.\n\t• CSR_ALLOW_UNAUTHENTICATED_ROOT (0x800) is not included, as it is very easy when using it to inadvertently break OS seal and prevent incremental OTA updates.\n\nNote3: For any other value which you may need to use, it is possible to configure CsrUtil.efi as a TextMode Tools entry to configure a different value, e.g. use toggle 0x77 in Arguments to toggle the SIP disabled value set by default in macOS Catalina.";
 
 /* SERIAL */
 "TT_Init" = "Type: plist boolean\nFailsafe: false\nDescription: Perform serial port initialisation.\n\nThis option will perform serial port initialisation within OpenCore prior to enabling (any) debug logging.\n\nRefer to the Debugging section for details.";
