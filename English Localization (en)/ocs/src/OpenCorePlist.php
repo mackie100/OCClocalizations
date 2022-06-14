@@ -2,10 +2,11 @@
 
 class OpenCorePlist extends CFPropertyList\CFPropertyList {
     function __construct(string $filename) {
-        if(!file_exists($filename)) {
-            throw new \Exception("File not found - ".getcwd()." $filename ");
+        $fixed_filename = trim(urldecode($filename));
+        if(!file_exists($fixed_filename)) {
+            throw new \Exception("File not found - ".getcwd()." $fixed_filename ");
         }
-        parent::__construct($filename, CFPropertyList\CFPropertyList::FORMAT_XML);
+        parent::__construct($fixed_filename, CFPropertyList\CFPropertyList::FORMAT_XML);
     }
 
     function applyRules(Rules $rules) {

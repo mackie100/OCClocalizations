@@ -6,10 +6,11 @@ class Rules {
     /** An array of rules can be passed in for testing purposes */
     function __construct(string $filename, array $rls = []) {
         if(empty($rls)) {
-            if(!file_exists($filename)) {
+            $fixed_filename = trim(urldecode($filename));
+            if(!file_exists($fixed_filename)) {
                 throw new \Exception('File not found');
             }
-            $rls = file($filename);
+            $rls = file($fixed_filename);
         }
         $group = null;
         $vars = $rule = [];
