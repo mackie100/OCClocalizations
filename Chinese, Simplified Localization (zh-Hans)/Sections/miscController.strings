@@ -135,7 +135,7 @@
 "O1Y-Lm-b9f.title" = "UseHardwareFlowControl";
 
 /* Class = "NSButtonCell"; title = "Enable faster but unsafe file logging"; ObjectID = "OUy-aP-elT"; */
-"OUy-aP-elT.title" = "Enable faster but unsafe file logging";
+"OUy-aP-elT.title" = "启用快速但不安全的文件日志记录";
 
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_DEVICE_SDCARD"; ObjectID = "Ovd-o6-lEO"; */
 "Ovd-o6-lEO.title" = "允许扫描读卡器设备";
