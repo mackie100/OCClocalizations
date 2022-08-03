@@ -23,9 +23,6 @@
 /* Class = "NSBox"; title = "Box"; ObjectID = "NoT-Wv-Hn9"; */
 "NoT-Wv-Hn9.title" = "Box";
 
-/* Class = "NSButtonCell"; title = "LegacyEnable"; ObjectID = "ORI-69-MG3"; */
-"ORI-69-MG3.title" = "LegacyEnable";
-
 /* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "dmH-cD-uzh"; */
 "dmH-cD-uzh.label" = "删除";
 

@@ -238,7 +238,7 @@ Note: OpenCanopy is currently considered experimental and is not recommended for
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>Partition management driver with Apple Partitioning Scheme support. This driver can be used to support loading older DMG recoveries such as macOS 10.9 using Apple Partitioning Scheme. OpenDuet already includes this driver.</string>
+			<string>Partition management driver with Apple Partitioning Scheme support. This driver can be used to support loading older DMG recoveries such as macOS 10.9 using Apple Partitioning Scheme, or for loading other macOS Installers where these were created using the Apple Partitioning Scheme (creating macOS Installers using GPT avoids the need for this). OpenDuet already includes this driver.</string>
 			<key>name</key>
 			<string>OpenPartitionDxe</string>
 		</dict>

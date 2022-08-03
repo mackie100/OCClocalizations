@@ -1293,9 +1293,6 @@
 /* cVF-o8-z0z */
 "TT_nvram_legacySchemaTables" = "用于分配 NVRAM 变量, 与 LegacyEnable 配合使用\n您可以使用*值来接受所有用于选择GUID的变量.\n警告：由于nvram.plist未被存储,因此请非常谨慎地选择变量. 例如,请勿放入boot-args或csr-active-config,因为这会绕过SIP.\n要从macOS读取NVRAM变量值,可以使用nvram,方法是将变量GUID和名称以：符号分隔. 例如,nvram 7C436110-AB2A-4BBB-A880-FE41995C9F82：boot-args.\n可以在相应的文档：NVRAM变量中找到连续更新的变量列表.\n警告：由于nvram.plist未被存储,因此请非常谨慎地选择变量. 例如,不要放入boot-args或csr-active-config,因为它可以绕过SIP.";
 
-/* 2KJ-kg-wip */
-"TT_LegacyEnable" = "允许从EFI卷根目录加载名为nvram.plist的NVRAM变量文件.\n没有原生NVRAM的设备设置为YES\nmacOS下硬件NVRAM工作不正常的设备设置为YES\nmacOS 下硬件 NVRAM 工作正常的设备设置为 NO\n变量加载发生在“block”(和“add”)阶段之前,并且不会覆盖任何现有变量. 必须在LegacySchema中指定允许设置的变量. 第三方脚本可用于创建nvram.plist文件. 此类脚本的示例可以在“实用工具”中找到. 使用第三方脚本可能需要将ExposeSensitiveData设置为0x3才能为OpenCore EFI分区UUID提供引导路径变量.\n警告：此功能非常危险,因为它将不受保护的数据传递到固件可变服务. 仅当固件未提供硬件NVRAM实现或与固件不兼容时才使用它.";
-
 /* Bqu-cW-189 */
 "TT_LegacyOverwrite" = "对模拟nvram用户来说,将nvram.plist写入固件.\n注意：只是覆盖可从操作系统访问的变量,一般不建议开启.";
 

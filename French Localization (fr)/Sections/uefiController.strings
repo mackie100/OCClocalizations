@@ -56,9 +56,6 @@
 /* Class = "NSButtonCell"; title = "PointerSupport"; ObjectID = "Elq-pL-QTD"; */
 "Elq-pL-QTD.title" = "PointerSupport";
 
-/* Class = "NSTextFieldCell"; title = "VolumeAmplifier"; ObjectID = "En7-ww-Uj5"; */
-"En7-ww-Uj5.title" = "VolumeAmplifier";
-
 /* Class = "NSTextFieldCell"; title = "KeyForgetThreshold"; ObjectID = "ErN-ks-EzO"; */
 "ErN-ks-EzO.title" = "KeyForgetThreshold";
 
@@ -76,6 +73,9 @@
 
 /* Class = "NSTextFieldCell"; title = "KeySubsequentDelay"; ObjectID = "JWy-Kv-Tq6"; */
 "JWy-Kv-Tq6.title" = "KeySubsequentDelay";
+
+/* Class = "NSTableColumn"; headerCell.title = "LoadEarly"; ObjectID = "Jlh-ZM-CXj"; */
+"Jlh-ZM-CXj.headerCell.title" = "LoadEarly";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "Kuw-7J-hNc"; */
 "Kuw-7J-hNc.headerCell.title" = "Arguments";
@@ -158,9 +158,6 @@
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";
 
-/* Class = "NSTextFieldCell"; title = "MinimumVolume"; ObjectID = "ehu-K3-gbY"; */
-"ehu-K3-gbY.title" = "MinimumVolume";
-
 /* Class = "NSMenuItem"; title = "DEFAULT"; ObjectID = "fZq-zJ-tYW"; */
 "fZq-zJ-tYW.title" = "DEFAULT";
 
@@ -181,9 +178,6 @@
 
 /* Class = "NSButtonCell"; title = "Connect Drivers"; ObjectID = "kBk-75-acl"; */
 "kBk-75-acl.title" = "Pilote de connexion";
-
-/* Class = "NSTextFieldCell"; title = "AudioOut"; ObjectID = "kM6-tO-pns"; */
-"kM6-tO-pns.title" = "AudioOut";
 
 /* Class = "NSTableColumn"; headerCell.title = "Address"; ObjectID = "ldi-uY-9wO"; */
 "ldi-uY-9wO.headerCell.title" = "Adresse";
