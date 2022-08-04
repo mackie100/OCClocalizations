@@ -75,7 +75,7 @@
 "JWy-Kv-Tq6.title" = "KeySubsequentDelay";
 
 /* Class = "NSTableColumn"; headerCell.title = "LoadEarly"; ObjectID = "Jlh-ZM-CXj"; */
-"Jlh-ZM-CXj.headerCell.title" = "LoadEarly";
+"Jlh-ZM-CXj.headerCell.title" = "提前加载\nLoadEarly";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "Kuw-7J-hNc"; */
 "Kuw-7J-hNc.headerCell.title" = "参数\nArguments";
