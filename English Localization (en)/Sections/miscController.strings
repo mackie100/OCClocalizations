@@ -224,6 +224,9 @@
 /* Class = "NSButtonCell"; title = "OC_SCAN_ALLOW_FS_LINUX_DATA"; ObjectID = "aQY-Kx-ZCy"; */
 "aQY-Kx-ZCy.title" = "OC_SCAN_ALLOW_FS_LINUX_DATA";
 
+/* Class = "NSTableColumn"; headerCell.title = "FullNvramAccess"; ObjectID = "aR1-5z-cNz"; */
+"aR1-5z-cNz.headerCell.title" = "FullNvramAccess";
+
 /* Class = "NSTextFieldCell"; title = "Scan Policy"; ObjectID = "aUx-rK-UTX"; */
 "aUx-rK-UTX.title" = "Scan Policy";
 
