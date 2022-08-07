@@ -225,7 +225,7 @@
 "aQY-Kx-ZCy.title" = "允许扫描LINUX数据分区";
 
 /* Class = "NSTableColumn"; headerCell.title = "FullNvramAccess"; ObjectID = "aR1-5z-cNz"; */
-"aR1-5z-cNz.headerCell.title" = "FullNvramAccess";
+"aR1-5z-cNz.headerCell.title" = "Nvram完全访问\nFullNvramAccess";
 
 /* Class = "NSTextFieldCell"; title = "Scan Policy"; ObjectID = "aUx-rK-UTX"; */
 "aUx-rK-UTX.title" = "Scan Policy";
