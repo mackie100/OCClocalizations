@@ -156,7 +156,7 @@
 			<key>remoteFolder</key>
 			<string>VoodooPS2</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/VoodooPS2/releases/download/VERSION/VoodooPS2Controller-VERSION-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/VoodooPS2/releases/download/vVERSION/VoodooPS2Controller-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
