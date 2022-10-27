@@ -1583,6 +1583,12 @@
 
 "TT_PointerPollMask" = "配置轮询指针的索引.\n\n选择指针设备以轮询 AppleEvent 运动事件. -1 表示所有设备.位总和用于确定特定设备. 例如,要启用设备 0、2、3,该值将为 1+4+8(对应的 2 次方). 共支持 32 个可配置设备.\n\n即使没有相应的物理设备可用,固件中也可能存在某些指针设备. 这些设备通常是占位符、聚合设备, 或代理. 从这些设备收集信息可能会导致用户界面中的运动活动不准确,甚至导致性能问题. 对于存在此类问题的笔记本电脑设置,建议禁用此类指针设备.\n\n系统中可用的指针设备数量可以在日志中找到. 有关详细信息,请参阅找到 N 个指针设备消息.\n\n注意：使用 OEM Apple 实现时无效(请参阅 AppleEvent 设置).";
 
+"TT_PointerDwellClickTimeout" = "Type: plist integer\nFailsafe: 0\nDescription: Configure pointer dwell-clicking single left click timeout in milliseconds in the OpenCore re-implementation of the Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nWhen the timeout expires, a single left click is issued at the current position. 0 indicates the timeout is disabled.";
+
+"TT_PointerDwellDoubleClickTimeout" = "Type: plist integer\nFailsafe: 0\nDescription: Configure pointer dwell-clicking single left double click timeout in milliseconds in the OpenCore re-implementation of the Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nWhen the timeout expires, a single left double click is issued at the current position. 0 indicates the timeout is disabled.";
+
+"TT_PointerDwellRadius" = "Type: plist integer\nFailsafe: 0\nDescription: Configure pointer dwell-clicking tolerance radius in pixels in the OpenCore re-implementation of the Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nThe radius is scaled by UIScale. When the pointer leaves this radius, the timeouts for PointerDwellClickTimeout and PointerDwellDoubleClickTimeout are reset and the new position is the centre for the new dwell-clicking tolerance radius.";
+
 /* Audio */
 /* YTE-Ba-80O */
 "TT_AudioDevice" = "用于音频功能支持的指定音频控制器的设备路径.\n通常,它包含内置的模拟音频控制器(HDEF)设备路径, 比如:PciRoot(0x0)/Pci(0x1b,0x0).\n可以在调试日志中找到音频控制器的列表:\nOCAU: 1/3 PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x1)/VenMsg(<redacted>,00000000) (4 outputs)\nOCAU: 2/3 PciRoot(0x0)/Pci(0x3,0x0)/VenMsg(<redacted>,00000000) (1 outputs)\nOCAU: 3/3 PciRoot(0x0)/Pci(0x1B,0x0)/VenMsg(<redacted>,02000000) (7 outputs)\n\n也可以在macOS中使用gfxutil -f HDEF命令获取或者用Hackintool工具查看音频设备地址.指定空的设备路径将导致使用第一个可用的音频控制器.";

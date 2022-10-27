@@ -50,6 +50,9 @@
 /* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "CLg-lY-N26"; */
 "CLg-lY-N26.title" = "Parcourir";
 
+/* Class = "NSTextFieldCell"; title = "PointerDwellDoubleClickTimeout"; ObjectID = "DmX-u0-OVQ"; */
+"DmX-u0-OVQ.title" = "PointerDwellDoubleClickTimeout";
+
 /* Class = "NSTextFieldCell"; title = "KeySupportMode"; ObjectID = "EeU-wj-caf"; */
 "EeU-wj-caf.title" = "KeySupportMode";
 
@@ -106,6 +109,9 @@
 
 /* Class = "NSTextFieldCell"; title = "TextRenderer"; ObjectID = "QQF-qM-yZS"; */
 "QQF-qM-yZS.title" = "TextRenderer(Rendu de texte)";
+
+/* Class = "NSTextFieldCell"; title = "PointerDwellClickTimeout"; ObjectID = "RZd-HV-DG2"; */
+"RZd-HV-DG2.title" = "PointerDwellClickTimeout";
 
 /* Class = "NSTextFieldCell"; title = "AppleEvent"; ObjectID = "SCl-CT-PaY"; */
 "SCl-CT-PaY.title" = "AppleEvent";
@@ -178,6 +184,9 @@
 
 /* Class = "NSButtonCell"; title = "Connect Drivers"; ObjectID = "kBk-75-acl"; */
 "kBk-75-acl.title" = "Pilote de connexion";
+
+/* Class = "NSTextFieldCell"; title = "PointerDwellRadius"; ObjectID = "lHf-lz-TLM"; */
+"lHf-lz-TLM.title" = "PointerDwellRadius";
 
 /* Class = "NSTableColumn"; headerCell.title = "Address"; ObjectID = "ldi-uY-9wO"; */
 "ldi-uY-9wO.headerCell.title" = "Adresse";
