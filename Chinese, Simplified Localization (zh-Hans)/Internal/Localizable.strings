@@ -1583,11 +1583,11 @@
 
 "TT_PointerPollMask" = "配置轮询指针的索引.\n\n选择指针设备以轮询 AppleEvent 运动事件. -1 表示所有设备.位总和用于确定特定设备. 例如,要启用设备 0、2、3,该值将为 1+4+8(对应的 2 次方). 共支持 32 个可配置设备.\n\n即使没有相应的物理设备可用,固件中也可能存在某些指针设备. 这些设备通常是占位符、聚合设备, 或代理. 从这些设备收集信息可能会导致用户界面中的运动活动不准确,甚至导致性能问题. 对于存在此类问题的笔记本电脑设置,建议禁用此类指针设备.\n\n系统中可用的指针设备数量可以在日志中找到. 有关详细信息,请参阅找到 N 个指针设备消息.\n\n注意：使用 OEM Apple 实现时无效(请参阅 AppleEvent 设置).";
 
-"TT_PointerDwellClickTimeout" = "Type: plist integer\nFailsafe: 0\nDescription: Configure pointer dwell-clicking single left click timeout in milliseconds in the OpenCore re-implementation of the Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nWhen the timeout expires, a single left click is issued at the current position. 0 indicates the timeout is disabled.";
+"TT_PointerDwellClickTimeout" = "在Apple Event协议中OpenCore配置指针驻留单击单次左键单击超时(以毫秒为单位). 在使用OEM苹果实现时没有影响 (查看 AppleEvent 设置).\n\n当超时到期时，在当前位置发出一个左键单击. 0表示关闭超时.";
 
-"TT_PointerDwellDoubleClickTimeout" = "Type: plist integer\nFailsafe: 0\nDescription: Configure pointer dwell-clicking single left double click timeout in milliseconds in the OpenCore re-implementation of the Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nWhen the timeout expires, a single left double click is issued at the current position. 0 indicates the timeout is disabled.";
+"TT_PointerDwellDoubleClickTimeout" = "重新实现Apple Event协议中的配置指针驻留单击单次左双击超时(以毫秒为单位). 在使用OEM苹果实现时没有影响 (查看 AppleEvent 设置).\n\n当超时到期时, 在当前位置发出一个左键双击. 0表示关闭超时.";
 
-"TT_PointerDwellRadius" = "Type: plist integer\nFailsafe: 0\nDescription: Configure pointer dwell-clicking tolerance radius in pixels in the OpenCore re-implementation of the Apple Event protocol. Has no effect when using the OEM Apple implementation (see AppleEvent setting).\n\nThe radius is scaled by UIScale. When the pointer leaves this radius, the timeouts for PointerDwellClickTimeout and PointerDwellDoubleClickTimeout are reset and the new position is the centre for the new dwell-clicking tolerance radius.";
+"TT_PointerDwellRadius" = "OpenCore重新实现在Apple Event协议中的配置指针驻留点击容忍半径(以像素为单位). 在使用OEM苹果实现时没有影响 (查看 AppleEvent 设置).\n\n半径按UIScale进行缩放.当指针离开这个半径时,pointerresiderclicktimeout和pointerresiderdoubleclicktimeout的超时被重置,新的位置是新的停留点点击容忍半径的中心.";
 
 /* Audio */
 /* YTE-Ba-80O */
