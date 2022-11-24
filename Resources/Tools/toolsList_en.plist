@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>description</key>
-			<string>Enter Apple BootPicker menu (exclusive for Macs with compatible GPUs).</string>
+			<string>Display Apple BootPicker menu (for Macs with compatible firmware).</string>
 			<key>name</key>
 			<string>BootKicker</string>
 		</dict>
