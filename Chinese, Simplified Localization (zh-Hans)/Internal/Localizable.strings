@@ -1077,7 +1077,7 @@
 /* cKa-I9-gvM */
 "TT_AppleXcpmForceBoost" = "强制在XCPM模式下将电脑的cpu频率锁定为最高频率,不建议开启.\n此补丁将0xFF00写入MSR_IA32_PERF_CONTROL(0x199),一般而言,只有某些Xeon型号才能从该补丁中受益.";
 
-"TT_CustomPciSerialDevice" = "在定制的 PCI 串行设备上执行 PMIO 寄存器基地址的更改.\n\n该补丁更改了 XNU 内核用于串行输入和输出的 PMIO 寄存器基地址, 从默认的内置 COM1 串口 0x3F8, 到存储在指定 PCI 设备的第一个 IO BAR 中的基地址或到特定基地址 (例如0x2F8 用于 COM2).\n\n注意1:默认情况下, 串行记录被禁用. 引导参数serial=3, 这使串行输入和输出, 应该用于 XNU 将日志打印到串口.\n\n注2:除了这个补丁, 应防止连接 kext Apple16X50PCI0 以使 kprintf 方法正常工作. 这可以通过设置来实现 (i.e. 即删除,然后添加) PCI串口设备的class-code属性为DeviceProperties部分的FFFFFFFF. 作为替代解决方案, 也可以使用 PCIeSerialDisable.kext/Contents/Info.plist 这样的无代码 kext.\n\n注意 3:正确应用此补丁, 必须在自定义中正确设置所有键的情况下启用覆盖, 在 Misc->Serial 部分.\n\n注意 4:此补丁用于 PMIO 支持，因此如果 Misc->Serial->Custom 部分下的 UseMmio 为 false，则不应用此补丁. 对于 MMIO, 有引导参数 pcie_mmio_uart=ADDRESS 和 mmio_uart=ADDRESS 允许内核使用 MMIO 进行串行端口访问.\n\n注 5:串行波特率必须在 Misc->Serial->Custom 部分下的 BaudRate 和通过 serialbaud=VALUE 引导参数正确设置, 两者都应该相互匹配. 默认波特率为 115200.";
+"TT_CustomPciSerialDevice" = "在定制的 PCI 串行设备上执行 PMIO 寄存器基地址的更改.\n\n该补丁更改了 XNU 内核用于串行输入和输出的 PMIO 寄存器基地址, 从默认的内置 COM1 串口 0x3F8, 到存储在指定 PCI 设备的第一个 IO BAR 中的基地址或到特定基地址 (例如0x2F8 用于 COM2).\n\n注意1:默认情况下, 串行记录被禁用. 引导参数serial=3, 这使串行输入和输出, 应该用于 XNU 将日志打印到串口.\n\n注2:除了这个补丁, 应防止连接 kext Apple16X50PCI0 以使 kprintf 方法正常工作. 这可以通过设置来实现 (i.e. 即删除,然后添加) PCI串口设备的class-code属性为DeviceProperties部分的FFFFFFFF. 作为替代解决方案, 也可以使用 PCIeSerialDisable.kext/Contents/Info.plist 这样的无代码 kext.\n\n注意 3:正确应用此补丁, 必须在自定义中正确设置所有键的情况下启用覆盖, 在 Misc->Serial 部分.\n\n注意 4:此补丁用于 PMIO 支持,因此如果 Misc->Serial->Custom 部分下的 UseMmio 为 false,则不应用此补丁. 对于 MMIO, 有引导参数 pcie_mmio_uart=ADDRESS 和 mmio_uart=ADDRESS 允许内核使用 MMIO 进行串行端口访问.\n\n注 5:串行波特率必须在 Misc->Serial->Custom 部分下的 BaudRate 和通过 serialbaud=VALUE 引导参数正确设置, 两者都应该相互匹配. 默认波特率为 115200.";
 
 /* alh-j7-rix */
 "TT_CustomSMBIOSGuid" = "对 UpdateSMBIOSMode 自定义模式执行 GUID 修补, 用于戴尔笔记本电脑 (等同于 Clover 的 DellSMBIOSPatch).";
@@ -1131,7 +1131,7 @@
 /* miscController */
 /* Boot */
 /* 5Or-M0-hZS */
-"TT_pickermode" = "选择用于启动管理的启动选择器\n支持以下值:\n•Builtin(默认值)-引导管理由OpenCore处理,使用纯文本用户界面.\n•External-使用外部引导管理协议(如果可用),否则,将使用Builtin模式.\n•Apple-使用Apple引导管理(如果可用),否则,将使用Builtin模式.";
+"TT_pickermode" = "选择用于启动管理的启动选择器\n支持以下值:\n•Builtin(默认值)-引导管理由OpenCore处理,使用纯文本用户界面.\n•External-使用外部引导管理协议(如果可用),否则,将使用Builtin模式.\n•Apple-使用Apple引导管理(如果可用),否则,将使用Builtin模式.\n\n一旦成功,外部模式可能会完全禁用OpenCore中除策略实施以外的所有引导管理. 在Apple模式下, 此外,它还可以绕过策略执行.有关自定义用户界面的示例,请参阅OpenCanopy插件.\n\nOpenCore内置的选择器包含一组在引导过程中选择的操作. 支持的操作列表类似于Apple BDS,通常可以通过在引导过程中按住操作热键来访问.\n\n目前正在考虑采取以下行动:\n• Default — 这是默认选项,它允许内置的OpenCore选取器加载在启动磁盘首选项窗格中指定的默认引导选项.\n• ShowPicker — 此选项强制显示OpenCore选取器. 这通常可以通过在引导期间按住OPTIONS键来实现.将ShowPicker设置为True将使ShowPicker成为默认选项.\n• BootApple — 此选项执行引导到找到的第一个Apple操作系统,除非选择的默认操作系统是Apple操作系统. 按住X键可选择此选项.\n• BootAppleRecovery — 这个选项执行引导到Apple操作系统恢复分区.这要么是与默认选择的操作系统相关的,要么是当选择的默认操作系统不是来自Apple或没有恢复分区时找到的第一个.按住CMD+R热键组合向下选择该选项.\n\n注意 1: 在非苹果固件上,密钥处理需要KeySupport、OpenUsbKbDxe或类似的驱动程序.然而,并不是所有的键处理功能都可以在几种类型的固件上实现.\n\n注意 2:除了OPT, OpenCore还支持在ShowPicker被禁用时使用Escape和Zero键进入OpenCore选择器.Escape的存在是为了支持与Apple选择器共存(包括OpenCore Apple选择器模式),并支持固件无法报告持有OPT键,如在某些PS/2键盘上.此外,还提供Zero来支持Escape已经分配给其他预引导固件特性的系统.在不需要KeySupport的系统中,从上电后一直按住其中一个键,直到选择器出现,应该总是成功的.如果系统正确配置了KeySupport模式,即使用足够长的KeyForgetThreshold,那么在使用KeySupport模式时也应该采用相同的方法.如果按下并按住键不能成功可靠地进入拾取器,则可以尝试多次重复按键.\n\n注意 3: 在有问题的GOP的mac上,如果OpenCore的bless状态丢失,可能很难重新blessOpenCore.BootKicker实用程序可以用于启用FullNvramAccess的CDROM.它将启动Apple选择器,这允许选择一个项目,以引导下一步(按Enter键),或下一步和后续,即作为bless的条目(按CTRL+Enter键),正常.选择完成后,系统将重新启动,并引导所选的条目.";
 
 /* hdQ-rL-KAo */
 "TT_pickerattributes" = "设置启动菜单(GUI界面)的属性.\n可以配置自定义的GUI界面风格,设置值包括:\n• 0x0001 —提供引导项的自定义图标:\n\t– APFS分区的预引导根目录下的.VolumeIcon.icns文件. \n\t– 其他文件系统的卷根目录下的.VolumeIcon.icns文件.\n\t– <TOOL_NAME>.icns的工具图标文件.￼ \n可以在Finder中设置卷图标. \n• 0x0002 — 提供引导条目的自定义渲染标题:  \t– 引导器相关的.disk_label(.disk_label_2x)文件,用于所有文件系统. \t– 工具相关的<TOOL_NAME.lbl和<TOOL_NAME.l2x文件. 可以通过disklabel实用程序或bless命令生成预渲染的标签.禁用或缺少文本标签时 (.contentDetails 或 .disk_label.contentDetails) 将被使用.\n• 0x0004 — 提供引导条目的预定义标签图像,而无需自定义条目. 可能会缺少实际启动项的详细信息. \n• 0x0008 — OC_ATTR_HIDE_THEMED_ICONS, 设置某些图标类别的内置图标以匹配主题样式. 这可能会强制显示内置的Time Machine图标. 需要OC_ATTR_USE_VOLUME_ICON.\n• 0x0010 — 在选择器中启用指针控制(如果可用).这可以利用鼠标或触控板来控制UI元素. \n• 0x0020 — OC_ATTR_DEBUG_DISPLAY, 启用显示其他时序和调试信息, 在DEBUG和NOOPT中的文本菜单中.\n• 0x0040 — OC_ATTR_USE_MINIMAL_UI, 使用最少的UI显示, 没有关机或重启按钮, 图形化启动菜单和文本启动菜单都有效.\n•0x0080 — OC_ATTR_USE_FLAVOUR_ICON,提供灵活的启动 条目内容描述,适合在不同的内容集中选择最佳媒体:\n启用后,OpenCanopy中的条目图标以及OpenCanopy和内置引导选择器中的音频辅助条目声音将通过一种称为内容风格(Flavor)的方法进行选择.要确定内容风格,使用以下算法:\n– 对于工具,从Flavor字段读取值.\n– 对于自动发现的条目,从引导加载程序旁边的.contentFlavour文件(如果存在)中读取.\n– 对于自定义条目,如果Flavor为Auto,则从引导加载程序旁边的.contentFlavour文件中读取,\否则通过Flavor值本身指定.\n– 如果读取的Spice为Auto或没有.contentFlavour,则选择条目Flavor基于条目类型,(例如输入Windows自动获得Windows风格).\nFlavor值是一个序列::分隔的名称限制为64个可显示7位ASCII字符.该名称最多可支持五个名称.每个名称都代表一种Flavor, 具有最高优先级的名字和具有最低优先级的名字.这样的结构允许以更特定的方式描述条目,并根据视听包的支持灵活地选择图标.缺少音频或图标文件意味着应尝试使用下一种样式,如果所有样式均缺失,则根据条目的类型进行选择.Flavor示例:BigSur:Apple,Windows10:Windows. \n使用样式意味着您可以轻松地在图标集之间进行切换,通过样式从每个集合中选择最佳的可用图标.例如.指定图标样式Debian:Linux将使用图标Debian.icns(如果提供),然后尝试Linux.icns,然后回退到操作系统的默认值,即HardDrive.icns.\n要记住的事项:\n– 出于安全原因,Ext<Flavour>.icns和<Flavour>.icns均受支持,并且如果条目位于外部驱动器上,则仅使用Ext<Flavour>.icns \n(默认为后备ExtHardDrive.icns). –在两者都适用的情况下,VolumeIcon.icns优先于.contentFlavour.\n– 为了使图标和音频辅助功能对于工具(例如,对于UEFI Shell)正确工作,请使用系统默认的引导条目图标(请参阅Docs/Flavours.md).即使禁用了Flavor,Flavor设置中为“工具”或“条目”指定的值仍将继续应用.在这种情况下,非系统图标将被忽略.此外,还对风格UEFIShell和NVRAMReset进行了特殊处理,确定了它们各自的工具以应用正确的音频助手,默认内置标签等.\n- Docs/Flavours.md中提供了推荐风格的列表.";
@@ -1157,7 +1157,7 @@
 /* Yyf-Yd-yrP */
 "TT_ShowPicker" = "显示 OpenCore 的 UI, 用于查看可用引导项\n设置为 NO 可以跳过倒计时, 和 PollAppleHotKeys=Yes 配合快捷键可以大幅提升体验\n一般选择YES.";
 
-"TT_ShowPicker_combo" = "Type: plist string\nFailsafe: Always\nDescription: Show a simple picker to allow boot entry selection:\n\t• Always — Always show picker.\n\t• Never — Never show picker.\n\t• SkipOnHibernateWake — Like Always, however doesn’t show picker if waking from macOS hibernation.\n\nNotes for SkipOnHibernateWake:\n\t• Only supports macOS hibernation wake, Windows and Linux are currently out of scope.\n\t• Should only be used on systems with reliable hibernation wake in macOS, otherwise users may not be able to visually see boot loops that may occur.\n\t• Highly recommended to pair this option with PollAppleHotKeys, allows to enter picker in case of issues with hibernation wake.\n\t• Visual indication for hibernation wake is currently out of scope.";
+"TT_ShowPicker_combo" = "显示一个简单的选择器,以允许启动项选择:\n\t• Always — 总是显示选择器.\n\t• Never — 从不显示选择器.\n\t• SkipOnHibernateWake — 像Always一样,如果从macOS休眠中醒来,则不会显示选择器.\n\nSkipOnHibernateWake注意事项:\n\t• 只支持macOS休眠唤醒,Windows和Linux目前超出范围.\n\t• 是否应该只在macOS中具有可靠休眠唤醒的系统上使用,否则用户可能无法直观地看到可能发生的引导循环.\n\t• 强烈建议将此选项与PollAppleHotKeys配对,允许在休眠唤醒出现问题时输入选择器.\n\t• 休眠尾迹的视觉指示目前超出了范围.";
 
 /* zgV-bT-EgH */
 "TT_HideAuxiliary" = "隐藏选择器菜单中的辅助条目,如果启用隐藏默认条目,选为YES.\n至少满足以下条件之一时,该条目被认为是辅助条目:\n•条目是macOS Recovery.\n•条目被明确标记为辅助.\n•条目是一个efi程序(例如Clean NVRAM)\n\n通过按空格键,重新加载所有条目选择器菜单.";
@@ -1206,7 +1206,7 @@
 "TT_scanpolicy" = "0: 允许扫描所有可用的硬盘\n其它值请参考官方文档, 对给出的选项做 16 进制加法运算";
 
 /* 0yA-ct-dgi */
-"TT_ApECID" = "Apple Enclave标识符.\n将此值设置为任何非零的64位整数将允许使用个性化的Apple Secure Boot标识符.设置此值且SecureBootModel有效且未禁用的情况等效于实现Apple Secure Boot的完全安全性.如果要使用此设置,请确保使用加密安全的随机数生成器生成随机的64位数字. 设置此值且SecureBootModel有效且未禁用,可以实现Apple Secure Boot的完全安全性.\n\n注意 1: 您必须重新安装操作系统或使用macOS DMG恢复来祝福–将此值设置为非零后,个性化安装.只有通过macOS恢复或使用asr创建的个性化构建,才能安装ApECID值设置为非零的操作系统..\n\n注意 2: 当前,此选项的使用不可靠(显然是macOS安装程序中的错误),因此不建议使用此选项.";
+"TT_ApECID" = "Apple Enclave标识符.\n将此值设置为任何非零的64位整数将允许使用个性化的Apple Secure Boot标识符.设置此值且SecureBootModel有效且未禁用的情况等效于实现Apple Secure Boot的完全安全性.如果要使用此设置,请确保使用加密安全的随机数生成器生成随机的64位数字. 设置此值且SecureBootModel有效且未禁用,可以实现Apple Secure Boot的完全安全性.\n\n注意 1: 您必须重新安装操作系统或使用macOS DMG恢复来bless–将此值设置为非零后,个性化安装.只有通过macOS恢复或使用asr创建的个性化构建,才能安装ApECID值设置为非零的操作系统..\n\n注意 2: 当前,此选项的使用不可靠(显然是macOS安装程序中的错误),因此不建议使用此选项.";
 
 /* QZk-2b-TCx */
 "TT_vault" = "在OpenCore中启用安全保险柜机制.\n•Optional-不启用任何安全机制,一般我们选这个.\n•Basic-要求OC目录中存在vault.plist文件.这提供了基本的文件系统完整性验证,并可以防止意外的文件系统损坏.\n•Secure-要求OC目录中vault.plist的vault.sig签名文件.";
@@ -1236,7 +1236,7 @@
 "TT_BlacklistAppleUpdate" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统(即macOS Big Sur)无法使用NVRAM变量(run-efi-updater)禁用固件更新,因此存在此选项.";
 
 /* SERIAL */
-"TT_Init" = "执行串口初始化.\n\n此选项将在启用（任意）调试日志之前在 OpenCore 中执行串行端口初始化.\n\n有关详细信息，请参阅调试部分.";
+"TT_Init" = "执行串口初始化.\n\n此选项将在启用（任意）调试日志之前在 OpenCore 中执行串行端口初始化.\n\n有关详细信息,请参阅调试部分.";
 
 "TT_Override" = "覆盖串行端口属性. 当此选项设置为 false, 自定义的任何键都不会被覆盖.\n\n此选项将覆盖下面“串行自定义属性”部分中列出的串行端口属性.";
 
@@ -1254,7 +1254,7 @@
 
 "TT_LineControl" = "配置串行端口线路控制设置.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialLineControl 的值.";
 
-"TT_PciDeviceInfo" = "设置 PCI 串口设备信息.\n\n此选项将覆盖 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialPciDeviceInfo 的值.\n\n注意:此选项的最大允许大小为 41 个字节。有关详细信息，请参阅 acidanthera/bugtracker#1954.\n\n注 2:此选项可以通过运行 FindSerialPort 工具来设置.";
+"TT_PciDeviceInfo" = "设置 PCI 串口设备信息.\n\n此选项将覆盖 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialPciDeviceInfo 的值.\n\n注意:此选项的最大允许大小为 41 个字节.有关详细信息,请参阅 acidanthera/bugtracker#1954.\n\n注 2:此选项可以通过运行 FindSerialPort 工具来设置.";
 
 "TT_RegisterAccessWidth" = "设置串口寄存器访问宽度.\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialRegisterAccessWidth 的值.";
 
@@ -1585,7 +1585,7 @@
 
 "TT_PointerPollMask" = "配置轮询指针的索引.\n\n选择指针设备以轮询 AppleEvent 运动事件. -1 表示所有设备.位总和用于确定特定设备. 例如,要启用设备 0、2、3,该值将为 1+4+8(对应的 2 次方). 共支持 32 个可配置设备.\n\n即使没有相应的物理设备可用,固件中也可能存在某些指针设备. 这些设备通常是占位符、聚合设备, 或代理. 从这些设备收集信息可能会导致用户界面中的运动活动不准确,甚至导致性能问题. 对于存在此类问题的笔记本电脑设置,建议禁用此类指针设备.\n\n系统中可用的指针设备数量可以在日志中找到. 有关详细信息,请参阅找到 N 个指针设备消息.\n\n注意：使用 OEM Apple 实现时无效(请参阅 AppleEvent 设置).";
 
-"TT_PointerDwellClickTimeout" = "在Apple Event协议中OpenCore配置指针驻留单击单次左键单击超时(以毫秒为单位). 在使用OEM苹果实现时没有影响 (查看 AppleEvent 设置).\n\n当超时到期时，在当前位置发出一个左键单击. 0表示关闭超时.";
+"TT_PointerDwellClickTimeout" = "在Apple Event协议中OpenCore配置指针驻留单击单次左键单击超时(以毫秒为单位). 在使用OEM苹果实现时没有影响 (查看 AppleEvent 设置).\n\n当超时到期时,在当前位置发出一个左键单击. 0表示关闭超时.";
 
 "TT_PointerDwellDoubleClickTimeout" = "重新实现Apple Event协议中的配置指针驻留单击单次左双击超时(以毫秒为单位). 在使用OEM苹果实现时没有影响 (查看 AppleEvent 设置).\n\n当超时到期时, 在当前位置发出一个左键双击. 0表示关闭超时.";
 
@@ -1760,7 +1760,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_ReloadOptionRoms" = "查询PCI设备并重新加载其Option ROM(如果有).\n\n例如,通过ForgeUefiSupport升级固件版本后,此选项允许在较旧的Mac上重新加载NVIDIA GOP Option ROM.";
 
-"TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.\n注意:这个选项可能会导致某些笔记本电脑固件出现问题，包括联想系列.";
+"TT_EnableVectorAcceleration" = "启用SHA-512和SHA-384哈希算法的AVX矢量加速.\n注意:这个选项可能会导致某些笔记本电脑固件出现问题,包括联想系列.";
 
 "TT_EnableVmx" = "启用 Intel 虚拟机扩展.\n\n注意:需要在某些 Mac 硬件上允许 Windows 中的虚拟化. 在大多数固件上启动 OpenCore 之前,由 BIOS 启用或禁用并锁定 VMX. 尽可能使用 BIOS 启用虚拟化.";
 
