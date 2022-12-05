@@ -17,6 +17,9 @@
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "2dj-hB-QBF"; */
 "2dj-hB-QBF.title" = "取消全选";
 
+/* Class = "NSTextFieldCell"; title = "Show Picker"; ObjectID = "2pZ-Dg-Lee"; */
+"2pZ-Dg-Lee.title" = "Show Picker";
+
 /* Class = "NSButtonCell"; title = "UseMmio"; ObjectID = "2x2-I1-GDC"; */
 "2x2-I1-GDC.title" = "UseMmio";
 

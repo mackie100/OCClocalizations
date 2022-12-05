@@ -1262,8 +1262,7 @@
 
 "TT_RegisterStride" = "以字节为单位设置串口寄存器步长.\n\n此选项将覆盖 gEfiMdeModulePkgTokenSpaceGuid 的值.MdeModulePkg.dec 中定义的 PcdSerialRegisterStride.";
 
-"TT_UseHardwareFlowControl" = "开启串口硬件流控.\n\n
-此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl 的值.";
+"TT_UseHardwareFlowControl" = "开启串口硬件流控.\n\n此选项将覆盖在 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseHardwareFlowControl 的值.";
 
 "TT_UseMmio" = "指示串口寄存器是否在MMIO空间.\n\n此选项将覆盖 MdeModulePkg.dec 中定义的 gEfiMdeModulePkgTokenSpaceGuid.PcdSerialUseMmio 的值.";
 
