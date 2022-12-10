@@ -1,6 +1,6 @@
-=<span class="title">HEDT: (1st, 2nd Gen) Nehalem OpenCore 0.8.5</span><br/>
+=<span class="title">HEDT: (1st, 2nd Gen) Nehalem OpenCore 0.8.6</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.8.5 Intel Nehalem Sanity Check
+# OpenCore v0.8.6 Intel Nehalem Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/nehalem.html">https://dortania.github.io/OpenCore-Install-Guide/config-HEDT/nehalem.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

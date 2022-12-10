@@ -1,6 +1,6 @@
-=<span class="title">Desktop: (8th, 9th Gen) Coffee Lake OpenCore 0.8.5</span><br/>
+=<span class="title">Desktop: (8th, 9th Gen) Coffee Lake OpenCore 0.8.6</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.8.5 Intel Coffee Lake Sanity Check
+# OpenCore v0.8.6 Intel Coffee Lake Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html
