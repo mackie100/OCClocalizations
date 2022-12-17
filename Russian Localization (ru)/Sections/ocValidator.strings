@@ -11,6 +11,9 @@
 /* Class = "NSWindow"; title = "OpenCore Validator"; ObjectID = "QvC-M9-y7g"; */
 "QvC-M9-y7g.title" = "OpenCore валидатор";
 
+/* Class = "NSButtonCell"; title = "Clean"; ObjectID = "kFM-Vk-f2O"; */
+"kFM-Vk-f2O.title" = "Clean";
+
 /* Class = "NSButtonCell"; title = "Import"; ObjectID = "xDg-wE-dNa"; */
 "xDg-wE-dNa.title" = "Импорт";
 

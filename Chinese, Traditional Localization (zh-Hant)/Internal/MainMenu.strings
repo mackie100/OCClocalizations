@@ -1,5 +1,5 @@
 
-/* Class = "NSMenuItem"; title = "OpenCore Validator"; ObjectID = "05d-N1-WMO"; */
+/* Class = "NSMenuItem"; title = "Advanced OpenCore Validator"; ObjectID = "05d-N1-WMO"; */
 "05d-N1-WMO.title" = "OC官方配置文件驗證器";
 
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
@@ -380,11 +380,17 @@
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
 "gVA-U4-sdL.title" = "貼上";
 
+/* Class = "NSButtonCell"; title = "Automatically open on mounting partition"; ObjectID = "hGr-Mh-IHj"; */
+"hGr-Mh-IHj.title" = "Automatically open on mounting partition";
+
 /* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "hOZ-ZL-z15"; */
 "hOZ-ZL-z15.title" = "*要套用此更改，您必須重新啟動應用程式";
 
 /* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
 "hQb-2v-fYv.title" = "智慧引號";
+
+/* Class = "NSButtonCell"; title = "Automatically validate when open and after save"; ObjectID = "hZ1-xh-Dbo"; */
+"hZ1-xh-Dbo.title" = "Automatically validate when open and after save";
 
 /* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "hz2-CU-CR7"; */
 "hz2-CU-CR7.title" = "立即檢查文件";

@@ -25,3 +25,6 @@
 
 /* Class = "NSButtonCell"; title = "Synchronize"; ObjectID = "cZ7-39-tJB"; */
 "cZ7-39-tJB.title" = "同步";
+
+/* Class = "NSTextFieldCell"; title = "OpenCore Validator"; ObjectID = "koW-cK-X2c"; */
+"koW-cK-X2c.title" = "OC官方配置文件验证器";
