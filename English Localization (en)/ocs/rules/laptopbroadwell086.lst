@@ -1,6 +1,6 @@
-=<span class="title">Laptop: (5th Gen) Broadwell OpenCore 0.8.5</span><br/>
+=<span class="title">Laptop: (5th Gen) Broadwell OpenCore 0.8.6</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.8.5 Intel Broadwell Laptop Sanity Check
+# OpenCore v0.8.6 Intel Broadwell Laptop Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/broadwell.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

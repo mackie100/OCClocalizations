@@ -1,6 +1,6 @@
-=<span class="title">Desktop: (1st Gen) Lynnfield and Clarkdale OpenCore 0.8.5</span><br/>
+=<span class="title">Desktop: (1st Gen) Lynnfield and Clarkdale OpenCore 0.8.6</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.8.5 Intel Lynnfield and Clarkdale Desktop Sanity Check
+# OpenCore v0.8.6 Intel Lynnfield and Clarkdale Desktop Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/clarkdale.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/clarkdale.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

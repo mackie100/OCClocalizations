@@ -1,6 +1,6 @@
-=<span class="title">Desktop: (7th Gen) Kaby Lake OpenCore 0.8.5</span><br/>
+=<span class="title">Desktop: (7th Gen) Kaby Lake OpenCore 0.8.6</span><br/>
 # Generic config suitable for initial installation
-# OpenCore v0.8.5 Intel Kaby Lake Sanity Check
+# OpenCore v0.8.6 Intel Kaby Lake Sanity Check
 =<a href="https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake.html">https://dortania.github.io/OpenCore-Install-Guide/config.plist/kaby-lake.html</a>
 =<hr>
 # [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html

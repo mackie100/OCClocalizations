@@ -102,7 +102,7 @@
 "FHv-7q-Wq3.title" = "Display Delay";
 
 /* Class = "NSButtonCell"; title = "HibernateSkipsPicker"; ObjectID = "FqN-SK-uy8"; */
-"FqN-SK-uy8.title" = "HibernateSkipsPicker";
+"FqN-SK-uy8.title" = "HibernateSkipsPicker\n睡眠唤醒后不显示启动菜单";
 
 /* Class = "NSButtonCell"; title = "SysReport"; ObjectID = "GOG-QD-oyI"; */
 "GOG-QD-oyI.title" = "SysReport";
