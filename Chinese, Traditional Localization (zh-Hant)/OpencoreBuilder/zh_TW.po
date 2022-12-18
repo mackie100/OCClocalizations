@@ -77,3 +77,12 @@ msgstr "套用修補文件"
 
 msgid "Compiling OpenCorePkg"
 msgstr "編譯最新的 OpenCorePkg 版本..."
+
+msgid "Downloading Mod patch"
+msgstr "Downloading Mod patch"
+
+msgid "Applying patch"
+msgstr "Applying patch"
+
+msgid "No mod patch found. Patch not applied!"
+msgstr "No mod patch found. Patch not applied!"
