@@ -79,10 +79,10 @@ msgid "Compiling OpenCorePkg"
 msgstr "编译最新提交的OpenCorePkg版本…"
 
 msgid "Downloading Mod patch"
-msgstr "Downloading Mod patch"
+msgstr "正在下载 Mod 补丁"
 
 msgid "Applying patch"
-msgstr "Applying patch"
+msgstr "应用补丁"
 
 msgid "No mod patch found. Patch not applied!"
-msgstr "No mod patch found. Patch not applied!"
+msgstr "没有找到mod补丁. 未应用补丁!"
