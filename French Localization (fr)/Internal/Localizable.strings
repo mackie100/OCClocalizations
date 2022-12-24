@@ -724,13 +724,16 @@
 "Download: %@ removed from queue because is not compatible with 32-bit version." = "Download: %@ removed from queue because is not compatible with 32-bit version.";
 
 /* efiMaker */
-"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "Based on OpenCore Bootloader %@ settings by Dortania's help guide";
+"Based on OpenCore Bootloader settings by Dortania's help guide" = "Based on OpenCore Bootloader settings by Dortania's help guide";
 
 /* efiMaker */
 "For more information about different settings, click on each CPU Family option" = "For more information about different settings, click on each CPU Family option";
 
 /* efiMaker */
-"Downloading latest Opencore Bootloader" = "Downloading latest Opencore Bootloader";
+"Checking latest OpenCore Bootloader version..." = "Checking latest OpenCore Bootloader version...";
+
+/* efiMaker */
+"Downloading Opencore Bootloader" = "Downloading latest Opencore Bootloader";
 
 /* efiMaker */
 "Error while downloading Opencore Bootloader. Unable to continue." = "Error while downloading Opencore Bootloader. Unable to continue.";
@@ -803,6 +806,12 @@
 
 /* efiMaker */
 "Architecture type selected" = "Architecture type selected";
+
+/* efiMaker*/
+"Distribution mode selected" = "Distribution mode selected";
+
+/* efiMaker */
+"Download OpenCore Mod" = "Download OpenCore Mod";
 
 /* efiMaker */
 "Download related files" = "Download related files";

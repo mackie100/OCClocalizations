@@ -53,8 +53,14 @@
 /* Class = "NSTextFieldCell"; title = "Revision to install:"; ObjectID = "eYg-JR-lzC"; */
 "eYg-JR-lzC.title" = "最新可用版本(正式版)：";
 
+/* Class = "NSButtonCell"; title = "Build OpenCore Mod"; ObjectID = "fH6-cs-SLB"; */
+"fH6-cs-SLB.title" = "Build OpenCore Mod";
+
 /* Class = "NSBox"; title = "Options"; ObjectID = "iny-U9-mNO"; */
 "iny-U9-mNO.title" = "選項";
+
+/* Class = "NSButtonCell"; title = "Download OpenCore Mod"; ObjectID = "lsj-vz-w6G"; */
+"lsj-vz-w6G.title" = "Download OpenCore Mod";
 
 /* Class = "NSButtonCell"; title = "Check Now"; ObjectID = "mYy-0A-70y"; */
 "mYy-0A-70y.title" = "現在檢查";

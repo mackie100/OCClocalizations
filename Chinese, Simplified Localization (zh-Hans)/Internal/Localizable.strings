@@ -724,13 +724,16 @@
 "Download: %@ removed from queue because is not compatible with 32-bit version." = "下载: 由于与32位版本不兼容,已从队列中删除%@.";
 
 /* efiMaker */
-"Based on OpenCore Bootloader %@ settings by Dortania's help guide" = "基于Dortania帮助指南中的OpenCore Bootloader%@设置";
+"Based on OpenCore Bootloader settings by Dortania's help guide" = "基于Dortania帮助指南中的OpenCore Bootloader设置";
 
 /* efiMaker */
 "For more information about different settings, click on each CPU Family option" = "有关不同设置的更多信息,请单击每个CPU系列选项";
 
 /* efiMaker */
-"Downloading latest Opencore Bootloader" = "下载最新的Opencore引导器";
+"Checking latest OpenCore Bootloader version..." = "Checking latest OpenCore Bootloader version...";
+
+/* efiMaker */
+"Downloading Opencore Bootloader" = "下载最新的Opencore引导器";
 
 /* efiMaker */
 "Error while downloading Opencore Bootloader. Unable to continue." = "下载Opencore引导器时出错.无法继续.";
@@ -803,6 +806,12 @@
 
 /* efiMaker */
 "Architecture type selected" = "已选择的体系类型";
+
+/* efiMaker*/
+"Distribution mode selected" = "Distribution mode selected";
+
+/* efiMaker */
+"Download OpenCore Mod" = "Download OpenCore Mod";
 
 /* efiMaker */
 "Download related files" = "下载相关文件";

@@ -40,7 +40,7 @@ msgid "Invalid version"
 msgstr "無效的版本"
 
 msgid "Copying OpenDuetPkg boot file from ${booter}..."
-msgstr "正在從 ${booter} 複製 OpenDuetPkg 啟動檔案"
+msgstr "正在從 ${booter} 複製 OpenDuetPkg 啟動檔案..."
 
 msgid "Failed to find OpenDuetPkg at ${booter}!"
 msgstr "在 ${booter} 找不到 OpenDuetPkg!"
@@ -58,13 +58,13 @@ msgid "Downloading OcBinaryData"
 msgstr "正在下載 OcBinaryData repo..."
 
 msgid "Generating EFI"
-msgstr "建立 EFI 資料夾"
+msgstr "建立 EFI 資料夾..."
 
 msgid "Building complete"
 msgstr "編譯完成"
 
 msgid "Copying Binary Data"
-msgstr "複製二進制資料"
+msgstr "複製二進制資料..."
 
 msgid "install NASM"
 msgstr "在開始編譯 OpenCorePkg 之前， 需要先安裝 NASM"
@@ -79,10 +79,10 @@ msgid "Compiling OpenCorePkg"
 msgstr "編譯最新的 OpenCorePkg 版本..."
 
 msgid "Downloading Mod patch"
-msgstr "Downloading Mod patch"
+msgstr "Downloading Mod patch..."
 
 msgid "Applying patch"
-msgstr "Applying patch"
+msgstr "Applying patch..."
 
 msgid "No mod patch found. Patch not applied!"
 msgstr "No mod patch found. Patch not applied!"

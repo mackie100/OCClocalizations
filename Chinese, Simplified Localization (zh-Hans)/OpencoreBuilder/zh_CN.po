@@ -31,7 +31,7 @@ msgid "Building ${util}..."
 msgstr "正在构建 ${util}..."
 
 msgid "Building ${util} for Windows..."
-msgstr "为Windows构建${util}…"
+msgstr "为Windows构建${util}..."
 
 msgid "Missing package directory"
 msgstr "缺少包目录"
@@ -40,7 +40,7 @@ msgid "Invalid version"
 msgstr "版本无效"
 
 msgid "Copying OpenDuetPkg boot file from ${booter}..."
-msgstr "从 ${booter}复制OpenDuetPkg启动文件…"
+msgstr "从 ${booter}复制OpenDuetPkg启动文件..."
 
 msgid "Failed to find OpenDuetPkg at ${booter}!"
 msgstr "在${booter}找不到OpenDuetPkg!"
@@ -49,22 +49,22 @@ msgid "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
 msgstr "名为${DEVELOPER_KIT}的存储库${URL}包含CRLF行尾"
 
 msgid "Downloading AUDK"
-msgstr "下载AUDK资料库…"
+msgstr "下载AUDK资料库..."
 
 msgid "Downloading OpenCorePkg"
-msgstr "下载OpenCorePkg存储库…"
+msgstr "下载OpenCorePkg存储库..."
 
 msgid "Downloading OcBinaryData"
-msgstr "下载OcBinaryData存储库…"
+msgstr "下载OcBinaryData存储库..."
 
 msgid "Generating EFI"
-msgstr "生成EFI文件夹结构"
+msgstr "生成EFI文件夹结构..."
 
 msgid "Building complete"
 msgstr "构建过程完成"
 
 msgid "Copying Binary Data"
-msgstr "复制二进制数据"
+msgstr "复制二进制数据..."
 
 msgid "install NASM"
 msgstr "在开始构建OpenCorePkg之前,需要安装NASM"
@@ -76,13 +76,13 @@ msgid "Applied patch"
 msgstr "应用补丁"
 
 msgid "Compiling OpenCorePkg"
-msgstr "编译最新提交的OpenCorePkg版本…"
+msgstr "编译最新提交的OpenCorePkg版本..."
 
 msgid "Downloading Mod patch"
-msgstr "正在下载 Mod 补丁"
+msgstr "正在下载 Mod 补丁..."
 
 msgid "Applying patch"
-msgstr "应用补丁"
+msgstr "应用补丁..."
 
 msgid "No mod patch found. Patch not applied!"
 msgstr "没有找到mod补丁. 未应用补丁!"
