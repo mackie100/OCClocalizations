@@ -15,7 +15,7 @@
 "4L7-bL-SDd.title" = "Lynnfield / Clarkdale";
 
 /* Class = "NSButtonCell"; title = "RELEASE Distribution"; ObjectID = "4Rz-c5-KcK"; */
-"4Rz-c5-KcK.title" = "RELEASE Distribution";
+"4Rz-c5-KcK.title" = "RELEASE 分发";
 
 /* Class = "NSButtonCell"; title = "Haswell / Broadwell"; ObjectID = "4xh-eS-Y7x"; */
 "4xh-eS-Y7x.title" = "Haswell / Broadwell";
@@ -114,7 +114,7 @@
 "g35-5B-Oaf.title" = "Kaby Lake";
 
 /* Class = "NSButtonCell"; title = "DEBUG Distribution"; ObjectID = "hK4-cc-b6e"; */
-"hK4-cc-b6e.title" = "DEBUG Distribution";
+"hK4-cc-b6e.title" = "DEBUG 分发";
 
 /* Class = "NSTextFieldCell"; title = "High-End Desktop"; ObjectID = "iI2-1V-zMu"; */
 "iI2-1V-zMu.title" = "高端台式机平台";
@@ -135,7 +135,7 @@
 "pxK-dJ-29f.title" = "Coffee Lake Plus / Comet Lake";
 
 /* Class = "NSButtonCell"; title = "Download OpenCore Mod"; ObjectID = "r9f-CH-3F8"; */
-"r9f-CH-3F8.title" = "Download OpenCore Mod";
+"r9f-CH-3F8.title" = "下载 OpenCore Mod";
 
 /* Class = "NSButtonCell"; title = "Coffee Lake / Whiskey Lake"; ObjectID = "rLh-HE-cMd"; */
 "rLh-HE-cMd.title" = "Coffee Lake / Whiskey Lake";

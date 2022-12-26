@@ -730,7 +730,7 @@
 "For more information about different settings, click on each CPU Family option" = "有关不同设置的更多信息,请单击每个CPU系列选项";
 
 /* efiMaker */
-"Checking latest OpenCore Bootloader version..." = "Checking latest OpenCore Bootloader version...";
+"Checking latest OpenCore Bootloader version..." = "检查最新的OpenCore Bootloader版本...";
 
 /* efiMaker */
 "Downloading Opencore Bootloader" = "下载最新的Opencore引导器";
@@ -808,10 +808,10 @@
 "Architecture type selected" = "已选择的体系类型";
 
 /* efiMaker*/
-"Distribution mode selected" = "Distribution mode selected";
+"Distribution mode selected" = "选择的分发模式";
 
 /* efiMaker */
-"Download OpenCore Mod" = "Download OpenCore Mod";
+"Download OpenCore Mod" = "下载 OpenCore Mod";
 
 /* efiMaker */
 "Download related files" = "下载相关文件";
