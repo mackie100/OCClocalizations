@@ -841,6 +841,9 @@
 "Start Building...." = "Start Building....";
 
 /* opencoreDownloaderController */
+"This process may take a while on some machines, so please be patient." = "This process may take a while on some machines, so please be patient.";
+
+/* opencoreDownloaderController */
 "Error occurred during building OpenCorePkg" = "Error occurred during building OpenCorePkg";
 
 /* opencoreDownloaderController */

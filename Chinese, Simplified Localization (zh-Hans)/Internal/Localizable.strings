@@ -817,7 +817,7 @@
 "Download related files" = "下载相关文件";
 
 /* opencoreDownloaderController */
-"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "构建gettext工具.在某些机器上,此过程可能需要一段时间,因此请耐心等待. 如果此过程要求安装Java SDK,请跳过该消息.";
+"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "构建gettext工具. 在某些机器上,此过程可能需要一段时间,因此请耐心等待. 如果此过程要求安装Java SDK,请跳过该消息.";
 
 /* opencoreDownloaderController */
 "GETTEXT is missing!, downloading..." = "缺少GETTEXT!,正在下载...";
@@ -839,6 +839,9 @@
 
 /* opencoreDownloaderController */
 "Start Building...." = "开始构建....";
+
+/* opencoreDownloaderController */
+"This process may take a while on some machines, so please be patient." = "在某些机器上,此过程可能需要一段时间,因此请耐心等待.";
 
 /* opencoreDownloaderController */
 "Error occurred during building OpenCorePkg" = "构建OpenCorePkg时发生错误";
