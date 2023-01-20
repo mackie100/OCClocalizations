@@ -104,6 +104,9 @@
 /* Class = "NSMenuItem"; title = "\tLeft to Right"; ObjectID = "BgM-ve-c93"; */
 "BgM-ve-c93.title" = "\tDe gauche à droite";
 
+/* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "B6M-Or-Bxn"; */
+"B6M-Or-Bxn.title" = "*Pour appliquer cette modification, vous devez redémarrer l'application";
+
 /* Class = "NSMenuItem"; title = "Templates"; ObjectID = "BtA-nJ-hmS"; */
 "BtA-nJ-hmS.title" = "Modèles";
 
@@ -335,6 +338,9 @@
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "agt-UL-0e3"; */
 "agt-UL-0e3.title" = "Utiliser par défaut";
 
+/* Class = "NSTextFieldCell"; title = "*Select this option before loading"; ObjectID = "axu-Hn-1ar"; */
+"axu-Hn-1ar.title" = "*Select this option before loading";
+
 /* Class = "NSMenuItem"; title = "Open…"; ObjectID = "b8C-wR-FEF"; */
 "b8C-wR-FEF.title" = "Ouvrir...";
 
@@ -433,6 +439,9 @@
 
 /* Class = "NSMenuItem"; title = "OpenCore Downloader"; ObjectID = "jxp-Hf-MpR"; */
 "jxp-Hf-MpR.title" = "Téléchargement OpenCore";
+
+/* Class = "NSButtonCell"; title = "Keep unknown keys and values"; ObjectID = "lOQ-4j-DWS"; */
+"lOQ-4j-DWS.title" = "Keep unknown keys and values";
 
 /* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "lZi-F2-Buy"; */
 "lZi-F2-Buy.title" = "Ouvrir récent";
