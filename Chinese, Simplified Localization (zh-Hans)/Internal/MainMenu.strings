@@ -339,7 +339,7 @@
 "agt-UL-0e3.title" = "使用默认";
 
 /* Class = "NSTextFieldCell"; title = "*Select this option before loading"; ObjectID = "axu-Hn-1ar"; */
-"axu-Hn-1ar.title" = "*Select this option before loading";
+"axu-Hn-1ar.title" = "*加载前选择此选项";
 
 /* Class = "NSMenuItem"; title = "Open…"; ObjectID = "b8C-wR-FEF"; */
 "b8C-wR-FEF.title" = "打开…";
@@ -441,7 +441,7 @@
 "jxp-Hf-MpR.title" = "OpenCore下载器";
 
 /* Class = "NSButtonCell"; title = "Keep unknown keys and values"; ObjectID = "lOQ-4j-DWS"; */
-"lOQ-4j-DWS.title" = "Keep unknown keys and values";
+"lOQ-4j-DWS.title" = "保持未知的选项和内容";
 
 /* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "lZi-F2-Buy"; */
 "lZi-F2-Buy.title" = "最近打开";
