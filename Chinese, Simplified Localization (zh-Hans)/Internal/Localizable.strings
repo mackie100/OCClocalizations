@@ -1765,7 +1765,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_RequestBootVarRouting" = "启用此项以便能够在与 macOS 引导项设计上不兼容的固件中可靠地使用[启动磁盘]设置.\n\n提醒:一些主板如果启用此项,在使用resetNVRAM后会导致黑屏无法进入BIOS的硬件损坏,必须禁用此项和设置Misc-->Security-->BootProtect为None!!";
 
-"TT_ResizeUsePciRbIo" = "Type: plist boolean\nFailsafe: false\nDescription: Use PciRootBridgeIo for ResizeGpuBars and ResizeAppleGpuBars\n\nThe quirk makes ResizeGpuBars and ResizeAppleGpuBars use PciRootBridgeIo instead of PciIo. This is needed on systems with a buggy PciIo implementation where trying to configure Resizable BAR results in Capability I/O Error. Typically this is required on older systems which have been modified with ReBarUEFI.";
+"TT_ResizeUsePciRbIo" = "使用PciRootBridgeIo进行resizeegpubars和ResizeAppleGpuBars\n\n这个怪癖使得resizeegpubars和ResizeAppleGpuBars使用PciRootBridgeIo而不是PciIo. 这在有bug的PciIo实现的系统上是需要的，其中试图配置可调整大小的BAR会导致能力I/O错误. 通常，在使用ReBarUEFI修改过的旧系统上需要这样做.";
 
 "TT_UnblockFsConnect" = "惠普笔记本在 OpenCore 引导界面没有引导项时设置为 YES";
 
