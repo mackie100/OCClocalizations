@@ -1707,6 +1707,8 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_UIScale" = "用户界面缩放设置.\n\n对应4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale变量.\n• 1 — 1 倍缩放, 正常显示无缩放.\n• 2 — 2 倍缩放, 适用开启 HiDPI 的显示.\n• -1 — 保持当前变量不变.\n• 0 — 根据当前分辨率自动选择缩放比例.\n\n注 1:自动比例检测基于总像素面积工作,在小型 HiDPI 显示器上可能会失败, 在这种情况下,可以使用 NVRAM 部分手动管理该值.\n\n注 2:当从手动指定的 NVRAM 变量切换到此首选项时,可能需要重置 NVRAM.";
 
+"TT_GopBurstMode" = "Type: plist boolean\nFailsafe: false\nDescription: Enable write-combining (WC) caching for GOP memory, if system firmware has not already enabled it.\n\nSome older firmware (e.g. EFI-era Macs) fails to set write-combining caching (aka burst mode) for GOP memory, even though the CPU supports it. Setting this can give a considerable speed-up for GOP operations, especially on systems which require DirectGopRendering.\n\nNote: This takes effect whether or not DirectGopRendering is set, and may give some speed-up to GOP operations even when DirectGopRendering is false.";
+
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra(10.13)之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
 
