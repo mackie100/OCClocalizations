@@ -973,7 +973,7 @@
 "TT_DevirtualiseMmio" = "内存注入方式包括KASLR方式(分布式注射到各个内存地址中)以及连续性方式.在使用KASLR时,PCIE加载到内存,可能会占据所有所有avaliable值而导致OC的内核以及内核缓存无法注入,导致启动失败.使用KASLR方式很容易出错,我们更适合使用连续性的内存注入方式,并在boot args中添加slide=1.因为我们之后会添加这个slide=1去使用连续性的内存注入方式,所以这个选项一般选择NO.";
 
 /* Ssn-0z-qIb */
-"TT_DisableSingleUser" = "这里关乎主机是否能开启单用户模式.开启后会禁止 Cmd + S 和 -s 的使用,使设备更加接近于 T2 白苹果,如果你觉得有用就开启它,一般选NO.";
+"TT_DisableSingleUser" = "这里关乎主机是否能开启单用户模式.开启后会禁止 Cmd + S 和 -s 的使用,使设备更加接近于 T2 白苹果,如果你觉得有用就开启它,一般选NO.\n\nNote: When Apple Secure Boot is enabled single user mode is always disabled.";
 
 /* KE8-rd-Ty5 */
 "TT_DisableVariableWrite" = "非原生NVRAM主板需要模拟nvram.plist进而写入variable值,因此我们要禁止此项来防止其他程序对nvram进行写入,我们这里选YES.需要注意一点,如果你的主板支持原生nvram(z370/x299/c422),请选择NO!\n在 Z390/HM370 等没有原生 macOS 支持 NVRAM 的主板上需要开启.";
@@ -1096,6 +1096,8 @@
 
 /* 6Aa-HL-hah */
 "TT_DisableIoMapper" = "对 UpdateSMBIOSMode 自定义模式执行 GUID 修补, 用于戴尔笔记本电脑 (等同于 Clover 的 DellSMBIOSPatch).";
+
+"TT_DisableIoMapperMapping" = "Type: plist boolean\nFailsafe: false\nRequirement: 13.3 (not required for older)\nDescription: Disables mapping PCI bridge device memory in IOMMU (VT-d).\n\nNote 1: This option resolves compatibility issues with Wi-Fi, Ethernet and Thunderbolt devices when AppleVTD is enabled on systems where the native DMAR table contains one or more Reserved Memory Regions.\n\nNote 2: This option is not needed on AMD systems or any Intel system where the native DMAR table does not contain any Reserved Memory Regions.";
 
 /* koV-S4-Tkn */
 "TT_DisableLinkeditJettison" = "禁用__LINKEDIT抛弃代码.\n\n此选项使Lilu.kext和可能的其他功能在macOS Big Sur中以最佳性能运行而不适用keepsyms = 1启动参数.";
@@ -1707,7 +1709,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_UIScale" = "用户界面缩放设置.\n\n对应4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale变量.\n• 1 — 1 倍缩放, 正常显示无缩放.\n• 2 — 2 倍缩放, 适用开启 HiDPI 的显示.\n• -1 — 保持当前变量不变.\n• 0 — 根据当前分辨率自动选择缩放比例.\n\n注 1:自动比例检测基于总像素面积工作,在小型 HiDPI 显示器上可能会失败, 在这种情况下,可以使用 NVRAM 部分手动管理该值.\n\n注 2:当从手动指定的 NVRAM 变量切换到此首选项时,可能需要重置 NVRAM.";
 
-"TT_GopBurstMode" = "如果系统固件尚未启用，则为GOP内存启用写组合（WC）缓存.\n\n一些旧的固件(例如EFI时代的Mac)无法为GOP内存设置写入组合缓存(也称为突发模式),即使CPU支持它,设置这个可以为GOP操作提供相当大的加速,特别是在需要DirectGopRendering的系统上.n\n注意:无论DirectGopRendering是否设置,都会生效,甚至在DirectGopRendering为false时,也可能为GOP操作提供一些加速.";
+"TT_GopBurstMode" = "如果系统固件尚未启用，则为GOP内存启用写组合（WC）缓存.\n\n一些旧的固件(例如EFI时代的Mac)无法为GOP内存设置写入组合缓存(也称为突发模式),即使CPU支持它,设置这个可以为GOP操作提供相当大的加速,特别是在需要DirectGopRendering的系统上.n\n注意:无论DirectGopRendering是否设置,都会生效,甚至在DirectGopRendering为false时,也可能为GOP操作提供一些加速.\n\nNote 2: On most systems from circa 2013 onwards, write-combining caching is already applied by the firmware to GOP memory, in which case GopBurstMode is unnecessary. On such systems enabling the quirk should normally be harmless, producing an OCC: debug log entry indicating that burst mode is already started.\n\nNote 3: Some caution should be taken when enabling this quirk, as it has been observed to cause hangs on a few systems. Since additional guards have been added to try to prevent this, please log a bugtracker issue if such a system is found.";
 
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra(10.13)之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
