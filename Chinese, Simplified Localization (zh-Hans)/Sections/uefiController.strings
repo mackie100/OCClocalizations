@@ -8,6 +8,9 @@
 /* Class = "NSButtonCell"; title = "EnableJumpstart"; ObjectID = "133-jD-qYy"; */
 "133-jD-qYy.title" = "EnableJumpstart";
 
+/* Class = "NSTextFieldCell"; title = "InitialMode"; ObjectID = "1PI-Br-i8T"; */
+"1PI-Br-i8T.title" = "InitialMode";
+
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "2Hl-aN-yVu"; */
 "2Hl-aN-yVu.headerCell.title" = "是否启用\nEnabled";
 
