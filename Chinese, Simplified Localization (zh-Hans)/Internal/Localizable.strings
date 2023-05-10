@@ -1679,7 +1679,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 /* lye-vu-fi3 */
 "TT_ConsoleMode" = "设置为空字符串不更改控制台模式.设置为Max以尝试使用最大可用控制台模式.\n大多数情况下都选择留空!";
 
-"TT_InitialMode" = "Type: plist string\nFailsafe: Auto\nDescription: Selects the internal ConsoleControl mode in which TextRenderer will operate.\n\nAvailable values are Auto, Text and Graphics. Text and Graphics specify the named mode. Auto uses the current mode of the system ConsoleControl protocol when one exists, defaulting to Text mode otherwise.\n\nUEFI firmware typically supports ConsoleControl with two rendering modes: Graphics and Text. Some types of firmware do not provide a native ConsoleControl and rendering modes. OpenCore and macOS expect text to only be shown in Text mode but graphics to be drawn in any mode, and this is how the OpenCore Builtin renderer behaves. Since this is not required by the UEFI specification, behaviour of the system ConsoleControl protocol, when it exists, may vary.";
+"TT_InitialMode" = "选择TextRenderer将在其中操作的内部控制台控制模式.\n\n可选值为 Auto,Text 和 Graphics.“Text”和“Graphics”指定命名模式.Auto在存在时使用系统ConsoleControl协议的当前模式,否则默认为文本模式.\n\nUEFI固件通常支持ConsoleControl两种渲染模式:图形和文本.某些类型的固件不提供本机ConsoleControl和呈现模式.OpenCore和macOS期望文本只在文本模式下显示,但图形可以在任何模式下绘制,这就是OpenCore内置渲染器的行为方式.由于这不是UEFI规范所要求的,系统ConsoleControl协议的行为,当它存在时,可能会有所不同.";
 
 /* mlh-hW-OqT */
 "TT_textrender" = "为通过标准控制台输出的文本选择渲染器.\n目前支持两个渲染器: Builtin 和 System. System渲染器使用主板固件自带文字渲染进行文本渲染. Builtin则绕过固件服务,使用 OpenCore 内置文字渲染执行文本渲染. 不同的渲染器支持不同的选项集.建议使用内置渲染器,因为它支持HiDPI模式并使用全屏分辨率.\n选项内容是文本渲染器和渲染模式的组合:\n• BuiltinGraphics — 使用 OpenCore 内置文字渲染的图形模式, 并同时启用 OpenCore 自带的控制台管理, 支持 HIDPI 和全屏范围显示, 通常效果胜于下面的选项.\n• SystemGraphics — 使用主板固件自带文字渲染的图形模式, 并同时启用 OpenCore 自带的控制台管理.\n• SystemText — 使用主板固件自带文字渲染的文字模式, 并同时启用 OpenCore 自带的控制台管理.\n• SystemGeneric — 使用主板固件自带文字渲染的文字模式和自带的控制台管理.\nBuiltinGraphics的使用通常很简单.对于大多数平台,必须启用ProvideConsoleGop,将分辨率选项设置为Max,并选择配置Scale.\n系统协议的使用更加复杂.通常,首选设置是SystemGraphics或SystemText.启用ProvideConsoleGop,将“分辨率”设置为“最大”,启用“ReplaceTabWithSpace”在几乎所有平台上都很有用. SanitiseClearScreen,IgnoreTextInGraphics和ClearScreenOnModeSwitch更具体,它们的使用取决于固件.\n\n注意:某些Mac机型,比如MacPro5,1,可能在较新的GPU上的控制台输出已损坏,因此只有BuiltinGraphics可以为它们工作.";
@@ -1711,7 +1711,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_UIScale" = "用户界面缩放设置.\n\n对应4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale变量.\n• 1 — 1 倍缩放, 正常显示无缩放.\n• 2 — 2 倍缩放, 适用开启 HiDPI 的显示.\n• -1 — 保持当前变量不变.\n• 0 — 根据当前分辨率自动选择缩放比例.\n\n注 1:自动比例检测基于总像素面积工作,在小型 HiDPI 显示器上可能会失败, 在这种情况下,可以使用 NVRAM 部分手动管理该值.\n\n注 2:当从手动指定的 NVRAM 变量切换到此首选项时,可能需要重置 NVRAM.";
 
-"TT_GopBurstMode" = "如果系统固件尚未启用，则为GOP内存启用写组合（WC）缓存.\n\n一些旧的固件(例如EFI时代的Mac)无法为GOP内存设置写入组合缓存(也称为突发模式),即使CPU支持它,设置这个可以为GOP操作提供相当大的加速,特别是在需要DirectGopRendering的系统上.n\n注意:无论DirectGopRendering是否设置,都会生效,甚至在DirectGopRendering为false时,也可能为GOP操作提供一些加速.\n\nNote 2: On most systems from circa 2013 onwards, write-combining caching is already applied by the firmware to GOP memory, in which case GopBurstMode is unnecessary. On such systems enabling the quirk should normally be harmless, producing an OCC: debug log entry indicating that burst mode is already started.\n\nNote 3: Some caution should be taken when enabling this quirk, as it has been observed to cause hangs on a few systems. Since additional guards have been added to try to prevent this, please log a bugtracker issue if such a system is found.";
+"TT_GopBurstMode" = "如果系统固件尚未启用,则为GOP内存启用写组合（WC）缓存.\n\n一些旧的固件(例如EFI时代的Mac)无法为GOP内存设置写入组合缓存(也称为突发模式),即使CPU支持它,设置这个可以为GOP操作提供相当大的加速,特别是在需要DirectGopRendering的系统上.n\n注意:无论DirectGopRendering是否设置,都会生效,甚至在DirectGopRendering为false时,也可能为GOP操作提供一些加速.\n\nNote 2: On most systems from circa 2013 onwards, write-combining caching is already applied by the firmware to GOP memory, in which case GopBurstMode is unnecessary. On such systems enabling the quirk should normally be harmless, producing an OCC: debug log entry indicating that burst mode is already started.\n\nNote 3: Some caution should be taken when enabling this quirk, as it has been observed to cause hangs on a few systems. Since additional guards have been added to try to prevent this, please log a bugtracker issue if such a system is found.";
 
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra(10.13)之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
@@ -1771,7 +1771,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_RequestBootVarRouting" = "启用此项以便能够在与 macOS 引导项设计上不兼容的固件中可靠地使用[启动磁盘]设置.\n\n提醒:一些主板如果启用此项,在使用resetNVRAM后会导致黑屏无法进入BIOS的硬件损坏,必须禁用此项和设置Misc-->Security-->BootProtect为None!!";
 
-"TT_ResizeUsePciRbIo" = "使用PciRootBridgeIo进行resizeegpubars和ResizeAppleGpuBars\n\n这个怪癖使得resizeegpubars和ResizeAppleGpuBars使用PciRootBridgeIo而不是PciIo. 这在有bug的PciIo实现的系统上是需要的，其中试图配置可调整大小的BAR会导致能力I/O错误. 通常，在使用ReBarUEFI修改过的旧系统上需要这样做.";
+"TT_ResizeUsePciRbIo" = "使用PciRootBridgeIo进行resizeegpubars和ResizeAppleGpuBars\n\n这个怪癖使得resizeegpubars和ResizeAppleGpuBars使用PciRootBridgeIo而不是PciIo. 这在有bug的PciIo实现的系统上是需要的,其中试图配置可调整大小的BAR会导致能力I/O错误. 通常,在使用ReBarUEFI修改过的旧系统上需要这样做.";
 
 "TT_UnblockFsConnect" = "惠普笔记本在 OpenCore 引导界面没有引导项时设置为 YES";
 
