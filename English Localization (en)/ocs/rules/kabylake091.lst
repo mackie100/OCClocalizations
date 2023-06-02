@@ -133,7 +133,9 @@ Misc
  HibernateMode=None
  LauncherOption~="Disabled|Full|Short|System" " <b>{$setting}</b> = <b>{$value}</b> LauncherOption set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - Invalid LauncherOption. Please read the <a href=https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html>[Misc -> Boot Docs]</a>"
  LauncherPath=Default
- PickerMode=Builtin
+ PickerMode~="Builtin" "-<b>{$setting}</b> = <b>{$value}</b>  Check the presence of <b>OpenCanopy.efi</b> in <b>UEFI->Drivers</b> and check that has been disabled or you'll receive a warning":""
+ PickerMode~="External" "-<b>{$setting}</b> = <b>{$value}</b> Check the presence of <b>OpenCanopy.efi</b> in <b>UEFI->Drivers</b>":""
+ PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> but it is usually set to <b>Builtin</b> or <b>External</b>"
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
@@ -237,6 +239,7 @@ UEFI
  [Path]==UsbMouseDxe.efi "-<b>{$Path}</b> Unless you are using a USB mouse/trackpad with OpenCanopy, this should not be here!"
  [Path]==XhciDxe.efi "!<b>{$Path}</b> should not be here!"
  [Path]==VirtualSmc.efi "!<b>VirtualSmc.efi</b> was merged into OpenCore under the quirk <b>AppleSmcIo</b>!"
+ [Path]==OpenCanopy.efi "-<b> OpenCanopy.efi</b> Check in <b>Misc->Boot->PickerMode->External</b> option is selected or you'll receive a warning. If <b>Builtin</b> or <b>Apple</b> option is selected, disable or remove this driver"
  [Path]==* " <b>{$Path}</b>"
 
 :APFS

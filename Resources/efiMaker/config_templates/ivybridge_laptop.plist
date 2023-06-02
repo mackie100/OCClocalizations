@@ -181,8 +181,7 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x16,0x0)
-PciRoot(0x0)/Pci(0x16,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x16,0x0)/Pci(0x16,0x0)</key>
 			<dict>
 				<key>device-id</key>
 				<data>Oh4AAA==</data>
@@ -286,6 +285,8 @@ PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<false/>
 			<key>DisableIoMapper</key>
 			<true/>
+			<key>DisableIoMapperMapping</key>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -694,10 +695,14 @@ PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<false/>
 			<key>ForceResolution</key>
 			<false/>
+			<key>GopBurstMode</key>
+			<false/>
 			<key>GopPassThrough</key>
 			<string>Disabled</string>
 			<key>IgnoreTextInGraphics</key>
 			<false/>
+			<key>InitialMode</key>
+			<string>Auto</string>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectGraphicsOnConnect</key>
@@ -782,6 +787,8 @@ PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<true/>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
+			<key>ResizeUsePciRbIo</key>
+			<false/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
