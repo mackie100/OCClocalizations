@@ -1,0 +1,3 @@
+#!/bin/bash
+phppath="$( cd "$( dirname "$0"  )" && pwd  )"
+$phppath/php/php -q $phppath/cs $1 $2 $3 $4
