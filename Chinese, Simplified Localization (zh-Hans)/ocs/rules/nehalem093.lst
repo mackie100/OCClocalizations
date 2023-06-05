@@ -302,6 +302,7 @@ UEFI
  FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
  HashServices=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
  OSInfo=no
+ PciIo=no
  UnicodeCollation=no
  ConsoleControl~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See UEFI/TextRenderer"
 
