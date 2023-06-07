@@ -77,7 +77,7 @@ Kernel
  [BundlePath]==FakeSMC.kext&VirtualSMC.kext "---><b>{$BundlePath}<b> 不要同时使用 <b>FakeSMC.kext<b> 和 <b>VirtualSMC.kext<b>"
  [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "--->你应该在此处添加 <b>FakeSMC.kext</b> 或 <b>VirtualSMC.kext</b>"
  [BundlePath]==VoodooHDA.kext&AppleALC.kext "---><b>{$BundlePath}</b> 不要同时使用 <b>VoodooHDA.kext</b> 和 <b>AppleALC.kext</b>"
- [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>N 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
+ [BundlePath]==AppleALC.kext "$alcbootarg='-<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>N 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
  [BundlePath]==SMCProcessor.kext       "!<b>{$BundlePath}</b> -->此VirtualSMC插件在AMD平台上不起作用"
  [BundlePath]==SMCSuperIO.kext         "!<b>{$BundlePath}</b> -->此VirtualSMC插件在AMD平台上不起作用"
  [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->此VirtualSMC插件在AMD平台上不起作用"
@@ -88,9 +88,9 @@ Kernel
  [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然这可能有效, 但<b>SmallTreeIntel82576.kext</b> 被认为更可靠"
  [BundlePath]==NullCPUPowerManagement.kext "!<b>{$BundlePath}</b> -->设置<b>DummyPowerManagement</b>quirk而不是使用此kext"
  [BundlePath]==USBInjectAll.kext "!<b>{$BundlePath}</b> -->在AMD平台上不起作用"
- [BundlePath]==Legacy_USB3.kext "!<b>{$BundlePath}</b> -->不应该在这里"
+ [BundlePath]==Legacy_USB3.kext "!-<b>{$BundlePath}</b> -->不应该在这里"
  [BundlePath]!=WhateverGreen.kext "---><b>WhateverGreen.kext</b>缺少. 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts Docs]</a>"
- [BundlePath]==* "<b>{$BundlePath}</b> -->确保此Kext位于您的 <b>OC/Kexts</b> 目录"
+ [BundlePath]==* " <b>{$BundlePath}</b> -->确保此Kext位于您的 <b>OC/Kexts</b> 目录"
 
 :Patch
  count<20 "!<b>{$count}</b> -->找到补丁-您是否正确应用了内核补丁？"
