@@ -133,7 +133,9 @@ Misc
  HibernateMode=None
  LauncherOption~="Disabled|Full|Short|System" " <b>{$setting}</b> = <b>{$value}</b> -->LauncherOption设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - 无效的LauncherOption. 请查阅 <a href=https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html>[Misc -> Boot Docs]</a>"
  LauncherPath=Default
- PickerMode=Builtin
+ PickerMode~="Builtin" "-<b>{$setting}</b> = <b>{$value}</b>  检查在 <b>UEFI->Drivers</b> 是否存在 <b>OpenCanopy.efi</b> 检查是否已禁用，否则您将收到警告":""
+ PickerMode~="External" "-<b>{$setting}</b> = <b>{$value}</b> 检查在 <b>UEFI->Drivers</b> 里是否存在 <b>OpenCanopy.efi</b>":""
+ PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> 但通常设置为 <b>Builtin</b> 或 <b>External</b>"
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no

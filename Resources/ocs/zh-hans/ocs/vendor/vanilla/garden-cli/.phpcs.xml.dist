@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ruleset name="Vanilla Package Standards">
-    <rule ref="./vendor/vanilla/standards/code-sniffer/Vanilla"/>
-    <file>./src</file>
-</ruleset>
