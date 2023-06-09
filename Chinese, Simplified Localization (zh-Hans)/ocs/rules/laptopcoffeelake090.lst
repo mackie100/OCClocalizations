@@ -1,9 +1,9 @@
-=<span class="title">Laptop: (8th Gen) Coffee Lake OpenCore 0.9.0 </span><br/>
+=<div style="text-align:center;font-size:30px;">八代CoffeeLake系列笔记本 OpenCore 0.9.1 健全性检查结果</div><br/>
+=<div style="text-align:center;font-size:20px;">规则更新:草原企鹅</div><br/>
 # Generic config suitable for initial installation
 # OpenCore v0.8.8 Intel Coffee Lake Laptop Sanity Check
-=<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html</a>
-=<hr>
-# [launcheroption]:https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html
+=<div style="text-align:center;font-size:20px;">参考文章:<a href="https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html">https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html</a></div>
+=<hr noshade=\"noshade\" />
 # [kernel]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#kernel
 # [acpi]:https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi
 # [kexts]:https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts
@@ -14,23 +14,22 @@
 
 ACPI
 :Add
- count==0 "-You have no SSDT Patches. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[ACPI Docs]</a>"
- [Path]==DSDT.aml "-<b>{$Path}</b> You should not be including your dumped DSDT. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[ACPI Docs]</a>."
- [Path]==SSDT-1.aml "-<b>{$Path}</b> This is just an example SSDT. If you really made this yourself, call it something more descriptive"
- [Path]~=".dsl$" "!<b>{$Path}</b> Only include .aml files here. dsl files need to be compiled to .aml"
- [Enabled]==no "-<b>{$Path}</b> is <b>disabled</b>. Either enable it or remove it to get rid of this warning"
- [Path]!=SSDT-PLUG.aml "-<b>SSDT-PLUG.aml</b> is missing. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[ACPI Docs]</a>"
- [Path]==SSDT-EC-USBX-LAPTOP.aml&SSDT-EC.aml "-<b>{$Path}</b> don't use both <b>SSDT-EC-USBX-LAPTOP</b> and <b>SSDT-EC</b>"
- [Path]==SSDT-EC-USBX-DESKTOP.aml "-<b>{$Path}</b> Please use <b>SSDT-EC-USBX-LAPTOP</b> instead"
- [Path]~=-EC.+aml :"%You might need something like SSDT-EC.aml or SSDT-EC-USBX-LAPTOP.aml. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[ACPI Docs]</a>"
- [Path]==SSDT-AWAC.aml "-<b>SSDT-AWAC.aml</b> shouldn't be required. See the [ACPI Docs][acpi] if you actually need it"
- [Path]==SSDT-PMC.aml "-<b>SSDT-PMC.aml</b> is not required for 8th gen laptops."
- [Path]!=SSDT-PNLF-CFL.aml "-<b>{$Path}</b> is missing, please add this if you're using a laptop. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[ACPI Docs]</a>"
- [Path]==SSDT-PNLF.aml "-<b>{$Path}</b> This should not be included on Coffee Lake and newer laptops, instead use SSDT-PNLF-CFL. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[ACPI Docs]</a>."
- [Path]==* " <b>{$Path}</b> Make sure this file is in your OC/ACPI directory"
- [Path]==SSDT-OLA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[Acpi Docs]</a>"
- [Path]==SSDT-OLARILA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#acpi>[Acpi Docs]</a>"
- [Path]==SSDT-XOSI.aml&SSDT-GPI0.aml "-<b>{$Path}</b> don't use both <b>SSDT-XOSI</b> and <b>SSDT-GPI0</b>"
+ count==0 "-您没有SSDT补丁.请查看<a href=https://dortania.github.io/config-laptop.plist/kaby-lake.html#acpi>[Acpi Docs]</a>"
+ [Path]==DSDT.aml "-<b>{$Path}</b> -->您不应该包括转储的DSDT.请查看<a href=https://dortania.github.io/config-laptop.plist/coffee-lake.html#acpi>[ACPI文档]</a>."
+ [Path]==SSDT-1.aml "-<b>{$Path}</b> -->这只是SSDT的一个例子.如果你真的是自己做的, 称它为更具描述性的东西"
+ [Path]~=".dsl$" "!<b>{$Path}</b> -->在此处只能是.aml文件. dsl文件需要编译为.aml"
+ [Enabled]==no "-<b>{$Path}</b> -->状态是<b>已禁用</b>. 启用或删除它可以去除此警告"
+ [Path]!=SSDT-PLUG.aml "--->缺少<font color=red><b>SSDT-PLUG.aml</b></font>. 请查看<a href=https://dortania.github.io/config-laptop.plist/coffee-lake.html#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-EC-USBX.aml&SSDT-EC.aml"-->-<b>{$Path}/b>不要同时使用 <b>SSDT-EC-USBX</b>和<b>SSDT-EC</b>"
+ [Path]~=-EC.+aml :"%您可能需要类似SSDT-EC.aml或SSDT-EC-USBX.aml的文件.请查看<a href=https://dortania.github.io/config-laptop.plist/coffee-lake.html#acpi>[ACPI文档]</a>"
+ [Path]!=SSDT-AWAC.aml "-<b>SSDT-AWAC.aml<b> --->缺少. 如果你需要它,请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#acpi>[Acpi Docs]</a>"
+ [Path]!=SSDT-PMC.aml "-<b>SSDT-PMC.aml<b> --->缺少. 如果你需要它,请查看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#acpi>[Acpi Docs]</a>"
+ [Path]!=SSDT-PNLF.aml "-<b>{$Path}</b> -->文件缺失!"
+ [Path]==SSDT-PNLF-CFL.aml "-<b>{$Path}</b> -->这不包括KabyLake和较旧的笔记本电脑上,而应使用SSDT-PNLF. 请查看 [ACPI Docs][acpi]."
+ [Path]==* " <b>{$Path}</b> -->确保此文件在您的<b>OC/ACPI</b>目录中"
+ [Path]==SSDT-XOSI.aml&SSDT-GPI0.aml "-<b>{$Path}</b> --> 不要同时使用<b>SSDT-XOSI</b>和<b>SSDT-GPI0</b>"
+ [Path]==SSDT-OLA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件,这些文件会注入很可能阻止启动的随机数据. 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#acpi>[Acpi Docs]</a>"
+ [Path]==SSDT-SSDT-OLARILA.aml "-<b>{$Path}</b> -->不要使用在粗略网站上找到的随机文件,这些文件会注入很可能阻止启动的随机数据. 请查看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#acpi>[Acpi Docs]</a>"
 
 :Quirks
  count==5
@@ -53,7 +52,7 @@ Booter
  EnableSafeModeSlide=yes
  EnableWriteUnprotector=no
  ForceExitBootServices=no
- ProtectCsmRegion~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.7 - See <b>ProtectMemoryRegions</b> instead"
+ ProtectCsmRegion~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>ProtectMemoryRegions</b>"
  ProtectMemoryRegions=no
  ProtectSecureBoot=no
  ProtectUefiServices=no
@@ -62,7 +61,7 @@ Booter
  ResizeAppleGpuBars=-1
  RebuildAppleMemoryMap=yes
  SetupVirtualMap=yes
- ShrinkMemoryMap~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.7 - See <b>RebuildAppleMemoryMap</b> instead"
+ ShrinkMemoryMap~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.7开始已弃用 - 请参阅<b>RebuildAppleMemoryMap</b>"
  SignalAppleOS=no
  SyncRuntimePermissions=yes
  ForceBooterSignature=no
@@ -71,77 +70,77 @@ DeviceProperties
 
 :Add
 ::PciRoot(0x0)/Pci(0x2,0x0)
- AAPL,ig-platform-id~="00009b3e|0900a53e|07009B3e|0000a53e" " <b>{$setting}</b> = <b>{$value}</b> iGPU set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - iGPU may not be set correctly. Please read the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake##deviceproperties>[DeviceProperties Docs]</a>"
+ AAPL,ig-platform-id~="00009B3e|0900a53e|07009B3e|0000a53e" " <b>{$setting}</b> = <b>{$value}</b> -->iGPU设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - -->iGPU可能设置不正确. 请阅读 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html##deviceproperties>[DeviceProperties Docs]</a>"
 
 ::PciRoot(0x0)/Pci(0x1b,0x0)
- AAPL,ig-platform-id~=.* "!<b>{$setting}</b> is in the wrong location, iGPU location is PciRoot(0x0)/Pci(0x2,0x0)"
+ AAPL,ig-platform-id~=.* "!<b>{$setting}</b> 位置错误, iGPU位置为 PciRoot(0x0)/Pci(0x2,0x0)"
 
 Kernel
 
 :Add
- count==0 "!You have no Kexts. You definitely need at least Lilu.kext and VirtualSMC.kext. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts Docs]</a>"
- [BundlePath]==Lilu.kext " <b>Lilu.kext</b> make sure this Kext is in your <b>OC/Kexts</b> directory and the first kext listed here":"!<b>Lilu.kext</b> is missing. Add it to the top of this list"
- [BundlePath]==FakeSMC.kext&VirtualSMC.kext "-<b>{$BundlePath}</b> don't use both <b>FakeSMC.kext</b> and <b>VirtualSMC.kext</b>"
- [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "-you should have either <b>FakeSMC.kext</b> or <b>VirtualSMC.kext</b> here"
- [BundlePath]==VoodooHDA.kext&AppleALC.kext "-<b>{$BundlePath}</b> don't use both <b>VoodooHDA.kext</b> and <b>AppleALC.kext</b>"
- [BundlePath]==AppleALC.kext "$alcbootarg='-<b>{$setting}</b> = <b>{$value}</b> You need to add <b>alcid=</b><_layout_\> here since you are using AppleALC.kext';":"$alcbootarg=;"
- [BundlePath]!=WhateverGreen.kext "-<b>WhateverGreen.kext</b> is missing. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/ktext.html#kexts>[Kexts Docs]</a>"
- [BundlePath]==XLNCUSBFIX.kext "!<b>XLNCUSBFIX.kext</b> this is an AMD-specific kext, don't use on Intel"
- [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-<b>{$BundlePath}</b> while this might work, <b>SmallTreeIntel82576.kext</b> is considered more reliable"
- [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> Please ensure your laptop has a light sensor, otherwise this can cause issues"
- [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> Please ensure your battery has been properly patched to 8bits, otherwise this can cause issues"
- [BundlePath]==XHCI-unsupported.kext  "-<b>{$BundlePath}</b> you probably don't need this"
- [BundlePath]==FakePCIID.kext "-<b>{$BundlePath}</b> there are better ways to fake device ids"
- [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext "-<b>{$BundlePath}</b> there are better ways to fake device ids"
- [BundlePath]==* " <b>{$BundlePath}</b> make sure this Kext is in your <b>OC/Kexts</b> directory"
+ count==0 "!-->您没有Kexts. 您至少得需要Lilu.kext和VirtualSMC.kext. 请查看<a href=https://dortania.github.io/ktext.html#kexts>[Kexts文档]</a>"
+ [BundlePath]==Lilu.kext " <b>Lilu.kext</b>-->确保此Kext在您的 <b>OC/Kexts</b> 目录,这是需要放在第一个的kext":"!-->缺少<b>Lilu.kext</b>. 将其添加到此列表的顶部"
+ [BundlePath]==FakeSMC.kext&VirtualSMC.kext "---><b>{$BundlePath}<b> 不要同时使用 <b>FakeSMC.kext<b> 和 <b>VirtualSMC.kext<b>"
+ [BundlePath]!=FakeSMC.kext|VirtualSMC.kext "--->你应该在此处添加 <b>FakeSMC.kext</b> 或 <b>VirtualSMC.kext</b>"
+ [BundlePath]==VoodooHDA.kext&AppleALC.kext "---><b>{$BundlePath}</b> 不要同时使用 <b>VoodooHDA.kext</b> 和 <b>AppleALC.kext</b>"
+ [BundlePath]==AppleALC.kext "$alcbootarg='<b>{$setting}</b> = <b>{$value}</b> --->您需要添加 <b>alcid=</b>N 因为您使用的是AppleALC.kext';":"$alcbootarg=;"
+ [BundlePath]!=WhateverGreen.kext "--->缺少<font color=red><b>WhateverGreen.kext</b></font>. 请查看<a href=https://dortania.github.io/ktext.html#kexts>[Kexts Docs]</a>"
+ [BundlePath]==XLNCUSBFIX.kext "!--><b>XLNCUSBFIX.kext</b> 这是AMD专用的kext,请勿在Intel上使用"
+ [BundlePath]==SmallTree-Intel-211-AT-PCIe-GBE.kext "-->-<b>{$BundlePath}</b> 虽然这可能有效, 但<b>SmallTreeIntel82576.kext</b> 被认为更可靠"
+ [BundlePath]==SMCLightSensor.kext     "!<b>{$BundlePath}</b> -->请确保您的笔记本电脑装有光传感器,否则可能会导致问题"
+ [BundlePath]==SMCBatteryManager.kext  "!<b>{$BundlePath}</b> -->请确保您的电池已正确修补成8位,否则可能会导致问题"
+ [BundlePath]==XHCI-unsupported.kext  "<b>{$BundlePath}</b> -->你可能不需要这个"
+ [BundlePath]==FakePCIID.kext "<b>{$BundlePath}</b> -->有更好的伪造设备ID的方法"
+ [BundlePath]==FakePCIID_Intel_HDMI_Audio.kext -<b>{$BundlePath}</b> "-->有更好的伪造设备ID的方法"
+ [BundlePath]==* "<b>{$BundlePath}</b> -->确保此Kext位于您的 <b>OC/Kexts</b> 目录"
 
 :Emulate
  DummyPowerManagement=no
 
 :Quirks
  AppleCpuPmCfgLock=no
- AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> You should disable CFG-Lock in your bios instead of using this":" <b>{$setting}</b> = <b>{$value}</b> Make sure CFG-Lock is disabled in your bios"
+ AppleXcpmCfgLock=yes " <b>{$setting}</b> = <b>{$value}</b> -->您应该在BIOS中禁用CFG-Lock,而不要使用此功能":" <b>{$setting}</b> = <b>{$value}</b> -->确保在您的BIOS中禁用了CFG-Lock"
  AppleXcpmExtraMsrs=no
  AppleXcpmForceBoost=no
  CustomPciSerialDevice=no
- CustomSMBIOSGuid=no " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have a Dell or VIAO motherboard"
+ CustomSMBIOSGuid=no " <b>{$setting}</b> = <b>{$value}</b> -->如果您有Dell或VIAO主板,请启用此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您拥有Dell或VIAO主板时才需要"
  DisableIoMapper=yes
  DisableRtcChecksum~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- DummyPowerManagement~=.* "!<b>{$setting}</b> was moved in OpenCore v0.6.2 - See <b>Kernel -> Emulate</b>"
+ DummyPowerManagement~=.* "!<b>{$setting}</b> -->已从OpenCore v0.6.6开始移动 - 参看<a href=https://dortania.github.io/OpenCore-Desktop-Guide/config.plist/coffee-lake.html#kernel>Kernel -> Emulate</a>"
  ExtendBTFeatureFlags~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  LegacyCommpage=no
  ExternalDiskIcons~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceAquantiaEthernet=no
  ForceSecureBootScheme=no
  IncreasePciBarSize=no
- LapicKernelPanic=no " <b>{$setting}</b> = <b>{$value}</b> If you have an HP laptop, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have an HP laptop"
+ LapicKernelPanic~=no " <b>{$setting}</b> = <b>{$value}</b>"
  PanicNoKextDump=yes
  PowerTimeoutKernelPanic=yes
  ProvideCurrentCpuInfo=no
  SetApfsTrimTimeout=-1
- ThirdPartyDrives~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- XhciPortLimit=yes " <b>{$setting}</b> = <b>{$value}</b> turn off after USB port mapping":" <b>{$setting}</b> = <b>{$value}</b> enable if you have USB issues"
+ ThirdPartyDrives=no
+ XhciPortLimit=yes " <b>{$setting}</b> = <b>{$value}</b> -->USB端口定制后关闭":" <b>{$setting}</b> = <b>{$value}</b> -->如果您有USB问题,请启用"
 
 Misc
 :Boot
- BuiltinTextRenderer~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See UEFI/TextRenderer"
- ConsoleBehaviourOs~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
- ConsoleBehaviourUi~="" "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
- ConsoleMode~=.* "!<b>{$setting}</b> has been moved to UEFI/Output section as of OpenCore v0.5.6"
- Resolution~=.* "!<b>{$setting}</b> has been moved to UEFI/Output section as of OpenCore v0.5.6"
+ BuiltinTextRenderer~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 参见UEFI/TextRenderer"
+ ConsoleBehaviourOs~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
+ ConsoleBehaviourUi~="" "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
+ ConsoleMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI/Output部分"
+ Resolution~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已移至UEFI/Output部分"
  ConsoleAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- HideSelf~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.9"
+ HideSelf~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  PollAppleHotKeys=no
  ShowPicker=yes
  HibernateSkipsPicker=yes
- UsePicker~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
+ UsePicker~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
  TakeoffDelay=0
  HibernateMode=None
- LauncherOption~="Disabled|Full|Short|System" " <b>{$setting}</b> = <b>{$value}</b> LauncherOption set correctly":"-<b>{$setting}</b> = <b>{$value}</b> - Invalid LauncherOption. Please read the <a href=https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html>[Misc -> Boot Docs]</a>"
+ LauncherOption~="Disabled|Full|Short|System" " <b>{$setting}</b> = <b>{$value}</b> -->LauncherOption设置正确":"-<b>{$setting}</b> = <b>{$value}</b> - 无效的LauncherOption. 请查阅 <a href=https://dortania.github.io/OpenCore-Post-Install/multiboot/bootstrap.html>[Misc -> Boot Docs]</a>"
  LauncherPath=Default
- PickerMode~="Builtin" "-<b>{$setting}</b> = <b>{$value}</b>  Check the presence of <b>OpenCanopy.efi</b> in <b>UEFI->Drivers</b> and check that has been disabled or you'll receive a warning":""
- PickerMode~="External" "-<b>{$setting}</b> = <b>{$value}</b> Check the presence of <b>OpenCanopy.efi</b> in <b>UEFI->Drivers</b>":""
- PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> but it is usually set to <b>Builtin</b> or <b>External</b>"
+ PickerMode~="Builtin" "-<b>{$setting}</b> = <b>{$value}</b>  检查在 <b>UEFI->Drivers</b> 是否存在 <b>OpenCanopy.efi</b> 检查是否已禁用，否则您将收到警告":""
+ PickerMode~="External" "-<b>{$setting}</b> = <b>{$value}</b> 检查在 <b>UEFI->Drivers</b> 里是否存在 <b>OpenCanopy.efi</b>":""
+ PickerMode~=(Builtin|External) " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> 但通常设置为 <b>Builtin</b> 或 <b>External</b>"
  HideAuxiliary=no
  PickerAttributes~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PickerAudioAssist=no
@@ -151,40 +150,39 @@ Misc
 :Debug
  AppleDebug=yes
  ApplePanic=yes
- DisableWatchDog=yes :" <b>{$setting}</b> enabling this will help debugging"
- Target=67 :" <b>{$setting}</b> see the <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs]</a> for more info on debug target numbers"
- DisplayLevel=2147483714 :" <b>{$setting}</b> see <a href=https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html>[Debugging Docs]</a> for more info debug display levels"
+ DisableWatchDog=yes :" <b>{$setting}</b> -->启用此功能将有助于调试"
+ Target=67 :" <b>{$setting}</b> -->有关调试目标编号的更多信息,请参见<a href=https://dortania.github.io/troubleshooting/debug.html>[Debugging Docs]</a>"
+ DisplayLevel=2147483714 :" <b>{$setting}</b> -->有关更多信息,请参见<a href=https://dortania.github.io/troubleshooting/debug.html>[Debugging Docs]</a>调试显示级别"
  DisplayDelay=0
- SysReport=no : " -->This only works if you are using the Debug version<b>{$setting}</b>=yes"
  LogModules~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 :Entries
- [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> boot-args go in the nvram section, not here"
+ [Arguments]~=debug "!<b>Arguments</b> = <b>{$Arguments}</b> -->boot-args进入nvram部分,而不是这里"
 
 :Security
- AllowNvramReset~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.8.1"
+ AllowNvramReset~=.* "!<b>{$setting}</b> -->从OpenCore v0.8.1开始在引导条目添加独立的EFI驱动实现"
  AllowSetDefault=yes
- AllowToggleSip~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.8.1"
+ AllowToggleSip~=.* "!<b>{$setting}</b> -->从OpenCore v0.8.1开始在引导条目添加独立的EFI驱动实现"
  ApECID=0
  AuthRestart=no
- BlacklistAppleUpdate=yes
- BootProtect~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.6.6 - See <b>LauncherOption</b>"
+ BlacklistAppleUpdate~=.* "!<b>{$setting}</b> -->在OpenCore v0.6.0里开始已弃用,可以使用NVRAM参数里添加"
+ BootProtect~=.* "!<b>{$setting}</b> 从OpenCore v0.6.6开始已弃用 - 请查阅 <b>LauncherOption</b>"
  DmgLoading=Signed
  EnablePassword=no
- RequireSignature~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See <b>Vault</b>"
- RequireVault~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See <b>Vault</b>"
+ RequireSignature~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
+ RequireVault~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 <b>Vault</b>"
  Vault=Optional
- SecureBootModel~="Default|Disabled|j137|j680|j132|j174|j140k|j780|j213|j140a|j152f|j160|j230k|j214k|j223|j215|j185|j185f|x86legacy" " <b>{$setting}</b> = <b>{$value}</b> SecureBootModel set correctly":"!<b>{$setting}</b> = <b>{$value}</b> - This is an invalid option for SecureBootModel!"
+ SecureBootModel~="Default|Disabled|j137|j680|j132|j174|j140k|j780|j213|j140a|j152f|j160|j230k|j214k|j223|j215|j185|j185f|x86legacy" " <b>{$setting}</b> = <b>{$value}</b> SecureBootModel设置正确":"!<b>{$setting}</b> = <b>{$value}</b> - 这是SecureBootModel的无效选项!"
  HaltLevel=2147483648
  ExposeSensitiveData=6 :" <b>{$setting}</b> = <b>{$value}</b>"
- ScanPolicy=0 :"-<b>{$setting}</b> = <b>{$value}</b>. Initially you want 0 here, but once you are up and running check <a href=https://dortania.github.io/OpenCore-Post-Install/universal/security.html#scanpolicy>[Scanpolicy Docs]</a> for why you should change this"
+ ScanPolicy=0 :"-<b>{$setting}</b> = <b>{$value}</b>. -->初始配置时候这里可以为0,但是配置完成后,请在OCC里自定义显示哪些启动盘"
 
 :Serial
  Init=no
  Override=no
  
 :Tools
- count==0 " You removed the tool EFIs":"%You can remove the tool EFIs here"
+ count==0 " -->您好像没有一些EFI工具程序":"%-->您可以在此处删除EFI工具程序"
 
 NVRAM
  LegacyEnable=no
@@ -193,25 +191,25 @@ NVRAM
 
 :Add
 ::4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14
- UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> but it is usually set to <b>01</b> or <b>02</b>"
+ UIScale~=(01|02) " <b>{$setting}</b> = <b>{$value}</b>":" <b>{$setting}</b> = <b>{$value}</b> -->但这通常设置为 <b>01</b> 或 <b>02</b>"
  DefaultBackgroundColor~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
 ::7C436110-AB2A-4BBB-A880-FE41995C9F82
- boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> I think you mean <b>npci=</b> there not <b>ncpi=</b>":""
+ boot-args~="ncpi=" "!<b>{$setting}</b> = <b>{$value}</b> -->我想你的意思是 <b>npci=</b> 而不是 <b>ncpi=</b>":""
  boot-args~="^(?:(?!alcid).)*$" "{$alcbootarg}":""
- boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> If you have a navi10 GPU add <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
+ boot-args="-v keepsyms=1" " <b>{$setting}</b> = <b>{$value}</b> -->如果您有navi10 GPU,请添加 <b>agdpmod=pikera</b>":" <b>{$setting}</b> = <b>{$value}</b>"
  run-efi-updater="No"
  csr-active-config~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> Remove this setting completely. It is no longer used as of OpenCore v0.5.7"
- prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>. Unless you speak Russian, remove this entry or fill it in with your language":" <b>{$setting}</b> = <b>{$value} ({@value})</b>"
- SystemAudioVolume~="^\d+$" " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> this should be a positive number"
+ nvda_drv~=.* "!<b>{$setting}</b> = <b>{$value}</b> -->完全删除此设置.从OpenCore v0.5.7开始不再使用"
+ prev-lang:kbd=72752d52553a323532 "-<b>{$setting}</b> = <b>{$value} ({@value})</b>. -->除非您使用俄语,否则请留空或设置其他语言":" <b>{$setting}</b> = <b>{$value} ({@value})</b>"
+ SystemAudioVolume~="^\d+$" " <b>{$setting}</b> = <b>{$value}</b>":"!<b>{$setting}</b> = <b>{$value}</b> -->这应该是一个正数"
 
 PlatformInfo
  Automatic=yes
  UpdateDataHub=yes
  UpdateNVRAM=yes
  UpdateSMBIOS=yes
- UpdateSMBIOSMode=Create " <b>{$setting}</b> = <b>{$value}</b> If you have a Dell or VIAO motherboard, please set this to <b>Custom</b>":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you have a Dell or VIAO motherboard"
+ UpdateSMBIOSMode=Create" <b>{$setting}</b> = <b>{$value}</b> 如果您有Dell或VIAO主板,请将其设置为 <b>Custom</b>
 
 :Generic
  SpoofVendor=yes
@@ -219,43 +217,45 @@ PlatformInfo
  ProcessorType~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SystemMemoryStatus=Auto
  MaxBIOSVersion=no
- SupportsCsm=no "!<b>{$setting}</b> was replaced with <b>AdviseWindows</b> in OpenCore v0.5.5":"!**{$setting}** was replaced with **AdviseWindows** in OpenCore v0.5.5"
- SystemProductName~="(MacBookPro15,1|MacBookPro15,2|MacBookPro15,3|MacBookPro15,4|Macmini8,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> this is not a suggested SMBIOS for Coffee Lake Laptop systems. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>"
- MLB=M000000000001 "!<b>{$setting}</b> should be set to your generated board serial. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
- ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> You should set this to your NIC MAC address. See <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
- SystemSerialNumber=W0000000001 "!<b>{$setting}</b> should be set to your generated system serial number. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
- SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> should be set to your generated SmUUID. See the <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> is set"
+ SupportsCsm=no "!<b>{$setting}</b> -->从OpenCore v0.5.5开始被<b>AdviseWindows</b>取代"
+ SystemProductName~="(MacBookPro15,1|MacBookPro15,2|MacBookPro15,3|MacBookPro15,4|Macmini8,1)" " <b>{$setting}</b> = <b>{$value}</b>":"-<b>{$setting}</b> = <b>{$value}</b> -->对于八代Coffeelake笔记本平台,这不是建议的SMBIOS. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>"
+ MLB=M000000000001 "!<b>{$setting}</b> -->应该设置为您生成的板卡序列号. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ ROM=112233000000 "-<b>{$setting}</b> = <b>{$value}</b> -->您应该将此设置为您的NIC MAC地址. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ SystemSerialNumber=W0000000001 "!<b>{$setting}</b> -->应该设置为您生成的系统序列号. 请参看<a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
+ SystemUUID=00000000-0000-0000-0000-000000000000 "!<b>{$setting}</b> -->应该设置为您生成的SmUUID. 请参看 <a href=https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo>[PlatformInfo Docs]</a>":" <b>{$setting}</b> -->已设置"
 
 UEFI
- ConnectDrivers=yes  "<b>{$setting}</b> = <b>{$value}</b>"
+ ConnectDrivers=yes  "<b>{$setting}</b> = <b>{$value}</b> 一般建议此处要选中状态！"
 :Drivers
- [Path]==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi|OpenHfsPlus.efi "$hfs={$Path}; <b>{$Path}</b>":"!Need either <b>VBoxHfs.efi</b>, <b>OpenHfsPlus.efi</b>  or <b>HFSPlus.efi</b> here"
- [Path]==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi|OpenHfsPlus.efi "!<b>{$Path}</b> you already have <b>{$hfs}</b>"
- [Path]==OpenRuntime.efi " <b>{$Path}</b>":"!<b>OpenRuntime.efi</b> is missing"
- [Path]==FwRuntimeServices.efi "!<b>{$Path}</b> has been replaced by OpenRuntime.efi as of OpenCore v0.5.7"
- [Path]==ApfsDriverLoader.efi "!<b>ApfsDriverLoader.efi</b> was merged into OpenCore under the UEFI/APFS section as of OpenCore v0.5.8"
- [Path]==OpenCore.efi "!<b>OpenCore.efi</b> should not be here!"
- [Path]==AppleUsbKbdxe.efi "!<b>{$Path}</b> has been replaced by OpenUsbKbDxe.efi as of OpenCore v0.5.7"
- [Path]==CrScreenshotDxe.efi "!<b>{$Path}</b> should not be here!"
- [Path]==HiiDatabase.efi "!<b>{$Path}</b> should not be here!"
- [Path]==NvmExpressDxe.efi "!<b>{$Path}</b> should not be here!"
- [Path]==OpenUsbKbDxe.efi "-<b>{$Path}</b> Unless you are doing a legacy install, you don't need this"
- [Path]==Ps2KeyboardDxe.efi "-<b>{$Path}</b> Unless you are using a PS2 keyboard, this should not be here!"
- [Path]==Ps2MouseDxe.efi "-<b>{$Path}</b> Unless you are using a PS2 mouse/trackpad with OpenCanopy, this should not be here!"
- [Path]==UsbMouseDxe.efi "-<b>{$Path}</b> Unless you are using a USB mouse/trackpad with OpenCanopy, this should not be here!"
- [Path]==XhciDxe.efi "!<b>{$Path}</b> should not be here!"
- [Path]==VirtualSmc.efi "!<b>VirtualSmc.efi</b> was merged into OpenCore under the quirk <b>AppleSmcIo</b>!"
- [Path]==OpenCanopy.efi "-<b> OpenCanopy.efi</b> Check in <b>Misc->Boot->PickerMode->External</b> option is selected or you'll receive a warning. If <b>Builtin</b> or <b>Apple</b> option is selected, disable or remove this driver"
+ [Path]==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "$hfs={$Path}; <b>{$Path}</b>":"!-->这里需要 <b>VBoxHfs.efi</b> 或 <b>HFSPlus.efi</b> here"
+ [Path]==VBoxHfs.efi|HFSPlus.efi|HfsPlus.efi "!<b>{$Path}</b> -->你已经有了 <b>{$hfs}</b>"
+ [Path]==OpenRuntime.efi " <b>{$Path}</b>":"!-->缺少<font color=red><b>OpenRuntime.efi</b></font>"
+ [Path]==FwRuntimeServices.efi "!<b>{$Path}</b> -->从OpenCore v0.5.7开始已由OpenRuntime.efi取代"
+ [Path]==ApfsDriverLoader.efi "!<b>ApfsDriverLoader.efi</b> -->自OpenCore v0.5.8起,已合并在UEFI/APFS部分"
+ [Path]==OpenCore.efi "!<b>OpenCore.efi</b> -->不应该在这里!"
+ [Path]==AppleUsbKbdxe.efi "!<b>{$Path}</b> -->不应该在这里!"
+ [Path]==NvmExpressDxe.efi "!<b>NvmExpressDxe.efi</b> -->不应该在这里!"
+ [Path]==OpenUsbKbDxe.efi "-<b>{$Path}</b> -->除非您执行旧版安装,否则不需要"
+ [Path]==Ps2KeyboardDxe.efi "-<b>{$Path}</b> -->除非您使用PS2键盘,否则不应在此处!"
+ [Path]==Ps2MouseDxe.efi "-<b>{$Path}</b> -->除非您使用带有OpenCanopy的PS2鼠标/触控板,否则请不要在此处!"
+ [Path]s==UsbMouseDxe.efi "-<b>{$Path}</b> -->除非您将USB鼠标/触控板与OpenCanopy配合使用,否则不应在此处使用!"
+ [Path]==XhciDxe.efi "!<b>XhciDxe.efi</b> -->不应该在这里!"
+ [Path]==HiiDatabase.efi "!<b>{$Path}</b> -->不应该在这里!"
+ [Path]==AppleUsbKbDxe.efi "-<b>{$Path}</b> -->从OpenCore v0.5.7开始已由OpenUsbKbDxe.efi取代"
+ [Path]==VirtualSmc.efi "!<b>VirtualSmc.efi</b> -->已被合并在OpenCore的<b>AppleSmcIo</b> quirks下 !"
+ [Path]==OpenLinuxBoot.efi "-<b>{$Path}</b> -->除非您确定要从OpenCore直接引导LINUX系统而不通过传统GRUB引导，否则不需要!"
+ [Path]==ext4_x64.efi "-<b>{$Path}</b> -->这个是LINUX传统EXT4文件系统读取驱动，如果你要引导的LINUX磁盘分区是EXT4,加载此驱动,配合OpenLinuxBoot.efi使用,否则不需要!"
+ [Path]==btrfs_x64.efi "-<b>{$Path}</b> -->这个是LINUX下一代文件系统读取驱动可以替代EXT4格式,如果你要引导的LINUX磁盘分区是此文件系统,加载此驱动,配合OpenLinuxBoot.efi使用,否则不需要!"
  [Path]==* " <b>{$Path}</b>"
 
 :APFS
  EnableJumpstart=yes
- GlobalConnect=no " <b>{$setting}</b> = <b>{$value}</b> If you have an HP motherboard and can't see APFS drives in OpenCore, please enable this":" <b>{$setting}</b> = <b>{$value}</b> Only required for HP motherboard that cannot see APFS drives in OpenCore"
  HideVerbose=yes
  JumpstartHotPlug=no
  MinDate=0
  MinVersion=0
-
+ GlobalConnect~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>GlobalConnect</font></b>选项"
+ 
 :AppleInput
  AppleEvent~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  CustomDelays~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -267,29 +267,30 @@ UEFI
 
 :Audio
  AudioSupport~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ AudioDevice~=.* " <b>{$setting}</b> = <b>{$value}</b>"
+ AudioOutMask~=.* " <b>{$setting}</b> = <b>{$value}</b>" 
  DisconnectHda~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  MaximumGain~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  MinimumAssistGain~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  MinimumAudibleGain~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- AudioOutMask~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- AudioDevice~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  AudioCodec~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PlayChime~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  SetupDelay~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ResetTrafficClass~=.* " <b>{$setting}</b> = <b>{$value}</b>"
 
+
 :Input
  KeyFiltering=no
  KeyForgetThreshold=5
- KeyMergeThreshold~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.6.9
+ KeyMergeThreshold~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已弃用"
  KeySupport=yes
  KeySupportMode=Auto
  KeySwap=no
  PointerSupport=no
  PointerSupportMode~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  TimerResolution=50000
- KeyInitalDelay~=.* "!<b>{$setting}</b> --> was moved to AppInput in OpenCore v0.6.9"
- KeySubsequentDelay~=.* "!<b>{$setting}</b> --> was moved to AppInput in OpenCore v0.6.9"
+ KeyInitalDelay~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已移动到AppleInput中"
+ KeySubsequentDelay~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已移动到AppleInput中"
  PointerDwellClickTimeout~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PointerDwellDoubleClickTimeou~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  PointerDwellRadius~=.* " <b>{$setting}</b> = <b>{$value}</b>"
@@ -298,12 +299,12 @@ UEFI
  PointerPollMin~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  
 :ProtocolOverrides
- count==18 :"!You should have exactly 18 settings in the UEFI/ProtocolOverrides section"
+ count==18 :"!-->在这里,您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
  AppleEg2Info=no
- AppleEvent~=.* "!<b>{$setting}</b> --> was moved to AppInput in OpenCore v0.6.9"
+ AppleEvent~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.9开始已移动到AppleInput中"
  AppleFramebufferInfo=no
  AppleImageConversion=no
  AppleImg4Verification=no
@@ -314,34 +315,34 @@ UEFI
  AppleUserInterfaceTheme=no
  DataHub=no
  DeviceProperties=no
- FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
- HashServices=no " <b>{$setting}</b> = <b>{$value}</b> If you plan to use FileVault2, please enable this":" <b>{$setting}</b> = <b>{$value}</b> This is only required if you plan to use FileVault"
+ FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2,请启用此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault时才需要"
+ HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2,请启用此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault时才需要"
  OSInfo=no
  UnicodeCollation=no
- ConsoleControl~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See UEFI/TextRenderer"
+ ConsoleControl~=.* "!<b>{$setting}</b> 从OpenCore v0.5.6开始已弃用-请参见UEFI/TextRenderer"
 
 :Output
- count==15 :"!You should have exactly 15 settings in the UEFI/Output section"
+ count==15 :"!-->在这里,您应该在<b>UEFI/OUTPUT</b>部分中设置15个设置"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceResolution=no
+ GopPassThrough=~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ClearScreenOnModeSwitch=no
  IgnoreTextInGraphics=no
  ProvideConsoleGop=yes
- ReconnectGraphicsOnConnect=no
  DirectGopRendering=no
- DirectGopCacheMode~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.9"
+ DirectGopCacheMode~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  ReconnectOnResChange=no
  ReplaceTabWithSpace=no
  SanitiseClearScreen~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- UgaPassThrough~=.* " <b>{$setting}</b> = <b>{$value}</b>"
- Scale~=.* "!<b>{$setting}</b> shouldn't be here"
+ Scale~=.* "!<b>{$setting}</b> -->不应该在这里"
+ UgaPassThrough~=.* "<b>{$setting}</b> = <b>{$value}</b>":"!-->缺少<b><font colore=red>UgaPassThrough</font></b>选项"
 
 :Quirks
- AvoidHighAlloc~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6"
- DeduplicateBootOrder~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.6.5"
- DisableSecurityPolicy=no " <b>{$setting}</b> = <b>{$value}</b> If you have a Microsoft Surface device, please enable this"
+ AvoidHighAlloc~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用"
+ DeduplicateBootOrder~=.* "!<b>{$setting}</b> --> 从OpenCore v0.6.6开始已弃用"
+ DisableSecurityPolicy=no
  EnableVectorAcceleration=no
  EnableVmx=no
  ActivateHpetSupport=no
@@ -349,19 +350,19 @@ UEFI
  ForgeUefiSupport=no
  ForceOcWriteFlash=no
  IgnoreInvalidFlexRatio=no
- ReconnectOnResChange~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
- IgnoreTextInGraphics~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
- ProvideConsoleGop=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
+ ReconnectOnResChange~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
+ IgnoreTextInGraphics~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
+ ProvideConsoleGop=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
  ReleaseUsbOwnership=yes
  ReloadOptionRoms=no
- RequestBootVarFallback~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.9"
+ RequestBootVarFallback~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.9开始已弃用"
  RequestBootVarRouting=yes
  TscSyncTimeout=0
  ResizeGpuBars=-1
  ResizeUsePciRbIo=no
- ReplaceTabWithSpace~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
- SanitiseClearScreen~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
- ClearScreenOnModeSwitch~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See Output/${setting}"
- UnblockFsConnect=no " <b>{$setting}</b> = <b>{$value}</b> If you have an HP system, please enable this"
+ ReplaceTabWithSpace~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
+ SanitiseClearScreen~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
+ ClearScreenOnModeSwitch~=.* "!<b>{$setting}</b> -->从OpenCore v0.5.6开始已弃用 - 请参看 Output/${setting}"
+ UnblockFsConnect=no "<b>{$setting}</b> = <b>{$value}</b> --><font color=blue>如果未显示APFS驱动器,建议在HP系统上启用</font>":"!-->缺少<b><font colore=red>UnblockFsConnect</font></b>选项"
 
 :ReservedMemory

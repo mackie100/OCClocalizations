@@ -1748,7 +1748,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_OSInfo" = "强制使用内置版本重新安装OS Info协议.该协议通常用于从macOS引导程序,固件或其他应用程序接收通知\n暂时没什么用,选择NO.";
 
-"TT_PciIo" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces functions in CpuIo and PciRootBridgeIo with 64-bit MMIO compatible ones to fix Invalid Parameter when using 4G Decoding. This affects UEFI drivers such as AudioDxe which access 64-bit MMIO devices. Platforms earlier than APTIO V (Haswell and older) are typically affected.";
+"TT_PciIo" = "用64位MMIO兼容的函数替换CpuIo和PciRootBridgeIo中的函数，以修复使用4G解码时无效参数的问题. 这会影响UEFI驱动程序，如AudioDxe，它访问64位MMIO设备。早于APTIO V的平台(Haswell及更老版本)通常会受到影响.";
 
 "TT_UnicodeCollation" = "一般选 NO.\n一些较旧的固件破坏了 Unicode 排序规则, 设置为 YES 可以修复这些系统上 UEFI Shell 的兼容性 (通常为用于 IvyBridge 或更旧的设备)";
 
