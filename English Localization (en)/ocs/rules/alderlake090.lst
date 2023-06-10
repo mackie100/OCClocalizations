@@ -30,7 +30,7 @@ ACPI
  [Path]==SSDT-OLARILA.aml "!<b>{$Path}</b> Don't use random files found on sketchy websites, these inject random data that can very likely prevent booting. Please review the <a href=https://dortania.github.io/OpenCore-Install-Guide/config.plist/comet-lake#acpi>[Acpi Docs]</a>"
 
 :Quirks
- count==5
+ count==6
  FadtEnableReset~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  NormalizeHeaders=no
  RebaseRegions=no
@@ -318,7 +318,7 @@ UEFI
  ConsoleControl~=.* "!<b>{$setting}</b> was deprecated since OpenCore v0.5.6 - See UEFI/TextRenderer"
 
 :Output
- count==15 :"!You should have exactly 15 settings in the UEFI/Output section"
+ count==13 :"!You should have exactly 13 settings in the UEFI/Output section"
  TextRenderer=BuiltinGraphics
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"

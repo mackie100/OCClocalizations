@@ -299,7 +299,7 @@ UEFI
  PointerPollMin~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  
 :ProtocolOverrides
- count==18 :"!-->在这里,您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
+ count==20 :"!-->在这里,您应该在UEFI/ProtocolOverrides部分中正确设置18个选项"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no
@@ -319,6 +319,7 @@ UEFI
  FirmwareVolume=no
  HashServices=no
  OSInfo=no
+ PciIo=no
  UnicodeCollation=no
 
 :Output

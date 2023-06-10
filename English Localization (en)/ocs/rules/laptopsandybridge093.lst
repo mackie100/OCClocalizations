@@ -34,7 +34,7 @@ ACPI
  [Enabled]==yes " <b>{$Comment}</b> Patch is <b>enabled</b>"
 
 :Quirks
- count==5
+ count==6
  FadtEnableReset~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  NormalizeHeaders=no
  RebaseRegions=no
@@ -301,7 +301,7 @@ UEFI
  PointerPollMin~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  
 :ProtocolOverrides
- count==18 :"!You should have exactly 18 settings in the UEFI/ProtocolOverrides section"
+ count==19 :"!You should have exactly 19 settings in the UEFI/ProtocolOverrides section"
  AppleAudio=no
  AppleBootPolicy=no
  AppleDebugLog=no

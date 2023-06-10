@@ -316,6 +316,7 @@ UEFI
  FirmwareVolume=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2,请启用此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault时才需要"
  HashServices=no " <b>{$setting}</b> = <b>{$value}</b> 如果您打算使用FileVault2,请启用此功能":" <b>{$setting}</b> = <b>{$value}</b> 仅当您计划使用FileVault时才需要"
  OSInfo=no
+ PciIo=no
  UnicodeCollation=no
  ConsoleControl~=.* "!<b>{$setting}</b> 从OpenCore v0.5.6开始已弃用 - 参考 UEFI/TextRenderer"
 

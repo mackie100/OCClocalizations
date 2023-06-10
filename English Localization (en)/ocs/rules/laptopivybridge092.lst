@@ -34,7 +34,7 @@ ACPI
  [Enabled]==yes " <b>{$Comment}</b> Patch is <b>enabled</b>"
 
 :Quirks
- count==5
+ count==6
  FadtEnableReset~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  NormalizeHeaders=no
  RebaseRegions=no

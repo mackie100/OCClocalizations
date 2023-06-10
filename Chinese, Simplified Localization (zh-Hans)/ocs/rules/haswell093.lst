@@ -315,6 +315,7 @@ UEFI
  FirmwareVolume=no
  HashServices=no
  OSInfo=no
+ PciIo=no
  UnicodeCollation=no
 
 :Output

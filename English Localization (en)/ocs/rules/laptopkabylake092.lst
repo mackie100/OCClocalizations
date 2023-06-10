@@ -31,7 +31,7 @@ ACPI
  [Path]==SSDT-XOSI.aml&SSDT-GPI0.aml "-<b>{$Path}</b> don't use both <b>SSDT-XOSI</b> and <b>SSDT-GPI0</b>"
 
 :Quirks
- count==5
+ count==6
  FadtEnableReset~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  NormalizeHeaders=no
  RebaseRegions=no
