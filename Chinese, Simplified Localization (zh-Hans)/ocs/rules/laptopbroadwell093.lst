@@ -325,6 +325,7 @@ UEFI
 :Output
  count==15 :"!-->在这里,您应该在<b>UEFI/OUTPUT</b>部分中设置15个设置"
  TextRenderer=BuiltinGraphics
+ ConsoleFont=""
  ConsoleMode=""
  Resolution~=.* " <b>{$setting}</b> = <b>{$value}</b>"
  ForceResolution=no

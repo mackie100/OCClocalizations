@@ -131,6 +131,9 @@
 /* Class = "NSTextFieldCell"; title = "GopPassThrough"; ObjectID = "VKM-hk-vmW"; */
 "VKM-hk-vmW.title" = "GopPassThrough";
 
+/* Class = "NSTextFieldCell"; title = "Console Font"; ObjectID = "X4C-Lg-vEv"; */
+"X4C-Lg-vEv.title" = "Console Font";
+
 /* Class = "NSTabViewItem"; label = "AppleInput"; ObjectID = "XuU-Ep-ZXb"; */
 "XuU-Ep-ZXb.label" = "AppleInput";
 

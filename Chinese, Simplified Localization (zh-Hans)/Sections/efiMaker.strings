@@ -20,9 +20,6 @@
 /* Class = "NSButtonCell"; title = "Haswell / Broadwell"; ObjectID = "4xh-eS-Y7x"; */
 "4xh-eS-Y7x.title" = "Haswell / Broadwell";
 
-/* Class = "NSButtonCell"; title = "Make"; ObjectID = "5TB-vq-xrP"; */
-"5TB-vq-xrP.title" = "生成";
-
 /* Class = "NSTextFieldCell"; title = "Product Name Label"; ObjectID = "5nJ-S4-CEv"; */
 "5nJ-S4-CEv.title" = "型号标识符";
 
@@ -58,6 +55,9 @@
 
 /* Class = "NSButtonCell"; title = "Haswell"; ObjectID = "G1E-RO-2rm"; */
 "G1E-RO-2rm.title" = "Haswell";
+
+/* Class = "NSButtonCell"; title = "Rocket Lake"; ObjectID = "Hls-YJ-1Ew"; */
+"Hls-YJ-1Ew.title" = "Rocket Lake";
 
 /* Class = "NSTextFieldCell"; title = "Product Name:"; ObjectID = "IHo-gl-8zt"; */
 "IHo-gl-8zt.title" = "机型型号:";
@@ -107,6 +107,9 @@
 /* Class = "NSButtonCell"; title = "Bulldozer / Jaguar"; ObjectID = "bNf-bi-wAW"; */
 "bNf-bi-wAW.title" = "Bulldozer / Jaguar";
 
+/* Class = "NSButtonCell"; title = "Make"; ObjectID = "bUX-qm-Krp"; */
+"bUX-qm-Krp.title" = "生成";
+
 /* Class = "NSButtonCell"; title = "Haswell-E"; ObjectID = "bsg-dT-djX"; */
 "bsg-dT-djX.title" = "Haswell-E";
 
@@ -148,6 +151,9 @@
 
 /* Class = "NSButtonCell"; title = "Show compatible SMBIOS data"; ObjectID = "rvT-wj-fXh"; */
 "rvT-wj-fXh.title" = "仅显示和当前选择平台兼容的SMBIOS机型数据";
+
+/* Class = "NSButtonCell"; title = "Alder Lake"; ObjectID = "sHk-q8-uSc"; */
+"sHk-q8-uSc.title" = "Alder Lake";
 
 /* Class = "NSButtonCell"; title = "Coffee Lake"; ObjectID = "wwQ-5u-aDh"; */
 "wwQ-5u-aDh.title" = "Coffee Lake";
