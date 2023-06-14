@@ -1250,7 +1250,7 @@
 "TT_BlacklistAppleUpdate" = "忽略尝试更新Apple外设固件的引导选项 (例如MultiUpdater.efi).\n\n注意: 由于某些操作系统(即macOS Big Sur)无法使用NVRAM变量(run-efi-updater)禁用固件更新,因此存在此选项.";
 
 /* SERIAL */
-"TT_Init" = "执行串口初始化.\n\n此选项将在启用（任意）调试日志之前在 OpenCore 中执行串行端口初始化.\n\n有关详细信息,请参阅调试部分.";
+"TT_Init" = "执行串口初始化.\n\n此选项将在启用(任意)调试日志之前在 OpenCore 中执行串行端口初始化.\n\n有关详细信息,请参阅调试部分.";
 
 "TT_Override" = "覆盖串行端口属性. 当此选项设置为 false, 自定义的任何键都不会被覆盖.\n\n此选项将覆盖下面“串行自定义属性”部分中列出的串行端口属性.";
 
@@ -1676,7 +1676,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 "TT_PointerSupport" = "如果你是华硕的z87或者z97,你需要打开PointerSupport这个选项.";
 
 /* Output */
-"TT_ConsoleFont" = "Type: plist string\nFailsafe: Empty (use OpenCore builtin console font)\nDescription: Specify the console font to use for OpenCore Builtin text renderer.\n\nThe font file must be located in EFI/OC/Resources/Font/{font-name}.hex and must be 8x16 resolution. Various console fonts can be found online in either .bdf or .hex format. .bdf can be converted to .hex format using gbdfed (available for Linux or macOS).\n\nThere is often no need to change console font, the main use-case being to provide an extended character set for those relatively rare EFI applications which have multi-lingual support (e.g. memtest86).\n\nThe OcBinaryData repository includes:\n\t• Terminus — A font with extensive character support suitable for applications such as the above.\n\t• TerminusCore — A lightly modified version of the Terminus font, making some glyphs (@KMRSTVWimrsw) more similar to the free ISO Latin font used in XNU and OpenCore.\n\nTerminus and TerminusCore are provided under the SIL Open Font License, Version 1.1. Some additional GPL licensed fonts from the EPTO Fonts library, converted to the required .hex format, can be found here.\n\nNote 1: On many newer systems the System text renderer already provides a full set of international characters, in which case this can be used without requiring the Builtin renderer and a custom font.\n\nNote 2: This option only affects the Builtin text renderer and only takes effect from the point at which the Builtin renderer is configured. When console output is visible before this point, it is using the system console font.";
+"TT_ConsoleFont" = "(使用OpenCore内置控制台字体)\n指定用于OpenCore内置文本渲染器的控制台字体.\n\n字体文件必须位于EFI/OC/Resources/font/{字体名称}中.十六进制,解析率必须为8x16. 可以在线找到.bdf或.hex格式的各种控制台字体. 可以使用gbdfed将.bdf转换为.hex格式 (用于Linux或macOS).\n\n通常不需要更改控制台字体,主要用例是为那些具有多语言支持的相对罕见的EFI应用程序提供扩展字符集 (例如memtest86).\n\nOcBinaryData存储库包括:\n\t• Terminus — 一种具有广泛字符支持的字体,适用于上述应用程序.\n\t• TerminusCore — Terminus字体的轻微修改版本, 使一些字形(@KMRSTVWimrsw)更类似于XNU和OpenCore中使用的免费ISO拉丁字体.\n\nTerminus和TerminusCore是根据SIL开放字体许可证提供的, 版本1.1.EPTO字体库中的一些额外的GPL授权字体, 转换为所需的.hex格式,可以在此处找到.\n\n注意 1: 在许多较新的系统上,系统文本呈现器已经提供了一整套国际字符, 在这种情况下,可以在不需要内置渲染器和自定义字体的情况下使用.\n\n注意 2: 此选项仅影响内置文本渲染器,并且仅从配置内置渲染器的点开始生效. 当控制台输出在此位置之前可见时,它使用系统控制台字体.";
 
 /* lye-vu-fi3 */
 "TT_ConsoleMode" = "设置为空字符串不更改控制台模式.设置为Max以尝试使用最大可用控制台模式.\n大多数情况下都选择留空!";
@@ -1713,7 +1713,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_UIScale" = "用户界面缩放设置.\n\n对应4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14:UIScale变量.\n• 1 — 1 倍缩放, 正常显示无缩放.\n• 2 — 2 倍缩放, 适用开启 HiDPI 的显示.\n• -1 — 保持当前变量不变.\n• 0 — 根据当前分辨率自动选择缩放比例.\n\n注 1:自动比例检测基于总像素面积工作,在小型 HiDPI 显示器上可能会失败, 在这种情况下,可以使用 NVRAM 部分手动管理该值.\n\n注 2:当从手动指定的 NVRAM 变量切换到此首选项时,可能需要重置 NVRAM.";
 
-"TT_GopBurstMode" = "如果系统固件尚未启用,则为GOP内存启用写组合（WC）缓存.\n\n一些旧的固件(例如EFI时代的Mac)无法为GOP内存设置写入组合缓存(也称为突发模式),即使CPU支持它,设置这个可以为GOP操作提供相当大的加速,特别是在需要DirectGopRendering的系统上.n\n注意:无论DirectGopRendering是否设置,都会生效,甚至在DirectGopRendering为false时,也可能为GOP操作提供一些加速.\n\nNote 2: On most systems from circa 2013 onwards, write-combining caching is already applied by the firmware to GOP memory, in which case GopBurstMode is unnecessary. On such systems enabling the quirk should normally be harmless, producing an OCC: debug log entry indicating that burst mode is already started.\n\nNote 3: Some caution should be taken when enabling this quirk, as it has been observed to cause hangs on a few systems. Since additional guards have been added to try to prevent this, please log a bugtracker issue if such a system is found.";
+"TT_GopBurstMode" = "如果系统固件尚未启用,则为GOP内存启用写组合(WC)缓存.\n\n一些旧的固件(例如EFI时代的Mac)无法为GOP内存设置写入组合缓存(也称为突发模式),即使CPU支持它,设置这个可以为GOP操作提供相当大的加速,特别是在需要DirectGopRendering的系统上.n\n注意:无论DirectGopRendering是否设置,都会生效,甚至在DirectGopRendering为false时,也可能为GOP操作提供一些加速.\n\nNote 2: On most systems from circa 2013 onwards, write-combining caching is already applied by the firmware to GOP memory, in which case GopBurstMode is unnecessary. On such systems enabling the quirk should normally be harmless, producing an OCC: debug log entry indicating that burst mode is already started.\n\nNote 3: Some caution should be taken when enabling this quirk, as it has been observed to cause hangs on a few systems. Since additional guards have been added to try to prevent this, please log a bugtracker issue if such a system is found.";
 
 /* ProtocolOverrides */
 "TT_AppleAudio" = "重新安装具有内置版本的Apple音频协议.\nApple音频协议允许macOS引导程序和OpenCore播放声音和信号以进行屏幕阅读或声音错误报告.\n支持的协议是蜂鸣声生成和VoiceOver. 在macOS High Sierra(10.13)之前不受支持.相反,较早的macOS版本使用AppleHDA协议,该协议目前尚未实现.\n\n要在实现某些协议的Mac系统上的OpenCore用户界面中获得音频播放,应启用此设置.\n\n注意：需要在UEFI-->Audio部分中配置后端音频驱动程序,这些协议才能使用.";
@@ -1750,7 +1750,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_OSInfo" = "强制使用内置版本重新安装OS Info协议.该协议通常用于从macOS引导程序,固件或其他应用程序接收通知\n暂时没什么用,选择NO.";
 
-"TT_PciIo" = "用64位MMIO兼容的函数替换CpuIo和PciRootBridgeIo中的函数，以修复使用4G解码时无效参数的问题. 这会影响UEFI驱动程序，如AudioDxe，它访问64位MMIO设备。早于APTIO V的平台(Haswell及更老版本)通常会受到影响.";
+"TT_PciIo" = "用64位MMIO兼容的函数替换CpuIo和PciRootBridgeIo中的函数,以修复使用4G解码时无效参数的问题. 这会影响UEFI驱动程序,如AudioDxe,它访问64位MMIO设备.早于APTIO V的平台(Haswell及更老版本)通常会受到影响.";
 
 "TT_UnicodeCollation" = "一般选 NO.\n一些较旧的固件破坏了 Unicode 排序规则, 设置为 YES 可以修复这些系统上 UEFI Shell 的兼容性 (通常为用于 IvyBridge 或更旧的设备)";
 
