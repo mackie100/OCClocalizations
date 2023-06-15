@@ -82,6 +82,12 @@
 			<key>name</key>
 			<string>TpmInfo</string>
 		</dict>
+		<dict>
+			<key>description</key>
+			<string>Render the console font pages which the Builtin renderer provides.</string>
+			<key>name</key>
+			<string>FontTester</string>
+		</dict>
 	</array>
 </dict>
 </plist>

@@ -43,7 +43,7 @@
 				<string>64</string>
 			</array>
 			<key>description</key>
-			<string>The tool for taking screenshots on the OpenCanopy boot interface, the shortcut key is F10</string>
+			<string>The tool for taking screenshots on the OpenCanopy boot interface, the shortcut key is F10. Accepts optional driver argument --enable-mouse-click to additionally take screenshot on mouse click. (It is recommended to enable this option only if a keypress would prevent a specific screenshot, and disable it again after use.)</string>
 			<key>name</key>
 			<string>CrScreenshotDxe</string>
 		</dict>
