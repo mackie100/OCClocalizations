@@ -1185,6 +1185,8 @@
 /* Uqn-Ww-mAH */
 "TT_LauncherPath" = "Type: plist string\nFailsafe: Default\nDescription: Launch path for the LauncherOption property.\n\nDefault points to OpenCore.efi. User specified paths, e.g. \\EFI\\SomeLauncher.efi, can be used to provide custom loaders, which are supposed to load OpenCore.efi themselves.";
 
+"TT_InstanceIdentifier" = "Type: plist string\nFailsafe: Empty\nDescription: An optional identifier for the current instance of OpenCore.\n\nThis should typically be a short alphanumeric string. The current use of this value is to optionally target .contentVisibility files to specific instances of OpenCore, as explained in the Boot Algorithm section.";
+
 /* DEBUG */
 /* PwU-cB-LIO */
 "TT_DisplayDelay" = "Type: plist integer\nFailsafe: 0\nDescription: Delay in microseconds executed after every printed line visible onscreen (i.e. console).";

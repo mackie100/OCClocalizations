@@ -65,6 +65,9 @@
 /* Class = "NSButtonCell"; title = "Disable WatchDog"; ObjectID = "9LG-wP-7Np"; */
 "9LG-wP-7Np.title" = "Disable WatchDog";
 
+/* Class = "NSTextFieldCell"; title = "InstanceIdentifier"; ObjectID = "9if-p7-D0j"; */
+"9if-p7-D0j.title" = "InstanceIdentifier";
+
 /* Class = "NSTextFieldCell"; title = "ApECID"; ObjectID = "A2A-xj-Bmf"; */
 "A2A-xj-Bmf.title" = "ApECID";
 

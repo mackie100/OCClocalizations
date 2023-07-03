@@ -1185,6 +1185,8 @@
 /* Uqn-Ww-mAH */
 "TT_LauncherPath" = "LauncherOption的启动路径.\n\n对于启动OpenCore.efi的其他任何路径(例如,\\EFI\\Launcher.efi, 可用于提供定制启动器, 应该自己加载OpenCore.efi.";
 
+"TT_InstanceIdentifier" = "Type: plist string\nFailsafe: Empty\nDescription: An optional identifier for the current instance of OpenCore.\n\nThis should typically be a short alphanumeric string. The current use of this value is to optionally target .contentVisibility files to specific instances of OpenCore, as explained in the Boot Algorithm section.";
+
 /* DEBUG */
 /* PwU-cB-LIO */
 "TT_DisplayDelay" = "在屏幕上可见的每条显示行(即控制台)之后执行的延迟(以微秒为单位).默认忽略!";
