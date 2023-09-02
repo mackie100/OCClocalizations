@@ -1779,6 +1779,8 @@ cat /proc/asound/card{n}/codec#{m}\n\nUsing AudioOutMask, it is possible to play
 
 "TT_ResizeUsePciRbIo" = "Type: plist boolean\nFailsafe: false\nDescription: Use PciRootBridgeIo for ResizeGpuBars and ResizeAppleGpuBars\n\nThe quirk makes ResizeGpuBars and ResizeAppleGpuBars use PciRootBridgeIo instead of PciIo. This is needed on systems with a buggy PciIo implementation where trying to configure Resizable BAR results in Capability I/O Error. Typically this is required on older systems which have been modified with ReBarUEFI.";
 
+"TT_ShimRetainProtocol" = "Type: plist boolean\nFailsafe: false\nDescription: Request Linux shim to keep protocol installed for subsequent image loads.\n\nThis option is only required if chaining OpenCore from shim. It must be set in order to allow OpenCore to launch items which are verified by certificates present in shim, but not in the system Secure Boot database.";
+
 "TT_UnblockFsConnect" = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware block partition handles by opening them in By Driver mode, resulting in an inability to install File System protocols.\n\nNote: This quirk is useful in cases where unsuccessful drive detection results in an absence of boot entries.";
 
 "TT_ForgeUefiSupport" = "Type: plist boolean\nFailsafe: false\nDescription: Implement partial UEFI 2.x support on EFI 1.x firmware.\n\nThis setting allows running some software written for UEFI 2.x firmware, such as NVIDIA GOP Option ROMs on hardware with older EFI 1.x firmware (MacPro5,1).";
