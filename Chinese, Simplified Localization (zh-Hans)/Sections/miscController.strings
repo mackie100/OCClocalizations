@@ -18,7 +18,7 @@
 "2dj-hB-QBF.title" = "取消全选";
 
 /* Class = "NSButtonCell"; title = "UseMmio"; ObjectID = "2x2-I1-GDC"; */
-"2x2-I1-GDC.title" = "UseMmio";
+"2x2-I1-GDC.title" = "使用Mmio";
 
 /* Class = "NSTableColumn"; headerCell.title = "Flavour"; ObjectID = "390-oq-BkL"; */
 "390-oq-BkL.headerCell.title" = "风格\nFlavour";
@@ -66,7 +66,7 @@
 "9LG-wP-7Np.title" = "Disable WatchDog";
 
 /* Class = "NSTextFieldCell"; title = "InstanceIdentifier"; ObjectID = "9if-p7-D0j"; */
-"9if-p7-D0j.title" = "InstanceIdentifier";
+"9if-p7-D0j.title" = "实例标识";
 
 /* Class = "NSTextFieldCell"; title = "ApECID"; ObjectID = "A2A-xj-Bmf"; */
 "A2A-xj-Bmf.title" = "ApECID";

@@ -1779,7 +1779,7 @@ cat /proc/asound/card{n}/codec#{m}\n\n使用AudioOutMask, 它可以播放声音�
 
 "TT_ResizeUsePciRbIo" = "使用PciRootBridgeIo进行resizeegpubars和ResizeAppleGpuBars\n\n这个怪癖使得resizeegpubars和ResizeAppleGpuBars使用PciRootBridgeIo而不是PciIo. 这在有bug的PciIo实现的系统上是需要的,其中试图配置可调整大小的BAR会导致能力I/O错误. 通常,在使用ReBarUEFI修改过的旧系统上需要这样做.";
 
-"TT_ShimRetainProtocol" = "Type: plist boolean\nFailsafe: false\nDescription: Request Linux shim to keep protocol installed for subsequent image loads.\n\nThis option is only required if chaining OpenCore from shim. It must be set in order to allow OpenCore to launch items which are verified by certificates present in shim, but not in the system Secure Boot database.";
+"TT_ShimRetainProtocol" = "请求Linux shim为后续映像加载保持协议安装.\n\n此选项仅在从shim链接OpenCore时才需要. 必须设置它，以便允许OpenCore启动由shim中存在的证书验证的项目，而不是在系统安全启动数据库中.";
 
 "TT_UnblockFsConnect" = "惠普笔记本在 OpenCore 引导界面没有引导项时设置为 YES";
 
