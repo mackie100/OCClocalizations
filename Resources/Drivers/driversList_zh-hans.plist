@@ -227,6 +227,17 @@ OpenCanopy需要位于Resources目录中的图形资源才能运行。可以在O
 				<string>64</string>
 			</array>
 			<key>description</key>
+			<string>OpenCore plugin implementing OC_BOOT_ENTRY_PROTOCOL to allow detection and booting of legacy operating systems from OpenCore on Macs, OpenDuet and systems with a CSM.</string>
+			<key>name</key>
+			<string>OpenLegacyBoot</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
 			<string>使用OpenCore来引导Linux发行版，而无需使用Grub引导</string>
 			<key>name</key>
 			<string>OpenLinuxBoot</string>
