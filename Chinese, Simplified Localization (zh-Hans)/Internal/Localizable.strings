@@ -987,6 +987,8 @@
 /* xH6-La-kRg */
 "TT_EnableWriteUnprotector" = "允许对UEFI运行时服务代码的写访问\n保证nvram能正常写入而不受到UEFI内的一些服务的影响,无论什么主板都要选择YES.";
 
+"TT_FixupAppleEfiImages" = "Type: plist boolean\nFailsafe: false\nDescription: Fix errors in early Mac OS X boot.efi images.\n\nModern secure PE loaders will refuse to load boot.efi images from Mac OS X 10.4 and 10.5 due to these files containing WˆX errors and illegal overlapping sections.\n\nThis quirk detects these issues and pre-processes such images in memory, so that a modern loader can accept them.\n\nPre-processing in memory is incompatible with secure boot, as the image loaded is not the image on disk, so you cannot sign files which are loaded in this way based on their original disk image contents. Certain firmware will offer to register the hash of new, unknown images - this would still work. On the other hand, it is not particularly realistic to want to start such early, insecure images with secure boot anyway.\n\nNote 1: The quirk is only applied to Apple-specific ‘fat’ (both 32-bit and 64-bit versions in one image) .efi files, and is never applied during the Apple secure boot path for newer macOS.\n\nNote 2: The quirk is only needed for loading Mac OS X 10.4 and 10.5, and even then only if the firmware itself includes a modern, more secure PE COFF image loader. This includes current builds of OpenDuet.";
+
 /* woE-nK-MFN */
 "TT_ForceBooterSignature" = "为OpenCore启动器设置macOS引导签名.\n\n引导器签名, 本质上是加载映像的SHA-1哈希值, 从休眠状态唤醒时,由Mac EFI使用它来验证引导加载程序的真实性. 此选项强制macOS使用OpenCore启动器SHA-1哈希作为启动器签名,以使OpenCore休眠在Mac EFI固件上唤醒.\n\n注意：OpenCore启动器路径由LauncherPath属性确定.";
 
