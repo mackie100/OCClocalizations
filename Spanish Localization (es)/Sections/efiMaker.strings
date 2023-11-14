@@ -1,6 +1,6 @@
 
 /* Class = "NSTextFieldCell"; title = "System"; ObjectID = "0hy-qF-InW"; */
-"0hy-qF-InW.title" = "System";
+"0hy-qF-InW.title" = "Sistema";
 
 /* Class = "NSButtonCell"; title = "Broadwell"; ObjectID = "1X8-Cg-iEw"; */
 "1X8-Cg-iEw.title" = "Broadwell";
@@ -21,22 +21,22 @@
 "4xh-eS-Y7x.title" = "Haswell / Broadwell";
 
 /* Class = "NSTextFieldCell"; title = "Product Name Label"; ObjectID = "5nJ-S4-CEv"; */
-"5nJ-S4-CEv.title" = "Product Name Label";
+"5nJ-S4-CEv.title" = "Etiqueta de nombre del producto";
 
 /* Class = "NSBox"; title = "Options"; ObjectID = "5th-MW-cis"; */
-"5th-MW-cis.title" = "Options";
+"5th-MW-cis.title" = "Opciones";
 
 /* Class = "NSButtonCell"; title = "X64 architecture"; ObjectID = "5wH-77-4hg"; */
-"5wH-77-4hg.title" = "X64 architecture";
+"5wH-77-4hg.title" = "Arquitectura X64";
 
 /* Class = "NSButtonCell"; title = "Ivy Bridge"; ObjectID = "6mY-hC-ST2"; */
 "6mY-hC-ST2.title" = "Ivy Bridge";
 
 /* Class = "NSTabViewItem"; label = "CPU Family"; ObjectID = "7SG-xK-kPF"; */
-"7SG-xK-kPF.label" = "CPU Family";
+"7SG-xK-kPF.label" = "Familia de CPU";
 
 /* Class = "NSTextFieldCell"; title = "Product:"; ObjectID = "9MM-ME-k3B"; */
-"9MM-ME-k3B.title" = "Product:";
+"9MM-ME-k3B.title" = "Producto:";
 
 /* Class = "NSButtonCell"; title = "Sandy Bridge"; ObjectID = "9sZ-2G-qSx"; */
 "9sZ-2G-qSx.title" = "Sandy Bridge";
@@ -60,22 +60,22 @@
 "Hls-YJ-1Ew.title" = "Rocket Lake";
 
 /* Class = "NSTextFieldCell"; title = "Product Name:"; ObjectID = "IHo-gl-8zt"; */
-"IHo-gl-8zt.title" = "Product Name:";
+"IHo-gl-8zt.title" = "Nombre del producto:";
 
 /* Class = "NSButtonCell"; title = "IA32 architecture"; ObjectID = "Ktg-i4-iIw"; */
-"Ktg-i4-iIw.title" = "IA32 architecture";
+"Ktg-i4-iIw.title" = "Arquitectura IA32";
 
 /* Class = "NSButtonCell"; title = "SkyLake"; ObjectID = "MNk-7j-BLa"; */
 "MNk-7j-BLa.title" = "SkyLake";
 
 /* Class = "NSButtonCell"; title = "UEFI settings"; ObjectID = "MPx-Mf-cFN"; */
-"MPx-Mf-cFN.title" = "UEFI settings";
+"MPx-Mf-cFN.title" = "Configuración UEFI";
 
 /* Class = "NSButtonCell"; title = "Legacy settings"; ObjectID = "OnK-ES-uJC"; */
-"OnK-ES-uJC.title" = "Legacy settings";
+"OnK-ES-uJC.title" = "Configuración Legacy";
 
 /* Class = "NSTextFieldCell"; title = "Family:"; ObjectID = "PLG-2z-yDJ"; */
-"PLG-2z-yDJ.title" = "Family:";
+"PLG-2z-yDJ.title" = "Familia:";
 
 /* Class = "NSWindow"; title = "EFI Maker"; ObjectID = "QvC-M9-y7g"; */
 "QvC-M9-y7g.title" = "EFI Maker";
@@ -93,7 +93,7 @@
 "UHA-g6-Fql.title" = "Desktop";
 
 /* Class = "NSButtonCell"; title = "Show all SMBIOS data"; ObjectID = "VDU-ek-zH9"; */
-"VDU-ek-zH9.title" = "Show all SMBIOS data";
+"VDU-ek-zH9.title" = "Mostrar todos los datos del SMBIOS";
 
 /* Class = "NSButtonCell"; title = "Ivy Bridge"; ObjectID = "WbU-MS-pMN"; */
 "WbU-MS-pMN.title" = "Ivy Bridge";
@@ -108,7 +108,7 @@
 "bNf-bi-wAW.title" = "Bulldozer / Jaguar";
 
 /* Class = "NSButtonCell"; title = "Make"; ObjectID = "bUX-qm-Krp"; */
-"bUX-qm-Krp.title" = "Make";
+"bUX-qm-Krp.title" = "Crear";
 
 /* Class = "NSButtonCell"; title = "Haswell-E"; ObjectID = "bsg-dT-djX"; */
 "bsg-dT-djX.title" = "Haswell-E";
@@ -117,13 +117,13 @@
 "g35-5B-Oaf.title" = "Kaby Lake";
 
 /* Class = "NSButtonCell"; title = "DEBUG Distribution"; ObjectID = "hK4-cc-b6e"; */
-"hK4-cc-b6e.title" = "DEBUG Distribution";
+"hK4-cc-b6e.title" = "Distribución DEBUG";
 
 /* Class = "NSTextFieldCell"; title = "High-End Desktop"; ObjectID = "iI2-1V-zMu"; */
 "iI2-1V-zMu.title" = "High-End Desktop";
 
 /* Class = "NSButtonCell"; title = "Download related files, if needed (SSDT, Kext, Driver)"; ObjectID = "io4-qw-79S"; */
-"io4-qw-79S.title" = "Download related files, if needed (SSDT, Kext, Driver)";
+"io4-qw-79S.title" = "Descargar archivos relacionados, si es necesario (SSDT, Kext, Driver)";
 
 /* Class = "NSButtonCell"; title = "Ryzen / Threadripper"; ObjectID = "kFi-xg-eT8"; */
 "kFi-xg-eT8.title" = "Ryzen / Threadripper";
@@ -138,7 +138,7 @@
 "pxK-dJ-29f.title" = "Coffee Lake Plus / Comet Lake";
 
 /* Class = "NSButtonCell"; title = "Download OpenCore Mod"; ObjectID = "r9f-CH-3F8"; */
-"r9f-CH-3F8.title" = "Download OpenCore Mod";
+"r9f-CH-3F8.title" = "Descargar OpenCore Mod";
 
 /* Class = "NSButtonCell"; title = "Coffee Lake / Whiskey Lake"; ObjectID = "rLh-HE-cMd"; */
 "rLh-HE-cMd.title" = "Coffee Lake / Whiskey Lake";
@@ -150,7 +150,7 @@
 "rSE-jg-gto.label" = "SMBIOS";
 
 /* Class = "NSButtonCell"; title = "Show compatible SMBIOS data"; ObjectID = "rvT-wj-fXh"; */
-"rvT-wj-fXh.title" = "Show compatible SMBIOS data";
+"rvT-wj-fXh.title" = "Mostrar los datos SMBIOS compatibles";
 
 /* Class = "NSButtonCell"; title = "Alder Lake"; ObjectID = "sHk-q8-uSc"; */
 "sHk-q8-uSc.title" = "Alder Lake";

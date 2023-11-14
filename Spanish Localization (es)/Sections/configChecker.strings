@@ -3,8 +3,7 @@
 "5Yb-KF-2Ys.title" = "Versión de Opencore";
 
 /* Class = "NSWindow"; title = "Config Checker"; ObjectID = "F0z-JX-Cv5"; */
-"F0z-JX-Cv5.title" = "Comprobador de configuración
-";
+"F0z-JX-Cv5.title" = "Verificar configuración";
 
 /* Class = "NSTextFieldCell"; title = "CPU Family"; ObjectID = "K8h-i1-pzV"; */
 "K8h-i1-pzV.title" = "Familia de CPU";
@@ -19,4 +18,4 @@
 "y4M-4p-teE.title" = "Importar";
 
 /* Class = "NSButtonCell"; title = "Check"; ObjectID = "zPH-fV-BKT"; */
-"zPH-fV-BKT.title" = "Comprobar";
+"zPH-fV-BKT.title" = "Verificar";

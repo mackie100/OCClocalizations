@@ -51,7 +51,7 @@
 "Bng-Xc-8Qm.title" = "KeyInitialDelay";
 
 /* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "CLg-lY-N26"; */
-"CLg-lY-N26.title" = "Scan/Browse";
+"CLg-lY-N26.title" = "Escanear/Browse";
 
 /* Class = "NSTextFieldCell"; title = "PointerDwellDoubleClickTimeout"; ObjectID = "DmX-u0-OVQ"; */
 "DmX-u0-OVQ.title" = "PointerDwellDoubleClickTimeout";
