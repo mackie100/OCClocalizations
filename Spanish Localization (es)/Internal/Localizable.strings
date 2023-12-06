@@ -463,22 +463,22 @@
 "Help" = "Ayuda";
 
 /* deviceProperties_table_properties_menu */
-"Select '%@' device before adding '%@' key" = "Select '%1$@' device before adding '%2$@' key";
+"Select '%@' device before adding '%@' key" = "Seleccione el dispositivo '%1$@' antes de añadir la key '%2$@'";
 
 /* deviceProperties_table_properties_menu */
-"Select a '%@' device before adding a preset" = "Select a '%1$@' device before adding a preset";
+"Select a '%@' device before adding a preset" = "Seleccione un dispositivo '%1$@' antes de añadir una preajuste";
 
 /* deviceProperties_table_properties_menu */
-"Select a Platform ID before adding a preset" = "Select a Platform ID before adding a preset";
+"Select a Platform ID before adding a preset" = "Seleccione un ID de plataforma antes de añadir un preajuste";
 
 /* deviceProperties_table_properties_menu */
-"Select a valid device path" = "Select a valid device path";
+"Select a valid device path" = "Seleccione una ruta de dispositivo válida";
 
 /* deviceProperties_table_properties_menu */
-"Product Name" = "Product Name";
+"Product Name" = "Nombre del producto";
 
 /* deviceProperties_table_properties_menu */
-"CPU Codename" = "CPU Codename";
+"CPU Codename" = "Codename del CPU";
 
 /* deviceProperties_table_properties_menu */
 "Platform ID" = "Platform ID";
@@ -490,61 +490,61 @@
 "Device Name" = "Device Name";
 
 /* deviceProperties_table_properties_menu */
-"Available Device IDs" = "Available Device IDs";
+"Available Device IDs" = "IDs de dispositivo disponible";
 
 /* deviceProperties_table_properties_menu */
-"Available Models" = "Available Models";
+"Available Models" = "Modelos disponibles";
 
 /* nvram_add_properties_table */
-"Select a valid UUID" = "Select a valid UUID";
+"Select a valid UUID" = "Seleccione un UUID válido";
 
 /* compatibilityWarningScreen */
-"You seem to have an old version of OpenCore bootloader." = "You seem to have an old version of OpenCore bootloader.";
+"You seem to have an old version of OpenCore bootloader." = "Parece que tiene una versión antigua del gestor de arranque OpenCore.";
 
 /* compatibilityWarningScreen */
-"The bootloader looks like it is not installed or your NVRAM isn't native." = "The bootloader looks like it is not installed or your NVRAM isn't native.";
+"The bootloader looks like it is not installed or your NVRAM isn't native." = "El bootloader parece que no está instalado o tu NVRAM no es nativa.";
 
 /* compatibilityWarningScreen */
-"2nd_message" = "This app creates a configuration file for %1$@ and higher versions.";
+"2nd_message" = "Esta aplicación crea un archivo de configuración para %1$@ y versiones superiores.";
 
 /* compatibilityWarningScreen */
-"Use at your own risk" = "Use at your own risk";
+"Use at your own risk" = "¡¡ Utilícelo bajo su responsabilidad !!";
 
 /* compatibilityWarningScreen */
-"(select 'Backup File Before Saving' in Preferences Pane)" = "(select 'Backup File Before Saving' in Preferences Pane)";
+"(select 'Backup File Before Saving' in Preferences Pane)" = "(seleccione 'Copia de seguridad del archivo antes de guardar' en el panel de preferencias)";
 
 /* advancedUser */
-"The key “%@” already exists in containing item." = "The key “%@” already exists in containing item.";
+"The key “%@” already exists in containing item." = "La clave  “%@”  ya existe en el elemento contenedor.";
 
 /* advancedUser */
-"(%lu items)" = "(%lu items)";
+"(%lu items)" = "(%lu elementos)";
 
 /* advancedUser */
-"Item %lu" = "Item %lu";
+"Item %lu" = "elemento %lu";
 
 /* advancedUser */
-"New item" = "New item";
+"New item" = "Nuevo elementos";
 
 /* outlineMode */
-"Cut" = "Cut";
+"Cut" = "Cortar";
 
 /* outlineMode */
-"Copy" = "Copy";
+"Copy" = "Copiar";
 
 /* outlineMode */
-"Paste" = "Paste";
+"Paste" = "Pegar";
 
 /* outlineMode */
-"Delete" = "Delete";
+"Delete" = "Eliminar";
 
 /* outlineMode */
-"Value Type" = "Value Type";
+"Value Type" = "Tipo de valor";
 
 /* outlineMode */
 "Array" = "Array";
 
 /* outlineMode */
-"Dictionary" = "Dictionary";
+"Dictionary" = "Diccionario";
 
 /* outlineMode */
 "Boolean" = "Boolean";
@@ -553,97 +553,97 @@
 "Data" = "Data";
 
 /* outlineMode */
-"Date" = "Date";
+"Date" = "Fecha";
 
 /* outlineMode */
-"Number" = "Number";
+"Number" = "Número";
 
 /* outlineMode */
 "String" = "String";
 
 /* outlineMode */
-"Add Item" = "Add Item";
+"Add Item" = "Añadir artículo";
 
 /* outlineMode */
-"Replace" = "Replace";
+"Replace" = "Sustituir";
 
 /* outlineMode */
-"Key" = "Key";
+"Key" = "Clave";
 
 /* outlineMode */
-"Type" = "Type";
+"Type" = "Tipo";
 
 /* outlineMode */
-"Value" = "Value";
+"Value" = "Valor";
 
 /* miscController */
-"Please make sure to select a file from a boot efi path." = "Please make sure to select a file from a boot efi path.";
+"Please make sure to select a file from a boot efi path." = "Por favor, asegúrese de seleccionar un archivo de una ruta efi de arranque.";
 
 /* miscController */
-"No efi boot path found." = "No efi boot path found.";
+"No efi boot path found." = "No se ha encontrado la ruta de arranque efi.";
 
 /* quicktoolsController */
-"%@ on Disk Identifier: %@" = "%1$@ on Disk Identifier: %2$@";
+"%@ on Disk Identifier: %@" = "%1$@ en el Identificador de Disco %2$@";
 
 /* quicktoolsController */
-"Status: [%@]" = "Status: [%@]";
+"Status: [%@]" = "Estatus: [%@]";
 
 /* quicktoolsController */
-"OpenCore Boot Partition" = "OpenCore Boot Partition";
+"OpenCore Boot Partition" = "Partición de arranque OpenCore";
 
 /* preferencesPanel */
-"Official" = "Official";
+"Official" = "Oficial";
 
 /* preferencesPanel */
 "MOD" = "MOD";
 
 /* preferencesPanel */
-"App Settings" = "App Settings";
+"App Settings" = "Configuración de la aplicación";
 
 /* preferencesPanel */
-"OpenCore Settings" = "OpenCore Settings";
+"OpenCore Settings" = "Configuración de OpenCore";
 
 /* titleBar */
-"Release Configuration" = "%1$@ Release Configuration";
+"Release Configuration" = "%1$@ Configuración de liberación";
 
 /* titleBar */
-"Development Configuration" = "%1$@ Development Configuration";
+"Development Configuration" = "%1$@ Configuración de desarrollo";
 
 /* titleBar */
-"for Official OpenCore" = "for Official OpenCore";
+"for Official OpenCore" = "para la versión oficial de OpenCore";
 
 /* titleBar */
-"for MOD OpenCore" = "for MOD OpenCore";
+"for MOD OpenCore" = "para MOD OpenCore";
 
 /* reading_savingOperation */
-"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?";
+"This configuration contains one or more properties that Official OpenCore doesn't usually use. Do you want to open this configuration in MOD mode?" = "Esta configuración contiene una o más propiedades que Official OpenCore no suele utilizar. ¿Desea abrir esta configuración en modo MOD?";
 
 /* reading_savingOperation */
-"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?";
+"This configuration contains standard properties but you are working in MOD mode. Do you want switch to Official mode?" = "Esta configuración contiene propiedades estándar pero está trabajando en modo MOD. ¿Desea cambiar al modo Oficial?";
 
 /* reading_savingOperation */
-"For changes to take effect, this app will be relaunched" = "For changes to take effect, this app will be relaunched";
+"For changes to take effect, this app will be relaunched" = "Para que los cambios surtan efecto, esta aplicación deberá reiniciarse.";
 
 /* outlinemodeController */
-"If you continue, all unknown keys will be lost" = "If you continue, all unknown keys will be lost";
+"If you continue, all unknown keys will be lost" = "Si continúa, todas las claves desconocidas se perderán";
 
 /* textmodeController */
-"Syncronize" = "Syncronize";
+"Syncronize" = "Sincronizar";
 
 /* textmodeController */
 "Syncronize Outline Mode" = "Syncronize Outline Mode";
 
 /* importPatchesController */
-"Import set of patches" = "Import set of patches";
+"Import set of patches" = "Importar el conjunto de parches";
 
 /* importPatchesController */
-"Import set of kexts" = "Import set of kexts";
+"Import set of kexts" = "Importar conjunto de kexts";
 
 /* importPatchesController */
-"Export selected patches" = "Export selected patches";
+"Export selected patches" = "Exportar parches seleccionados";
 
 /* importPatchesController */
-"Export selected kexts" = "Export selected kexts";
+"Export selected kexts" = "Exportar kexts seleccionados";
 
 /* importPatchesController */
 "Add set of patches from database" = "Add set of patches from database";

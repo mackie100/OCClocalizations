@@ -1,12 +1,9 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Mask"; ObjectID = "4j9-uJ-Gbu"; */
-"4j9-uJ-Gbu.headerCell.title" = "Mask";
+"4j9-uJ-Gbu.headerCell.title" = "Máscara";
 
 /* Class = "NSButtonCell"; title = "NormalizeHeaders"; ObjectID = "6NS-cZ-NZu"; */
-"6NS-cZ-NZu.title" = "NormalizeHeaders";
-
-/* Class = "NSButtonCell"; title = "Button"; ObjectID = "6oz-qm-8eM"; */
-"6oz-qm-8eM.title" = "Button";
+"6NS-cZ-NZu.title" = "Normalizar Headers";
 
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "7g0-XW-xjy"; */
 "7g0-XW-xjy.title" = "Loading Resources";

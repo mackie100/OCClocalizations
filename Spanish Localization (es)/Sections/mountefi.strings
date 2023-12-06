@@ -3,43 +3,43 @@
 "8qh-Kt-MSO.title" = "N/A";
 
 /* Class = "NSButtonCell"; title = "unMount partition"; ObjectID = "9m5-em-cDq"; */
-"9m5-em-cDq.title" = "unMount partition";
+"9m5-em-cDq.title" = "Desmontar partición";
 
 /* Class = "NSBox"; title = "Partition Scheme"; ObjectID = "Ags-Fc-odA"; */
-"Ags-Fc-odA.title" = "Partition Scheme";
+"Ags-Fc-odA.title" = "Esquema de partición";
 
 /* Class = "NSTextFieldCell"; title = "Device BSD Name"; ObjectID = "As9-X4-iHB"; */
-"As9-X4-iHB.title" = "Device BSD Name";
+"As9-X4-iHB.title" = "Nombre BSD del dispositivo";
 
 /* Class = "NSTextFieldCell"; title = "Disk Type"; ObjectID = "Edn-Sq-BEn"; */
-"Edn-Sq-BEn.title" = "Disk Type";
+"Edn-Sq-BEn.title" = "Tipo de disco";
 
 /* Class = "NSTextFieldCell"; title = "Volume Name"; ObjectID = "K7n-YQ-8gF"; */
-"K7n-YQ-8gF.title" = "Volume Name";
+"K7n-YQ-8gF.title" = "Nombre del volumen";
 
 /* Class = "NSTextFieldCell"; title = "Disk UUID"; ObjectID = "NnL-DI-BWs"; */
-"NnL-DI-BWs.title" = "Disk UUID";
+"NnL-DI-BWs.title" = "UUID del disco";
 
 /* Class = "NSWindow"; title = "Mount EFI"; ObjectID = "QvC-M9-y7g"; */
-"QvC-M9-y7g.title" = "Mount EFI";
+"QvC-M9-y7g.title" = "Montar EFI";
 
 /* Class = "NSSegmentedCell"; Yd4-Rh-oPW.ibShadowedLabels[0] = "Open Partition"; ObjectID = "Yd4-Rh-oPW"; */
-"Yd4-Rh-oPW.ibShadowedLabels[0]" = "Open Partition";
+"Yd4-Rh-oPW.ibShadowedLabels[0]" = "Abrir partición";
 
 /* Class = "NSSegmentedCell"; Yd4-Rh-oPW.ibShadowedLabels[1] = "Mount Partition"; ObjectID = "Yd4-Rh-oPW"; */
-"Yd4-Rh-oPW.ibShadowedLabels[1]" = "Mount Partition";
+"Yd4-Rh-oPW.ibShadowedLabels[1]" = "Montar partición";
 
 /* Class = "NSTextFieldCell"; title = "Volume UUID"; ObjectID = "ZmL-3I-KOU"; */
-"ZmL-3I-KOU.title" = "Volume UUID";
+"ZmL-3I-KOU.title" = "UUID del volumen";
 
 /* Class = "NSTextFieldCell"; title = "Mount Point"; ObjectID = "azg-58-iVC"; */
-"azg-58-iVC.title" = "Mount Point";
+"azg-58-iVC.title" = "Punto de Montaje";
 
 /* Class = "NSTextFieldCell"; title = "Size:"; ObjectID = "dXq-m8-waT"; */
-"dXq-m8-waT.title" = "Size:";
+"dXq-m8-waT.title" = "Tamaño:";
 
 /* Class = "NSButtonCell"; title = "Update Partitions"; ObjectID = "mri-4d-h4k"; */
-"mri-4d-h4k.title" = "Update Partitions";
+"mri-4d-h4k.title" = "Actualizar particiones";
 
 /* Class = "NSBox"; title = "Efi Partitions"; ObjectID = "tx8-c5-kb6"; */
-"tx8-c5-kb6.title" = "Efi Partitions";
+"tx8-c5-kb6.title" = "Particiones Efi";
