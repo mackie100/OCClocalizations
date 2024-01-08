@@ -176,6 +176,9 @@
 /* Class = "NSButtonCell"; title = "PollAppleHotKeys"; ObjectID = "TDv-Al-hb0"; */
 "TDv-Al-hb0.title" = "PollAppleHotKeys";
 
+/* Class = "NSButtonCell"; title = "Reduce password and menu animation in OpenCanopy"; ObjectID = "TTq-V0-Ex0"; */
+"TTq-V0-Ex0.title" = "Reduce password and menu animation in OpenCanopy";
+
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "ThF-JP-r8K"; */
 "ThF-JP-r8K.headerCell.title" = "Paramètres";
 
@@ -295,6 +298,9 @@
 
 /* Class = "NSButtonCell"; title = "EnablePassword"; ObjectID = "lLV-4d-gWP"; */
 "lLV-4d-gWP.title" = "EnablePassword";
+
+/* Class = "NSButtonCell"; title = "Reverse position of Shutdown and Restart buttons, affectsOpenCanopy and builtin picker."; ObjectID = "lfz-Yb-5UX"; */
+"lfz-Yb-5UX.title" = "Reverse position of Shutdown and Restart buttons, affectsOpenCanopy and builtin picker.";
 
 /* Class = "NSButtonCell"; title = "SkipCustomEntryCheck"; ObjectID = "mB0-8o-rL6"; */
 "mB0-8o-rL6.title" = "SkipCustomEntryCheck";
