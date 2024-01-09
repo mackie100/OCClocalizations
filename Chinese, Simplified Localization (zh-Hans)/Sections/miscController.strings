@@ -177,7 +177,7 @@
 "TDv-Al-hb0.title" = "PollAppleHotKeys\n启用模拟苹果热键";
 
 /* Class = "NSButtonCell"; title = "Reduce password and menu animation in OpenCanopy"; ObjectID = "TTq-V0-Ex0"; */
-"TTq-V0-Ex0.title" = "Reduce password and menu animation in OpenCanopy";
+"TTq-V0-Ex0.title" = "减少OpenCanopy中的密码和菜单动画";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arguments"; ObjectID = "ThF-JP-r8K"; */
 "ThF-JP-r8K.headerCell.title" = "参数\nArguments";
@@ -300,7 +300,7 @@
 "lLV-4d-gWP.title" = "EnablePassword\n启用密码保护";
 
 /* Class = "NSButtonCell"; title = "Reverse position of Shutdown and Restart buttons, affectsOpenCanopy and builtin picker."; ObjectID = "lfz-Yb-5UX"; */
-"lfz-Yb-5UX.title" = "Reverse position of Shutdown and Restart buttons, affectsOpenCanopy and builtin picker.";
+"lfz-Yb-5UX.title" = "反转关机和重新启动按钮的位置，影响OpenCanopy和内置启动菜单.";
 
 /* Class = "NSButtonCell"; title = "SkipCustomEntryCheck"; ObjectID = "mB0-8o-rL6"; */
 "mB0-8o-rL6.title" = "SkipCustomEntryCheck";
