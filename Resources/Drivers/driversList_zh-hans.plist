@@ -70,6 +70,17 @@
 		<dict>
 			<key>arch</key>
 			<array>
+				<string>32</string>
+				<string>64</string>
+			</array>
+			<key>description</key>
+			<string>OpenCore plugin implementing OC_BOOT_ENTRY_PROTOCOL to add an entry to the boot picker menu which reboots into UEFI firmware settings, when this is supported by the firmware.</string>
+			<key>name</key>
+			<string>FirmwareSettingsEntry</string>
+		</dict>
+		<dict>
+			<key>arch</key>
+			<array>
 				<string>64</string>
 			</array>
 			<key>description</key>
