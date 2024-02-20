@@ -32,9 +32,6 @@
 /* Class = "NSButtonCell"; title = "Backup driver"; ObjectID = "WeO-Rr-T3c"; */
 "WeO-Rr-T3c.title" = "Backup driver";
 
-/* Class = "NSButtonCell"; title = "IA32"; ObjectID = "cnd-wg-jaD"; */
-"cnd-wg-jaD.title" = "IA32";
-
 /* Class = "NSTableColumn"; headerCell.title = "Delete"; ObjectID = "eVi-uB-Nnf"; */
 "eVi-uB-Nnf.headerCell.title" = "Delete";
 
@@ -43,9 +40,6 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Installed"; ObjectID = "jcQ-eq-FLX"; */
 "jcQ-eq-FLX.headerCell.title" = "Installed";
-
-/* Class = "NSButtonCell"; title = "X64"; ObjectID = "nMZ-f9-RiH"; */
-"nMZ-f9-RiH.title" = "X64";
 
 /* Class = "NSTextFieldCell"; title = "Driver Installed"; ObjectID = "yDU-1k-6MS"; */
 "yDU-1k-6MS.title" = "Driver Installed";

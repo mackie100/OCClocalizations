@@ -20,6 +20,9 @@
 /* Class = "NSTextFieldCell"; title = "[*]drag and drop to table for manual installation"; ObjectID = "9WO-06-2fp"; */
 "9WO-06-2fp.title" = "[*]drag and drop to table for manual installation";
 
+/* Class = "NSButtonCell"; title = "Install"; ObjectID = "9xo-8M-eT4"; */
+"9xo-8M-eT4.title" = "Install";
+
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "Cu7-TT-odD"; */
 "Cu7-TT-odD.title" = "Select";
 
