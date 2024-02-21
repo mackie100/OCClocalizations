@@ -646,55 +646,55 @@
 "Export selected kexts" = "Exportar kexts seleccionados";
 
 /* importPatchesController */
-"Add set of patches from database" = "Add set of patches from database";
+"Add set of patches from database" = "Añadir un conjunto de parches desde la base de datos";
 
 /* importPatchesController */
-"Add set of kexts from database" = "Add set of kexts from database";
+"Add set of kexts from database" = "Añadir conjunto de kexts desde la base de datos";
 
 /* importPatchesController */
-"Battery Patches" = "Battery Patches";
+"Battery Patches" = "Parches de batería";
 
 /* importPatchesController */
-"Rename Patches" = "Rename Patches";
+"Rename Patches" = "Renombrar parches";
 
 /* configCheckerController */
-"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check.";
+"Check current configurations (if you managing multiple windows, select the window you want to check). Save your configuration before continuing to check." = "Compruebe las configuraciones actuales (si gestiona varias ventanas, seleccione la ventana que desea comprobar). Guarde la configuración antes de seguir comprobando.";
 
 /* configCheckerController */
-"Import configuration from local selecting \"Choose...\"" = "Import configuration from local selecting \"Choose...\"";
+"Import configuration from local selecting \"Seleccione...\"" = "Importar configuración desde selección local \"Seleccione...\"";
 
 /* configCheckerController */
-"Drag your configuration here" = "Drag your configuration here";
+"Drag your configuration here" = "Arrastre su configuración aquí";
 
 /* configCheckerController */
-"No Network Access" = "No Network Access";
+"No Network Access" = "Sin acceso a la red";
 
 /* configCheckerController */
-"Uploading..." = "Uploading...";
+"Uploading..." = "Cargando...";
 
 /* configCheckerController */
-"Downloading Resources..." = "Downloading Resources...";
+"Downloading Resources..." = "Descargando recursos...";
 
 /* configCheckerController */
-"Downloaded %.2f MB of %.2f MB (%@)" = "Downloaded %1$.2f MB of %2$.2f MB (%3$@)";
+"Downloaded %.2f MB of %.2f MB (%@)" = "Descargado %1$.2f MB of %2$.2f MB (%3$@)";
 
 /* configCheckerController */
-"Resources Extraction..." = "Resources Extraction...";
+"Resources Extraction..." = "Extracción de recursos...";
 
 /* configCheckerController */
-"Ready!" = "Ready!";
+"Ready!" = "¡Listo!";
 
 /* configCheckerController */
-"Error extracting resources files!" = "Error extracting resources files!";
+"Error extracting resources files!" = "¡Error al extraer archivos de los recursos!";
 
 /* configCheckerController */
-"Failed to download resources!" = "Failed to download resources!";
+"Failed to download resources!" = "¡No se pueden descargar los recursos!";
 
 /* configCheckerController */
-"Updating Resources..." = "Updating Resources...";
+"Updating Resources..." = "Actualizando recursos...";
 
 /* configCheckerController */
-"Checking For Resources..." = "Checking For Resources...";
+"Checking For Resources..." = "Verificando los recursos...";
 
 /* configCheckerController */
 "Desktop" = "Desktop";
@@ -706,121 +706,121 @@
 "Laptop" = "Laptop";
 
 /* opencoreDownloaderController */
-"Successfully backed up to %@" = "Successfully backed up to %@";
+"Successfully backed up to %@" = "Copia de seguridad realizada con éxito en %@";
 
 /* opencoreDownloaderController */
-"Error during creating EFI backup folder!" = "Error during creating EFI backup folder!";
+"Error during creating EFI backup folder!" = "¡Error al crear la carpeta de copia de seguridad del EFI!";
 
 /* ocValidator */
-"Connection Established" = "Connection Established";
+"Connection Established" = "Conexión establecida";
 
 /* ocValidator */
-"Failed to checking resources!" = "Failed to checking resources!";
+"Failed to checking resources!" = "¡No se pudieron verificar los recursos!";
 
 /* platformInfoController */
-"No Network Access. You may not get latest SMBIOS data." = "No Network Access. You may not get latest SMBIOS data.";
+"No Network Access. You may not get latest SMBIOS data." = "No hay acceso a la red. Es posible que no obtenga los datos SMBIOS más recientes.";
 
 /* installDriversController */
-"Download: %@ removed from queue because is not compatible with 32-bit version." = "Download: %@ removed from queue because is not compatible with 32-bit version.";
+"Download: %@ removed from queue because is not compatible with 32-bit version." = "Descargar: %@ eliminado de la cola porque no es compatible con la versión de 32 bits.";
 
 /* efiMaker */
-"Based on OpenCore Bootloader settings by Dortania's help guide" = "Based on OpenCore Bootloader settings by Dortania's help guide";
+"Based on OpenCore Bootloader settings by Dortania's help guide" = "Basado en la configuración de OpenCore Bootloader de la guía de ayuda de Dortania";
 
 /* efiMaker */
-"For more information about different settings, click on each CPU Family option" = "For more information about different settings, click on each CPU Family option";
+"For more information about different settings, click on each CPU Family option" = "Para obtener más información sobre los distintos ajustes, haga clic en cada opción de la familia de CPU";
 
 /* efiMaker */
-"Checking latest OpenCore Bootloader version..." = "Checking latest OpenCore Bootloader version...";
+"Checking latest OpenCore Bootloader version..." = "Comprobación de la última versión de OpenCore Bootloader...";
 
 /* efiMaker */
-"Downloading Opencore Bootloader" = "Downloading latest Opencore Bootloader";
+"Downloading Opencore Bootloader" = "Descargando la última versión de Opencore Bootloader";
 
 /* efiMaker */
-"Error while downloading Opencore Bootloader. Unable to continue." = "Error while downloading Opencore Bootloader. Unable to continue.";
+"Error while downloading Opencore Bootloader. Unable to continue." = "Error al descargar Opencore Bootloader. No se puede continuar.";
 
 /* efiMaker */
-"Downloading %@ configuration" = "Downloading %@ configuration";
+"Downloading %@ configuration" = "Descargando configuración de %@ ";
 
 /* efiMaker */
-"Populating SMBIOS data for %@ configuration" = "Populating SMBIOS data for %@ configuration";
+"Populating SMBIOS data for %@ configuration" = "Completar datos de configuración del SMBIOS para %@ ";
 
 /* efiMaker */
-"Error while downloading the configuration. Unable to continue." = "Error while downloading the configuration. Unable to continue.";
+"Error while downloading the configuration. Unable to continue." = "Error al descargar la configuración. No se puede continuar.";
 
 /* efiMaker */
-"Error while populating %@ key" = "Error while populating %@ key";
+"Error while populating %@ key" = "Error al completar la clave %@ ";
 
 /* efiMaker */
-"Some keys have not been updated. Please update them manually." = "Some keys have not been updated. Please update them manually.";
+"Some keys have not been updated. Please update them manually." = "Algunas claves no se han actualizado. Por favor, actualícelas manualmente.";
 
 /* efiMaker */
-"Done! Opening folder at %@" = "Done! Opening folder at %@";
+"Done! Opening folder at %@" = "Listo. Abriendo carpeta en %@";
 
 /* efiMaker */
-"Download SSDT" = "Download SSDT";
+"Download SSDT" = "Descargar SSDT";
 
 /* efiMaker */
-"successfully downloaded" = "successfully downloaded";
+"successfully downloaded" = "Descargado exitosamente";
 
 /* efiMaker */
-"Download SSDT Error" = "Download SSDT Error";
+"Download SSDT Error" = "Error al descargar SSDT";
 
 /* efiMaker */
-"Downloading latest" = "Downloading latest";
+"Downloading latest" = "Descargando los arcvhivos más recientes";
 
 /* efiMaker */
-"Download essential Kext" = "Download essential Kext";
+"Download essential Kext" = "Descargando Kext esencial";
 
 /* efiMaker */
-"Download Kext Error" = "Download Kext Error";
+"Download Kext Error" = "Error al descargar Kext";
 
 /* efiMaker */
-"Download Drivers" = "Download Drivers";
+"Download Drivers" = "Descargar controladores";
 
 /* efiMaker */
-"Download Drivers Error" = "Download Drivers Error";
+"Download Drivers Error" = "Error al descargar controladores";
 
 /* efiMaker */
-"Error during processing" = "Error during processing";
+"Error during processing" = "Error durante el procesamiento";
 
 /* efiMaker */
-"For more information about %@ settings, click here" = "For more information about %@ settings, click here";
+"For more information about %@ settings, click here" = "Para más información sobre la configuración de %@, pulse aquí";
 
 /* efiMaker */
-"For more information about %@ settings" = "For more information about %@ settings";
+"For more information about %@ settings" = "Para más información sobre la configuración de %@";
 
 /* efiMaker */
-"click here" = "click here";
+"click here" = "haga clic aquí";
 
 /* efiMaker */
 "Summary Information" = "Summary Information";
 
 /* efiMaker */
-"CPU Family selected" = "CPU Family selected";
+"CPU Family selected" = "Familia de CPU seleccionada";
 
 /* efiMaker */
-"SMBIOS selected" = "SMBIOS selected";
+"SMBIOS selected" = "SMBIOS seleccionado";
 
 /* efiMaker */
-"Configuration type selected" = "Configuration type selected";
+"Configuration type selected" = "Tipo de configuración seleccionada";
 
 /* efiMaker */
-"Architecture type selected" = "Architecture type selected";
+"Architecture type selected" = "Tipo de arquitectura seleccionada";
 
 /* efiMaker*/
-"Distribution mode selected" = "Distribution mode selected";
+"Distribution mode selected" = "Modo de distribución seleccionado";
 
 /* efiMaker */
-"Download OpenCore Mod" = "Download OpenCore Mod";
+"Download OpenCore Mod" = "Descargar OpenCore Mod";
 
 /* efiMaker */
-"Download related files" = "Download related files";
+"Download related files" = "Descargar archivos relacionados";
 
 /* opencoreDownloaderController */
 "Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
 
 /* opencoreDownloaderController */
-"GETTEXT is missing!, downloading..." = "GETTEXT is missing!, downloading...";
+"GETTEXT is missing!, downloading..." = "¡Falta GETTEXT! , descargando...";
 
 /* opencoreDownloaderController */
 "Building GETTEXT..." = "Building GETTEXT...";
