@@ -1,45 +1,45 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Description"; ObjectID = "21B-Cb-fUA"; */
-"21B-Cb-fUA.headerCell.title" = "Description";
+"21B-Cb-fUA.headerCell.title" = "Descripción";
 
 /* Class = "NSButton"; ibShadowedToolTip = "reload data"; ObjectID = "3Ug-4D-KT5"; */
-"3Ug-4D-KT5.ibShadowedToolTip" = "reload data";
+"3Ug-4D-KT5.ibShadowedToolTip" = "recargar datos";
 
 /* Class = "NSBox"; title = "Status"; ObjectID = "65j-hw-8RJ"; */
-"65j-hw-8RJ.title" = "Status";
+"65j-hw-8RJ.title" = "Estado";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "B3V-wJ-Liu"; */
 "B3V-wJ-Liu.title" = "Box";
 
 /* Class = "NSButtonCell"; title = "Download"; ObjectID = "GKG-QM-bIL"; */
-"GKG-QM-bIL.title" = "Download";
+"GKG-QM-bIL.title" = "Descargar";
 
 /* Class = "NSTextFieldCell"; title = "Tool Not Installed"; ObjectID = "LIE-Ta-kNn"; */
-"LIE-Ta-kNn.title" = "Tool Not Installed";
+"LIE-Ta-kNn.title" = "Herramienta no instalada";
 
 /* Class = "NSButton"; ibShadowedToolTip = "open partition"; ObjectID = "Pa0-us-lAL"; */
-"Pa0-us-lAL.ibShadowedToolTip" = "open partition";
+"Pa0-us-lAL.ibShadowedToolTip" = "abrir partición";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "PcY-xL-GAd"; */
 "PcY-xL-GAd.title" = "Box";
 
 /* Class = "NSWindow"; title = "Install Tools"; ObjectID = "QvC-M9-y7g"; */
-"QvC-M9-y7g.title" = "Install Tools";
+"QvC-M9-y7g.title" = "Instalar herramientas";
 
 /* Class = "NSTextFieldCell"; title = "target partition"; ObjectID = "Rpn-xn-uy7"; */
-"Rpn-xn-uy7.title" = "target partition";
+"Rpn-xn-uy7.title" = "partición de destino";
 
 /* Class = "NSButtonCell"; title = "Backup tool"; ObjectID = "WeO-Rr-T3c"; */
-"WeO-Rr-T3c.title" = "Backup tool";
+"WeO-Rr-T3c.title" = "Herramienta de copia de seguridad";
 
 /* Class = "NSTableColumn"; headerCell.title = "Delete"; ObjectID = "eVi-uB-Nnf"; */
-"eVi-uB-Nnf.headerCell.title" = "Delete";
+"eVi-uB-Nnf.headerCell.title" = "Borrar";
 
 /* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "g7H-EN-grT"; */
-"g7H-EN-grT.headerCell.title" = "Name";
+"g7H-EN-grT.headerCell.title" = "Nombre";
 
 /* Class = "NSTableColumn"; headerCell.title = "Installed"; ObjectID = "jcQ-eq-FLX"; */
-"jcQ-eq-FLX.headerCell.title" = "Installed";
+"jcQ-eq-FLX.headerCell.title" = "Instalado";
 
 /* Class = "NSTextFieldCell"; title = "Tool Installed"; ObjectID = "yDU-1k-6MS"; */
-"yDU-1k-6MS.title" = "Tool Installed";
+"yDU-1k-6MS.title" = "Herramienta instalada";

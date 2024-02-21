@@ -120,7 +120,7 @@
 "hK4-cc-b6e.title" = "Distribución DEBUG";
 
 /* Class = "NSTextFieldCell"; title = "High-End Desktop"; ObjectID = "iI2-1V-zMu"; */
-"iI2-1V-zMu.title" = "High-End Desktop";
+"iI2-1V-zMu.title" = "Computadora de escritorio High-End";
 
 /* Class = "NSButtonCell"; title = "Download related files, if needed (SSDT, Kext, Driver)"; ObjectID = "io4-qw-79S"; */
 "io4-qw-79S.title" = "Descargar archivos relacionados, si es necesario (SSDT, Kext, Driver)";
