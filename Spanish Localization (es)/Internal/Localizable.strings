@@ -823,40 +823,40 @@
 "GETTEXT is missing!, downloading..." = "¡Falta GETTEXT! , descargando...";
 
 /* opencoreDownloaderController */
-"Building GETTEXT..." = "Building GETTEXT...";
+"Building GETTEXT..." = "Compilando GETTEXT...";
 
 /* opencoreDownloaderController */
-"Error while compiling resources for localization" = "Error while compiling resources for localization";
+"Error while compiling resources for localization" = "Error al compilar recursos para la localización";
 
 /* opencoreDownloaderController */
-"Xcode Application needed." = "Xcode Application needed.";
+"Xcode Application needed." = "Aplicación Xcode necesaria.";
 
 /* opencoreDownloaderController */
-"Download XCode" = "Download XCode";
+"Download XCode" = "Descargar XCode";
 
 /* opencoreDownloaderController */
-"In order to use this section, please install Xcode application." = "In order to use this section, please install Xcode application.";
+"In order to use this section, please install Xcode application." = "Para utilizar esta sección, instale la aplicación Xcode.";
 
 /* opencoreDownloaderController */
-"Start Building...." = "Start Building....";
+"Start Building...." = "Comenzar a compilar....";
 
 /* opencoreDownloaderController */
-"This process may take a while on some machines, so please be patient." = "This process may take a while on some machines, so please be patient.";
+"This process may take a while on some machines, so please be patient." = "Este proceso puede tardar un poco en algunas máquinas, tenga paciencia por favor..";
 
 /* opencoreDownloaderController */
-"Error occurred during building OpenCorePkg" = "Error occurred during building OpenCorePkg";
+"Error occurred during building OpenCorePkg" = "Se produjo un error al compilar OpenCorePkg";
 
 /* opencoreDownloaderController */
-"Operation aborted by user" = "Operation aborted by user";
+"Operation aborted by user" = "Operación cancelada por el usuario";
 
 /* themesDownloader */
-"successfully downloaded and installed" = "successfully downloaded and installed";
+"successfully downloaded and installed" = "descargado e instalado correctamente";
 
 /* themesDownloader */
-"Download: Please select a theme name!" = "Download: Please select a theme name!";
+"Download: Please select a theme name!" = "Descargar: ¡Seleccione un nombre para el tema!";
 
 /* themesDownloader */
-"Update available for %@ theme" = "Update available for %@ theme";
+"Update available for %@ theme" = "Actualización disponible para el tema %@";
 
 /* themesDownloader */
 "didn't pass the requirements check. For more information you need to open Themes Validator." = "didn't pass the requirements check. For more information you need to open Themes Validator.";
