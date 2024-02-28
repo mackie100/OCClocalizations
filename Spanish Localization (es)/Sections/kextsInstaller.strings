@@ -78,7 +78,7 @@
 "haE-Pd-ckC.title" = "Install";
 
 /* Class = "NSTableColumn"; headerCell.title = "Version"; ObjectID = "mCG-e2-oRh"; */
-"mCG-e2-oRh.headerCell.title" = "Version";
+"mCG-e2-oRh.headerCell.title" = "Versión";
 
 /* Class = "NSButtonCell"; title = "SMCBatteryManager"; ObjectID = "mgy-Nm-mcA"; */
 "mgy-Nm-mcA.title" = "SMCBatteryManager";
@@ -87,16 +87,16 @@
 "neN-8J-DX9.title" = "ACPISensors";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Open Folder"; ObjectID = "o31-92-wcY"; */
-"o31-92-wcY.ibShadowedToolTip" = "Open Folder";
+"o31-92-wcY.ibShadowedToolTip" = "Abrir carpeta";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for High Sierra "; ObjectID = "ptP-W8-Rro"; */
-"ptP-W8-Rro.title" = "AirportItlwm for High Sierra ";
+"ptP-W8-Rro.title" = "AirportItlwm para High Sierra ";
 
 /* Class = "NSBox"; title = "Status"; ObjectID = "rk5-54-iPh"; */
-"rk5-54-iPh.title" = "Status";
+"rk5-54-iPh.title" = "Estado";
 
 /* Class = "NSTableColumn"; headerCell.title = "Description"; ObjectID = "s02-B6-VcE"; */
-"s02-B6-VcE.headerCell.title" = "Description";
+"s02-B6-VcE.headerCell.title" = "Descripción";
 
 /* Class = "NSButtonCell"; title = "SMCLightSensor"; ObjectID = "skX-jk-rAB"; */
 "skX-jk-rAB.title" = "SMCLightSensor";
@@ -108,13 +108,13 @@
 "vLi-FS-kKr.title" = "SMMSensors";
 
 /* Class = "NSWindow"; title = "FakeSMC Detected"; ObjectID = "wJK-pT-UcH"; */
-"wJK-pT-UcH.title" = "FakeSMC Detected";
+"wJK-pT-UcH.title" = "FakeSMC Detectado";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Delete"; ObjectID = "xLd-aS-xuu"; */
-"xLd-aS-xuu.ibShadowedToolTip" = "Delete";
+"xLd-aS-xuu.ibShadowedToolTip" = "Eliminar";
 
 /* Class = "NSButtonCell"; title = "CPUSensors"; ObjectID = "yyM-ue-Kqj"; */
 "yyM-ue-Kqj.title" = "CPUSensors";
 
 /* Class = "NSTextFieldCell"; title = "Location:"; ObjectID = "zsE-Kv-XLB"; */
-"zsE-Kv-XLB.title" = "Location:";
+"zsE-Kv-XLB.title" = "Ubicación:";
