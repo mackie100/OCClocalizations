@@ -1,21 +1,21 @@
 
 /* Class = "NSButtonCell"; title = "Validate"; ObjectID = "2zH-qH-pj9"; */
-"2zH-qH-pj9.title" = "Validate";
+"2zH-qH-pj9.title" = "Validar";
 
 /* Class = "NSButtonCell"; title = "Release Version"; ObjectID = "7JJ-LU-0Kh"; */
-"7JJ-LU-0Kh.title" = "Release Version";
+"7JJ-LU-0Kh.title" = "Versión Estable";
 
 /* Class = "NSButtonCell"; title = "Development Version"; ObjectID = "7cN-jw-hrJ"; */
-"7cN-jw-hrJ.title" = "Development Version";
+"7cN-jw-hrJ.title" = "Versión en desarrollo";
 
 /* Class = "NSWindow"; title = "OpenCore Validator"; ObjectID = "QvC-M9-y7g"; */
-"QvC-M9-y7g.title" = "OpenCore Validator";
+"QvC-M9-y7g.title" = "Validador de OpenCore";
 
 /* Class = "NSButtonCell"; title = "Clean"; ObjectID = "kFM-Vk-f2O"; */
-"kFM-Vk-f2O.title" = "Clean";
+"kFM-Vk-f2O.title" = "Limpiar";
 
 /* Class = "NSButtonCell"; title = "Import"; ObjectID = "xDg-wE-dNa"; */
-"xDg-wE-dNa.title" = "Import";
+"xDg-wE-dNa.title" = "Importar";
 
 /* Class = "NSButtonCell"; title = "Current Configuration"; ObjectID = "ydm-wl-I9F"; */
-"ydm-wl-I9F.title" = "Current Configuration";
+"ydm-wl-I9F.title" = "Configuración actual";
