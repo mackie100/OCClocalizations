@@ -859,67 +859,67 @@
 "Update available for %@ theme" = "Actualización disponible para el tema %@";
 
 /* themesDownloader */
-"didn't pass the requirements check. For more information you need to open Themes Validator." = "didn't pass the requirements check. For more information you need to open Themes Validator.";
+"didn't pass the requirements check. For more information you need to open Themes Validator." = "No ha pasado la comprobación de requisitos. Para más información, abra el Validador de Temas.";
 
 /* themesDownloader */
-"Resources folder" = "Resources folder";
+"Resources folder" = "Carpeta de Recursos";
 
 /* themesDownloader */
-"Do you want open Themes Validator?" = "Do you want to open it?";
+"Do you want open Themes Validator?" = "¿Quieres abrirlo?";
 
 /* themesDownloader */
-"Open Themes Validator" = "Open Themes Validator";
+"Open Themes Validator" = "Abrir Validador de Temas";
 
 /* themesDownloader */
-"Set as default" = "Set as default";
+"Set as default" = "Establecer como predeterminado";
 
 /* themesValidator */
-"doesn't contain" = "doesn't contain";
+"doesn't contain" = "esta vacía";
 
 /* themesValidator */
-"this file is required." = "this file is required.";
+"this file is required." = "este archivo es necesario.";
 
 /* themesValidator */
-"Label folder doesn't contain" = "Label folder doesn't contain";
+"Label folder doesn't contain" = "La carpeta Label esta vacía ";
 
 /* themesValidator */
-"Font folder doesn't contain" = "Font folder doesn't contain";
+"Font folder doesn't contain" = "La carpeta Font está vacía";
 
 /* themesValidator */
-"OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, labels and images) can be found in OcBinaryData repository, do you want to download it?";
+"OpenCanopy requires graphical resources located in Resources directory to run. There seem to be missing files. Sample resources (fonts, label and images) can be found in OcBinaryData repository, do you want to download it?" = "OpenCanopy requiere recursos gráficos ubicados en la carpeta Resources para ejecutarse. Parece que faltan archivos. Puede encontrar recursos de muestra (fuentes, etiquetas e imágenes) en el repositorio OcBinaryData, ¿desea descargarlos?";
 
 /* themesValidator */
-"Downloading OCBinaryData..." = "Downloading OCBinaryData...";
+"Downloading OCBinaryData..." = "Descargando OCBinaryData...";
 
 /* themesValidator */
-"All resources have been successfully copied." = "All resources have been successfully copied.";
+"All resources have been successfully copied." = "Todos los recursos se han copiado correctamente.";
 
 /* themesValidator */
-"Fonts have been successfully copied." = "Fonts have been successfully copied.";
+"Fonts have been successfully copied." = "Las fuentes se han copiado correctamente.";
 
 /* themesValidator */
-"Labels have been successfully copied." = "Labels have been successfully copied.";
+"Labels have been successfully copied." = "Las etiquetas se han copiado correctamente.";
 
 /* themesValidator */
-"Images have been successfully copied." = "Images have been successfully copied.";
+"Images have been successfully copied." = "Las imágenes se han copiado correctamente.";
 
 /* themesValidator */
-"Starting validation for OC Resources folder" = "Starting validation for OC Resources folder";
+"Starting validation for OC Resources folder" = "Iniciando la validación de la carpeta OC Resources";
 
 /* themesValidator */
-"Reason:" = "Reason:";
+"Reason:" = "Motivo:";
 
 /* themesValidator */
-"Label folder:" = "Label folder:";
+"Label folder:" = "Carpeta Label:";
 
 /* themesValidator */
-"Passed" = "Passed";
+"Passed" = "Aprobado";
 
 /* themesValidator */
-"Not Passed" = "Not Passed";
+"Not Passed" = "No Aprobado";
 
 /* themesValidator */
-"Font folder:" = "Font folder:";
+"Font folder:" = "Carpeta Font:";
 
 //---------------- TOOLTIPS---------------------------->>>>>>>>>>>>>>
 

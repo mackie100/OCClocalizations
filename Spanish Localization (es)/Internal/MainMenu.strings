@@ -309,7 +309,7 @@
 "WRG-CD-K1S.title" = "Subrayar";
 
 /* Class = "NSMenuItem"; title = "Paste and Match Style"; ObjectID = "WeT-3V-zwk"; */
-"WeT-3V-zwk.title" = "Paste and Match Style";
+"WeT-3V-zwk.title" = "Pegar y Combinar Formato";
 
 /* Class = "NSMenuItem"; title = "Find…"; ObjectID = "Xz5-n4-O0W"; */
 "Xz5-n4-O0W.title" = "Buscar…";
@@ -324,40 +324,40 @@
 "Ynk-f8-cLZ.title" = "Start Speaking";
 
 /* Class = "NSMenuItem"; title = "Align Left"; ObjectID = "ZM1-6Q-yy1"; */
-"ZM1-6Q-yy1.title" = "Align Left";
+"ZM1-6Q-yy1.title" = "Alinear a la izquierda";
 
 /* Class = "NSMenuItem"; title = "Paragraph"; ObjectID = "ZvO-Gk-QUH"; */
-"ZvO-Gk-QUH.title" = "Paragraph";
+"ZvO-Gk-QUH.title" = "Párrafo";
 
 /* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
-"aUF-d1-5bR.title" = "Window";
+"aUF-d1-5bR.title" = "Ventana";
 
 /* Class = "NSMenu"; title = "Font"; ObjectID = "aXa-aM-Jaq"; */
-"aXa-aM-Jaq.title" = "Font";
+"aXa-aM-Jaq.title" = "Fuente";
 
 /* Class = "NSMenuItem"; title = "Use Default"; ObjectID = "agt-UL-0e3"; */
-"agt-UL-0e3.title" = "Use Default";
+"agt-UL-0e3.title" = "Utilizar por defecto";
 
 /* Class = "NSTextFieldCell"; title = "*Select this option before loading"; ObjectID = "axu-Hn-1ar"; */
-"axu-Hn-1ar.title" = "*Select this option before loading";
+"axu-Hn-1ar.title" = "*Seleccionar esta opción antes de cargar";
 
 /* Class = "NSMenuItem"; title = "Open…"; ObjectID = "b8C-wR-FEF"; */
-"b8C-wR-FEF.title" = "Open…";
+"b8C-wR-FEF.title" = "Abrir…";
 
 /* Class = "NSMenuItem"; title = "Show Colors"; ObjectID = "bgn-CT-cEk"; */
-"bgn-CT-cEk.title" = "Show Colors";
+"bgn-CT-cEk.title" = "Mostrar colores";
 
 /* Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "buJ-ug-pKt"; */
-"buJ-ug-pKt.title" = "Use Selection for Find";
+"buJ-ug-pKt.title" = "Utilizar la selección para Buscar";
 
 /* Class = "NSMenu"; title = "Transformations"; ObjectID = "c8a-y6-VQd"; */
-"c8a-y6-VQd.title" = "Transformations";
+"c8a-y6-VQd.title" = "Transformaciones";
 
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "cDB-IK-hbR"; */
 "cDB-IK-hbR.title" = "Use None";
 
 /* Class = "NSMenuItem"; title = "Selection"; ObjectID = "cqv-fj-IhA"; */
-"cqv-fj-IhA.title" = "Selection";
+"cqv-fj-IhA.title" = "Selección";
 
 /* Class = "NSMenuItem"; title = "Smart Links"; ObjectID = "cwL-P1-jid"; */
 "cwL-P1-jid.title" = "Smart Links";
@@ -366,25 +366,25 @@
 "d9M-CD-aMd.title" = "Make Lower Case";
 
 /* Class = "NSMenu"; title = "Text"; ObjectID = "d9c-me-L2H"; */
-"d9c-me-L2H.title" = "Text";
+"d9c-me-L2H.title" = "Texto";
 
 /* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
-"dRJ-4n-Yzg.title" = "Undo";
+"dRJ-4n-Yzg.title" = "Deshacer";
 
 /* Class = "NSMenuItem"; title = "New"; ObjectID = "drq-uo-Unf"; */
-"drq-uo-Unf.title" = "New";
+"drq-uo-Unf.title" = "Nuevo";
 
 /* Class = "NSTextFieldCell"; title = "Tips Window"; ObjectID = "fd6-Kc-KJr"; */
 "fd6-Kc-KJr.title" = "Tips Window";
 
 /* Class = "NSMenuItem"; title = "Scan Configurations"; ObjectID = "gDt-SB-jBP"; */
-"gDt-SB-jBP.title" = "Scan Configurations";
+"gDt-SB-jBP.title" = "Escanear Configuraciones ";
 
 /* Class = "NSMenuItem"; title = "Outline Mode"; ObjectID = "gUQ-fT-kVg"; */
 "gUQ-fT-kVg.title" = "Outline Mode";
 
 /* Class = "NSMenuItem"; title = "Paste"; ObjectID = "gVA-U4-sdL"; */
-"gVA-U4-sdL.title" = "Paste";
+"gVA-U4-sdL.title" = "Pegar";
 
 /* Class = "NSButtonCell"; title = "Automatically open on mounting partition"; ObjectID = "hGr-Mh-IHj"; */
 "hGr-Mh-IHj.title" = "Automatically open on mounting partition";
@@ -408,7 +408,7 @@
 "i1d-Er-qST.title" = "Smaller";
 
 /* Class = "NSMenu"; title = "Tools"; ObjectID = "iNj-EH-98P"; */
-"iNj-EH-98P.title" = "Tools";
+"iNj-EH-98P.title" = "Herramientas";
 
 /* Class = "NSMenu"; title = "Baseline"; ObjectID = "ijk-EB-dga"; */
 "ijk-EB-dga.title" = "Baseline";
@@ -426,13 +426,13 @@
 "jFq-tB-4Kx.title" = "\tRight to Left";
 
 /* Class = "NSMenuItem"; title = "Check for Updates…"; ObjectID = "jIP-f7-0x8"; */
-"jIP-f7-0x8.title" = "Check for Updates…";
+"jIP-f7-0x8.title" = "Buscar actualizaciones…";
 
 /* Class = "NSMenu"; title = "Documentations"; ObjectID = "jYQ-AF-wIJ"; */
-"jYQ-AF-wIJ.title" = "Documentations";
+"jYQ-AF-wIJ.title" = "Documentación";
 
 /* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
-"jxT-CU-nIS.title" = "Format";
+"jxT-CU-nIS.title" = "Formato";
 
 /* Class = "NSMenuItem"; ibShadowedToolTip = "Converts Clover configuration to OpenCore configuration"; ObjectID = "jxp-Hf-MpR"; */
 "jxp-Hf-MpR.ibShadowedToolTip" = "Converts Clover configuration to OpenCore configuration";
@@ -444,16 +444,16 @@
 "lOQ-4j-DWS.title" = "Keep unknown keys and values";
 
 /* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "lZi-F2-Buy"; */
-"lZi-F2-Buy.title" = "Open Recent";
+"lZi-F2-Buy.title" = "Abrir Recientes";
 
 /* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
 "mK6-2p-4JG.title" = "Check Grammar With Spelling";
 
 /* Class = "NSButtonCell"; title = "Backup File Before Saving"; ObjectID = "mUr-sU-3WZ"; */
-"mUr-sU-3WZ.title" = "Backup File Before Saving";
+"mUr-sU-3WZ.title" = "Hacer una copia de seguridad antes de guardar";
 
 /* Class = "NSMenuItem"; ibShadowedToolTip = "Converts Clover configuration to OpenCore configuration"; ObjectID = "mp0-5L-sme"; */
-"mp0-5L-sme.ibShadowedToolTip" = "Converts Clover configuration to OpenCore configuration";
+"mp0-5L-sme.ibShadowedToolTip" = "Convertir la configuración de Clover a la configuración de OpenCore";
 
 /* Class = "NSMenuItem"; title = "Config Converter"; ObjectID = "mp0-5L-sme"; */
 "mp0-5L-sme.title" = "Config Converter";
@@ -462,13 +462,13 @@
 "o6e-r0-MWq.title" = "Ligatures";
 
 /* Class = "NSMenuItem"; title = "Resources"; ObjectID = "obn-2D-QqW"; */
-"obn-2D-QqW.title" = "Resources";
+"obn-2D-QqW.title" = "Recursos";
 
 /* Class = "NSMenuItem"; title = "Loosen"; ObjectID = "ogc-rX-tC1"; */
-"ogc-rX-tC1.title" = "Loosen";
+"ogc-rX-tC1.title" = "Soltar";
 
 /* Class = "NSTextFieldCell"; title = "Updates"; ObjectID = "ovh-My-wBx"; */
-"ovh-My-wBx.title" = "Updates";
+"ovh-My-wBx.title" = "Actualizaciones";
 
 /* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
 "pa3-QI-u2k.title" = "Delete";
@@ -480,7 +480,7 @@
 "q09-fT-Sye.title" = "Find Next";
 
 /* Class = "NSMenuItem"; title = "Configuration"; ObjectID = "q0U-gA-ewe"; */
-"q0U-gA-ewe.title" = "Configuration";
+"q0U-gA-ewe.title" = "Configuración";
 
 /* Class = "NSButtonCell"; title = "Autosave File"; ObjectID = "qzY-w2-2R4"; */
 "qzY-w2-2R4.title" = "Autosave File";
@@ -495,16 +495,16 @@
 "rgM-f4-ycn.title" = "Smart Dashes";
 
 /* Class = "NSMenu"; title = "Open Recent"; ObjectID = "sB6-Iv-xg4"; */
-"sB6-Iv-xg4.title" = "Open Recent";
+"sB6-Iv-xg4.title" = "Abrir Recientes";
 
 /* Class = "NSButtonCell"; title = "Automatically Check For Updates"; ObjectID = "sC4-7i-sgZ"; */
-"sC4-7i-sgZ.title" = "Automatically Check For Updates";
+"sC4-7i-sgZ.title" = "Buscar actualizaciones automáticamente";
 
 /* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
 "snW-S8-Cw5.title" = "Show Toolbar";
 
 /* Class = "NSMenu"; title = "Resources"; ObjectID = "szL-gC-fh3"; */
-"szL-gC-fh3.title" = "Resources";
+"szL-gC-fh3.title" = "Recursos";
 
 /* Class = "NSMenuItem"; title = "Data Detectors"; ObjectID = "tRr-pd-1PS"; */
 "tRr-pd-1PS.title" = "Data Detectors";
@@ -513,16 +513,16 @@
 "tlD-Oa-oAM.title" = "Kern";
 
 /* Class = "NSMenuItem"; title = "Documentations"; ObjectID = "toU-XT-mIr"; */
-"toU-XT-mIr.title" = "Documentations";
+"toU-XT-mIr.title" = "Documentación";
 
 /* Class = "NSButtonCell"; title = "Keep in front"; ObjectID = "uKn-Sr-CBs"; */
-"uKn-Sr-CBs.title" = "Keep in front";
+"uKn-Sr-CBs.title" = "Mantenerse por delante";
 
 /* Class = "NSMenu"; title = "OpenCore Configurator"; ObjectID = "uQy-DD-JDr"; */
 "uQy-DD-JDr.title" = "OpenCore Configurator";
 
 /* Class = "NSMenuItem"; title = "Cut"; ObjectID = "uRl-iY-unG"; */
-"uRl-iY-unG.title" = "Cut";
+"uRl-iY-unG.title" = "Cortar";
 
 /* Class = "NSMenuItem"; title = "Show Tips"; ObjectID = "uVv-sy-xB2"; */
 "uVv-sy-xB2.title" = "Show Tips";
@@ -543,31 +543,31 @@
 "w0m-vy-SC9.title" = "Ligatures";
 
 /* Class = "NSTextFieldCell"; title = "Visual Mode"; ObjectID = "w4M-OZ-zq9"; */
-"w4M-OZ-zq9.title" = "Visual Mode";
+"w4M-OZ-zq9.title" = "Modo Visual";
 
 /* Class = "NSMenuItem"; title = "Align Right"; ObjectID = "wb2-vD-lq4"; */
-"wb2-vD-lq4.title" = "Align Right";
+"wb2-vD-lq4.title" = "Alinear a la derecha";
 
 /* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
 "wpr-3q-Mcd.title" = "Ayuda";
 
 /* Class = "NSMenuItem"; title = "Copy"; ObjectID = "x3v-GG-iWU"; */
-"x3v-GG-iWU.title" = "Copy";
+"x3v-GG-iWU.title" = "Copiar";
 
 /* Class = "NSButtonCell"; title = "Load at startup as a normal plist editor"; ObjectID = "x59-kK-iWF"; */
-"x59-kK-iWF.title" = "Load at startup as a normal plist editor";
+"x59-kK-iWF.title" = "Cargar al inicio como un editor de plist normal";
 
 /* Class = "NSMenuItem"; title = "Save"; ObjectID = "xPa-T4-3mJ"; */
-"xPa-T4-3mJ.title" = "Save";
+"xPa-T4-3mJ.title" = "Guardar";
 
 /* Class = "NSMenuItem"; title = "Use All"; ObjectID = "xQD-1f-W4t"; */
-"xQD-1f-W4t.title" = "Use All";
+"xQD-1f-W4t.title" = "Utilizar todo";
 
 /* Class = "NSMenuItem"; title = "Speech"; ObjectID = "xrE-MZ-jX0"; */
-"xrE-MZ-jX0.title" = "Speech";
+"xrE-MZ-jX0.title" = "Hablar";
 
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
-"z6F-FW-3nz.title" = "Show Substitutions";
+"z6F-FW-3nz.title" = "Mostrar Sustituciones";
 
 /* Class = "NSMenuItem"; title = "HEX Converter"; ObjectID = "zH2-BD-jRb"; */
-"zH2-BD-jRb.title" = "HEX Converter";
+"zH2-BD-jRb.title" = "Conversor HEX";
