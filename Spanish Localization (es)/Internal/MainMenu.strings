@@ -387,25 +387,25 @@
 "gVA-U4-sdL.title" = "Pegar";
 
 /* Class = "NSButtonCell"; title = "Automatically open on mounting partition"; ObjectID = "hGr-Mh-IHj"; */
-"hGr-Mh-IHj.title" = "Automatically open on mounting partition";
+"hGr-Mh-IHj.title" = "Abrir automáticamente al montar la partición";
 
 /* Class = "NSTextFieldCell"; title = "*To apply this change, you must restart the app"; ObjectID = "hOZ-ZL-z15"; */
 "hOZ-ZL-z15.title" = "*Para aplicar este cambio, debes reiniciar la aplicación";
 
 /* Class = "NSMenuItem"; title = "Smart Quotes"; ObjectID = "hQb-2v-fYv"; */
-"hQb-2v-fYv.title" = "Smart Quotes";
+"hQb-2v-fYv.title" = "Citas inteligentes";
 
 /* Class = "NSButtonCell"; title = "Automatically validate when open and after save"; ObjectID = "hZ1-xh-Dbo"; */
-"hZ1-xh-Dbo.title" = "Automatically validate when open and after save";
+"hZ1-xh-Dbo.title" = "Validación automática al abrir y después de guardar";
 
 /* Class = "NSMenuItem"; title = "Check Document Now"; ObjectID = "hz2-CU-CR7"; */
-"hz2-CU-CR7.title" = "Check Document Now";
+"hz2-CU-CR7.title" = "Comprobar documento";
 
 /* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
-"hz9-B4-Xy5.title" = "Services";
+"hz9-B4-Xy5.title" = "Servicios";
 
 /* Class = "NSMenuItem"; title = "Smaller"; ObjectID = "i1d-Er-qST"; */
-"i1d-Er-qST.title" = "Smaller";
+"i1d-Er-qST.title" = "Más pequeño";
 
 /* Class = "NSMenu"; title = "Tools"; ObjectID = "iNj-EH-98P"; */
 "iNj-EH-98P.title" = "Herramientas";
@@ -414,10 +414,10 @@
 "ijk-EB-dga.title" = "Baseline";
 
 /* Class = "NSToolbarItem"; label = "App Settings"; ObjectID = "it2-TA-a3o"; */
-"it2-TA-a3o.label" = "App Settings";
+"it2-TA-a3o.label" = "Configuración de la aplicación";
 
 /* Class = "NSToolbarItem"; paletteLabel = "App Settings"; ObjectID = "it2-TA-a3o"; */
-"it2-TA-a3o.paletteLabel" = "App Settings";
+"it2-TA-a3o.paletteLabel" = "Configuración de la aplicación";
 
 /* Class = "NSMenuItem"; title = "Kern"; ObjectID = "jBQ-r6-VK2"; */
 "jBQ-r6-VK2.title" = "Kern";
@@ -435,10 +435,10 @@
 "jxT-CU-nIS.title" = "Formato";
 
 /* Class = "NSMenuItem"; ibShadowedToolTip = "Converts Clover configuration to OpenCore configuration"; ObjectID = "jxp-Hf-MpR"; */
-"jxp-Hf-MpR.ibShadowedToolTip" = "Converts Clover configuration to OpenCore configuration";
+"jxp-Hf-MpR.ibShadowedToolTip" = "Conviertir la configuración de Clover a la de OpenCore";
 
 /* Class = "NSMenuItem"; title = "OpenCore Downloader"; ObjectID = "jxp-Hf-MpR"; */
-"jxp-Hf-MpR.title" = "OpenCore Downloader";
+"jxp-Hf-MpR.title" = "Descargar OpenCore";
 
 /* Class = "NSButtonCell"; title = "Keep unknown keys and values"; ObjectID = "lOQ-4j-DWS"; */
 "lOQ-4j-DWS.title" = "Keep unknown keys and values";
