@@ -1,6 +1,6 @@
 
 /* Class = "NSMenuItem"; title = "Advanced OpenCore Validator"; ObjectID = "05d-N1-WMO"; */
-"05d-N1-WMO.title" = "Utilidad de Validación De OpenCore Avanzada";
+"05d-N1-WMO.title" = "Utilidad Avanzada de Validación de OpenCore";
 
 /* Class = "NSToolbarItem"; label = "Bootloader Settings"; ObjectID = "11s-5L-eLA"; */
 "11s-5L-eLA.label" = "Configuración De Bootloader";
@@ -93,7 +93,7 @@
 "9fr-XT-GHp.title" = "Limpiar Menú";
 
 /* Class = "NSMenuItem"; title = "Substitutions"; ObjectID = "9ic-FL-obx"; */
-"9ic-FL-obx.title" = "Substitutions";
+"9ic-FL-obx.title" = "Sustituciones";
 
 /* Class = "NSMenuItem"; title = "Smart Copy/Paste"; ObjectID = "9yt-4B-nSM"; */
 "9yt-4B-nSM.title" = "Copiar/Pegar De Forma Inteligente";
@@ -135,7 +135,7 @@
 "Fal-I4-PZk.title" = "Texto";
 
 /* Class = "NSMenu"; title = "Substitutions"; ObjectID = "FeM-D8-WVr"; */
-"FeM-D8-WVr.title" = "Substitutions";
+"FeM-D8-WVr.title" = "Sustituciones";
 
 /* Class = "NSMenuItem"; title = "OpenCore Bootloader"; ObjectID = "FpP-Sa-O4X"; */
 "FpP-Sa-O4X.title" = "OpenCore Bootloader";
@@ -354,7 +354,7 @@
 "c8a-y6-VQd.title" = "Transformaciones";
 
 /* Class = "NSMenuItem"; title = "Use None"; ObjectID = "cDB-IK-hbR"; */
-"cDB-IK-hbR.title" = "Use None";
+"cDB-IK-hbR.title" = "No usar Ninguno";
 
 /* Class = "NSMenuItem"; title = "Selection"; ObjectID = "cqv-fj-IhA"; */
 "cqv-fj-IhA.title" = "Selección";
@@ -375,7 +375,7 @@
 "drq-uo-Unf.title" = "Nuevo";
 
 /* Class = "NSTextFieldCell"; title = "Tips Window"; ObjectID = "fd6-Kc-KJr"; */
-"fd6-Kc-KJr.title" = "Tips Window";
+"fd6-Kc-KJr.title" = "Consejos";
 
 /* Class = "NSMenuItem"; title = "Scan Configurations"; ObjectID = "gDt-SB-jBP"; */
 "gDt-SB-jBP.title" = "Escanear Configuraciones ";
@@ -471,13 +471,13 @@
 "ovh-My-wBx.title" = "Actualizaciones";
 
 /* Class = "NSMenuItem"; title = "Delete"; ObjectID = "pa3-QI-u2k"; */
-"pa3-QI-u2k.title" = "Delete";
+"pa3-QI-u2k.title" = "Eliminar";
 
 /* Class = "NSMenuItem"; title = "SampleCustom.plist"; ObjectID = "paC-6u-bhk"; */
 "paC-6u-bhk.title" = "SampleCustom.plist";
 
 /* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "q09-fT-Sye"; */
-"q09-fT-Sye.title" = "Find Next";
+"q09-fT-Sye.title" = "Buscar siguiente";
 
 /* Class = "NSMenuItem"; title = "Configuration"; ObjectID = "q0U-gA-ewe"; */
 "q0U-gA-ewe.title" = "Configuración";
@@ -486,7 +486,7 @@
 "qzY-w2-2R4.title" = "Autosave File";
 
 /* Class = "NSTextFieldCell"; title = "Configuration Properties"; ObjectID = "rOA-u4-5Yj"; */
-"rOA-u4-5Yj.title" = "Configuration Properties";
+"rOA-u4-5Yj.title" = "Propiedades de configuración";
 
 /* Class = "NSMenuItem"; title = "Check Spelling While Typing"; ObjectID = "rbD-Rh-wIN"; */
 "rbD-Rh-wIN.title" = "Check Spelling While Typing";
