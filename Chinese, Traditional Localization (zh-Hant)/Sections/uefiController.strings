@@ -131,6 +131,9 @@
 /* Class = "NSTextFieldCell"; title = "GopPassThrough"; ObjectID = "VKM-hk-vmW"; */
 "VKM-hk-vmW.title" = "GopPassThrough";
 
+/* Class = "NSTextFieldCell"; title = "Console Font"; ObjectID = "X4C-Lg-vEv"; */
+"X4C-Lg-vEv.title" = "Console Font";
+
 /* Class = "NSTabViewItem"; label = "AppleInput"; ObjectID = "XuU-Ep-ZXb"; */
 "XuU-Ep-ZXb.label" = "AppleInput";
 
@@ -166,6 +169,9 @@
 
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";
+
+/* Class = "NSTabViewItem"; label = "Unload"; ObjectID = "fAS-0k-RXk"; */
+"fAS-0k-RXk.label" = "Unload";
 
 /* Class = "NSMenuItem"; title = "DEFAULT"; ObjectID = "fZq-zJ-tYW"; */
 "fZq-zJ-tYW.title" = "DEFAULT";

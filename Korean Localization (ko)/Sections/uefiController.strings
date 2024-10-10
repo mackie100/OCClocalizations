@@ -170,6 +170,9 @@
 /* Class = "NSButtonCell"; title = "HideVerbose"; ObjectID = "egr-8J-RIS"; */
 "egr-8J-RIS.title" = "HideVerbose";
 
+/* Class = "NSTabViewItem"; label = "Unload"; ObjectID = "fAS-0k-RXk"; */
+"fAS-0k-RXk.label" = "Unload";
+
 /* Class = "NSMenuItem"; title = "DEFAULT"; ObjectID = "fZq-zJ-tYW"; */
 "fZq-zJ-tYW.title" = "DEFAULT";
 
