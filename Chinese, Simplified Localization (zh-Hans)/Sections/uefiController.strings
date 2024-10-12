@@ -132,7 +132,7 @@
 "VKM-hk-vmW.title" = "GopPassThrough";
 
 /* Class = "NSTextFieldCell"; title = "Console Font"; ObjectID = "X4C-Lg-vEv"; */
-"X4C-Lg-vEv.title" = "Console Font";
+"X4C-Lg-vEv.title" = "控制台字体";
 
 /* Class = "NSTabViewItem"; label = "AppleInput"; ObjectID = "XuU-Ep-ZXb"; */
 "XuU-Ep-ZXb.label" = "AppleInput";
@@ -171,7 +171,7 @@
 "egr-8J-RIS.title" = "HideVerbose";
 
 /* Class = "NSTabViewItem"; label = "Unload"; ObjectID = "fAS-0k-RXk"; */
-"fAS-0k-RXk.label" = "Unload";
+"fAS-0k-RXk.label" = "卸载";
 
 /* Class = "NSMenuItem"; title = "DEFAULT"; ObjectID = "fZq-zJ-tYW"; */
 "fZq-zJ-tYW.title" = "默认";
