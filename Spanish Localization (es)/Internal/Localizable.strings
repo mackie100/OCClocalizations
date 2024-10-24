@@ -421,10 +421,10 @@
 "No EFI folder found.....\n" = "No se encontró la carpeta EFI.....\n";
 
 /* preferencesPanel */
-"Release Version" = "Release Version";
+"Release Version" = "Versión Estable";
 
 /* preferencesPanel */
-"Development Version" = "Development Version";
+"Development Version" = "Versión de desarrollo";
 
 /* deviceProperties_table_properties_menu */
 "Audio Device Properties" = "Propiedades del dispositivo de audio";
@@ -793,7 +793,7 @@
 "click here" = "haga clic aquí";
 
 /* efiMaker */
-"Summary Information" = "Summary Information";
+"Summary Information" = " Información resumida";
 
 /* efiMaker */
 "CPU Family selected" = "Familia de CPU seleccionada";
@@ -1538,7 +1538,7 @@
 "TT_BoardType" = "Type: plist integer\nFailsafe: OEM specified\nSMBIOS: Baseboard (or Module) Information (Type 2) — Board Type\nDescription: Either 0xA (Motherboard (includes processor, memory, and I/O) or 0xB (Processor/Memory Module). Refer to Table 15 – Baseboard: Board Type for details.";
 
 /* aXB-A5-lJa */
-"TT_LocationInChassis" = "Type: plist string\nFailsafe: Empty (OEM specified)\nSMBIOS: Baseboard (or Module) Information (Type 2) — Location in Chassis Description: Varies, may be empty or Part Component.";
+"TT_LocationInChassis" = "Type: plist string\nFailsafe: Empty (especificado por el OEM)\nSMBIOS: Información de la placa base (o módulo) (Tipo 2) - Ubicación en el chasis Descripción: Varía, puede estar vacío o con un componente parcial.";
 
 /* 4l3-Do-kcw */
 "TT_Features" = "Type: plist data, 8 bytes\nFailsafe: 0 (OEM specified on Apple hardware, 0 otherwise)\nSMBIOS: APPLE_SMBIOS_TABLE_TYPE128 - FirmwareFeatures and ExtendedFirmwareFeatures Description: 64-bit firmware features bitmask. Refer to AppleFeatures.h for details. Lower 32 bits match FirmwareFeatures. Upper 64 bits match ExtendedFirmwareFeatures.";
@@ -1564,7 +1564,7 @@
 "TT_GlobalConnect" = "Type: plist boolean\nFailsafe: false\nDescription: Perform full device connection during APFS loading.\n\nEvery handle is connected recursively instead of the partition handle connection typically used for APFS driver loading. This may result in additional time being taken but can sometimes be the only way to access APFS partitions on certain firmware, such as those on older HP laptops.";
 
 /* HdB-KO-x50 */
-"TT_HideVerbose" = "Type: plist boolean\nFailsafe: false\nDescription: Hide verbose output from APFS driver.\nAPFS verbose output can be useful for debugging.";
+"TT_HideVerbose" = "Type: plist boolean\nFailsafe: false\nDescription: Ocultar la salida verbose del controlador APFS.\nLa salida verbose de APFS puede ser útil para depuración.";
 
 /* kSG-eA-B2o */
 "TT_JumpstartHotPlug" = "Type: plist boolean\nFailsafe: false\nDescription: Load APFS drivers for newly connected devices.\n\nPermits APFS USB hot plug which enables loading APFS drivers, both at OpenCore startup and during OpenCore picker dusplay. Disable if not required.";
@@ -1674,7 +1674,7 @@ cat /proc/asound/card{n}/codec#{m}\n\nUsing AudioOutMask, it is possible to play
 "TT_KeySupport" = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal keyboard input translation to AppleKeyMapAggregator protocol.\n\nThis option activates the internal keyboard interceptor driver, based on AppleGenericInput, also known as AptioInputFix, to fill the AppleKeyMapAggregator database for input functioning. In cases where a separate driver such as OpenUsbKbDxe is used, this option should never be enabled. Additionally, this option is not required and should not be enabled with Apple firmware.";
 
 /* EIc-ff-Thn */
-"TT_KeySwap" = "Type: plist boolean\nFailsafe: false\nDescription: Swap Command and Option keys during submission.\nThis option may be useful for keyboard layouts with Option key situated to the right of Command key.";
+"TT_KeySwap" = "Type: plist boolean\nFailsafe: false\nDescription: Intercambiar las teclas Comando y Opción durante el envío.\nEsta opción puede ser útil para diseños de teclado con la tecla Opción situada a la derecha de la tecla Comando..";
 
 /* dzp-p6-AHb */
 "TT_PointerSupport" = "Type: plist boolean\nFailsafe: false\nDescription: Enable internal pointer driver.\n\nThis option implements standard UEFI pointer protocol (EFI_SIMPLE_POINTER_PROTOCOL) through select OEM protocols. The option may be useful on Z87 ASUS boards, where EFI_SIMPLE_POINTER_PROTOCOL is defective.";
@@ -1732,17 +1732,17 @@ cat /proc/asound/card{n}/codec#{m}\n\nUsing AudioOutMask, it is possible to play
 
 "TT_AppleImageConversion" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple Image Conversion protocol with a builtin version.";
 
-"TT_AppleImg4Verification" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple IMG4 Verification protocol with a builtin version. This protocol is used to verify im4m manifest files used by Apple Secure Boot.";
+"TT_AppleImg4Verification" = "Type: plist boolean\nFailsafe: false\nDescription: Sustituye el protocolo de verificación IMG4 de Apple por una versión integrada. Este protocolo se utiliza para verificar los archivos de manifiesto im4m utilizados por Apple Secure Boot.";
 
-"TT_AppleKeyMap" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple Key Map protocols with builtin versions.";
+"TT_AppleKeyMap" = "Type: plist boolean\nFailsafe: false\nDescription: Sustituye los protocolos Apple Key Map por versiones integradas.";
 
 "TT_AppleRtcRam" = "Type: plist boolean\nFailsafe: false \nDescription: Replaces the Apple RTC RAM protocol with builtin version.\n\nNote: Builtin version of Apple RTC RAM protocol may filter out I/O attempts to certain RTC memory addresses. \nThe list of addresses can be specified in 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:rtc-blacklist variable as a data array.";
 
-"TT_AppleSecureBoot" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple Secure Boot protocol with a builtin version.";
+"TT_AppleSecureBoot" = "Type: plist boolean\nFailsafe: false\nDescription: Sustituye el protocolo Apple Secure Boot por una versión integrada..";
 
 "TT_AppleSmcIo" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple SMC I/O protocol with a builtin version.\n\nThis protocol replaces the legacy VirtualSmc UEFI driver, and is compatible with any SMC kernel extension. \nHowever, in case FakeSMC kernel extension is used, manual NVRAM key variable addition may be needed.";
 
-"TT_AppleUserInterfaceTheme" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Apple User Interface Theme protocol with a builtin version.";
+"TT_AppleUserInterfaceTheme" = "Type: plist boolean\nFailsafe: false\nDescription: Sustituye el protocolo Apple User Interface Theme por una versión integrada.";
 
 "TT_DataHub" = "Type: plist boolean\nFailsafe: false\nDescription: Replaces the Data Hub protocol with a builtin version.\n\nNote: This will discard all previous entries if the protocol was already installed, so all properties required for the safe operation of the system must be specified in the configuration file.";
 
@@ -1772,7 +1772,7 @@ cat /proc/asound/card{n}/codec#{m}\n\nUsing AudioOutMask, it is possible to play
 /* 0un-PF-SFE */
 "TT_TscSyncTimeout" = "Type: plist integer\nFailsafe: 0\nDescription: Attempts to perform TSC synchronisation with a specified timeout.\n\nThe primary purpose of this quirk is to enable early bootstrap TSC synchronisation on some server and laptop models when running a debug XNU kernel. For the debug kernel the TSC needs to be kept in sync across the cores before any kext could kick in rendering all other solutions problematic. The timeout is specified in microseconds and depends on the amount of cores present on the platform, the recommended starting value is 500000.\n\nThis is an experimental quirk, which should only be used for the aforementioned problem. In all other cases the quirk may render the operating system unstable and is not recommended. The recommended solution in the other cases is to install a kernel driver such as VoodooTSCSync, TSCAdjustReset, or CpuTscSync (a more specialised variant of VoodooTSCSync for newer laptops).\n\nNote: This quirk cannot replace the kernel driver because it cannot operate in ACPI S3 (sleep wake) mode and because the UEFI firmware only provides very limited multicore support which prevents precise updates of the MSR registers.";
 
-"TT_ActivateHpetSupport" = "Type: plist boolean\nFailsafe: false\nDescription: Activates HPET support.\n\nOlder boards like ICH6 may not always have HPET setting in the firmware preferences, this option tries to force enable it.";
+"TT_ActivateHpetSupport" = "Type: plist boolean\nFailsafe: false\nDescription: Activa el soporte HPET.\n\nLas placas más antiguas como la ICH6 pueden no tener siempre configurado HPET en las preferencias del firmware, esta opción intenta forzar su activación.";
 
 "TT_DisableSecurityPolicy" = "Type: plist boolean\nFailsafe: false\nDescription: Disable platform security policy.\n\nNote: This setting disables various security features of the firmware, defeating the purpose of any kind of Secure Boot. Do NOT enable if using UEFI Secure Boot.";
 
@@ -1784,16 +1784,16 @@ cat /proc/asound/card{n}/codec#{m}\n\nUsing AudioOutMask, it is possible to play
 
 "TT_ResizeUsePciRbIo" = "Type: plist boolean\nFailsafe: false\nDescription: Use PciRootBridgeIo for ResizeGpuBars and ResizeAppleGpuBars\n\nThe quirk makes ResizeGpuBars and ResizeAppleGpuBars use PciRootBridgeIo instead of PciIo. This is needed on systems with a buggy PciIo implementation where trying to configure Resizable BAR results in Capability I/O Error. Typically this is required on older systems which have been modified with ReBarUEFI.";
 
-"TT_UnblockFsConnect" = "Type: plist boolean\nFailsafe: false\nDescription: Some types of firmware block partition handles by opening them in By Driver mode, resulting in an inability to install File System protocols.\n\nNote: This quirk is useful in cases where unsuccessful drive detection results in an absence of boot entries.";
+"TT_UnblockFsConnect" = "Type: plist boolean\nFailsafe: false\nDescription:  Algunos tipos de firmware bloquean los manejadores de partición al abrirlos en modo Driver mode, lo que provoca que no se puedan instalar los protocolos del Sistema de Archivos.\n\nTenga en cuenta que esta peculiaridad es útil en los casos en los que la detección fallida de la unidad. qué provoca la ausencia de entradas de arranque.";
 
-"TT_ForgeUefiSupport" = "Type: plist boolean\nFailsafe: false\nDescription: Implement partial UEFI 2.x support on EFI 1.x firmware.\n\nThis setting allows running some software written for UEFI 2.x firmware, such as NVIDIA GOP Option ROMs on hardware with older EFI 1.x firmware (MacPro5,1).";
+"TT_ForgeUefiSupport" = "Type: plist boolean\nFailsafe: false\nDescription: Implementar compatibilidad parcial con UEFI 2.x en el firmware EFI 1.x.\n\nEsta configuración permite ejecutar algún software escrito para el firmware UEFI 2.x, como las ROM opcionales NVIDIA GOP en hardware con firmware EFI 1.x más antiguo (MacPro5,1).";
 
-"TT_ReloadOptionRoms" = "Type: plist boolean\nFailsafe: false\nDescription: Query PCI devices and reload their Option ROMs if available.\n\nFor example, this option allows reloading NVIDIA GOP Option ROM on older Macs after the firmware version is upgraded via ForgeUefiSupport.";
+"TT_ReloadOptionRoms" = "Type: plist boolean\nFailsafe: false\nDescription: Consulta los dispositivos PCI y recarga sus ROM opcionales si están disponibles.\n\nPor ejemplo, esta opción permite recargar la ROM opcional NVIDIA GOP en Macs más antiguas después de que se actualice la versión del firmware a través de ForgeUefiSupport.";
 
-"TT_EnableVectorAcceleration" = "Type: plist boolean\nFailsafe: false\nDescription: Enable AVX vector acceleration of SHA-512 and SHA-384 hashing algorithms.\n\nNote: This option may cause issues on certain laptop firmwares, including Lenovo.";
+"TT_EnableVectorAcceleration" = "Type: plist boolean\nFailsafe: false\nDescription: Habilite la aceleración vectorial AVX de los algoritmos hash SHA-512 y SHA-384. Nota: Esta opción puede causar problemas en ciertos firmwares de portátiles, incluyendo Lenovo.";
 
-"TT_EnableVmx" = "Type: plist boolean\nFailsafe: false\nDescription: Enable Intel virtual machine extensions.\n\nNote: Required to allow virtualization in Windows on some Mac hardware. VMX is enabled or disabled and locked by BIOS before OpenCore starts on most firmware. Use BIOS to enable virtualization where possible.";
+"TT_EnableVmx" = "Type: plist boolean\nFailsafe: false\nDescripción: Habilite las extensiones de máquina virtual Intel.\n\nNota: Es necesario para permitir la virtualización en Windows en algunos equipos Mac. VMX se habilita o deshabilita y bloquea mediante el BIOS antes de que se inicie OpenCore en la mayoría de los firmware. Use el BIOS para habilitar la virtualización siempre que sea posible.";
 
-"TT_ForceOcWriteFlash" = "Type: plist boolean\nFailsafe: false\nDescription: Enables writing to flash memory for all OpenCore-managed NVRAM system variables.\n\nNote: This value should be disabled on most types of firmware but is left configurable to account for firmware that may have issues with volatile variable storage overflows or similar. Boot issues across multiple OSes can be observed on e.g. Lenovo Thinkpad T430 and T530 without this quirk. Apple variables related to Secure Boot and hibernation are exempt from this for security reasons. Furthermore, some OpenCore variables are exempt for different reasons, such as the boot log due to an available user option, and the TSC frequency due to timing issues. When toggling this option, a NVRAM reset may be required to ensure full functionality.";
+"TT_ForceOcWriteFlash" = "Type: plist boolean\nFailsafe: false\nDescripción: permite escribir en la memoria flash para todas las variables del sistema NVRAM administradas por OpenCore.\n\nNota: este valor debe estar deshabilitado en la mayoría de los tipos de firmware, pero se puede configurar para tener en cuenta el firmware que puede tener problemas con desbordamientos de almacenamiento de variables volátiles o similares. Se pueden observar problemas de arranque en varios sistemas operativos, por ejemplo, en Lenovo Thinkpad T430 y T530 sin esta peculiaridad. Las variables de Apple relacionadas con el arranque seguro y la hibernación están exentas de esto por razones de seguridad. Además, algunas variables de OpenCore están exentas por diferentes razones, como el registro de arranque debido a una opción de usuario disponible y la frecuencia de TSC debido a problemas de sincronización. Al alternar esta opción, es posible que se requiera un reinicio de NVRAM para garantizar la funcionalidad completa.";
 
-"TT_ResizeGpuBars" = "Type: plist integer\nFailsafe: -1\nDescription: Configure GPU PCI BAR sizes.\n\nThis quirk sets GPU PCI BAR sizes as specified or chooses the largest available below the ResizeGpuBars value. The specified value follows PCI Resizable BAR spec. Use 0 for 1 MB, 1 for 2 MB, 2 for 4 MB, and so on up to 19 for 512 GB.\n\nResizable BAR technology allows to ease PCI device programming by mapping a configurable memory region, BAR, into CPU address space (e.g. VRAM to RAM) as opposed to a fixed memory region. This technology is necessary, because one cannot map the largest memory region by default, for the reasons of backwards compatibility with older hardware not supporting 64-bit BARs. Consequentially devices of the last decade use BARs up to 256 MB by default (4 remaining bits are used by other data) but generally allow resizing them to both smaller and larger powers of two (e.g. from 1 MB up to VRAM size).\n\nOperating systems targeting x86 platforms generally do not control PCI address space, letting UEFI firmware decide on the BAR addresses and sizes. This illicit practice resulted in Resizable BAR technology being unused up until 2020 despite being standardised in 2008 and becoming widely available in the hardware soon after.\n\nModern UEFI firmware allow the use of Resizable BAR technology but generally restrict the configurable options to failsafe default (OFF) and maximum available (ON). This quirk allows to fine-tune this value for testing and development purposes.\n\nConsider a GPU with 2 BARs:\n• BAR0 supports sizes from 256 MB to 8 GB. Its value is 4 GB.\n• BAR1 supports sizes from 2 MB to 256 MB. Its value is 256 MB.\n\nExample 1: Setting ResizeGpuBars to 1 GB will change BAR0 to 1 GB and leave BAR1 unchanged.\nExample 2: Setting ResizeGpuBars to 1 MB will change BAR0 to 256 MB and BAR0 to 2 MB.\nExample 3: Setting ResizeGpuBars to 16 GB will change BAR0 to 8 GB and leave BAR1 unchanged.\n\nNote 1 : This quirk shall not be used to workaround macOS limitation to address BARs over 1 GB. ResizeAppleGpuBars should be used instead.\n\nNote 2: While this quirk can increase GPU PCI BAR sizes, this will not work on most firmware as is, because the quirk does not relocate BARs in memory, and they will likely overlap. In most cases it is best to either update the firmware to the latest version or customise it with a specialised driver like ReBarUEFI.";
+"TT_ResizeGpuBars" = "Type: plist integer\nFailsafe: -1\nDescripción: Configurar los tamaños de GPU PCI BAR.\n\nEsta característica establece los tamaños de GPU PCI BAR según lo especificado o elige el más grande disponible por debajo del valor ResizeGpuBars. El valor especificado sigue la especificación PCI Resizable BAR. Use 0 para 1 MB, 1 para 2 MB, 2 para 4 MB, y así sucesivamente hasta 19 para 512 GB.\n\nLa tecnología Resizable BAR permite facilitar la programación de dispositivos PCI al asignar una región de memoria configurable, BAR, al espacio de direcciones de la CPU (por ejemplo, VRAM a RAM) en lugar de una región de memoria fija. Esta tecnología es necesaria, porque no se puede asignar la región de memoria más grande de forma predeterminada, por razones de compatibilidad con versiones anteriores de hardware más antiguo que no admite BAR de 64 bits. En consecuencia, los dispositivos de la última década usan BAR de hasta 256 MB de forma predeterminada (los 4 bits restantes son utilizados por otros datos), pero generalmente permiten redimensionarlos a potencias de dos más pequeñas y más grandes (por ejemplo, desde 1 MB hasta el tamaño de VRAM).\n\nLos sistemas operativos que apuntan a plataformas x86 generalmente no controlan el espacio de direcciones PCI, lo que permite que el firmware UEFI decida las direcciones y tamaños de BAR. Esta práctica ilícita resultó en que la tecnología Resizable BAR no se usara hasta 2020 a pesar de haber sido estandarizada en 2008 y estar ampliamente disponible en el hardware poco después.\n\nEl firmware UEFI moderno permite el uso de la tecnología Resizable BAR, pero generalmente restringe las opciones configurables al valor predeterminado a prueba de fallas (OFF) y al máximo disponible (ON). Esta peculiaridad permite ajustar este valor para fines de prueba y desarrollo.\n\nConsidere una GPU con 2 BAR:\n• BAR0 admite tamaños de 256 MB a 8 GB. Su valor es 4 GB.\n• BAR1 admite tamaños de 2 MB a 256 MB. Su valor es 256 MB.\n\nEjemplo 1: si se configura ResizeGpuBars en 1 GB, BAR0 se cambiará a 1 GB y BAR1 no cambiará.\nEjemplo 2: si se configura ResizeGpuBars en 1 MB, BAR0 se cambiará a 256 MB y BAR0 a 2 MB.\nEjemplo 3: si se configura ResizeGpuBars en 16 GB, BAR0 se cambiará a 8 GB y BAR1 no cambiará.\n\nNota 1: esta peculiaridad no se debe usar para evitar la limitación de macOS para abordar BAR de más de 1 GB. En su lugar, se debe usar ResizeAppleGpuBars.\n\nNota 2: si bien esta peculiaridad puede aumentar los tamaños de GPU PCI BAR, esto no funcionará en la mayoría del firmware tal como está, porque la peculiaridad no reubica los BAR en la memoria y es probable que se superpongan. En la mayoría de los casos, es mejor actualizar el firmware a la última versión o personalizarlo con un controlador especializado como ReBarUEFI.";

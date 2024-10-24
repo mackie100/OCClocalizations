@@ -33,7 +33,7 @@
 "2h7-ER-AoG.title" = "Raise";
 
 /* Class = "NSMenuItem"; title = "Transformations"; ObjectID = "2oI-Rn-ZJC"; */
-"2oI-Rn-ZJC.title" = "Transformations";
+"2oI-Rn-ZJC.title" = "Transformaciones";
 
 /* Class = "NSMenu"; title = "Spelling"; ObjectID = "3IN-sU-3Bg"; */
 "3IN-sU-3Bg.title" = "Spelling";
@@ -441,13 +441,13 @@
 "jxp-Hf-MpR.title" = "Descargar OpenCore";
 
 /* Class = "NSButtonCell"; title = "Keep unknown keys and values"; ObjectID = "lOQ-4j-DWS"; */
-"lOQ-4j-DWS.title" = "Keep unknown keys and values";
+"lOQ-4j-DWS.title" = "Mantener claves y valores desconocidos";
 
 /* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "lZi-F2-Buy"; */
 "lZi-F2-Buy.title" = "Abrir Recientes";
 
 /* Class = "NSMenuItem"; title = "Check Grammar With Spelling"; ObjectID = "mK6-2p-4JG"; */
-"mK6-2p-4JG.title" = "Check Grammar With Spelling";
+"mK6-2p-4JG.title" = "Revisa la gramática con la ortografía";
 
 /* Class = "NSButtonCell"; title = "Backup File Before Saving"; ObjectID = "mUr-sU-3WZ"; */
 "mUr-sU-3WZ.title" = "Hacer una copia de seguridad antes de guardar";
@@ -483,7 +483,7 @@
 "q0U-gA-ewe.title" = "Configuración";
 
 /* Class = "NSButtonCell"; title = "Autosave File"; ObjectID = "qzY-w2-2R4"; */
-"qzY-w2-2R4.title" = "Autosave File";
+"qzY-w2-2R4.title" = "Guardar archivo automáticamente";
 
 /* Class = "NSTextFieldCell"; title = "Configuration Properties"; ObjectID = "rOA-u4-5Yj"; */
 "rOA-u4-5Yj.title" = "Propiedades de configuración";
@@ -501,7 +501,7 @@
 "sC4-7i-sgZ.title" = "Buscar actualizaciones automáticamente";
 
 /* Class = "NSMenuItem"; title = "Show Toolbar"; ObjectID = "snW-S8-Cw5"; */
-"snW-S8-Cw5.title" = "Show Toolbar";
+"snW-S8-Cw5.title" = "Mostrar barra de herramientas";
 
 /* Class = "NSMenu"; title = "Resources"; ObjectID = "szL-gC-fh3"; */
 "szL-gC-fh3.title" = "Recursos";
@@ -525,7 +525,7 @@
 "uRl-iY-unG.title" = "Cortar";
 
 /* Class = "NSMenuItem"; title = "Show Tips"; ObjectID = "uVv-sy-xB2"; */
-"uVv-sy-xB2.title" = "Show Tips";
+"uVv-sy-xB2.title" = "Consejos";
 
 /* Class = "NSMenuItem"; title = "Paste Style"; ObjectID = "vKC-jM-MkH"; */
 "vKC-jM-MkH.title" = "Paste Style";
