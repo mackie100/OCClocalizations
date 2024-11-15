@@ -6,13 +6,13 @@
 "6NS-cZ-NZu.title" = "Normalizar Headers";
 
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "7g0-XW-xjy"; */
-"7g0-XW-xjy.title" = "Loading Resources";
+"7g0-XW-xjy.title" = "Cargando recursos";
 
 /* Class = "NSButtonCell"; title = "SyncTableIds"; ObjectID = "7nt-3d-eth"; */
 "7nt-3d-eth.title" = "SyncTableIds";
 
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "A4Q-If-0AG"; */
-"A4Q-If-0AG.headerCell.title" = "Skip";
+"A4Q-If-0AG.headerCell.title" = "Omitir";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableLength"; ObjectID = "CVl-gt-v4L"; */
 "CVl-gt-v4L.headerCell.title" = "TableLength";
@@ -24,7 +24,7 @@
 "DxA-Lh-I4Q.title" = "Quirks";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "FLp-3q-DSv"; */
-"FLp-3q-DSv.headerCell.title" = "Enabled";
+"FLp-3q-DSv.headerCell.title" = "Habilitado";
 
 /* Class = "NSButtonCell"; title = "EnableForAll"; ObjectID = "HdU-pu-zKX"; */
 "HdU-pu-zKX.title" = "EnableForAll";
@@ -39,7 +39,7 @@
 "JjS-7V-0PV.headerCell.title" = "Comment";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "K4n-vm-jxn"; */
-"K4n-vm-jxn.headerCell.title" = "Find";
+"K4n-vm-jxn.headerCell.title" = "Buscar";
 
 /* Class = "NSMenuItem"; title = "List Of Patches"; ObjectID = "Kbb-Cq-tfz"; */
 "Kbb-Cq-tfz.title" = "List Of Patches";
@@ -48,10 +48,10 @@
 "MtH-av-7W0.headerCell.title" = "TableLength";
 
 /* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "Ndv-7C-25y"; */
-"Ndv-7C-25y.title" = "Scan/Browse";
+"Ndv-7C-25y.title" = "Escanear/Examinar";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "NtB-gi-4nw"; */
-"NtB-gi-4nw.headerCell.title" = "Replace";
+"NtB-gi-4nw.headerCell.title" = "Reemplazar";
 
 /* Class = "NSTableColumn"; headerCell.title = "OemTableId"; ObjectID = "Nxc-pO-D4k"; */
 "Nxc-pO-D4k.headerCell.title" = "OemTableId";
@@ -63,16 +63,16 @@
 "Z6k-wb-4yC.title" = "ResetHwSig";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "c8a-dM-DNw"; */
-"c8a-dM-DNw.headerCell.title" = "Enabled";
+"c8a-dM-DNw.headerCell.title" = "Habilitado";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "cAx-1U-xJ9"; */
-"cAx-1U-xJ9.headerCell.title" = "Comment";
+"cAx-1U-xJ9.headerCell.title" = "Comentario";
 
 /* Class = "NSButtonCell"; title = "ResetLogoStatus"; ObjectID = "fCv-Py-taQ"; */
 "fCv-Py-taQ.title" = "ResetLogoStatus";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "gIS-d5-pG5"; */
-"gIS-d5-pG5.headerCell.title" = "Comment";
+"gIS-d5-pG5.headerCell.title" = "Comentario";
 
 /* Class = "NSTableColumn"; headerCell.title = "Limit"; ObjectID = "ger-9o-NnS"; */
 "ger-9o-NnS.headerCell.title" = "Limit";
@@ -102,13 +102,13 @@
 "qk5-w1-h2Q.headerCell.title" = "OemTableId";
 
 /* Class = "NSTabViewItem"; label = "Delete"; ObjectID = "swX-ck-WbC"; */
-"swX-ck-WbC.label" = "Delete";
+"swX-ck-WbC.label" = "Eliminar";
 
 /* Class = "NSTableColumn"; headerCell.title = "TableSignature*"; ObjectID = "wld-sU-lGp"; */
 "wld-sU-lGp.headerCell.title" = "TableSignature*";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "y3O-8J-sex"; */
-"y3O-8J-sex.label" = "Add";
+"y3O-8J-sex.label" = "Ańadir";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "z8k-hB-WoQ"; */
-"z8k-hB-WoQ.headerCell.title" = "Enabled";
+"z8k-hB-WoQ.headerCell.title" = "Habilitado";

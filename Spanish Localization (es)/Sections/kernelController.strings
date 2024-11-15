@@ -1,6 +1,6 @@
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "19Q-wm-aZQ"; */
-"19Q-wm-aZQ.headerCell.title" = "Comment";
+"19Q-wm-aZQ.headerCell.title" = "Comentario";
 
 /* Class = "NSTableColumn"; headerCell.title = "Identifier"; ObjectID = "4ac-sL-evA"; */
 "4ac-sL-evA.headerCell.title" = "Identifier";
@@ -24,7 +24,7 @@
 "8BF-rh-btZ.headerCell.title" = "Count";
 
 /* Class = "NSButtonCell"; title = "Download/Update kexts"; ObjectID = "8LM-uC-YZk"; */
-"8LM-uC-YZk.title" = "Download/Update kexts";
+"8LM-uC-YZk.title" = "Descarga/Actualizar kexts";
 
 /* Class = "NSTableColumn"; headerCell.title = "Arch"; ObjectID = "8Qp-io-xPv"; */
 "8Qp-io-xPv.headerCell.title" = "Arch";
@@ -45,7 +45,7 @@
 "Edd-Fj-thV.title" = "KernelArch";
 
 /* Class = "NSTableColumn"; headerCell.title = "Find"; ObjectID = "GcD-Hq-Pnt"; */
-"GcD-Hq-Pnt.headerCell.title" = "Find";
+"GcD-Hq-Pnt.headerCell.title" = "Buscar";
 
 /* Class = "NSTableColumn"; headerCell.title = "PlistPath"; ObjectID = "H8d-aU-LbU"; */
 "H8d-aU-LbU.headerCell.title" = "PlistPath";
@@ -63,7 +63,7 @@
 "IWc-Ff-bdQ.headerCell.title" = "Identifier*";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "K9H-md-xVS"; */
-"K9H-md-xVS.headerCell.title" = "Enabled";
+"K9H-md-xVS.headerCell.title" = "Habilitado»";
 
 /* Class = "NSTableColumn"; headerCell.title = "Replace"; ObjectID = "Kyb-jI-0pq"; */
 "Kyb-jI-0pq.headerCell.title" = "Replace";
@@ -72,28 +72,28 @@
 "N6C-NB-CMk.headerCell.title" = "Arch";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "Ntg-7A-K1a"; */
-"Ntg-7A-K1a.headerCell.title" = "Comment";
+"Ntg-7A-K1a.headerCell.title" = "Comentario";
 
 /* Class = "NSTableColumn"; headerCell.title = "BundlePath*"; ObjectID = "Oe6-LD-h7w"; */
 "Oe6-LD-h7w.headerCell.title" = "BundlePath*";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "PdE-OW-Faw"; */
-"PdE-OW-Faw.headerCell.title" = "Enabled";
+"PdE-OW-Faw.headerCell.title" = "Habilitado»";
 
 /* Class = "NSBox"; title = "Quirks"; ObjectID = "QBz-fY-8R7"; */
 "QBz-fY-8R7.title" = "Quirks";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "TcN-ku-fY2"; */
-"TcN-ku-fY2.headerCell.title" = "Enabled";
+"TcN-ku-fY2.headerCell.title" = "Habilitado";
 
 /* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "WGU-Ke-n07"; */
-"WGU-Ke-n07.title" = "Scan/Browse";
+"WGU-Ke-n07.title" = "Escanear/Buscar";
 
 /* Class = "NSTableColumn"; headerCell.title = "Skip"; ObjectID = "aAH-qz-ikl"; */
-"aAH-qz-ikl.headerCell.title" = "Skip";
+"aAH-qz-ikl.headerCell.title" = "Omitir";
 
 /* Class = "NSButtonCell"; title = "Check Kexts"; ObjectID = "aCc-4w-GcM"; */
-"aCc-4w-GcM.title" = "Check Kexts";
+"aCc-4w-GcM.title" = "Comprobar Kexts";
 
 /* Class = "NSTableColumn"; headerCell.title = "MaxKernel"; ObjectID = "aHq-mU-IMD"; */
 "aHq-mU-IMD.headerCell.title" = "MaxKernel";
@@ -105,7 +105,7 @@
 "b9n-9m-IDX.title" = "MaxKernel";
 
 /* Class = "NSTableColumn"; headerCell.title = "Enabled"; ObjectID = "cUJ-Nj-uY7"; */
-"cUJ-Nj-uY7.headerCell.title" = "Enabled";
+"cUJ-Nj-uY7.headerCell.title" = "Habilitado»";
 
 /* Class = "NSTableColumn"; headerCell.title = "Base"; ObjectID = "djM-Oe-omR"; */
 "djM-Oe-omR.headerCell.title" = "Base";
@@ -117,7 +117,7 @@
 "ek6-EY-0uZ.headerCell.title" = "PlistPath";
 
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "ewU-gZ-tet"; */
-"ewU-gZ-tet.title" = "Loading Resources";
+"ewU-gZ-tet.title" = "Cargando recursos";
 
 /* Class = "NSBox"; title = "Scheme"; ObjectID = "fHU-xs-V2l"; */
 "fHU-xs-V2l.title" = "Scheme";
@@ -144,13 +144,13 @@
 "gy1-1j-jtJ.label" = "Block";
 
 /* Class = "NSTextFieldCell"; title = "Loading Resources"; ObjectID = "je9-Z0-9pa"; */
-"je9-Z0-9pa.title" = "Loading Resources";
+"je9-Z0-9pa.title" = "Cargando recursos";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "k5V-cd-PJd"; */
-"k5V-cd-PJd.headerCell.title" = "Comment";
+"k5V-cd-PJd.headerCell.title" = "Comentario";
 
 /* Class = "NSTableColumn"; headerCell.title = "Comment"; ObjectID = "kGJ-yd-xi8"; */
-"kGJ-yd-xi8.headerCell.title" = "Comment";
+"kGJ-yd-xi8.headerCell.title" = "Comentario";
 
 /* Class = "NSTableColumn"; headerCell.title = "ReplaceMask"; ObjectID = "lAD-ms-SMV"; */
 "lAD-ms-SMV.headerCell.title" = "ReplaceMask";
@@ -159,7 +159,7 @@
 "lXN-nk-zjA.headerCell.title" = "MinKernel";
 
 /* Class = "NSTabViewItem"; label = "Add"; ObjectID = "mWg-wh-eGt"; */
-"mWg-wh-eGt.label" = "Add";
+"mWg-wh-eGt.label" = "Ańadir";
 
 /* Class = "NSButtonCell"; title = "Scan/Browse"; ObjectID = "mup-PJ-Q4D"; */
 "mup-PJ-Q4D.title" = "Scan/Browse";
