@@ -3,86 +3,86 @@ msgstr ""
 "Project-Id-Version: Opencore Configurator (OpenCore Builder)\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: mackie100\n"
+"Last-Translator: Nosis Noir\n"
+"Language-Team: mackie100,nosis noir\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"X-Generator: Poedit 2.4.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
 
 msgid "Opencore Builder"
 msgstr "Opencore Building"
 
 msgid "install ${BIN} with administrator privileges dialog"
-msgstr "To install ${BIN}, first you need to enter your administrator account password below to continue:"
+msgstr "Para instalar ${BIN}, primero debe introducir la contraseña de su cuenta de administrador:"
 
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "Cancelar"
 
 msgid "Continue"
-msgstr "Continue"
+msgstr "Continuar"
 
 msgid "User aborted"
-msgstr "Operation aborted by user"
+msgstr "Operación interrumpida por el usuario"
 
 msgid "Building ${util}..."
-msgstr "Building ${util}..."
+msgstr "Construyendo ${util}..."
 
 msgid "Building ${util} for Windows..."
-msgstr "Building ${util} for Windows..."
+msgstr "Construyendo ${util} para Windows..."
 
 msgid "Missing package directory"
-msgstr "Missing package directory"
+msgstr "Falta directorio de paquetes"
 
 msgid "Invalid version"
-msgstr "Invalid version"
+msgstr "Versión inválida"
 
 msgid "Copying OpenDuetPkg boot file from ${booter}..."
-msgstr "Copying OpenDuetPkg boot file from ${booter}..."
+msgstr "Copiando archivo de arranque OpenDuetPkg desde ${booter}…"
 
 msgid "Failed to find OpenDuetPkg at ${booter}!"
-msgstr "Failed to find OpenDuetPkg at ${booter}!"
+msgstr "¡Error al encontrar OpenDuetPkg en ${booter}!"
 
 msgid "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
-msgstr "Repository ${URL} named ${DEVELOPER_KIT} contains CRLF line endings"
+msgstr "El repositorio ${URL} denominado ${DEVELOPER_KIT} contiene terminaciones CRLF"
 
 msgid "Downloading AUDK"
-msgstr "Downloading AUDK repository..."
+msgstr "Descargando el repositorio AUDK…"
 
 msgid "Downloading OpenCorePkg"
-msgstr "Downloading OpenCorePkg repository..."
+msgstr "Descargando el repositorio OpenCorePkg…"
 
 msgid "Downloading OcBinaryData"
-msgstr "Downloading OcBinaryData repository..."
+msgstr "Descargando el repositorio OcBinaryData…"
 
 msgid "Generating EFI"
-msgstr "Generating EFI Structure folder..."
+msgstr "Generando estructura de carpetas del EFI…"
 
 msgid "Building complete"
-msgstr "Building process is completed"
+msgstr "El proceso de construcción ha finalizado"
 
 msgid "Copying Binary Data"
-msgstr "Copying Binary Data..."
+msgstr "Copiando datos binarios…"
 
 msgid "install NASM"
-msgstr "Before starting to build OpenCorePkg, I need to install NASM"
+msgstr "Antes de empezar a compilar OpenCorePkg, es necesario instalar NASM"
 
 msgid "install MTOC"
-msgstr "Before starting to build OpenCorePkg, I need to install MTOC"
+msgstr "Antes de empezar a compilar OpenCorePkg, es necesario instalar MTOC"
 
 msgid "Applied patch"
-msgstr "Applied patch"
+msgstr "Parche aplicado"
 
 msgid "Compiling OpenCorePkg"
-msgstr "Compiling the latest commited version of OpenCorePkg..."
+msgstr "Compilando la última versión de OpenCorePkg…"
 
 msgid "Downloading Mod patch"
-msgstr "Downloading Mod patch..."
+msgstr "Descargando el parche Mod…"
 
 msgid "Applying patch"
-msgstr "Applying patch..."
+msgstr "Aplicando parche…"
 
 msgid "No mod patch found. Patch not applied!"
-msgstr "No mod patch found. Patch not applied!"
+msgstr "No se ha encontrado ningún parche mod. Parche no aplicado."
