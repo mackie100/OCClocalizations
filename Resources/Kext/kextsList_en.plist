@@ -30,7 +30,7 @@
 			<key>remoteFolder</key>
 			<string>VirtualSMC</string>
 			<key>url</key>
-			<string>https://github.com/acidanthera/VirtualSMC/releases/download/VERSION/VirtualSMC-VERSION-RELEASE.zip</string>
+			<string>https://github.com/acidanthera/VirtualSMC/releases/download/vVERSION/VirtualSMC-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -220,7 +220,7 @@
 			<key>remoteFolder</key>
 			<string>AtherosE2200Ethernet</string>
 			<key>url</key>
-			<string>https://github.com/Mieze/AtherosE2200Ethernet/releases/download/VERSION/AtherosE2200Ethernet-VVERSION.zip</string>
+			<string>https://github.com/Mieze/AtherosE2200Ethernet/releases/download/vVERSION/AtherosE2200Ethernet-VVERSION.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
@@ -262,7 +262,7 @@
 			<key>remoteFolder</key>
 			<string>RTL8111_driver_for_OS_X</string>
 			<key>url</key>
-			<string>https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/VERSION/RealtekRTL8111-VVERSION.zip</string>
+			<string>https://github.com/Mieze/RTL8111_driver_for_OS_X/releases/download/vVERSION/RealtekRTL8111-VVERSION.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
