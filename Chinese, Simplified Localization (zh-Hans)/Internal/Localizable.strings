@@ -817,7 +817,7 @@
 "Download related files" = "下载相关文件";
 
 /* opencoreDownloaderController */
-"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "构建gettext工具. 在某些机器上,此过程可能需要一段时间,因此请耐心等待. 如果此过程要求安装Java SDK,请跳过该消息.";
+"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "正在构建gettext工具。这个过程在某些电脑上可能需要一些时间，请耐心等待。如果过程中提示要安装Java SDK，请直接忽略该提示。";
 
 /* opencoreDownloaderController */
 "GETTEXT is missing!, downloading..." = "缺少GETTEXT!,正在下载...";
@@ -969,7 +969,7 @@
 /* ubm-2i-zPE */
 "TT_AvoidRuntimeDefrag" = "大部分UEFI都会写入时间、电源管理等信息,这个所有黑苹果主板都应该选择YES.";
 
-"TT_ClearTaskSwitchBit" = "Type: plist boolean\nFailsafe: false\nDescription: Clear task switch bit during UEFI runtime services calls.\n\nThis quirk resolves FPU-related crashes in UEFI runtime services when using either the 32-bit kernel on a 64-bit UEFI implementation, or the 64-bit kernel on a 32-bit UEFI implementation by removing the task switch (TS) bit from CR0 register during their execution. These crashes occur if there is any FPU/SSE instruction usage in UEFI runtime services as XNU is unable to handle exceptions from mixed-mode code. This quirk requires OC_FIRMWARE_RUNTIME protocol implemented in OpenRuntime.efi.\n\nNote: This quirk should only be required when running older macOS versions when the 32-bit kernel is used on a 64-bit UEFI implementation, such as Microsoft Hyper-V.";
+"TT_ClearTaskSwitchBit" = "在UEFI运行时服务调用期间清除任务切换位.\n\n当在64位UEFI实现上使用32位内核,或在32位UEFI实现上使用64位内核时,此选项通过在执行期间从CR0寄存器中删除任务切换(TS)位来解决UEFI运行时服务中与FPU相关的崩溃. 如果在UEFI运行时服务中使用了任何FPU/SSE指令,就会发生这些崩溃,因为XNU无法处理来自混合模式代码的异常. 此选项需要在OpenRuntime.efi中实现OC_FIRMWARE_RUNTIME协议.\n\n注意：此选项仅在运行较旧的macOS版本时才需要,例如在Microsoft Hyper-V等64位UEFI实现上使用32位内核时.";
 
 /* NUB-EN-5ql */
 "TT_DevirtualiseMmio" = "内存注入方式包括KASLR方式(分布式注射到各个内存地址中)以及连续性方式.在使用KASLR时,PCIE加载到内存,可能会占据所有所有avaliable值而导致OC的内核以及内核缓存无法注入,导致启动失败.使用KASLR方式很容易出错,我们更适合使用连续性的内存注入方式,并在boot args中添加slide=1.因为我们之后会添加这个slide=1去使用连续性的内存注入方式,所以这个选项一般选择NO.";
