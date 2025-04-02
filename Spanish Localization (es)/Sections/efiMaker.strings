@@ -15,7 +15,7 @@
 "4L7-bL-SDd.title" = "Lynnfield / Clarkdale";
 
 /* Class = "NSButtonCell"; title = "RELEASE Distribution"; ObjectID = "4Rz-c5-KcK"; */
-"4Rz-c5-KcK.title" = "RELEASE Distribution";
+"4Rz-c5-KcK.title" = "Distribución Estable";
 
 /* Class = "NSButtonCell"; title = "Haswell / Broadwell"; ObjectID = "4xh-eS-Y7x"; */
 "4xh-eS-Y7x.title" = "Haswell / Broadwell";
@@ -90,7 +90,7 @@
 "TdK-LN-kw6.title" = "Nehalem / Westmere";
 
 /* Class = "NSTextFieldCell"; title = "Desktop"; ObjectID = "UHA-g6-Fql"; */
-"UHA-g6-Fql.title" = "Desktop";
+"UHA-g6-Fql.title" = "Pc de Escritorio";
 
 /* Class = "NSButtonCell"; title = "Show all SMBIOS data"; ObjectID = "VDU-ek-zH9"; */
 "VDU-ek-zH9.title" = "Mostrar todos los datos del SMBIOS";
