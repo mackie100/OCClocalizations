@@ -333,7 +333,7 @@
 "Some info for %@.kext => Identifier: %@ | Version: %@%@" = "Información parcial para %1$@.kext =>Identificador: %2$@ | Versión: %3$@%4$@";
 
 /* rtvariablesController */
-"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
+"Sorry to generate a valid ROM, you need unique UUID in System UUID (copy from system or generate one) or go in System UUID and add a valid uuid in the format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX." = "Lo siento, para generar un ROM válido, necesitas un UUID único en el UUID del sistema (cópialo del sistema o genera uno) o ve a UUID del sistema y agrega un UUID válido en el formato: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX.";
 
 /* mountefiController */
 "Status:" = "Status:";
@@ -348,7 +348,7 @@
 "To apply this change, you must restart the app" = "Para aplicar este cambio, es necesario reiniciar la aplicación";
 
 /* mainMenu */
-"Do you also want to change fork type?" = "Do you also want to change fork type?";
+"Do you also want to change fork type?" = "¿También deseas cambiar el tipo de fork?";
 
 /* mainMenu */
 "Do you also want to change configuration properties type?" = "¿También desea cambiar el tipo de propiedades de configuración?";
@@ -697,10 +697,10 @@
 "Checking For Resources..." = "Verificando los recursos...";
 
 /* configCheckerController */
-"Desktop" = "Desktop";
+"Desktop" = "PC de escritorio";
 
 /* configCheckerController */
-"High-End Desktop" = "High-End Desktop";
+"High-End Desktop" = "PC de escritorio de gama alta";
 
 /* configCheckerController */
 "Laptop" = "Laptop";
@@ -817,7 +817,7 @@
 "Download related files" = "Descargar archivos relacionados";
 
 /* opencoreDownloaderController */
-"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message.";
+"Building gettext tools. This process may take a while on some machines, so please be patient. If this process asking to install Java SDK, please just skip that message." = "Construyendo herramientas gettext. Este proceso puede tardar un tiempo en algunas máquinas, así que por favor ten paciencia. Si este proceso solicita instalar el SDK de Java, simplemente ignora ese mensaje.";
 
 /* opencoreDownloaderController */
 "GETTEXT is missing!, downloading..." = "¡Falta GETTEXT! , descargando...";

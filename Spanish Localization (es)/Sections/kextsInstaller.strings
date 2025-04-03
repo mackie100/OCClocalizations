@@ -3,49 +3,49 @@
 "0Hr-0F-FV6.title" = "SMCProcessor";
 
 /* Class = "NSButtonCell"; title = "Backup kext"; ObjectID = "39o-Ir-A0m"; */
-"39o-Ir-A0m.title" = "Backup kext";
+"39o-Ir-A0m.title" = "Copia de Seguridad de los kext";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for Catalina"; ObjectID = "3lJ-l4-KlP"; */
-"3lJ-l4-KlP.title" = "AirportItlwm for Catalina";
+"3lJ-l4-KlP.title" = "AirportItlwm para Catalina";
 
 /* Class = "NSTableColumn"; headerCell.title = "Category"; ObjectID = "47C-Wy-wbp"; */
-"47C-Wy-wbp.headerCell.title" = "Category";
+"47C-Wy-wbp.headerCell.title" = "Categoría";
 
 /* Class = "NSTableColumn"; headerCell.title = "Author"; ObjectID = "6OG-eK-0wo"; */
-"6OG-eK-0wo.headerCell.title" = "Author";
+"6OG-eK-0wo.headerCell.title" = "Autor";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for Mojave"; ObjectID = "92p-Im-Jc8"; */
-"92p-Im-Jc8.title" = "AirportItlwm for Mojave";
+"92p-Im-Jc8.title" = "AirportItlwm para Mojave";
 
 /* Class = "NSTextFieldCell"; title = "[*]drag and drop to table for manual installation"; ObjectID = "9WO-06-2fp"; */
-"9WO-06-2fp.title" = "[*]drag and drop to table for manual installation";
+"9WO-06-2fp.title" = "[*]arrastrar y soltar en la tabla para instalación manual";
 
 /* Class = "NSButtonCell"; title = "Install"; ObjectID = "9xo-8M-eT4"; */
-"9xo-8M-eT4.title" = "Install";
+"9xo-8M-eT4.title" = "Instalar";
 
 /* Class = "NSButtonCell"; title = "Select"; ObjectID = "Cu7-TT-odD"; */
-"Cu7-TT-odD.title" = "Select";
+"Cu7-TT-odD.title" = "Seleccionar";
 
 /* Class = "NSTextFieldCell"; title = "Partition:"; ObjectID = "DPO-a9-fnK"; */
-"DPO-a9-fnK.title" = "Partition:";
+"DPO-a9-fnK.title" = "Partición:";
 
 /* Class = "NSButtonCell"; title = "Install"; ObjectID = "EAo-vi-RTS"; */
-"EAo-vi-RTS.title" = "Install";
+"EAo-vi-RTS.title" = "Instalar";
 
 /* Class = "NSButtonCell"; title = "HWMonitor"; ObjectID = "Gc8-yC-f8T"; */
 "Gc8-yC-f8T.title" = "HWMonitor";
 
 /* Class = "NSWindow"; title = "Intel Wi-Fi Detected"; ObjectID = "Kmy-Be-n8o"; */
-"Kmy-Be-n8o.title" = "Intel Wi-Fi Detected";
+"Kmy-Be-n8o.title" = "Intel Wi-Fi Detectado";
 
 /* Class = "NSButtonCell"; title = "SMCSuperIO"; ObjectID = "Oqq-A2-PX5"; */
 "Oqq-A2-PX5.title" = "SMCSuperIO";
 
 /* Class = "NSButton"; ibShadowedToolTip = "Reload Data"; ObjectID = "Pss-ZT-2YR"; */
-"Pss-ZT-2YR.ibShadowedToolTip" = "Reload Data";
+"Pss-ZT-2YR.ibShadowedToolTip" = "Recargar Datos";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for BigSur"; ObjectID = "QHt-mk-P9w"; */
-"QHt-mk-P9w.title" = "AirportItlwm for BigSur";
+"QHt-mk-P9w.title" = "AirportItlwm para BigSur";
 
 /* Class = "NSWindow"; title = "Kexts Installer"; ObjectID = "QvC-M9-y7g"; */
 "QvC-M9-y7g.title" = "Kexts Installer";
@@ -54,7 +54,7 @@
 "T0X-Ss-Wv0.title" = "NoVPAJpeg Selection";
 
 /* Class = "NSButtonCell"; title = "AirportItlwm for Monterey"; ObjectID = "Tde-8F-xjy"; */
-"Tde-8F-xjy.title" = "AirportItlwm for Monterey";
+"Tde-8F-xjy.title" = "AirportItlwm para Monterey";
 
 /* Class = "NSButtonCell"; title = "GPUSensors"; ObjectID = "Z6y-49-dIn"; */
 "Z6y-49-dIn.title" = "GPUSensors";
@@ -63,19 +63,19 @@
 "aPa-sD-90t.headerCell.title" = "Name";
 
 /* Class = "NSWindow"; title = "VirtualSMC Detected"; ObjectID = "c22-Ac-LFY"; */
-"c22-Ac-LFY.title" = "VirtualSMC Detected";
+"c22-Ac-LFY.title" = "VirtualSMC Detectado";
 
 /* Class = "NSButtonCell"; title = "SMCDellSensors"; ObjectID = "dcN-Jh-fs2"; */
 "dcN-Jh-fs2.title" = "SMCDellSensors";
 
 /* Class = "NSButtonCell"; title = "Download"; ObjectID = "eiG-ge-aFx"; */
-"eiG-ge-aFx.title" = "Download";
+"eiG-ge-aFx.title" = "Descargar";
 
 /* Class = "NSBox"; title = "Box"; ObjectID = "ghD-a1-XG4"; */
 "ghD-a1-XG4.title" = "Box";
 
 /* Class = "NSButtonCell"; title = "Install"; ObjectID = "haE-Pd-ckC"; */
-"haE-Pd-ckC.title" = "Install";
+"haE-Pd-ckC.title" = "Instalar";
 
 /* Class = "NSTableColumn"; headerCell.title = "Version"; ObjectID = "mCG-e2-oRh"; */
 "mCG-e2-oRh.headerCell.title" = "Versión";

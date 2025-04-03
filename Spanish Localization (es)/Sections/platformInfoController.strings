@@ -24,7 +24,7 @@
 "67d-7j-Elg.title" = "Serial Number";
 
 /* Class = "NSTextFieldCell"; title = "Startup Power Events"; ObjectID = "7XG-zt-wiU"; */
-"7XG-zt-wiU.title" = "Startup Power Events";
+"7XG-zt-wiU.title" = "Eventos de Encendido al Iniciar";
 
 /* Class = "NSTextFieldCell"; title = "SKU Number"; ObjectID = "7ZS-hv-cMX"; */
 "7ZS-hv-cMX.title" = "SKU Number";
@@ -42,7 +42,7 @@
 "8wz-5k-5Zd.title" = "DataHub";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "9UV-S4-eO3"; */
-"9UV-S4-eO3.title" = "Generate";
+"9UV-S4-eO3.title" = "Generar";
 
 /* Class = "NSTextFieldCell"; title = "UUID"; ObjectID = "ADr-qW-Bb4"; */
 "ADr-qW-Bb4.title" = "UUID";
@@ -54,19 +54,19 @@
 "CDl-Mt-vej.title" = "Board";
 
 /* Class = "NSButtonCell"; title = "Unselect All"; ObjectID = "CtR-KN-0F7"; */
-"CtR-KN-0F7.title" = "Unselect All";
+"CtR-KN-0F7.title" = "Deseleccionar Todo";
 
 /* Class = "NSTextFieldCell"; title = "Asset Tag"; ObjectID = "FGe-q0-v48"; */
 "FGe-q0-v48.title" = "Asset Tag";
 
 /* Class = "NSTableColumn"; headerCell.title = "SerialNumber"; ObjectID = "FHK-PM-4JZ"; */
-"FHK-PM-4JZ.headerCell.title" = "SerialNumber";
+"FHK-PM-4JZ.headerCell.title" = "Número de Serie";
 
 /* Class = "NSButtonCell"; title = "UpdateDataHub"; ObjectID = "FvU-m3-lup"; */
 "FvU-m3-lup.title" = "UpdateDataHub";
 
 /* Class = "NSTextFieldCell"; title = "Product Name"; ObjectID = "GbE-LE-4eK"; */
-"GbE-LE-4eK.title" = "Product Name";
+"GbE-LE-4eK.title" = "Nombre del Producto";
 
 /* Class = "NSButtonCell"; title = " Registered (buffered)"; ObjectID = "GfA-Fq-uLx"; */
 "GfA-Fq-uLx.title" = " Registered (buffered)";
@@ -84,16 +84,16 @@
 "IGv-sT-Ard.headerCell.title" = "DeviceLocator";
 
 /* Class = "NSButtonCell"; title = "Select All"; ObjectID = "IlY-dq-QQD"; */
-"IlY-dq-QQD.title" = "Select All";
+"IlY-dq-QQD.title" = "Seleccionar Todo";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "IqG-Mw-D8N"; */
-"IqG-Mw-D8N.title" = "Add this section in config.plist";
+"IqG-Mw-D8N.title" = "Agregar esta sección en el config.plist";
 
 /* Class = "NSTextFieldCell"; title = "System UUID"; ObjectID = "JCc-EO-5xz"; */
 "JCc-EO-5xz.title" = "System UUID";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "JEO-9d-aFI"; */
-"JEO-9d-aFI.title" = "Add this section in config.plist";
+"JEO-9d-aFI.title" = "Agregar esta sección en el config.plist";
 
 /* Class = "NSButtonCell"; title = "UseRawUuidEncoding"; ObjectID = "JEw-8f-crY"; */
 "JEw-8f-crY.title" = "UseRawUuidEncoding";
@@ -102,7 +102,7 @@
 "K3Y-PC-Vyv.title" = "System Serial Number";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "KNP-Ab-25u"; */
-"KNP-Ab-25u.title" = "Generate";
+"KNP-Ab-25u.title" = "Generar";
 
 /* Class = "NSTextFieldCell"; title = "Device Paths Supported"; ObjectID = "LHd-Wt-aT8"; */
 "LHd-Wt-aT8.title" = "Device Paths Supported";
@@ -111,7 +111,7 @@
 "Lof-UF-S84.title" = "Release Date";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "MRn-KI-kxS"; */
-"MRn-KI-kxS.title" = "Generate";
+"MRn-KI-kxS.title" = "Generar";
 
 /* Class = "NSTextFieldCell"; title = "Serial Number"; ObjectID = "MW7-wk-hds"; */
 "MW7-wk-hds.title" = "Serial Number";
@@ -126,7 +126,7 @@
 "Nh2-fC-Gmv.title" = "System UUID";
 
 /* Class = "NSTextFieldCell"; title = "Features"; ObjectID = "Ntb-g0-8oU"; */
-"Ntb-g0-8oU.title" = "Features";
+"Ntb-g0-8oU.title" = "Características";
 
 /* Class = "NSButtonCell"; title = "AdviseFeatures"; ObjectID = "O78-Bj-Rgn"; */
 "O78-Bj-Rgn.title" = "AdviseFeatures";
@@ -135,10 +135,10 @@
 "OTt-Ne-MaI.title" = "FormFactor";
 
 /* Class = "NSButtonCell"; title = "Other"; ObjectID = "Oe7-gh-kqX"; */
-"Oe7-gh-kqX.title" = "Other";
+"Oe7-gh-kqX.title" = "Otro";
 
 /* Class = "NSTextFieldCell"; title = "Manufacturer"; ObjectID = "Oqy-j7-kv6"; */
-"Oqy-j7-kv6.title" = "Manufacturer";
+"Oqy-j7-kv6.title" = "Fabricante";
 
 /* Class = "NSSegmentedCell"; PVt-qS-yBp.ibShadowedLabels[0] = "Model Lookup"; ObjectID = "PVt-qS-yBp"; */
 "PVt-qS-yBp.ibShadowedLabels[0]" = "Model Lookup";
@@ -150,13 +150,13 @@
 "Pwo-2A-1gv.title" = "System Product Name";
 
 /* Class = "NSTextFieldCell"; title = "Version"; ObjectID = "Q7C-PE-T4u"; */
-"Q7C-PE-T4u.title" = "Version";
+"Q7C-PE-T4u.title" = "Versión";
 
 /* Class = "NSTextFieldCell"; title = "Vendor"; ObjectID = "R7K-qk-Tpk"; */
 "R7K-qk-Tpk.title" = "Vendor";
 
 /* Class = "NSTextFieldCell"; title = "Generic"; ObjectID = "Rcs-Ds-NTm"; */
-"Rcs-Ds-NTm.title" = "Generic";
+"Rcs-Ds-NTm.title" = "Genérico";
 
 /* Class = "NSTextFieldCell"; title = "Platform Feature"; ObjectID = "SVD-ga-fZP"; */
 "SVD-ga-fZP.title" = "Platform Feature";
@@ -198,10 +198,10 @@
 "YeX-yd-sEF.headerCell.title" = "Size";
 
 /* Class = "NSButtonCell"; title = "Automatic"; ObjectID = "Yle-7s-0Gt"; */
-"Yle-7s-0Gt.title" = "Automatic";
+"Yle-7s-0Gt.title" = "Automático";
 
 /* Class = "NSButtonCell"; title = "Your SMBIOS needs to be updated"; ObjectID = "YyS-LF-pEM"; */
-"YyS-LF-pEM.title" = "Your SMBIOS needs to be updated";
+"YyS-LF-pEM.title" = "Tu SMBIOS necesita ser actualizado.";
 
 /* Class = "NSTextFieldCell"; title = "Features Mask"; ObjectID = "aAi-r5-EIk"; */
 "aAi-r5-EIk.title" = "Features Mask";
@@ -210,7 +210,7 @@
 "baC-2d-vGR.title" = "System UUID";
 
 /* Class = "NSTextFieldCell"; title = "System Product Name"; ObjectID = "baG-Ud-vWe"; */
-"baG-Ud-vWe.title" = "System Product Name";
+"baG-Ud-vWe.title" = "Nombre del Producto del Sistema";
 
 /* Class = "NSButtonCell"; title = "MaxBIOSVersion"; ObjectID = "cFo-d3-10A"; */
 "cFo-d3-10A.title" = "MaxBIOSVersion";
@@ -228,10 +228,10 @@
 "e58-CU-R3q.title" = "DataWidth";
 
 /* Class = "NSTableColumn"; headerCell.title = "Manufacturer"; ObjectID = "e8B-2J-n0w"; */
-"e8B-2J-n0w.headerCell.title" = "Manufacturer";
+"e8B-2J-n0w.headerCell.title" = "Fabricante";
 
 /* Class = "NSTabViewItem"; label = "Memory"; ObjectID = "ecE-11-C0P"; */
-"ecE-11-C0P.label" = "Memory";
+"ecE-11-C0P.label" = "Memoria";
 
 /* Class = "NSSegmentedCell"; eez-pY-d3O.ibShadowedLabels[0] = "Mac"; ObjectID = "eez-pY-d3O"; */
 "eez-pY-d3O.ibShadowedLabels[0]" = "Mac";
@@ -240,16 +240,16 @@
 "eez-pY-d3O.ibShadowedLabels[1]" = "Hack";
 
 /* Class = "NSButtonCell"; title = "Update Firmware Only"; ObjectID = "fU3-BB-2dv"; */
-"fU3-BB-2dv.title" = "Update Firmware Only";
+"fU3-BB-2dv.title" = "Actualizar solo el Firmware";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "fWq-dP-cDy"; */
-"fWq-dP-cDy.title" = "Add this section in config.plist";
+"fWq-dP-cDy.title" = "Agregar esta sección en el config.plist";
 
 /* Class = "NSButtonCell"; title = "Synchronous"; ObjectID = "fzR-ns-Nmh"; */
 "fzR-ns-Nmh.title" = "Synchronous";
 
 /* Class = "NSButtonCell"; title = "Unknown"; ObjectID = "gVq-zr-fCy"; */
-"gVq-zr-fCy.title" = "Unknown";
+"gVq-zr-fCy.title" = "Desconocido";
 
 /* Class = "NSButtonCell"; title = "Unbuffered (unregistered)"; ObjectID = "go3-WJ-YA1"; */
 "go3-WJ-YA1.title" = "Unbuffered (unregistered)";
@@ -258,16 +258,16 @@
 "gyz-Gt-IQK.title" = "SpoofVendor";
 
 /* Class = "NSTextFieldCell"; title = "Manufacturer"; ObjectID = "gzt-RV-VqZ"; */
-"gzt-RV-VqZ.title" = "Manufacturer";
+"gzt-RV-VqZ.title" = "Fabricante";
 
 /* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "hOi-c7-jOJ"; */
-"hOi-c7-jOJ.title" = "Type";
+"hOi-c7-jOJ.title" = "Tipo";
 
 /* Class = "NSTextFieldCell"; title = "MLB"; ObjectID = "hxm-Qi-SkM"; */
 "hxm-Qi-SkM.title" = "MLB";
 
 /* Class = "NSButtonCell"; title = "Generate"; ObjectID = "iJ4-50-puj"; */
-"iJ4-50-puj.title" = "Generate";
+"iJ4-50-puj.title" = "Generar";
 
 /* Class = "NSTextFieldCell"; title = "Product"; ObjectID = "j1k-Mi-kEe"; */
 "j1k-Mi-kEe.title" = "Product";
@@ -276,16 +276,16 @@
 "jm3-qG-kzP.title" = "SmcBranch";
 
 /* Class = "NSTextFieldCell"; title = "Manufacturer"; ObjectID = "jzf-Ga-G68"; */
-"jzf-Ga-G68.title" = "Manufacturer";
+"jzf-Ga-G68.title" = "Fabricante";
 
-/* Class = "NSTextFieldCell"; title = "ProcessorType"; ObjectID = "kwQ-r3-1fQ"; */
+/* Class = "NSTextFieldCell"; title = "Tipo de Procesador"; ObjectID = "kwQ-r3-1fQ"; */
 "kwQ-r3-1fQ.title" = "ProcessorType";
 
-/* Class = "NSTextFieldCell"; title = "Version"; ObjectID = "l5R-bG-c9M"; */
+/* Class = "NSTextFieldCell"; title = "Versión"; ObjectID = "l5R-bG-c9M"; */
 "l5R-bG-c9M.title" = "Version";
 
 /* Class = "NSButtonCell"; title = "Add this section in config.plist"; ObjectID = "lvE-6L-IGl"; */
-"lvE-6L-IGl.title" = "Add this section in config.plist";
+"lvE-6L-IGl.title" = "Agregar esta sección en el config.plist";
 
 /* Class = "NSTextFieldCell"; title = "BID"; ObjectID = "mqi-pJ-IwL"; */
 "mqi-pJ-IwL.title" = "BID";
@@ -309,7 +309,7 @@
 "quh-uV-8rJ.title" = "System Serial Number";
 
 /* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "r88-HH-Xe8"; */
-"r88-HH-Xe8.title" = "Type";
+"r88-HH-Xe8.title" = "Tipo";
 
 /* Class = "NSTextFieldCell"; title = "Asset Tag"; ObjectID = "rL4-uJ-e4c"; */
 "rL4-uJ-e4c.title" = "Asset Tag";
@@ -321,10 +321,10 @@
 "rk2-HO-2cZ.title" = "TotalWidth";
 
 /* Class = "NSTextFieldCell"; title = "ProcessorType"; ObjectID = "sTq-fo-o3l"; */
-"sTq-fo-o3l.title" = "ProcessorType";
+"sTq-fo-o3l.title" = "Tipo de Procesador";
 
 /* Class = "NSTextFieldCell"; title = "System Serial Number"; ObjectID = "sXU-di-o5I"; */
-"sXU-di-o5I.title" = "System Serial Number";
+"sXU-di-o5I.title" = "Número de Serie del Sistema";
 
 /* Class = "NSTextFieldCell"; title = "ROM"; ObjectID = "t2F-TN-y72"; */
 "t2F-TN-y72.title" = "ROM";
@@ -336,10 +336,10 @@
 "wVQ-fG-k75.title" = "FSBFrequency";
 
 /* Class = "NSTextFieldCell"; title = "Serial Number"; ObjectID = "wqB-YC-Vht"; */
-"wqB-YC-Vht.title" = "Serial Number";
+"wqB-YC-Vht.title" = "Número de Serie";
 
 /* Class = "NSTextFieldCell"; title = "Type"; ObjectID = "x5o-Jb-Da4"; */
-"x5o-Jb-Da4.title" = "Type";
+"x5o-Jb-Da4.title" = "Tipo";
 
 /* Class = "NSTableColumn"; headerCell.title = "PartNumber"; ObjectID = "yFd-un-G1B"; */
 "yFd-un-G1B.headerCell.title" = "PartNumber";
@@ -351,4 +351,4 @@
 "yms-EA-Jpq.headerCell.title" = "AssetTag";
 
 /* Class = "NSTextFieldCell"; title = "Firmware Features"; ObjectID = "z92-Rg-GSY"; */
-"z92-Rg-GSY.title" = "Firmware Features";
+"z92-Rg-GSY.title" = "Características del Firmware";
