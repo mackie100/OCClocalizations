@@ -280,7 +280,7 @@
 		</dict>
 		<dict>
 			<key>author</key>
-			<string>1Revenger1</string>
+			<string>averycblack</string>
 			<key>category</key>
 			<string>Embedded Controller Support</string>
 			<key>description</key>
@@ -290,7 +290,7 @@
 			<key>remoteFolder</key>
 			<string>ECEnabler</string>
 			<key>url</key>
-			<string>https://github.com/1Revenger1/ECEnabler/releases/download/VERSION/ECEnabler-VERSION-RELEASE.zip</string>
+			<string>https://github.com/averycblack/ECEnabler/releases/download/VERSION/ECEnabler-VERSION-RELEASE.zip</string>
 		</dict>
 		<dict>
 			<key>author</key>
