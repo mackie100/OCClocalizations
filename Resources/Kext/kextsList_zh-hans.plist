@@ -375,7 +375,7 @@
 				</dict>
 				<dict>
 					<key>name</key>
-					<string>AirportItlwm_Sonoma 14.4</string>
+					<string>AirportItlwm_Sonoma14.4</string>
 					<key>url</key>
 					<string>https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.4.kext.zip</string>
 				</dict>
