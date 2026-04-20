@@ -304,9 +304,9 @@
 			<key>remoteFolder</key>
 			<string>RealtekCardReader</string>
 			<key>url</key>
-			<string>https://github.com/0xFireWolf/RealtekCardReader/releases/download/v0.9.6/RealtekCardReader_0.9.6_b998818_RELEASE.zip</string>
+			<string>https://github.com/0xFireWolf/RealtekCardReader/releases/download/v0.9.7/RealtekCardReader_0.9.7_006a845_RELEASE.zip</string>
 			<key>version</key>
-			<string>0.9.6</string>
+			<string>0.9.7</string>
 		</dict>
 		<dict>
 			<key>author</key>
